@@ -1,21 +1,30 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Task, TaskCategory, CATEGORY_LABELS, CATEGORY_DESCRIPTIONS } from '@/lib/types';
-import { getCompletedTaskIds, markTaskComplete, markTaskIncomplete } from '@/lib/storage';
+import { getCompletedTaskIds, markTaskComplete, markTaskIncomplete, loadAnswers } from '@/lib/storage';
 import { SUPPORT_MESSAGES } from '@/lib/support';
+import { useAuth } from '@/lib/auth-context';
 
 interface ChecklistProps {
   tasksByCategory: Record<string, Task[]>;
 }
 
 export function Checklist({ tasksByCategory }: ChecklistProps) {
+  const { user, saveToCloud } = useAuth();
   const [completedIds, setCompletedIds] = useState<Set<string>>(new Set());
   const [expandedTask, setExpandedTask] = useState<string | null>(null);
 
   useEffect(() => {
     setCompletedIds(new Set(getCompletedTaskIds()));
   }, []);
+
+  const syncToCloud = useCallback((ids: Set<string>) => {
+    if (user) {
+      const answers = loadAnswers() || {};
+      saveToCloud(answers, [...ids]);
+    }
+  }, [user, saveToCloud]);
 
   const toggleTask = (taskId: string) => {
     setCompletedIds(prev => {
@@ -27,6 +36,7 @@ export function Checklist({ tasksByCategory }: ChecklistProps) {
         next.add(taskId);
         markTaskComplete(taskId);
       }
+      syncToCloud(next);
       return next;
     });
   };

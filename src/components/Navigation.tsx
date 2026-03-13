@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { AccountMenu } from './AccountMenu';
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,6 +40,7 @@ export function Navigation() {
             >
               Get Your Guide
             </Link>
+            <AccountMenu />
           </div>
 
           {/* Mobile hamburger */}

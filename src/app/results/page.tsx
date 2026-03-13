@@ -3,29 +3,46 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { UserAnswers } from '@/lib/types';
-import { loadAnswers, clearProgress } from '@/lib/storage';
+import { loadAnswers, clearProgress, saveAnswers } from '@/lib/storage';
 import { getTasksByCategory } from '@/lib/tasks';
 import { buildTimeline, getNextDeadline } from '@/lib/timeline';
 import { calculateCosts } from '@/lib/costs';
 import { Checklist } from '@/components/Checklist';
 import { Timeline } from '@/components/Timeline';
 import { CostCalculator } from '@/components/CostCalculator';
+import { SavePrompt } from '@/components/SavePrompt';
+import { useAuth } from '@/lib/auth-context';
 import Link from 'next/link';
 
 export default function ResultsPage() {
   const router = useRouter();
+  const { user, loadFromCloud } = useAuth();
   const [answers, setAnswers] = useState<Partial<UserAnswers> | null>(null);
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    const saved = loadAnswers();
-    if (!saved || Object.keys(saved).length === 0) {
-      router.push('/start');
-      return;
+    async function load() {
+      // Try cloud first if logged in
+      if (user) {
+        const cloudData = await loadFromCloud();
+        if (cloudData && Object.keys(cloudData.answers).length > 0) {
+          setAnswers(cloudData.answers);
+          saveAnswers(cloudData.answers); // sync to local
+          setLoaded(true);
+          return;
+        }
+      }
+      // Fall back to local
+      const saved = loadAnswers();
+      if (!saved || Object.keys(saved).length === 0) {
+        router.push('/start');
+        return;
+      }
+      setAnswers(saved);
+      setLoaded(true);
     }
-    setAnswers(saved);
-    setLoaded(true);
-  }, [router]);
+    load();
+  }, [router, user, loadFromCloud]);
 
   if (!loaded || !answers) {
     return (
@@ -92,6 +109,9 @@ export default function ResultsPage() {
           Start Over
         </button>
       </div>
+
+      {/* Save prompt for non-logged-in users */}
+      <SavePrompt />
 
       {/* Timeline */}
       <Timeline entries={timeline} />

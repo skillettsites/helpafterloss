@@ -3,22 +3,38 @@
 import { useState, useEffect, useCallback } from 'react';
 import { UserAnswers, SECTION_LABELS, QuestionSection } from '@/lib/types';
 import { QUESTIONS, getVisibleQuestions } from '@/lib/questions';
-import { saveAnswers, loadAnswers } from '@/lib/storage';
+import { saveAnswers, loadAnswers, getCompletedTaskIds } from '@/lib/storage';
 import { useRouter } from 'next/navigation';
+import { useAuth } from '@/lib/auth-context';
 
 export function Questionnaire() {
   const router = useRouter();
+  const { user, saveToCloud, loadFromCloud } = useAuth();
   const [answers, setAnswers] = useState<Partial<UserAnswers>>({});
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    const saved = loadAnswers();
-    if (saved && Object.keys(saved).length > 0) {
-      setAnswers(saved);
+    async function load() {
+      // Try cloud first if logged in
+      if (user) {
+        const cloudData = await loadFromCloud();
+        if (cloudData && Object.keys(cloudData.answers).length > 0) {
+          setAnswers(cloudData.answers);
+          saveAnswers(cloudData.answers); // sync to local
+          setLoaded(true);
+          return;
+        }
+      }
+      // Fall back to local
+      const saved = loadAnswers();
+      if (saved && Object.keys(saved).length > 0) {
+        setAnswers(saved);
+      }
+      setLoaded(true);
     }
-    setLoaded(true);
-  }, []);
+    load();
+  }, [user, loadFromCloud]);
 
   const visibleQuestions = getVisibleQuestions(answers);
   const currentQuestion = visibleQuestions[currentIndex];
@@ -33,9 +49,13 @@ export function Questionnaire() {
     setAnswers(prev => {
       const updated = { ...prev, [key]: value };
       saveAnswers(updated);
+      // Sync to cloud in background if logged in
+      if (user) {
+        saveToCloud(updated, getCompletedTaskIds());
+      }
       return updated;
     });
-  }, []);
+  }, [user, saveToCloud]);
 
   const handleNext = useCallback(() => {
     if (currentIndex < totalQuestions - 1) {
