@@ -12,6 +12,7 @@ export function Navigation() {
     { href: '/checklist', label: 'Checklist' },
     { href: '/guides', label: 'Local Guides' },
     { href: '/template-letters', label: 'Letters' },
+    { href: '/phone-directory', label: 'Phone Directory' },
     { href: '/costs', label: 'Costs' },
     { href: '/support', label: 'Support' },
   ];
