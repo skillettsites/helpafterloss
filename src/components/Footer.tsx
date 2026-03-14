@@ -31,6 +31,7 @@ export function Footer() {
               <li><Link href="/tell-us-once" className="text-muted hover:text-primary transition-colors">Tell Us Once</Link></li>
               <li><Link href="/template-letters" className="text-muted hover:text-primary transition-colors">Template Letters</Link></li>
               <li><Link href="/guides" className="text-muted hover:text-primary transition-colors">Local Guides by City</Link></li>
+              <li><Link href="/counties" className="text-muted hover:text-primary transition-colors">County Guides</Link></li>
             </ul>
           </div>
 
