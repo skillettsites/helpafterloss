@@ -48,6 +48,12 @@ const ALL_GUIDES: Guide[] = [
   { href: '/guides/driving-after-death', title: 'Cars & DVLA', description: 'DVLA notification, car insurance (void immediately), V5C transfer, and selling the vehicle' },
   { href: '/guides/scams-after-bereavement', title: 'Bereavement Scams', description: 'Common scams targeting bereaved families and how to protect yourself and the estate' },
   { href: '/guides/cohabiting-partners', title: 'Unmarried Partners', description: 'Your rights when an unmarried partner dies, the cohabitation trap, and how to protect yourself' },
+  { href: '/guides/finding-accounts-after-death', title: 'Finding Their Accounts', description: 'How to discover all bank accounts, pensions, and policies the person held' },
+  { href: '/guides/first-year-after-loss', title: 'First Year After Loss', description: 'A month-by-month guide to the practical and emotional journey of the first year' },
+  { href: '/guides/helping-someone-grieve', title: 'Helping Someone Grieve', description: 'What to say, what to do, and how to support someone through bereavement' },
+  { href: '/blog/what-tell-us-once-doesnt-cover', title: "What Tell Us Once Doesn't Cover", description: 'The full list of organisations you must contact manually after Tell Us Once' },
+  { href: '/blog/bank-probate-thresholds-2026', title: 'Bank Probate Thresholds 2026', description: 'How much each bank will release without a grant of probate' },
+  { href: '/blog/death-certificate-how-many-copies', title: 'Death Certificates: How Many?', description: 'How many certified copies to order and who needs one' },
 ];
 
 interface RelatedGuidesProps {

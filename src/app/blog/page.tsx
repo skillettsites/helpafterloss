@@ -37,6 +37,24 @@ const POSTS = [
     date: 'March 2026',
     description: 'A practical, non-judgmental guide to every option available when you cannot afford a funeral: council funerals, DWP Funeral Expenses Payment, direct cremation, DIY funerals, and charitable help.',
   },
+  {
+    href: '/blog/what-tell-us-once-doesnt-cover',
+    title: "What Tell Us Once Doesn't Cover: The Full List",
+    date: 'March 2026',
+    description: 'Tell Us Once notifies some government departments, but you still need to contact banks, utilities, insurers, and more yourself. Here is every organisation you must notify manually.',
+  },
+  {
+    href: '/blog/bank-probate-thresholds-2026',
+    title: 'Bank Probate Thresholds 2026: Complete Comparison',
+    date: 'March 2026',
+    description: 'How much money each UK bank will release without probate. A full comparison table of every major bank and building society, with step-by-step instructions.',
+  },
+  {
+    href: '/blog/death-certificate-how-many-copies',
+    title: 'How Many Death Certificates Do I Need?',
+    date: 'March 2026',
+    description: 'How many certified copies to order, who needs one, what they cost, and the difference between ordering at registration versus later from the GRO.',
+  },
 ];
 
 export default function BlogIndexPage() {
