@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { cities } from '@/lib/cities';
+import { counties } from '@/lib/counties';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://helpafterloss.co.uk';
@@ -25,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/guides/bereavement-benefits`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/guides/funeral-options`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/guides/document-checklist`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/guides/deaths-abroad`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/guides/lost-a-parent`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/guides/lost-a-spouse`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/guides/lost-a-child`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
@@ -36,6 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/blog/true-cost-of-dying-uk`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/blog/bereavement-leave-rights-uk`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/blog/free-funeral-options-uk`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/counties`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
   ];
 
   const cityPages: MetadataRoute.Sitemap = cities.map(city => ({
@@ -45,5 +48,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...cityPages];
+  const countyPages: MetadataRoute.Sitemap = counties.map(county => ({
+    url: `${baseUrl}/counties/${county.slug}`,
+    lastModified: now,
+    changeFrequency: 'monthly',
+    priority: 0.6,
+  }));
+
+  return [...staticPages, ...cityPages, ...countyPages];
 }
