@@ -144,6 +144,50 @@ export default function ChecklistPage() {
                 </div>
               ))}
             </div>
+
+            {/* Contextual links per category */}
+            {i === 1 && (
+              <div className="bg-primary-light rounded-lg p-4 mt-3">
+                <p className="text-sm text-foreground">
+                  <strong>Learn more:</strong> <Link href="/tell-us-once" className="text-primary hover:underline">How Tell Us Once works</Link> · <Link href="/guides" className="text-primary hover:underline">Find your local register office</Link> · <Link href="/blog/death-certificate-how-many-copies" className="text-primary hover:underline">How many death certificates do you need?</Link>
+                </p>
+              </div>
+            )}
+            {i === 2 && (
+              <div className="bg-primary-light rounded-lg p-4 mt-3">
+                <p className="text-sm text-foreground">
+                  <strong>Learn more:</strong> <Link href="/guides/funeral-options" className="text-primary hover:underline">Compare all funeral types</Link> · <Link href="/costs" className="text-primary hover:underline">Full cost breakdown</Link> · <Link href="/blog/free-funeral-options-uk" className="text-primary hover:underline">Free funeral options</Link>
+                </p>
+              </div>
+            )}
+            {i === 3 && (
+              <div className="bg-primary-light rounded-lg p-4 mt-3">
+                <p className="text-sm text-foreground">
+                  <strong>Learn more:</strong> <Link href="/guides/bank-accounts-after-death" className="text-primary hover:underline">Dealing with bank accounts</Link> · <Link href="/guides/finding-accounts-after-death" className="text-primary hover:underline">Finding unknown accounts</Link> · <Link href="/guides/bereavement-benefits" className="text-primary hover:underline">Bereavement benefits</Link> · <Link href="/notify" className="text-primary hover:underline">Who to notify</Link>
+                </p>
+              </div>
+            )}
+            {i === 4 && (
+              <div className="bg-primary-light rounded-lg p-4 mt-3">
+                <p className="text-sm text-foreground">
+                  <strong>Learn more:</strong> <Link href="/probate" className="text-primary hover:underline">Full probate guide</Link> · <Link href="/guides/executor-duties" className="text-primary hover:underline">Executor duties</Link> · <Link href="/intestacy" className="text-primary hover:underline">Intestacy rules</Link> · <Link href="/guides/inheritance-tax" className="text-primary hover:underline">Inheritance tax</Link>
+                </p>
+              </div>
+            )}
+            {i === 5 && (
+              <div className="bg-primary-light rounded-lg p-4 mt-3">
+                <p className="text-sm text-foreground">
+                  <strong>Learn more:</strong> <Link href="/guides/property-after-death" className="text-primary hover:underline">Property after a death</Link> · <Link href="/guides/council-tax-after-death" className="text-primary hover:underline">Council tax exemptions</Link>
+                </p>
+              </div>
+            )}
+            {i === 6 && (
+              <div className="bg-primary-light rounded-lg p-4 mt-3">
+                <p className="text-sm text-foreground">
+                  <strong>Learn more:</strong> <Link href="/digital-legacy" className="text-primary hover:underline">Digital legacy guide</Link> · <Link href="/guides/subscriptions-after-death" className="text-primary hover:underline">Cancelling subscriptions</Link>
+                </p>
+              </div>
+            )}
           </section>
         ))}
       </div>

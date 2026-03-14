@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
 
 export const metadata: Metadata = {
@@ -22,6 +23,9 @@ export const metadata: Metadata = {
 export default function TellUsOncePage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
+      <Breadcrumbs items={[
+        { label: 'Tell Us Once' }
+      ]} />
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         Tell Us Once: Report a Death to Government in One Go
       </h1>
@@ -34,6 +38,21 @@ export default function TellUsOncePage() {
           Tell Us Once is available in England, Wales, and Scotland. It is not available in Northern Ireland, where you need to contact each department separately.
         </p>
       </div>
+
+      {/* Featured snippet targets */}
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-foreground mb-3">What does Tell Us Once cover?</h2>
+        <p className="text-muted leading-relaxed">
+          Tell Us Once notifies the DWP (state pension and benefits), HMRC, council services (council tax, housing benefit, electoral roll, Blue Badge, library cards), DVLA, and the Passport Office. It does not cover banks, building societies, utility companies, insurance providers, or private pensions. You need to contact those organisations separately.
+        </p>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-foreground mb-3">How do I use Tell Us Once?</h2>
+        <p className="text-muted leading-relaxed">
+          You can use Tell Us Once online or by phone. The registrar gives you a unique reference number when you register the death. Use this number at gov.uk/tell-us-once or call 0800 085 7308 within 28 days of registration. You will also need the person's National Insurance number, benefit details, and driving licence or passport numbers if available.
+        </p>
+      </section>
 
       {/* How to use */}
       <h2 className="text-2xl font-bold text-foreground mb-6">How to use Tell Us Once</h2>
@@ -79,6 +98,11 @@ export default function TellUsOncePage() {
 
       {/* What it does NOT cover */}
       <h2 className="text-2xl font-bold text-foreground mb-6">What you still need to do separately</h2>
+      <div className="bg-primary-light rounded-lg p-4 mb-4">
+        <p className="text-sm text-foreground">
+          <strong>Important:</strong> Tell Us Once handles government departments, but there is a long list of private organisations you will need to contact yourself. Read our full guide on <Link href="/blog/what-tell-us-once-doesnt-cover" className="text-primary hover:underline">what Tell Us Once does not cover</Link>, or see the <Link href="/notify" className="text-primary hover:underline">complete list of who to notify</Link> with contact details for each one.
+        </p>
+      </div>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted mb-4">Tell Us Once does not notify the following. You need to contact these yourself:</p>
         <ul className="space-y-2 text-sm text-muted">

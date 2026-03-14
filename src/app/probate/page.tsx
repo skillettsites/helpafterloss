@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
 
 export const metadata: Metadata = {
@@ -57,6 +58,9 @@ const FAQ = [
 export default function ProbatePage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
+      <Breadcrumbs items={[
+        { label: 'Probate: Everything You Need to Know' }
+      ]} />
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         Probate: Everything You Need to Know
       </h1>
@@ -80,8 +84,28 @@ export default function ProbatePage() {
         </div>
       </div>
 
+      {/* Featured snippet targets */}
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-foreground mb-3">How much does probate cost?</h2>
+        <p className="text-muted leading-relaxed">
+          Probate costs £300 as a court fee, or nothing if the estate is valued under £5,000. If you use a solicitor, expect to pay £2,000 to £5,000 for a typical estate. DIY probate is free apart from the court fee. Solicitor costs vary based on estate complexity, with some charging a percentage of the estate value rather than a fixed fee.
+        </p>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-foreground mb-3">How long does probate take?</h2>
+        <p className="text-muted leading-relaxed">
+          Probate typically takes 6 to 12 months from application to final distribution of the estate. The application itself takes 8 to 16 weeks to process by the Probate Registry. Simple estates with straightforward assets can be resolved faster, while complex estates involving property sales or inheritance tax often take longer.
+        </p>
+      </section>
+
       {/* Step by step */}
       <h2 className="text-2xl font-bold text-foreground mb-6">Step-by-step probate process</h2>
+      <div className="bg-primary-light rounded-lg p-4 mb-6">
+        <p className="text-sm text-foreground">
+          <strong>New to this?</strong> If you have been named as executor in the will, read our guide on <Link href="/guides/executor-duties" className="text-primary hover:underline">executor duties and responsibilities</Link> before you begin. It covers what you are legally required to do and where your liability sits.
+        </p>
+      </div>
       <div className="space-y-4 mb-12">
         {[
           { step: '1', title: 'Check if probate is needed', desc: 'Contact each bank and financial institution. If the total in sole-name accounts is below their threshold (varies by bank, usually £5,000-50,000), they may release funds without probate. If the person owned property, probate is almost always needed.' },
@@ -101,6 +125,12 @@ export default function ProbatePage() {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className="bg-primary-light rounded-lg p-4 mb-6">
+        <p className="text-sm text-foreground">
+          <strong>Related:</strong> See our <Link href="/guides/inheritance-tax" className="text-primary hover:underline">inheritance tax guide</Link> for thresholds, exemptions, and how to calculate what is owed. Once you have the grant, you will need to <Link href="/guides/bank-accounts-after-death" className="text-primary hover:underline">close bank accounts</Link> and deal with <Link href="/guides/property-after-death" className="text-primary hover:underline">any property</Link>. For a full breakdown of probate and other costs, see our <Link href="/costs" className="text-primary hover:underline">costs page</Link>.
+        </p>
       </div>
 
       {/* FAQ */}

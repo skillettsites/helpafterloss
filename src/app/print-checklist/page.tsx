@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
 import { PrintButton } from '@/components/PrintButton';
 
@@ -230,6 +231,9 @@ export default function PrintChecklistPage() {
 
       {/* Screen header */}
       <div className="no-print">
+        <Breadcrumbs items={[
+          { label: 'Printable Checklist' }
+        ]} />
         <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
           Printable Checklist: What to Do When Someone Dies
         </h1>

@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
 
 type Priority = 'urgent' | 'important' | 'normal';
@@ -242,6 +243,9 @@ export default function DeadlineTrackerPage() {
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
+      <Breadcrumbs items={[
+        { label: 'Deadline Tracker' }
+      ]} />
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         Deadline Tracker: Key Dates After a Death
       </h1>

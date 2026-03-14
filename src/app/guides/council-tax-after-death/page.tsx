@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
 
 export const metadata: Metadata = {
@@ -76,6 +77,10 @@ const FAQ = [
 export default function CouncilTaxAfterDeathPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
+      <Breadcrumbs items={[
+        { label: 'Guides', href: '/guides' },
+        { label: 'Council Tax After a Death' }
+      ]} />
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         Council Tax After a Death
       </h1>

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
 
 export const metadata: Metadata = {
@@ -460,6 +461,9 @@ export default function PhoneDirectoryPage() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
+      <Breadcrumbs items={[
+        { label: 'Phone Directory' }
+      ]} />
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         Phone Directory: Every Number You Need
       </h1>

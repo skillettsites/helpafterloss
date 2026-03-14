@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
 
 export const metadata: Metadata = {
@@ -101,13 +102,10 @@ const FAQS = [
 export default function BankProbateThresholdsPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
-      <nav className="text-sm text-muted mb-6">
-        <Link href="/" className="hover:text-primary">Home</Link>
-        <span className="mx-2">/</span>
-        <Link href="/blog" className="hover:text-primary">Guides &amp; Articles</Link>
-        <span className="mx-2">/</span>
-        <span>Bank Probate Thresholds 2026</span>
-      </nav>
+      <Breadcrumbs items={[
+        { label: 'Articles', href: '/blog' },
+        { label: 'Bank Probate Thresholds 2026' }
+      ]} />
 
       <p className="text-xs text-muted uppercase tracking-wide mb-3">March 2026</p>
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">

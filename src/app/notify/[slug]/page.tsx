@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 import {
   bereavementContacts,
   getContactBySlug,
@@ -165,13 +166,10 @@ export default async function NotifyOrganisationPage({ params }: PageProps) {
       {/* Hero */}
       <section className="bg-gradient-to-b from-primary-light to-background py-12 md:py-16 px-4">
         <div className="max-w-3xl mx-auto">
-          <nav className="text-sm text-muted mb-6" aria-label="Breadcrumb">
-            <Link href="/" className="hover:text-primary">Home</Link>
-            <span className="mx-2">/</span>
-            <Link href="/notify" className="hover:text-primary">Who to Notify</Link>
-            <span className="mx-2">/</span>
-            <span className="text-foreground">{contact.name}</span>
-          </nav>
+          <Breadcrumbs items={[
+            { label: 'Who to Notify', href: '/notify' },
+            { label: contact.name }
+          ]} />
           <div className="flex items-center gap-3 mb-4">
             <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full">
               {categorySingularLabels[contact.category]}

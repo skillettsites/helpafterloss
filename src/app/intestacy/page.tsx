@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
 
 export const metadata: Metadata = {
@@ -22,12 +23,30 @@ export const metadata: Metadata = {
 export default function IntestacyPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
+      <Breadcrumbs items={[
+        { label: 'Dying Without a Will: Intestacy Rules' }
+      ]} />
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         Dying Without a Will: Intestacy Rules
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
         When someone dies without a will, the law decides who inherits their estate. These are called the "intestacy rules" and they differ across the UK. Understanding them is important so you know your rights and what to do next.
       </p>
+
+      {/* Featured snippet targets */}
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-foreground mb-3">Who inherits if there is no will?</h2>
+        <p className="text-muted leading-relaxed">
+          Under intestacy rules in England and Wales, the spouse or civil partner inherits the first £322,000 plus personal belongings, plus half of everything above that amount. The remainder goes to children equally. If there is no spouse, children inherit everything. Unmarried partners inherit nothing automatically regardless of how long they lived together.
+        </p>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-foreground mb-3">What are the intestacy rules in England and Wales?</h2>
+        <p className="text-muted leading-relaxed">
+          The intestacy hierarchy determines who inherits when there is no will. The order of priority is: spouse or civil partner first, then children, then parents, then full siblings, then half-siblings, then grandparents, then aunts and uncles, and finally the Crown (known as bona vacantia). Each level only inherits if nobody exists in the levels above.
+        </p>
+      </section>
 
       {/* Key warning */}
       <div className="bg-warm border border-warm-border rounded-xl p-6 mb-10">

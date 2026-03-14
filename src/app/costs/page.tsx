@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
 
 export const metadata: Metadata = {
@@ -45,6 +46,9 @@ const SAVINGS = [
 export default function CostsPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
+      <Breadcrumbs items={[
+        { label: 'How Much Does It Cost When Someone Dies?' }
+      ]} />
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         How Much Does It Cost When Someone Dies?
       </h1>
@@ -52,8 +56,28 @@ export default function CostsPage() {
         The costs can be significant and often come as a surprise. Here is a full breakdown of what you might need to pay, and practical ways to reduce costs.
       </p>
 
+      {/* Featured snippet targets */}
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-foreground mb-3">How much does a funeral cost in the UK?</h2>
+        <p className="text-muted leading-relaxed">
+          The average UK funeral costs £4,141 in 2026. A cremation with a service averages £3,500 and a burial averages £4,800. Direct cremation, where there is no service, starts from £995. These figures exclude optional extras like flowers, catering, order of service booklets, and headstones, which can add hundreds or thousands more.
+        </p>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-foreground mb-3">What is the cheapest type of funeral?</h2>
+        <p className="text-muted leading-relaxed">
+          Direct cremation is the cheapest option, starting from £995 with no service or mourners present. A council public health funeral is free but is only available when nobody can arrange or afford a funeral. The DWP Funeral Expenses Payment can cover up to £1,000 towards funeral costs for those receiving qualifying means-tested benefits.
+        </p>
+      </section>
+
       {/* Cost breakdown */}
       <h2 className="text-2xl font-bold text-foreground mb-6">Cost breakdown</h2>
+      <div className="bg-primary-light rounded-lg p-4 mb-6">
+        <p className="text-sm text-foreground">
+          <strong>Related:</strong> Compare <Link href="/guides/funeral-options" className="text-primary hover:underline">all funeral types in detail</Link> (burial, cremation, direct cremation, green, woodland, humanist). If money is tight, read our guide on <Link href="/blog/free-funeral-options-uk" className="text-primary hover:underline">free funeral options in the UK</Link>.
+        </p>
+      </div>
       <div className="space-y-4 mb-12">
         {COSTS.map((c, i) => (
           <div key={i} className="bg-card rounded-xl border border-border p-6">
@@ -64,6 +88,12 @@ export default function CostsPage() {
             <p className="text-sm text-muted leading-relaxed">{c.detail}</p>
           </div>
         ))}
+      </div>
+
+      <div className="bg-primary-light rounded-lg p-4 mb-6">
+        <p className="text-sm text-foreground">
+          <strong>Related:</strong> For a full explanation of the inheritance tax thresholds and exemptions listed above, see our <Link href="/guides/inheritance-tax" className="text-primary hover:underline">inheritance tax guide</Link>. For probate fees and the DIY vs solicitor decision, see our <Link href="/probate" className="text-primary hover:underline">probate guide</Link>.
+        </p>
       </div>
 
       {/* Ways to save */}

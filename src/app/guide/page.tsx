@@ -185,11 +185,18 @@ export default function GuidePage() {
 
           {/* Cross-links after registration section */}
           {sIndex === 1 && (
-            <div className="bg-primary-light rounded-xl p-5 mt-6">
-              <p className="text-sm text-foreground leading-relaxed">
-                Need to write to banks, utility companies, or HMRC? Our <Link href="/template-letters" className="text-primary font-medium hover:underline">ready-to-use template letters</Link> save you time and make sure you include everything they need.
-              </p>
-            </div>
+            <>
+              <div className="bg-primary-light rounded-xl p-5 mt-6">
+                <p className="text-sm text-foreground leading-relaxed">
+                  Need to write to banks, utility companies, or HMRC? Our <Link href="/template-letters" className="text-primary font-medium hover:underline">ready-to-use template letters</Link> save you time and make sure you include everything they need.
+                </p>
+              </div>
+              <div className="bg-primary-light rounded-lg p-4 my-4">
+                <p className="text-sm text-foreground">
+                  <strong>Related:</strong> Learn how <Link href="/tell-us-once" className="text-primary hover:underline">Tell Us Once</Link> notifies most government departments for you. You can also <Link href="/guides" className="text-primary hover:underline">find your local register office</Link> or browse <Link href="/counties" className="text-primary hover:underline">county-level guides</Link> for region-specific information.
+                </p>
+              </div>
+            </>
           )}
 
           {/* Cultural guidance link after funeral section */}
@@ -205,14 +212,44 @@ export default function GuidePage() {
                   Take a moment. You are doing an incredible job at a very difficult time. If any of this feels overwhelming, call Cruse Bereavement Support on <a href="tel:08088081677" className="font-medium underline">0808 808 1677</a>.
                 </p>
               </div>
+              <div className="bg-primary-light rounded-lg p-4 my-4">
+                <p className="text-sm text-foreground">
+                  <strong>Related:</strong> Compare <Link href="/guides/funeral-options" className="text-primary hover:underline">all funeral types</Link> (burial, cremation, direct, green, woodland), see the <Link href="/costs" className="text-primary hover:underline">full cost breakdown</Link>, or read about <Link href="/blog/free-funeral-options-uk" className="text-primary hover:underline">free funeral options</Link> if money is tight.
+                </p>
+              </div>
             </>
           )}
 
           {/* Template letters link after financial section */}
           {sIndex === 3 && (
-            <div className="bg-primary-light rounded-xl p-5 mt-6">
-              <p className="text-sm text-foreground leading-relaxed">
-                We have <Link href="/template-letters" className="text-primary font-medium hover:underline">template letters</Link> you can use to notify banks, utility companies, HMRC, employers, insurers, and the DVLA.
+            <>
+              <div className="bg-primary-light rounded-xl p-5 mt-6">
+                <p className="text-sm text-foreground leading-relaxed">
+                  We have <Link href="/template-letters" className="text-primary font-medium hover:underline">template letters</Link> you can use to notify banks, utility companies, HMRC, employers, insurers, and the DVLA.
+                </p>
+              </div>
+              <div className="bg-primary-light rounded-lg p-4 my-4">
+                <p className="text-sm text-foreground">
+                  <strong>Related:</strong> See our detailed guide to <Link href="/guides/bank-accounts-after-death" className="text-primary hover:underline">dealing with bank accounts after a death</Link>, tips for <Link href="/guides/finding-accounts-after-death" className="text-primary hover:underline">finding accounts you may not know about</Link>, and our <Link href="/notify" className="text-primary hover:underline">full list of organisations to notify</Link>. You may also qualify for <Link href="/guides/bereavement-benefits" className="text-primary hover:underline">bereavement benefits</Link>.
+                </p>
+              </div>
+            </>
+          )}
+
+          {/* Cross-links after legal section */}
+          {sIndex === 4 && (
+            <div className="bg-primary-light rounded-lg p-4 my-4">
+              <p className="text-sm text-foreground">
+                <strong>Related:</strong> Read our full <Link href="/probate" className="text-primary hover:underline">probate guide</Link> for step-by-step instructions, or learn about <Link href="/guides/executor-duties" className="text-primary hover:underline">executor duties</Link> and <Link href="/guides/inheritance-tax" className="text-primary hover:underline">inheritance tax thresholds</Link>. If there is no will, see our <Link href="/intestacy" className="text-primary hover:underline">intestacy rules guide</Link>.
+              </p>
+            </div>
+          )}
+
+          {/* Cross-links after property section */}
+          {sIndex === 5 && (
+            <div className="bg-primary-light rounded-lg p-4 my-4">
+              <p className="text-sm text-foreground">
+                <strong>Related:</strong> See our guides on <Link href="/guides/property-after-death" className="text-primary hover:underline">dealing with property after a death</Link>, <Link href="/guides/council-tax-after-death" className="text-primary hover:underline">council tax exemptions</Link>, and <Link href="/guides/subscriptions-after-death" className="text-primary hover:underline">cancelling subscriptions</Link>. For a full breakdown of expected expenses, see our <Link href="/costs" className="text-primary hover:underline">costs guide</Link>.
               </p>
             </div>
           )}
