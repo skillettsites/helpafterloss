@@ -5,6 +5,17 @@ export const metadata: Metadata = {
   title: 'Support and Helplines After Bereavement',
   description: 'Free bereavement support helplines and organisations in the UK. Samaritans, Cruse, Citizens Advice, Age UK, child bereavement support, and more.',
   alternates: { canonical: 'https://helpafterloss.co.uk/support' },
+  openGraph: {
+    title: 'Support and Helplines After Bereavement',
+    description: 'Free bereavement support helplines and organisations in the UK, including Samaritans, Cruse, and Citizens Advice.',
+    url: 'https://helpafterloss.co.uk/support',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'UK Bereavement Support and Helplines',
+    description: 'Free, confidential support for anyone affected by bereavement.',
+  },
 };
 
 export default function SupportPage() {
@@ -62,6 +73,39 @@ export default function SupportPage() {
           </div>
         ))}
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            name: 'Bereavement Support and Helplines',
+            description: 'Free bereavement support helplines and organisations in the UK.',
+            datePublished: '2026-03-13',
+            dateModified: '2026-03-14',
+            author: { '@type': 'Organization', name: 'Help After Loss' },
+            isPartOf: {
+              '@type': 'WebSite',
+              name: 'Help After Loss',
+              url: 'https://helpafterloss.co.uk',
+            },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://helpafterloss.co.uk' },
+              { '@type': 'ListItem', position: 2, name: 'Support', item: 'https://helpafterloss.co.uk/support' },
+            ],
+          }),
+        }}
+      />
     </div>
   );
 }

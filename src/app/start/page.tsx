@@ -5,6 +5,17 @@ export const metadata: Metadata = {
   title: 'Get Your Personalised Guide',
   description: 'Answer a few questions about your situation and we will create a personalised step-by-step guide with everything you need to do, tailored to your circumstances.',
   alternates: { canonical: 'https://helpafterloss.co.uk/start' },
+  openGraph: {
+    title: 'Get Your Personalised Bereavement Guide',
+    description: 'Answer a few questions and get a personalised step-by-step checklist with everything you need to do.',
+    url: 'https://helpafterloss.co.uk/start',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Get Your Personalised Bereavement Guide',
+    description: 'Free, personalised guidance when someone dies in the UK. Takes about 3 minutes.',
+  },
 };
 
 export default function StartPage() {

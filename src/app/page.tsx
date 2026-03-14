@@ -5,6 +5,17 @@ export const metadata: Metadata = {
   title: 'Help After Loss - Free Bereavement Guidance for the UK',
   description: 'When someone dies, there is so much to do. We give you a free, personalised step-by-step guide covering everything from registering the death to probate, finances, and beyond. Trusted UK bereavement support.',
   alternates: { canonical: 'https://helpafterloss.co.uk' },
+  openGraph: {
+    title: 'Help After Loss - Free Bereavement Guidance for the UK',
+    description: 'Free, personalised step-by-step guidance when someone dies. Covers everything from registering the death to probate and beyond.',
+    url: 'https://helpafterloss.co.uk',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Help After Loss - Free Bereavement Guidance',
+    description: 'Free, personalised step-by-step guidance when someone dies in the UK.',
+  },
 };
 
 const STEPS = [
@@ -167,26 +178,26 @@ export default function HomePage() {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              'Registering the death',
-              'Tell Us Once',
-              'Funeral planning',
-              'Death certificates',
-              'Probate guide',
-              'Inheritance tax',
-              'Intestacy rules',
-              'Bank notifications',
-              'Pension claims',
-              'Life insurance',
-              'Property & mortgage',
-              'Council tax',
-              'Digital accounts',
-              'Benefits & support',
-              'Cultural guidance',
-              'Cost estimates',
+              { label: 'Registering the death', href: '/guide#registration' },
+              { label: 'Tell Us Once', href: '/tell-us-once' },
+              { label: 'Funeral planning', href: '/guide#funeral' },
+              { label: 'Death certificates', href: '/guide#registration' },
+              { label: 'Probate guide', href: '/probate' },
+              { label: 'Inheritance tax', href: '/guide#legal' },
+              { label: 'Intestacy rules', href: '/intestacy' },
+              { label: 'Bank notifications', href: '/template-letters#bank' },
+              { label: 'Pension claims', href: '/guide#financial' },
+              { label: 'Life insurance', href: '/guide#financial' },
+              { label: 'Property & mortgage', href: '/guide#property' },
+              { label: 'Council tax', href: '/template-letters#council-tax' },
+              { label: 'Digital accounts', href: '/digital-legacy' },
+              { label: 'Benefits & support', href: '/support' },
+              { label: 'Cultural guidance', href: '/cultural-guide' },
+              { label: 'Cost estimates', href: '/costs' },
             ].map((topic, i) => (
-              <div key={i} className="bg-background rounded-lg p-3 text-center">
-                <p className="text-sm font-medium text-foreground">{topic}</p>
-              </div>
+              <Link key={i} href={topic.href} className="bg-background rounded-lg p-3 text-center hover:bg-primary-light transition-colors">
+                <p className="text-sm font-medium text-foreground">{topic.label}</p>
+              </Link>
             ))}
           </div>
         </div>
@@ -232,6 +243,8 @@ export default function HomePage() {
             name: 'Help After Loss',
             url: 'https://helpafterloss.co.uk',
             description: 'Free bereavement guidance and support for the UK.',
+            logo: 'https://helpafterloss.co.uk/opengraph-image',
+            email: 'contact@helpafterloss.co.uk',
             areaServed: { '@type': 'Country', name: 'United Kingdom' },
           }),
         }}

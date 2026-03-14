@@ -3,7 +3,7 @@ import { cities } from '@/lib/cities';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://helpafterloss.co.uk';
-  const now = new Date().toISOString();
+  const now = '2026-03-14';
 
   const staticPages: MetadataRoute.Sitemap = [
     { url: baseUrl, lastModified: now, changeFrequency: 'monthly', priority: 1.0 },

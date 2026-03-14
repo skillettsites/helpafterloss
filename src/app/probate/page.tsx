@@ -5,6 +5,17 @@ export const metadata: Metadata = {
   title: 'Probate Guide - Do You Need Probate and How to Apply',
   description: 'Everything you need to know about probate in the UK. When you need it, how to apply, costs, DIY vs solicitor, and how long it takes. Covers England, Wales, Scotland (Confirmation), and Northern Ireland.',
   alternates: { canonical: 'https://helpafterloss.co.uk/probate' },
+  openGraph: {
+    title: 'Probate Guide - Do You Need Probate and How to Apply',
+    description: 'Everything you need to know about probate in the UK, including costs, timelines, and how to do it yourself.',
+    url: 'https://helpafterloss.co.uk/probate',
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'UK Probate Guide - Costs, Timelines, and How to Apply',
+    description: 'A plain-English guide to probate for England, Wales, Scotland, and Northern Ireland.',
+  },
 };
 
 const FAQ = [
@@ -121,6 +132,19 @@ export default function ProbatePage() {
               name: item.q,
               acceptedAnswer: { '@type': 'Answer', text: item.a },
             })),
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://helpafterloss.co.uk' },
+              { '@type': 'ListItem', position: 2, name: 'Probate Guide', item: 'https://helpafterloss.co.uk/probate' },
+            ],
           }),
         }}
       />

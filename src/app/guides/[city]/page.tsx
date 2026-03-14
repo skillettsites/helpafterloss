@@ -87,6 +87,9 @@ export default async function CityGuidePage({ params }: PageProps) {
     '@type': 'Article',
     headline: `What to Do When Someone Dies in ${displayName}`,
     description: `Practical guide covering registrar details, council contacts, and step-by-step guidance for bereavement in ${displayName}.`,
+    datePublished: '2026-03-13',
+    dateModified: '2026-03-14',
+    author: { '@type': 'Organization', name: 'Help After Loss' },
     publisher: {
       '@type': 'Organization',
       name: 'Help After Loss',
@@ -101,6 +104,16 @@ export default async function CityGuidePage({ params }: PageProps) {
         name: 'United Kingdom',
       },
     },
+  };
+
+  const breadcrumbData = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://helpafterloss.co.uk' },
+      { '@type': 'ListItem', position: 2, name: 'Local Guides', item: 'https://helpafterloss.co.uk/guides' },
+      { '@type': 'ListItem', position: 3, name: displayName, item: `https://helpafterloss.co.uk/guides/${city.slug}` },
+    ],
   };
 
   return (
@@ -428,6 +441,10 @@ export default async function CityGuidePage({ params }: PageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
       />
     </div>
   );

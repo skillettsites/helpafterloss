@@ -5,6 +5,17 @@ export const metadata: Metadata = {
   title: 'About Help After Loss',
   description: 'Help After Loss is a free service that provides personalised bereavement guidance for the UK. Learn about our mission, how we work, and why we built this.',
   alternates: { canonical: 'https://helpafterloss.co.uk/about' },
+  openGraph: {
+    title: 'About Help After Loss',
+    description: 'A free service providing personalised bereavement guidance for the UK. Learn about our mission and how we work.',
+    url: 'https://helpafterloss.co.uk/about',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Help After Loss',
+    description: 'Free, personalised bereavement guidance for the UK.',
+  },
 };
 
 export default function AboutPage() {
@@ -93,6 +104,43 @@ export default function AboutPage() {
           Get Started
         </Link>
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            name: 'About Help After Loss',
+            description: 'Help After Loss is a free service providing personalised bereavement guidance for the UK.',
+            datePublished: '2026-03-13',
+            dateModified: '2026-03-14',
+            author: { '@type': 'Organization', name: 'Help After Loss' },
+            about: {
+              '@type': 'Organization',
+              name: 'Help After Loss',
+              url: 'https://helpafterloss.co.uk',
+              description: 'Free bereavement guidance and support for the UK.',
+              logo: 'https://helpafterloss.co.uk/opengraph-image',
+              email: 'contact@helpafterloss.co.uk',
+              areaServed: { '@type': 'Country', name: 'United Kingdom' },
+            },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://helpafterloss.co.uk' },
+              { '@type': 'ListItem', position: 2, name: 'About', item: 'https://helpafterloss.co.uk/about' },
+            ],
+          }),
+        }}
+      />
     </div>
   );
 }

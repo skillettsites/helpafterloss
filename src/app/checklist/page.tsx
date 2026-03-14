@@ -5,6 +5,17 @@ export const metadata: Metadata = {
   title: 'What to Do When Someone Dies - Complete Checklist',
   description: 'The complete checklist of everything you need to do when someone dies in the UK. Covering registration, funeral, finances, probate, government notifications, property, and digital accounts.',
   alternates: { canonical: 'https://helpafterloss.co.uk/checklist' },
+  openGraph: {
+    title: 'What to Do When Someone Dies - Complete Checklist',
+    description: 'The complete checklist of everything you need to do when someone dies in the UK.',
+    url: 'https://helpafterloss.co.uk/checklist',
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Complete Bereavement Checklist - UK',
+    description: 'Everything you need to do when someone dies, from registration to probate.',
+  },
 };
 
 const CATEGORIES = [
@@ -136,7 +147,13 @@ export default function ChecklistPage() {
         ))}
       </div>
 
-      <div className="bg-warm border border-warm-border rounded-xl p-5 mt-10">
+      <div className="bg-primary-light rounded-xl p-5 mt-10">
+        <p className="text-sm text-foreground leading-relaxed">
+          Need help writing to organisations? Our <Link href="/template-letters" className="text-primary font-medium hover:underline">template letters</Link> cover banks, utility companies, HMRC, employers, insurers, and more. Just fill in the details and send.
+        </p>
+      </div>
+
+      <div className="bg-warm border border-warm-border rounded-xl p-5 mt-4">
         <p className="text-sm text-amber-800 leading-relaxed">
           This is a general checklist. Your situation is unique. For a personalised list that only includes what applies to you, with real deadlines and helpful links, <Link href="/start" className="font-medium underline">use our free tool</Link>.
         </p>
@@ -150,10 +167,26 @@ export default function ChecklistPage() {
             '@type': 'HowTo',
             name: 'Complete Bereavement Checklist: What to Do When Someone Dies in the UK',
             description: 'A comprehensive checklist covering everything from the first 24 hours through to the first year after a death in the UK.',
+            datePublished: '2026-03-13',
+            dateModified: '2026-03-14',
+            author: { '@type': 'Organization', name: 'Help After Loss' },
             step: CATEGORIES.flatMap(cat => cat.items.map(item => ({
               '@type': 'HowToStep',
               name: item,
             }))),
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://helpafterloss.co.uk' },
+              { '@type': 'ListItem', position: 2, name: 'Complete Checklist', item: 'https://helpafterloss.co.uk/checklist' },
+            ],
           }),
         }}
       />

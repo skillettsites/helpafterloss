@@ -5,6 +5,17 @@ export const metadata: Metadata = {
   title: 'Digital Legacy - Dealing With Online Accounts After Death',
   description: 'How to handle email, social media, subscriptions, and other digital accounts when someone dies. Platform-by-platform guide for Google, Apple, Facebook, and more.',
   alternates: { canonical: 'https://helpafterloss.co.uk/digital-legacy' },
+  openGraph: {
+    title: 'Digital Legacy - Dealing With Online Accounts After Death',
+    description: 'How to close or memorialise Google, Facebook, Apple, and other accounts when someone dies.',
+    url: 'https://helpafterloss.co.uk/digital-legacy',
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Digital Legacy - Handling Online Accounts After a Death',
+    description: 'Platform-by-platform guide for Google, Apple, Facebook, Microsoft, and more.',
+  },
 };
 
 const PLATFORMS = [
@@ -135,6 +146,35 @@ export default function DigitalLegacyPage() {
           Get Your Personalised Guide
         </Link>
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: 'Digital Legacy: Dealing With Online Accounts After a Death',
+            description: 'How to handle email, social media, subscriptions, and other digital accounts when someone dies in the UK.',
+            datePublished: '2026-03-13',
+            dateModified: '2026-03-14',
+            author: { '@type': 'Organization', name: 'Help After Loss' },
+            publisher: { '@type': 'Organization', name: 'Help After Loss' },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://helpafterloss.co.uk' },
+              { '@type': 'ListItem', position: 2, name: 'Digital Legacy', item: 'https://helpafterloss.co.uk/digital-legacy' },
+            ],
+          }),
+        }}
+      />
     </div>
   );
 }

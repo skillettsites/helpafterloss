@@ -5,6 +5,17 @@ export const metadata: Metadata = {
   title: 'Intestacy Rules - Who Inherits When There Is No Will',
   description: 'What happens when someone dies without a will in the UK. Understand the intestacy rules for England, Wales, Scotland, and Northern Ireland. Find out who inherits and what to do.',
   alternates: { canonical: 'https://helpafterloss.co.uk/intestacy' },
+  openGraph: {
+    title: 'Intestacy Rules - Who Inherits When There Is No Will',
+    description: 'What happens when someone dies without a will in the UK. Intestacy rules explained for all four nations.',
+    url: 'https://helpafterloss.co.uk/intestacy',
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'UK Intestacy Rules - Who Inherits Without a Will',
+    description: 'Intestacy rules for England, Wales, Scotland, and Northern Ireland explained in plain English.',
+  },
 };
 
 export default function IntestacyPage() {
@@ -120,7 +131,23 @@ export default function IntestacyPage() {
             '@type': 'Article',
             headline: 'Intestacy Rules: Who Inherits When There Is No Will in the UK',
             description: 'What happens when someone dies without a will in the UK. Intestacy rules for England, Wales, Scotland, and Northern Ireland.',
+            datePublished: '2026-03-13',
+            dateModified: '2026-03-14',
+            author: { '@type': 'Organization', name: 'Help After Loss' },
             publisher: { '@type': 'Organization', name: 'Help After Loss' },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://helpafterloss.co.uk' },
+              { '@type': 'ListItem', position: 2, name: 'Intestacy Rules', item: 'https://helpafterloss.co.uk/intestacy' },
+            ],
           }),
         }}
       />

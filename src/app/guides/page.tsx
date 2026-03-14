@@ -6,6 +6,17 @@ export const metadata: Metadata = {
   title: 'Local Bereavement Guides by City - What to Do When Someone Dies',
   description: 'Find your local guide for what to do when someone dies. Registrar details, council contacts, and step-by-step guidance for cities across England, Scotland, Wales, and Northern Ireland.',
   alternates: { canonical: 'https://helpafterloss.co.uk/guides' },
+  openGraph: {
+    title: 'Local Bereavement Guides by City',
+    description: 'Find your local guide with registrar details, council contacts, and step-by-step bereavement guidance.',
+    url: 'https://helpafterloss.co.uk/guides',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Local Bereavement Guides - UK Cities',
+    description: 'Find local registrar details and council contacts for your area.',
+  },
 };
 
 const NATION_ORDER = ['London', 'North West England', 'North East England', 'Yorkshire and the Humber', 'West Midlands', 'East Midlands', 'South West England', 'South East England', 'East of England', 'Scotland', 'Wales', 'Northern Ireland'];
@@ -33,6 +44,23 @@ export default function GuidesIndexPage() {
             council contacts, and step-by-step guidance specific to your area. We cover {cities.length} cities
             and boroughs across England, Scotland, Wales, and Northern Ireland.
           </p>
+        </div>
+      </section>
+
+      {/* Introductory content */}
+      <section className="py-8 px-4">
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-card rounded-xl border border-border p-6 space-y-4 text-sm text-muted leading-relaxed">
+            <p>
+              When someone dies, one of the first steps is registering the death at your local register office. The rules vary depending on where in the UK you are. In England and Wales, you must register within 5 days. In Scotland, the deadline is 8 days. In Northern Ireland, it is also 5 days, but the Tell Us Once service is not available.
+            </p>
+            <p>
+              Each of our local guides includes the contact details for your nearest register office, your local council, and information about what services are available in your area. We also cover the differences between probate in England and Wales, Confirmation in Scotland, and the process in Northern Ireland, so you get guidance that applies to your specific location.
+            </p>
+            <p>
+              If you are not sure which guide to use, or if your situation is more complex, try our <Link href="/start" className="text-primary hover:underline font-medium">personalised guide</Link> instead. It asks a few questions about your circumstances and creates a tailored checklist with deadlines calculated from the date of death.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -99,11 +127,26 @@ export default function GuidesIndexPage() {
             name: 'Local Bereavement Guides',
             description: 'City-specific guides for what to do when someone dies in the UK.',
             url: 'https://helpafterloss.co.uk/guides',
+            datePublished: '2026-03-13',
+            dateModified: '2026-03-14',
             publisher: {
               '@type': 'Organization',
               name: 'Help After Loss',
               url: 'https://helpafterloss.co.uk',
             },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://helpafterloss.co.uk' },
+              { '@type': 'ListItem', position: 2, name: 'Local Guides', item: 'https://helpafterloss.co.uk/guides' },
+            ],
           }),
         }}
       />

@@ -5,6 +5,17 @@ export const metadata: Metadata = {
   title: 'Cultural and Religious Funeral Guide - UK',
   description: 'Guidance on funeral and bereavement practices for different faiths and cultures in the UK. Muslim, Jewish, Hindu, Sikh, Buddhist, and Christian traditions explained.',
   alternates: { canonical: 'https://helpafterloss.co.uk/cultural-guide' },
+  openGraph: {
+    title: 'Cultural and Religious Funeral Guide - UK',
+    description: 'Funeral practices for Muslim, Jewish, Hindu, Sikh, Buddhist, and Christian traditions in the UK.',
+    url: 'https://helpafterloss.co.uk/cultural-guide',
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Cultural and Religious Funeral Guidance for the UK',
+    description: 'Respectful guidance on bereavement practices for all major faiths.',
+  },
 };
 
 const TRADITIONS = [
@@ -136,6 +147,35 @@ export default function CulturalGuidePage() {
           Get Your Personalised Guide
         </Link>
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: 'Cultural and Religious Funeral Guidance for the UK',
+            description: 'Guidance on funeral and bereavement practices for Muslim, Jewish, Hindu, Sikh, Buddhist, and Christian traditions in the UK.',
+            datePublished: '2026-03-13',
+            dateModified: '2026-03-14',
+            author: { '@type': 'Organization', name: 'Help After Loss' },
+            publisher: { '@type': 'Organization', name: 'Help After Loss' },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://helpafterloss.co.uk' },
+              { '@type': 'ListItem', position: 2, name: 'Cultural Guide', item: 'https://helpafterloss.co.uk/cultural-guide' },
+            ],
+          }),
+        }}
+      />
     </div>
   );
 }

@@ -5,6 +5,17 @@ export const metadata: Metadata = {
   title: 'Tell Us Once - Report a Death to Government Services',
   description: 'How to use the Tell Us Once service to report a death to most government departments in one go. What it covers, what it does not cover, and what you need to do separately.',
   alternates: { canonical: 'https://helpafterloss.co.uk/tell-us-once' },
+  openGraph: {
+    title: 'Tell Us Once - Report a Death to Government Services',
+    description: 'How to use the Tell Us Once service to notify multiple government departments about a death in one step.',
+    url: 'https://helpafterloss.co.uk/tell-us-once',
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Tell Us Once Service - Report a Death to Government',
+    description: 'Notify DWP, HMRC, DVLA, Passport Office, and your local council in one go.',
+  },
 };
 
 export default function TellUsOncePage() {
@@ -102,6 +113,39 @@ export default function TellUsOncePage() {
           Get Your Personalised Guide
         </Link>
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'HowTo',
+            name: 'How to Use Tell Us Once to Report a Death',
+            description: 'Step-by-step guide to using the Tell Us Once service to notify government departments after a death in the UK.',
+            datePublished: '2026-03-13',
+            dateModified: '2026-03-14',
+            author: { '@type': 'Organization', name: 'Help After Loss' },
+            step: [
+              { '@type': 'HowToStep', name: 'Get your reference number', text: 'When you register the death, the registrar will give you a Tell Us Once reference number and explain the service.' },
+              { '@type': 'HowToStep', name: 'Use it online or by phone', text: 'Go to gov.uk/tell-us-once or call 0800 085 7308. You will need the reference number, National Insurance number, benefit details, driving licence and passport numbers, and local council service details.' },
+              { '@type': 'HowToStep', name: 'Complete within 28 days', text: 'You must use the service within 28 days of getting the reference number.' },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://helpafterloss.co.uk' },
+              { '@type': 'ListItem', position: 2, name: 'Tell Us Once', item: 'https://helpafterloss.co.uk/tell-us-once' },
+            ],
+          }),
+        }}
+      />
     </div>
   );
 }

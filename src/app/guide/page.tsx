@@ -5,6 +5,17 @@ export const metadata: Metadata = {
   title: 'What to Do When Someone Dies - Step-by-Step Guide',
   description: 'A complete step-by-step guide to everything you need to do when someone dies in the UK. From the first 24 hours through to the first year, covering registration, funerals, probate, finances, and more.',
   alternates: { canonical: 'https://helpafterloss.co.uk/guide' },
+  openGraph: {
+    title: 'What to Do When Someone Dies - Step-by-Step Guide',
+    description: 'A complete step-by-step guide covering registration, funerals, probate, finances, and more after a death in the UK.',
+    url: 'https://helpafterloss.co.uk/guide',
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'What to Do When Someone Dies - Step-by-Step Guide',
+    description: 'A complete step-by-step guide covering registration, funerals, probate, finances, and more.',
+  },
 };
 
 const SECTIONS = [
@@ -171,11 +182,36 @@ export default function GuidePage() {
             ))}
           </div>
 
-          {/* Support message between sections */}
+          {/* Cross-links after registration section */}
+          {sIndex === 1 && (
+            <div className="bg-primary-light rounded-xl p-5 mt-6">
+              <p className="text-sm text-foreground leading-relaxed">
+                Need to write to banks, utility companies, or HMRC? Our <Link href="/template-letters" className="text-primary font-medium hover:underline">ready-to-use template letters</Link> save you time and make sure you include everything they need.
+              </p>
+            </div>
+          )}
+
+          {/* Cultural guidance link after funeral section */}
           {sIndex === 2 && (
-            <div className="bg-warm border border-warm-border rounded-xl p-5 mt-8">
-              <p className="text-sm text-amber-800 leading-relaxed">
-                Take a moment. You are doing an incredible job at a very difficult time. If any of this feels overwhelming, call Cruse Bereavement Support on <a href="tel:08088081677" className="font-medium underline">0808 808 1677</a>.
+            <>
+              <div className="bg-primary-light rounded-xl p-5 mt-6">
+                <p className="text-sm text-foreground leading-relaxed">
+                  If faith or cultural traditions are important for the funeral arrangements, see our <Link href="/cultural-guide" className="text-primary font-medium hover:underline">cultural and religious funeral guide</Link> covering Muslim, Jewish, Hindu, Sikh, Buddhist, and Christian practices in the UK.
+                </p>
+              </div>
+              <div className="bg-warm border border-warm-border rounded-xl p-5 mt-4">
+                <p className="text-sm text-amber-800 leading-relaxed">
+                  Take a moment. You are doing an incredible job at a very difficult time. If any of this feels overwhelming, call Cruse Bereavement Support on <a href="tel:08088081677" className="font-medium underline">0808 808 1677</a>.
+                </p>
+              </div>
+            </>
+          )}
+
+          {/* Template letters link after financial section */}
+          {sIndex === 3 && (
+            <div className="bg-primary-light rounded-xl p-5 mt-6">
+              <p className="text-sm text-foreground leading-relaxed">
+                We have <Link href="/template-letters" className="text-primary font-medium hover:underline">template letters</Link> you can use to notify banks, utility companies, HMRC, employers, insurers, and the DVLA.
               </p>
             </div>
           )}
@@ -202,11 +238,27 @@ export default function GuidePage() {
             '@type': 'HowTo',
             name: 'What to Do When Someone Dies in the UK',
             description: 'A complete step-by-step guide to everything you need to do when someone dies in the UK.',
+            datePublished: '2026-03-13',
+            dateModified: '2026-03-14',
+            author: { '@type': 'Organization', name: 'Help After Loss' },
             step: SECTIONS.flatMap(s => s.tasks.map(t => ({
               '@type': 'HowToStep',
               name: t.title,
               text: t.content,
             }))),
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://helpafterloss.co.uk' },
+              { '@type': 'ListItem', position: 2, name: 'Step-by-Step Guide', item: 'https://helpafterloss.co.uk/guide' },
+            ],
           }),
         }}
       />

@@ -5,6 +5,17 @@ export const metadata: Metadata = {
   title: 'Template Letters for Bereavement - Ready-to-Use Notification Letters',
   description: 'Free template letters to notify banks, utilities, HMRC, council tax, employers, insurers, DVLA, and more after someone dies. Copy, fill in the details, and send.',
   alternates: { canonical: 'https://helpafterloss.co.uk/template-letters' },
+  openGraph: {
+    title: 'Template Letters for Bereavement - Ready-to-Use Notification Letters',
+    description: 'Free template letters to notify banks, utilities, HMRC, council tax, employers, insurers, and the DVLA after a death.',
+    url: 'https://helpafterloss.co.uk/template-letters',
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Free Bereavement Template Letters - UK',
+    description: 'Ready-to-use letters for notifying organisations after someone dies.',
+  },
 };
 
 interface TemplateLetter {
@@ -571,11 +582,27 @@ export default function TemplateLettersPage() {
             '@type': 'WebPage',
             name: 'Template Letters for Bereavement',
             description: 'Free template letters to notify banks, utilities, HMRC, council tax, employers, insurers, DVLA, and more after someone dies in the UK.',
+            datePublished: '2026-03-13',
+            dateModified: '2026-03-14',
+            author: { '@type': 'Organization', name: 'Help After Loss' },
             isPartOf: {
               '@type': 'WebSite',
               name: 'Help After Loss',
               url: 'https://helpafterloss.co.uk',
             },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://helpafterloss.co.uk' },
+              { '@type': 'ListItem', position: 2, name: 'Template Letters', item: 'https://helpafterloss.co.uk/template-letters' },
+            ],
           }),
         }}
       />

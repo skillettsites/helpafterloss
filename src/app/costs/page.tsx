@@ -5,6 +5,17 @@ export const metadata: Metadata = {
   title: 'Costs When Someone Dies - Full Breakdown',
   description: 'How much does it cost when someone dies in the UK? Full breakdown of funeral costs, death certificates, probate fees, solicitor charges, and ways to reduce costs.',
   alternates: { canonical: 'https://helpafterloss.co.uk/costs' },
+  openGraph: {
+    title: 'Costs When Someone Dies - Full Breakdown',
+    description: 'Full breakdown of funeral costs, death certificates, probate fees, solicitor charges, and ways to save money.',
+    url: 'https://helpafterloss.co.uk/costs',
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How Much Does It Cost When Someone Dies in the UK?',
+    description: 'Full cost breakdown: funerals, certificates, probate fees, and practical ways to reduce costs.',
+  },
 };
 
 const COSTS = [
@@ -72,6 +83,34 @@ export default function CostsPage() {
           Get Your Personalised Guide
         </Link>
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: COSTS.map(c => ({
+              '@type': 'Question',
+              name: `How much does ${c.item.toLowerCase()} cost when someone dies?`,
+              acceptedAnswer: { '@type': 'Answer', text: `${c.cost}. ${c.detail}` },
+            })),
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://helpafterloss.co.uk' },
+              { '@type': 'ListItem', position: 2, name: 'Costs', item: 'https://helpafterloss.co.uk/costs' },
+            ],
+          }),
+        }}
+      />
     </div>
   );
 }

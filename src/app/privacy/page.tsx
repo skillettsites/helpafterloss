@@ -4,6 +4,17 @@ export const metadata: Metadata = {
   title: 'Privacy Policy',
   description: 'Privacy policy for Help After Loss. We do not collect, store, or share any personal information.',
   alternates: { canonical: 'https://helpafterloss.co.uk/privacy' },
+  openGraph: {
+    title: 'Privacy Policy - Help After Loss',
+    description: 'We do not collect, store, or share any personal information. Your data stays on your device.',
+    url: 'https://helpafterloss.co.uk/privacy',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Privacy Policy - Help After Loss',
+    description: 'We do not collect, store, or share any personal information.',
+  },
 };
 
 export default function PrivacyPage() {
