@@ -28,6 +28,7 @@ export function Footer() {
               <li><Link href="/digital-legacy" className="text-muted hover:text-primary transition-colors">Digital Accounts</Link></li>
               <li><Link href="/cultural-guide" className="text-muted hover:text-primary transition-colors">Cultural Guidance</Link></li>
               <li><Link href="/template-letters" className="text-muted hover:text-primary transition-colors">Template Letters</Link></li>
+              <li><Link href="/guides" className="text-muted hover:text-primary transition-colors">Local Guides by City</Link></li>
             </ul>
           </div>
 
