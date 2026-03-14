@@ -31,12 +31,23 @@ const ALL_GUIDES: Guide[] = [
   { href: '/support', title: 'Support & Helplines', description: 'Free helplines, counselling services, and bereavement organisations' },
   { href: '/guides', title: 'Local Guides', description: 'City-specific guidance with local registrar and council contact details' },
   { href: '/counties', title: 'County Guides', description: 'Find registrar offices and registration guidance by county across England and Wales' },
+  { href: '/notify', title: 'Who to Notify', description: 'Phone numbers, online forms, and step-by-step processes for every bank, utility, and insurer' },
   { href: '/deadline-tracker', title: 'Deadline Tracker', description: 'Enter the date of death and see every key deadline calculated for you' },
   { href: '/print-checklist', title: 'Printable Checklist', description: 'A clean, print-friendly checklist you can tick off on paper' },
   { href: '/blog', title: 'Guides & Articles', description: 'In-depth articles on funeral costs, bereavement leave rights, and free funeral options' },
   { href: '/blog/true-cost-of-dying-uk', title: 'The True Cost of Dying in the UK', description: 'Every cost you may face when someone dies, with real 2026 figures and ways to reduce them' },
   { href: '/blog/bereavement-leave-rights-uk', title: 'Bereavement Leave: Your Rights', description: 'What you are legally entitled to, what employers typically offer, and what to do if refused' },
   { href: '/blog/free-funeral-options-uk', title: 'Free and Low-Cost Funeral Options', description: 'Council funerals, DWP help, direct cremation, DIY funerals, and charitable assistance' },
+  { href: '/guides/bank-accounts-after-death', title: 'Bank Accounts After Death', description: 'What happens to bank accounts, how to close them, and when you can release money without probate' },
+  { href: '/guides/debts-after-death', title: 'Debts After Death', description: 'What happens to debts when someone dies. You are not responsible for their personal debts.' },
+  { href: '/guides/property-after-death', title: 'Property After Death', description: 'Mortgages, selling the home, council tax exemptions, and joint ownership explained' },
+  { href: '/guides/pensions-after-death', title: 'Pensions After Death', description: 'State pension inheritance, workplace death benefits, and how to trace lost pensions' },
+  { href: '/guides/inheritance-tax', title: 'Inheritance Tax', description: 'Current thresholds, rates, exemptions, and practical ways to reduce the tax bill' },
+  { href: '/guides/council-tax-after-death', title: 'Council Tax After Death', description: 'Exemptions for empty properties, single person discount, and what executors need to know' },
+  { href: '/guides/subscriptions-after-death', title: 'Subscriptions & Direct Debits', description: 'How to find and cancel all subscriptions, direct debits, and standing orders' },
+  { href: '/guides/driving-after-death', title: 'Cars & DVLA', description: 'DVLA notification, car insurance (void immediately), V5C transfer, and selling the vehicle' },
+  { href: '/guides/scams-after-bereavement', title: 'Bereavement Scams', description: 'Common scams targeting bereaved families and how to protect yourself and the estate' },
+  { href: '/guides/cohabiting-partners', title: 'Unmarried Partners', description: 'Your rights when an unmarried partner dies, the cohabitation trap, and how to protect yourself' },
 ];
 
 interface RelatedGuidesProps {

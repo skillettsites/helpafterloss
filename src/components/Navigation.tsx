@@ -10,9 +10,9 @@ export function Navigation() {
   const links = [
     { href: '/guide', label: 'Step-by-Step Guide' },
     { href: '/checklist', label: 'Checklist' },
+    { href: '/notify', label: 'Who to Notify' },
     { href: '/guides', label: 'Local Guides' },
     { href: '/template-letters', label: 'Letters' },
-    { href: '/phone-directory', label: 'Phone Directory' },
     { href: '/costs', label: 'Costs' },
     { href: '/support', label: 'Support' },
     { href: '/blog', label: 'Articles' },

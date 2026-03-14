@@ -21,11 +21,11 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/guide" className="text-muted hover:text-primary transition-colors">Step-by-Step Guide</Link></li>
               <li><Link href="/checklist" className="text-muted hover:text-primary transition-colors">Master Checklist</Link></li>
+              <li><Link href="/notify" className="text-muted hover:text-primary transition-colors">Who to Notify</Link></li>
               <li><Link href="/probate" className="text-muted hover:text-primary transition-colors">Probate Guide</Link></li>
               <li><Link href="/guides/executor-duties" className="text-muted hover:text-primary transition-colors">Executor Duties</Link></li>
               <li><Link href="/guides/bereavement-benefits" className="text-muted hover:text-primary transition-colors">Bereavement Benefits</Link></li>
               <li><Link href="/guides/funeral-options" className="text-muted hover:text-primary transition-colors">Funeral Options</Link></li>
-              <li><Link href="/guides/document-checklist" className="text-muted hover:text-primary transition-colors">Document Checklist</Link></li>
               <li><Link href="/intestacy" className="text-muted hover:text-primary transition-colors">Dying Without a Will</Link></li>
               <li><Link href="/costs" className="text-muted hover:text-primary transition-colors">Costs Breakdown</Link></li>
               <li><Link href="/tell-us-once" className="text-muted hover:text-primary transition-colors">Tell Us Once</Link></li>
@@ -36,13 +36,18 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold text-foreground mb-3">Your Situation</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-3">Money & Property</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/guides/lost-a-spouse" className="text-muted hover:text-primary transition-colors">When a Spouse Dies</Link></li>
-              <li><Link href="/guides/lost-a-parent" className="text-muted hover:text-primary transition-colors">When a Parent Dies</Link></li>
-              <li><Link href="/guides/lost-a-child" className="text-muted hover:text-primary transition-colors">When a Child Dies</Link></li>
-              <li><Link href="/guides/lost-a-sibling" className="text-muted hover:text-primary transition-colors">When a Sibling Dies</Link></li>
-              <li><Link href="/guides/lost-a-friend" className="text-muted hover:text-primary transition-colors">When a Friend Dies</Link></li>
+              <li><Link href="/guides/bank-accounts-after-death" className="text-muted hover:text-primary transition-colors">Bank Accounts</Link></li>
+              <li><Link href="/guides/debts-after-death" className="text-muted hover:text-primary transition-colors">Debts After Death</Link></li>
+              <li><Link href="/guides/property-after-death" className="text-muted hover:text-primary transition-colors">Property & Mortgages</Link></li>
+              <li><Link href="/guides/pensions-after-death" className="text-muted hover:text-primary transition-colors">Pensions</Link></li>
+              <li><Link href="/guides/inheritance-tax" className="text-muted hover:text-primary transition-colors">Inheritance Tax</Link></li>
+              <li><Link href="/guides/council-tax-after-death" className="text-muted hover:text-primary transition-colors">Council Tax</Link></li>
+              <li><Link href="/guides/subscriptions-after-death" className="text-muted hover:text-primary transition-colors">Subscriptions & Direct Debits</Link></li>
+              <li><Link href="/guides/driving-after-death" className="text-muted hover:text-primary transition-colors">Cars & DVLA</Link></li>
+              <li><Link href="/guides/cohabiting-partners" className="text-muted hover:text-primary transition-colors">Unmarried Partners</Link></li>
+              <li><Link href="/guides/scams-after-bereavement" className="text-muted hover:text-primary transition-colors">Bereavement Scams</Link></li>
             </ul>
 
             <h3 className="text-sm font-semibold text-foreground mb-3 mt-6">Tools & Help</h3>
