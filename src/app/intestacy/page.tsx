@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { RelatedGuides } from '@/components/RelatedGuides';
 
 export const metadata: Metadata = {
   title: 'Intestacy Rules - Who Inherits When There Is No Will',
@@ -122,6 +123,8 @@ export default function IntestacyPage() {
           Get Your Personalised Guide
         </Link>
       </div>
+
+      <RelatedGuides currentPath="/intestacy" guides={['/probate', '/guides/executor-duties', '/guides/bereavement-benefits', '/guides/lost-a-spouse']} />
 
       <script
         type="application/ld+json"

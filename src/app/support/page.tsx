@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { SUPPORT_ORGANISATIONS } from '@/lib/support';
+import { RelatedGuides } from '@/components/RelatedGuides';
 
 export const metadata: Metadata = {
   title: 'Support and Helplines After Bereavement',
@@ -73,6 +74,8 @@ export default function SupportPage() {
           </div>
         ))}
       </div>
+
+      <RelatedGuides currentPath="/support" guides={['/guides/lost-a-spouse', '/guides/lost-a-parent', '/guides/lost-a-child', '/guide']} />
 
       <script
         type="application/ld+json"

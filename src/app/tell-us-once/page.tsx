@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { RelatedGuides } from '@/components/RelatedGuides';
 
 export const metadata: Metadata = {
   title: 'Tell Us Once - Report a Death to Government Services',
@@ -113,6 +114,8 @@ export default function TellUsOncePage() {
           Get Your Personalised Guide
         </Link>
       </div>
+
+      <RelatedGuides currentPath="/tell-us-once" guides={['/guide', '/template-letters', '/phone-directory', '/deadline-tracker']} />
 
       <script
         type="application/ld+json"

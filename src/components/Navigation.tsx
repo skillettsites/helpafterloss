@@ -15,6 +15,7 @@ export function Navigation() {
     { href: '/phone-directory', label: 'Phone Directory' },
     { href: '/costs', label: 'Costs' },
     { href: '/support', label: 'Support' },
+    { href: '/blog', label: 'Articles' },
   ];
 
   return (

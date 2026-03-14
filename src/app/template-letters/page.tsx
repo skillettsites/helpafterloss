@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { RelatedGuides } from '@/components/RelatedGuides';
 
 export const metadata: Metadata = {
   title: 'Template Letters for Bereavement - Ready-to-Use Notification Letters',
@@ -593,6 +594,8 @@ export default function TemplateLettersPage() {
           }),
         }}
       />
+      <RelatedGuides currentPath="/template-letters" guides={['/phone-directory', '/call-scripts', '/guides/document-checklist', '/guide']} />
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

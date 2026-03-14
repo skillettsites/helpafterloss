@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { RelatedGuides } from '@/components/RelatedGuides';
 
 export const metadata: Metadata = {
   title: 'Probate Guide - Do You Need Probate and How to Apply',
@@ -120,6 +121,8 @@ export default function ProbatePage() {
           Get Your Personalised Guide
         </Link>
       </div>
+
+      <RelatedGuides currentPath="/probate" guides={['/guides/executor-duties', '/intestacy', '/costs', '/template-letters']} />
 
       <script
         type="application/ld+json"

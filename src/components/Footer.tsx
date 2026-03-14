@@ -22,25 +22,38 @@ export function Footer() {
               <li><Link href="/guide" className="text-muted hover:text-primary transition-colors">Step-by-Step Guide</Link></li>
               <li><Link href="/checklist" className="text-muted hover:text-primary transition-colors">Master Checklist</Link></li>
               <li><Link href="/probate" className="text-muted hover:text-primary transition-colors">Probate Guide</Link></li>
+              <li><Link href="/guides/executor-duties" className="text-muted hover:text-primary transition-colors">Executor Duties</Link></li>
+              <li><Link href="/guides/bereavement-benefits" className="text-muted hover:text-primary transition-colors">Bereavement Benefits</Link></li>
+              <li><Link href="/guides/funeral-options" className="text-muted hover:text-primary transition-colors">Funeral Options</Link></li>
+              <li><Link href="/guides/document-checklist" className="text-muted hover:text-primary transition-colors">Document Checklist</Link></li>
               <li><Link href="/intestacy" className="text-muted hover:text-primary transition-colors">Dying Without a Will</Link></li>
               <li><Link href="/costs" className="text-muted hover:text-primary transition-colors">Costs Breakdown</Link></li>
               <li><Link href="/tell-us-once" className="text-muted hover:text-primary transition-colors">Tell Us Once</Link></li>
-              <li><Link href="/digital-legacy" className="text-muted hover:text-primary transition-colors">Digital Accounts</Link></li>
-              <li><Link href="/cultural-guide" className="text-muted hover:text-primary transition-colors">Cultural Guidance</Link></li>
               <li><Link href="/template-letters" className="text-muted hover:text-primary transition-colors">Template Letters</Link></li>
-              <li><Link href="/phone-directory" className="text-muted hover:text-primary transition-colors">Phone Directory</Link></li>
-              <li><Link href="/call-scripts" className="text-muted hover:text-primary transition-colors">Call Scripts</Link></li>
               <li><Link href="/guides" className="text-muted hover:text-primary transition-colors">Local Guides by City</Link></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold text-foreground mb-3">Help</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-3">Your Situation</h3>
             <ul className="space-y-2 text-sm">
+              <li><Link href="/guides/lost-a-spouse" className="text-muted hover:text-primary transition-colors">When a Spouse Dies</Link></li>
+              <li><Link href="/guides/lost-a-parent" className="text-muted hover:text-primary transition-colors">When a Parent Dies</Link></li>
+              <li><Link href="/guides/lost-a-child" className="text-muted hover:text-primary transition-colors">When a Child Dies</Link></li>
+              <li><Link href="/guides/lost-a-sibling" className="text-muted hover:text-primary transition-colors">When a Sibling Dies</Link></li>
+              <li><Link href="/guides/lost-a-friend" className="text-muted hover:text-primary transition-colors">When a Friend Dies</Link></li>
+            </ul>
+
+            <h3 className="text-sm font-semibold text-foreground mb-3 mt-6">Tools & Help</h3>
+            <ul className="space-y-2 text-sm">
+              <li><Link href="/deadline-tracker" className="text-muted hover:text-primary transition-colors">Deadline Tracker</Link></li>
+              <li><Link href="/print-checklist" className="text-muted hover:text-primary transition-colors">Printable Checklist</Link></li>
+              <li><Link href="/phone-directory" className="text-muted hover:text-primary transition-colors">Phone Directory</Link></li>
+              <li><Link href="/call-scripts" className="text-muted hover:text-primary transition-colors">Call Scripts</Link></li>
+              <li><Link href="/blog" className="text-muted hover:text-primary transition-colors">Articles</Link></li>
               <li><Link href="/support" className="text-muted hover:text-primary transition-colors">Support & Helplines</Link></li>
               <li><Link href="/about" className="text-muted hover:text-primary transition-colors">About Us</Link></li>
               <li><Link href="/privacy" className="text-muted hover:text-primary transition-colors">Privacy Policy</Link></li>
-              <li><Link href="/start" className="text-muted hover:text-primary transition-colors">Get Your Guide</Link></li>
             </ul>
           </div>
         </div>

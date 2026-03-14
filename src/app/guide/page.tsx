@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { RelatedGuides } from '@/components/RelatedGuides';
 
 export const metadata: Metadata = {
   title: 'What to Do When Someone Dies - Step-by-Step Guide',
@@ -229,6 +230,8 @@ export default function GuidePage() {
           Get Your Personalised Guide
         </Link>
       </div>
+
+      <RelatedGuides currentPath="/guide" guides={['/checklist', '/template-letters', '/deadline-tracker', '/print-checklist']} />
 
       <script
         type="application/ld+json"

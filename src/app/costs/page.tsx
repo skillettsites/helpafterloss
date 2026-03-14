@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { RelatedGuides } from '@/components/RelatedGuides';
 
 export const metadata: Metadata = {
   title: 'Costs When Someone Dies - Full Breakdown',
@@ -83,6 +84,8 @@ export default function CostsPage() {
           Get Your Personalised Guide
         </Link>
       </div>
+
+      <RelatedGuides currentPath="/costs" guides={['/guides/funeral-options', '/guides/bereavement-benefits', '/probate', '/blog/true-cost-of-dying-uk']} />
 
       <script
         type="application/ld+json"

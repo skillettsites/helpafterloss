@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { RelatedGuides } from '@/components/RelatedGuides';
 
 export const metadata: Metadata = {
   title: 'Bereavement Phone Directory - Every Number You Need When Someone Dies',
@@ -604,6 +605,8 @@ export default function PhoneDirectoryPage() {
           Get Your Personalised Guide
         </Link>
       </div>
+
+      <RelatedGuides currentPath="/phone-directory" guides={['/call-scripts', '/template-letters', '/tell-us-once', '/guide']} />
 
       {/* FAQPage Schema */}
       <script

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { RelatedGuides } from '@/components/RelatedGuides';
 
 export const metadata: Metadata = {
   title: 'Digital Legacy - Dealing With Online Accounts After Death',
@@ -146,6 +147,8 @@ export default function DigitalLegacyPage() {
           Get Your Personalised Guide
         </Link>
       </div>
+
+      <RelatedGuides currentPath="/digital-legacy" guides={['/template-letters', '/guides/document-checklist', '/guide', '/checklist']} />
 
       <script
         type="application/ld+json"
