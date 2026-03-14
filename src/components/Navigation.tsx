@@ -10,6 +10,7 @@ export function Navigation() {
   const links = [
     { href: '/guide', label: 'Step-by-Step Guide' },
     { href: '/checklist', label: 'Checklist' },
+    { href: '/template-letters', label: 'Template Letters' },
     { href: '/costs', label: 'Costs' },
     { href: '/support', label: 'Support' },
     { href: '/about', label: 'About' },
