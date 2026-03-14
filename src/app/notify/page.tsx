@@ -117,6 +117,17 @@ export default function NotifyHubPage() {
               <p className="text-sm text-muted mt-1">Direct phone numbers and online forms</p>
             </div>
           </div>
+
+          {/* Notify For Me CTA */}
+          <div className="mt-6 bg-primary-light border border-primary/20 rounded-xl p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <div className="flex-1">
+              <h2 className="font-semibold text-foreground mb-1">Too much to deal with? Let us email them for you</h2>
+              <p className="text-sm text-muted">We can send bereavement notification emails on your behalf. You are CC&apos;d on every email so replies come straight to you.</p>
+            </div>
+            <Link href="/notify-for-me" className="px-5 py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary-dark transition-colors whitespace-nowrap">
+              Notify for me
+            </Link>
+          </div>
         </div>
       </section>
 

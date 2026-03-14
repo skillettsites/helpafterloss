@@ -32,6 +32,7 @@ const ALL_GUIDES: Guide[] = [
   { href: '/guides', title: 'Local Guides', description: 'City-specific guidance with local registrar and council contact details' },
   { href: '/counties', title: 'County Guides', description: 'Find registrar offices and registration guidance by county across England and Wales' },
   { href: '/notify', title: 'Who to Notify', description: 'Phone numbers, online forms, and step-by-step processes for every bank, utility, and insurer' },
+  { href: '/notify-for-me', title: 'Notify For Me', description: 'We email banks, energy providers, and insurers on your behalf so you do not have to' },
   { href: '/deadline-tracker', title: 'Deadline Tracker', description: 'Enter the date of death and see every key deadline calculated for you' },
   { href: '/print-checklist', title: 'Printable Checklist', description: 'A clean, print-friendly checklist you can tick off on paper' },
   { href: '/blog', title: 'Guides & Articles', description: 'In-depth articles on funeral costs, bereavement leave rights, and free funeral options' },
