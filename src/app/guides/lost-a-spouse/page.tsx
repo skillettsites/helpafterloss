@@ -46,7 +46,7 @@ export default function LostASpousePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Registering the death</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Register the death within 5 days in England and Wales (8 days in Scotland) at the local register office. You will need the Medical Certificate of Cause of Death. Order at least 6 to 8 certified copies of the death certificate at £11 each: you will need one for each bank, insurance policy, pension provider, the mortgage lender, and various government departments. Use Tell Us Once at the appointment to notify the DWP, HMRC, DVLA, and other bodies in a single step.
+            Register the death within 5 days in England and Wales (8 days in Scotland) at the local register office. You will need the Medical Certificate of Cause of Death. Order at least 6 to 8 certified copies of the death certificate (£12.50 each in England, £11 in Wales, £15 in Scotland): you will need one for each bank, insurance policy, pension provider, the mortgage lender, and various government departments. Use Tell Us Once at the appointment to notify the DWP, HMRC, DVLA, and other bodies in a single step.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -63,7 +63,7 @@ export default function LostASpousePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">What is Bereavement Support Payment?</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Bereavement Support Payment (BSP) is a government benefit for surviving spouses and civil partners who are under State Pension age when their partner dies. It is paid as a lump sum followed by monthly payments for 18 months. It does not count as income for tax purposes and does not affect most other benefits. You must have been legally married or in a civil partnership: it is not available to cohabiting couples (see below).
+            Bereavement Support Payment (BSP) is a government benefit for surviving spouses and civil partners who are under State Pension age when their partner dies. It is paid as a lump sum followed by monthly payments for 18 months. It does not count as income for tax purposes and does not affect most other benefits. You must have been legally married or in a civil partnership. Since 2024, cohabiting partners with dependent children can also claim BSP following a court ruling that extended eligibility.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">

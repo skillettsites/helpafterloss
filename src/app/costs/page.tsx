@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 };
 
 const COSTS = [
-  { item: 'Death certificates', cost: '£11 each', detail: 'Order at least 5 copies when you register. Each bank, insurer, and institution needs an original. Ordering extras later costs more.' },
+  { item: 'Death certificates', cost: '£12.50 each (England)', detail: 'Order at least 5 copies when you register. Each bank, insurer, and institution needs an original. Ordering extras later costs more. Wales: £11, Scotland: £15 (NRS extract).' },
   { item: 'Traditional burial with service', cost: '£4,000 - £8,000', detail: 'Includes funeral director fees, coffin, hearse, burial plot, grave digging, and service. UK average is around £5,400. Prices vary hugely by region and provider.' },
   { item: 'Cremation with service', cost: '£3,000 - £6,500', detail: 'Includes funeral director fees, coffin, hearse, cremation fee, and service. UK average is around £4,200.' },
   { item: 'Direct cremation', cost: '£1,000 - £2,500', detail: 'No service, no mourners present. The most affordable option. UK average is around £1,600. You can hold a separate memorial at any time.' },

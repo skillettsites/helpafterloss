@@ -114,7 +114,7 @@ const QUOTE_ITEMS = [
   { item: 'Minister or officiant', note: 'Church minister, humanist celebrant, or civil celebrant' },
   { item: 'Flowers', note: 'Usually quoted separately; families can provide their own' },
   { item: 'Order of service', note: 'Printing costs; families can often do this themselves' },
-  { item: 'Death certificates', note: '£11 each; order at least 5 when you register the death' },
+  { item: 'Death certificates', note: '£12.50 each in England (£11 Wales, £15 Scotland); order at least 5 when you register the death' },
 ];
 
 const COST_REDUCTION = [

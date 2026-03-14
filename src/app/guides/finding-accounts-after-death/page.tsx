@@ -163,7 +163,7 @@ export default function FindingAccountsAfterDeathPage() {
         <ul className="space-y-3 text-sm text-muted">
           <li className="flex gap-3">
             <span className="text-primary font-bold flex-shrink-0">1.</span>
-            <span><strong className="text-foreground">Certified death certificate</strong> (at least 2 copies). Required by almost every institution. Order extra copies when registering the death (£11 each).</span>
+            <span><strong className="text-foreground">Certified death certificate</strong> (at least 2 copies). Required by almost every institution. Order extra copies when registering the death (£12.50 each in England, £11 in Wales, £15 in Scotland).</span>
           </li>
           <li className="flex gap-3">
             <span className="text-primary font-bold flex-shrink-0">2.</span>

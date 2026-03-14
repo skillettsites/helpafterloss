@@ -29,7 +29,7 @@ const STEPS = [
   {
     step: '2',
     title: 'Register the death (if not already done)',
-    desc: 'In England and Wales, the death must be registered within 5 days (8 days in Scotland). This is usually done by the next of kin, but you may need to assist. You register at the local Register Office for the area where the person died. You will receive a Death Certificate (certified copy of entry) and a green certificate for burial or cremation. Order at least 5 certified copies of the Death Certificate at registration (£11 each), as every bank, insurer, and institution will need one.',
+    desc: 'In England and Wales, the death must be registered within 5 days (8 days in Scotland). This is usually done by the next of kin, but you may need to assist. You register at the local Register Office for the area where the person died. You will receive a Death Certificate (certified copy of entry) and a green certificate for burial or cremation. Order at least 5 certified copies of the Death Certificate at registration (£12.50 each in England, £11 in Wales, £15 in Scotland), as every bank, insurer, and institution will need one.',
   },
   {
     step: '3',
@@ -54,7 +54,7 @@ const STEPS = [
   {
     step: '7',
     title: 'Complete the inheritance tax forms',
-    desc: 'If the net estate is below the IHT threshold (£325,000, or up to £500,000 if a home is left to direct descendants), complete form IHT205 (the short return). If the estate is above the threshold, complete form IHT400 and pay any tax due within 6 months of death. Inheritance tax is charged at 40% on the amount above the threshold. You can pay IHT on property in instalments over 10 years. HMRC must receive IHT400 before you can apply for probate.',
+    desc: 'If the net estate is below the IHT threshold (£325,000, or up to £500,000 if a home is left to direct descendants), report the estate values as part of the probate application itself (no separate IHT form is needed for excepted estates). If the estate is above the threshold, complete form IHT400 and pay any tax due within 6 months of death. Inheritance tax is charged at 40% on the amount above the threshold. You can pay IHT on property in instalments over 10 years. HMRC must receive IHT400 before you can apply for probate.',
   },
   {
     step: '8',

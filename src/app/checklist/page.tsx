@@ -36,7 +36,7 @@ const CATEGORIES = [
     title: 'Registration (within 5 days, 8 in Scotland)',
     items: [
       'Register the death at the local register office',
-      'Order at least 5 certified copies of the death certificate (£11 each)',
+      'Order at least 5 certified copies of the death certificate (£12.50 each in England, £11 in Wales, £15 in Scotland)',
       'Use the Tell Us Once service (not available in Northern Ireland)',
     ],
   },

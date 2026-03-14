@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
+import { bereavementContacts } from '@/lib/bereavement-contacts';
 
 export const dynamic = 'force-dynamic';
 
@@ -7,6 +8,24 @@ function getResend() {
   const key = process.env.RESEND_API_KEY;
   if (!key) throw new Error('RESEND_API_KEY is not configured');
   return new Resend(key);
+}
+
+// Rate limiting: IP-based, max 3 requests per hour
+const rateLimitMap = new Map<string, number[]>();
+const RATE_LIMIT_MAX = 3;
+const RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000; // 1 hour
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now();
+  const timestamps = rateLimitMap.get(ip) || [];
+  const recent = timestamps.filter(t => now - t < RATE_LIMIT_WINDOW_MS);
+  rateLimitMap.set(ip, recent);
+  if (recent.length >= RATE_LIMIT_MAX) {
+    return true;
+  }
+  recent.push(now);
+  rateLimitMap.set(ip, recent);
+  return false;
 }
 
 interface NotifyRequest {
@@ -28,14 +47,27 @@ interface NotifyRequest {
   }[];
 }
 
-function generateEmailBody(data: NotifyRequest, org: NotifyRequest['organisations'][0]): string {
+function formatDateUK(dateStr: string): string {
+  const months = [
+    'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December',
+  ];
+  const parsed = new Date(dateStr);
+  if (isNaN(parsed.getTime())) return dateStr;
+  const day = parsed.getDate();
+  const month = months[parsed.getMonth()];
+  const year = parsed.getFullYear();
+  return `${day} ${month} ${year}`;
+}
+
+function generateEmailBody(data: NotifyRequest, org: NotifyRequest['organisations'][0], formattedDate: string): string {
   const lines: string[] = [];
 
   lines.push(`Dear Sir or Madam,`);
   lines.push('');
   lines.push(`I am writing to notify you of the death of ${data.deceasedName}, who held an account or policy with ${org.name}.`);
   lines.push('');
-  lines.push(`${data.deceasedName} passed away on ${data.dateOfDeath}.`);
+  lines.push(`${data.deceasedName} passed away on ${formattedDate}.`);
   lines.push('');
 
   if (org.accountNumber || org.sortCode || org.customerReference) {
@@ -99,11 +131,30 @@ function generateEmailBody(data: NotifyRequest, org: NotifyRequest['organisation
 
 export async function POST(request: NextRequest) {
   try {
+    // Rate limiting by IP
+    const ip = request.headers.get('x-forwarded-for')?.split(',')[0]?.trim()
+      || request.headers.get('x-real-ip')
+      || 'unknown';
+    if (isRateLimited(ip)) {
+      return NextResponse.json(
+        { error: 'Too many requests. Please try again later.' },
+        { status: 429 }
+      );
+    }
+
     const data: NotifyRequest = await request.json();
 
     // Validate required fields
     if (!data.yourName || !data.yourEmail || !data.deceasedName || !data.dateOfDeath || !data.relationship) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
+    }
+
+    // Validate yourAddress and yourPhone are non-empty
+    if (!data.yourAddress || !data.yourAddress.trim()) {
+      return NextResponse.json({ error: 'Your address is required' }, { status: 400 });
+    }
+    if (!data.yourPhone || !data.yourPhone.trim()) {
+      return NextResponse.json({ error: 'Your phone number is required' }, { status: 400 });
     }
 
     if (!data.organisations || data.organisations.length === 0) {
@@ -120,16 +171,50 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Invalid email address' }, { status: 400 });
     }
 
+    // Format date of death as UK format
+    const formattedDate = formatDateUK(data.dateOfDeath);
+
+    // Server-side organisation lookup: resolve email from slug, never trust client-supplied email
+    const resolvedOrgs = data.organisations.map(org => {
+      const contact = bereavementContacts.find(c => c.slug === org.slug);
+      if (!contact || !contact.bereavementEmail) {
+        return { ...org, resolvedEmail: null as string | null };
+      }
+      return {
+        ...org,
+        name: contact.name,
+        category: contact.category,
+        resolvedEmail: contact.bereavementEmail,
+      };
+    });
+
+    const invalidOrgs = resolvedOrgs.filter(o => !o.resolvedEmail);
+    if (invalidOrgs.length === resolvedOrgs.length) {
+      return NextResponse.json(
+        { error: 'None of the selected organisations have a verified email address on file.' },
+        { status: 400 }
+      );
+    }
+
     const results: { organisation: string; success: boolean; error?: string }[] = [];
 
-    for (const org of data.organisations) {
+    for (const org of resolvedOrgs) {
+      if (!org.resolvedEmail) {
+        results.push({
+          organisation: org.name,
+          success: false,
+          error: 'No verified email address on file for this organisation',
+        });
+        continue;
+      }
+
       try {
-        const body = generateEmailBody(data, org);
+        const body = generateEmailBody(data, org, formattedDate);
 
         const resend = getResend();
         await resend.emails.send({
           from: 'Help After Loss <notifications@helpafterloss.co.uk>',
-          to: [org.email],
+          to: [org.resolvedEmail],
           cc: [data.yourEmail],
           replyTo: data.yourEmail,
           subject: `Bereavement Notification - ${data.deceasedName}`,

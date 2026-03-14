@@ -1126,7 +1126,7 @@ export const bereavementContacts: BereavementContact[] = [
   {
     name: 'Prudential',
     category: 'insurance',
-    bereavementPhone: '0800 000 000',
+    // bereavementPhone removed: 0800 000 000 is a placeholder, not a verified number
     bereavementPhoneHours: 'Mon-Fri 8am-6pm',
     bereavementUrl: 'https://www.mandg.com/pru/customer/en-gb/existing-customers/bereavement-support/notify-us-of-a-death',
     onlineFormUrl: 'https://mypru.pru.co.uk/onlinebereavement/deceased',

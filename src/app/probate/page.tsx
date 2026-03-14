@@ -31,7 +31,7 @@ const FAQ = [
   },
   {
     q: 'How do I apply for probate?',
-    a: 'Value the estate (property, savings, investments, possessions, minus debts). Complete the inheritance tax form (IHT205 for estates under the threshold, IHT400 if above). Submit the probate application (PA1P with a will, PA1A without) to the Probate Registry. Pay the court fee of £300 (free for estates under £5,000). You can apply online at gov.uk.',
+    a: 'Value the estate (property, savings, investments, possessions, minus debts). For estates below the IHT threshold, report the estate values on the probate application itself. If the estate is above the threshold, complete form IHT400. Submit the probate application (PA1P with a will, PA1A without) to the Probate Registry. Pay the court fee of £300 (free for estates under £5,000). You can apply online at gov.uk.',
   },
   {
     q: 'How long does probate take?',
@@ -95,7 +95,7 @@ export default function ProbatePage() {
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-foreground mb-3">How long does probate take?</h2>
         <p className="text-muted leading-relaxed">
-          Probate typically takes 6 to 12 months from application to final distribution of the estate. The application itself takes 8 to 16 weeks to process by the Probate Registry. Simple estates with straightforward assets can be resolved faster, while complex estates involving property sales or inheritance tax often take longer.
+          Probate typically takes 6 to 12 months from application to final distribution of the estate. The application itself takes 12 to 16 weeks to process by the Probate Registry. Simple estates with straightforward assets can be resolved faster, while complex estates involving property sales or inheritance tax often take longer.
         </p>
       </section>
 
@@ -110,7 +110,7 @@ export default function ProbatePage() {
         {[
           { step: '1', title: 'Check if probate is needed', desc: 'Contact each bank and financial institution. If the total in sole-name accounts is below their threshold (varies by bank, usually £5,000-50,000), they may release funds without probate. If the person owned property, probate is almost always needed.' },
           { step: '2', title: 'Value the estate', desc: 'List everything the person owned and owed. Get a property valuation (estate agents can provide free ones). Check all bank statements, investments, pensions, and personal possessions. Subtract debts, mortgages, and loans.' },
-          { step: '3', title: 'Complete the inheritance tax form', desc: 'If the estate is below the IHT threshold (£325,000, or up to £500,000 with the residence nil-rate band), complete form IHT205 (short form). If above, complete form IHT400 (long form). Pay any IHT due within 6 months of death.' },
+          { step: '3', title: 'Complete the inheritance tax form', desc: 'If the estate is below the IHT threshold (£325,000, or up to £500,000 with the residence nil-rate band), report the estate values as part of the probate application itself (no separate IHT form is needed). If above, complete form IHT400 (long form). Pay any IHT due within 6 months of death.' },
           { step: '4', title: 'Apply for probate', desc: 'Complete form PA1P (with a will) or PA1A (without a will). You can apply online at gov.uk/applying-for-probate. You will need the original will, the death certificate, and the completed IHT form. Pay the £300 court fee.' },
           { step: '5', title: 'Wait for the grant', desc: 'The Probate Registry processes the application. Current processing time is 12-16 weeks. You may be asked to attend an interview or provide additional information.' },
           { step: '6', title: 'Administer the estate', desc: 'Once you receive the grant, send copies to banks, the Land Registry, and other institutions. Collect in all assets, pay all debts, and distribute to beneficiaries according to the will (or intestacy rules).' },

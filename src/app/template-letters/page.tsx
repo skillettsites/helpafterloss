@@ -550,7 +550,7 @@ export default function TemplateLettersPage() {
           </li>
           <li className="text-sm text-muted leading-relaxed flex gap-2">
             <span className="text-primary mt-0.5 shrink-0">&#8226;</span>
-            <span><strong>Order enough death certificates.</strong> We recommend at least 5 certified copies. You can order more from the register office at any time (currently £11 each).</span>
+            <span><strong>Order enough death certificates.</strong> We recommend at least 5 certified copies. You can order more from the register office at any time (currently £12.50 each in England, £11 in Wales, £15 in Scotland).</span>
           </li>
           <li className="text-sm text-muted leading-relaxed flex gap-2">
             <span className="text-primary mt-0.5 shrink-0">&#8226;</span>

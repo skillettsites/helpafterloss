@@ -52,7 +52,7 @@ const SECTIONS = [
       },
       {
         title: 'Order death certificate copies',
-        content: 'Order at least 5 certified copies at £11 each. Banks, insurers, pension providers, and solicitors all need an original. It costs more to order extras later.',
+        content: 'Order at least 5 certified copies (£12.50 each in England, £11 in Wales, £15 in Scotland). Banks, insurers, pension providers, and solicitors all need an original. It costs more to order extras later.',
       },
       {
         title: 'Use Tell Us Once',

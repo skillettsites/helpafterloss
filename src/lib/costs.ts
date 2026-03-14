@@ -5,10 +5,10 @@ type A = Partial<UserAnswers>;
 export const COST_ESTIMATES: CostEstimate[] = [
   {
     item: 'Death certificates',
-    low: 33,
-    mid: 55,
-    high: 110,
-    notes: '£11 each. We recommend ordering at least 5 copies. Banks, solicitors, and insurers each need an original.',
+    low: 37,
+    mid: 62,
+    high: 125,
+    notes: '£12.50 each in England (£11 in Wales, £15 in Scotland). We recommend ordering at least 5 copies. Banks, solicitors, and insurers each need an original.',
     savingTip: 'Order all copies when you register the death. It costs more to order extras later.',
     showIf: () => true,
   },
@@ -48,12 +48,20 @@ export const COST_ESTIMATES: CostEstimate[] = [
     showIf: (a: A) => a.funeralPreference === 'greenBurial' && !a.hasFuneralPlan,
   },
   {
+    item: 'Direct burial (no service)',
+    low: 1500,
+    mid: 2500,
+    high: 4000,
+    notes: 'No service, no mourners present. Costs vary by location, mainly driven by the burial plot fee.',
+    showIf: (a: A) => a.funeralPreference === 'directBurial' && !a.hasFuneralPlan,
+  },
+  {
     item: 'Funeral (estimated, type not yet decided)',
     low: 1600,
     mid: 4000,
     high: 8000,
     notes: 'Costs depend on the type of funeral. Direct cremation starts from around £1,600; traditional funerals average £4,000-5,500.',
-    showIf: (a: A) => (a.funeralPreference === 'undecided' || a.funeralPreference === 'directBurial') && !a.hasFuneralPlan,
+    showIf: (a: A) => a.funeralPreference === 'undecided' && !a.hasFuneralPlan,
   },
   {
     item: 'Probate court fee',

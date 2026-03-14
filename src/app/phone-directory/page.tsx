@@ -323,8 +323,8 @@ const CATEGORIES: PhoneCategory[] = [
       },
       {
         name: 'Prudential',
-        phone: '08000000000',
-        phoneDisplay: '0800 000 000',
+        phone: '',
+        phoneDisplay: 'See website',
         hours: 'Mon to Fri, 8:30am to 6pm.',
         script: 'Hello, I am reporting the death of [name] who held a policy with you. The policy number is [number] and the date of death was [date]. I am the [executor/beneficiary].',
         docsNeeded: ['Policy number', 'Death certificate', 'Your ID'],

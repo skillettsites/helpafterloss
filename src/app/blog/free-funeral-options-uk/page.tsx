@@ -180,13 +180,13 @@ export default function FreeFuneralOptionsPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Is it legal?</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Yes. In England and Wales, there is no legal requirement to use a funeral director. You can legally keep the body at home (in appropriate conditions), build your own coffin, arrange transport in your own vehicle, and contact a crematorium or burial ground directly to book. You will need the death certificate and, for cremation, the correct medical certificates (Form Cremation 4 and 5, signed by two doctors). The Natural Death Centre (naturaldeath.org.uk) provides detailed, practical guidance for DIY funerals.
+            Yes. In England and Wales, there is no legal requirement to use a funeral director. You can legally keep the body at home (in appropriate conditions), build your own coffin, arrange transport in your own vehicle, and contact a crematorium or burial ground directly to book. You will need the death certificate and, for cremation, a Medical Certificate of Cause of Death (MCCD) completed by the attending practitioner and scrutinised by a Medical Examiner. Since September 2024, the old system of two separate cremation forms (Form Cremation 4 and 5, signed by two doctors) has been replaced by the Medical Examiner system, removing those fees. The Natural Death Centre (naturaldeath.org.uk) provides detailed, practical guidance for DIY funerals.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">What a DIY funeral might cost</h3>
           <p className="text-sm text-muted leading-relaxed">
-            The cremation fee alone (booked directly with the crematorium) is typically £700-£1,200 depending on the area. A simple cardboard or wicker coffin costs £100-£400. Medical certificates cost around £170 (two doctors, each charging £82 under the current BMA schedule). Total: roughly £1,000-£1,800 for a DIY cremation. A DIY burial in a natural burial ground can cost £800-£1,500 for the plot and digging fees.
+            The cremation fee alone (booked directly with the crematorium) is typically £700-£1,200 depending on the area. A simple cardboard or wicker coffin costs £100-£400. Since September 2024, the Medical Examiner system has replaced the old two-doctor cremation certificate process, so there is no longer a separate fee for cremation medical forms. Total: roughly £800-£1,600 for a DIY cremation. A DIY burial in a natural burial ground can cost £800-£1,500 for the plot and digging fees.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">

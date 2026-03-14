@@ -65,7 +65,7 @@ const PRIORITY_ORDER = [
   { priority: '4', category: 'Preferential debts', detail: 'Employee wages owed by the deceased' },
   { priority: '5', category: 'Unsecured debts', detail: 'Credit cards, personal loans, overdrafts, utility bills' },
   { priority: '6', category: 'Interest on unsecured debts', detail: 'Any interest that accrued after the date of death' },
-  { priority: '7', category: 'Deferred debts', detail: 'Loans from the deceased to themselves (rare)' },
+  { priority: '7', category: 'Deferred debts', detail: 'Debts owed to the deceased\'s spouse or civil partner' },
 ];
 
 const FAQ = [

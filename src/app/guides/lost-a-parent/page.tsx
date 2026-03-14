@@ -52,7 +52,7 @@ export default function LostAParentPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Registering the death</h3>
           <p className="text-sm text-muted leading-relaxed">
-            In England and Wales, the death must be registered within 5 days at the register office in the area where your parent died. In Scotland, you have 8 days. You will need the Medical Certificate of Cause of Death from the doctor or hospital. Order at least 5 certified copies of the death certificate at £11 each, as banks, insurers, and pension providers each need an original. Use Tell Us Once at the appointment to notify government departments in a single step.
+            In England and Wales, the death must be registered within 5 days at the register office in the area where your parent died. In Scotland, you have 8 days. You will need the Medical Certificate of Cause of Death from the doctor or hospital. Order at least 5 certified copies of the death certificate (£12.50 each in England, £11 in Wales, £15 in Scotland), as banks, insurers, and pension providers each need an original. Use Tell Us Once at the appointment to notify government departments in a single step.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">

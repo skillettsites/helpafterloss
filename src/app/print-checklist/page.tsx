@@ -73,7 +73,7 @@ const SECTIONS: ChecklistSection[] = [
       },
       {
         task: 'Order at least 5 certified copies of the death certificate',
-        note: 'Each one costs £11. Banks, insurers, pension providers, and solicitors will each need an original. Order more than you think you need.',
+        note: 'Each one costs £12.50 in England (£11 in Wales, £15 in Scotland). Banks, insurers, pension providers, and solicitors will each need an original. Order more than you think you need.',
       },
       {
         task: 'Use the Tell Us Once service',
@@ -149,7 +149,7 @@ const SECTIONS: ChecklistSection[] = [
       },
       {
         task: 'Complete the inheritance tax forms',
-        note: 'If the estate is below £325,000 (or £500,000 with the residence nil-rate band), use form IHT205. If above, use form IHT400. You must complete this before probate is granted.',
+        note: 'If the estate is below the IHT threshold (£325,000, or up to £500,000 with the residence nil-rate band), report the estate values on the probate application itself. If above, complete form IHT400. You must complete this before probate is granted.',
       },
       {
         task: 'Value the estate',

@@ -266,6 +266,7 @@ export const QUESTIONS: Question[] = [
     type: 'boolean',
     title: 'Did the person have any children or dependants under 18?',
     subtitle: 'This affects Child Benefit, guardianship arrangements, and other support.',
+    showIf: (a: Answers) => a.deceasedAge !== 'under18',
     required: true,
     section: 'financial',
   },
@@ -319,7 +320,7 @@ export const QUESTIONS: Question[] = [
     subtitle: 'You may be eligible for Bereavement Support Payment, which provides a lump sum and monthly payments for 18 months.',
     showIf: (a: Answers) => a.relationship === 'spouse' || a.relationship === 'civilPartner',
     required: true,
-    section: 'funeral',
+    section: 'financial',
   },
 ];
 

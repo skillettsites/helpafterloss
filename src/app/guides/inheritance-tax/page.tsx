@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const SECTIONS = [
   {
     title: 'Current thresholds',
-    content: 'The nil-rate band is £325,000. This means the first £325,000 of an estate is tax-free. On top of that, there is the residence nil-rate band of £175,000, which applies if the deceased\'s home is left to direct descendants (children, grandchildren, stepchildren). This gives a total threshold of £500,000 per person. Married couples and civil partners can transfer any unused threshold to the surviving partner, giving a combined threshold of up to £1,000,000. These thresholds have been frozen since 2009 (nil-rate band) and are set to remain at these levels until at least April 2028.',
+    content: 'The nil-rate band is £325,000. This means the first £325,000 of an estate is tax-free. On top of that, there is the residence nil-rate band of £175,000, which applies if the deceased\'s home is left to direct descendants (children, grandchildren, stepchildren). This gives a total threshold of £500,000 per person. Married couples and civil partners can transfer any unused threshold to the surviving partner, giving a combined threshold of up to £1,000,000. These thresholds have been frozen since 2009 (nil-rate band) and are set to remain at these levels until at least April 2030.',
   },
   {
     title: 'The rate',
@@ -35,7 +35,7 @@ const SECTIONS = [
   },
   {
     title: 'What doesn\'t count (exemptions)',
-    content: 'Several important exemptions can reduce or eliminate the IHT bill. Everything left to a spouse or civil partner is completely exempt from IHT, with no upper limit. Everything left to a qualifying charity is exempt. Business Property Relief can reduce the value of qualifying business assets by 50% or 100%. Agricultural Property Relief works similarly for qualifying farmland. Assets left to political parties (above a minimum threshold) are also exempt.',
+    content: 'Several important exemptions can reduce or eliminate the IHT bill. Everything left to a spouse or civil partner is completely exempt from IHT, with no upper limit. Everything left to a qualifying charity is exempt. Business Property Relief can reduce the value of qualifying business assets by 50% or 100%. Agricultural Property Relief works similarly for qualifying farmland. Note: from 6 April 2026, 100% BPR and APR relief is capped at the first £1 million of combined qualifying business and agricultural property, with 50% relief on the excess. Assets left to political parties (above a minimum threshold) are also exempt.',
   },
   {
     title: 'The 7-year rule for gifts',
@@ -47,7 +47,7 @@ const SECTIONS = [
   },
   {
     title: 'The IHT400 form',
-    content: 'If the estate is above the IHT threshold, or involves complex assets, you must complete form IHT400 and submit it to HMRC before applying for probate. This is a detailed form (over 20 pages plus supplementary schedules) that requires a full breakdown of everything the deceased owned and owed. Common mistakes include: forgetting to include gifts made in the last 7 years, undervaluing property (HMRC will check), missing joint assets, and not claiming all available exemptions. For simpler estates below the threshold, the shorter IHT205 (or the online excepted estate form) is used instead.',
+    content: 'If the estate is above the IHT threshold, or involves complex assets, you must complete form IHT400 and submit it to HMRC before applying for probate. This is a detailed form (over 20 pages plus supplementary schedules) that requires a full breakdown of everything the deceased owned and owed. Common mistakes include: forgetting to include gifts made in the last 7 years, undervaluing property (HMRC will check), missing joint assets, and not claiming all available exemptions. For simpler estates below the threshold (excepted estates), the estate values are reported as part of the probate application itself, with no separate IHT form needed.',
   },
   {
     title: 'Deadlines and penalties',
@@ -79,7 +79,7 @@ const FAQ = [
   },
   {
     q: 'What is the inheritance tax threshold for 2026?',
-    a: 'The nil-rate band remains at £325,000, where it has been since 2009. The residence nil-rate band is £175,000. Together, they give an individual threshold of £500,000, or £1,000,000 for a married couple or civil partnership where the first to die did not use their allowances. The government has confirmed these thresholds will remain frozen until at least April 2028.',
+    a: 'The nil-rate band remains at £325,000, where it has been since 2009. The residence nil-rate band is £175,000. Together, they give an individual threshold of £500,000, or £1,000,000 for a married couple or civil partnership where the first to die did not use their allowances. The government has confirmed these thresholds will remain frozen until at least April 2030.',
   },
   {
     q: 'How do I reduce inheritance tax?',

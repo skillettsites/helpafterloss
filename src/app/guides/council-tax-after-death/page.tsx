@@ -39,7 +39,7 @@ const SECTIONS = [
   },
   {
     title: 'Second adult rebate',
-    content: 'If another adult remains in the property but is on a low income (for example, receiving Jobseeker\'s Allowance, Income Support, or Pension Credit), you may be able to claim a second adult rebate instead of the single person discount. This is a separate scheme that varies between councils, so check with your local authority. In some cases it is more generous than the 25% single person discount, depending on the second adult\'s income level.',
+    content: 'The second adult rebate was abolished in England in April 2013 as part of council tax benefit reforms. It still exists in Wales and some parts of Scotland. If you are in Wales or Scotland and another adult remains in the property but is on a low income (for example, receiving Jobseeker\'s Allowance, Income Support, or Pension Credit), you may be able to claim a second adult rebate instead of the single person discount. Check with your local authority whether this applies in your area. In England, the 25% single person discount is the main reduction available if you become the sole adult occupant.',
   },
   {
     title: 'Council tax reduction (benefit) changes',

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 };
 
 const COST_SUMMARY = [
-  { item: 'Death certificates', low: '£55', high: '£110+', note: '£11 each; order at least 5' },
+  { item: 'Death certificates', low: '£62.50', high: '£125+', note: '£12.50 each in England (£11 Wales, £15 Scotland); order at least 5' },
   { item: 'Direct cremation', low: '£1,000', high: '£2,500', note: 'No service; most affordable' },
   { item: 'Cremation with service', low: '£3,000', high: '£6,500', note: 'UK average £4,184 (SunLife)' },
   { item: 'Burial with service', low: '£4,000', high: '£9,000+', note: 'UK average £5,423 (SunLife)' },
@@ -190,9 +190,9 @@ export default function TrueCostPage() {
         </div>
 
         <div className="bg-card rounded-xl border border-border p-6">
-          <h3 className="font-semibold text-foreground mb-2">Death certificates: £11 each</h3>
+          <h3 className="font-semibold text-foreground mb-2">Death certificates: £12.50 each (England)</h3>
           <p className="text-sm text-muted leading-relaxed">
-            In England and Wales, each certified copy of a death certificate costs £11. In Scotland, the fee is £10. Most families need at least five: one each for the main bank account, any additional savings or investment accounts, the pension provider, the mortgage lender or insurer, and one spare. Ordering them all at registration is cheaper and faster than ordering them individually later through the General Register Office.
+            In England, each certified copy of a death certificate costs £12.50. In Wales the fee is £11, and in Scotland the fee is £15 for an extract from National Records of Scotland. Most families need at least five: one each for the main bank account, any additional savings or investment accounts, the pension provider, the mortgage lender or insurer, and one spare. Ordering them all at registration is cheaper and faster than ordering them individually later through the General Register Office.
           </p>
         </div>
 
