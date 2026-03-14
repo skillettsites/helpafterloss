@@ -58,6 +58,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/guides/helping-someone-grieve`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/counties`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/notify-for-me`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/donate`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
   ];
 
   const cityPages: MetadataRoute.Sitemap = cities.map(city => ({
