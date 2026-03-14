@@ -5,6 +5,7 @@ import { Navigation } from '@/components/Navigation';
 import { Footer } from '@/components/Footer';
 import { EmergencyBanner } from '@/components/EmergencyBanner';
 import { Providers } from '@/components/Providers';
+import { GoogleAnalytics } from '@/components/GoogleAnalytics';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -56,6 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="geo.region" content="GB" />
         <meta name="geo.placename" content="United Kingdom" />
       </head>
+      <GoogleAnalytics />
       <body className={`${geistSans.variable} antialiased bg-background text-foreground`}>
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-white focus:p-3 focus:rounded-lg focus:shadow-lg focus:text-primary">
           Skip to main content
