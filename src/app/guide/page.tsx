@@ -158,6 +158,24 @@ export default function GuidePage() {
         Get Your Personalised Guide
       </Link>
 
+      {/* Nation-specific guides */}
+      <div className="bg-card rounded-xl border border-border p-6 mb-6">
+        <h2 className="font-semibold text-foreground mb-3">In Scotland or Northern Ireland?</h2>
+        <p className="text-sm text-muted leading-relaxed mb-3">
+          The process differs depending on where the death occurred. This guide covers England and Wales. For nation-specific guidance, see:
+        </p>
+        <div className="flex flex-col sm:flex-row gap-3">
+          <Link href="/guide/scotland" className="flex-1 bg-primary-light rounded-lg p-4 hover:bg-primary/10 transition-colors group">
+            <p className="font-semibold text-foreground group-hover:text-primary transition-colors">Scotland</p>
+            <p className="text-xs text-muted mt-1">8-day registration, Procurator Fiscal, Confirmation, legal rights</p>
+          </Link>
+          <Link href="/guide/northern-ireland" className="flex-1 bg-primary-light rounded-lg p-4 hover:bg-primary/10 transition-colors group">
+            <p className="font-semibold text-foreground group-hover:text-primary transition-colors">Northern Ireland</p>
+            <p className="text-xs text-muted mt-1">No Tell Us Once, Belfast Probate Office, different fees and rules</p>
+          </Link>
+        </div>
+      </div>
+
       {/* Table of contents */}
       <nav className="bg-card rounded-xl border border-border p-6 mb-10" aria-label="Guide sections">
         <h2 className="font-semibold text-foreground mb-3">In this guide</h2>

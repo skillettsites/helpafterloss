@@ -105,6 +105,9 @@ export default function IntestacyPage() {
           <p className="text-sm text-muted leading-relaxed">
             The remainder is distributed under intestacy rules similar to (but not identical to) England and Wales.
           </p>
+          <p className="text-sm mt-4">
+            <Link href="/guide/scotland" className="text-primary hover:underline font-medium">Read our full Scotland guide</Link> for detailed coverage of prior rights, legal rights, Confirmation, and the Procurator Fiscal.
+          </p>
         </div>
       </section>
 
@@ -114,6 +117,9 @@ export default function IntestacyPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <p className="text-sm text-muted leading-relaxed">
             Northern Ireland follows similar intestacy rules to England and Wales but with different financial thresholds. The spouse gets personal belongings and a statutory legacy amount (currently £250,000), plus a share of the remainder depending on whether there are children.
+          </p>
+          <p className="text-sm mt-4">
+            <Link href="/guide/northern-ireland" className="text-primary hover:underline font-medium">Read our full Northern Ireland guide</Link> for detailed coverage of intestacy, probate through the Belfast Probate Office, and NI-specific contacts.
           </p>
         </div>
       </section>

@@ -56,6 +56,8 @@ const ALL_GUIDES: Guide[] = [
   { href: '/blog/what-tell-us-once-doesnt-cover', title: "What Tell Us Once Doesn't Cover", description: 'The full list of organisations you must contact manually after Tell Us Once' },
   { href: '/blog/bank-probate-thresholds-2026', title: 'Bank Probate Thresholds 2026', description: 'How much each bank will release without a grant of probate' },
   { href: '/blog/death-certificate-how-many-copies', title: 'Death Certificates: How Many?', description: 'How many certified copies to order and who needs one' },
+  { href: '/guide/scotland', title: 'Scotland Guide', description: 'Registration, Procurator Fiscal, Confirmation, and Scottish intestacy rules' },
+  { href: '/guide/northern-ireland', title: 'Northern Ireland Guide', description: 'NISRA registration, Belfast probate, no Tell Us Once, and NI intestacy rules' },
 ];
 
 interface RelatedGuidesProps {

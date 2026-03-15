@@ -60,6 +60,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/counties`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/notify-for-me`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/donate`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${baseUrl}/guide/scotland`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/guide/northern-ireland`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
   ];
 
   const cityPages: MetadataRoute.Sitemap = cities.map(city => ({

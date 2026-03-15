@@ -133,6 +133,24 @@ export default function ProbatePage() {
         </p>
       </div>
 
+      {/* Nation-specific guides */}
+      <div className="bg-card rounded-xl border border-border p-6 mb-12">
+        <h2 className="font-semibold text-foreground mb-3">Probate in Scotland or Northern Ireland?</h2>
+        <p className="text-sm text-muted leading-relaxed mb-3">
+          The process above covers England and Wales. Scotland and Northern Ireland have different systems:
+        </p>
+        <div className="flex flex-col sm:flex-row gap-3">
+          <Link href="/guide/scotland" className="flex-1 bg-primary-light rounded-lg p-4 hover:bg-primary/10 transition-colors group">
+            <p className="font-semibold text-foreground group-hover:text-primary transition-colors">Scotland</p>
+            <p className="text-xs text-muted mt-1">Confirmation via Sheriff Court, small estates under £36,000, legal rights</p>
+          </Link>
+          <Link href="/guide/northern-ireland" className="flex-1 bg-primary-light rounded-lg p-4 hover:bg-primary/10 transition-colors group">
+            <p className="font-semibold text-foreground group-hover:text-primary transition-colors">Northern Ireland</p>
+            <p className="text-xs text-muted mt-1">Belfast Probate Office, sliding scale fees, no online applications</p>
+          </Link>
+        </div>
+      </div>
+
       {/* FAQ */}
       <h2 className="text-2xl font-bold text-foreground mb-6">Common questions about probate</h2>
       <div className="space-y-4 mb-12">
