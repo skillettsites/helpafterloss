@@ -190,6 +190,7 @@ export default function HomePage() {
               { label: 'Life insurance', href: '/guide#financial' },
               { label: 'Property & mortgage', href: '/guide#property' },
               { label: 'Council tax', href: '/template-letters#council-tax' },
+              { label: 'Document vault', href: '/document-vault' },
               { label: 'Digital accounts', href: '/digital-legacy' },
               { label: 'Benefits & support', href: '/support' },
               { label: 'Cultural guidance', href: '/cultural-guide' },
