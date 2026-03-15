@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'Thank You for Your Donation',
   description: 'Thank you for supporting Help After Loss. Your donation helps keep this resource free for everyone.',
   robots: { index: false },
+  alternates: { canonical: 'https://helpafterloss.co.uk/donate/thank-you' },
 };
 
 export default function ThankYouPage() {
