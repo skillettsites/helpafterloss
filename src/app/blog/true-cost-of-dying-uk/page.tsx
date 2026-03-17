@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { TableOfContents } from '@/components/TableOfContents';
 import { RelatedGuides } from '@/components/RelatedGuides';
 
 export const metadata: Metadata = {
@@ -111,7 +112,11 @@ export default function TrueCostPage() {
         { label: 'The True Cost of Dying in the UK' }
       ]} />
 
-      <p className="text-xs text-muted uppercase tracking-wide mb-3">March 2026</p>
+      <div className="flex items-center gap-3 text-xs text-muted mb-3">
+        <span>Updated 17 March 2026</span>
+        <span aria-hidden="true">|</span>
+        <span>12 min read</span>
+      </div>
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         The True Cost of Dying in the UK in 2026
       </h1>
@@ -119,8 +124,28 @@ export default function TrueCostPage() {
         When someone dies, the financial reality can come as a shock. The average UK funeral now costs between £4,000 and £5,500. But the funeral is only the start. By the time you include probate, solicitors, certificates, and all the smaller costs nobody warns you about, the total can easily reach £10,000 to £15,000 or more. This article sets out every cost you are likely to face, with real 2026 figures, so you can plan and avoid surprises.
       </p>
 
+      <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
+        <h2 className="text-sm font-semibold text-amber-900 mb-3">Key takeaways</h2>
+        <ul className="space-y-1.5 text-sm text-amber-800">
+          <li className="flex gap-2"><span className="font-bold">+</span> The average UK funeral costs £4,000-£5,500, but total costs including probate and legal fees can reach £10,000-£15,000</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> Direct cremation (from £1,000) saves thousands compared to a traditional funeral</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> DIY probate can save £2,000-£15,000 in solicitor fees for straightforward estates</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> Hidden costs like property maintenance, storage, and time off work are often overlooked</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> If you are on means-tested benefits, the DWP Funeral Expenses Payment can cover most costs</li>
+        </ul>
+      </div>
+
+      <TableOfContents items={[
+        { id: 'at-a-glance', label: 'At a glance: typical total costs' },
+        { id: 'full-breakdown', label: 'Full cost breakdown' },
+        { id: 'funeral-costs', label: 'Funeral costs in detail' },
+        { id: 'hidden-costs', label: 'Hidden costs people forget' },
+        { id: 'reduce-costs', label: 'How to reduce costs' },
+        { id: 'financial-help', label: 'Financial help that may be available' },
+      ]} />
+
       {/* At a glance summary */}
-      <h2 className="text-2xl font-bold text-foreground mb-4">At a glance: typical total costs</h2>
+      <h2 id="at-a-glance" className="text-2xl font-bold text-foreground mb-4">At a glance: typical total costs</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
         <div className="bg-card rounded-xl border border-border p-5 text-center">
           <p className="text-2xl font-bold text-primary">£2,000+</p>
@@ -137,7 +162,7 @@ export default function TrueCostPage() {
       </div>
 
       {/* Full cost table */}
-      <h2 className="text-2xl font-bold text-foreground mb-2">Full cost breakdown</h2>
+      <h2 id="full-breakdown" className="text-2xl font-bold text-foreground mb-2">Full cost breakdown</h2>
       <p className="text-sm text-muted mb-6">
         Funeral cost averages are from the SunLife Cost of Dying Report. Other figures reflect typical UK market rates as of early 2026.
       </p>
@@ -165,13 +190,13 @@ export default function TrueCostPage() {
       </div>
 
       {/* Detailed breakdown sections */}
-      <h2 className="text-2xl font-bold text-foreground mb-6">Funeral costs in detail</h2>
+      <h2 id="funeral-costs" className="text-2xl font-bold text-foreground mb-6">Funeral costs in detail</h2>
 
       <div className="space-y-4 mb-12">
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Direct cremation: £1,000-£2,500</h3>
           <p className="text-sm text-muted leading-relaxed">
-            The UK average for a direct cremation was £1,647 in the most recent SunLife Cost of Dying Report. With a direct cremation, there is no service at the crematorium. The body is collected, cremated, and the ashes are returned. It is a dignified option, and there is nothing to stop you holding a separate memorial service at a later date, in a garden, a church hall, or anywhere that meant something to the person.
+            The UK average for a direct cremation was £1,647 in the most recent SunLife Cost of Dying Report. With a direct cremation, there is no service at the crematorium. The body is collected, cremated, and the ashes are returned. It is a dignified option, and there is nothing to stop you holding a separate memorial service at a later date, in a garden, a church hall, or anywhere that meant something to the person.{' '}See our <Link href="/blog/free-funeral-options-uk" className="text-primary hover:underline">guide to free and low-cost funeral options</Link> for more ways to reduce costs.
           </p>
         </div>
 
@@ -192,7 +217,7 @@ export default function TrueCostPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Death certificates: £12.50 each (England)</h3>
           <p className="text-sm text-muted leading-relaxed">
-            In England, each certified copy of a death certificate costs £12.50. In Wales the fee is £11, and in Scotland the fee is £15 for an extract from National Records of Scotland. Most families need at least five: one each for the main bank account, any additional savings or investment accounts, the pension provider, the mortgage lender or insurer, and one spare. Ordering them all at registration is cheaper and faster than ordering them individually later through the General Register Office.
+            In England, each certified copy of a death certificate costs £12.50. In Wales the fee is £11, and in Scotland the fee is £15 for an extract from National Records of Scotland. Most families need at least five: one each for the main bank account, any additional savings or investment accounts, the pension provider, the mortgage lender or insurer, and one spare. Ordering them all at registration is cheaper and faster than ordering them individually later through the General Register Office.{' '}Our <Link href="/blog/death-certificate-how-many-copies" className="text-primary hover:underline">death certificate guide</Link> explains how many copies you need and why.
           </p>
         </div>
 
@@ -206,7 +231,7 @@ export default function TrueCostPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Probate and legal costs</h3>
           <p className="text-sm text-muted leading-relaxed">
-            The probate court fee is £300 for any estate valued over £5,000. If the estate is below £5,000, there is no fee. If you use a solicitor to handle probate, they typically charge 1-5% of the estate value, or hourly rates of £150-£400. For a £300,000 estate, that means £3,000-£15,000 in solicitor fees. Most straightforward estates can be handled without a solicitor using the government's online probate service.
+            The probate court fee is £300 for any estate valued over £5,000. If the estate is below £5,000, there is no fee. If you use a solicitor to handle probate, they typically charge 1-5% of the estate value, or hourly rates of £150-£400. For a £300,000 estate, that means £3,000-£15,000 in solicitor fees. Most straightforward estates can be handled without a solicitor using the government's online probate service.{' '}See our <Link href="/blog/bank-probate-thresholds-2026" className="text-primary hover:underline">bank probate thresholds guide</Link> for how much each bank will release without probate.
           </p>
         </div>
 
@@ -219,7 +244,7 @@ export default function TrueCostPage() {
       </div>
 
       {/* Hidden costs */}
-      <h2 className="text-2xl font-bold text-foreground mb-4">Hidden costs people forget</h2>
+      <h2 id="hidden-costs" className="text-2xl font-bold text-foreground mb-4">Hidden costs people forget</h2>
       <p className="text-sm text-muted mb-6">
         These are the costs that rarely appear in any guide but can add significantly to the total.
       </p>
@@ -233,7 +258,7 @@ export default function TrueCostPage() {
       </div>
 
       {/* Ways to reduce costs */}
-      <h2 className="text-2xl font-bold text-foreground mb-4">How to reduce costs</h2>
+      <h2 id="reduce-costs" className="text-2xl font-bold text-foreground mb-4">How to reduce costs</h2>
       <div className="space-y-4 mb-12">
         {SAVINGS_TIPS.map((tip, i) => (
           <div key={i} className="bg-success-light rounded-xl p-6">
@@ -244,7 +269,7 @@ export default function TrueCostPage() {
       </div>
 
       {/* Financial help */}
-      <h2 className="text-2xl font-bold text-foreground mb-4">Financial help that may be available</h2>
+      <h2 id="financial-help" className="text-2xl font-bold text-foreground mb-4">Financial help that may be available</h2>
       <div className="space-y-4 mb-12">
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">DWP Funeral Expenses Payment</h3>
@@ -296,7 +321,7 @@ export default function TrueCostPage() {
             headline: 'The True Cost of Dying in the UK in 2026',
             description: 'A definitive breakdown of every cost you may face when someone dies in the UK, with real 2026 figures and practical ways to reduce costs.',
             datePublished: '2026-03-14',
-            dateModified: '2026-03-14',
+            dateModified: '2026-03-17',
             author: { '@type': 'Organization', name: 'Help After Loss' },
             publisher: {
               '@type': 'Organization',

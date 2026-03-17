@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { TableOfContents } from '@/components/TableOfContents';
 import { RelatedGuides } from '@/components/RelatedGuides';
 
 export const metadata: Metadata = {
@@ -69,13 +70,39 @@ export default function DeathCertificateHowManyCopiesPage() {
         { label: 'How Many Death Certificates Do I Need?' }
       ]} />
 
-      <p className="text-xs text-muted uppercase tracking-wide mb-3">March 2026</p>
+      <div className="flex items-center gap-3 text-xs text-muted mb-3">
+        <span>Updated 17 March 2026</span>
+        <span aria-hidden="true">|</span>
+        <span>8 min read</span>
+      </div>
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         How Many Death Certificates Do I Need? (2026 Guide)
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
         Most families need <strong className="text-foreground">8 to 12 certified copies</strong> of the death certificate. Each copy costs <strong className="text-foreground">£12.50</strong> in England (£11 in Wales), so you should budget between £100 and £150. The exact number depends on how many banks, insurers, pension providers, and other organisations you need to notify. It is far better to order too many than too few, because sending certificates to multiple organisations at the same time can save you weeks of waiting.
       </p>
+
+      <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
+        <h2 className="text-sm font-semibold text-amber-900 mb-3">Key takeaways</h2>
+        <ul className="space-y-1.5 text-sm text-amber-800">
+          <li className="flex gap-2"><span className="font-bold">+</span> Most families need 8-12 certified copies, costing £100-£150 in England</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> Each copy costs £12.50 in England, £11 in Wales, £15 in Scotland</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> Order copies at registration for the fastest, cheapest option</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> Banks, insurers, and pension providers all need their own original certified copy</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> The Death Notification Service can reduce the number you need for banks</li>
+        </ul>
+      </div>
+
+      <TableOfContents items={[
+        { id: 'who-needs-copy', label: 'Who needs a certified copy?' },
+        { id: 'certified-vs-originals', label: 'Certified copies vs originals vs photocopies' },
+        { id: 'how-to-order', label: 'How to order death certificates' },
+        { id: 'cost-breakdown', label: 'Cost breakdown by number of copies' },
+        { id: 'tips', label: 'Tips for saving time and money' },
+        { id: 'scotland', label: 'Scotland: what is different?' },
+        { id: 'northern-ireland', label: 'Northern Ireland: what is different?' },
+        { id: 'faqs', label: 'Frequently asked questions' },
+      ]} />
 
       {/* Quick summary box */}
       <div className="bg-card rounded-xl border border-border p-6 mb-10">
@@ -97,7 +124,7 @@ export default function DeathCertificateHowManyCopiesPage() {
       </div>
 
       {/* Who needs a copy */}
-      <h2 className="text-2xl font-bold text-foreground mb-4">Who needs a certified copy?</h2>
+      <h2 id="who-needs-copy" className="text-2xl font-bold text-foreground mb-4">Who needs a certified copy?</h2>
       <p className="text-sm text-muted mb-6">
         Every organisation that holds money, property, or an account in the deceased person's name will need to see a certified copy of the death certificate before they release funds or close the account. Here is a typical list:
       </p>
@@ -111,7 +138,7 @@ export default function DeathCertificateHowManyCopiesPage() {
       </div>
 
       {/* Certified copies vs originals */}
-      <h2 className="text-2xl font-bold text-foreground mb-4">Certified copies vs originals vs photocopies</h2>
+      <h2 id="certified-vs-originals" className="text-2xl font-bold text-foreground mb-4">Certified copies vs originals vs photocopies</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed mb-4">
           There is often confusion about these terms, so here is what they mean in practice:
@@ -139,7 +166,7 @@ export default function DeathCertificateHowManyCopiesPage() {
       </div>
 
       {/* How to order */}
-      <h2 className="text-2xl font-bold text-foreground mb-4">How to order death certificates</h2>
+      <h2 id="how-to-order" className="text-2xl font-bold text-foreground mb-4">How to order death certificates</h2>
       <div className="space-y-4 mb-12">
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">1. At registration (cheapest and fastest)</h3>
@@ -168,7 +195,7 @@ export default function DeathCertificateHowManyCopiesPage() {
       </div>
 
       {/* Cost breakdown table */}
-      <h2 className="text-2xl font-bold text-foreground mb-4">Cost breakdown by number of copies</h2>
+      <h2 id="cost-breakdown" className="text-2xl font-bold text-foreground mb-4">Cost breakdown by number of copies</h2>
       <div className="overflow-x-auto mb-12">
         <table className="w-full text-sm">
           <thead>
@@ -198,7 +225,7 @@ export default function DeathCertificateHowManyCopiesPage() {
       </div>
 
       {/* Tips */}
-      <h2 className="text-2xl font-bold text-foreground mb-4">Tips for saving time and money</h2>
+      <h2 id="tips" className="text-2xl font-bold text-foreground mb-4">Tips for saving time and money</h2>
       <div className="space-y-4 mb-12">
         <div className="bg-success-light rounded-xl p-6">
           <h3 className="font-semibold text-green-800 mb-2">Order extra copies at registration</h3>
@@ -233,7 +260,7 @@ export default function DeathCertificateHowManyCopiesPage() {
       </div>
 
       {/* Scotland */}
-      <h2 className="text-2xl font-bold text-foreground mb-4">Scotland: what is different?</h2>
+      <h2 id="scotland" className="text-2xl font-bold text-foreground mb-4">Scotland: what is different?</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-6">
         <p className="text-sm text-muted leading-relaxed mb-4">
           In Scotland, the process is broadly similar but there are a few key differences:
@@ -247,7 +274,7 @@ export default function DeathCertificateHowManyCopiesPage() {
       </div>
 
       {/* Northern Ireland */}
-      <h2 className="text-2xl font-bold text-foreground mb-4">Northern Ireland: what is different?</h2>
+      <h2 id="northern-ireland" className="text-2xl font-bold text-foreground mb-4">Northern Ireland: what is different?</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed mb-4">
           In Northern Ireland, the process is handled by the General Register Office for Northern Ireland (GRONI):
@@ -262,7 +289,7 @@ export default function DeathCertificateHowManyCopiesPage() {
       </div>
 
       {/* FAQs */}
-      <h2 className="text-2xl font-bold text-foreground mb-6">Frequently asked questions</h2>
+      <h2 id="faqs" className="text-2xl font-bold text-foreground mb-6">Frequently asked questions</h2>
       <div className="space-y-4 mb-12">
         {FAQS.map((faq, i) => (
           <div key={i} className="bg-card rounded-xl border border-border p-6">
@@ -294,7 +321,7 @@ export default function DeathCertificateHowManyCopiesPage() {
             headline: 'How Many Death Certificates Do I Need? (2026 Guide)',
             description: 'You typically need 8-12 certified copies of a death certificate, at £12.50 each in England. Full breakdown of who needs one, how to order, and how to save money.',
             datePublished: '2026-03-14',
-            dateModified: '2026-03-14',
+            dateModified: '2026-03-17',
             author: { '@type': 'Organization', name: 'Help After Loss' },
             publisher: {
               '@type': 'Organization',

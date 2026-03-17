@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { TableOfContents } from '@/components/TableOfContents';
 
 export const metadata: Metadata = {
   title: 'Bereavement Leave in the UK: Your Rights in 2026',
@@ -71,13 +72,40 @@ export default function BereavementLeavePage() {
         { label: 'Bereavement Leave: Your Rights' }
       ]} />
 
-      <p className="text-xs text-muted uppercase tracking-wide mb-3">March 2026</p>
+      <div className="flex items-center gap-3 text-xs text-muted mb-3">
+        <span>Updated 17 March 2026</span>
+        <span aria-hidden="true">|</span>
+        <span>10 min read</span>
+      </div>
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         Bereavement Leave in the UK: Your Rights in 2026
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
         The UK has surprisingly limited statutory bereavement leave rights. For most deaths, there is no legal right to any paid time off at all. This guide sets out exactly what the law says, what most employers actually offer, and what you can do if your employer refuses to give you time to grieve.
       </p>
+
+      <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
+        <h2 className="text-sm font-semibold text-amber-900 mb-3">Key takeaways</h2>
+        <ul className="space-y-1.5 text-sm text-amber-800">
+          <li className="flex gap-2"><span className="font-bold">+</span> Only parents who lose a child under 18 have a statutory right to paid leave (2 weeks under Jack's Law)</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> For all other bereavements, there is no legal right to paid time off</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> Most employers voluntarily offer 3-5 days paid compassionate leave</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> All employees have a day-one right to reasonable unpaid time off for dependant emergencies</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> If your employer refuses, contact ACAS on 0300 123 1100 for free advice</li>
+        </ul>
+      </div>
+
+      <TableOfContents items={[
+        { id: 'jacks-law', label: "Parental Bereavement Leave (Jack's Law)" },
+        { id: 'time-off-dependants', label: 'Time off for dependants' },
+        { id: 'comparison', label: 'What are you entitled to? A comparison' },
+        { id: 'what-employers-offer', label: 'What most employers actually offer' },
+        { id: 'employer-refuses', label: 'What to do if your employer refuses' },
+        { id: 'what-to-say', label: 'What to say to your employer' },
+        { id: 'returning-to-work', label: 'Returning to work after bereavement' },
+        { id: 'for-employers', label: 'If you are an employer: best practice' },
+        { id: 'faqs', label: 'Frequently asked questions' },
+      ]} />
 
       {/* Key summary cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
@@ -94,7 +122,7 @@ export default function BereavementLeavePage() {
       </div>
 
       {/* Parental Bereavement Leave */}
-      <h2 className="text-2xl font-bold text-foreground mb-6">Parental Bereavement Leave (Jack's Law)</h2>
+      <h2 id="jacks-law" className="text-2xl font-bold text-foreground mb-6">Parental Bereavement Leave (Jack's Law)</h2>
       <div className="space-y-4 mb-12">
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Who it covers</h3>
@@ -123,7 +151,7 @@ export default function BereavementLeavePage() {
       </div>
 
       {/* Time off for dependants */}
-      <h2 className="text-2xl font-bold text-foreground mb-6">Time off for dependants</h2>
+      <h2 id="time-off-dependants" className="text-2xl font-bold text-foreground mb-6">Time off for dependants</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed mb-4">
           Under the Employment Rights Act 1996, all employees (from day one) have the right to take a reasonable amount of unpaid time off to deal with an emergency involving a dependant. A dependant is defined as a spouse, civil partner, child, parent, or someone who relies on you for care (for example, an elderly neighbour who depends on you).
@@ -140,7 +168,7 @@ export default function BereavementLeavePage() {
       </div>
 
       {/* Comparison table */}
-      <h2 className="text-2xl font-bold text-foreground mb-4">What are you entitled to? A comparison</h2>
+      <h2 id="comparison" className="text-2xl font-bold text-foreground mb-4">What are you entitled to? A comparison</h2>
       <div className="overflow-x-auto mb-12">
         <table className="w-full text-sm">
           <thead>
@@ -163,7 +191,7 @@ export default function BereavementLeavePage() {
       </div>
 
       {/* What employers offer */}
-      <h2 className="text-2xl font-bold text-foreground mb-6">What most employers actually offer</h2>
+      <h2 id="what-employers-offer" className="text-2xl font-bold text-foreground mb-6">What most employers actually offer</h2>
       <div className="space-y-4 mb-12">
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Compassionate leave (unpaid in law, usually paid in practice)</h3>
@@ -192,7 +220,7 @@ export default function BereavementLeavePage() {
       </div>
 
       {/* What to do if refused */}
-      <h2 className="text-2xl font-bold text-foreground mb-6">What to do if your employer refuses time off</h2>
+      <h2 id="employer-refuses" className="text-2xl font-bold text-foreground mb-6">What to do if your employer refuses time off</h2>
       <div className="space-y-4 mb-12">
         {[
           {
@@ -234,7 +262,7 @@ export default function BereavementLeavePage() {
       </div>
 
       {/* Sample email */}
-      <h2 className="text-2xl font-bold text-foreground mb-4">What to say to your employer</h2>
+      <h2 id="what-to-say" className="text-2xl font-bold text-foreground mb-4">What to say to your employer</h2>
       <p className="text-sm text-muted mb-4">
         You do not need to go into detail. A simple, factual email is fine. Here is an example:
       </p>
@@ -256,7 +284,7 @@ export default function BereavementLeavePage() {
       </div>
 
       {/* Phased return and flexible working */}
-      <h2 className="text-2xl font-bold text-foreground mb-6">Returning to work after bereavement</h2>
+      <h2 id="returning-to-work" className="text-2xl font-bold text-foreground mb-6">Returning to work after bereavement</h2>
       <div className="space-y-4 mb-12">
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Phased return to work</h3>
@@ -279,7 +307,7 @@ export default function BereavementLeavePage() {
       </div>
 
       {/* For employers */}
-      <h2 className="text-2xl font-bold text-foreground mb-6">If you are an employer: best practice guidance</h2>
+      <h2 id="for-employers" className="text-2xl font-bold text-foreground mb-6">If you are an employer: best practice guidance</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed mb-4">
           A clear, compassionate bereavement policy benefits both employees and the organisation. The CIPD recommends that employers:
@@ -294,6 +322,21 @@ export default function BereavementLeavePage() {
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Signpost EAP counselling and bereavement support organisations</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Review the policy annually and make sure it is easy to find in staff handbooks</li>
         </ul>
+      </div>
+
+      <h2 id="faqs" className="text-2xl font-bold text-foreground mb-6">Frequently asked questions</h2>
+      <div className="space-y-4 mb-12">
+        {[
+          { q: 'How long is bereavement leave in the UK?', a: "There is no standard length. The only statutory right is 2 weeks of Parental Bereavement Leave for the loss of a child under 18. For all other bereavements, it depends entirely on your employer's policy. Most offer 3-5 days for immediate family members." },
+          { q: 'Is bereavement leave paid in the UK?', a: "Parental Bereavement Leave is paid at £184.03 per week (or 90% of average earnings if lower). For all other bereavements, there is no legal right to paid leave. However, most employers choose to pay compassionate leave as a matter of policy." },
+          { q: 'Can my employer refuse bereavement leave?', a: "Your employer cannot refuse Parental Bereavement Leave as it is a statutory right. For other bereavements, your employer can technically refuse paid leave, but they cannot refuse reasonable unpaid time off to deal with a dependant emergency under the Employment Rights Act 1996." },
+          { q: 'Do I get bereavement leave for a grandparent?', a: "There is no statutory bereavement leave for grandparents. Most employers offer 1-2 days paid compassionate leave, but this is entirely at their discretion. Check your employment contract or staff handbook." },
+        ].map((faq, i) => (
+          <div key={i} className="bg-card rounded-xl border border-border p-6">
+            <h3 className="font-semibold text-foreground mb-2">{faq.q}</h3>
+            <p className="text-sm text-muted leading-relaxed">{faq.a}</p>
+          </div>
+        ))}
       </div>
 
       <RelatedGuides
@@ -318,7 +361,7 @@ export default function BereavementLeavePage() {
             headline: 'Bereavement Leave in the UK: Your Rights in 2026',
             description: "A plain-English guide to bereavement leave rights in the UK, covering Parental Bereavement Leave, time off for dependants, and what to do if your employer refuses.",
             datePublished: '2026-03-14',
-            dateModified: '2026-03-14',
+            dateModified: '2026-03-17',
             author: { '@type': 'Organization', name: 'Help After Loss' },
             publisher: {
               '@type': 'Organization',
@@ -342,6 +385,21 @@ export default function BereavementLeavePage() {
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://helpafterloss.co.uk' },
               { '@type': 'ListItem', position: 2, name: 'Guides & Articles', item: 'https://helpafterloss.co.uk/blog' },
               { '@type': 'ListItem', position: 3, name: 'Bereavement Leave: Your Rights in 2026', item: 'https://helpafterloss.co.uk/blog/bereavement-leave-rights-uk' },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              { '@type': 'Question', name: 'How long is bereavement leave in the UK?', acceptedAnswer: { '@type': 'Answer', text: 'There is no standard length. The only statutory right is 2 weeks of Parental Bereavement Leave for the loss of a child under 18. For all other bereavements, it depends entirely on your employer\'s policy. Most offer 3-5 days for immediate family members.' } },
+              { '@type': 'Question', name: 'Is bereavement leave paid in the UK?', acceptedAnswer: { '@type': 'Answer', text: 'Parental Bereavement Leave is paid at £184.03 per week (or 90% of average earnings if lower). For all other bereavements, there is no legal right to paid leave. However, most employers choose to pay compassionate leave as a matter of policy.' } },
+              { '@type': 'Question', name: 'Can my employer refuse bereavement leave?', acceptedAnswer: { '@type': 'Answer', text: 'Your employer cannot refuse Parental Bereavement Leave as it is a statutory right. For other bereavements, your employer can technically refuse paid leave, but they cannot refuse reasonable unpaid time off to deal with a dependant emergency under the Employment Rights Act 1996.' } },
+              { '@type': 'Question', name: 'Do I get bereavement leave for a grandparent?', acceptedAnswer: { '@type': 'Answer', text: 'There is no statutory bereavement leave for grandparents. Most employers offer 1-2 days paid compassionate leave, but this is entirely at their discretion. Check your employment contract or staff handbook.' } },
             ],
           }),
         }}

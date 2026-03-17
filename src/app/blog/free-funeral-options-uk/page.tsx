@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { TableOfContents } from '@/components/TableOfContents';
 
 export const metadata: Metadata = {
   title: 'Free and Low-Cost Funeral Options in the UK (2026 Guide)',
@@ -28,13 +29,39 @@ export default function FreeFuneralOptionsPage() {
         { label: 'Free and Low-Cost Funeral Options' }
       ]} />
 
-      <p className="text-xs text-muted uppercase tracking-wide mb-3">March 2026</p>
+      <div className="flex items-center gap-3 text-xs text-muted mb-3">
+        <span>Updated 17 March 2026</span>
+        <span aria-hidden="true">|</span>
+        <span>11 min read</span>
+      </div>
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         Free and Low-Cost Funeral Options in the UK
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-6">
         The average UK funeral costs over £4,000. For many families, that is simply not affordable, especially when the death was unexpected. This guide sets out every option available to you, honestly and without judgement. There is always a way to give someone a dignified farewell.
       </p>
+
+      <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
+        <h2 className="text-sm font-semibold text-amber-900 mb-3">Key takeaways</h2>
+        <ul className="space-y-1.5 text-sm text-amber-800">
+          <li className="flex gap-2"><span className="font-bold">+</span> If no one can arrange a funeral, the council must do it by law at no cost to the family</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> DWP Funeral Expenses Payment covers cremation/burial fees plus up to £1,000 if you are on benefits</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> The Children's Funeral Fund covers all burial/cremation fees for under-18s with no means test</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> Direct cremation from around £1,000 is a dignified, affordable alternative</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> Most banks will release funeral funds before probate on receipt of a death certificate and invoice</li>
+        </ul>
+      </div>
+
+      <TableOfContents items={[
+        { id: 'which-option', label: 'Which option is right for you?' },
+        { id: 'council-funeral', label: 'Option 1: Public health funeral (council funeral)' },
+        { id: 'dwp-payment', label: 'Option 2: DWP Funeral Expenses Payment' },
+        { id: 'childrens-fund', label: "Option 3: Children's Funeral Fund" },
+        { id: 'direct-cremation', label: 'Option 4: Direct cremation' },
+        { id: 'diy-funeral', label: 'Option 5: DIY funeral' },
+        { id: 'charitable-help', label: 'Option 6: Charitable and other sources of help' },
+        { id: 'faqs', label: 'Frequently asked questions' },
+      ]} />
 
       {/* Reassurance */}
       <div className="bg-primary-light rounded-xl p-6 mb-10">
@@ -44,7 +71,7 @@ export default function FreeFuneralOptionsPage() {
       </div>
 
       {/* Decision guide */}
-      <h2 className="text-2xl font-bold text-foreground mb-4">Which option is right for you?</h2>
+      <h2 id="which-option" className="text-2xl font-bold text-foreground mb-4">Which option is right for you?</h2>
       <p className="text-sm text-muted mb-6">Work through these questions in order to find the most relevant option for your situation.</p>
       <div className="space-y-4 mb-12">
         <div className="bg-card rounded-xl border border-border p-6">
@@ -70,7 +97,7 @@ export default function FreeFuneralOptionsPage() {
       </div>
 
       {/* Option 1: Public Health Funeral */}
-      <h2 className="text-2xl font-bold text-foreground mb-6">Option 1: Public health funeral (council funeral)</h2>
+      <h2 id="council-funeral" className="text-2xl font-bold text-foreground mb-6">Option 1: Public health funeral (council funeral)</h2>
       <div className="space-y-4 mb-12">
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">What it is</h3>
@@ -99,7 +126,7 @@ export default function FreeFuneralOptionsPage() {
       </div>
 
       {/* Option 2: DWP Funeral Expenses Payment */}
-      <h2 className="text-2xl font-bold text-foreground mb-6">Option 2: DWP Funeral Expenses Payment</h2>
+      <h2 id="dwp-payment" className="text-2xl font-bold text-foreground mb-6">Option 2: DWP Funeral Expenses Payment</h2>
       <div className="space-y-4 mb-12">
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">What it covers</h3>
@@ -138,7 +165,7 @@ export default function FreeFuneralOptionsPage() {
       </div>
 
       {/* Option 3: Children's Funeral Fund */}
-      <h2 className="text-2xl font-bold text-foreground mb-6">Option 3: Children's Funeral Fund</h2>
+      <h2 id="childrens-fund" className="text-2xl font-bold text-foreground mb-6">Option 3: Children's Funeral Fund</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed mb-4">
           The Children's Funeral Fund for England was introduced in 2019. It covers the burial plot or cremation fees for any child under 18, or for a baby born after 24 weeks of pregnancy (including stillbirths). There is no means test and no application form for the family to complete. The funeral director applies directly to the NHS Business Services Authority on your behalf.
@@ -152,12 +179,12 @@ export default function FreeFuneralOptionsPage() {
       </div>
 
       {/* Option 4: Direct cremation */}
-      <h2 className="text-2xl font-bold text-foreground mb-6">Option 4: Direct cremation</h2>
+      <h2 id="direct-cremation" className="text-2xl font-bold text-foreground mb-6">Option 4: Direct cremation</h2>
       <div className="space-y-4 mb-12">
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">What it is</h3>
           <p className="text-sm text-muted leading-relaxed">
-            A direct cremation is a simple cremation with no funeral service and no mourners at the crematorium. The body is collected by the funeral director, cremated, and the ashes are returned to the family. The UK average cost is around £1,647, but prices start from around £1,000 with some providers. This is significantly cheaper than a traditional funeral but still a private, dignified arrangement.
+            A direct cremation is a simple cremation with no funeral service and no mourners at the crematorium. The body is collected by the funeral director, cremated, and the ashes are returned to the family. The UK average cost is around £1,647, but prices start from around £1,000 with some providers. This is significantly cheaper than a traditional funeral but still a private, dignified arrangement.{' '}See our <Link href="/blog/true-cost-of-dying-uk" className="text-primary hover:underline">full cost of dying guide</Link> for a complete breakdown.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -175,7 +202,7 @@ export default function FreeFuneralOptionsPage() {
       </div>
 
       {/* Option 5: DIY funeral */}
-      <h2 className="text-2xl font-bold text-foreground mb-6">Option 5: DIY funeral (arranging without a funeral director)</h2>
+      <h2 id="diy-funeral" className="text-2xl font-bold text-foreground mb-6">Option 5: DIY funeral (arranging without a funeral director)</h2>
       <div className="space-y-4 mb-12">
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Is it legal?</h3>
@@ -198,7 +225,7 @@ export default function FreeFuneralOptionsPage() {
       </div>
 
       {/* Option 6: Charitable and other help */}
-      <h2 className="text-2xl font-bold text-foreground mb-6">Option 6: Charitable and other sources of help</h2>
+      <h2 id="charitable-help" className="text-2xl font-bold text-foreground mb-6">Option 6: Charitable and other sources of help</h2>
       <div className="space-y-4 mb-12">
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Royal British Legion</h3>
@@ -246,6 +273,21 @@ export default function FreeFuneralOptionsPage() {
         </p>
       </div>
 
+      <h2 id="faqs" className="text-2xl font-bold text-foreground mb-6">Frequently asked questions</h2>
+      <div className="space-y-4 mb-12">
+        {[
+          { q: 'What is the cheapest way to have a funeral in the UK?', a: 'A direct cremation is the most affordable private option, starting from around £1,000. There is no service at the crematorium. You can hold a separate memorial at a venue of your choice at little or no cost.' },
+          { q: 'Can you have a funeral with no money?', a: "Yes. If you are on means-tested benefits, the DWP Funeral Expenses Payment can cover burial or cremation fees plus up to £1,000. If no one is able to arrange a funeral, the local council is legally required to do so at no cost to the family." },
+          { q: 'Who pays for a funeral if there is no money in the estate?', a: "If the deceased had no money and no one can afford to pay, the local council arranges a public health funeral under the Public Health (Control of Disease) Act 1984. This is a legal obligation, not charity. The family may also be able to claim DWP Funeral Expenses Payment if they are on qualifying benefits." },
+          { q: 'Can I arrange a funeral without a funeral director?', a: 'Yes. In England and Wales, there is no legal requirement to use a funeral director. You can keep the body at home, build your own coffin, and book directly with a crematorium or burial ground. The Natural Death Centre provides practical guidance.' },
+        ].map((faq, i) => (
+          <div key={i} className="bg-card rounded-xl border border-border p-6">
+            <h3 className="font-semibold text-foreground mb-2">{faq.q}</h3>
+            <p className="text-sm text-muted leading-relaxed">{faq.a}</p>
+          </div>
+        ))}
+      </div>
+
       <RelatedGuides
         currentPath="/blog/free-funeral-options-uk"
         guides={['/costs', '/guides/bereavement-benefits', '/blog/true-cost-of-dying-uk', '/support']}
@@ -268,7 +310,7 @@ export default function FreeFuneralOptionsPage() {
             headline: 'Free and Low-Cost Funeral Options in the UK',
             description: "A practical guide to free and affordable funeral options in the UK, including council funerals, DWP Funeral Expenses Payment, Children's Funeral Fund, direct cremation, and DIY funerals.",
             datePublished: '2026-03-14',
-            dateModified: '2026-03-14',
+            dateModified: '2026-03-17',
             author: { '@type': 'Organization', name: 'Help After Loss' },
             publisher: {
               '@type': 'Organization',
@@ -292,6 +334,21 @@ export default function FreeFuneralOptionsPage() {
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://helpafterloss.co.uk' },
               { '@type': 'ListItem', position: 2, name: 'Guides & Articles', item: 'https://helpafterloss.co.uk/blog' },
               { '@type': 'ListItem', position: 3, name: 'Free and Low-Cost Funeral Options in the UK', item: 'https://helpafterloss.co.uk/blog/free-funeral-options-uk' },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              { '@type': 'Question', name: 'What is the cheapest way to have a funeral in the UK?', acceptedAnswer: { '@type': 'Answer', text: 'A direct cremation is the most affordable private option, starting from around £1,000. There is no service at the crematorium. You can hold a separate memorial at a venue of your choice at little or no cost.' } },
+              { '@type': 'Question', name: 'Can you have a funeral with no money?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. If you are on means-tested benefits, the DWP Funeral Expenses Payment can cover burial or cremation fees plus up to £1,000. If no one is able to arrange a funeral, the local council is legally required to do so at no cost to the family.' } },
+              { '@type': 'Question', name: 'Who pays for a funeral if there is no money in the estate?', acceptedAnswer: { '@type': 'Answer', text: 'If the deceased had no money and no one can afford to pay, the local council arranges a public health funeral under the Public Health (Control of Disease) Act 1984. This is a legal obligation, not charity. The family may also be able to claim DWP Funeral Expenses Payment if they are on qualifying benefits.' } },
+              { '@type': 'Question', name: 'Can I arrange a funeral without a funeral director?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. In England and Wales, there is no legal requirement to use a funeral director. You can keep the body at home, build your own coffin, and book directly with a crematorium or burial ground. The Natural Death Centre provides practical guidance.' } },
             ],
           }),
         }}

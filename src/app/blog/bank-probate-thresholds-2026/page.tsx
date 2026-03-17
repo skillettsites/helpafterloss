@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { TableOfContents } from '@/components/TableOfContents';
 import { RelatedGuides } from '@/components/RelatedGuides';
 
 export const metadata: Metadata = {
@@ -107,7 +108,11 @@ export default function BankProbateThresholdsPage() {
         { label: 'Bank Probate Thresholds 2026' }
       ]} />
 
-      <p className="text-xs text-muted uppercase tracking-wide mb-3">March 2026</p>
+      <div className="flex items-center gap-3 text-xs text-muted mb-3">
+        <span>Updated 17 March 2026</span>
+        <span aria-hidden="true">|</span>
+        <span>9 min read</span>
+      </div>
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         Bank Probate Thresholds 2026: Complete Comparison
       </h1>
@@ -115,8 +120,28 @@ export default function BankProbateThresholdsPage() {
         When someone dies, their bank accounts are frozen. But you do not always need a grant of probate to access the money. Every bank sets a threshold below which they will release funds with just a death certificate and some identification. This guide compares the probate threshold for every major UK bank and building society in 2026, explains what documents you will need, and walks you through the process step by step.
       </p>
 
+      <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
+        <h2 className="text-sm font-semibold text-amber-900 mb-3">Key takeaways</h2>
+        <ul className="space-y-1.5 text-sm text-amber-800">
+          <li className="flex gap-2"><span className="font-bold">+</span> All six major high street banks share a £50,000 probate threshold</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> Building society thresholds range from £15,000 to £50,000</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> Joint accounts pass automatically to the surviving holder with no probate needed</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> Most banks will pay a funeral invoice directly, even above the threshold</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> The free Death Notification Service lets you notify multiple banks at once</li>
+        </ul>
+      </div>
+
+      <TableOfContents items={[
+        { id: 'what-is-threshold', label: 'What is a probate threshold?' },
+        { id: 'comparison', label: '2026 probate thresholds: full comparison' },
+        { id: 'how-to-release', label: 'How to release money without probate' },
+        { id: 'documents', label: 'Documents banks typically need' },
+        { id: 'tips', label: 'Practical tips' },
+        { id: 'faqs', label: 'Frequently asked questions' },
+      ]} />
+
       {/* What is a probate threshold */}
-      <h2 className="text-2xl font-bold text-foreground mb-4">What is a probate threshold?</h2>
+      <h2 id="what-is-threshold" className="text-2xl font-bold text-foreground mb-4">What is a probate threshold?</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-10">
         <p className="text-sm text-muted leading-relaxed mb-4">
           A <strong className="text-foreground">probate threshold</strong> is the maximum balance a bank or building society will release from a deceased person&apos;s account without requiring a grant of probate or letters of administration. If the total amount held at that institution falls below their threshold, they will release the funds to the executor or next of kin on production of the death certificate and supporting documents.
@@ -130,7 +155,7 @@ export default function BankProbateThresholdsPage() {
       </div>
 
       {/* Comparison table */}
-      <h2 className="text-2xl font-bold text-foreground mb-4">2026 probate thresholds: full comparison</h2>
+      <h2 id="comparison" className="text-2xl font-bold text-foreground mb-4">2026 probate thresholds: full comparison</h2>
       <p className="text-sm text-muted mb-6">
         Click any bank name to see their full bereavement contact details, phone numbers, and what to expect when you notify them.
       </p>
@@ -183,7 +208,7 @@ export default function BankProbateThresholdsPage() {
       </div>
 
       {/* Steps to release money */}
-      <h2 className="text-2xl font-bold text-foreground mb-6">How to release money from a bank account without probate</h2>
+      <h2 id="how-to-release" className="text-2xl font-bold text-foreground mb-6">How to release money from a bank account without probate</h2>
       <div className="space-y-4 mb-12">
         {STEPS.map((s) => (
           <div key={s.step} className="bg-card rounded-xl border border-border p-6">
@@ -201,7 +226,7 @@ export default function BankProbateThresholdsPage() {
       </div>
 
       {/* Documents needed */}
-      <h2 className="text-2xl font-bold text-foreground mb-4">Documents banks typically need</h2>
+      <h2 id="documents" className="text-2xl font-bold text-foreground mb-4">Documents banks typically need</h2>
       <p className="text-sm text-muted mb-6">
         Requirements vary between banks, but most will ask for the following. Check with the specific bank&apos;s bereavement team, as some have additional requirements.
       </p>
@@ -225,7 +250,7 @@ export default function BankProbateThresholdsPage() {
       </div>
 
       {/* Tips */}
-      <h2 className="text-2xl font-bold text-foreground mb-4">Practical tips</h2>
+      <h2 id="tips" className="text-2xl font-bold text-foreground mb-4">Practical tips</h2>
       <div className="space-y-4 mb-12">
         <div className="bg-success-light rounded-xl p-6">
           <h3 className="font-semibold text-green-800 mb-2">Use the Death Notification Service</h3>
@@ -254,7 +279,7 @@ export default function BankProbateThresholdsPage() {
       </div>
 
       {/* FAQs */}
-      <h2 className="text-2xl font-bold text-foreground mb-6">Frequently asked questions</h2>
+      <h2 id="faqs" className="text-2xl font-bold text-foreground mb-6">Frequently asked questions</h2>
       <div className="space-y-4 mb-12">
         {FAQS.map((faq, i) => (
           <div key={i} className="bg-card rounded-xl border border-border p-6">
@@ -286,7 +311,7 @@ export default function BankProbateThresholdsPage() {
             headline: 'Bank Probate Thresholds 2026: Complete Comparison',
             description: 'Every major UK bank and building society probate threshold compared. How much each bank will release without a grant of probate in 2026.',
             datePublished: '2026-03-14',
-            dateModified: '2026-03-14',
+            dateModified: '2026-03-17',
             author: { '@type': 'Organization', name: 'Help After Loss' },
             publisher: {
               '@type': 'Organization',

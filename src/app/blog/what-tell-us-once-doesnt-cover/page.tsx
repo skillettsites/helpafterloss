@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { TableOfContents } from '@/components/TableOfContents';
 
 export const metadata: Metadata = {
   title: 'What Tell Us Once Doesn\'t Cover: The Full List',
@@ -211,7 +212,11 @@ export default function TellUsOnceNotCoveredPage() {
         { label: "What Tell Us Once Doesn't Cover" }
       ]} />
 
-      <p className="text-xs text-muted uppercase tracking-wide mb-3">March 2026</p>
+      <div className="flex items-center gap-3 text-xs text-muted mb-3">
+        <span>Updated 17 March 2026</span>
+        <span aria-hidden="true">|</span>
+        <span>8 min read</span>
+      </div>
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         What Tell Us Once Doesn&apos;t Cover: The Full List
       </h1>
@@ -219,8 +224,25 @@ export default function TellUsOnceNotCoveredPage() {
         Tell Us Once is genuinely helpful, but the name is misleading. It only notifies a handful of government departments. After using it, you still need to contact 20 to 30 organisations yourself: every bank, insurer, pension provider, energy company, telecoms provider, and more. This guide lists everything Tell Us Once misses, so you know exactly what still needs doing.
       </p>
 
+      <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
+        <h2 className="text-sm font-semibold text-amber-900 mb-3">Key takeaways</h2>
+        <ul className="space-y-1.5 text-sm text-amber-800">
+          <li className="flex gap-2"><span className="font-bold">+</span> Tell Us Once only notifies 7 government departments (DWP, HMRC, DVLA, Passport Office, electoral register, council, Veterans UK)</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> You still need to contact every bank, insurer, pension, energy company, and telecoms provider yourself</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> The free Death Notification Service can notify multiple banks at once</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> Tell Us Once is not available in Northern Ireland</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> Your Tell Us Once reference expires after 120 days</li>
+        </ul>
+      </div>
+
+      <TableOfContents items={[
+        { id: 'what-covered', label: 'What Tell Us Once does cover' },
+        { id: 'what-not-covered', label: 'What Tell Us Once does not cover' },
+        { id: 'faqs', label: 'Common questions about Tell Us Once' },
+      ]} />
+
       {/* What Tell Us Once DOES cover */}
-      <h2 className="text-2xl font-bold text-foreground mb-4">What Tell Us Once does cover</h2>
+      <h2 id="what-covered" className="text-2xl font-bold text-foreground mb-4">What Tell Us Once does cover</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-10">
         <p className="text-sm text-muted mb-4">Tell Us Once will notify the following government departments on your behalf:</p>
         <ul className="space-y-2">
@@ -244,7 +266,7 @@ export default function TellUsOnceNotCoveredPage() {
       </div>
 
       {/* What Tell Us Once does NOT cover */}
-      <h2 className="text-2xl font-bold text-foreground mb-4">What Tell Us Once does not cover</h2>
+      <h2 id="what-not-covered" className="text-2xl font-bold text-foreground mb-4">What Tell Us Once does not cover</h2>
       <p className="text-sm text-muted mb-6">
         You will need to contact each of the following organisations directly. Where we have a specific notification guide, you can click through for the bereavement team contact details, what documents they need, and what to expect.
       </p>
@@ -297,7 +319,7 @@ export default function TellUsOnceNotCoveredPage() {
       </div>
 
       {/* FAQ */}
-      <h2 className="text-2xl font-bold text-foreground mb-6">Common questions about Tell Us Once</h2>
+      <h2 id="faqs" className="text-2xl font-bold text-foreground mb-6">Common questions about Tell Us Once</h2>
       <div className="space-y-4 mb-12">
         {FAQ.map((item, i) => (
           <div key={i} className="bg-card rounded-xl border border-border p-6">
@@ -329,7 +351,7 @@ export default function TellUsOnceNotCoveredPage() {
             headline: 'What Tell Us Once Doesn\'t Cover: The Full List',
             description: 'The complete list of organisations Tell Us Once does not notify, and what you need to do yourself after someone dies.',
             datePublished: '2026-03-14',
-            dateModified: '2026-03-14',
+            dateModified: '2026-03-17',
             author: { '@type': 'Organization', name: 'Help After Loss' },
             publisher: {
               '@type': 'Organization',
