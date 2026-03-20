@@ -204,6 +204,56 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Explore our resources */}
+      <section className="py-16 px-4" aria-labelledby="explore">
+        <div className="max-w-4xl mx-auto">
+          <h2 id="explore" className="text-3xl font-bold text-foreground text-center mb-4">
+            Explore our free resources
+          </h2>
+          <p className="text-muted text-center mb-10 max-w-2xl mx-auto">
+            Whether you need local guidance, help notifying organisations, or tools to stay organised, everything is free and designed to make this process less overwhelming.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <Link href="/guides" className="bg-card rounded-xl border border-border p-5 hover:border-primary hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors mb-1">Local City Guides</h3>
+              <p className="text-sm text-muted">Find your local registrar, council contacts, and step-by-step guidance for your city.</p>
+            </Link>
+            <Link href="/counties" className="bg-card rounded-xl border border-border p-5 hover:border-primary hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors mb-1">County Guides</h3>
+              <p className="text-sm text-muted">Registrar offices across England and Wales, organised by county.</p>
+            </Link>
+            <Link href="/notify" className="bg-card rounded-xl border border-border p-5 hover:border-primary hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors mb-1">Who to Notify</h3>
+              <p className="text-sm text-muted">Bereavement phone numbers, online forms, and step-by-step processes for banks, utilities, and insurers.</p>
+            </Link>
+            <Link href="/blog" className="bg-card rounded-xl border border-border p-5 hover:border-primary hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors mb-1">Guides and Articles</h3>
+              <p className="text-sm text-muted">In-depth articles on funeral costs, bereavement leave, bank thresholds, and more.</p>
+            </Link>
+            <Link href="/deadline-tracker" className="bg-card rounded-xl border border-border p-5 hover:border-primary hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors mb-1">Deadline Tracker</h3>
+              <p className="text-sm text-muted">Enter the date of death and see every key deadline calculated for you automatically.</p>
+            </Link>
+            <Link href="/document-vault" className="bg-card rounded-xl border border-border p-5 hover:border-primary hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors mb-1">Document Vault</h3>
+              <p className="text-sm text-muted">Track which important documents you have found and which you still need.</p>
+            </Link>
+            <Link href="/phone-directory" className="bg-card rounded-xl border border-border p-5 hover:border-primary hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors mb-1">Phone Directory</h3>
+              <p className="text-sm text-muted">Every bereavement phone number you might need, all in one place.</p>
+            </Link>
+            <Link href="/call-scripts" className="bg-card rounded-xl border border-border p-5 hover:border-primary hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors mb-1">Call Scripts</h3>
+              <p className="text-sm text-muted">Word-for-word scripts for difficult phone calls to banks, utilities, and employers.</p>
+            </Link>
+            <Link href="/template-letters" className="bg-card rounded-xl border border-border p-5 hover:border-primary hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors mb-1">Template Letters</h3>
+              <p className="text-sm text-muted">Ready-to-use notification letters for every organisation you need to contact.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 px-4 bg-primary-light" aria-label="Get started">
         <div className="max-w-2xl mx-auto text-center">

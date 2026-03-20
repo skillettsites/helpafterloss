@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { counties, getCountyBySlug } from '@/lib/counties';
+import { cities } from '@/lib/cities';
 import { RelatedGuides } from '@/components/RelatedGuides';
 
 interface PageProps {
@@ -362,6 +363,70 @@ export default async function CountyGuidePage({ params }: PageProps) {
           </div>
         </section>
       )}
+
+      {/* City guides in this county */}
+      {(() => {
+        const citiesInCounty = cities.filter(c =>
+          county.majorTowns.some(t => t.toLowerCase() === c.name.toLowerCase())
+        );
+        return citiesInCounty.length > 0 ? (
+          <section className="py-8 px-4">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-xl font-semibold text-foreground mb-4">City guides in {county.name}</h2>
+              <p className="text-sm text-muted mb-4">
+                Detailed local guides with registrar details, council contacts, and step-by-step bereavement guidance.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {citiesInCounty.map(c => (
+                  <Link
+                    key={c.slug}
+                    href={`/guides/${c.slug}`}
+                    className="bg-card rounded-lg border border-border p-4 hover:border-primary hover:shadow-sm transition-all group"
+                  >
+                    <p className="font-medium text-foreground group-hover:text-primary transition-colors">
+                      {c.name}
+                    </p>
+                    <p className="text-xs text-muted mt-1">Registrar and council details for {c.name}</p>
+                  </Link>
+                ))}
+              </div>
+              <p className="text-sm text-muted mt-4">
+                <Link href="/guides" className="text-primary hover:underline">View all city guides</Link>
+              </p>
+            </div>
+          </section>
+        ) : null;
+      })()}
+
+      {/* Nearby counties */}
+      {(() => {
+        const nearbyCounties = counties
+          .filter(c => c.slug !== county.slug && c.nation === county.nation)
+          .slice(0, 4);
+        return nearbyCounties.length > 0 ? (
+          <section className="py-8 px-4">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-xl font-semibold text-foreground mb-4">Other county guides</h2>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                {nearbyCounties.map(c => (
+                  <Link
+                    key={c.slug}
+                    href={`/counties/${c.slug}`}
+                    className="bg-card rounded-lg border border-border p-3 text-center hover:border-primary hover:shadow-sm transition-all group"
+                  >
+                    <p className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">
+                      {c.name}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+              <p className="text-sm text-muted mt-4">
+                <Link href="/counties" className="text-primary hover:underline">View all county guides</Link>
+              </p>
+            </div>
+          </section>
+        ) : null;
+      })()}
 
       {/* Related guides */}
       <section className="py-8 px-4 mb-8">

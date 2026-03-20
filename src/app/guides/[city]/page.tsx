@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { cities, getCityBySlug, type CityData } from '@/lib/cities';
+import { cities, getCityBySlug, getCitiesByRegion, type CityData } from '@/lib/cities';
+import { counties } from '@/lib/counties';
 
 interface PageProps {
   params: Promise<{ city: string }>;
@@ -413,6 +414,56 @@ export default async function CityGuidePage({ params }: PageProps) {
         </div>
       </section>
 
+      {/* Nearby city guides */}
+      {(() => {
+        const nearbyCities = getCitiesByRegion(city.region)
+          .filter(c => c.slug !== city.slug)
+          .slice(0, 5);
+        const matchingCounty = counties.find(c =>
+          c.majorTowns.some(t => t.toLowerCase() === city.name.toLowerCase()) ||
+          c.name.toLowerCase() === city.region.toLowerCase()
+        );
+        return (nearbyCities.length > 0 || matchingCounty) ? (
+          <section className="py-8 px-4">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-xl font-semibold text-foreground mb-4">
+                Other guides in {city.region}
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {nearbyCities.map(c => (
+                  <Link
+                    key={c.slug}
+                    href={`/guides/${c.slug}`}
+                    className="bg-card rounded-lg border border-border p-4 hover:border-primary hover:shadow-sm transition-all group"
+                  >
+                    <p className="font-medium text-foreground group-hover:text-primary transition-colors">
+                      {c.name}
+                    </p>
+                    <p className="text-xs text-muted mt-1">Registrar and council details for {c.name}</p>
+                  </Link>
+                ))}
+                {matchingCounty && (
+                  <Link
+                    href={`/counties/${matchingCounty.slug}`}
+                    className="bg-primary-light rounded-lg border border-primary/20 p-4 hover:border-primary hover:shadow-sm transition-all group"
+                  >
+                    <p className="font-medium text-foreground group-hover:text-primary transition-colors">
+                      {matchingCounty.name} County Guide
+                    </p>
+                    <p className="text-xs text-muted mt-1">All registrar offices in {matchingCounty.name}</p>
+                  </Link>
+                )}
+              </div>
+              <p className="text-sm text-muted mt-4">
+                <Link href="/guides" className="text-primary hover:underline">View all city guides</Link>
+                {' · '}
+                <Link href="/counties" className="text-primary hover:underline">View county guides</Link>
+              </p>
+            </div>
+          </section>
+        ) : null;
+      })()}
+
       {/* Related guides */}
       <section className="py-8 px-4 mb-8">
         <div className="max-w-3xl mx-auto">
@@ -426,9 +477,9 @@ export default async function CityGuidePage({ params }: PageProps) {
               <p className="font-medium text-foreground">{city.probateTerm} Guide</p>
               <p className="text-sm text-muted mt-1">How to apply for {city.probateTerm.toLowerCase()} and what it costs</p>
             </Link>
-            <Link href="/costs" className="bg-card rounded-xl border border-border p-4 hover:border-primary transition-colors">
-              <p className="font-medium text-foreground">Costs Breakdown</p>
-              <p className="text-sm text-muted mt-1">Typical costs and how to save money</p>
+            <Link href="/notify" className="bg-card rounded-xl border border-border p-4 hover:border-primary transition-colors">
+              <p className="font-medium text-foreground">Who to Notify</p>
+              <p className="text-sm text-muted mt-1">Banks, utilities, and insurers you need to contact</p>
             </Link>
             <Link href="/checklist" className="bg-card rounded-xl border border-border p-4 hover:border-primary transition-colors">
               <p className="font-medium text-foreground">Master Checklist</p>
