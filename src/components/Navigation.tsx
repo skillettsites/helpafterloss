@@ -3,9 +3,11 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { AccountMenu } from './AccountMenu';
+import { useAuth } from '@/lib/auth-context';
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const { user, configured } = useAuth();
 
   const links = [
     { href: '/guide', label: 'Step-by-Step Guide' },
@@ -37,12 +39,21 @@ export function Navigation() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/start"
-              className="ml-3 px-4 py-2 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary-dark transition-colors"
-            >
-              Get Your Guide
-            </Link>
+            {configured && user ? (
+              <Link
+                href="/dashboard"
+                className="ml-3 px-4 py-2 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary-dark transition-colors"
+              >
+                My Dashboard
+              </Link>
+            ) : (
+              <Link
+                href="/start"
+                className="ml-3 px-4 py-2 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary-dark transition-colors"
+              >
+                Get Your Guide
+              </Link>
+            )}
             <AccountMenu />
           </div>
 
@@ -76,13 +87,23 @@ export function Navigation() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/start"
-              onClick={() => setIsOpen(false)}
-              className="block mt-3 px-4 py-3 bg-primary text-white text-center font-medium rounded-lg hover:bg-primary-dark transition-colors"
-            >
-              Get Your Personalised Guide
-            </Link>
+            {configured && user ? (
+              <Link
+                href="/dashboard"
+                onClick={() => setIsOpen(false)}
+                className="block mt-3 px-4 py-3 bg-primary text-white text-center font-medium rounded-lg hover:bg-primary-dark transition-colors"
+              >
+                My Dashboard
+              </Link>
+            ) : (
+              <Link
+                href="/start"
+                onClick={() => setIsOpen(false)}
+                className="block mt-3 px-4 py-3 bg-primary text-white text-center font-medium rounded-lg hover:bg-primary-dark transition-colors"
+              >
+                Get Your Personalised Guide
+              </Link>
+            )}
           </div>
         )}
       </div>
