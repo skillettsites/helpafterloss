@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'How to claim pension death benefits, inherit state pension, and trace lost pensions. Covers workplace, private, and public sector pensions.',
     url: 'https://helpafterloss.co.uk/guides/pensions-after-death',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

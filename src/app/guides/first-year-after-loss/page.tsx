@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Month-by-month guidance on what to do in the first year after bereavement, covering both practical tasks and emotional milestones.',
     url: 'https://helpafterloss.co.uk/guides/first-year-after-loss',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

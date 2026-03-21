@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Every document you need after a bereavement, organised by category, with guidance on where to find them and who needs them.',
     url: 'https://helpafterloss.co.uk/guides/document-checklist',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

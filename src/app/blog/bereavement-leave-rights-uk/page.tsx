@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     description: "Your legal rights to bereavement leave, what most employers actually offer, and what to do if you are refused time off.",
     url: 'https://helpafterloss.co.uk/blog/bereavement-leave-rights-uk',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

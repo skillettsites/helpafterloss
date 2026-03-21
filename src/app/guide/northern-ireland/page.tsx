@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Step-by-step guidance for dealing with a death in Northern Ireland, including NISRA registration, probate, and intestacy rules.',
     url: 'https://helpafterloss.co.uk/guide/northern-ireland',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

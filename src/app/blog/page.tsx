@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     description: 'In-depth guides on funeral costs, bereavement leave rights, and free funeral options in the UK.',
     url: 'https://helpafterloss.co.uk/blog',
     type: 'website',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -51,7 +52,7 @@ const POSTS = [
   },
   {
     href: '/blog/death-certificate-how-many-copies',
-    title: 'How Many Death Certificates Do I Need?',
+    title: 'How Many Death Certificates Do I Need? (2026 Guide)',
     date: 'March 2026',
     description: 'How many certified copies to order, who needs one, what they cost, and the difference between ordering at registration versus later from the GRO.',
   },

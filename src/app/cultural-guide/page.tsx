@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Funeral practices for Muslim, Jewish, Hindu, Sikh, Buddhist, and Christian traditions in the UK.',
     url: 'https://helpafterloss.co.uk/cultural-guide',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

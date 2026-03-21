@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'A complete guide to finding and cancelling every subscription and direct debit after a death, including loyalty points and hidden subscriptions.',
     url: 'https://helpafterloss.co.uk/guides/subscriptions-after-death',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

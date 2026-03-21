@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Everything you need to know about cars, driving licences, insurance, and DVLA after someone dies. V5C transfer, SORN, tax refunds, and Motability explained.',
     url: 'https://helpafterloss.co.uk/guides/driving-after-death',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

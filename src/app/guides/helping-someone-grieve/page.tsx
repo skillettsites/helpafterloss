@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Practical guidance on supporting a bereaved friend, family member, or colleague through grief.',
     url: 'https://helpafterloss.co.uk/guides/helping-someone-grieve',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

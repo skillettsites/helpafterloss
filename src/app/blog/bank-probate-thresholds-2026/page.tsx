@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     description: 'Compare probate thresholds for every major UK bank and building society. Find out which banks release funds without probate and how to access the money.',
     url: 'https://helpafterloss.co.uk/blog/bank-probate-thresholds-2026',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

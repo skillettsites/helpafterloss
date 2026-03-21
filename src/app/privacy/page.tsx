@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     description: 'We do not collect, store, or share any personal information. Your data stays on your device.',
     url: 'https://helpafterloss.co.uk/privacy',
     type: 'website',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary',

@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'A complete guide to executor duties in the UK: what you must do, in what order, and what you are legally responsible for.',
     url: 'https://helpafterloss.co.uk/guides/executor-duties',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

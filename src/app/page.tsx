@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     description: 'Free, personalised step-by-step guidance when someone dies. Covers everything from registering the death to probate and beyond.',
     url: 'https://helpafterloss.co.uk',
     type: 'website',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

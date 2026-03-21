@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Support and practical guidance for bereaved parents in the UK, covering the Children\'s Funeral Fund, registering the death, and specialist organisations.',
     url: 'https://helpafterloss.co.uk/guides/lost-a-child',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

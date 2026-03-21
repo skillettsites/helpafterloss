@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     description: 'Contact details, phone numbers, and step-by-step processes for notifying every bank, utility, insurer, and government department after a death in the UK.',
     url: 'https://helpafterloss.co.uk/notify',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

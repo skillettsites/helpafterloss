@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Free bereavement support helplines and organisations in the UK, including Samaritans, Cruse, and Citizens Advice.',
     url: 'https://helpafterloss.co.uk/support',
     type: 'website',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

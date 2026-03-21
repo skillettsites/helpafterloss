@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Complete UK phone directory for bereavement. Real bereavement department numbers with call scripts and tips.',
     url: 'https://helpafterloss.co.uk/phone-directory',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

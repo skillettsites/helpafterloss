@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     description: 'Most families need 8-12 certified copies at £12.50 each in England. Full breakdown of who needs an original, how to order, and money-saving tips.',
     url: 'https://helpafterloss.co.uk/blog/death-certificate-how-many-copies',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

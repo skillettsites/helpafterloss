@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Friend grief is real but often unrecognised. Guidance for bereaved friends on what to do, how to help, and where to find support.',
     url: 'https://helpafterloss.co.uk/guides/lost-a-friend',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     description: 'Answer a few questions and get a personalised step-by-step checklist with everything you need to do.',
     url: 'https://helpafterloss.co.uk/start',
     type: 'website',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'UK inheritance tax explained in plain English: thresholds, rates, exemptions, and practical ways to reduce the bill.',
     url: 'https://helpafterloss.co.uk/guides/inheritance-tax',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

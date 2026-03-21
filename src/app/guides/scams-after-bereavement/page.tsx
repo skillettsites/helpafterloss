@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Common scams that target bereaved families and how to protect yourself. Fake livestreams, probate cold calls, identity theft, and bogus debt collectors.',
     url: 'https://helpafterloss.co.uk/guides/scams-after-bereavement',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

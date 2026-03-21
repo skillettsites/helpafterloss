@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Every benefit available after bereavement in the UK, who qualifies, and how to claim. Don\'t miss out on payments you are entitled to.',
     url: 'https://helpafterloss.co.uk/guides/bereavement-benefits',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

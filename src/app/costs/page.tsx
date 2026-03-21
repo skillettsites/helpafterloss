@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Every cost you can expect: funeral, certificates, probate, solicitors, and practical ways to reduce them. Updated for 2026.',
     url: 'https://helpafterloss.co.uk/costs',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

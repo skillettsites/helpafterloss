@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Word-for-word scripts for notifying banks, utilities, HMRC, council tax, pensions, insurance, and more after a death.',
     url: 'https://helpafterloss.co.uk/call-scripts',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

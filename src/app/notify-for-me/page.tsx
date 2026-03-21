@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Let us email organisations on your behalf to notify them of a death. Free, instant, and you are CC\'d on every email.',
     url: 'https://helpafterloss.co.uk/notify-for-me',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
 };
 

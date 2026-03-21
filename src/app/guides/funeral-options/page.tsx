@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Every type of funeral explained with honest costs. Traditional burial, cremation, direct cremation, green burial, humanist, DIY, and more.',
     url: 'https://helpafterloss.co.uk/guides/funeral-options',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

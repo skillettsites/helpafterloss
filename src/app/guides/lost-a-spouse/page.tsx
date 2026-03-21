@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Practical guidance for people who have lost a spouse or civil partner in the UK, covering benefits, finances, and legal steps.',
     url: 'https://helpafterloss.co.uk/guides/lost-a-spouse',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

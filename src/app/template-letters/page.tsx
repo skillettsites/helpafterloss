@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Free template letters to notify banks, utilities, HMRC, council tax, employers, insurers, and the DVLA after a death.',
     url: 'https://helpafterloss.co.uk/template-letters',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

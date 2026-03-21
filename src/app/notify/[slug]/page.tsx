@@ -57,6 +57,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description,
       url: `https://helpafterloss.co.uk/notify/${contact.slug}`,
       type: 'article',
+      images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
     },
     twitter: {
       card: 'summary_large_image',

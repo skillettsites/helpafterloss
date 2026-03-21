@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Step-by-step guidance for dealing with a death in Scotland, including registration, Confirmation, and Scottish intestacy rules.',
     url: 'https://helpafterloss.co.uk/guide/scotland',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

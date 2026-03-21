@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Everything you need to know about probate in the UK. When you need it, how to apply, costs, DIY vs solicitor, and how long it takes.',
     url: 'https://helpafterloss.co.uk/probate',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

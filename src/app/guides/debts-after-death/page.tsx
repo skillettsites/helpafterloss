@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Debts are not inherited. Learn what happens to credit cards, mortgages, and loans after death, and what debt collectors can legally do.',
     url: 'https://helpafterloss.co.uk/guides/debts-after-death',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

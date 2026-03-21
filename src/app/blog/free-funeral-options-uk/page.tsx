@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     description: "A practical guide to free and affordable funerals in the UK, including council funerals, DWP help, direct cremation, and DIY options.",
     url: 'https://helpafterloss.co.uk/blog/free-funeral-options-uk',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

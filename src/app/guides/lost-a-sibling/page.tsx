@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Compassionate guidance for bereaved brothers and sisters, covering grief, practical help, executor duties, and specialist support.',
     url: 'https://helpafterloss.co.uk/guides/lost-a-sibling',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

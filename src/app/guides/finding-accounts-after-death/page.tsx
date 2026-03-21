@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'A complete guide for executors on tracing unknown bank accounts, pensions, insurance policies, and subscriptions after someone dies.',
     url: 'https://helpafterloss.co.uk/guides/finding-accounts-after-death',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

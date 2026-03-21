@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     description: 'A definitive cost breakdown: funerals, certificates, probate, solicitors, inheritance tax, headstones, and the hidden expenses nobody warns you about.',
     url: 'https://helpafterloss.co.uk/blog/true-cost-of-dying-uk',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

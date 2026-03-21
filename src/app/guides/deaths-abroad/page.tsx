@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Practical guidance for UK families dealing with a death overseas, including repatriation, local procedures, and what the FCDO can do to help.',
     url: 'https://helpafterloss.co.uk/guides/deaths-abroad',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

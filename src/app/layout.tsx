@@ -31,13 +31,13 @@ export const metadata: Metadata = {
     siteName: 'Help After Loss',
     title: 'Help After Loss - Free Bereavement Guidance for the UK',
     description: 'Free, personalised step-by-step guidance when someone dies. Covers everything from registering the death to probate and beyond.',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Help After Loss - Compassionate Bereavement Guidance' }],
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss - Compassionate Bereavement Guidance' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Help After Loss - Free Bereavement Guidance',
     description: 'Free, personalised step-by-step guidance when someone dies in the UK.',
-    images: ['/og-image.png'],
+    images: ['/opengraph-image'],
   },
   robots: {
     index: true,

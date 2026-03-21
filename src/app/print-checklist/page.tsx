@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     description: 'A print-friendly bereavement checklist covering every task from the first 24 hours through to estate distribution.',
     url: 'https://helpafterloss.co.uk/print-checklist',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

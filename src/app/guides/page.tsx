@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     description: 'Find your local guide with registrar details, council contacts, and step-by-step bereavement guidance.',
     url: 'https://helpafterloss.co.uk/guides',
     type: 'website',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

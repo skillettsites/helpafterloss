@@ -86,9 +86,39 @@ export function Questionnaire() {
   }, [setAnswer, currentIndex, totalQuestions]);
 
   if (!loaded) {
+    // Server-rendered skeleton of first question for SSR / no-JS users
+    const firstQ = QUESTIONS[0];
     return (
-      <div className="min-h-[60vh] flex items-center justify-center">
-        <div className="text-muted">Loading...</div>
+      <div className="min-h-[60vh] flex flex-col">
+        <div className="w-full bg-gray-100 h-2 rounded-full overflow-hidden" role="progressbar" aria-valuenow={0} aria-valuemin={0} aria-valuemax={100}>
+          <div className="h-full bg-primary rounded-full" style={{ width: '0%' }} />
+        </div>
+        <p className="text-xs text-muted mt-2 text-center">Question 1</p>
+        <div className="flex-1 flex flex-col justify-center max-w-xl mx-auto w-full px-4 py-8">
+          <p className="text-sm font-medium text-primary mb-2 uppercase tracking-wide">
+            {SECTION_LABELS[firstQ.section as QuestionSection]}
+          </p>
+          <h2 className="text-2xl font-semibold text-foreground leading-snug mb-2">
+            {firstQ.title}
+          </h2>
+          {firstQ.subtitle && (
+            <p className="text-muted text-sm leading-relaxed mb-6">
+              {firstQ.subtitle}
+            </p>
+          )}
+          <div className="space-y-3 mb-8">
+            {firstQ.type === 'date' && (
+              <div>
+                <input
+                  type="date"
+                  max={new Date().toISOString().split('T')[0]}
+                  className="w-full px-5 py-4 rounded-xl border-2 border-border bg-card text-foreground text-lg focus:border-primary focus:ring-0 outline-none"
+                  aria-label={firstQ.title}
+                />
+              </div>
+            )}
+          </div>
+        </div>
       </div>
     );
   }

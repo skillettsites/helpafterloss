@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'How to find, notify, and close bank accounts after someone dies. Includes probate thresholds for major UK banks.',
     url: 'https://helpafterloss.co.uk/guides/bank-accounts-after-death',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

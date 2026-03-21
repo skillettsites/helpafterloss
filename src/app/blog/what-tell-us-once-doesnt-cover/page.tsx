@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     description: 'The complete list of organisations you still need to contact after using Tell Us Once, with links to notification guides for each one.',
     url: 'https://helpafterloss.co.uk/blog/what-tell-us-once-doesnt-cover',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

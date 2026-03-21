@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     description: 'Free step-by-step guide covering registration, funerals, probate, finances, benefits, and more after a death in the UK. Updated for 2026.',
     url: 'https://helpafterloss.co.uk/guide',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',

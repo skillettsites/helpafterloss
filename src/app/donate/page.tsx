@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     description: 'Your donation helps cover running costs and supports verified bereavement charities across the UK.',
     url: 'https://helpafterloss.co.uk/donate',
     type: 'website',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
 };
 

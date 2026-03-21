@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Legal rights for cohabiting partners after a death. Property, inheritance, pensions, the Inheritance Act 1975, and how to protect yourself.',
     url: 'https://helpafterloss.co.uk/guides/cohabiting-partners',
     type: 'article',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',
