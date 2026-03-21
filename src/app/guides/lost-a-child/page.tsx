@@ -38,7 +38,7 @@ export default function LostAChildPage() {
       </p>
 
       <GuideImage
-        src="https://images.unsplash.com/photo-1490750967868-88aa4f44baee?w=800&q=80"
+        src="https://images.unsplash.com/photo-1602523961358-f9f03dd557db?w=800&q=80"
         alt="Soft candlelight glowing warmly in a quiet, peaceful setting"
         credit="Rebecca Peterson-Hall"
         creditUrl="https://unsplash.com/@rpetersonhall"

@@ -38,8 +38,8 @@ export default function LostASpousePage() {
       </p>
 
       <GuideImage
-        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80"
-        alt="Two hands gently holding each other in warm light"
+        src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=800&q=80"
+        alt="Two hands gently clasped together in warm, soft light"
         credit="Priscilla Du Preez"
         creditUrl="https://unsplash.com/@priscilladupreez"
       />

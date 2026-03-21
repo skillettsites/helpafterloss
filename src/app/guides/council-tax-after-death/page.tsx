@@ -92,7 +92,7 @@ export default function CouncilTaxAfterDeathPage() {
 
       <GuideImage
         src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80"
-        alt="A quiet residential street with well-kept houses"
+        alt="A miniature model house with keys on a table"
         credit="Avi Waxman"
         creditUrl="https://unsplash.com/@aviosly"
       />

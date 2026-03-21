@@ -38,7 +38,7 @@ export default function HelpingSomeoneGrievePage() {
 
       <GuideImage
         src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80"
-        alt="Two people sitting together on a bench in a peaceful park"
+        alt="Two hands forming a heart shape silhouetted against a sunset"
         credit="Priscilla Du Preez"
         creditUrl="https://unsplash.com/@priscilladupreez"
       />

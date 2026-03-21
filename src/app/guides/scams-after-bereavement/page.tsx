@@ -111,7 +111,7 @@ export default function ScamsAfterBereavementPage() {
 
       <GuideImage
         src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80"
-        alt="A lock symbolising security and protection"
+        alt="A person holding a credit card while using a laptop"
         credit="FlyD"
         creditUrl="https://unsplash.com/@flyd2069"
       />

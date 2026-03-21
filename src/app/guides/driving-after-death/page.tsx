@@ -103,7 +103,7 @@ export default function DrivingAfterDeathPage() {
       </p>
 
       <GuideImage
-        src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&q=80"
+        src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=800&q=80"
         alt="A parked car on a quiet suburban street"
         credit="Samuele Errico Piccarini"
         creditUrl="https://unsplash.com/@samuele_errico_piccarini"

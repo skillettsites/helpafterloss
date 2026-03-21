@@ -151,7 +151,7 @@ export default function CohabitingPartnersPage() {
       </p>
 
       <GuideImage
-        src="https://images.unsplash.com/photo-1494783367193-149034c05e8f?w=800&q=80"
+        src="https://images.unsplash.com/photo-1501685532562-aa6846b14a0e?w=800&q=80"
         alt="Sunlight streaming through a window into a quiet room"
         credit="Kari Shea"
         creditUrl="https://unsplash.com/@karishea"
