@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { GuideImage } from '@/components/GuideImage';
 
 export const metadata: Metadata = {
   title: 'Cancelling Subscriptions and Direct Debits After a Death',
@@ -118,6 +119,13 @@ export default function SubscriptionsAfterDeathPage() {
       <p className="text-lg text-muted leading-relaxed mb-10">
         Most people have more active subscriptions and direct debits than they realise. Working through them systematically helps you avoid paying for services no one is using, and prevents confusing letters arriving at the deceased's address months later.
       </p>
+
+      <GuideImage
+        src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&q=80"
+        alt="A notebook and pen on a desk, ready for list-making"
+        credit="Green Chameleon"
+        creditUrl="https://unsplash.com/@craftedbygc"
+      />
 
       {/* Getting started */}
       <h2 className="text-2xl font-bold text-foreground mb-6">Where to start</h2>

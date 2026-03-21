@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { GuideImage } from '@/components/GuideImage';
 
 export const metadata: Metadata = {
   title: 'Cars, Driving Licences & DVLA After a Death',
@@ -100,6 +101,13 @@ export default function DrivingAfterDeathPage() {
       <p className="text-lg text-muted leading-relaxed mb-10">
         Dealing with the deceased's vehicle involves several different organisations and some time-sensitive steps. The most urgent is car insurance, which is void from the moment of death.
       </p>
+
+      <GuideImage
+        src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&q=80"
+        alt="A parked car on a quiet suburban street"
+        credit="Samuele Errico Piccarini"
+        creditUrl="https://unsplash.com/@samuele_errico_piccarini"
+      />
 
       {/* Urgent warning */}
       <div className="bg-warm border border-warm-border rounded-xl p-5 mb-10">

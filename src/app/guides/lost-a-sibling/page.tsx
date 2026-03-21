@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { GuideImage } from '@/components/GuideImage';
+import { MidPageCta } from '@/components/MidPageCta';
 
 export const metadata: Metadata = {
   title: 'When a Brother or Sister Dies - Support for Bereaved Siblings',
@@ -34,6 +36,13 @@ export default function LostASiblingPage() {
       <p className="text-lg text-muted leading-relaxed mb-10">
         Bereaved siblings are sometimes called "the forgotten mourners". When a brother or sister dies, the focus often falls on the surviving parents or the spouse of the deceased, while siblings are expected to be strong, to support others, or simply to get on with it. This guide is for you. Your grief is real, your loss matters, and you deserve support too.
       </p>
+
+      <GuideImage
+        src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80"
+        alt="Golden sunlight over a peaceful field at dawn"
+        credit="Federico Respini"
+        creditUrl="https://unsplash.com/@federicorespini"
+      />
 
       {/* Your grief is valid */}
       <h2 className="text-2xl font-bold text-foreground mb-6">Your grief is valid</h2>
@@ -103,6 +112,11 @@ export default function LostASiblingPage() {
           </p>
         </div>
       </div>
+
+      <MidPageCta
+        heading="Handling practical tasks while grieving?"
+        text="Our personalised guide gives you a clear, step-by-step checklist so you do not have to figure everything out alone."
+      />
 
       {/* Executor section */}
       <h2 className="text-2xl font-bold text-foreground mb-6">If you are named as executor</h2>
@@ -197,6 +211,35 @@ export default function LostASiblingPage() {
         </div>
       </div>
 
+      {/* FAQ section */}
+      <h2 className="text-2xl font-bold text-foreground mb-6">Common questions when a sibling dies</h2>
+      <div className="space-y-4 mb-10">
+        <div className="bg-card rounded-xl border border-border p-6">
+          <h3 className="font-semibold text-foreground mb-2">Do siblings have a legal right to inherit?</h3>
+          <p className="text-sm text-muted leading-relaxed">
+            Under intestacy rules in England and Wales, siblings only inherit if the deceased had no surviving spouse, civil partner, children, or parents. If your sibling left a will, they can leave you whatever they wish. If you were financially dependent on your sibling, you may be able to make a claim under the Inheritance (Provision for Family and Dependants) Act 1975.
+          </p>
+        </div>
+        <div className="bg-card rounded-xl border border-border p-6">
+          <h3 className="font-semibold text-foreground mb-2">Am I entitled to bereavement leave for a sibling's death?</h3>
+          <p className="text-sm text-muted leading-relaxed">
+            There is currently no statutory right to paid bereavement leave for the death of a sibling in UK law. Most employers offer 1 to 5 days of compassionate leave at their discretion. Check your employment contract or speak to HR. If you are unwell with grief, your GP can issue a fit note for additional time off.
+          </p>
+        </div>
+        <div className="bg-card rounded-xl border border-border p-6">
+          <h3 className="font-semibold text-foreground mb-2">Who makes funeral decisions when a sibling dies?</h3>
+          <p className="text-sm text-muted leading-relaxed">
+            The legal right follows a specific order: spouse or civil partner first, then children, then parents, then siblings. If your sibling was unmarried with no children, your parents typically have the primary right. If your parents have also died, the right falls to siblings.
+          </p>
+        </div>
+        <div className="bg-card rounded-xl border border-border p-6">
+          <h3 className="font-semibold text-foreground mb-2">Where can bereaved siblings find support?</h3>
+          <p className="text-sm text-muted leading-relaxed">
+            The Compassionate Friends has a dedicated Sibling Support Group (0345 123 2304). Cruse Bereavement Support (0808 808 1677) offers free help for anyone who is grieving. Your GP can refer you to NHS counselling. The BACP directory at bacp.co.uk can help you find a private counsellor near you.
+          </p>
+        </div>
+      </div>
+
       <div className="bg-primary-light rounded-xl p-8 text-center">
         <h2 className="text-2xl font-bold text-foreground mb-3">Get a practical checklist for your situation</h2>
         <p className="text-muted mb-6">If you need help understanding what practical steps apply to you, our personalised guide can walk you through them.</p>
@@ -207,6 +250,37 @@ export default function LostASiblingPage() {
 
       <RelatedGuides currentPath="/guides/lost-a-sibling" guides={['/guide', '/support', '/template-letters', '/intestacy']} />
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Do siblings have a legal right to inherit?',
+                acceptedAnswer: { '@type': 'Answer', text: 'Under intestacy rules in England and Wales, siblings only inherit if the deceased had no surviving spouse, civil partner, children, or parents. If your sibling left a will, they can leave you whatever they wish.' },
+              },
+              {
+                '@type': 'Question',
+                name: "Am I entitled to bereavement leave for a sibling's death?",
+                acceptedAnswer: { '@type': 'Answer', text: 'There is no statutory right to paid bereavement leave for a sibling in UK law. Most employers offer 1 to 5 days of compassionate leave. Your GP can issue a fit note for additional time off.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'Who makes funeral decisions when a sibling dies?',
+                acceptedAnswer: { '@type': 'Answer', text: 'The legal right follows a specific order: spouse or civil partner first, then children, then parents, then siblings. If your sibling was unmarried with no children, your parents typically have the primary right.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'Where can bereaved siblings find support?',
+                acceptedAnswer: { '@type': 'Answer', text: 'The Compassionate Friends has a dedicated Sibling Support Group (0345 123 2304). Cruse Bereavement Support (0808 808 1677) offers free help for anyone who is grieving.' },
+              },
+            ],
+          }),
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

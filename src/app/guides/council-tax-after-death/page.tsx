@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { GuideImage } from '@/components/GuideImage';
 
 export const metadata: Metadata = {
   title: 'Council Tax After Death: Exemptions, Discounts & What to Do',
@@ -88,6 +89,13 @@ export default function CouncilTaxAfterDeathPage() {
       <p className="text-lg text-muted leading-relaxed mb-10">
         When someone dies, their council tax situation changes immediately. You may be entitled to an exemption, a discount, or both. Knowing what to claim and when can save hundreds of pounds.
       </p>
+
+      <GuideImage
+        src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80"
+        alt="A quiet residential street with well-kept houses"
+        credit="Avi Waxman"
+        creditUrl="https://unsplash.com/@aviosly"
+      />
 
       {/* Quick summary stats */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">

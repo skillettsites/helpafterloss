@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { GuideImage } from '@/components/GuideImage';
+import { MidPageCta } from '@/components/MidPageCta';
 
 export const metadata: Metadata = {
   title: 'When a Friend Dies - Your Grief Matters',
@@ -34,6 +36,13 @@ export default function LostAFriendPage() {
       <p className="text-lg text-muted leading-relaxed mb-10">
         Losing a close friend is a profound grief that is often unacknowledged by the people and systems around us. Friends are the family we choose. The loss of a close friendship can leave a gap in your daily life, your sense of self, and your future plans that is hard to describe to anyone who has not experienced it. This guide is for you, and it starts with the most important thing: your grief is real, and it matters.
       </p>
+
+      <GuideImage
+        src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=800&q=80"
+        alt="Warm sunlight filtering through green trees in a forest"
+        credit="Jeremy Bishop"
+        creditUrl="https://unsplash.com/@jeremybishop"
+      />
 
       {/* Your grief matters */}
       <h2 className="text-2xl font-bold text-foreground mb-6">Your grief matters</h2>
@@ -103,6 +112,11 @@ export default function LostAFriendPage() {
           </p>
         </div>
       </div>
+
+      <MidPageCta
+        heading="Been asked to help with practical tasks?"
+        text="Our personalised guide can help you understand what needs to happen and when, so you can support the family with confidence."
+      />
 
       {/* If named as executor */}
       <h2 className="text-2xl font-bold text-foreground mb-6">If your friend named you as executor</h2>
@@ -232,6 +246,35 @@ export default function LostAFriendPage() {
         </div>
       </div>
 
+      {/* FAQ section */}
+      <h2 className="text-2xl font-bold text-foreground mb-6">Common questions when a friend dies</h2>
+      <div className="space-y-4 mb-10">
+        <div className="bg-card rounded-xl border border-border p-6">
+          <h3 className="font-semibold text-foreground mb-2">Am I entitled to bereavement leave when a friend dies?</h3>
+          <p className="text-sm text-muted leading-relaxed">
+            There is no statutory right to paid bereavement leave for the death of a friend in UK law. Any leave is at your employer's discretion. Speak to HR and explain the situation. Most reasonable employers will allow at least a day for the funeral. If you are struggling, your GP can issue a fit note for time off due to grief-related illness.
+          </p>
+        </div>
+        <div className="bg-card rounded-xl border border-border p-6">
+          <h3 className="font-semibold text-foreground mb-2">What should I say to the family of a friend who has died?</h3>
+          <p className="text-sm text-muted leading-relaxed">
+            Keep it simple and personal. "I am so sorry. I loved [name] and I am thinking of you" is enough. A handwritten card or letter sharing a specific memory of your friend is especially meaningful. Do not wait for the perfect words. An imperfect message sent promptly means far more than silence.
+          </p>
+        </div>
+        <div className="bg-card rounded-xl border border-border p-6">
+          <h3 className="font-semibold text-foreground mb-2">Can I attend the funeral if I was not close to the family?</h3>
+          <p className="text-sm text-muted leading-relaxed">
+            In most cases, yes. Funerals are generally open to anyone who cared about the person who died. If you are unsure, a message to the family saying "I would very much like to attend the funeral if that would be welcome" is appropriate. Your presence shows that your friend was loved and valued.
+          </p>
+        </div>
+        <div className="bg-card rounded-xl border border-border p-6">
+          <h3 className="font-semibold text-foreground mb-2">Where can I find support for friend grief?</h3>
+          <p className="text-sm text-muted leading-relaxed">
+            Cruse Bereavement Support (0808 808 1677) supports anyone who is grieving, regardless of their relationship to the person who died. Sue Ryder (sueryder.org) offers free online bereavement counselling. At a Loss (ataloss.org) is a directory of bereavement services searchable by type of loss. Your GP can refer you to NHS talking therapies.
+          </p>
+        </div>
+      </div>
+
       <div className="bg-primary-light rounded-xl p-8 text-center">
         <h2 className="text-2xl font-bold text-foreground mb-3">Need help with the practical side?</h2>
         <p className="text-muted mb-6">If you have been asked to help with practical tasks after your friend's death, our personalised guide can help you understand what needs to happen and when.</p>
@@ -242,6 +285,37 @@ export default function LostAFriendPage() {
 
       <RelatedGuides currentPath="/guides/lost-a-friend" guides={['/guide', '/support', '/cultural-guide', '/digital-legacy']} />
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Am I entitled to bereavement leave when a friend dies?',
+                acceptedAnswer: { '@type': 'Answer', text: 'There is no statutory right to paid bereavement leave for the death of a friend in UK law. Any leave is at your employer\'s discretion. If you are struggling, your GP can issue a fit note.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'What should I say to the family of a friend who has died?',
+                acceptedAnswer: { '@type': 'Answer', text: 'Keep it simple and personal. "I am so sorry. I loved [name] and I am thinking of you" is enough. A handwritten card sharing a specific memory is especially meaningful.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can I attend the funeral if I was not close to the family?',
+                acceptedAnswer: { '@type': 'Answer', text: 'In most cases, yes. Funerals are generally open to anyone who cared about the person who died. If unsure, ask the family if your presence would be welcome.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'Where can I find support for friend grief?',
+                acceptedAnswer: { '@type': 'Answer', text: 'Cruse Bereavement Support (0808 808 1677), Sue Ryder (sueryder.org) for free online counselling, and At a Loss (ataloss.org) directory of bereavement services.' },
+              },
+            ],
+          }),
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

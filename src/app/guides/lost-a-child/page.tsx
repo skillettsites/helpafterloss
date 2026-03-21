@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { GuideImage } from '@/components/GuideImage';
+import { MidPageCta } from '@/components/MidPageCta';
 
 export const metadata: Metadata = {
   title: 'When a Child Dies - Support and Guidance for Bereaved Parents',
@@ -34,6 +36,13 @@ export default function LostAChildPage() {
       <p className="text-lg text-muted leading-relaxed mb-10">
         There are no words adequate to this loss. Losing a child is the most devastating thing a parent can experience, and this guide is written with that in mind. Alongside the overwhelming grief, there are practical things that need to happen. We have tried to explain them as simply and gently as possible, so you only need to read what is relevant to you right now.
       </p>
+
+      <GuideImage
+        src="https://images.unsplash.com/photo-1490750967868-88aa4f44baee?w=800&q=80"
+        alt="Soft candlelight glowing warmly in a quiet, peaceful setting"
+        credit="Rebecca Peterson-Hall"
+        creditUrl="https://unsplash.com/@rpetersonhall"
+      />
 
       {/* First hours */}
       <h2 className="text-2xl font-bold text-foreground mb-6">The first hours</h2>
@@ -134,6 +143,11 @@ export default function LostAChildPage() {
         </p>
       </div>
 
+      <MidPageCta
+        heading="We can help with the practical steps"
+        text="If you would like a clear list of what needs to happen and when, our free personalised guide can take some of that weight from you."
+      />
+
       {/* Telling siblings */}
       <h2 className="text-2xl font-bold text-foreground mb-6">Telling siblings and other children</h2>
       <div className="space-y-4 mb-10">
@@ -232,6 +246,47 @@ export default function LostAChildPage() {
         </div>
       </div>
 
+      {/* FAQ section */}
+      <h2 className="text-2xl font-bold text-foreground mb-6">Common questions when a child dies</h2>
+      <div className="space-y-4 mb-10">
+        <div className="bg-card rounded-xl border border-border p-6">
+          <h3 className="font-semibold text-foreground mb-2">Do I have to pay for my child's funeral?</h3>
+          <p className="text-sm text-muted leading-relaxed">
+            In England, the Children's Funeral Fund covers burial or cremation fees for children under 18 and babies stillborn after 24 weeks. Your funeral director applies on your behalf. There is no means test. Scotland has a similar scheme. In addition, many funeral directors significantly reduce or waive their fees for children's funerals. If you are on means-tested benefits, you may also be eligible for a Funeral Expenses Payment from the DWP.
+          </p>
+        </div>
+        <div className="bg-card rounded-xl border border-border p-6">
+          <h3 className="font-semibold text-foreground mb-2">Am I entitled to parental bereavement leave?</h3>
+          <p className="text-sm text-muted leading-relaxed">
+            If your child was under 18, or was a stillborn baby after 24 weeks of pregnancy, you are entitled to 2 weeks of Parental Bereavement Leave. This can be taken as two separate weeks within 56 weeks of the death. You are entitled to statutory pay (currently £184.03 per week or 90% of average weekly earnings, whichever is lower). Many employers offer additional paid leave beyond this.
+          </p>
+        </div>
+        <div className="bg-card rounded-xl border border-border p-6">
+          <h3 className="font-semibold text-foreground mb-2">Will there be a post-mortem?</h3>
+          <p className="text-sm text-muted leading-relaxed">
+            If the cause of death is unknown or the death was sudden, the coroner will usually order a post-mortem. This is a legal requirement and cannot be refused. The coroner's office will explain the process and keep you informed. If a hospital post-mortem is requested (to better understand an illness), you can decline. The results will be shared with you, and you can take someone with you to the meeting.
+          </p>
+        </div>
+        <div className="bg-card rounded-xl border border-border p-6">
+          <h3 className="font-semibold text-foreground mb-2">Where can I get support as a bereaved parent?</h3>
+          <p className="text-sm text-muted leading-relaxed">
+            Child Bereavement UK (0800 02 888 40), The Compassionate Friends (0345 123 2304), and Sands for stillbirth and neonatal death (0808 164 3332) all offer free, specialist support. Your GP can also refer you to counselling. You do not need to be in crisis to reach out for help.
+          </p>
+        </div>
+      </div>
+
+      {/* Official resources */}
+      <h2 className="text-2xl font-bold text-foreground mb-6">Official resources</h2>
+      <div className="bg-card rounded-xl border border-border p-6 mb-10">
+        <ul className="text-sm text-muted leading-relaxed space-y-2">
+          <li><a href="https://www.gov.uk/parental-bereavement-pay-leave" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">gov.uk/parental-bereavement-pay-leave</a> : Parental Bereavement Leave and Pay</li>
+          <li><a href="https://www.gov.uk/childrens-funeral-fund" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">gov.uk/childrens-funeral-fund</a> : Children's Funeral Fund for England</li>
+          <li><a href="https://www.childbereavementuk.org" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">childbereavementuk.org</a> : Free support for bereaved parents and families</li>
+          <li><a href="https://www.tcf.org.uk" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">tcf.org.uk</a> : The Compassionate Friends</li>
+          <li><a href="https://www.sands.org.uk" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">sands.org.uk</a> : Sands, stillbirth and neonatal death charity</li>
+        </ul>
+      </div>
+
       <div className="bg-primary-light rounded-xl p-8 text-center">
         <h2 className="text-2xl font-bold text-foreground mb-3">We are here to help with the practical side</h2>
         <p className="text-muted mb-6">If you would like a personalised checklist of what needs to happen and when, we can help you with that so you can focus on what matters most.</p>
@@ -242,6 +297,37 @@ export default function LostAChildPage() {
 
       <RelatedGuides currentPath="/guides/lost-a-child" guides={['/costs', '/support', '/template-letters', '/cultural-guide']} />
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: "Do I have to pay for my child's funeral?",
+                acceptedAnswer: { '@type': 'Answer', text: "In England, the Children's Funeral Fund covers burial or cremation fees for children under 18 and babies stillborn after 24 weeks. Your funeral director applies on your behalf. There is no means test. Scotland has a similar scheme." },
+              },
+              {
+                '@type': 'Question',
+                name: 'Am I entitled to parental bereavement leave?',
+                acceptedAnswer: { '@type': 'Answer', text: 'If your child was under 18 or stillborn after 24 weeks, you are entitled to 2 weeks of Parental Bereavement Leave within 56 weeks of the death, with statutory pay of £184.03 per week or 90% of average weekly earnings.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'Will there be a post-mortem?',
+                acceptedAnswer: { '@type': 'Answer', text: 'If the cause of death is unknown or the death was sudden, the coroner will usually order a post-mortem. This is a legal requirement. A hospital post-mortem requested for medical understanding can be declined.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'Where can I get support as a bereaved parent?',
+                acceptedAnswer: { '@type': 'Answer', text: 'Child Bereavement UK (0800 02 888 40), The Compassionate Friends (0345 123 2304), and Sands (0808 164 3332) all offer free, specialist support. Your GP can also refer you to counselling.' },
+              },
+            ],
+          }),
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

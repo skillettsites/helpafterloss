@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { GuideImage } from '@/components/GuideImage';
+import { MidPageCta } from '@/components/MidPageCta';
 
 export const metadata: Metadata = {
   title: 'Bereavement Benefits: Every Payment You Can Claim',
@@ -107,6 +109,13 @@ export default function BereavementBenefitsPage() {
         When someone dies, a range of financial support is available from the government and other organisations. Many people never claim what they are fully entitled to, either because they do not know it exists or because the paperwork feels too much to deal with at a difficult time. This guide covers every benefit, who qualifies, and how to claim.
       </p>
 
+      <GuideImage
+        src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80"
+        alt="Person reviewing important paperwork at a desk"
+        credit="Scott Graham"
+        creditUrl="https://unsplash.com/@homajob"
+      />
+
       {/* Empathy callout */}
       <div className="bg-warm border border-warm-border rounded-xl p-5 mb-10">
         <p className="text-sm text-amber-800 leading-relaxed">
@@ -210,6 +219,11 @@ export default function BereavementBenefitsPage() {
           <p><strong className="text-foreground">Tax status:</strong> Not taxable and does not affect other benefits.</p>
         </div>
       </div>
+
+      <MidPageCta
+        heading="Find out exactly which benefits apply to you"
+        text="Answer a few questions about your situation and we will show you which benefits you can claim and how to apply for each one."
+      />
 
       {/* Armed Forces */}
       <div id="armed-forces" className="bg-card rounded-xl border border-border p-6 mb-6">

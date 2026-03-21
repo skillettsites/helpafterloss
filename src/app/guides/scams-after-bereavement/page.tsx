@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { GuideImage } from '@/components/GuideImage';
 
 export const metadata: Metadata = {
   title: 'Bereavement Scams: How to Protect Yourself After a Death',
@@ -107,6 +108,13 @@ export default function ScamsAfterBereavementPage() {
       <p className="text-lg text-muted leading-relaxed mb-10">
         It is an uncomfortable truth that bereaved families are deliberately targeted by scammers. Knowing the common tactics used helps you recognise them quickly and protect both yourself and the estate.
       </p>
+
+      <GuideImage
+        src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80"
+        alt="A lock symbolising security and protection"
+        credit="FlyD"
+        creditUrl="https://unsplash.com/@flyd2069"
+      />
 
       {/* Warning box */}
       <div className="bg-warm border border-warm-border rounded-xl p-5 mb-10">

@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { GuideImage } from '@/components/GuideImage';
+import { MidPageCta } from '@/components/MidPageCta';
 
 export const metadata: Metadata = {
   title: 'When Your Spouse or Partner Dies - Financial and Practical Guide',
@@ -34,6 +36,13 @@ export default function LostASpousePage() {
       <p className="text-lg text-muted leading-relaxed mb-10">
         Losing your partner is the most significant loss most people will ever experience. At the same time, the financial and practical implications are considerable. This guide focuses on the steps that matter most for surviving spouses and partners, including the benefits you may be entitled to and the financial changes you will need to manage.
       </p>
+
+      <GuideImage
+        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80"
+        alt="Two hands gently holding each other in warm light"
+        credit="Priscilla Du Preez"
+        creditUrl="https://unsplash.com/@priscilladupreez"
+      />
 
       {/* Immediate steps */}
       <h2 className="text-2xl font-bold text-foreground mb-6">Immediate steps</h2>
@@ -86,6 +95,11 @@ export default function LostASpousePage() {
           </p>
         </div>
       </div>
+
+      <MidPageCta
+        heading="Overwhelmed by how much there is to do?"
+        text="Our free personalised guide breaks everything into manageable steps with real deadlines, so you can focus on one thing at a time."
+      />
 
       {/* Joint accounts and mortgage */}
       <h2 className="text-2xl font-bold text-foreground mb-6">Joint accounts, mortgage, and property</h2>
@@ -215,6 +229,47 @@ export default function LostASpousePage() {
         </div>
       </div>
 
+      {/* FAQ section */}
+      <h2 className="text-2xl font-bold text-foreground mb-6">Common questions when a spouse dies</h2>
+      <div className="space-y-4 mb-10">
+        <div className="bg-card rounded-xl border border-border p-6">
+          <h3 className="font-semibold text-foreground mb-2">How much is Bereavement Support Payment in 2026?</h3>
+          <p className="text-sm text-muted leading-relaxed">
+            If you have dependent children, you receive a lump sum of £3,500 plus £350 per month for up to 18 months. Without dependent children, the lump sum is £2,500 plus £100 per month for up to 18 months. Claim within 3 months of the death to receive the full amount. Apply at gov.uk/bereavement-support-payment or call 0800 731 0469.
+          </p>
+        </div>
+        <div className="bg-card rounded-xl border border-border p-6">
+          <h3 className="font-semibold text-foreground mb-2">What happens to our joint mortgage when my spouse dies?</h3>
+          <p className="text-sm text-muted leading-relaxed">
+            If your spouse had life insurance linked to the mortgage, the policy should pay it off. If not, the mortgage becomes your sole responsibility. Contact your lender promptly. Most will offer a payment holiday or reduced payments while you sort out your finances. They will not typically repossess a home during the immediate bereavement period.
+          </p>
+        </div>
+        <div className="bg-card rounded-xl border border-border p-6">
+          <h3 className="font-semibold text-foreground mb-2">Can I inherit my spouse's state pension?</h3>
+          <p className="text-sm text-muted leading-relaxed">
+            Under the new state pension (post-April 2016), you may inherit a protected payment if your spouse had one. Under the old system, you may inherit additional state pension. The rules are complex and depend on when you and your spouse reached state pension age. Contact the Pension Service on 0800 731 0469 for a detailed calculation.
+          </p>
+        </div>
+        <div className="bg-card rounded-xl border border-border p-6">
+          <h3 className="font-semibold text-foreground mb-2">Do I need probate if everything was in joint names?</h3>
+          <p className="text-sm text-muted leading-relaxed">
+            If all assets were held in joint names (joint tenancy for property, joint bank accounts), you may not need probate. Joint assets pass automatically to the surviving partner. However, if your spouse had any sole-name assets above the bank's probate threshold, you will likely need probate for those. Check with each institution individually.
+          </p>
+        </div>
+      </div>
+
+      {/* Official resources */}
+      <h2 className="text-2xl font-bold text-foreground mb-6">Official resources</h2>
+      <div className="bg-card rounded-xl border border-border p-6 mb-10">
+        <ul className="text-sm text-muted leading-relaxed space-y-2">
+          <li><a href="https://www.gov.uk/bereavement-support-payment" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">gov.uk/bereavement-support-payment</a> : Claim Bereavement Support Payment online</li>
+          <li><a href="https://www.gov.uk/after-a-death" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">gov.uk/after-a-death</a> : Step-by-step guide from the government</li>
+          <li><a href="https://www.gov.uk/state-pension-through-partner" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">gov.uk/state-pension-through-partner</a> : Inheriting state pension from a spouse</li>
+          <li><a href="https://www.way.org.uk" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">way.org.uk</a> : Widowed and Young, support for people widowed under 51</li>
+          <li><a href="https://www.cruse.org.uk" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">cruse.org.uk</a> : Free bereavement support and counselling</li>
+        </ul>
+      </div>
+
       <div className="bg-primary-light rounded-xl p-8 text-center">
         <h2 className="text-2xl font-bold text-foreground mb-3">Get a checklist tailored to your situation</h2>
         <p className="text-muted mb-6">Answer a few questions about your circumstances and we will give you a personalised list of exactly what to do next.</p>
@@ -225,6 +280,37 @@ export default function LostASpousePage() {
 
       <RelatedGuides currentPath="/guides/lost-a-spouse" guides={['/guides/bereavement-benefits', '/probate', '/template-letters', '/tell-us-once']} />
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'How much is Bereavement Support Payment in 2026?',
+                acceptedAnswer: { '@type': 'Answer', text: 'With dependent children: £3,500 lump sum plus £350 per month for 18 months. Without children: £2,500 lump sum plus £100 per month for 18 months. Claim within 3 months of the death for the full amount.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'What happens to our joint mortgage when my spouse dies?',
+                acceptedAnswer: { '@type': 'Answer', text: 'If your spouse had life insurance linked to the mortgage, the policy should pay it off. If not, the mortgage becomes your sole responsibility. Most lenders will offer a payment holiday during the bereavement period.' },
+              },
+              {
+                '@type': 'Question',
+                name: "Can I inherit my spouse's state pension?",
+                acceptedAnswer: { '@type': 'Answer', text: 'Under the new state pension (post-April 2016), you may inherit a protected payment. Under the old system, you may inherit additional state pension. Contact the Pension Service on 0800 731 0469 for a detailed calculation.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'Do I need probate if everything was in joint names?',
+                acceptedAnswer: { '@type': 'Answer', text: 'If all assets were held in joint names (joint tenancy for property, joint bank accounts), you may not need probate. Joint assets pass automatically to the surviving partner. Sole-name assets above the bank threshold will likely need probate.' },
+              },
+            ],
+          }),
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { GuideImage } from '@/components/GuideImage';
+import { MidPageCta } from '@/components/MidPageCta';
 
 export const metadata: Metadata = {
   title: 'When a Parent Dies - What to Do Next',
@@ -34,6 +36,13 @@ export default function LostAParentPage() {
       <p className="text-lg text-muted leading-relaxed mb-10">
         Losing a parent is one of life's most significant moments, even when it is expected. As an adult child, you may find yourself responsible for a great deal of the practical work at a time when you are also grieving deeply. This guide walks you through what needs to happen, in a sensible order, so nothing important gets missed.
       </p>
+
+      <GuideImage
+        src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80"
+        alt="Sunlight breaking through clouds over a peaceful mountain landscape"
+        credit="Simon Berger"
+        creditUrl="https://unsplash.com/@8moments"
+      />
 
       {/* First steps */}
       <h2 className="text-2xl font-bold text-foreground mb-6">First steps: who does what</h2>
@@ -86,6 +95,11 @@ export default function LostAParentPage() {
           </p>
         </div>
       </div>
+
+      <MidPageCta
+        heading="Need help working out what to do first?"
+        text="Our personalised guide asks a few questions about your parent's situation and gives you a step-by-step checklist with real deadlines."
+      />
 
       {/* Home and possessions */}
       <h2 className="text-2xl font-bold text-foreground mb-6">Dealing with your parent's home</h2>
@@ -214,6 +228,53 @@ export default function LostAParentPage() {
         </div>
       </div>
 
+      {/* FAQ section */}
+      <h2 className="text-2xl font-bold text-foreground mb-6">Common questions when a parent dies</h2>
+      <div className="space-y-4 mb-10">
+        <div className="bg-card rounded-xl border border-border p-6">
+          <h3 className="font-semibold text-foreground mb-2">Who is responsible for arranging the funeral when a parent dies?</h3>
+          <p className="text-sm text-muted leading-relaxed">
+            If your parent had a surviving spouse, they typically take the lead. If there is no surviving spouse, the executor named in the will has the legal right and responsibility. If there is no will, any adult child can step forward. In practice, it is worth agreeing early with siblings about who will coordinate, to avoid confusion or conflict. The funeral director can guide you through the process regardless of who takes the lead.
+          </p>
+        </div>
+        <div className="bg-card rounded-xl border border-border p-6">
+          <h3 className="font-semibold text-foreground mb-2">Do I need to apply for probate when a parent dies?</h3>
+          <p className="text-sm text-muted leading-relaxed">
+            If your parent owned property, or had more than around £5,000 to £50,000 in sole-name bank accounts (the threshold varies by bank), you will almost certainly need probate. Apply using form PA1P at gov.uk if there is a will, or PA1A if there is no will. The court fee is £300. You do not need a solicitor, though one can help if the estate is complex.
+          </p>
+        </div>
+        <div className="bg-card rounded-xl border border-border p-6">
+          <h3 className="font-semibold text-foreground mb-2">Can adult children claim bereavement benefits after a parent dies?</h3>
+          <p className="text-sm text-muted leading-relaxed">
+            Bereavement Support Payment is only available to surviving spouses and civil partners, not to children. As an adult child, you cannot claim it. If your income has been affected by the loss (for example, if you were financially dependent on your parent), check your eligibility for Universal Credit or other benefits at gov.uk/benefits.
+          </p>
+        </div>
+        <div className="bg-card rounded-xl border border-border p-6">
+          <h3 className="font-semibold text-foreground mb-2">How long does bereavement leave last if a parent dies?</h3>
+          <p className="text-sm text-muted leading-relaxed">
+            There is no statutory right to paid bereavement leave for the death of a parent in UK law. Most employers offer 3 to 5 days of compassionate leave as part of their company policy, though some offer more. Check your employment contract or speak to HR. If you need longer, your GP can issue a fit note. ACAS has guidance on bereavement in the workplace at acas.org.uk.
+          </p>
+        </div>
+        <div className="bg-card rounded-xl border border-border p-6">
+          <h3 className="font-semibold text-foreground mb-2">What happens to my parent's house after they die?</h3>
+          <p className="text-sm text-muted leading-relaxed">
+            If your parent had a surviving spouse who owned the property as joint tenants, it passes to them automatically. If the property was in your parent's sole name, it becomes part of the estate and is distributed according to the will or intestacy rules. You cannot sell the property until probate is granted. Apply for a Class F council tax exemption immediately, as the property may be exempt from council tax from the date of death through to 6 months after probate.
+          </p>
+        </div>
+      </div>
+
+      {/* Official resources */}
+      <h2 className="text-2xl font-bold text-foreground mb-6">Official resources</h2>
+      <div className="bg-card rounded-xl border border-border p-6 mb-10">
+        <ul className="text-sm text-muted leading-relaxed space-y-2">
+          <li><a href="https://www.gov.uk/after-a-death" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">gov.uk/after-a-death</a> : Step-by-step guide from the government</li>
+          <li><a href="https://www.gov.uk/applying-for-probate" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">gov.uk/applying-for-probate</a> : How to apply for probate online</li>
+          <li><a href="https://www.gov.uk/find-bereavement-services-from-council" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">gov.uk/find-bereavement-services-from-council</a> : Local council bereavement services</li>
+          <li><a href="https://www.gov.uk/inherits-someone-dies-without-will" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">gov.uk/inherits-someone-dies-without-will</a> : Intestacy rules explained</li>
+          <li><a href="https://www.cruse.org.uk" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">cruse.org.uk</a> : Free bereavement support and counselling</li>
+        </ul>
+      </div>
+
       <div className="bg-primary-light rounded-xl p-8 text-center">
         <h2 className="text-2xl font-bold text-foreground mb-3">Get a personalised checklist for your situation</h2>
         <p className="text-muted mb-6">Answer a few questions and we will give you a step-by-step list with real deadlines, tailored to your parent's estate.</p>
@@ -224,6 +285,42 @@ export default function LostAParentPage() {
 
       <RelatedGuides currentPath="/guides/lost-a-parent" guides={['/guide', '/probate', '/template-letters', '/costs']} />
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Who is responsible for arranging the funeral when a parent dies?',
+                acceptedAnswer: { '@type': 'Answer', text: 'If your parent had a surviving spouse, they typically take the lead. If there is no surviving spouse, the executor named in the will has the legal right and responsibility. If there is no will, any adult child can step forward.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'Do I need to apply for probate when a parent dies?',
+                acceptedAnswer: { '@type': 'Answer', text: 'If your parent owned property, or had more than around £5,000 to £50,000 in sole-name bank accounts, you will almost certainly need probate. Apply using form PA1P at gov.uk if there is a will, or PA1A if there is no will. The court fee is £300.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can adult children claim bereavement benefits after a parent dies?',
+                acceptedAnswer: { '@type': 'Answer', text: 'Bereavement Support Payment is only available to surviving spouses and civil partners, not to children. Check your eligibility for Universal Credit or other benefits at gov.uk/benefits.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'How long does bereavement leave last if a parent dies?',
+                acceptedAnswer: { '@type': 'Answer', text: 'There is no statutory right to paid bereavement leave for the death of a parent in UK law. Most employers offer 3 to 5 days of compassionate leave. Check your employment contract or speak to HR.' },
+              },
+              {
+                '@type': 'Question',
+                name: "What happens to my parent's house after they die?",
+                acceptedAnswer: { '@type': 'Answer', text: 'If jointly owned as joint tenants with a surviving spouse, it passes automatically. If in sole name, it becomes part of the estate and is distributed according to the will or intestacy rules. You cannot sell until probate is granted.' },
+              },
+            ],
+          }),
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { GuideImage } from '@/components/GuideImage';
+import { MidPageCta } from '@/components/MidPageCta';
 
 export const metadata: Metadata = {
   title: 'Bank Accounts After Death: What Happens and What to Do',
@@ -113,6 +115,13 @@ export default function BankAccountsAfterDeathPage() {
         Dealing with someone&apos;s bank accounts after they die is one of the first practical tasks you will face. Banks freeze accounts as soon as they are told, which can leave families without access to money they need. This guide explains how the process works, how to find all the accounts, and how to get money released as quickly as possible.
       </p>
 
+      <GuideImage
+        src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80"
+        alt="Neat stack of important documents and papers on a desk"
+        credit="Towfiqu barbhuiya"
+        creditUrl="https://unsplash.com/@towfiqu999999"
+      />
+
       {/* Quick summary stats */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
         <div className="bg-card rounded-xl border border-border p-5 text-center">
@@ -138,6 +147,11 @@ export default function BankAccountsAfterDeathPage() {
           </div>
         ))}
       </div>
+
+      <MidPageCta
+        heading="Need a full list of what to do?"
+        text="Our personalised guide covers bank accounts, pensions, property, and everything else. Get a step-by-step checklist with real deadlines."
+      />
 
       {/* Probate thresholds table */}
       <h2 className="text-2xl font-bold text-foreground mb-6">Bank probate thresholds comparison</h2>

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { GuideImage } from '@/components/GuideImage';
 
 export const metadata: Metadata = {
   title: 'When an Unmarried Partner Dies: Your Rights and Options',
@@ -148,6 +149,13 @@ export default function CohabitingPartnersPage() {
       <p className="text-lg text-muted leading-relaxed mb-10">
         Losing a partner is devastating. If you were not married or in a civil partnership, the legal position can make an already awful situation feel even worse. Understanding where you stand as early as possible helps you protect yourself and make informed decisions.
       </p>
+
+      <GuideImage
+        src="https://images.unsplash.com/photo-1494783367193-149034c05e8f?w=800&q=80"
+        alt="Sunlight streaming through a window into a quiet room"
+        credit="Kari Shea"
+        creditUrl="https://unsplash.com/@karishea"
+      />
 
       {/* Warning box */}
       <div className="bg-warm border border-warm-border rounded-xl p-5 mb-10">

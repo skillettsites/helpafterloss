@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { GuideImage } from '@/components/GuideImage';
 
 export const metadata: Metadata = {
   title: 'How to Help Someone Who Is Grieving - Practical Guide',
@@ -34,6 +35,13 @@ export default function HelpingSomeoneGrievePage() {
       <p className="text-lg text-muted leading-relaxed mb-10">
         When someone you care about loses a person they love, it can be hard to know what to do. You want to help, but you are afraid of saying the wrong thing or overstepping. The truth is that your presence matters far more than perfect words. This guide covers what actually helps, what to avoid, and how to support someone not just in the first few days but in the months that follow.
       </p>
+
+      <GuideImage
+        src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80"
+        alt="Two people sitting together on a bench in a peaceful park"
+        credit="Priscilla Du Preez"
+        creditUrl="https://unsplash.com/@priscilladupreez"
+      />
 
       {/* What to say and what not to say */}
       <h2 className="text-2xl font-bold text-foreground mb-6">What to say (and what not to say)</h2>
