@@ -21,10 +21,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const title = `Register a Death in ${county.name} - Registrar Offices & Guidance`;
   const description = `Find registrar offices in ${county.name}, ${county.nation}. Contact details, addresses, and step-by-step guidance for registering a death in ${county.name}.`;
 
+  // If a guide page exists with the same slug, canonical to the guide to avoid duplicate content
+  const guideOverlapSlugs = ['bristol', 'durham'];
+  const canonicalUrl = guideOverlapSlugs.includes(county.slug)
+    ? `https://helpafterloss.co.uk/guides/${county.slug}`
+    : `https://helpafterloss.co.uk/counties/${county.slug}`;
+
   return {
     title,
     description,
-    alternates: { canonical: `https://helpafterloss.co.uk/counties/${county.slug}` },
+    alternates: { canonical: canonicalUrl },
     openGraph: {
       title,
       description,
