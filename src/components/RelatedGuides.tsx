@@ -58,6 +58,16 @@ const ALL_GUIDES: Guide[] = [
   { href: '/blog/death-certificate-how-many-copies', title: 'Death Certificates: How Many?', description: 'How many certified copies to order and who needs one' },
   { href: '/guide/scotland', title: 'Scotland Guide', description: 'Registration, Procurator Fiscal, Confirmation, and Scottish intestacy rules' },
   { href: '/guide/northern-ireland', title: 'Northern Ireland Guide', description: 'NISRA registration, Belfast probate, no Tell Us Once, and NI intestacy rules' },
+  { href: '/blog/what-to-do-when-someone-dies-uk', title: 'What to Do When Someone Dies', description: 'A complete step-by-step checklist of everything you need to do, from the first hours to months later' },
+  { href: '/blog/how-long-does-probate-take-uk', title: 'How Long Does Probate Take?', description: 'A realistic timeline for every stage of probate, from application to final distribution' },
+  { href: '/blog/grief-at-christmas', title: 'Grief at Christmas', description: 'Practical, compassionate advice for getting through the holiday season when you are grieving' },
+  { href: '/blog/returning-to-work-after-bereavement', title: 'Returning to Work After Bereavement', description: 'Your legal rights, phased returns, and coping strategies for going back to work while grieving' },
+  { href: '/blog/inheritance-tax-guide-after-death', title: 'Inheritance Tax After a Death', description: 'Current thresholds, exemptions, transferable allowances, and how to calculate and pay IHT' },
+  { href: '/blog/grief-stages-explained', title: 'The Stages of Grief', description: 'What the stages really mean, why grief is not linear, and other models that may better describe your experience' },
+  { href: '/blog/how-to-cope-losing-a-parent', title: 'Coping With Losing a Parent', description: 'A practical and emotional guide to navigating life after the death of a mother or father' },
+  { href: '/blog/tell-us-once-service-guide', title: 'Tell Us Once Service Guide', description: 'How the Tell Us Once service works, who it notifies, and what you still need to do yourself' },
+  { href: '/blog/grief-and-anxiety', title: 'Grief and Anxiety', description: 'Why bereavement triggers panic and anxiety, and practical ways to manage it' },
+  { href: '/blog/registering-a-death-uk', title: 'Registering a Death', description: 'What to bring, where to go, and what to expect at the registration appointment' },
 ];
 
 interface RelatedGuidesProps {

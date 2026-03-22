@@ -21,6 +21,66 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    href: '/blog/what-to-do-when-someone-dies-uk',
+    title: 'What to Do When Someone Dies: Complete UK Step-by-Step Checklist (2026)',
+    date: 'March 2026',
+    description: 'A complete step-by-step checklist of what to do when someone dies in the UK. Covers the first 24 hours, registering the death, Tell Us Once, funeral planning, probate, finances, and longer-term tasks.',
+  },
+  {
+    href: '/blog/registering-a-death-uk',
+    title: 'Registering a Death in the UK: What to Bring, Where to Go (2026)',
+    date: 'March 2026',
+    description: 'Everything you need to know about registering a death in the UK. What documents to bring, where to register, who can register, what happens at the appointment, and what you receive afterwards.',
+  },
+  {
+    href: '/blog/tell-us-once-service-guide',
+    title: 'Tell Us Once Service: How It Works and How to Register (2026)',
+    date: 'March 2026',
+    description: 'A complete guide to the Tell Us Once service. Who it notifies, how to use it online or by phone, what information you need, and everything it does not cover.',
+  },
+  {
+    href: '/blog/how-long-does-probate-take-uk',
+    title: 'How Long Does Probate Take in the UK? Realistic Timeline (2026)',
+    date: 'March 2026',
+    description: 'A realistic breakdown of how long probate takes, from gathering valuations to final distribution. Covers HMRC processing, court delays, and what affects the timeline.',
+  },
+  {
+    href: '/blog/inheritance-tax-guide-after-death',
+    title: 'Inheritance Tax After a Death: UK Thresholds and Exemptions (2026/27)',
+    date: 'March 2026',
+    description: 'Current thresholds, the residence nil-rate band, transferable allowances, main exemptions, gifts within 7 years, and how to calculate and pay inheritance tax after a death.',
+  },
+  {
+    href: '/blog/returning-to-work-after-bereavement',
+    title: 'Returning to Work After Bereavement: Your Rights and How to Cope (2026)',
+    date: 'March 2026',
+    description: 'Your legal rights when going back to work, how to request a phased return, what to tell colleagues, and practical tips for coping when grief follows you to the office.',
+  },
+  {
+    href: '/blog/grief-stages-explained',
+    title: 'The Stages of Grief: What They Really Mean and Why Grief is Not Linear',
+    date: 'March 2026',
+    description: 'An honest look at the five stages of grief, why they are widely misunderstood, other models of grief that may better describe your experience, and what grief actually feels like day to day.',
+  },
+  {
+    href: '/blog/how-to-cope-losing-a-parent',
+    title: 'How to Cope With Losing a Parent: A Practical and Emotional Guide',
+    date: 'March 2026',
+    description: 'A compassionate guide to navigating life after the death of a mother or father. Covers the emotional impact, family dynamics, practical tasks, and where to find support.',
+  },
+  {
+    href: '/blog/grief-and-anxiety',
+    title: 'Grief and Anxiety: Why Bereavement Triggers Panic and How to Manage It',
+    date: 'March 2026',
+    description: 'Why grief and anxiety are so closely linked, the types of anxiety common after bereavement, how to manage panic attacks, and when to seek professional help.',
+  },
+  {
+    href: '/blog/grief-at-christmas',
+    title: 'Coping With Grief at Christmas: Practical Ways to Get Through the Holidays',
+    date: 'March 2026',
+    description: 'Practical, compassionate advice for coping with grief at Christmas. How to handle traditions, family gatherings, and the pressure to be happy when you are grieving.',
+  },
+  {
     href: '/blog/true-cost-of-dying-uk',
     title: 'The True Cost of Dying in the UK in 2026',
     date: 'March 2026',
