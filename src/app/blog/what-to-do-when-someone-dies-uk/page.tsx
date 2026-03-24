@@ -300,6 +300,37 @@ export default function WhatToDoWhenSomeoneDiesPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What is the first thing to do when someone dies?',
+                acceptedAnswer: { '@type': 'Answer', text: 'If the death was expected and happened at home with a care plan in place, call the GP surgery or out-of-hours service. If it was unexpected or unattended, call 999. There is no rush to do anything else in the first few hours. The body does not need to be moved immediately.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'How long do I have to register a death in the UK?',
+                acceptedAnswer: { '@type': 'Answer', text: 'You must register the death within 5 days in England, Wales, and Northern Ireland, or within 8 days in Scotland. If the coroner is involved, registration may be delayed until their investigation is complete, but this does not affect the deadline for you to make the appointment.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is Tell Us Once and how does it work?',
+                acceptedAnswer: { '@type': 'Answer', text: 'Tell Us Once is a free government service that lets you report a death to most government departments in a single phone call or online session. It notifies the DWP, HMRC, Passport Office, DVLA, council, and the local authority. You get a reference number when you register the death, then use it to access the Tell Us Once service.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'Do I need probate when someone dies?',
+                acceptedAnswer: { '@type': 'Answer', text: 'Not always. Probate is needed if the deceased owned property in their sole name, had savings or investments above the bank\'s probate threshold (typically £50,000), or held certain types of shares. Joint bank accounts and jointly owned property usually pass automatically to the surviving owner without probate.' },
+              },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://helpafterloss.co.uk' },

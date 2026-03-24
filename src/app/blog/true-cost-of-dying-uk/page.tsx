@@ -341,6 +341,37 @@ export default function TrueCostPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'How much does a funeral cost in the UK in 2026?',
+                acceptedAnswer: { '@type': 'Answer', text: 'The average UK funeral costs between £4,000 and £5,000 for a cremation, and £5,000 to £7,000 for a burial. However, these averages hide huge variation. A direct cremation with no service can cost under £1,000, while a traditional funeral with all the extras can exceed £10,000.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is the cheapest type of funeral in the UK?',
+                acceptedAnswer: { '@type': 'Answer', text: 'A direct cremation is the cheapest option, typically costing £800 to £1,500. There is no service, no mourners present, and no hearse. The body is collected, cremated, and the ashes returned to you. You can then hold a memorial service separately, on your own terms, at little or no cost.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can I get help paying for a funeral?',
+                acceptedAnswer: { '@type': 'Answer', text: 'Yes. If you are on certain benefits (Universal Credit, Pension Credit, income-based JSA, or others), you may qualify for a DWP Funeral Expenses Payment, which covers the cremation or burial fee in full plus up to £1,000 for other costs. Apply on form SF200 within 6 months of the funeral. The Children\'s Funeral Fund covers costs for anyone under 18 in England.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'What other costs are there when someone dies besides the funeral?',
+                acceptedAnswer: { '@type': 'Answer', text: 'Beyond the funeral, costs include death certificates (£11 each, you need 3 to 4 copies), probate application (£300 if the estate exceeds £5,000), solicitor fees if you use one, property clearance, headstone or memorial (£500 to £3,000+), ongoing grave maintenance fees, and potential inheritance tax. The total can be significantly more than the funeral itself.' },
+              },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://helpafterloss.co.uk' },

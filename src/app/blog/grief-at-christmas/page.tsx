@@ -286,6 +286,37 @@ export default function GriefAtChristmasPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'How do you cope with grief at Christmas?',
+                acceptedAnswer: { '@type': 'Answer', text: 'Give yourself permission to feel whatever you feel. Keep some traditions if they bring comfort, let go of others. Plan ahead, tell people what you need, and do not pressure yourself to be happy. It is OK to feel sad and to step away from gatherings when you need to.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is it normal to find Christmas hard after a bereavement?',
+                acceptedAnswer: { '@type': 'Answer', text: 'Yes, completely normal. Christmas is built around family and togetherness, which makes the absence of someone you love especially painful. Many bereaved people find the build-up harder than the day itself.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'Should I celebrate Christmas after someone dies?',
+                acceptedAnswer: { '@type': 'Answer', text: 'There is no right or wrong answer. Some people find comfort in continuing traditions. Others need to do something completely different. You can keep some parts of your usual Christmas and change others. Do what feels right for you.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'How do I help a grieving person at Christmas?',
+                acceptedAnswer: { '@type': 'Answer', text: 'Say the name of the person who died. Acknowledge the loss openly. Ask specific questions rather than vague offers of help. Include them in plans but do not pressure them. Check in on the days after Christmas too.' },
+              },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://helpafterloss.co.uk' },

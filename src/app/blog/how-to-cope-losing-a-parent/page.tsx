@@ -251,6 +251,37 @@ export default function HowToCopeLosingParentPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'How long does it take to get over losing a parent?',
+                acceptedAnswer: { '@type': 'Answer', text: 'You do not "get over" losing a parent. Over time, the pain changes shape and becomes more manageable, but the loss remains. Most people find the first year especially difficult, with particular pain around birthdays, holidays, and anniversaries. There is no correct timeline for grief.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is it normal to feel relief when a parent dies?',
+                acceptedAnswer: { '@type': 'Answer', text: 'Yes. Relief is a very common and normal reaction, especially if the parent was suffering, had a long illness, or if the relationship was difficult. Feeling relief does not mean you did not love them. It is possible to feel relief and sadness at the same time.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'How do I cope with losing my last surviving parent?',
+                acceptedAnswer: { '@type': 'Answer', text: 'Losing your last parent can trigger a particular kind of grief because you become the oldest generation. It can feel like losing your safety net. Allow yourself to grieve this specific loss. Lean on siblings if you have them, connect with friends who have been through it, and consider grief counselling through Cruse (0808 808 1677) or NHS talking therapies.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'What practical things need to be done when a parent dies?',
+                acceptedAnswer: { '@type': 'Answer', text: 'The immediate priorities are: get a medical certificate of cause of death, register the death within 5 days (8 in Scotland), notify the DWP and HMRC via Tell Us Once, and arrange the funeral. After that, you will need to deal with their property, bank accounts, utilities, and potentially probate. Our personalised guide walks you through every step.' },
+              },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://helpafterloss.co.uk' },

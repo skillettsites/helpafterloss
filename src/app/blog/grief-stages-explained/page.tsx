@@ -295,6 +295,37 @@ export default function GriefStagesExplainedPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What are the stages of grief?',
+                acceptedAnswer: { '@type': 'Answer', text: 'The most well-known model describes five stages: denial, anger, bargaining, depression, and acceptance. These were originally proposed by Elisabeth Kubler-Ross in 1969. However, modern grief research shows that grief is not linear and most people do not experience these stages in order or at all.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'Do you have to go through all five stages of grief?',
+                acceptedAnswer: { '@type': 'Answer', text: 'No. The five stages model was never intended as a checklist. Many people skip stages entirely, experience them out of order, or feel emotions not included in the model. There is no right or wrong way to grieve.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'How long do the stages of grief last?',
+                acceptedAnswer: { '@type': 'Answer', text: 'There is no set timeline. Grief is different for everyone. Some people begin to feel more functional within a few months, while others take years. Grief does not have a deadline, and feeling intense emotions months or even years later is completely normal.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is complicated grief?',
+                acceptedAnswer: { '@type': 'Answer', text: 'Complicated grief, or prolonged grief disorder, is when grief becomes stuck and does not ease over many months. It is characterised by intense yearning, difficulty accepting the death, and inability to function in daily life. It affects around 7% to 10% of bereaved people and may require specialist support.' },
+              },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://helpafterloss.co.uk' },

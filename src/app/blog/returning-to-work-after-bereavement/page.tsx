@@ -274,6 +274,37 @@ export default function ReturningToWorkPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'How much bereavement leave am I entitled to in the UK?',
+                acceptedAnswer: { '@type': 'Answer', text: 'There is no statutory right to paid bereavement leave for most employees in the UK, except for parents who lose a child under 18 (2 weeks under Jack\'s Law). Many employers offer 3 to 5 days of paid compassionate leave, but this varies. Check your employment contract or staff handbook for your specific entitlement.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I go back to work after a bereavement?',
+                acceptedAnswer: { '@type': 'Answer', text: 'There is no right answer. Some people return within a week because they need the routine and distraction. Others need several weeks or months. Consider a phased return if your employer offers it. Do not rush back before you are ready, but also know that waiting until you feel completely "normal" may mean waiting a very long time.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can I be sacked for taking time off after a bereavement?',
+                acceptedAnswer: { '@type': 'Answer', text: 'Dismissal solely for taking bereavement leave could be challenged as unfair dismissal if you have been employed for 2 or more years. You also have a statutory right to reasonable unpaid time off for dependants. If you are being pressured to return before you are ready, contact ACAS on 0300 123 1100 for free advice.' },
+              },
+              {
+                '@type': 'Question',
+                name: 'How do I tell my employer someone has died?',
+                acceptedAnswer: { '@type': 'Answer', text: 'Contact your line manager or HR department as soon as you are able. A short message is fine: "My [relationship] has died. I will need time off. I will be in touch when I can." You do not need to go into detail about the circumstances. Ask a friend or family member to make the call if you cannot face it.' },
+              },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://helpafterloss.co.uk' },
