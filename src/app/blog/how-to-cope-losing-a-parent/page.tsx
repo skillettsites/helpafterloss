@@ -136,6 +136,9 @@ export default function HowToCopeLosingParentPage() {
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <Link href="/probate" className="text-primary hover:underline">Probate explained</Link></li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <Link href="/guides/executor-duties" className="text-primary hover:underline">Executor duties step by step</Link></li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <Link href="/blog/inheritance-tax-guide-after-death" className="text-primary hover:underline">Inheritance tax thresholds and exemptions</Link></li>
+          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <Link href="/notify" className="text-primary hover:underline">Who to notify after a death</Link> (60+ organisations with phone numbers)</li>
+          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <Link href="/costs" className="text-primary hover:underline">Full cost breakdown</Link> (funerals, certificates, probate fees)</li>
+          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <Link href="/template-letters" className="text-primary hover:underline">Template letters</Link> for notifying banks, insurers, and utility companies</li>
         </ul>
         <p className="text-sm text-muted leading-relaxed mt-4">
           If you are the executor, do not try to do everything yourself. Delegate where you can. Ask a sibling to handle the utility companies while you deal with the bank. Accept help from friends who offer to do the grocery shop or take on a specific task.

@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/results'],
+        disallow: ['/results', '/dashboard', '/auth', '/donate/thank-you', '/print-checklist'],
       },
     ],
     sitemap: 'https://helpafterloss.co.uk/sitemap.xml',

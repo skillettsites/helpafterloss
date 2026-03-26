@@ -242,6 +242,13 @@ export default function GriefAndAnxietyPage() {
         </ul>
       </div>
 
+      {/* Practical help links */}
+      <div className="bg-primary-light rounded-lg p-4 mb-8">
+        <p className="text-sm text-foreground">
+          <strong>Dealing with the practical side too?</strong> If you are also handling the paperwork and admin, these tools can help: <Link href="/notify" className="text-primary hover:underline">who to notify</Link> (60+ organisations), <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> to send to banks and insurers, and our <Link href="/costs" className="text-primary hover:underline">full cost breakdown</Link> so there are no surprises.
+        </p>
+      </div>
+
       <RelatedGuides
         currentPath="/blog/grief-and-anxiety"
         guides={['/blog/grief-stages-explained', '/guides/first-year-after-loss', '/blog/returning-to-work-after-bereavement', '/support']}

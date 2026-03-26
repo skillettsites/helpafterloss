@@ -290,9 +290,16 @@ export default function BankProbateThresholdsPage() {
         ))}
       </div>
 
+      {/* Cross-links */}
+      <div className="bg-primary-light rounded-lg p-4 mb-8">
+        <p className="text-sm text-foreground">
+          <strong>Contacting banks:</strong> Our <Link href="/notify" className="text-primary hover:underline">notification guide</Link> has direct bereavement phone numbers for every major UK bank. Use our <Link href="/call-scripts" className="text-primary hover:underline">call scripts</Link> for what to say, and our <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> for written notifications. See our <Link href="/costs" className="text-primary hover:underline">cost breakdown</Link> for all the other expenses to expect.
+        </p>
+      </div>
+
       <RelatedGuides
         currentPath="/blog/bank-probate-thresholds-2026"
-        guides={['/probate', '/template-letters', '/checklist', '/blog/true-cost-of-dying-uk']}
+        guides={['/probate', '/notify', '/costs', '/blog/true-cost-of-dying-uk']}
       />
 
       <div className="bg-primary-light rounded-xl p-8 text-center">

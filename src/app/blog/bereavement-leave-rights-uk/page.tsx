@@ -340,9 +340,16 @@ export default function BereavementLeavePage() {
         ))}
       </div>
 
+      {/* Cross-links to practical tools */}
+      <div className="bg-primary-light rounded-lg p-4 mb-8">
+        <p className="text-sm text-foreground">
+          <strong>While you are off work:</strong> Use the time to <Link href="/notify" className="text-primary hover:underline">notify organisations</Link> of the death. Our <Link href="/call-scripts" className="text-primary hover:underline">call scripts</Link> and <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> make this easier. See our <Link href="/costs" className="text-primary hover:underline">cost breakdown</Link> so you know what to budget for.
+        </p>
+      </div>
+
       <RelatedGuides
         currentPath="/blog/bereavement-leave-rights-uk"
-        guides={['/template-letters', '/support', '/guide', '/guides/bereavement-benefits']}
+        guides={['/notify', '/costs', '/guide', '/guides/bereavement-benefits']}
       />
 
       <div className="bg-primary-light rounded-xl p-8 text-center">

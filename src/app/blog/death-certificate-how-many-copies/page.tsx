@@ -300,9 +300,16 @@ export default function DeathCertificateHowManyCopiesPage() {
         ))}
       </div>
 
+      {/* Cross-links */}
+      <div className="bg-primary-light rounded-lg p-4 mb-8">
+        <p className="text-sm text-foreground">
+          <strong>Next steps:</strong> Once you have your death certificates, use our <Link href="/notify" className="text-primary hover:underline">notification guide</Link> to contact banks, insurers, and utility companies. Our <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> tell you exactly what to write, and our <Link href="/call-scripts" className="text-primary hover:underline">call scripts</Link> tell you what to say on the phone.
+        </p>
+      </div>
+
       <RelatedGuides
         currentPath="/blog/death-certificate-how-many-copies"
-        guides={['/guide', '/costs', '/checklist', '/tell-us-once']}
+        guides={['/guide', '/costs', '/notify', '/template-letters']}
       />
 
       <div className="bg-primary-light rounded-xl p-8 text-center">

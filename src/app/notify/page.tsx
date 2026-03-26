@@ -5,20 +5,20 @@ import type { BereavementContact } from '@/lib/bereavement-contacts';
 import { RelatedGuides } from '@/components/RelatedGuides';
 
 export const metadata: Metadata = {
-  title: 'Who to Notify When Someone Dies - Complete UK Guide',
-  description: 'Contact details, phone numbers, and step-by-step processes for notifying every bank, utility, insurer, and government department after a death in the UK.',
+  title: 'Who to Notify When Someone Dies: 60+ UK Organisations with Phone Numbers',
+  description: 'Every bank, energy company, insurer, and government department you need to contact after a death. Direct bereavement phone numbers, online forms, and what to say when you call.',
   alternates: { canonical: 'https://helpafterloss.co.uk/notify' },
   openGraph: {
-    title: 'Who to Notify When Someone Dies - Complete UK Guide',
-    description: 'Contact details, phone numbers, and step-by-step processes for notifying every bank, utility, insurer, and government department after a death in the UK.',
+    title: 'Who to Notify When Someone Dies: 60+ UK Organisations with Phone Numbers',
+    description: 'Every bank, energy company, insurer, and government department you need to contact after a death. Direct bereavement phone numbers, online forms, and what to say when you call.',
     url: 'https://helpafterloss.co.uk/notify',
     type: 'article',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Who to Notify When Someone Dies - Complete UK Guide',
-    description: 'Contact details, phone numbers, and step-by-step processes for notifying every bank, utility, insurer, and government department after a death in the UK.',
+    title: 'Who to Notify When Someone Dies: 60+ UK Organisations',
+    description: 'Every bank, energy company, insurer, and government department you need to contact after a death, with direct bereavement phone numbers.',
   },
 };
 
@@ -201,6 +201,17 @@ export default function NotifyHubPage() {
           </section>
         );
       })}
+
+      {/* Cross-links to related content */}
+      <section className="py-4 px-4">
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-primary-light rounded-lg p-4">
+            <p className="text-sm text-foreground">
+              <strong>Related guides:</strong> See <Link href="/blog/what-tell-us-once-doesnt-cover" className="text-primary hover:underline">what Tell Us Once does not cover</Link> for the full list of organisations you must contact yourself. Use our <Link href="/call-scripts" className="text-primary hover:underline">call scripts</Link> for what to say when you phone, and our <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> for what to write. For costs involved, see our <Link href="/costs" className="text-primary hover:underline">full cost breakdown</Link>.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* FAQ section */}
       <section className="py-12 px-4">

@@ -275,9 +275,16 @@ export default function InheritanceTaxGuidePage() {
         </ul>
       </div>
 
+      {/* Cross-links */}
+      <div className="bg-primary-light rounded-lg p-4 mb-8">
+        <p className="text-sm text-foreground">
+          <strong>Other costs to expect:</strong> See our <Link href="/costs" className="text-primary hover:underline">full cost breakdown</Link> covering funeral fees, death certificates, probate, and solicitors. If you need to notify banks and financial institutions, use our <Link href="/notify" className="text-primary hover:underline">notification guide</Link> with direct bereavement phone numbers.
+        </p>
+      </div>
+
       <RelatedGuides
         currentPath="/blog/inheritance-tax-guide-after-death"
-        guides={['/guides/inheritance-tax', '/probate', '/blog/how-long-does-probate-take-uk', '/guides/executor-duties']}
+        guides={['/guides/inheritance-tax', '/costs', '/blog/how-long-does-probate-take-uk', '/notify']}
       />
 
       <div className="bg-primary-light rounded-xl p-8 text-center">

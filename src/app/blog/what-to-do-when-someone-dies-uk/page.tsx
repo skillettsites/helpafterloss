@@ -259,9 +259,16 @@ export default function WhatToDoWhenSomeoneDiesPage() {
         </ul>
       </div>
 
+      {/* Cross-links to tools */}
+      <div className="bg-primary-light rounded-lg p-4 mb-8">
+        <p className="text-sm text-foreground">
+          <strong>Tools to help:</strong> Our <Link href="/costs" className="text-primary hover:underline">cost breakdown</Link> covers every expense so there are no surprises. Use our <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> and <Link href="/call-scripts" className="text-primary hover:underline">call scripts</Link> when contacting organisations. If you are in <Link href="/guide/scotland" className="text-primary hover:underline">Scotland</Link> or <Link href="/guide/northern-ireland" className="text-primary hover:underline">Northern Ireland</Link>, see our nation-specific guides for differences in registration, probate, and costs.
+        </p>
+      </div>
+
       <RelatedGuides
         currentPath="/blog/what-to-do-when-someone-dies-uk"
-        guides={['/guide', '/checklist', '/tell-us-once', '/probate']}
+        guides={['/guide', '/costs', '/notify', '/template-letters']}
       />
 
       <div className="bg-primary-light rounded-xl p-8 text-center">

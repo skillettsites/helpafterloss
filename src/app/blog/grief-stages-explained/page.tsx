@@ -254,6 +254,13 @@ export default function GriefStagesExplainedPage() {
         </ul>
       </div>
 
+      {/* Practical help links */}
+      <div className="bg-primary-light rounded-lg p-4 mb-8">
+        <p className="text-sm text-foreground">
+          <strong>Need help with the practical steps?</strong> Our <Link href="/checklist" className="text-primary hover:underline">interactive checklist</Link> walks you through everything from registering the death to closing accounts. See our <Link href="/notify" className="text-primary hover:underline">notification guide</Link> for every organisation you need to contact, with direct phone numbers.
+        </p>
+      </div>
+
       <RelatedGuides
         currentPath="/blog/grief-stages-explained"
         guides={['/guides/first-year-after-loss', '/blog/grief-and-anxiety', '/guides/helping-someone-grieve', '/support']}

@@ -4,20 +4,20 @@ import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
 
 export const metadata: Metadata = {
-  title: 'What to Do When Someone Dies in Northern Ireland - Complete Guide',
-  description: 'A complete guide to what happens when someone dies in Northern Ireland. Covers registration with NISRA, the coroner system, probate through Belfast High Court, NI intestacy rules, and key contacts.',
+  title: 'When Someone Dies in Northern Ireland: No Tell Us Once + Higher Probate Fees (2026)',
+  description: 'Northern Ireland has no Tell Us Once service, probate fees up to £7,000+, and different intestacy rules. Free step-by-step guide with every phone number, deadline, and cost.',
   alternates: { canonical: 'https://helpafterloss.co.uk/guide/northern-ireland' },
   openGraph: {
-    title: 'What to Do When Someone Dies in Northern Ireland - Complete Guide',
-    description: 'Step-by-step guidance for dealing with a death in Northern Ireland, including NISRA registration, probate, and intestacy rules.',
+    title: 'When Someone Dies in Northern Ireland: No Tell Us Once + Higher Probate Fees (2026)',
+    description: 'No Tell Us Once, probate fees up to £7,000+, and different intestacy rules. Free step-by-step guide with every phone number, deadline, and cost.',
     url: 'https://helpafterloss.co.uk/guide/northern-ireland',
     type: 'article',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'What to Do When Someone Dies in Northern Ireland',
-    description: 'Registration, coroner system, probate, and intestacy rules explained for Northern Ireland.',
+    title: 'When Someone Dies in Northern Ireland: Key Differences (2026)',
+    description: 'No Tell Us Once, higher probate fees, and NI-specific processes. Registration, coroner, probate, and intestacy rules explained.',
   },
 };
 
@@ -363,6 +363,13 @@ export default function NorthernIrelandGuidePage() {
             <p className="text-sm text-muted leading-relaxed">{item.a}</p>
           </div>
         ))}
+      </div>
+
+      {/* Practical tools */}
+      <div className="bg-primary-light rounded-lg p-4 mb-4">
+        <p className="text-sm text-foreground">
+          <strong>Practical tools:</strong> Use our <Link href="/notify" className="text-primary hover:underline">notification guide</Link> to contact banks and utility companies, our <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> to save time writing, and our <Link href="/costs" className="text-primary hover:underline">cost calculator</Link> to plan your budget. Since Tell Us Once is not available in Northern Ireland, our <Link href="/call-scripts" className="text-primary hover:underline">call scripts</Link> are especially useful for phoning government departments.
+        </p>
       </div>
 
       {/* Scotland link */}

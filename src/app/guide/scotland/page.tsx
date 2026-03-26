@@ -4,20 +4,20 @@ import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
 
 export const metadata: Metadata = {
-  title: 'What to Do When Someone Dies in Scotland - Complete Guide',
-  description: 'A complete guide to what happens when someone dies in Scotland. Covers registration (8 days), Procurator Fiscal, Confirmation (not Probate), Scottish intestacy rules, legal rights, and key contacts.',
+  title: 'When Someone Dies in Scotland: 6 Key Differences You Must Know (2026)',
+  description: 'Scotland has different rules for registration (8 days, not 5), no coroner system, and Confirmation instead of Probate. Free guide covers every step, with costs, deadlines, and contact numbers.',
   alternates: { canonical: 'https://helpafterloss.co.uk/guide/scotland' },
   openGraph: {
-    title: 'What to Do When Someone Dies in Scotland - Complete Guide',
-    description: 'Step-by-step guidance for dealing with a death in Scotland, including registration, Confirmation, and Scottish intestacy rules.',
+    title: 'When Someone Dies in Scotland: 6 Key Differences You Must Know (2026)',
+    description: 'Scotland has different rules for registration (8 days, not 5), no coroner system, and Confirmation instead of Probate. Free guide with costs, deadlines, and contacts.',
     url: 'https://helpafterloss.co.uk/guide/scotland',
     type: 'article',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'What to Do When Someone Dies in Scotland',
-    description: 'Registration, Procurator Fiscal, Confirmation, and intestacy rules explained for Scotland.',
+    title: 'When Someone Dies in Scotland: 6 Key Differences (2026)',
+    description: 'Registration deadlines, Procurator Fiscal, Confirmation costs, and Scottish intestacy rules, all in plain English.',
   },
 };
 
@@ -352,6 +352,13 @@ export default function ScotlandGuidePage() {
             <p className="text-sm text-muted leading-relaxed">{item.a}</p>
           </div>
         ))}
+      </div>
+
+      {/* Practical tools */}
+      <div className="bg-primary-light rounded-lg p-4 mb-4">
+        <p className="text-sm text-foreground">
+          <strong>Practical tools:</strong> Use our <Link href="/notify" className="text-primary hover:underline">notification guide</Link> to contact banks and utility companies, our <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> to save time writing, and our <Link href="/costs" className="text-primary hover:underline">cost calculator</Link> to plan your budget. Our <Link href="/call-scripts" className="text-primary hover:underline">call scripts</Link> tell you exactly what to say on the phone.
+        </p>
       </div>
 
       {/* Northern Ireland link */}

@@ -300,9 +300,16 @@ export default function TrueCostPage() {
         </div>
       </div>
 
+      {/* Cross-links */}
+      <div className="bg-primary-light rounded-lg p-4 mb-8">
+        <p className="text-sm text-foreground">
+          <strong>Save time on the admin:</strong> Our <Link href="/notify" className="text-primary hover:underline">notification guide</Link> lists every organisation you need to contact with direct phone numbers. Use our <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> and <Link href="/call-scripts" className="text-primary hover:underline">call scripts</Link> to avoid repeating yourself. If you are in <Link href="/guide/scotland" className="text-primary hover:underline">Scotland</Link> or <Link href="/guide/northern-ireland" className="text-primary hover:underline">Northern Ireland</Link>, costs and processes differ.
+        </p>
+      </div>
+
       <RelatedGuides
         currentPath="/blog/true-cost-of-dying-uk"
-        guides={['/costs', '/guides/bereavement-benefits', '/probate', '/blog/free-funeral-options-uk']}
+        guides={['/costs', '/notify', '/template-letters', '/blog/free-funeral-options-uk']}
       />
 
       <div className="bg-primary-light rounded-xl p-8 text-center">

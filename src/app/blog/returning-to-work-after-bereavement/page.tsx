@@ -233,9 +233,16 @@ export default function ReturningToWorkPage() {
         </ul>
       </div>
 
+      {/* Practical links */}
+      <div className="bg-primary-light rounded-lg p-4 mb-8">
+        <p className="text-sm text-foreground">
+          <strong>Still dealing with the admin?</strong> Use our <Link href="/notify" className="text-primary hover:underline">notification guide</Link> to contact organisations during your time off. Our <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> and <Link href="/call-scripts" className="text-primary hover:underline">call scripts</Link> save time and emotional energy.
+        </p>
+      </div>
+
       <RelatedGuides
         currentPath="/blog/returning-to-work-after-bereavement"
-        guides={['/blog/bereavement-leave-rights-uk', '/guides/bereavement-benefits', '/blog/grief-and-anxiety', '/support']}
+        guides={['/blog/bereavement-leave-rights-uk', '/notify', '/blog/grief-and-anxiety', '/support']}
       />
 
       <div className="bg-primary-light rounded-xl p-8 text-center">

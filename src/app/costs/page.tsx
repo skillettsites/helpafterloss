@@ -4,20 +4,20 @@ import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
 
 export const metadata: Metadata = {
-  title: 'How Much Does It Cost When Someone Dies UK 2026 - Full Breakdown',
-  description: 'Full breakdown of costs when someone dies in the UK. Funerals average £4,141, death certificates cost £12.50 each, probate fee is £300. See every cost and 8 ways to reduce them.',
+  title: 'Cost of Death in the UK 2026: Funerals from £995, Probate £300, Plus 8 Ways to Save',
+  description: 'Average funeral £4,141, death certificates £12.50 each, probate £300. Full cost breakdown with 3 real scenarios (£1,400 to £25,000+) and 8 practical ways to cut costs.',
   alternates: { canonical: 'https://helpafterloss.co.uk/costs' },
   openGraph: {
-    title: 'How Much Does It Cost When Someone Dies in the UK? Full 2026 Breakdown',
-    description: 'Every cost you can expect: funeral, certificates, probate, solicitors, and practical ways to reduce them. Updated for 2026.',
+    title: 'Cost of Death in the UK 2026: Funerals from £995, Probate £300, Plus 8 Ways to Save',
+    description: 'Average funeral £4,141, death certificates £12.50 each, probate £300. Full cost breakdown with 3 real scenarios and 8 practical ways to cut costs.',
     url: 'https://helpafterloss.co.uk/costs',
     type: 'article',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Cost of Death in the UK 2026 - Full Breakdown',
-    description: 'Full cost breakdown: funerals from £995, certificates £12.50, probate £300, plus 8 ways to save money.',
+    title: 'Cost of Death in the UK 2026: Funerals, Probate, and How to Save',
+    description: 'Funerals from £995, certificates £12.50, probate £300. Three real cost scenarios plus 8 ways to save thousands.',
   },
 };
 
@@ -255,9 +255,14 @@ export default function CostsPage() {
       </section>
 
       {/* Cross-links */}
-      <div className="bg-primary-light rounded-lg p-4 mb-10">
+      <div className="bg-primary-light rounded-lg p-4 mb-4">
         <p className="text-sm text-foreground">
           <strong>Related:</strong> See our <Link href="/guide" className="text-primary hover:underline">step-by-step guide</Link> for the full process after a death. Use <Link href="/tell-us-once" className="text-primary hover:underline">Tell Us Once</Link> to notify government departments for free. Check what <Link href="/guides/bereavement-benefits" className="text-primary hover:underline">benefits you may be entitled to</Link>, or read about <Link href="/guides/executor-duties" className="text-primary hover:underline">executor duties</Link> if you are managing the estate.
+        </p>
+      </div>
+      <div className="bg-primary-light rounded-lg p-4 mb-10">
+        <p className="text-sm text-foreground">
+          <strong>Costs vary by nation:</strong> Scotland uses <Link href="/guide/scotland" className="text-primary hover:underline">Confirmation instead of Probate</Link> (£300, but small estates under £36,000 are free). Northern Ireland has a <Link href="/guide/northern-ireland" className="text-primary hover:underline">sliding fee scale</Link> that can exceed £7,000 for large estates. Use our <Link href="/notify" className="text-primary hover:underline">notification guide</Link> and <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> to save time contacting organisations.
         </p>
       </div>
 

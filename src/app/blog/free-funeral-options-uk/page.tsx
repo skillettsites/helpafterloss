@@ -289,9 +289,16 @@ export default function FreeFuneralOptionsPage() {
         ))}
       </div>
 
+      {/* Cross-links */}
+      <div className="bg-primary-light rounded-lg p-4 mb-8">
+        <p className="text-sm text-foreground">
+          <strong>Next steps:</strong> After the funeral, you will need to <Link href="/notify" className="text-primary hover:underline">notify organisations</Link> of the death. Our <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> and <Link href="/call-scripts" className="text-primary hover:underline">call scripts</Link> make this easier. See our <Link href="/guide" className="text-primary hover:underline">step-by-step guide</Link> for the full process.
+        </p>
+      </div>
+
       <RelatedGuides
         currentPath="/blog/free-funeral-options-uk"
-        guides={['/costs', '/guides/bereavement-benefits', '/blog/true-cost-of-dying-uk', '/support']}
+        guides={['/costs', '/notify', '/blog/true-cost-of-dying-uk', '/template-letters']}
       />
 
       <div className="bg-primary-light rounded-xl p-8 text-center">
