@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { PageDisclaimer } from '@/components/PageDisclaimer';
 
 export const metadata: Metadata = {
   title: 'Tell Us Once Service UK 2026 - What It Covers, How to Use It, What You Still Need to Do',
@@ -267,6 +268,8 @@ export default function TellUsOncePage() {
         </Link>
         <p className="text-sm text-muted mt-3">Free. No sign-up required. Takes about 3 minutes.</p>
       </div>
+
+      <PageDisclaimer lastReviewed="March 2026" jurisdiction="england-wales" />
 
       <RelatedGuides currentPath="/tell-us-once" guides={['/guide', '/template-letters', '/phone-directory', '/deadline-tracker']} />
 

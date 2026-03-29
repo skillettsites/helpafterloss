@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { PageDisclaimer } from '@/components/PageDisclaimer';
 
 export const metadata: Metadata = {
   title: 'Cost of Death in the UK 2026: Funerals from £995, Probate £300, Plus 8 Ways to Save',
@@ -302,6 +303,8 @@ export default function CostsPage() {
         </Link>
         <p className="text-sm text-muted mt-3">Free. No sign-up required. Takes about 3 minutes.</p>
       </div>
+
+      <PageDisclaimer lastReviewed="March 2026" jurisdiction="england-wales" />
 
       <RelatedGuides currentPath="/costs" guides={['/guides/funeral-options', '/guides/bereavement-benefits', '/probate', '/blog/true-cost-of-dying-uk']} />
 

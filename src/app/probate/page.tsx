@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { PageDisclaimer } from '@/components/PageDisclaimer';
 
 export const metadata: Metadata = {
   title: 'Probate Guide UK 2026 - How to Apply, Costs, Timelines, DIY vs Solicitor',
@@ -380,6 +381,8 @@ export default function ProbatePage() {
         </Link>
         <p className="text-sm text-muted mt-3">Free. No sign-up required. Takes about 3 minutes.</p>
       </div>
+
+      <PageDisclaimer lastReviewed="March 2026" jurisdiction="all-uk" />
 
       <RelatedGuides currentPath="/probate" guides={['/guides/executor-duties', '/intestacy', '/costs', '/template-letters']} />
 

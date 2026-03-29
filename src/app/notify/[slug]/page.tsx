@@ -45,8 +45,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const contact = getContactBySlug(slug);
   if (!contact) return {};
 
-  const title = `${contact.name} Bereavement: How to Notify, Documents Needed & Timeline`;
-  const description = `Step-by-step guide to notifying ${contact.name} after a death. Bereavement phone number, online form, documents required, and how long it takes.`;
+  const categoryLabel = categorySingularLabels[contact.category];
+  const phoneSnippet = contact.bereavementPhone ? ` ${contact.bereavementPhone}.` : '';
+  const title = `${contact.name} Bereavement Contact Number & Process (2026)`;
+  const description = `How to notify ${contact.name} when someone dies.${phoneSnippet} Documents needed, probate threshold, timeline, and online form options.`;
 
   return {
     title,
