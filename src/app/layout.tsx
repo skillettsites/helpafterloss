@@ -7,6 +7,7 @@ import { EmergencyBanner } from '@/components/EmergencyBanner';
 import { Providers } from '@/components/Providers';
 import { GoogleAnalytics } from '@/components/GoogleAnalytics';
 import { TrackPageview } from '@/components/TrackPageview';
+import { Analytics } from '@vercel/analytics/react';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -71,6 +72,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </main>
           <Footer />
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
