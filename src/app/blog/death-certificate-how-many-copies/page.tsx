@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { TableOfContents } from '@/components/TableOfContents';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { BlogPrintButton } from '@/components/BlogPrintButton';
+import { SupportCta } from '@/components/SupportCta';
 
 export const metadata: Metadata = {
   title: 'How Many Death Certificates Do I Need? (2026 Guide)',
@@ -76,6 +78,7 @@ export default function DeathCertificateHowManyCopiesPage() {
         <span aria-hidden="true">|</span>
         <span>8 min read</span>
       </div>
+      <BlogPrintButton />
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         How Many Death Certificates Do I Need? (2026 Guide)
       </h1>
@@ -301,6 +304,7 @@ export default function DeathCertificateHowManyCopiesPage() {
       </div>
 
       {/* Cross-links */}
+      <SupportCta />
       <div className="bg-primary-light rounded-lg p-4 mb-8">
         <p className="text-sm text-foreground">
           <strong>Next steps:</strong> Once you have your death certificates, use our <Link href="/notify" className="text-primary hover:underline">notification guide</Link> to contact banks, insurers, and utility companies. Our <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> tell you exactly what to write, and our <Link href="/call-scripts" className="text-primary hover:underline">call scripts</Link> tell you what to say on the phone.

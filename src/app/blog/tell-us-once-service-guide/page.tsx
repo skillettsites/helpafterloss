@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { BlogPrintButton } from '@/components/BlogPrintButton';
+import { SupportCta } from '@/components/SupportCta';
 import { TableOfContents } from '@/components/TableOfContents';
 
 export const metadata: Metadata = {
@@ -35,6 +37,7 @@ export default function TellUsOnceGuidePage() {
         <span aria-hidden="true">|</span>
         <span>11 min read</span>
       </div>
+      <BlogPrintButton />
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         Tell Us Once Service: How It Works and How to Register (2026)
       </h1>
@@ -271,6 +274,8 @@ export default function TellUsOnceGuidePage() {
           <li><strong>Samaritans:</strong> 116 123 (free, 24 hours)</li>
         </ul>
       </div>
+
+      <SupportCta />
 
       <RelatedGuides
         currentPath="/blog/tell-us-once-service-guide"

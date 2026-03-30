@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { BlogPrintButton } from '@/components/BlogPrintButton';
+import { SupportCta } from '@/components/SupportCta';
 import { TableOfContents } from '@/components/TableOfContents';
 
 export const metadata: Metadata = {
@@ -35,6 +37,7 @@ export default function WhatToDoWhenSomeoneDiesPage() {
         <span aria-hidden="true">|</span>
         <span>14 min read</span>
       </div>
+      <BlogPrintButton />
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         What to Do When Someone Dies: Complete UK Step-by-Step Checklist (2026)
       </h1>
@@ -260,6 +263,7 @@ export default function WhatToDoWhenSomeoneDiesPage() {
       </div>
 
       {/* Cross-links to tools */}
+      <SupportCta />
       <div className="bg-primary-light rounded-lg p-4 mb-8">
         <p className="text-sm text-foreground">
           <strong>Tools to help:</strong> Our <Link href="/costs" className="text-primary hover:underline">cost breakdown</Link> covers every expense so there are no surprises. Use our <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> and <Link href="/call-scripts" className="text-primary hover:underline">call scripts</Link> when contacting organisations. If you are in <Link href="/guide/scotland" className="text-primary hover:underline">Scotland</Link> or <Link href="/guide/northern-ireland" className="text-primary hover:underline">Northern Ireland</Link>, see our nation-specific guides for differences in registration, probate, and costs.

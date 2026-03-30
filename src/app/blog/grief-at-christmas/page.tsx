@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { BlogPrintButton } from '@/components/BlogPrintButton';
+import { SupportCta } from '@/components/SupportCta';
 import { TableOfContents } from '@/components/TableOfContents';
 
 export const metadata: Metadata = {
@@ -35,6 +37,7 @@ export default function GriefAtChristmasPage() {
         <span aria-hidden="true">|</span>
         <span>11 min read</span>
       </div>
+      <BlogPrintButton />
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         Coping With Grief at Christmas: Practical Ways to Get Through the Holidays
       </h1>
@@ -244,6 +247,8 @@ export default function GriefAtChristmasPage() {
           The Samaritans are open every single day of the year, including Christmas Day and New Year's Eve. You do not have to be suicidal to call. You can call just because you need someone to listen.
         </p>
       </div>
+
+      <SupportCta />
 
       <RelatedGuides
         currentPath="/blog/grief-at-christmas"

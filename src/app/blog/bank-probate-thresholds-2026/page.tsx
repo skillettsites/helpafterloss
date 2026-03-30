@@ -3,6 +3,9 @@ import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { TableOfContents } from '@/components/TableOfContents';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { BlogPrintButton } from '@/components/BlogPrintButton';
+import { SupportCta } from '@/components/SupportCta';
+import { ThresholdEmailCapture } from '@/components/ThresholdEmailCapture';
 
 export const metadata: Metadata = {
   title: 'Bank Probate Thresholds 2026: Complete Comparison',
@@ -114,6 +117,7 @@ export default function BankProbateThresholdsPage() {
         <span aria-hidden="true">|</span>
         <span>9 min read</span>
       </div>
+      <BlogPrintButton />
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         Bank Probate Thresholds 2026: Complete Comparison
       </h1>
@@ -184,6 +188,8 @@ export default function BankProbateThresholdsPage() {
           </tbody>
         </table>
       </div>
+
+      <ThresholdEmailCapture />
 
       {/* Key observations */}
       <div className="bg-primary-light rounded-xl p-6 mb-12">
@@ -291,6 +297,7 @@ export default function BankProbateThresholdsPage() {
       </div>
 
       {/* Cross-links */}
+      <SupportCta />
       <div className="bg-primary-light rounded-lg p-4 mb-8">
         <p className="text-sm text-foreground">
           <strong>Contacting banks:</strong> Our <Link href="/notify" className="text-primary hover:underline">notification guide</Link> has direct bereavement phone numbers for every major UK bank. Use our <Link href="/call-scripts" className="text-primary hover:underline">call scripts</Link> for what to say, and our <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> for written notifications. See our <Link href="/costs" className="text-primary hover:underline">cost breakdown</Link> for all the other expenses to expect.

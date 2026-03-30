@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { BlogPrintButton } from '@/components/BlogPrintButton';
+import { SupportCta } from '@/components/SupportCta';
 import { TableOfContents } from '@/components/TableOfContents';
 
 export const metadata: Metadata = {
@@ -35,6 +37,7 @@ export default function InheritanceTaxGuidePage() {
         <span aria-hidden="true">|</span>
         <span>13 min read</span>
       </div>
+      <BlogPrintButton />
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         Inheritance Tax After a Death: UK Thresholds and Exemptions (2026/27)
       </h1>
@@ -276,6 +279,7 @@ export default function InheritanceTaxGuidePage() {
       </div>
 
       {/* Cross-links */}
+      <SupportCta />
       <div className="bg-primary-light rounded-lg p-4 mb-8">
         <p className="text-sm text-foreground">
           <strong>Other costs to expect:</strong> See our <Link href="/costs" className="text-primary hover:underline">full cost breakdown</Link> covering funeral fees, death certificates, probate, and solicitors. If you need to notify banks and financial institutions, use our <Link href="/notify" className="text-primary hover:underline">notification guide</Link> with direct bereavement phone numbers.

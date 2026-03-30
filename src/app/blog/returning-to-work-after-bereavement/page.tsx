@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { BlogPrintButton } from '@/components/BlogPrintButton';
+import { SupportCta } from '@/components/SupportCta';
 import { TableOfContents } from '@/components/TableOfContents';
 
 export const metadata: Metadata = {
@@ -35,6 +37,7 @@ export default function ReturningToWorkPage() {
         <span aria-hidden="true">|</span>
         <span>12 min read</span>
       </div>
+      <BlogPrintButton />
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         Returning to Work After Bereavement: Your Rights and How to Cope (2026)
       </h1>
@@ -234,6 +237,7 @@ export default function ReturningToWorkPage() {
       </div>
 
       {/* Practical links */}
+      <SupportCta />
       <div className="bg-primary-light rounded-lg p-4 mb-8">
         <p className="text-sm text-foreground">
           <strong>Still dealing with the admin?</strong> Use our <Link href="/notify" className="text-primary hover:underline">notification guide</Link> to contact organisations during your time off. Our <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> and <Link href="/call-scripts" className="text-primary hover:underline">call scripts</Link> save time and emotional energy.

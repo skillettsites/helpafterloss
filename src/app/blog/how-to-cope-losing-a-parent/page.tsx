@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { BlogPrintButton } from '@/components/BlogPrintButton';
+import { SupportCta } from '@/components/SupportCta';
 import { TableOfContents } from '@/components/TableOfContents';
 
 export const metadata: Metadata = {
@@ -35,6 +37,7 @@ export default function HowToCopeLosingParentPage() {
         <span aria-hidden="true">|</span>
         <span>13 min read</span>
       </div>
+      <BlogPrintButton />
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         How to Cope With Losing a Parent: A Practical and Emotional Guide
       </h1>
@@ -212,6 +215,8 @@ export default function HowToCopeLosingParentPage() {
           <li><strong>Age UK (for surviving parent):</strong> 0800 678 1602</li>
         </ul>
       </div>
+
+      <SupportCta />
 
       <RelatedGuides
         currentPath="/blog/how-to-cope-losing-a-parent"

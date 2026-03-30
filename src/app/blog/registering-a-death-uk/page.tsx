@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { BlogPrintButton } from '@/components/BlogPrintButton';
+import { SupportCta } from '@/components/SupportCta';
 import { TableOfContents } from '@/components/TableOfContents';
 
 export const metadata: Metadata = {
@@ -35,6 +37,7 @@ export default function RegisteringADeathPage() {
         <span aria-hidden="true">|</span>
         <span>11 min read</span>
       </div>
+      <BlogPrintButton />
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         Registering a Death in the UK: What to Bring, Where to Go (2026)
       </h1>
@@ -275,6 +278,8 @@ export default function RegisteringADeathPage() {
           <li><strong>Find your register office:</strong> <a href="https://www.gov.uk/register-offices" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">GOV.UK register offices</a></li>
         </ul>
       </div>
+
+      <SupportCta />
 
       <RelatedGuides
         currentPath="/blog/registering-a-death-uk"

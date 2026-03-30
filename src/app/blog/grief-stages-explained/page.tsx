@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { BlogPrintButton } from '@/components/BlogPrintButton';
+import { SupportCta } from '@/components/SupportCta';
 import { TableOfContents } from '@/components/TableOfContents';
 
 export const metadata: Metadata = {
@@ -35,6 +37,7 @@ export default function GriefStagesExplainedPage() {
         <span aria-hidden="true">|</span>
         <span>12 min read</span>
       </div>
+      <BlogPrintButton />
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         The Stages of Grief: What They Really Mean and Why Grief is Not Linear
       </h1>
@@ -255,6 +258,7 @@ export default function GriefStagesExplainedPage() {
       </div>
 
       {/* Practical help links */}
+      <SupportCta />
       <div className="bg-primary-light rounded-lg p-4 mb-8">
         <p className="text-sm text-foreground">
           <strong>Need help with the practical steps?</strong> Our <Link href="/checklist" className="text-primary hover:underline">interactive checklist</Link> walks you through everything from registering the death to closing accounts. See our <Link href="/notify" className="text-primary hover:underline">notification guide</Link> for every organisation you need to contact, with direct phone numbers.

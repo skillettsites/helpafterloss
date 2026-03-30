@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { BlogPrintButton } from '@/components/BlogPrintButton';
+import { SupportCta } from '@/components/SupportCta';
 import { TableOfContents } from '@/components/TableOfContents';
 
 export const metadata: Metadata = {
@@ -35,6 +37,7 @@ export default function GriefAndAnxietyPage() {
         <span aria-hidden="true">|</span>
         <span>12 min read</span>
       </div>
+      <BlogPrintButton />
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         Grief and Anxiety: Why Bereavement Triggers Panic and How to Manage It
       </h1>
@@ -243,6 +246,7 @@ export default function GriefAndAnxietyPage() {
       </div>
 
       {/* Practical help links */}
+      <SupportCta />
       <div className="bg-primary-light rounded-lg p-4 mb-8">
         <p className="text-sm text-foreground">
           <strong>Dealing with the practical side too?</strong> If you are also handling the paperwork and admin, these tools can help: <Link href="/notify" className="text-primary hover:underline">who to notify</Link> (60+ organisations), <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> to send to banks and insurers, and our <Link href="/costs" className="text-primary hover:underline">full cost breakdown</Link> so there are no surprises.

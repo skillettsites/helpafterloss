@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { BlogPrintButton } from '@/components/BlogPrintButton';
+import { SupportCta } from '@/components/SupportCta';
 import { TableOfContents } from '@/components/TableOfContents';
 
 export const metadata: Metadata = {
@@ -35,6 +37,7 @@ export default function FreeFuneralOptionsPage() {
         <span aria-hidden="true">|</span>
         <span>11 min read</span>
       </div>
+      <BlogPrintButton />
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         Free and Low-Cost Funeral Options in the UK
       </h1>
@@ -290,6 +293,7 @@ export default function FreeFuneralOptionsPage() {
       </div>
 
       {/* Cross-links */}
+      <SupportCta />
       <div className="bg-primary-light rounded-lg p-4 mb-8">
         <p className="text-sm text-foreground">
           <strong>Next steps:</strong> After the funeral, you will need to <Link href="/notify" className="text-primary hover:underline">notify organisations</Link> of the death. Our <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> and <Link href="/call-scripts" className="text-primary hover:underline">call scripts</Link> make this easier. See our <Link href="/guide" className="text-primary hover:underline">step-by-step guide</Link> for the full process.

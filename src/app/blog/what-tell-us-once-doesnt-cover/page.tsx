@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { BlogPrintButton } from '@/components/BlogPrintButton';
+import { SupportCta } from '@/components/SupportCta';
 import { TableOfContents } from '@/components/TableOfContents';
 
 export const metadata: Metadata = {
@@ -218,6 +220,7 @@ export default function TellUsOnceNotCoveredPage() {
         <span aria-hidden="true">|</span>
         <span>8 min read</span>
       </div>
+      <BlogPrintButton />
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         What Tell Us Once Doesn&apos;t Cover: The Full List
       </h1>
@@ -329,6 +332,8 @@ export default function TellUsOnceNotCoveredPage() {
           </div>
         ))}
       </div>
+
+      <SupportCta />
 
       <RelatedGuides
         currentPath="/blog/what-tell-us-once-doesnt-cover"

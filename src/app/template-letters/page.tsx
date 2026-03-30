@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { CopyLetterButton } from '@/components/CopyLetterButton';
 
 export const metadata: Metadata = {
   title: 'Template Letters for Bereavement - Ready-to-Use Notification Letters',
@@ -468,7 +469,8 @@ Enclosures: Passport, certified copy of death certificate`,
 function LetterBlock({ letter }: { letter: string }) {
   return (
     <div className="relative">
-      <pre className="bg-white border border-border rounded-lg p-6 text-sm text-foreground leading-relaxed whitespace-pre-wrap font-sans overflow-x-auto">
+      <CopyLetterButton text={letter} />
+      <pre className="bg-white border border-border rounded-lg p-6 pt-12 text-sm text-foreground leading-relaxed whitespace-pre-wrap font-sans overflow-x-auto">
         {letter}
       </pre>
     </div>

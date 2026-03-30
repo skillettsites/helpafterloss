@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { BlogPrintButton } from '@/components/BlogPrintButton';
+import { SupportCta } from '@/components/SupportCta';
 import { TableOfContents } from '@/components/TableOfContents';
 
 export const metadata: Metadata = {
@@ -78,6 +80,7 @@ export default function BereavementLeavePage() {
         <span aria-hidden="true">|</span>
         <span>10 min read</span>
       </div>
+      <BlogPrintButton />
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         Bereavement Leave in the UK: Your Rights in 2026
       </h1>
@@ -341,6 +344,7 @@ export default function BereavementLeavePage() {
       </div>
 
       {/* Cross-links to practical tools */}
+      <SupportCta />
       <div className="bg-primary-light rounded-lg p-4 mb-8">
         <p className="text-sm text-foreground">
           <strong>While you are off work:</strong> Use the time to <Link href="/notify" className="text-primary hover:underline">notify organisations</Link> of the death. Our <Link href="/call-scripts" className="text-primary hover:underline">call scripts</Link> and <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> make this easier. See our <Link href="/costs" className="text-primary hover:underline">cost breakdown</Link> so you know what to budget for.
