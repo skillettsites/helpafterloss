@@ -35,186 +35,204 @@ type ChecklistSection = {
 
 const SECTIONS: ChecklistSection[] = [
   {
-    title: 'First 24 hours',
-    subtitle: 'The most urgent steps immediately after a death',
+    title: 'Right now',
+    subtitle: 'You do not need to do everything straight away. These are the only things that may need immediate attention.',
     items: [
       {
-        task: 'Get the Medical Certificate of Cause of Death (MCCD)',
-        note: 'A doctor must issue this before you can register the death. If the death was sudden or unexplained, the coroner will be involved and will issue the certificate instead.',
+        task: 'If the death happened at home, call the GP surgery or 111',
+        note: 'They will tell you what to do next. If the person was under hospice care, call the hospice number instead. You do not need to call 999 unless the death was sudden and unexpected.',
       },
       {
-        task: 'Secure the person\'s home if they lived alone',
-        note: 'Check windows and doors, collect any post, and let a trusted neighbour know.',
+        task: 'If Muslim or Jewish, contact the mosque or synagogue',
+        note: 'Both faiths require burial as soon as possible, often within 24 hours. The community will help you arrange this quickly.',
       },
       {
-        task: 'Find the will',
-        note: 'Check at home, with their solicitor, at their bank (some banks hold wills), and on the National Will Register (certainty.co.uk).',
-      },
-      {
-        task: 'Tell close family and friends',
-        note: 'There is no right order. Do what feels manageable.',
-      },
-      {
-        task: 'Contact a funeral director',
-        note: 'You do not need to commit to anything yet. They can collect the body and hold it while you make decisions. Ask for an itemised quote.',
-      },
-      {
-        task: 'If the person was Muslim or Jewish, contact the mosque or synagogue',
-        note: 'Both faiths require burial as soon as possible, often within 24 hours.',
+        task: 'If the death happened abroad, call the Foreign Office on 020 7008 5000',
+        note: 'They can help with repatriation and local legal requirements.',
       },
     ],
   },
   {
-    title: 'First week',
-    subtitle: 'Legal registration and immediate practical steps',
+    title: 'When you are ready (first few days)',
+    subtitle: 'There is no rush with any of these. Do them when you feel able.',
     items: [
       {
+        task: 'Tell the people closest to you',
+        note: 'There is no right order. You do not have to tell everyone yourself. Ask someone you trust to help spread the word if that feels easier.',
+      },
+      {
+        task: 'Collect the Medical Certificate of Cause of Death (MCCD)',
+        note: 'The doctor or hospital will provide this. You need it before you can register the death. If the coroner is involved, they will issue it when their enquiries are complete.',
+      },
+      {
         task: 'Register the death at the local register office',
-        note: 'Must be done within 5 days in England, Wales, and Northern Ireland, and within 8 days in Scotland. Bring the MCCD, and the person\'s NHS card, passport, or driving licence if available.',
+        note: 'Legally required within 5 days in England, Wales, and Northern Ireland, or 8 days in Scotland. Bring the MCCD, and the person\'s NHS card, passport, or driving licence if you have them.',
       },
       {
         task: 'Order at least 5 certified copies of the death certificate',
-        note: 'Each one costs £12.50 in England and Wales (£15 in Scotland). Banks, insurers, pension providers, and solicitors will each need an original. Order more than you think you need.',
+        note: 'You can order these when you register. Each costs £12.50 in England and Wales (£15 in Scotland). Banks, insurers, and solicitors each need an original. Order more than you think you need.',
       },
       {
         task: 'Use the Tell Us Once service',
-        note: 'Available in England, Wales, and Scotland. The registrar will give you a reference number. Use it at gov.uk/tell-us-once within 28 days to notify DWP, HMRC, DVLA, the Passport Office, and your local council in one go.',
+        note: 'The registrar will offer this to you. It notifies DWP, HMRC, DVLA, Passport Office, and your local council in one go. Use it within 28 days. Not available in Northern Ireland.',
+      },
+    ],
+  },
+  {
+    title: 'First 2 weeks',
+    subtitle: 'These can wait until after the first few days. Take your time.',
+    items: [
+      {
+        task: 'Contact a funeral director when you feel ready',
+        note: 'The hospital or mortuary will hold the body until you are ready. There is no rush. Get itemised quotes from at least 3 funeral directors so you can compare.',
       },
       {
-        task: 'Arrange the funeral',
-        note: 'Confirm dates and arrangements with the funeral director. If the person had a pre-paid funeral plan, contact that provider directly. If you are on benefits, apply for a Funeral Expenses Payment from the DWP.',
+        task: 'If there was a pre-paid funeral plan, contact that provider',
+        note: 'The plan documents should have a phone number. The funeral director can also help you check.',
       },
       {
-        task: 'Notify the person\'s employer',
-        note: 'Ask about any final pay, death-in-service benefits, and pension entitlements. Get this in writing.',
+        task: 'Apply for Funeral Expenses Payment if on benefits',
+        note: 'Call the DWP Bereavement Service on 0800 731 0469. This can help with funeral costs if you are on Universal Credit, Pension Credit, or other qualifying benefits.',
       },
       {
-        task: 'Check home insurance on an empty property',
-        note: 'Many policies become void if the property is unoccupied for more than 30 days. Notify the insurer straight away.',
+        task: 'Find the will',
+        note: 'Check at home, with their solicitor, at their bank (some banks hold wills), and on the National Will Register (certainty.co.uk). There is no legal deadline for this.',
+      },
+      {
+        task: 'Secure the person\'s home if they lived alone',
+        note: 'Check windows and doors, collect any post, and let a trusted neighbour know. Check home insurance, as some policies void if the property is unoccupied for more than 30 days.',
       },
     ],
   },
   {
     title: 'First month',
-    subtitle: 'Financial and government notifications',
+    subtitle: 'Work through these as you get death certificates and start to feel more settled.',
     items: [
       {
         task: 'Notify banks and building societies',
-        note: 'You can use the Death Notification Service (deathnotificationservice.co.uk) to notify most major UK banks at once, or contact each one individually. Accounts will be frozen until probate is granted.',
+        note: 'You can use the Death Notification Service (deathnotificationservice.co.uk) to notify most major UK banks at once, or contact each one individually.',
       },
       {
-        task: 'Check for life insurance policies',
-        note: 'Search through paperwork, bank statements, and employer records. Contact insurers with a death certificate to make a claim.',
+        task: 'Check for and claim on any life insurance policies',
+        note: 'Search through paperwork, bank statements, and employer records. Contact insurers with a death certificate.',
       },
       {
         task: 'Notify all pension providers',
-        note: 'This includes State Pension (notify DWP, or use Tell Us Once), workplace pensions, and private pensions. Some pensions pay a lump sum or dependant\'s pension to a spouse or children.',
+        note: 'State Pension (DWP or Tell Us Once), workplace pensions, and private pensions. Some pay a lump sum or dependant\'s pension to a spouse or children.',
+      },
+      {
+        task: 'Contact their employer',
+        note: 'Ask about final pay, unused holiday, death-in-service benefits, and workplace pension entitlements. Get the details in writing.',
       },
       {
         task: 'Apply for Bereavement Support Payment',
-        note: 'If your spouse or civil partner died and you were under State Pension age, you may be entitled to a lump sum and up to 18 monthly payments. Apply at gov.uk within 3 months for the full amount. Claims can be backdated up to 21 months.',
+        note: 'If your spouse or civil partner died and you were under State Pension age. Apply at gov.uk within 3 months for the full amount (lump sum plus up to 18 monthly payments). Can be backdated up to 21 months.',
       },
       {
         task: 'Update council tax',
-        note: 'If the deceased\'s property is now empty, contact the council for an exemption (most grant a full exemption during probate). If you now live alone in your own home, apply for the 25% single person discount.',
-      },
-      {
-        task: 'Set up Royal Mail post redirection',
-        note: 'Redirect the person\'s post to the executor\'s address to avoid missing important correspondence. Available at royalmail.com, costs from £36 for 3 months.',
-      },
-      {
-        task: 'Cancel subscriptions and direct debits',
-        note: 'Check recent bank statements for recurring payments: streaming services, gym memberships, magazines, insurance, clubs. Cancel each one directly.',
+        note: 'If the property is now empty, contact the council for an exemption (most grant a full exemption during probate). If you now live alone, apply for the 25% single person discount.',
       },
       {
         task: 'Notify utility companies',
-        note: 'Contact gas, electricity, water, broadband, and phone providers. Transfer bills to the estate or the new account holder while the property is being dealt with.',
+        note: 'Gas, electricity, water, broadband, and phone providers. Transfer bills to the estate or the new account holder.',
+      },
+      {
+        task: 'Cancel subscriptions and direct debits',
+        note: 'Check recent bank statements for recurring payments. Cancel streaming, gym memberships, magazines, clubs.',
       },
       {
         task: 'Deal with the vehicle',
-        note: 'Notify the DVLA that the registered keeper has died. Update or cancel car insurance. If you are transferring ownership, use the V5C logbook.',
+        note: 'Notify the DVLA that the registered keeper has died. Update or cancel car insurance. Use the V5C logbook to transfer ownership.',
+      },
+      {
+        task: 'Set up Royal Mail post redirection',
+        note: 'Redirect post to the executor\'s address. Available at royalmail.com, costs from £36 for 3 months.',
       },
     ],
   },
   {
     title: 'Within 3 months',
-    subtitle: 'Legal and estate administration',
+    subtitle: 'Legal and estate administration. You may want professional help with some of these.',
     items: [
       {
         task: 'Apply for probate',
-        note: 'Apply for a Grant of Probate (if there is a will) or Letters of Administration (if there is no will) at gov.uk/applying-for-probate. The fee is £300 for estates over £5,000. In Scotland, apply for Confirmation at the Sheriff Court.',
+        note: 'Grant of Probate (if there is a will) or Letters of Administration (if no will) at gov.uk/applying-for-probate. Fee: £300 for estates over £5,000. In Scotland, apply for Confirmation at the Sheriff Court.',
       },
       {
-        task: 'Complete the inheritance tax forms',
-        note: 'If the estate is below the IHT threshold (£325,000, or up to £500,000 with the residence nil-rate band), report the estate values on the probate application itself. If above, complete form IHT400. You must complete this before probate is granted.',
+        task: 'Complete inheritance tax forms',
+        note: 'If the estate is below £325,000 (or up to £500,000 with the residence nil-rate band), report estate values on the probate application. If above, complete form IHT400.',
       },
       {
         task: 'Value the estate',
-        note: 'Get a formal property valuation from an estate agent or RICS surveyor. List all bank accounts, investments, pensions, and possessions. Subtract all debts and liabilities.',
+        note: 'Get a property valuation from an estate agent or RICS surveyor. List all bank accounts, investments, pensions, and possessions. Subtract all debts.',
       },
       {
         task: 'Place statutory notices in The Gazette',
-        note: 'This protects the executor against claims from unknown creditors. Place a notice at thegazette.co.uk. You must wait at least 2 months after placing the notice before distributing the estate.',
+        note: 'Protects the executor against claims from unknown creditors. Place at thegazette.co.uk. Wait at least 2 months before distributing.',
       },
       {
         task: 'Notify the mortgage lender',
-        note: 'If the property had a mortgage, the lender must be informed. Some mortgages include life insurance that pays off the balance. Do not make mortgage payments from the estate without advice.',
+        note: 'Some mortgages include life insurance that pays off the balance. Do not make mortgage payments from the estate without advice.',
       },
       {
-        task: 'Check for any outstanding debts',
-        note: 'Credit cards, personal loans, hire purchase agreements. Debts are paid from the estate before anything is distributed to beneficiaries.',
+        task: 'Check for outstanding debts',
+        note: 'Credit cards, personal loans, hire purchase. Debts are paid from the estate before anything goes to beneficiaries.',
+      },
+      {
+        task: 'File the final Self Assessment tax return if self-employed',
+        note: 'HMRC will confirm any tax owed or refund due.',
       },
     ],
   },
   {
     title: 'Within 6 months',
-    subtitle: 'Inheritance tax and property',
+    subtitle: 'These have legal deadlines but do not need to be done sooner.',
     items: [
       {
         task: 'Pay any inheritance tax due',
-        note: 'Inheritance tax must be paid within 6 months of the end of the month in which the person died. Interest is charged after that. IHT on property can be paid in instalments over 10 years.',
-      },
-      {
-        task: 'Claim the Funeral Expenses Payment',
-        note: 'If you are on qualifying benefits, you can claim this from the DWP. Claims must be made within 6 months of the funeral.',
+        note: 'Due within 6 months of the end of the month of death. Interest is charged after that. IHT on property can be paid in instalments over 10 years.',
       },
       {
         task: 'Deal with property',
-        note: 'Transfer ownership via the Land Registry, sell, or deal with a rental tenancy. You will need the Grant of Probate before you can sell or transfer a property.',
-      },
-      {
-        task: 'Update driving licence and car insurance records',
-        note: 'If you have inherited a vehicle, update the V5C and arrange insurance in your name before driving it.',
+        note: 'Transfer ownership via the Land Registry, sell, or end the tenancy. You need the Grant of Probate before you can sell or transfer.',
       },
       {
         task: 'Collect all assets into the estate',
-        note: 'With the Grant of Probate, contact banks, investment platforms, and other institutions to transfer or close accounts and collect the proceeds.',
+        note: 'With the Grant of Probate, contact banks, investment platforms, and other institutions to close accounts and collect the proceeds.',
+      },
+      {
+        task: 'Claim Funeral Expenses Payment',
+        note: 'If you are on qualifying benefits, claims must be made within 6 months of the funeral.',
       },
     ],
   },
   {
-    title: 'Ongoing',
-    subtitle: 'Final steps and estate closure',
+    title: 'When you are ready',
+    subtitle: 'There is no deadline for any of these. Do them in your own time.',
     items: [
       {
         task: 'Distribute the estate to beneficiaries',
-        note: 'Once the statutory notice period has passed (at least 2 months after placing The Gazette notice) and all debts and taxes are paid, distribute what remains according to the will or intestacy rules.',
+        note: 'After the statutory notice period (at least 2 months after The Gazette notice) and all debts and taxes are paid.',
       },
       {
         task: 'File the final income tax return',
-        note: 'If the person was on Self Assessment, file a return for the tax year in which they died. The deadline is 31 January following the end of that tax year. HMRC will confirm any tax owed or refund due.',
+        note: 'If the person was on Self Assessment, file for the tax year in which they died. Deadline: 31 January following the end of that tax year.',
       },
       {
-        task: 'Order a headstone or memorial',
-        note: 'Churchyards and cemeteries have rules about size and materials. Allow at least 6 months after a burial before placing a headstone, as the ground needs to settle.',
+        task: 'Close remaining accounts and digital profiles',
+        note: 'Memorialise or close social media, email, and online accounts. Cancel remaining digital subscriptions.',
       },
       {
         task: 'Register with the Bereavement Register',
-        note: 'Register at thebereavementregister.org.uk to stop mail addressed to the deceased. It is free and removes their name from mailing lists. It can take a few weeks to take full effect.',
+        note: 'Register at thebereavementregister.org.uk to stop junk mail addressed to the person. Free. Takes a few weeks to take effect.',
       },
       {
-        task: 'Reach out for emotional support',
-        note: 'Cruse Bereavement Support (0808 808 1677), Grief Encounter, and the Samaritans (116 123) are all free. There is no time limit on grief. Support is available whenever you need it.',
+        task: 'Order a headstone or memorial',
+        note: 'Churchyards and cemeteries have rules about size and materials. Allow at least 6 months after burial for the ground to settle.',
+      },
+      {
+        task: 'Reach out for support whenever you need it',
+        note: 'Cruse Bereavement Support (0808 808 1677), Grief Encounter, and the Samaritans (116 123) are all free. There is no time limit on grief.',
       },
     ],
   },
