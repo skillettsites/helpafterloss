@@ -1,11 +1,23 @@
+'use client';
+
 import Link from 'next/link';
 
 interface FreeChecklistBannerProps {
-  /** Where in the page this appears - adjusts messaging slightly */
   variant?: 'inline' | 'bottom';
 }
 
 export function FreeChecklistBanner({ variant = 'inline' }: FreeChecklistBannerProps) {
+  const trackDownload = () => {
+    try {
+      const data = JSON.stringify({ path: '/__checklist-download', referrer: window.location.pathname });
+      if (navigator.sendBeacon) {
+        navigator.sendBeacon('/api/track-pageview', new Blob([data], { type: 'application/json' }));
+      } else {
+        fetch('/api/track-pageview', { method: 'POST', body: data, keepalive: true, headers: { 'Content-Type': 'application/json' } });
+      }
+    } catch {}
+  };
+
   return (
     <div className="bg-warm border border-warm-border rounded-xl p-6 my-10 no-print">
       <div className="flex items-start gap-4">
@@ -28,6 +40,7 @@ export function FreeChecklistBanner({ variant = 'inline' }: FreeChecklistBannerP
           <div className="flex flex-wrap gap-3">
             <Link
               href="/print-checklist"
+              onClick={trackDownload}
               className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-primary rounded-xl hover:bg-primary-dark transition-colors"
             >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
