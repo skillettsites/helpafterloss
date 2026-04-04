@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
 import { PageDisclaimer } from '@/components/PageDisclaimer';
+import { FreeChecklistBanner } from '@/components/FreeChecklistBanner';
 
 export const metadata: Metadata = {
   title: 'Cost of Death in the UK 2026: Funerals from £995, Probate £300, Plus 8 Ways to Save',
@@ -306,6 +307,7 @@ export default function CostsPage() {
 
       <PageDisclaimer lastReviewed="March 2026" jurisdiction="england-wales" />
 
+      <FreeChecklistBanner variant="bottom" />
       <RelatedGuides currentPath="/costs" guides={['/guides/funeral-options', '/guides/bereavement-benefits', '/probate', '/blog/true-cost-of-dying-uk']} />
 
       <script

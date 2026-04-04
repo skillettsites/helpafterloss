@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
 import { PageDisclaimer } from '@/components/PageDisclaimer';
+import { FreeChecklistBanner } from '@/components/FreeChecklistBanner';
 
 export const metadata: Metadata = {
   title: 'Probate Guide UK 2026 - How to Apply, Costs, Timelines, DIY vs Solicitor',
@@ -384,6 +385,7 @@ export default function ProbatePage() {
 
       <PageDisclaimer lastReviewed="March 2026" jurisdiction="all-uk" />
 
+      <FreeChecklistBanner variant="bottom" />
       <RelatedGuides currentPath="/probate" guides={['/guides/executor-duties', '/intestacy', '/costs', '/template-letters']} />
 
       <script

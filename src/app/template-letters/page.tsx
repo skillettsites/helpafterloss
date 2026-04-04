@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
 import { CopyLetterButton } from '@/components/CopyLetterButton';
+import { FreeChecklistBanner } from '@/components/FreeChecklistBanner';
 
 export const metadata: Metadata = {
   title: 'Template Letters for Bereavement - Ready-to-Use Notification Letters',
@@ -601,6 +602,7 @@ export default function TemplateLettersPage() {
           }),
         }}
       />
+      <FreeChecklistBanner variant="bottom" />
       <RelatedGuides currentPath="/template-letters" guides={['/phone-directory', '/call-scripts', '/guides/document-checklist', '/guide']} />
 
       <script

@@ -4,6 +4,7 @@ import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
 import { BlogPrintButton } from '@/components/BlogPrintButton';
 import { SupportCta } from '@/components/SupportCta';
+import { FreeChecklistBanner } from '@/components/FreeChecklistBanner';
 import { TableOfContents } from '@/components/TableOfContents';
 
 export const metadata: Metadata = {
@@ -342,6 +343,8 @@ export default function BereavementLeavePage() {
           </div>
         ))}
       </div>
+
+      <FreeChecklistBanner />
 
       {/* Cross-links to practical tools */}
       <SupportCta />

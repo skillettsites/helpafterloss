@@ -5,6 +5,7 @@ import { TableOfContents } from '@/components/TableOfContents';
 import { RelatedGuides } from '@/components/RelatedGuides';
 import { BlogPrintButton } from '@/components/BlogPrintButton';
 import { SupportCta } from '@/components/SupportCta';
+import { FreeChecklistBanner } from '@/components/FreeChecklistBanner';
 
 export const metadata: Metadata = {
   title: 'How Many Death Certificates Do I Need? (2026 Guide)',
@@ -302,6 +303,8 @@ export default function DeathCertificateHowManyCopiesPage() {
           </div>
         ))}
       </div>
+
+      <FreeChecklistBanner />
 
       {/* Cross-links */}
       <SupportCta />

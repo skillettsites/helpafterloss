@@ -5,6 +5,7 @@ import { TableOfContents } from '@/components/TableOfContents';
 import { RelatedGuides } from '@/components/RelatedGuides';
 import { BlogPrintButton } from '@/components/BlogPrintButton';
 import { SupportCta } from '@/components/SupportCta';
+import { FreeChecklistBanner } from '@/components/FreeChecklistBanner';
 import { ThresholdEmailCapture } from '@/components/ThresholdEmailCapture';
 
 export const metadata: Metadata = {
@@ -295,6 +296,8 @@ export default function BankProbateThresholdsPage() {
           </div>
         ))}
       </div>
+
+      <FreeChecklistBanner />
 
       {/* Cross-links */}
       <SupportCta />

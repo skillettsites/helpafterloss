@@ -238,9 +238,14 @@ export default function PrintChecklistPage() {
         <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
           Printable Checklist: What to Do When Someone Dies
         </h1>
-        <p className="text-lg text-muted leading-relaxed mb-6">
+        <p className="text-lg text-muted leading-relaxed mb-4">
           A comprehensive checklist covering every task after a death in the UK, grouped by time period. Print it out and tick each item off as you go.
         </p>
+        <div className="bg-warm border border-warm-border rounded-xl p-4 mb-6">
+          <p className="text-sm text-amber-800 leading-relaxed">
+            We know this is an incredibly difficult time. Take things at your own pace. This checklist is here whenever you need it, and not everything will apply to your situation.
+          </p>
+        </div>
         <div className="flex flex-wrap gap-3 mb-10">
           <PrintButton />
           <Link
@@ -250,6 +255,7 @@ export default function PrintChecklistPage() {
             Get a Personalised Checklist Instead
           </Link>
         </div>
+        <p className="text-xs text-muted mb-8">To save as a PDF, click &quot;Print&quot; above and choose &quot;Save as PDF&quot; as the destination.</p>
       </div>
 
       {/* Print-only title */}

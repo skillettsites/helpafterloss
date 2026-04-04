@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { RelatedGuides } from '@/components/RelatedGuides';
 import { PageDisclaimer } from '@/components/PageDisclaimer';
+import { FreeChecklistBanner } from '@/components/FreeChecklistBanner';
 
 export const metadata: Metadata = {
   title: 'What to Do When Someone Dies - Complete UK Step-by-Step Guide (2026)',
@@ -410,6 +411,7 @@ export default function GuidePage() {
 
       <PageDisclaimer lastReviewed="March 2026" jurisdiction="all-uk" />
 
+      <FreeChecklistBanner variant="bottom" />
       <RelatedGuides currentPath="/guide" guides={['/checklist', '/template-letters', '/deadline-tracker', '/print-checklist']} />
 
       <script
