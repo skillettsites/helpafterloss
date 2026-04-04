@@ -8,7 +8,7 @@ export const COST_ESTIMATES: CostEstimate[] = [
     low: 37,
     mid: 62,
     high: 125,
-    notes: '£12.50 each in England (£11 in Wales, £15 in Scotland). We recommend ordering at least 5 copies. Banks, solicitors, and insurers each need an original.',
+    notes: '£12.50 each in England and Wales (£15 in Scotland). We recommend ordering at least 5 copies. Banks, solicitors, and insurers each need an original.',
     savingTip: 'Order all copies when you register the death. It costs more to order extras later.',
     showIf: () => true,
   },

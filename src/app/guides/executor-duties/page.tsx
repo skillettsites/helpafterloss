@@ -30,7 +30,7 @@ const STEPS = [
   {
     step: '2',
     title: 'Register the death (if not already done)',
-    desc: 'In England and Wales, the death must be registered within 5 days (8 days in Scotland). This is usually done by the next of kin, but you may need to assist. You register at the local Register Office for the area where the person died. You will receive a Death Certificate (certified copy of entry) and a green certificate for burial or cremation. Order at least 5 certified copies of the Death Certificate at registration (£12.50 each in England, £11 in Wales, £15 in Scotland), as every bank, insurer, and institution will need one.',
+    desc: 'In England and Wales, the death must be registered within 5 days (8 days in Scotland). This is usually done by the next of kin, but you may need to assist. You register at the local Register Office for the area where the person died. You will receive a Death Certificate (certified copy of entry) and a green certificate for burial or cremation. Order at least 5 certified copies of the Death Certificate at registration (£12.50 each in England and Wales (£15 in Scotland)), as every bank, insurer, and institution will need one.',
   },
   {
     step: '3',

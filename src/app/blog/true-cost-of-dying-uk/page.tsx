@@ -37,7 +37,7 @@ const COST_SUMMARY = [
   { item: 'Probate court fee', low: '£0', high: '£300', note: 'Free if estate under £5,000' },
   { item: 'Solicitor fees (probate)', low: '£2,000', high: '£15,000+', note: '1-5% of estate value' },
   { item: 'Statutory notice (London Gazette)', low: '£80', high: '£100', note: 'Recommended to protect the executor' },
-  { item: 'Post redirection', low: '£33.99', high: '£73', note: '3-12 months, Royal Mail' },
+  { item: 'Post redirection', low: '£36', high: '£76', note: '3-12 months, Royal Mail' },
   { item: 'Inheritance tax', low: '£0', high: 'Unlimited', note: '40% above £325,000 nil-rate band' },
 ];
 

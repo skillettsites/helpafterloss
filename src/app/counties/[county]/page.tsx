@@ -245,7 +245,7 @@ export default async function CountyGuidePage({ params }: PageProps) {
             <div className="space-y-3 text-sm text-muted leading-relaxed">
               <p>
                 Order at least <strong>5 certified copies</strong> of the death certificate at the time
-                of registration. They cost £12.50 each in England (£11 in Wales). Banks, insurers, pension providers, and
+                of registration. They cost £12.50 each in England and Wales. Banks, insurers, pension providers, and
                 solicitors will each need a copy. Ordering copies later costs more and takes longer.
               </p>
             </div>

@@ -269,7 +269,7 @@ export default function BankProbateThresholdsPage() {
         <div className="bg-success-light rounded-xl p-6">
           <h3 className="font-semibold text-green-800 mb-2">Order enough death certificates</h3>
           <p className="text-sm text-green-800/80 leading-relaxed">
-            Each bank typically needs an original death certificate. If the deceased had accounts at three different banks, you will need at least three certificates. Order them when you register the death (£12.50 each in England, £11 in Wales, £15 in Scotland). Ordering extras later costs more and takes longer.
+            Each bank typically needs an original death certificate. If the deceased had accounts at three different banks, you will need at least three certificates. Order them when you register the death (£12.50 each in England and Wales (£15 in Scotland)). Ordering extras later costs more and takes longer.
           </p>
         </div>
         <div className="bg-success-light rounded-xl p-6">

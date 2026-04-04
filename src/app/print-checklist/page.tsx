@@ -74,7 +74,7 @@ const SECTIONS: ChecklistSection[] = [
       },
       {
         task: 'Order at least 5 certified copies of the death certificate',
-        note: 'Each one costs £12.50 in England (£11 in Wales, £15 in Scotland). Banks, insurers, pension providers, and solicitors will each need an original. Order more than you think you need.',
+        note: 'Each one costs £12.50 in England and Wales (£15 in Scotland). Banks, insurers, pension providers, and solicitors will each need an original. Order more than you think you need.',
       },
       {
         task: 'Use the Tell Us Once service',
@@ -124,7 +124,7 @@ const SECTIONS: ChecklistSection[] = [
       },
       {
         task: 'Set up Royal Mail post redirection',
-        note: 'Redirect the person\'s post to the executor\'s address to avoid missing important correspondence. Available at royalmail.com, costs from £33.99 for 3 months.',
+        note: 'Redirect the person\'s post to the executor\'s address to avoid missing important correspondence. Available at royalmail.com, costs from £36 for 3 months.',
       },
       {
         task: 'Cancel subscriptions and direct debits',

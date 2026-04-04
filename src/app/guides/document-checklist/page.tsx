@@ -54,7 +54,7 @@ const CATEGORIES = [
     subtitle: 'Needed by the funeral director and at the service',
     urgent: false,
     items: [
-      { doc: 'Death certificate (certified copies)', detail: 'Order at least 5 certified copies when you register (£12.50 each in England, £11 in Wales, £15 in Scotland). You will need one for each bank, insurer, pension provider, and other institution. Ordering extras later costs more and takes longer.' },
+      { doc: 'Death certificate (certified copies)', detail: 'Order at least 5 certified copies when you register (£12.50 each in England and Wales (£15 in Scotland)). You will need one for each bank, insurer, pension provider, and other institution. Ordering extras later costs more and takes longer.' },
       { doc: 'Green certificate (Certificate for Burial or Cremation)', detail: 'Issued by the registrar at the same time as the death certificate. The funeral director must have this before the funeral can take place.' },
       { doc: 'Pre-paid funeral plan documents', detail: 'If the person had a pre-paid plan, find the paperwork immediately. The plan number and provider details determine what costs are already covered.' },
       { doc: 'Any written funeral wishes', detail: 'A letter, note, or document where the person expressed their preferences. Check the will, any personal files, and conversations with close family.' },
@@ -238,7 +238,7 @@ export default function DocumentChecklistPage() {
           </div>
           <div>
             <p className="font-semibold text-foreground">Can't find birth or marriage certificates?</p>
-            <p>You can order replacement certificates from the General Register Office (GRO) at gov.uk/order-copy-birth-death-marriage-certificate. Costs £12.50 per certificate in England (£11 in Wales).</p>
+            <p>You can order replacement certificates from the General Register Office (GRO) at gov.uk/order-copy-birth-death-marriage-certificate. Costs £12.50 per certificate in England and Wales.</p>
           </div>
           <div>
             <p className="font-semibold text-foreground">Can't find insurance or pension documents?</p>

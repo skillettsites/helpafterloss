@@ -96,7 +96,7 @@ export default function LostAChildPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Registering if the cause of death is known</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If the doctor can certify the cause of death and there is no coroner involvement, you register the death at the local register office within 5 days (8 days in Scotland). You will need the Medical Certificate of Cause of Death. Either parent can register. The registrar will be experienced in supporting bereaved parents and the appointment will be handled with great sensitivity. Order several certified copies of the death certificate (£12.50 each in England, £11 in Wales, £15 in Scotland).
+            If the doctor can certify the cause of death and there is no coroner involvement, you register the death at the local register office within 5 days (8 days in Scotland). You will need the Medical Certificate of Cause of Death. Either parent can register. The registrar will be experienced in supporting bereaved parents and the appointment will be handled with great sensitivity. Order several certified copies of the death certificate (£12.50 each in England and Wales (£15 in Scotland)).
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">

@@ -157,7 +157,7 @@ export const TASKS: Task[] = [
   {
     id: 'order-death-certificates',
     title: 'Order enough copies of the death certificate',
-    description: 'Order at least 5 certified copies (£12.50 each in England, £11 in Wales, £15 in Scotland). Banks, insurers, pension providers, and solicitors all need an original. It costs more to order extra copies later. You can order them when you register the death.',
+    description: 'Order at least 5 certified copies (£12.50 each in England and Wales (£15 in Scotland)). Banks, insurers, pension providers, and solicitors all need an original. It costs more to order extra copies later. You can order them when you register the death.',
     category: 'registration',
     priority: 'urgent',
     estimatedMinutes: 5,

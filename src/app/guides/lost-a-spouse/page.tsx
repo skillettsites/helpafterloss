@@ -56,7 +56,7 @@ export default function LostASpousePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Registering the death</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Register the death within 5 days in England and Wales (8 days in Scotland) at the local register office. You will need the Medical Certificate of Cause of Death. Order at least 6 to 8 certified copies of the death certificate (£12.50 each in England, £11 in Wales, £15 in Scotland): you will need one for each bank, insurance policy, pension provider, the mortgage lender, and various government departments. Use Tell Us Once at the appointment to notify the DWP, HMRC, DVLA, and other bodies in a single step.
+            Register the death within 5 days in England and Wales (8 days in Scotland) at the local register office. You will need the Medical Certificate of Cause of Death. Order at least 6 to 8 certified copies of the death certificate (£12.50 each in England and Wales (£15 in Scotland)): you will need one for each bank, insurance policy, pension provider, the mortgage lender, and various government departments. Use Tell Us Once at the appointment to notify the DWP, HMRC, DVLA, and other bodies in a single step.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">

@@ -69,7 +69,7 @@ const FAQ = [
   },
   {
     q: 'How many death certificates do I need and how much do they cost?',
-    a: 'Order at least 5 certified copies at registration. They cost £12.50 each in England, £11 in Wales, and £15 in Scotland. Each bank, insurer, pension provider, and solicitor typically needs an original. If the person had many accounts and policies, you may need 8 to 10 copies. Ordering extras later is more expensive.',
+    a: 'Order at least 5 certified copies at registration. They cost £12.50 each in England and Wales (£15 in Scotland). Each bank, insurer, pension provider, and solicitor typically needs an original. If the person had many accounts and policies, you may need 8 to 10 copies. Ordering extras later is more expensive.',
   },
   {
     q: 'What is inheritance tax and when does it apply?',
