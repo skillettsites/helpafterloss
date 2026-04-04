@@ -80,18 +80,18 @@ const CATEGORIES = [
     ],
   },
   {
-    title: 'Property',
+    title: 'Property (first 1-3 months)',
     items: [
       'Check and update home insurance (may void after 30 days empty)',
       'Notify the mortgage lender',
       'Apply for council tax exemption on empty property',
       'Notify the landlord or housing association',
-      'Update the Land Registry',
+      'Update the Land Registry (after probate is granted)',
       'Set up Royal Mail post redirection',
     ],
   },
   {
-    title: 'Digital accounts',
+    title: 'Digital accounts (when you are ready)',
     items: [
       'Memorialise or delete Facebook/Instagram',
       'Request access or deletion of Google account',
@@ -99,6 +99,7 @@ const CATEGORIES = [
       'Close Microsoft, PayPal, Amazon, and other accounts',
       'Cancel streaming services (Netflix, Spotify, etc.)',
       'Cancel all other paid subscriptions',
+      'Register with the Bereavement Register (thebereavementregister.org.uk) to stop junk mail',
     ],
   },
   {

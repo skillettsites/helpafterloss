@@ -115,12 +115,8 @@ const SECTIONS: ChecklistSection[] = [
         note: 'If your spouse or civil partner died and you were under State Pension age, you may be entitled to a lump sum and up to 18 monthly payments. Apply at gov.uk within 3 months for the full amount. Claims can be backdated up to 21 months.',
       },
       {
-        task: 'Apply for council tax exemption or single person discount',
-        note: 'An empty property may be exempt for up to 6 months. If you now live alone, you are entitled to a 25% single person discount.',
-      },
-      {
-        task: 'Apply for council tax exemption on the deceased\'s property',
-        note: 'If the property is now empty, contact the local council. Most councils grant a full exemption while probate is underway.',
+        task: 'Update council tax',
+        note: 'If the deceased\'s property is now empty, contact the council for an exemption (most grant a full exemption during probate). If you now live alone in your own home, apply for the 25% single person discount.',
       },
       {
         task: 'Set up Royal Mail post redirection',
@@ -211,6 +207,10 @@ const SECTIONS: ChecklistSection[] = [
       {
         task: 'Order a headstone or memorial',
         note: 'Churchyards and cemeteries have rules about size and materials. Allow at least 6 months after a burial before placing a headstone, as the ground needs to settle.',
+      },
+      {
+        task: 'Register with the Bereavement Register',
+        note: 'Register at thebereavementregister.org.uk to stop mail addressed to the deceased. It is free and removes their name from mailing lists. It can take a few weeks to take full effect.',
       },
       {
         task: 'Reach out for emotional support',
