@@ -150,6 +150,17 @@ export default function HowLongDoesProbateTakePage() {
         ))}
       </div>
 
+      {/* Mid-article CTA */}
+      <div className="bg-primary-light rounded-xl p-6 mb-12">
+        <h3 className="font-semibold text-foreground mb-2">Not sure what to do first?</h3>
+        <p className="text-sm text-muted leading-relaxed mb-4">
+          Our free personalised guide works out exactly which tasks apply to your situation and gives you them in the right order, with real deadlines based on the date of death.
+        </p>
+        <Link href="/start" className="inline-block px-6 py-3 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm">
+          Get Your Free Personalised Guide
+        </Link>
+      </div>
+
       {/* Delays */}
       <h2 id="what-causes-delays" className="text-2xl font-bold text-foreground mb-6">What causes delays</h2>
       <div className="space-y-4 mb-12">
