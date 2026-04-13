@@ -84,9 +84,19 @@ export default function HowLongDoesProbateTakePage() {
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         How Long Does Probate Take in the UK? Realistic Timeline (2026)
       </h1>
-      <p className="text-lg text-muted leading-relaxed mb-10">
+      <p className="text-lg text-muted leading-relaxed mb-6">
         The honest answer is: longer than you expect. Government guidance says 16 weeks, but the real end-to-end process, from the death to final distribution, typically takes 6 to 12 months for a straightforward estate. Complex estates can take a year or more. This guide breaks down every stage so you know what to expect.
       </p>
+
+      <div className="bg-card rounded-xl border border-border p-5 mb-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-foreground text-sm mb-1">Not sure what to do right now?</p>
+          <p className="text-sm text-muted">Our free guide gives you the tasks that apply to your situation, in the right order, with real deadlines.</p>
+        </div>
+        <Link href="/start" className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm">
+          Get free guide
+        </Link>
+      </div>
 
       <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
         <h2 className="text-sm font-semibold text-amber-900 mb-3">Quick summary</h2>
