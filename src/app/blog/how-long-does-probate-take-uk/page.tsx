@@ -251,13 +251,20 @@ export default function HowLongDoesProbateTakePage() {
           { q: 'Can I access money from the estate before probate is granted?', a: 'Most banks will release small amounts (typically up to £5,000 to £50,000 depending on the bank) without probate. Some will pay funeral costs directly from the deceased\'s account. Joint accounts can continue to be used by the surviving holder. For larger sums, you will usually need to wait for the grant.' },
           { q: 'How do I check the progress of my probate application?', a: 'You can call the Probate Registry on 0300 303 0648 or check online if you applied through the GOV.UK service. Have your application reference number ready.' },
           { q: 'What happens if the executor does nothing?', a: 'Beneficiaries can apply to the court to remove an executor who is not acting. This is called a "passing over" order. Alternatively, if there are multiple executors, the others can proceed without the inactive one. If you are a beneficiary and the executor is not responding, seek legal advice.' },
-          { q: 'Do I need a solicitor for probate?', a: 'No, you can apply for probate yourself. The online application at GOV.UK is designed for people without legal training. However, if the estate is complex (property abroad, business assets, IHT due, family disputes), a solicitor can be worth the cost. Expect to pay £1,500 to £5,000 for a solicitor-led application.' },
         ].map((faq, i) => (
           <div key={i} className="bg-card rounded-xl border border-border p-6">
             <h3 className="font-semibold text-foreground mb-2">{faq.q}</h3>
             <p className="text-sm text-muted leading-relaxed">{faq.a}</p>
           </div>
         ))}
+        <div className="bg-card rounded-xl border border-border p-6">
+          <h3 className="font-semibold text-foreground mb-2">Do I need a solicitor for probate?</h3>
+          <p className="text-sm text-muted leading-relaxed">
+            No, you can apply for probate yourself. The online application at GOV.UK is designed for people without legal training. However, if the estate is complex (property abroad, business assets, IHT due, family disputes), a solicitor can be worth the cost. Expect to pay £1,500 to £5,000 for a solicitor-led application.{' '}
+            <a href="https://www.unbiased.co.uk/find/solicitors/probate" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Unbiased.co.uk</a>
+            {' '}lets you compare local probate solicitors and get free quotes.
+          </p>
+        </div>
       </div>
 
       <div className="bg-primary-light rounded-xl p-6 mb-8">
