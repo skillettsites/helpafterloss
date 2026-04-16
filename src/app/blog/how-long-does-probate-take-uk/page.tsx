@@ -206,6 +206,24 @@ export default function HowLongDoesProbateTakePage() {
         </div>
       </div>
 
+      {/* Solicitor CTA - mid article, after delays section */}
+      <div className="bg-card rounded-xl border border-border p-6 mb-12 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-foreground mb-1">Is your estate complex?</p>
+          <p className="text-sm text-muted leading-relaxed">
+            If HMRC queries, overseas assets, or family disputes are a risk, a probate solicitor can be worth the cost. You can compare local probate solicitors and get free quotes through Unbiased.co.uk.
+          </p>
+        </div>
+        <a
+          href="https://www.unbiased.co.uk/find/solicitors/probate"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
+        >
+          Compare solicitors
+        </a>
+      </div>
+
       {/* Speed up */}
       <h2 id="speed-up" className="text-2xl font-bold text-foreground mb-6">How to speed things up</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
