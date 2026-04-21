@@ -8,11 +8,11 @@ import { TableOfContents } from '@/components/TableOfContents';
 
 export const metadata: Metadata = {
   title: 'How Long Does Probate Take in the UK? Realistic Timeline (2026)',
-  description: 'A realistic breakdown of how long probate takes in the UK in 2026, from application to final distribution. Covers HMRC processing, court delays, and what affects the timeline.',
+  description: 'How long does probate take in the UK? Typically 6 to 12 months end-to-end. This guide breaks down every stage with realistic timelines, what causes delays, and how to speed things up.',
   alternates: { canonical: 'https://helpafterloss.co.uk/blog/how-long-does-probate-take-uk' },
   openGraph: {
     title: 'How Long Does Probate Take in the UK? Realistic Timeline (2026)',
-    description: 'Honest timelines for every stage of probate in the UK, with practical advice on what speeds things up and what causes delays.',
+    description: 'Typical UK probate takes 6 to 12 months end-to-end. Realistic timelines for every stage, plus what causes delays and how to speed up the process.',
     url: 'https://helpafterloss.co.uk/blog/how-long-does-probate-take-uk',
     type: 'article',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
@@ -76,7 +76,7 @@ export default function HowLongDoesProbateTakePage() {
       ]} />
 
       <div className="flex items-center gap-3 text-xs text-muted mb-3">
-        <span>Updated 22 March 2026</span>
+        <span>Updated 21 April 2026</span>
         <span aria-hidden="true">|</span>
         <span>12 min read</span>
       </div>
@@ -254,6 +254,24 @@ export default function HowLongDoesProbateTakePage() {
         </p>
       </div>
 
+      {/* Will writing CTA */}
+      <div className="bg-card rounded-xl border border-border p-6 mb-12 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-foreground mb-1">No will in place?</p>
+          <p className="text-sm text-muted leading-relaxed">
+            A clear, legally valid will is the single biggest thing that speeds up the probate process for your own estate. Farewill lets you write a will online for £90, reviewed by qualified solicitors.
+          </p>
+        </div>
+        <a
+          href="https://farewill.com/wills?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=probate-timeline"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
+        >
+          Write a will
+        </a>
+      </div>
+
       {/* Scotland */}
       <h2 id="scotland" className="text-2xl font-bold text-foreground mb-6">Scotland: Confirmation timelines</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
@@ -320,7 +338,7 @@ export default function HowLongDoesProbateTakePage() {
             headline: 'How Long Does Probate Take in the UK? Realistic Timeline (2026)',
             description: 'A realistic breakdown of how long probate takes in the UK in 2026, from application to final distribution.',
             datePublished: '2026-03-22',
-            dateModified: '2026-03-22',
+            dateModified: '2026-04-21',
             author: { '@type': 'Organization', name: 'Help After Loss' },
             publisher: {
               '@type': 'Organization',
