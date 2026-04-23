@@ -215,7 +215,7 @@ export default function HowLongDoesProbateTakePage() {
           </p>
         </div>
         <a
-          href="https://www.unbiased.co.uk/find/solicitors/probate"
+          href="https://www.unbiased.co.uk/find/solicitors/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=probate-timeline"
           target="_blank"
           rel="noopener noreferrer"
           className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
@@ -297,7 +297,7 @@ export default function HowLongDoesProbateTakePage() {
           <h3 className="font-semibold text-foreground mb-2">Do I need a solicitor for probate?</h3>
           <p className="text-sm text-muted leading-relaxed">
             No, you can apply for probate yourself. The online application at GOV.UK is designed for people without legal training. However, if the estate is complex (property abroad, business assets, IHT due, family disputes), a solicitor can be worth the cost. Expect to pay £1,500 to £5,000 for a solicitor-led application.{' '}
-            <a href="https://www.unbiased.co.uk/find/solicitors/probate" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Unbiased.co.uk</a>
+            <a href="https://www.unbiased.co.uk/find/solicitors/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=probate-timeline" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Unbiased.co.uk</a>
             {' '}lets you compare local probate solicitors and get free quotes.
           </p>
         </div>
