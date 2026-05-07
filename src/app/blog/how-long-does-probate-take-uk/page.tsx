@@ -108,6 +108,21 @@ export default function HowLongDoesProbateTakePage() {
         </ul>
       </div>
 
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
+        <div className="bg-card rounded-xl border border-border p-4 text-center">
+          <p className="text-2xl font-bold text-primary mb-1">4-6 mo</p>
+          <p className="text-xs text-muted">Simple estate, no IHT</p>
+        </div>
+        <div className="bg-card rounded-xl border border-border p-4 text-center">
+          <p className="text-2xl font-bold text-primary mb-1">6-12 mo</p>
+          <p className="text-xs text-muted">Moderate estate with IHT</p>
+        </div>
+        <div className="bg-card rounded-xl border border-border p-4 text-center">
+          <p className="text-2xl font-bold text-primary mb-1">12+ mo</p>
+          <p className="text-xs text-muted">Complex estate or disputes</p>
+        </div>
+      </div>
+
       <TableOfContents items={[
         { id: 'overview', label: 'The full timeline at a glance' },
         { id: 'stage-detail', label: 'Each stage explained' },
