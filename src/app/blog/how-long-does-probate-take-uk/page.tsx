@@ -158,6 +158,24 @@ export default function HowLongDoesProbateTakePage() {
         </div>
       </div>
 
+      {/* Solicitor CTA - after timeline overview, when complexity is front of mind */}
+      <div className="bg-card rounded-xl border border-border p-6 mb-10 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-foreground mb-1">Want someone to handle this for you?</p>
+          <p className="text-sm text-muted leading-relaxed">
+            Probate solicitors manage the whole process: gathering valuations, dealing with HMRC, and distributing the estate. Compare local probate solicitors and get free quotes through Unbiased.co.uk.
+          </p>
+        </div>
+        <a
+          href="https://www.unbiased.co.uk/find/solicitors/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=probate-timeline-early"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
+        >
+          Compare solicitors
+        </a>
+      </div>
+
       {/* Stage detail */}
       <h2 id="stage-detail" className="text-2xl font-bold text-foreground mb-6">Each stage explained</h2>
       <div className="space-y-4 mb-12">
@@ -244,12 +262,28 @@ export default function HowLongDoesProbateTakePage() {
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <ul className="space-y-3 text-sm text-muted">
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Apply online.</strong> Online applications are processed faster than paper ones.</li>
-          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Start gathering valuations immediately.</strong> Do not wait for the funeral. Write to every bank, pension provider, and investment company as soon as you have the death certificate. Our <Link href="/template-letters" className="text-primary hover:underline">free template letters</Link> cover all the main banks and institutions so you do not have to write from scratch.</li>
+          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Start gathering valuations immediately.</strong> Do not wait for the funeral. Write to every bank, pension provider, and investment company as soon as you have the death certificate.</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Get the IHT forms right first time.</strong> Errors or incomplete forms are the most common reason for HMRC delays. Double-check everything before submitting.</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Order enough death certificates.</strong> You will need to send them to multiple organisations at the same time. Having 4 or 5 copies means you can contact several banks in parallel instead of waiting for one to return it.</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Place the statutory notice in The Gazette early.</strong> The 2-month notice period runs from the date you place the advert. Place it as soon as you receive the grant so it runs in parallel with asset collection.</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Chase regularly.</strong> Do not assume silence means progress. Follow up with the Probate Registry, HMRC, and financial institutions if you have not heard back within their stated timescales.</li>
         </ul>
+      </div>
+
+      {/* Notification templates CTA */}
+      <div className="bg-card rounded-xl border border-border p-5 mb-12 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-foreground mb-1">Free notification letter templates</p>
+          <p className="text-sm text-muted leading-relaxed">
+            Writing to every bank, energy provider, and government department from scratch is exhausting. Our free templates cover all the main institutions. Fill in the name and date of death, print, and post.
+          </p>
+        </div>
+        <Link
+          href="/template-letters"
+          className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
+        >
+          Get free templates
+        </Link>
       </div>
 
       {/* Without probate */}
