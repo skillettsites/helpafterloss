@@ -383,6 +383,24 @@ export default function HowLongDoesProbateTakePage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
+            '@type': 'HowTo',
+            name: 'How Long Does Probate Take in the UK?',
+            description: 'A step-by-step breakdown of the UK probate process, from gathering documents to distributing the estate. Typical end-to-end: 6 to 12 months.',
+            totalTime: 'P9M',
+            step: TIMELINE_STAGES.map((stage, i) => ({
+              '@type': 'HowToStep',
+              position: i + 1,
+              name: stage.stage,
+              text: `${stage.typical}. ${stage.detail}`,
+            })),
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
             '@type': 'Article',
             headline: 'How Long Does Probate Take in the UK? Realistic Timeline (2026)',
             description: 'A realistic breakdown of how long probate takes in the UK in 2026, from application to final distribution.',

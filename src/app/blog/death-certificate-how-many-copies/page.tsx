@@ -8,20 +8,20 @@ import { SupportCta } from '@/components/SupportCta';
 import { FreeChecklistBanner } from '@/components/FreeChecklistBanner';
 
 export const metadata: Metadata = {
-  title: 'How Many Death Certificates Do I Need? (2026 Guide)',
-  description: 'You typically need 8-12 certified copies of a death certificate, at £12.50 each in England. Find out exactly who needs one, how to order, and how to save money.',
+  title: 'How Many Death Certificates Do I Need? UK Guide 2026',
+  description: 'Most UK families need 8-12 certified copies (£12.50 each in England). Full list of who needs an original, how to order same-day, how to avoid the £38.50 priority fee, and which banks accept the free Death Notification Service.',
   alternates: { canonical: 'https://helpafterloss.co.uk/blog/death-certificate-how-many-copies' },
   openGraph: {
-    title: 'How Many Death Certificates Do I Need? (2026 Guide)',
-    description: 'Most families need 8-12 certified copies at £12.50 each in England. Full breakdown of who needs an original, how to order, and money-saving tips.',
+    title: 'How Many Death Certificates Do I Need? UK Guide 2026',
+    description: 'Most UK families need 8-12 certified copies at £12.50 each in England. Full breakdown of who needs an original, how to order, and money-saving tips.',
     url: 'https://helpafterloss.co.uk/blog/death-certificate-how-many-copies',
     type: 'article',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How Many Death Certificates Do I Need? (2026 Guide)',
-    description: 'Most families need 8-12 certified copies at £12.50 each in England. Full breakdown of who needs an original, how to order, and money-saving tips.',
+    title: 'How Many Death Certificates Do I Need? UK Guide 2026',
+    description: 'Most UK families need 8-12 certified copies at £12.50 each in England. Full breakdown of who needs an original, how to order, and money-saving tips.',
   },
 };
 
@@ -75,7 +75,7 @@ export default function DeathCertificateHowManyCopiesPage() {
       ]} />
 
       <div className="flex items-center gap-3 text-xs text-muted mb-3">
-        <span>Updated 17 March 2026</span>
+        <span>Updated 13 May 2026</span>
         <span aria-hidden="true">|</span>
         <span>8 min read</span>
       </div>
@@ -140,6 +140,24 @@ export default function DeathCertificateHowManyCopiesPage() {
             <p className="text-sm text-muted leading-relaxed">{item.note}</p>
           </div>
         ))}
+      </div>
+
+      {/* Solicitor CTA - after who-needs-copy, when workload is clear */}
+      <div className="bg-card rounded-xl border border-border p-6 mb-12 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-foreground mb-1">Feeling overwhelmed by the paperwork?</p>
+          <p className="text-sm text-muted leading-relaxed">
+            A probate solicitor can handle all the notifications, certificates, and estate administration for you. Compare local solicitors and get free quotes through Unbiased.co.uk.
+          </p>
+        </div>
+        <a
+          href="https://www.unbiased.co.uk/find/solicitors/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=death-certificate-copies"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
+        >
+          Compare solicitors
+        </a>
       </div>
 
       {/* Certified copies vs originals */}
@@ -336,7 +354,7 @@ export default function DeathCertificateHowManyCopiesPage() {
             headline: 'How Many Death Certificates Do I Need? (2026 Guide)',
             description: 'You typically need 8-12 certified copies of a death certificate, at £12.50 each in England. Full breakdown of who needs one, how to order, and how to save money.',
             datePublished: '2026-03-14',
-            dateModified: '2026-03-17',
+            dateModified: '2026-05-13',
             author: { '@type': 'Organization', name: 'Help After Loss' },
             publisher: {
               '@type': 'Organization',
