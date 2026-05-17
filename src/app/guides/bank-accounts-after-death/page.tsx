@@ -179,6 +179,24 @@ export default function BankAccountsAfterDeathPage() {
         </table>
       </div>
 
+      {/* Solicitor CTA - after thresholds table for complex estates */}
+      <div className="bg-card rounded-xl border border-border p-6 mb-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-foreground mb-1">Multiple accounts or a complex estate?</p>
+          <p className="text-sm text-muted leading-relaxed">
+            If the estate includes several bank accounts, investments, or property, a probate solicitor can take the whole process off your hands. You can compare local probate solicitors and get free quotes through Unbiased.co.uk.
+          </p>
+        </div>
+        <a
+          href="https://www.unbiased.co.uk/find/solicitors/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=bank-accounts-guide"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
+        >
+          Compare solicitors
+        </a>
+      </div>
+
       {/* CTA */}
       <div className="bg-card rounded-xl border border-border p-6 mb-12 text-center">
         <h2 className="text-xl font-bold text-foreground mb-2">Find your bank&apos;s bereavement process</h2>
@@ -200,6 +218,24 @@ export default function BankAccountsAfterDeathPage() {
       </div>
 
       <RelatedGuides currentPath="/guides/bank-accounts-after-death" guides={['/notify', '/guides/debts-after-death', '/guides/executor-duties', '/probate']} />
+
+      {/* Farewill will-writing CTA */}
+      <div className="bg-card rounded-xl border border-border p-6 mb-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-foreground mb-1">Make it easier for your own family one day</p>
+          <p className="text-sm text-muted leading-relaxed">
+            A clear, up-to-date will means your family will not face the same uncertainty when dealing with your accounts. Farewill lets you write a legally valid will online for £90, reviewed by qualified solicitors.
+          </p>
+        </div>
+        <a
+          href="https://farewill.com/wills?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=bank-accounts-guide"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
+        >
+          Write a will
+        </a>
+      </div>
 
       <div className="bg-primary-light rounded-xl p-8 text-center">
         <h2 className="text-2xl font-bold text-foreground mb-3">Get a personalised estate checklist</h2>
