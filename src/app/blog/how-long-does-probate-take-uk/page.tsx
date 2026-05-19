@@ -354,6 +354,24 @@ export default function HowLongDoesProbateTakePage() {
         </div>
       </div>
 
+      {/* Financial advice CTA - after FAQs, when reader is thinking about what happens after probate */}
+      <div className="bg-card rounded-xl border border-border p-6 mb-12 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-foreground mb-1">What to do with the inherited money</p>
+          <p className="text-sm text-muted leading-relaxed">
+            Once the estate is distributed, beneficiaries often face questions about inheritance tax, ISA allowances, and whether to pay down a mortgage or invest. A one-off session with an independent financial adviser can be worth it. Unbiased.co.uk lets you find IFAs local to you and get a free initial consultation.
+          </p>
+        </div>
+        <a
+          href="https://www.unbiased.co.uk/find/financial-advisers?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=probate-ifa"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
+        >
+          Find a financial adviser
+        </a>
+      </div>
+
       <div className="bg-primary-light rounded-xl p-6 mb-8">
         <h3 className="font-semibold text-foreground mb-3">Need support?</h3>
         <p className="text-sm text-muted leading-relaxed mb-2">
