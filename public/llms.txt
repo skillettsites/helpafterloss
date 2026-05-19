@@ -1,0 +1,32 @@
+# HelpAfterLoss
+
+> UK bereavement support: practical, step-by-step guidance on what to do after someone dies, who to notify, how to handle probate, and how to claim benefits or close accounts.
+
+HelpAfterLoss is a free UK resource that walks families through the administrative side of bereavement. We cover the legal deadlines, the documents needed, the right phone numbers, and ready-to-use template letters.
+
+## Core pages
+- [Homepage](https://helpafterloss.co.uk/): https://helpafterloss.co.uk/
+- [Step-by-step guide](https://helpafterloss.co.uk/guide): main bereavement walkthrough
+- [Template letters](https://helpafterloss.co.uk/template-letters): notify banks, utilities, councils, HMRC
+- [Bereavement checklist](https://helpafterloss.co.uk/checklist): printable list of every notification
+- [Phone directory](https://helpafterloss.co.uk/phone-directory): direct lines to UK banks, utilities, government
+- [Deadline tracker](https://helpafterloss.co.uk/deadline-tracker): every UK legal deadline post-death
+- [Bank thresholds](https://helpafterloss.co.uk/banks): probate-free withdrawal limits per UK bank
+- [Funeral costs](https://helpafterloss.co.uk/costs): typical UK funeral pricing
+- [Intestacy rules](https://helpafterloss.co.uk/intestacy): what happens without a will (England & Wales)
+- [County-specific guides](https://helpafterloss.co.uk/counties): localised council, registrar, and crematorium info
+- [Cultural / faith-specific guides](https://helpafterloss.co.uk/cultural-guide): customs and timelines per tradition
+
+## What we publish
+- Step-by-step bereavement walkthroughs
+- Tell-Us-Once and probate practical guides
+- Bank-specific probate threshold lookup
+- Editable template letters (DOCX + PDF)
+- Local council, registrar, crematorium contact data
+- Faq-by-topic: pensions, joint accounts, mortgages, digital legacy
+
+## Canonical
+https://helpafterloss.co.uk
+
+## Not in scope
+We are not a law firm or financial advisor. Content is informational only; users should consult a solicitor for legal advice and HMRC/probate-registry for binding rulings.
