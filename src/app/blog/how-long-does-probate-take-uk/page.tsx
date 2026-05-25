@@ -98,7 +98,7 @@ export default function HowLongDoesProbateTakePage() {
         </Link>
       </div>
 
-      <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
+      <div id="probate-quick-summary" className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
         <h2 className="text-sm font-semibold text-amber-900 mb-3">Quick summary</h2>
         <ul className="space-y-1.5 text-sm text-amber-800">
           <li className="flex gap-2"><span className="font-bold">+</span> <strong>Simple estate, no IHT:</strong> 4 to 6 months from death to distribution</li>
@@ -466,6 +466,20 @@ export default function HowLongDoesProbateTakePage() {
               { '@type': 'Question', name: 'How do I check the progress of my probate application?', acceptedAnswer: { '@type': 'Answer', text: 'You can call the Probate Registry on 0300 303 0648 or check online if you applied through the GOV.UK service.' } },
               { '@type': 'Question', name: 'Do I need a solicitor for probate?', acceptedAnswer: { '@type': 'Answer', text: 'No, you can apply for probate yourself via GOV.UK. However, if the estate is complex, a solicitor can be worth the cost (typically £1,500 to £5,000).' } },
             ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            speakable: {
+              '@type': 'SpeakableSpecification',
+              cssSelector: ['#probate-quick-summary'],
+            },
+            url: 'https://helpafterloss.co.uk/blog/how-long-does-probate-take-uk',
           }),
         }}
       />
