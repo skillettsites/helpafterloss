@@ -98,7 +98,7 @@ export default function HowLongDoesProbateTakePage() {
         </Link>
       </div>
 
-      <div id="probate-quick-summary" className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
+      <div id="probate-quick-summary" className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-6">
         <h2 className="text-sm font-semibold text-amber-900 mb-3">Quick summary</h2>
         <ul className="space-y-1.5 text-sm text-amber-800">
           <li className="flex gap-2"><span className="font-bold">+</span> <strong>Simple estate, no IHT:</strong> 4 to 6 months from death to distribution</li>
@@ -106,6 +106,21 @@ export default function HowLongDoesProbateTakePage() {
           <li className="flex gap-2"><span className="font-bold">+</span> <strong>Complex estate (property abroad, disputes, business assets):</strong> 12 to 24+ months</li>
           <li className="flex gap-2"><span className="font-bold">+</span> <strong>Just the grant itself:</strong> 6 to 12 weeks from submitting the application</li>
         </ul>
+      </div>
+
+      <div className="bg-card rounded-xl border border-border p-4 mb-8 flex flex-col sm:flex-row items-start sm:items-center gap-3">
+        <div className="flex-1">
+          <p className="font-semibold text-foreground text-sm mb-0.5">Complex estate? Let a solicitor handle it.</p>
+          <p className="text-xs text-muted">Compare local probate solicitors and get free quotes. Typical cost: £1,500 to £5,000 and can save months of work.</p>
+        </div>
+        <a
+          href="https://www.unbiased.co.uk/find/solicitors/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=probate-timeline-top"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shrink-0 inline-block px-4 py-2 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-xs whitespace-nowrap"
+        >
+          Compare solicitors
+        </a>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
