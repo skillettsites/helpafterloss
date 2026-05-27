@@ -76,7 +76,7 @@ export default function HowLongDoesProbateTakePage() {
       ]} />
 
       <div className="flex items-center gap-3 text-xs text-muted mb-3">
-        <span>Updated 21 April 2026</span>
+        <span>Updated 27 May 2026</span>
         <span aria-hidden="true">|</span>
         <span>12 min read</span>
       </div>
@@ -440,7 +440,7 @@ export default function HowLongDoesProbateTakePage() {
             headline: 'How Long Does Probate Take in the UK? Realistic Timeline (2026)',
             description: 'A realistic breakdown of how long probate takes in the UK in 2026, from application to final distribution.',
             datePublished: '2026-03-22',
-            dateModified: '2026-05-14',
+            dateModified: '2026-05-27',
             author: { '@type': 'Organization', name: 'Help After Loss' },
             publisher: {
               '@type': 'Organization',
