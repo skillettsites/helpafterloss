@@ -138,6 +138,28 @@ export default function HowLongDoesProbateTakePage() {
         </div>
       </div>
 
+      <div className="bg-card rounded-xl border border-border p-5 mb-8">
+        <p className="text-sm font-semibold text-foreground mb-3">Other tasks you will need to handle</p>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+          <Link href="/guides/bank-accounts-after-death" className="block p-3 rounded-lg bg-amber-50 hover:bg-amber-100 transition-colors group">
+            <p className="text-xs font-semibold text-amber-900">Bank accounts</p>
+            <p className="text-xs text-muted mt-0.5">How to close accounts and access funds</p>
+          </Link>
+          <Link href="/notify" className="block p-3 rounded-lg bg-amber-50 hover:bg-amber-100 transition-colors group">
+            <p className="text-xs font-semibold text-amber-900">Who to notify</p>
+            <p className="text-xs text-muted mt-0.5">60+ organisations with contact numbers</p>
+          </Link>
+          <Link href="/template-letters" className="block p-3 rounded-lg bg-amber-50 hover:bg-amber-100 transition-colors group">
+            <p className="text-xs font-semibold text-amber-900">Letter templates</p>
+            <p className="text-xs text-muted mt-0.5">Free ready-to-use notification letters</p>
+          </Link>
+          <Link href="/guides/death-certificates" className="block p-3 rounded-lg bg-amber-50 hover:bg-amber-100 transition-colors group">
+            <p className="text-xs font-semibold text-amber-900">Death certificates</p>
+            <p className="text-xs text-muted mt-0.5">How many to order and from where</p>
+          </Link>
+        </div>
+      </div>
+
       <TableOfContents items={[
         { id: 'overview', label: 'The full timeline at a glance' },
         { id: 'stage-detail', label: 'Each stage explained' },
