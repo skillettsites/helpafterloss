@@ -388,6 +388,31 @@ export default async function NotifyOrganisationPage({ params }: PageProps) {
         </section>
       )}
 
+      {/* Solicitor CTA for bank/building-society pages with a probate threshold */}
+      {isBankOrBS && contact.probateThreshold && (
+        <section className="py-4 px-4">
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-card rounded-xl border border-border p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+              <div className="flex-1">
+                <p className="font-semibold text-foreground mb-1">Is the estate above the threshold?</p>
+                <p className="text-sm text-muted leading-relaxed">
+                  If the balance held with {contact.name} exceeds {contact.probateThreshold}, you will need probate before funds can be released.
+                  A probate solicitor can handle the whole process. Compare local solicitors and get free quotes through Unbiased.co.uk.
+                </p>
+              </div>
+              <a
+                href="https://www.unbiased.co.uk/find/solicitors/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=notify-bank"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
+              >
+                Compare solicitors
+              </a>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Call script */}
       <section className="py-8 px-4">
         <div className="max-w-3xl mx-auto">
