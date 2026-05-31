@@ -108,6 +108,28 @@ export default function HowLongDoesProbateTakePage() {
         </ul>
       </div>
 
+      <div className="bg-card rounded-xl border border-border p-5 mb-6">
+        <p className="text-sm font-semibold text-foreground mb-3">Now you have your timeline. Start working through these:</p>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+          <Link href="/notify" className="block p-3 rounded-lg bg-amber-50 hover:bg-amber-100 transition-colors group">
+            <p className="text-xs font-semibold text-amber-900">Who to notify</p>
+            <p className="text-xs text-muted mt-0.5">60+ organisations with contact numbers</p>
+          </Link>
+          <Link href="/template-letters" className="block p-3 rounded-lg bg-amber-50 hover:bg-amber-100 transition-colors group">
+            <p className="text-xs font-semibold text-amber-900">Letter templates</p>
+            <p className="text-xs text-muted mt-0.5">Free ready-to-use notification letters</p>
+          </Link>
+          <Link href="/guides/bank-accounts-after-death" className="block p-3 rounded-lg bg-amber-50 hover:bg-amber-100 transition-colors group">
+            <p className="text-xs font-semibold text-amber-900">Bank accounts</p>
+            <p className="text-xs text-muted mt-0.5">How to close accounts and access funds</p>
+          </Link>
+          <Link href="/guides/death-certificates" className="block p-3 rounded-lg bg-amber-50 hover:bg-amber-100 transition-colors group">
+            <p className="text-xs font-semibold text-amber-900">Death certificates</p>
+            <p className="text-xs text-muted mt-0.5">How many to order and from where</p>
+          </Link>
+        </div>
+      </div>
+
       <div className="bg-card rounded-xl border border-border p-4 mb-8 flex flex-col sm:flex-row items-start sm:items-center gap-3">
         <div className="flex-1">
           <p className="font-semibold text-foreground text-sm mb-0.5">Complex estate? Let a solicitor handle it.</p>
@@ -135,28 +157,6 @@ export default function HowLongDoesProbateTakePage() {
         <div className="bg-card rounded-xl border border-border p-4 text-center">
           <p className="text-2xl font-bold text-primary mb-1">12+ mo</p>
           <p className="text-xs text-muted">Complex estate or disputes</p>
-        </div>
-      </div>
-
-      <div className="bg-card rounded-xl border border-border p-5 mb-8">
-        <p className="text-sm font-semibold text-foreground mb-3">Other tasks you will need to handle</p>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-          <Link href="/guides/bank-accounts-after-death" className="block p-3 rounded-lg bg-amber-50 hover:bg-amber-100 transition-colors group">
-            <p className="text-xs font-semibold text-amber-900">Bank accounts</p>
-            <p className="text-xs text-muted mt-0.5">How to close accounts and access funds</p>
-          </Link>
-          <Link href="/notify" className="block p-3 rounded-lg bg-amber-50 hover:bg-amber-100 transition-colors group">
-            <p className="text-xs font-semibold text-amber-900">Who to notify</p>
-            <p className="text-xs text-muted mt-0.5">60+ organisations with contact numbers</p>
-          </Link>
-          <Link href="/template-letters" className="block p-3 rounded-lg bg-amber-50 hover:bg-amber-100 transition-colors group">
-            <p className="text-xs font-semibold text-amber-900">Letter templates</p>
-            <p className="text-xs text-muted mt-0.5">Free ready-to-use notification letters</p>
-          </Link>
-          <Link href="/guides/death-certificates" className="block p-3 rounded-lg bg-amber-50 hover:bg-amber-100 transition-colors group">
-            <p className="text-xs font-semibold text-amber-900">Death certificates</p>
-            <p className="text-xs text-muted mt-0.5">How many to order and from where</p>
-          </Link>
         </div>
       </div>
 
