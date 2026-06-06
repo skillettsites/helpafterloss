@@ -160,6 +160,47 @@ export default function HowLongDoesProbateTakePage() {
         </div>
       </div>
 
+      {/* Action box: for users who have their answer and want next steps */}
+      <div className="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-xl p-5 mb-6">
+        <p className="font-semibold text-gray-900 text-sm mb-3">What do you want to do next?</p>
+        <div className="flex flex-col sm:flex-row gap-3">
+          <a
+            href="https://www.gov.uk/wills-probate-inheritance/applying-for-a-grant-of-representation"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 flex items-center gap-3 px-4 py-3 bg-green-600 text-white font-semibold rounded-xl hover:bg-green-700 transition-colors text-sm"
+          >
+            <span className="text-lg">📋</span>
+            <div>
+              <p className="font-bold leading-none">Apply on GOV.UK</p>
+              <p className="text-green-100 text-xs font-normal mt-0.5">Online in 45 min, processed in 6-10 weeks</p>
+            </div>
+          </a>
+          <a
+            href="https://www.unbiased.co.uk/find/solicitors/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=probate-timeline-action"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 flex items-center gap-3 px-4 py-3 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm"
+          >
+            <span className="text-lg">⚖️</span>
+            <div>
+              <p className="font-bold leading-none">Get a solicitor to handle it</p>
+              <p className="text-blue-100 text-xs font-normal mt-0.5">Free quotes, £1,500-£5,000 typical cost</p>
+            </div>
+          </a>
+          <a
+            href="/template-letters"
+            className="flex-1 flex items-center gap-3 px-4 py-3 bg-amber-500 text-white font-semibold rounded-xl hover:bg-amber-600 transition-colors text-sm"
+          >
+            <span className="text-lg">✉️</span>
+            <div>
+              <p className="font-bold leading-none">Get notification templates</p>
+              <p className="text-amber-100 text-xs font-normal mt-0.5">Free letters for banks, utilities, HMRC</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
       <TableOfContents items={[
         { id: 'overview', label: 'The full timeline at a glance' },
         { id: 'stage-detail', label: 'Each stage explained' },
