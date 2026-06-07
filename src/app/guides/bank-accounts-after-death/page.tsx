@@ -138,9 +138,9 @@ export default function BankAccountsAfterDeathPage() {
         </div>
       </div>
 
-      {/* Content sections */}
-      <div className="space-y-4 mb-12">
-        {SECTIONS.map((section, i) => (
+      {/* Content sections - split with CTA mid-way */}
+      <div className="space-y-4 mb-6">
+        {SECTIONS.slice(0, 3).map((section, i) => (
           <div key={i} className="bg-card rounded-xl border border-border p-6">
             <h2 className="font-semibold text-foreground mb-2">{section.title}</h2>
             <p className="text-sm text-muted leading-relaxed">{section.content}</p>
@@ -152,6 +152,32 @@ export default function BankAccountsAfterDeathPage() {
         heading="Need a full list of what to do?"
         text="Our personalised guide covers bank accounts, pensions, property, and everything else. Get a step-by-step checklist with real deadlines."
       />
+
+      <div className="bg-card rounded-xl border border-border p-5 mb-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-foreground text-sm mb-1">Dealing with a large or complex estate?</p>
+          <p className="text-sm text-muted leading-relaxed">
+            If the estate includes property, investments, or accounts above the probate threshold, a probate solicitor can handle all the bank notifications and paperwork. Compare local probate solicitors and get free quotes through Unbiased.co.uk.
+          </p>
+        </div>
+        <a
+          href="https://www.unbiased.co.uk/find/solicitors/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=bank-accounts-mid"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shrink-0 inline-block px-4 py-2 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-xs whitespace-nowrap"
+        >
+          Compare solicitors free
+        </a>
+      </div>
+
+      <div className="space-y-4 mb-12">
+        {SECTIONS.slice(3).map((section, i) => (
+          <div key={i + 3} className="bg-card rounded-xl border border-border p-6">
+            <h2 className="font-semibold text-foreground mb-2">{section.title}</h2>
+            <p className="text-sm text-muted leading-relaxed">{section.content}</p>
+          </div>
+        ))}
+      </div>
 
       {/* Probate thresholds table */}
       <h2 className="text-2xl font-bold text-foreground mb-6">Bank probate thresholds comparison</h2>
