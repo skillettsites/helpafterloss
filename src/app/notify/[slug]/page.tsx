@@ -331,6 +331,31 @@ export default async function NotifyOrganisationPage({ params }: PageProps) {
         </div>
       </section>
 
+      {/* Solicitor CTA for all bank/building-society pages */}
+      {isBankOrBS && (
+        <section className="py-4 px-4">
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+              <div className="flex-1">
+                <p className="font-semibold text-foreground mb-1">Unsure whether probate is needed?</p>
+                <p className="text-sm text-muted leading-relaxed">
+                  If the estate is complex or the balance exceeds the bank&apos;s threshold, a probate solicitor can handle the whole process.
+                  Compare local solicitors and get free quotes through Unbiased.
+                </p>
+              </div>
+              <a
+                href="https://www.unbiased.co.uk/find/solicitors/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=notify-bank-early"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
+              >
+                Compare solicitors
+              </a>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Joint vs Sole accounts (banks/building societies only) */}
       {isBankOrBS && (contact.jointAccountProcess || contact.soleAccountProcess) && (
         <section className="py-8 px-4">
