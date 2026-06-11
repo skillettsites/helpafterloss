@@ -22,11 +22,12 @@ interface AuthContextType {
   signIn: (email: string, password: string) => Promise<{ error: string | null }>;
   signInWithMagicLink: (email: string) => Promise<{ error: string | null }>;
   signOut: () => Promise<void>;
-  saveToCloud: (answers: Partial<UserAnswers>, completedTaskIds: string[]) => Promise<void>;
-  saveExtendedToCloud: (data: Partial<CloudProgressData>) => Promise<void>;
+  saveToCloud: (answers: Partial<UserAnswers>, completedTaskIds: string[]) => Promise<{ error: string | null }>;
+  saveExtendedToCloud: (data: Partial<CloudProgressData>) => Promise<{ error: string | null }>;
   loadFromCloud: () => Promise<SavedProgress | null>;
   loadExtendedFromCloud: () => Promise<CloudProgressData | null>;
   syncing: boolean;
+  syncError: string | null;
   configured: boolean;
 }
 
@@ -37,6 +38,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [session, setSession] = useState<Session | null>(null);
   const [loading, setLoading] = useState(true);
   const [syncing, setSyncing] = useState(false);
+  const [syncError, setSyncError] = useState<string | null>(null);
 
   useEffect(() => {
     if (!isSupabaseConfigured) {
@@ -90,81 +92,109 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     await supabase.auth.signOut();
   }, []);
 
-  const saveToCloud = useCallback(async (answers: Partial<UserAnswers>, completedTaskIds: string[]) => {
-    if (!isSupabaseConfigured || !user) return;
+  // Progress is saved and loaded through /api/progress rather than direct
+  // Supabase table queries. The shared Supabase project has no user-level
+  // RLS policies on user_progress, so browser queries are rejected; the API
+  // route verifies the access token and performs the query server-side.
+  const getAccessToken = useCallback(async (): Promise<string | null> => {
+    if (!isSupabaseConfigured) return null;
+    const { data: { session } } = await supabase.auth.getSession();
+    return session?.access_token ?? null;
+  }, []);
+
+  const postProgress = useCallback(async (payload: Record<string, unknown>): Promise<{ error: string | null }> => {
     setSyncing(true);
     try {
-      const { error } = await supabase
-        .from('user_progress')
-        .upsert({
-          user_id: user.id,
-          answers,
-          completed_task_ids: completedTaskIds,
-          updated_at: new Date().toISOString(),
-        }, { onConflict: 'user_id' });
-      if (error) console.error('Failed to save to cloud:', error.message);
+      const token = await getAccessToken();
+      if (!token) {
+        const msg = 'Your session has expired. Please sign in again to save your progress.';
+        setSyncError(msg);
+        return { error: msg };
+      }
+      const res = await fetch('/api/progress', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) {
+        let msg = `Save failed (${res.status})`;
+        try {
+          const data = await res.json();
+          if (data?.error) msg = data.error;
+        } catch { /* keep default message */ }
+        console.error('Failed to save to cloud:', msg);
+        setSyncError(msg);
+        return { error: msg };
+      }
+      setSyncError(null);
+      return { error: null };
+    } catch {
+      const msg = 'Could not reach the server. Your progress is still saved on this device.';
+      setSyncError(msg);
+      return { error: msg };
     } finally {
       setSyncing(false);
     }
-  }, [user]);
+  }, [getAccessToken]);
+
+  const fetchProgress = useCallback(async (): Promise<Record<string, unknown> | null> => {
+    const token = await getAccessToken();
+    if (!token) return null;
+    try {
+      const res = await fetch('/api/progress', {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      if (!res.ok) return null;
+      const data = await res.json();
+      return (data?.progress as Record<string, unknown>) || null;
+    } catch {
+      return null;
+    }
+  }, [getAccessToken]);
+
+  const saveToCloud = useCallback(async (answers: Partial<UserAnswers>, completedTaskIds: string[]) => {
+    if (!isSupabaseConfigured || !user) return { error: null };
+    return postProgress({ answers, completedTaskIds });
+  }, [user, postProgress]);
 
   const saveExtendedToCloud = useCallback(async (data: Partial<CloudProgressData>) => {
-    if (!isSupabaseConfigured || !user) return;
-    setSyncing(true);
-    try {
-      const updateObj: Record<string, unknown> = {
-        user_id: user.id,
-        updated_at: new Date().toISOString(),
-      };
-      if (data.answers !== undefined) updateObj.answers = data.answers;
-      if (data.completedTaskIds !== undefined) updateObj.completed_task_ids = data.completedTaskIds;
-      if (data.notes !== undefined) updateObj.notes = data.notes;
-      if (data.snoozedTasks !== undefined) updateObj.snoozed_tasks = data.snoozedTasks;
-      if (data.skippedTasks !== undefined) updateObj.skipped_tasks = data.skippedTasks;
-
-      const { error } = await supabase
-        .from('user_progress')
-        .upsert(updateObj, { onConflict: 'user_id' });
-      if (error) console.error('Failed to save to cloud:', error.message);
-    } finally {
-      setSyncing(false);
-    }
-  }, [user]);
+    if (!isSupabaseConfigured || !user) return { error: null };
+    const payload: Record<string, unknown> = {};
+    if (data.answers !== undefined) payload.answers = data.answers;
+    if (data.completedTaskIds !== undefined) payload.completedTaskIds = data.completedTaskIds;
+    if (data.notes !== undefined) payload.notes = data.notes;
+    if (data.snoozedTasks !== undefined) payload.snoozedTasks = data.snoozedTasks;
+    if (data.skippedTasks !== undefined) payload.skippedTasks = data.skippedTasks;
+    return postProgress(payload);
+  }, [user, postProgress]);
 
   const loadFromCloud = useCallback(async (): Promise<SavedProgress | null> => {
     if (!isSupabaseConfigured || !user) return null;
     setSyncing(true);
     try {
-      const { data, error } = await supabase
-        .from('user_progress')
-        .select('answers, completed_task_ids, updated_at')
-        .eq('user_id', user.id)
-        .single();
-
-      if (error || !data) return null;
+      const data = await fetchProgress();
+      if (!data) return null;
 
       return {
         answers: data.answers as Partial<UserAnswers>,
         completedTaskIds: data.completed_task_ids as string[],
-        lastUpdated: data.updated_at,
+        lastUpdated: data.updated_at as string,
         version: 1,
       };
     } finally {
       setSyncing(false);
     }
-  }, [user]);
+  }, [user, fetchProgress]);
 
   const loadExtendedFromCloud = useCallback(async (): Promise<CloudProgressData | null> => {
     if (!isSupabaseConfigured || !user) return null;
     setSyncing(true);
     try {
-      const { data, error } = await supabase
-        .from('user_progress')
-        .select('answers, completed_task_ids, notes, snoozed_tasks, skipped_tasks, updated_at')
-        .eq('user_id', user.id)
-        .single();
-
-      if (error || !data) return null;
+      const data = await fetchProgress();
+      if (!data) return null;
 
       return {
         answers: (data.answers as Partial<UserAnswers>) || {},
@@ -172,18 +202,18 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         notes: (data.notes as Record<string, string>) || {},
         snoozedTasks: (data.snoozed_tasks as Record<string, string>) || {},
         skippedTasks: (data.skipped_tasks as string[]) || [],
-        lastUpdated: data.updated_at,
+        lastUpdated: data.updated_at as string,
       };
     } finally {
       setSyncing(false);
     }
-  }, [user]);
+  }, [user, fetchProgress]);
 
   return (
     <AuthContext.Provider value={{
       user, session, loading,
       signUp, signIn, signInWithMagicLink, signOut,
-      saveToCloud, saveExtendedToCloud, loadFromCloud, loadExtendedFromCloud, syncing,
+      saveToCloud, saveExtendedToCloud, loadFromCloud, loadExtendedFromCloud, syncing, syncError,
       configured: isSupabaseConfigured,
     }}>
       {children}

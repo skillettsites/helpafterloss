@@ -11,7 +11,7 @@ interface ChecklistProps {
 }
 
 export function Checklist({ tasksByCategory }: ChecklistProps) {
-  const { user, saveToCloud } = useAuth();
+  const { user, saveToCloud, syncError } = useAuth();
   const [completedIds, setCompletedIds] = useState<Set<string>>(new Set());
   const [expandedTask, setExpandedTask] = useState<string | null>(null);
 
@@ -73,6 +73,11 @@ export function Checklist({ tasksByCategory }: ChecklistProps) {
         {completedCount === totalTasks && totalTasks > 0 && (
           <p className="text-sm text-success mt-3 font-medium">
             You have completed everything on your list. Well done.
+          </p>
+        )}
+        {user && syncError && (
+          <p className="text-sm text-urgent mt-3">
+            Your progress could not be saved to your account: {syncError}. It is still stored on this device.
           </p>
         )}
       </div>

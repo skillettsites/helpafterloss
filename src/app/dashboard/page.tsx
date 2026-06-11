@@ -129,7 +129,7 @@ function ProgressRing({ completed, total }: { completed: number; total: number }
 
 export default function DashboardPage() {
   const router = useRouter();
-  const { user, loading, loadExtendedFromCloud, saveExtendedToCloud, configured } = useAuth();
+  const { user, loading, loadExtendedFromCloud, saveExtendedToCloud, configured, syncError } = useAuth();
   const [answers, setAnswers] = useState<Partial<UserAnswers> | null>(null);
   const [allTasks, setAllTasks] = useState<Task[]>([]);
   const [completedIds, setCompletedIds] = useState<Set<string>>(new Set());
@@ -203,8 +203,8 @@ export default function DashboardPage() {
       snoozedTasks: updatedSnoozed || snoozed,
       skippedTasks: updatedSkipped || skipped,
     };
-    await saveExtendedToCloud(data);
-    setLastSaved(new Date().toISOString());
+    const { error } = await saveExtendedToCloud(data);
+    if (!error) setLastSaved(new Date().toISOString());
   }, [user, answers, completedIds, notes, snoozed, skipped, saveExtendedToCloud]);
 
   const handleToggleTask = useCallback((taskId: string) => {
@@ -674,6 +674,15 @@ export default function DashboardPage() {
           See all support organisations
         </Link>
       </div>
+
+      {/* Sync error */}
+      {syncError && (
+        <div className="bg-urgent-light border border-urgent/30 rounded-lg p-3 mb-3">
+          <p className="text-sm text-urgent text-center">
+            Your latest changes could not be saved to your account: {syncError}. They are still stored on this device; we will try again when you make your next change.
+          </p>
+        </div>
+      )}
 
       {/* Last saved */}
       {lastSaved && (
