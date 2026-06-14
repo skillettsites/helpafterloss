@@ -133,17 +133,9 @@ export default function DeathCertificateHowManyCopiesPage() {
       <p className="text-sm text-muted mb-6">
         Every organisation that holds money, property, or an account in the deceased person's name will need to see a certified copy of the death certificate before they release funds or close the account. Here is a typical list:
       </p>
-      <div className="space-y-3 mb-12">
-        {WHO_NEEDS_A_COPY.map((item, i) => (
-          <div key={i} className="bg-card rounded-xl border border-border p-5">
-            <h3 className="font-semibold text-foreground mb-1">{item.organisation}</h3>
-            <p className="text-sm text-muted leading-relaxed">{item.note}</p>
-          </div>
-        ))}
-      </div>
 
-      {/* Solicitor CTA - after who-needs-copy, when workload is clear */}
-      <div className="bg-card rounded-xl border border-border p-6 mb-12 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+      {/* Solicitor CTA - before the list so overwhelmed readers see it immediately */}
+      <div className="bg-card rounded-xl border border-border p-6 mb-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
         <div className="flex-1">
           <p className="font-semibold text-foreground mb-1">Feeling overwhelmed by the paperwork?</p>
           <p className="text-sm text-muted leading-relaxed">
@@ -158,6 +150,15 @@ export default function DeathCertificateHowManyCopiesPage() {
         >
           Compare solicitors
         </a>
+      </div>
+
+      <div className="space-y-3 mb-12">
+        {WHO_NEEDS_A_COPY.map((item, i) => (
+          <div key={i} className="bg-card rounded-xl border border-border p-5">
+            <h3 className="font-semibold text-foreground mb-1">{item.organisation}</h3>
+            <p className="text-sm text-muted leading-relaxed">{item.note}</p>
+          </div>
+        ))}
       </div>
 
       {/* Certified copies vs originals */}
