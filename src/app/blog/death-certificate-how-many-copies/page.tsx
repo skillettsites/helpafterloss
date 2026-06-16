@@ -248,6 +248,24 @@ export default function DeathCertificateHowManyCopiesPage() {
         </table>
       </div>
 
+      {/* Estate admin financial advisor CTA - natural moment: user just saw the cost and complexity */}
+      <div className="bg-card rounded-xl border border-border p-6 mb-12 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-foreground mb-1">Worried about the inheritance tax or estate administration?</p>
+          <p className="text-sm text-muted leading-relaxed">
+            A specialist financial adviser can help you through inheritance tax calculations, estate administration, and making sure the estate is distributed correctly. Compare regulated advisers for free through Unbiased.
+          </p>
+        </div>
+        <a
+          href="https://www.unbiased.co.uk/find/financial-advisers?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=death-certificate-inheritance"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
+        >
+          Find a financial adviser
+        </a>
+      </div>
+
       {/* Tips */}
       <h2 id="tips" className="text-2xl font-bold text-foreground mb-4">Tips for saving time and money</h2>
       <div className="space-y-4 mb-12">
