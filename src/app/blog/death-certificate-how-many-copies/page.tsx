@@ -8,7 +8,7 @@ import { SupportCta } from '@/components/SupportCta';
 import { FreeChecklistBanner } from '@/components/FreeChecklistBanner';
 
 export const metadata: Metadata = {
-  title: 'How Many Death Certificates Do I Need? UK Guide 2026',
+  title: 'How Many Death Certificates Do I Need? (Usually 8-12) | UK Guide 2026',
   description: 'Most UK families need 8-12 certified copies (£12.50 each in England). Full list of who needs an original, how to order same-day, how to avoid the £38.50 priority fee, and which banks accept the free Death Notification Service.',
   alternates: { canonical: 'https://helpafterloss.co.uk/blog/death-certificate-how-many-copies' },
   openGraph: {
@@ -40,6 +40,10 @@ const WHO_NEEDS_A_COPY = [
 ];
 
 const FAQS = [
+  {
+    question: 'How much does a death certificate cost?',
+    answer: 'A certified copy costs £12.50 in England and Wales, £15 in Scotland, and £15 in Northern Ireland. The price is the same whether you order at registration or later from the General Register Office. The only way to get a copy faster than the standard 5-10 working day postal turnaround is the GRO priority service, which costs £38.50 per copy and arrives within 1 working day. There is no way to obtain a certified copy for free; the fee applies in all cases regardless of the deceased\'s circumstances.',
+  },
   {
     question: 'Can I photocopy a death certificate?',
     answer: 'You can photocopy a death certificate, but most banks, insurers, and government departments will not accept a photocopy. They require a certified copy, which is an official copy issued by the register office or the General Register Office. Some utility companies and subscription services will accept a clear photocopy or scanned image, so it is worth asking before sending an original.',
@@ -83,9 +87,27 @@ export default function DeathCertificateHowManyCopiesPage() {
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         How Many Death Certificates Do I Need? (2026 Guide)
       </h1>
-      <p className="text-lg text-muted leading-relaxed mb-10">
+      <p className="text-lg text-muted leading-relaxed mb-6">
         Most families need <strong className="text-foreground">8 to 12 certified copies</strong> of the death certificate. Each copy costs <strong className="text-foreground">£12.50</strong> in England and Wales (£15 in Scotland), so you should budget between £100 and £150. The exact number depends on how many banks, insurers, pension providers, and other organisations you need to notify. It is far better to order too many than too few, because sending certificates to multiple organisations at the same time can save you weeks of waiting.
       </p>
+
+      {/* Early probate CTA: many readers are overwhelmed and want someone to handle it */}
+      <div className="bg-card rounded-xl border border-border p-5 mb-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-foreground mb-1">Want someone to handle the estate for you?</p>
+          <p className="text-sm text-muted leading-relaxed">
+            Farewill&apos;s probate service takes care of the certificates, notifications, and estate administration from start to finish. Fixed fee, fully regulated, and you can start online today.
+          </p>
+        </div>
+        <a
+          href="https://farewill.com/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=death-certificate-copies"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
+        >
+          Get probate help
+        </a>
+      </div>
 
       <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
         <h2 className="text-sm font-semibold text-amber-900 mb-3">Key takeaways</h2>
@@ -328,6 +350,24 @@ export default function DeathCertificateHowManyCopiesPage() {
           <li>The registration is done at the local district registrar's office.</li>
           <li>Northern Ireland certificates are accepted by all UK-wide organisations.</li>
         </ul>
+      </div>
+
+      {/* Will-writing nudge: natural moment after dealing with someone else's estate */}
+      <div className="bg-card rounded-xl border border-border p-6 mb-12 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-foreground mb-1">Going through this has reminded you to sort your own will?</p>
+          <p className="text-sm text-muted leading-relaxed">
+            A professionally drafted will means your family won't face the same uncertainty. Compare regulated solicitors and will-writing services for free through Unbiased.co.uk.
+          </p>
+        </div>
+        <a
+          href="https://www.unbiased.co.uk/find/solicitors/wills-probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=death-certificate-will"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
+        >
+          Find a wills solicitor
+        </a>
       </div>
 
       {/* FAQs */}
