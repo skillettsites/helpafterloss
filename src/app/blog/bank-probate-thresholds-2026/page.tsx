@@ -9,12 +9,12 @@ import { FreeChecklistBanner } from '@/components/FreeChecklistBanner';
 import { ThresholdEmailCapture } from '@/components/ThresholdEmailCapture';
 
 export const metadata: Metadata = {
-  title: 'Bank Probate Thresholds 2026: Complete Comparison',
-  description: 'Every major UK bank and building society probate threshold in 2026. Find out how much each bank will release without a grant of probate, what documents you need, and how to access funds quickly.',
+  title: 'UK Bank Probate Thresholds 2026: £50,000 Limit at Barclays, HSBC, Lloyds & More',
+  description: 'All six major UK banks release up to £50,000 without probate. Building societies from £15,000 to £50,000. Documents needed, step-by-step process for each bank, and what to do if probate is required.',
   alternates: { canonical: 'https://helpafterloss.co.uk/blog/bank-probate-thresholds-2026' },
   openGraph: {
-    title: 'Bank Probate Thresholds 2026: Complete Comparison',
-    description: 'Compare probate thresholds for every major UK bank and building society. Find out which banks release funds without probate and how to access the money.',
+    title: 'Bank Probate Thresholds UK 2026: Every Bank Compared',
+    description: 'All six major UK banks release up to £50,000 without probate. Building societies range from £15,000 to £50,000. Full comparison with documents, steps, and process times.',
     url: 'https://helpafterloss.co.uk/blog/bank-probate-thresholds-2026',
     type: 'article',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
@@ -114,7 +114,7 @@ export default function BankProbateThresholdsPage() {
       ]} />
 
       <div className="flex items-center gap-3 text-xs text-muted mb-3">
-        <span>Updated 17 March 2026</span>
+        <span>Updated 28 June 2026</span>
         <span aria-hidden="true">|</span>
         <span>9 min read</span>
       </div>
@@ -125,6 +125,23 @@ export default function BankProbateThresholdsPage() {
       <p className="text-lg text-muted leading-relaxed mb-10">
         When someone dies, their bank accounts are frozen. But you do not always need a grant of probate to access the money. Every bank sets a threshold below which they will release funds with just a death certificate and some identification. This guide compares the probate threshold for every major UK bank and building society in 2026, explains what documents you will need, and walks you through the process step by step.
       </p>
+
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-6">
+        <h2 className="text-sm font-semibold text-blue-900 mb-3">Quick answer: UK bank probate thresholds 2026</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3">
+          <div className="bg-white rounded-lg p-3 border border-blue-100">
+            <p className="text-xl font-bold text-blue-700">£50,000</p>
+            <p className="text-xs text-blue-800 mt-1 font-medium">Major high street banks</p>
+            <p className="text-xs text-blue-600">Barclays, HSBC, Lloyds, Halifax, NatWest, Santander, Nationwide</p>
+          </div>
+          <div className="bg-white rounded-lg p-3 border border-blue-100">
+            <p className="text-xl font-bold text-blue-700">£15,000-£30,000</p>
+            <p className="text-xs text-blue-800 mt-1 font-medium">Building societies</p>
+            <p className="text-xs text-blue-600">Yorkshire BS, Skipton BS, Coventry BS, Leeds BS, Principality BS</p>
+          </div>
+        </div>
+        <p className="text-xs text-blue-700 leading-relaxed">Below the threshold, banks release funds on production of the death certificate, proof of ID, and the will or indemnity form. <strong>Joint accounts pass automatically</strong> to the surviving holder with no probate required.</p>
+      </div>
 
       <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
         <h2 className="text-sm font-semibold text-amber-900 mb-3">Key takeaways</h2>
@@ -192,6 +209,24 @@ export default function BankProbateThresholdsPage() {
 
       <ThresholdEmailCapture />
 
+      {/* Farewill probate CTA - natural moment: reader just saw the full comparison and needs help */}
+      <div className="bg-card rounded-xl border border-border p-5 mb-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-foreground mb-1">Need someone to handle the estate for you?</p>
+          <p className="text-sm text-muted leading-relaxed">
+            Farewill&apos;s probate service manages all the bank notifications, estate administration, and paperwork from start to finish. Fixed fee, fully regulated, and you can start online today.
+          </p>
+        </div>
+        <a
+          href="https://farewill.com/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=bank-probate-thresholds"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
+        >
+          Get probate help
+        </a>
+      </div>
+
       {/* Key observations */}
       <div className="bg-primary-light rounded-xl p-6 mb-12">
         <h3 className="font-semibold text-foreground mb-3">Key observations</h3>
@@ -231,6 +266,24 @@ export default function BankProbateThresholdsPage() {
             </div>
           </div>
         ))}
+      </div>
+
+      {/* Unbiased solicitors CTA - after steps, reader now understands the process complexity */}
+      <div className="bg-card rounded-xl border border-border p-5 mb-10 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-foreground mb-1">Want a solicitor to handle the bank notifications?</p>
+          <p className="text-sm text-muted leading-relaxed">
+            A probate solicitor takes care of all the paperwork, bank contacts, and estate administration on your behalf. Compare regulated local solicitors and get free quotes through Unbiased.
+          </p>
+        </div>
+        <a
+          href="https://www.unbiased.co.uk/find/solicitors/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=bank-probate-steps"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
+        >
+          Compare solicitors
+        </a>
       </div>
 
       {/* Documents needed */}
@@ -329,7 +382,7 @@ export default function BankProbateThresholdsPage() {
             headline: 'Bank Probate Thresholds 2026: Complete Comparison',
             description: 'Every major UK bank and building society probate threshold compared. How much each bank will release without a grant of probate in 2026.',
             datePublished: '2026-03-14',
-            dateModified: '2026-03-17',
+            dateModified: '2026-06-28',
             author: { '@type': 'Organization', name: 'Help After Loss' },
             publisher: {
               '@type': 'Organization',

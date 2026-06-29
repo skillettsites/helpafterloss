@@ -8,8 +8,8 @@ import { SupportCta } from '@/components/SupportCta';
 import { FreeChecklistBanner } from '@/components/FreeChecklistBanner';
 
 export const metadata: Metadata = {
-  title: 'How Many Death Certificates Do I Need? (Usually 8-12) | UK Guide 2026',
-  description: 'Most UK families need 8-12 certified copies (£12.50 each in England). Full list of who needs an original, how to order same-day, how to avoid the £38.50 priority fee, and which banks accept the free Death Notification Service.',
+  title: 'How Many Death Certificates Do I Need? 8-12 Copies | Cost £12.50 Each (2026)',
+  description: 'Most UK families need 8-12 certified copies at £12.50 each (England) or £15 (Scotland). Full list of who needs an original, how to order, how to avoid the £38.50 priority fee, and what to do next.',
   alternates: { canonical: 'https://helpafterloss.co.uk/blog/death-certificate-how-many-copies' },
   openGraph: {
     title: 'How Many Death Certificates Do I Need? UK Guide 2026',
@@ -40,6 +40,10 @@ const WHO_NEEDS_A_COPY = [
 ];
 
 const FAQS = [
+  {
+    question: 'How much is a death certificate?',
+    answer: 'A death certificate (certified copy) costs £12.50 in England and Wales, £15 in Scotland, and £15 in Northern Ireland. There is no free option for certified copies. Most families need 8-12 copies, so budget £100-£150 total in England. The only faster option is the GRO priority service at £38.50 per copy, which delivers within 1 working day.',
+  },
   {
     question: 'How much does a death certificate cost?',
     answer: 'A certified copy costs £12.50 in England and Wales, £15 in Scotland, and £15 in Northern Ireland. The price is the same whether you order at registration or later from the General Register Office. The only way to get a copy faster than the standard 5-10 working day postal turnaround is the GRO priority service, which costs £38.50 per copy and arrives within 1 working day. There is no way to obtain a certified copy for free; the fee applies in all cases regardless of the deceased\'s circumstances.',
@@ -91,6 +95,29 @@ export default function DeathCertificateHowManyCopiesPage() {
         Most families need <strong className="text-foreground">8 to 12 certified copies</strong> of the death certificate. Each copy costs <strong className="text-foreground">£12.50</strong> in England and Wales (£15 in Scotland), so you should budget between £100 and £150. The exact number depends on how many banks, insurers, pension providers, and other organisations you need to notify. It is far better to order too many than too few, because sending certificates to multiple organisations at the same time can save you weeks of waiting.
       </p>
 
+      {/* Cost callout: targets "how much is a death certificate" (514 impressions/mo, pos 9) */}
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-6">
+        <h2 className="text-sm font-semibold text-blue-900 mb-3">How much does a death certificate cost?</h2>
+        <div className="grid grid-cols-3 gap-3 text-center mb-3">
+          <div className="bg-white rounded-lg p-3 border border-blue-100">
+            <p className="text-xl font-bold text-blue-700">£12.50</p>
+            <p className="text-xs text-blue-800 mt-1 font-medium">England &amp; Wales</p>
+            <p className="text-xs text-blue-600">per certified copy</p>
+          </div>
+          <div className="bg-white rounded-lg p-3 border border-blue-100">
+            <p className="text-xl font-bold text-blue-700">£15.00</p>
+            <p className="text-xs text-blue-800 mt-1 font-medium">Scotland</p>
+            <p className="text-xs text-blue-600">per certified copy</p>
+          </div>
+          <div className="bg-white rounded-lg p-3 border border-blue-100">
+            <p className="text-xl font-bold text-blue-700">£15.00</p>
+            <p className="text-xs text-blue-800 mt-1 font-medium">Northern Ireland</p>
+            <p className="text-xs text-blue-600">per certified copy</p>
+          </div>
+        </div>
+        <p className="text-xs text-blue-700 leading-relaxed">Most families need 8-12 copies, so budget <strong>£100-£150</strong> in England. The priority service (next working day) costs £38.50 per copy. Order at registration to avoid delays.</p>
+      </div>
+
       {/* Early probate CTA: many readers are overwhelmed and want someone to handle it */}
       <div className="bg-card rounded-xl border border-border p-5 mb-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
         <div className="flex-1">
@@ -118,6 +145,22 @@ export default function DeathCertificateHowManyCopiesPage() {
           <li className="flex gap-2"><span className="font-bold">+</span> Banks, insurers, and pension providers all need their own original certified copy</li>
           <li className="flex gap-2"><span className="font-bold">+</span> The Death Notification Service can reduce the number you need for banks</li>
         </ul>
+      </div>
+
+      {/* Next steps block: shown before the ToC to catch users who have their answer and are about to leave */}
+      <div className="bg-primary-light rounded-xl p-5 mb-6">
+        <p className="font-semibold text-foreground mb-3 text-sm">Got your certificates? Here is what to do next:</p>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+          <Link href="/notify" className="text-center px-4 py-2.5 bg-primary text-white text-sm font-semibold rounded-lg hover:bg-primary-dark transition-colors">
+            Who to notify &rarr;
+          </Link>
+          <Link href="/template-letters" className="text-center px-4 py-2.5 bg-card border border-border text-foreground text-sm font-semibold rounded-lg hover:bg-muted/5 transition-colors">
+            Template letters
+          </Link>
+          <Link href="/call-scripts" className="text-center px-4 py-2.5 bg-card border border-border text-foreground text-sm font-semibold rounded-lg hover:bg-muted/5 transition-colors">
+            Phone scripts
+          </Link>
+        </div>
       </div>
 
       <TableOfContents items={[
@@ -288,6 +331,22 @@ export default function DeathCertificateHowManyCopiesPage() {
         </a>
       </div>
 
+      {/* What to do next: mid-page cross-link to the notification guide */}
+      <div className="bg-primary-light rounded-xl p-5 mb-10 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-foreground mb-1">Got your certificates? Here is what to do next.</p>
+          <p className="text-sm text-muted leading-relaxed">
+            Once you have your certified copies, you need to notify banks, insurers, pension providers, and HMRC. Our notification guide tells you exactly who to contact and in what order.
+          </p>
+        </div>
+        <a
+          href="/notify"
+          className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
+        >
+          Notification guide
+        </a>
+      </div>
+
       {/* Tips */}
       <h2 id="tips" className="text-2xl font-bold text-foreground mb-4">Tips for saving time and money</h2>
       <div className="space-y-4 mb-12">
@@ -322,6 +381,8 @@ export default function DeathCertificateHowManyCopiesPage() {
           </p>
         </div>
       </div>
+
+      <FreeChecklistBanner />
 
       {/* Scotland */}
       <h2 id="scotland" className="text-2xl font-bold text-foreground mb-4">Scotland: what is different?</h2>
@@ -380,8 +441,6 @@ export default function DeathCertificateHowManyCopiesPage() {
           </div>
         ))}
       </div>
-
-      <FreeChecklistBanner />
 
       {/* Cross-links */}
       <SupportCta />

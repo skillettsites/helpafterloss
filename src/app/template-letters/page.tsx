@@ -496,6 +496,24 @@ export default function TemplateLettersPage() {
         </p>
       </div>
 
+      {/* Estate admin CTA: shown above the templates so users who want help see it before scrolling */}
+      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 bg-blue-50 border border-blue-200 rounded-xl p-5 mb-6">
+        <div className="flex-1">
+          <p className="font-semibold text-foreground mb-1">Would you rather someone else handle all this?</p>
+          <p className="text-sm text-muted leading-relaxed">
+            Farewill&apos;s estate administration service takes care of the notifications, certificates, and estate paperwork for you. Fixed fee, fully regulated, and you can start online today.
+          </p>
+        </div>
+        <a
+          href="https://farewill.com/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=template-letters-top"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
+        >
+          Get estate help
+        </a>
+      </div>
+
       {/* Table of contents */}
       <nav className="bg-card rounded-xl border border-border p-6 mb-10" aria-label="Template letters">
         <h2 className="font-semibold text-foreground mb-3">Letters in this guide</h2>
