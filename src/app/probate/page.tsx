@@ -6,20 +6,20 @@ import { PageDisclaimer } from '@/components/PageDisclaimer';
 import { FreeChecklistBanner } from '@/components/FreeChecklistBanner';
 
 export const metadata: Metadata = {
-  title: 'Probate Guide UK 2026 - How to Apply, Costs, Timelines, DIY vs Solicitor',
-  description: 'Complete UK probate guide for 2026. Learn when you need probate, how to apply (online or by post), court fees (£300), solicitor costs, DIY probate steps, and how long it takes. Covers England, Wales, Scotland, and Northern Ireland.',
+  title: 'Do I Need Probate? UK Guide 2026 | £300 Court Fee | How to Apply',
+  description: 'Find out if you need probate and how to apply yourself. Court fee is £300. Most applications take 12-16 weeks. Includes DIY steps, solicitor cost comparison, and what happens in Scotland and Northern Ireland. Updated 2026.',
   alternates: { canonical: 'https://helpafterloss.co.uk/probate' },
   openGraph: {
-    title: 'Probate Guide UK 2026 - How to Apply, Costs, Timelines, DIY vs Solicitor',
-    description: 'Everything you need to know about probate in the UK. When you need it, how to apply, costs, DIY vs solicitor, and how long it takes.',
+    title: 'Do I Need Probate? UK Guide 2026 | £300 Court Fee | How to Apply',
+    description: 'Find out if you need probate and how to apply. Court fee £300. Processing: 12-16 weeks. DIY vs solicitor costs explained. Covers England, Wales, Scotland, and Northern Ireland.',
     url: 'https://helpafterloss.co.uk/probate',
     type: 'article',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'UK Probate Guide 2026 - Costs, Timelines, and How to Apply',
-    description: 'A plain-English guide to probate for England, Wales, Scotland, and Northern Ireland. Updated for 2026.',
+    title: 'Do I Need Probate? UK Guide 2026 | £300 Court Fee',
+    description: 'Find out if you need probate, how to apply yourself, and what it costs. Covers England, Wales, Scotland, and Northern Ireland. Updated for 2026.',
   },
 };
 
@@ -108,6 +108,24 @@ export default function ProbatePage() {
             <span><a href="tel:03003030648" className="text-primary hover:underline">0300 303 0648</a> (Probate Registry, Mon-Fri 9am-1pm)</span>
           </li>
         </ul>
+      </div>
+
+      {/* Farewill CTA - above the fold, catches readers who want help immediately */}
+      <div className="bg-card rounded-xl border border-border p-5 mb-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-foreground mb-1">Want someone to handle probate for you?</p>
+          <p className="text-sm text-muted leading-relaxed">
+            Farewill&apos;s probate service takes care of the entire process for a fixed fee. Fully regulated, no hidden costs, and you can get a quote online today without committing.
+          </p>
+        </div>
+        <a
+          href="https://farewill.com/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=probate-guide-top"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
+        >
+          Get a probate quote
+        </a>
       </div>
 
       {/* Quick summary stats */}
@@ -331,6 +349,24 @@ export default function ProbatePage() {
           <p className="text-sm text-amber-800 leading-relaxed">
             <strong>Tip:</strong> If you choose a solicitor, always get a fixed-fee quote in writing before you agree to anything. Some solicitors charge a percentage of the estate value, which can be very expensive. For a £400,000 estate at 2%, that is £8,000. A fixed fee for the same work might be £3,000 to £4,000. You can also use a solicitor for just part of the process, such as completing the IHT forms, and handle the rest yourself.
           </p>
+        </div>
+
+        {/* Unbiased solicitor comparison CTA */}
+        <div className="bg-card rounded-xl border border-border p-5 mt-4 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-1">
+            <p className="font-semibold text-foreground mb-1">Compare probate solicitors near you</p>
+            <p className="text-sm text-muted leading-relaxed">
+              Get free quotes from regulated probate solicitors through Unbiased. No obligation, and you can compare fixed-fee vs percentage-based pricing before deciding.
+            </p>
+          </div>
+          <a
+            href="https://www.unbiased.co.uk/find/solicitors/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=probate-guide-diy"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
+          >
+            Compare solicitors
+          </a>
         </div>
       </section>
 

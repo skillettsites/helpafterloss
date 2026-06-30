@@ -10,7 +10,7 @@ import { ThresholdEmailCapture } from '@/components/ThresholdEmailCapture';
 
 export const metadata: Metadata = {
   title: 'UK Bank Probate Thresholds 2026: £50,000 Limit at Barclays, HSBC, Lloyds & More',
-  description: 'All six major UK banks release up to £50,000 without probate. Building societies from £15,000 to £50,000. Documents needed, step-by-step process for each bank, and what to do if probate is required.',
+  description: 'Barclays, HSBC, Lloyds, NatWest, Santander and Nationwide all release up to £50,000 without probate. Building societies: £15,000-£50,000. Full comparison table, documents checklist, and step-by-step process for 2026.',
   alternates: { canonical: 'https://helpafterloss.co.uk/blog/bank-probate-thresholds-2026' },
   openGraph: {
     title: 'Bank Probate Thresholds UK 2026: Every Bank Compared',
