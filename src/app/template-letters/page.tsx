@@ -576,6 +576,9 @@ export default function TemplateLettersPage() {
               </p>
             </div>
           )}
+
+          {/* Free checklist nudge after 7th template, for readers who jumped straight to a later letter via anchor link and would otherwise miss every CTA on the page */}
+          {index === 6 && <FreeChecklistBanner variant="inline" />}
         </section>
       ))}
 
