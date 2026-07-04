@@ -95,6 +95,22 @@ export default function DeathCertificateHowManyCopiesPage() {
         Most families need <strong className="text-foreground">8 to 12 certified copies</strong> of the death certificate. Each copy costs <strong className="text-foreground">£12.50</strong> in England and Wales (£15 in Scotland), so you should budget between £100 and £150. The exact number depends on how many banks, insurers, pension providers, and other organisations you need to notify. It is far better to order too many than too few, because sending certificates to multiple organisations at the same time can save you weeks of waiting.
       </p>
 
+      {/* Next steps block: moved directly under the answer so it's seen before any other content, catching users who have their number and are about to leave */}
+      <div className="bg-primary-light rounded-xl p-5 mb-6">
+        <p className="font-semibold text-foreground mb-3 text-sm">Now you have your answer, here is what to do next:</p>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+          <Link href="/notify" className="text-center px-4 py-2.5 bg-primary text-white text-sm font-semibold rounded-lg hover:bg-primary-dark transition-colors">
+            Who to notify &rarr;
+          </Link>
+          <Link href="/template-letters" className="text-center px-4 py-2.5 bg-card border border-border text-foreground text-sm font-semibold rounded-lg hover:bg-muted/5 transition-colors">
+            Template letters
+          </Link>
+          <Link href="/call-scripts" className="text-center px-4 py-2.5 bg-card border border-border text-foreground text-sm font-semibold rounded-lg hover:bg-muted/5 transition-colors">
+            Phone scripts
+          </Link>
+        </div>
+      </div>
+
       {/* Cost callout: targets "how much is a death certificate" (514 impressions/mo, pos 9) */}
       <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-6">
         <h2 className="text-sm font-semibold text-blue-900 mb-3">How much does a death certificate cost?</h2>
@@ -145,22 +161,6 @@ export default function DeathCertificateHowManyCopiesPage() {
           <li className="flex gap-2"><span className="font-bold">+</span> Banks, insurers, and pension providers all need their own original certified copy</li>
           <li className="flex gap-2"><span className="font-bold">+</span> The Death Notification Service can reduce the number you need for banks</li>
         </ul>
-      </div>
-
-      {/* Next steps block: shown before the ToC to catch users who have their answer and are about to leave */}
-      <div className="bg-primary-light rounded-xl p-5 mb-6">
-        <p className="font-semibold text-foreground mb-3 text-sm">Got your certificates? Here is what to do next:</p>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
-          <Link href="/notify" className="text-center px-4 py-2.5 bg-primary text-white text-sm font-semibold rounded-lg hover:bg-primary-dark transition-colors">
-            Who to notify &rarr;
-          </Link>
-          <Link href="/template-letters" className="text-center px-4 py-2.5 bg-card border border-border text-foreground text-sm font-semibold rounded-lg hover:bg-muted/5 transition-colors">
-            Template letters
-          </Link>
-          <Link href="/call-scripts" className="text-center px-4 py-2.5 bg-card border border-border text-foreground text-sm font-semibold rounded-lg hover:bg-muted/5 transition-colors">
-            Phone scripts
-          </Link>
-        </div>
       </div>
 
       <TableOfContents items={[
