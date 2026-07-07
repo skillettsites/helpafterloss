@@ -111,9 +111,12 @@ export default function DeathCertificateHowManyCopiesPage() {
         </div>
       </div>
 
-      {/* Cost callout: targets "how much is a death certificate" (514 impressions/mo, pos 9) */}
-      <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-6">
-        <h2 className="text-sm font-semibold text-blue-900 mb-3">How much does a death certificate cost?</h2>
+      {/* Cost callout: targets "how much is a death certificate" / "cost of death certificate uk"
+          (~1,160 impressions/mo combined across cost-phrased queries, ranking position 6-8,
+          well behind the "how many" queries at position 1.6-3.5 - expanded with more explicit
+          cost-intent copy so Google has more to match this section against those queries) */}
+      <div id="cost" className="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-6">
+        <h2 className="text-sm font-semibold text-blue-900 mb-3">How much is a death certificate? Cost breakdown</h2>
         <div className="grid grid-cols-3 gap-3 text-center mb-3">
           <div className="bg-white rounded-lg p-3 border border-blue-100">
             <p className="text-xl font-bold text-blue-700">£12.50</p>
@@ -131,7 +134,7 @@ export default function DeathCertificateHowManyCopiesPage() {
             <p className="text-xs text-blue-600">per certified copy</p>
           </div>
         </div>
-        <p className="text-xs text-blue-700 leading-relaxed">Most families need 8-12 copies, so budget <strong>£100-£150</strong> in England. The priority service (next working day) costs £38.50 per copy. Order at registration to avoid delays.</p>
+        <p className="text-xs text-blue-700 leading-relaxed">The cost of a death certificate in the UK is <strong>£12.50 per certified copy in England and Wales</strong>, and £15 in Scotland and Northern Ireland. This is a fixed government fee, the same whether you order at registration or later. Most families need 8-12 copies, so budget <strong>£100-£150</strong> in England. The only faster option is the GRO priority service at £38.50 per copy (next working day). Order at registration to avoid delays.</p>
       </div>
 
       {/* Early probate CTA: many readers are overwhelmed and want someone to handle it */}
@@ -164,6 +167,7 @@ export default function DeathCertificateHowManyCopiesPage() {
       </div>
 
       <TableOfContents items={[
+        { id: 'cost', label: 'How much does it cost?' },
         { id: 'who-needs-copy', label: 'Who needs a certified copy?' },
         { id: 'certified-vs-originals', label: 'Certified copies vs originals vs photocopies' },
         { id: 'how-to-order', label: 'How to order death certificates' },
