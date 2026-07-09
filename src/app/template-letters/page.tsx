@@ -664,7 +664,7 @@ export default function TemplateLettersPage() {
         }}
       />
       <FreeChecklistBanner variant="bottom" />
-      <RelatedGuides currentPath="/template-letters" guides={['/phone-directory', '/call-scripts', '/guides/document-checklist', '/guide']} />
+      <RelatedGuides currentPath="/template-letters" guides={['/guides/bank-accounts-after-death', '/phone-directory', '/guides/document-checklist', '/guide']} />
 
       <script
         type="application/ld+json"
