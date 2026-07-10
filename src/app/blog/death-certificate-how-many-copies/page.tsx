@@ -95,7 +95,26 @@ export default function DeathCertificateHowManyCopiesPage() {
         Most families need <strong className="text-foreground">8 to 12 certified copies</strong> of the death certificate. Each copy costs <strong className="text-foreground">£12.50</strong> in England and Wales (£15 in Scotland), so you should budget between £100 and £150. The exact number depends on how many banks, insurers, pension providers, and other organisations you need to notify. It is far better to order too many than too few, because sending certificates to multiple organisations at the same time can save you weeks of waiting.
       </p>
 
-      {/* Next steps block: moved directly under the answer so it's seen before any other content, catching users who have their number and are about to leave */}
+      {/* Quick answer box: moved directly under the intro paragraph, matching the site-wide pattern of putting the scannable answer first */}
+      <div className="bg-card rounded-xl border border-border p-6 mb-6">
+        <h2 className="text-xl font-bold text-foreground mb-3">Quick answer</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="text-center">
+            <p className="text-2xl font-bold text-primary">8-12</p>
+            <p className="text-sm text-muted mt-1">copies recommended</p>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl font-bold text-primary">£12.50</p>
+            <p className="text-sm text-muted mt-1">per copy (England)</p>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl font-bold text-primary">£100-£150</p>
+            <p className="text-sm text-muted mt-1">typical total cost</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Next steps block: sits right under the answer so it's seen before any other content, catching users who have their number and are about to leave */}
       <div className="bg-primary-light rounded-xl p-5 mb-6">
         <p className="font-semibold text-foreground mb-3 text-sm">Now you have your answer, here is what to do next:</p>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
@@ -177,25 +196,6 @@ export default function DeathCertificateHowManyCopiesPage() {
         { id: 'northern-ireland', label: 'Northern Ireland: what is different?' },
         { id: 'faqs', label: 'Frequently asked questions' },
       ]} />
-
-      {/* Quick summary box */}
-      <div className="bg-card rounded-xl border border-border p-6 mb-10">
-        <h2 className="text-xl font-bold text-foreground mb-3">Quick answer</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div className="text-center">
-            <p className="text-2xl font-bold text-primary">8-12</p>
-            <p className="text-sm text-muted mt-1">copies recommended</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl font-bold text-primary">£12.50</p>
-            <p className="text-sm text-muted mt-1">per copy (England)</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl font-bold text-primary">£100-£150</p>
-            <p className="text-sm text-muted mt-1">typical total cost</p>
-          </div>
-        </div>
-      </div>
 
       {/* Who needs a copy */}
       <h2 id="who-needs-copy" className="text-2xl font-bold text-foreground mb-4">Who needs a certified copy?</h2>
