@@ -94,6 +94,9 @@ export default function DeathCertificateHowManyCopiesPage() {
       <p className="text-lg text-muted leading-relaxed mb-6">
         Most families need <strong className="text-foreground">8 to 12 certified copies</strong> of the death certificate. Each copy costs <strong className="text-foreground">£12.50</strong> in England and Wales (£15 in Scotland), so you should budget between £100 and £150. The exact number depends on how many banks, insurers, pension providers, and other organisations you need to notify. It is far better to order too many than too few, because sending certificates to multiple organisations at the same time can save you weeks of waiting.
       </p>
+      <p className="text-sm text-muted mb-6">
+        Not registered the death yet? Read our guide to <Link href="/blog/registering-a-death-uk" className="text-primary hover:underline">registering a death in the UK</Link> first, it covers what to bring and how many certificates to order on the day.
+      </p>
 
       {/* Quick answer box: moved directly under the intro paragraph, matching the site-wide pattern of putting the scannable answer first */}
       <div className="bg-card rounded-xl border border-border p-6 mb-6">
@@ -200,7 +203,7 @@ export default function DeathCertificateHowManyCopiesPage() {
       {/* Who needs a copy */}
       <h2 id="who-needs-copy" className="text-2xl font-bold text-foreground mb-4">Who needs a certified copy?</h2>
       <p className="text-sm text-muted mb-6">
-        Every organisation that holds money, property, or an account in the deceased person's name will need to see a certified copy of the death certificate before they release funds or close the account. Here is a typical list:
+        Every organisation that holds money, property, or an account in the deceased person's name will need to see a certified copy of the death certificate before they release funds or close the account. Here is a typical list. Note that most banks will release funds below a certain amount without needing a grant of probate at all, see our guide to <Link href="/blog/bank-probate-thresholds-2026" className="text-primary hover:underline">bank probate thresholds</Link> for the exact limits.
       </p>
 
       {/* Solicitor CTA - before the list so overwhelmed readers see it immediately */}
@@ -363,7 +366,7 @@ export default function DeathCertificateHowManyCopiesPage() {
         <div className="bg-success-light rounded-xl p-6">
           <h3 className="font-semibold text-green-800 mb-2">Send certificates to multiple organisations at the same time</h3>
           <p className="text-sm text-green-800/80 leading-relaxed">
-            If you only have a few copies and send them one at a time, waiting for each organisation to process and return the certificate, the whole process can drag on for months. With enough copies, you can notify all organisations simultaneously and cut weeks off the administration.
+            If you only have a few copies and send them one at a time, waiting for each organisation to process and return the certificate, the whole process can drag on for months. With enough copies, you can notify all organisations simultaneously and cut weeks off the administration. Our <Link href="/phone-directory" className="underline text-green-800">phone directory</Link> has direct numbers for the organisations you are most likely to contact.
           </p>
         </div>
         <div className="bg-success-light rounded-xl p-6">
@@ -456,7 +459,7 @@ export default function DeathCertificateHowManyCopiesPage() {
 
       <RelatedGuides
         currentPath="/blog/death-certificate-how-many-copies"
-        guides={['/guide', '/costs', '/notify', '/template-letters']}
+        guides={['/phone-directory', '/blog/bank-probate-thresholds-2026', '/blog/registering-a-death-uk', '/guides/document-checklist']}
       />
 
       <div className="bg-primary-light rounded-xl p-8 text-center">
