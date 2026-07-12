@@ -350,20 +350,21 @@ export default function BankProbateThresholdsPage() {
         ))}
       </div>
 
-      <FreeChecklistBanner />
-
-      {/* Cross-links */}
-      <SupportCta />
+      {/* Next step for engaged readers: placed immediately after the FAQs, ahead of the checklist/share asks, so the most topic-relevant action comes first */}
       <div className="bg-primary-light rounded-lg p-4 mb-8">
         <p className="text-sm text-foreground">
-          <strong>Contacting banks:</strong> Our <Link href="/notify" className="text-primary hover:underline">notification guide</Link> has direct bereavement phone numbers for every major UK bank. Use our <Link href="/call-scripts" className="text-primary hover:underline">call scripts</Link> for what to say, and our <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> for written notifications. See our <Link href="/costs" className="text-primary hover:underline">cost breakdown</Link> for all the other expenses to expect.
+          <strong>Ready to contact the bank?</strong> Our <Link href="/phone-directory" className="text-primary hover:underline">phone directory</Link> has the direct bereavement number for every major UK bank, our <Link href="/call-scripts" className="text-primary hover:underline">call scripts</Link> tell you what to say, and our <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> cover it in writing if you would rather not phone. Our <Link href="/notify" className="text-primary hover:underline">notification guide</Link> and <Link href="/costs" className="text-primary hover:underline">cost breakdown</Link> cover everything else you will need to deal with.
         </p>
       </div>
 
+      <FreeChecklistBanner />
+
       <RelatedGuides
         currentPath="/blog/bank-probate-thresholds-2026"
-        guides={['/probate', '/notify', '/costs', '/blog/true-cost-of-dying-uk']}
+        guides={['/probate', '/guides/executor-duties', '/deadline-tracker', '/blog/true-cost-of-dying-uk']}
       />
+
+      <SupportCta />
 
       <div className="bg-primary-light rounded-xl p-8 text-center">
         <h2 className="text-2xl font-bold text-foreground mb-3">Not sure what to do next?</h2>

@@ -490,14 +490,26 @@ export default function TemplateLettersPage() {
       <p className="text-lg text-muted leading-relaxed mb-4">
         Ready-to-use template letters for notifying organisations after someone dies. Copy the letter, fill in the details marked in [square brackets], and send by post or email. Each letter includes practical tips to help you.
       </p>
-      <div className="bg-warm border border-warm-border rounded-xl p-5 mb-10">
+      {/* Table of contents: moved above the tips/CTA boxes so the actual list of letters, the reason people land on this page, is visible without scrolling past unrelated content first */}
+      <nav className="bg-card rounded-xl border border-border p-6 mb-8" aria-label="Template letters">
+        <h2 className="font-semibold text-foreground mb-3">Letters in this guide</h2>
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          {TEMPLATES.map(t => (
+            <li key={t.id}>
+              <a href={`#${t.id}`} className="text-primary hover:underline text-sm">{t.title}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      <div className="bg-warm border border-warm-border rounded-xl p-5 mb-6">
         <p className="text-sm text-amber-800 leading-relaxed">
           <strong>Before you start:</strong> Make sure you have the following to hand: certified copies of the death certificate, the deceased person's full name, date of birth, and any relevant account or reference numbers. If you used the <Link href="/tell-us-once" className="font-medium underline">Tell Us Once</Link> service, some of these organisations will already have been notified.
         </p>
       </div>
 
-      {/* Estate admin CTA: shown above the templates so users who want help see it before scrolling */}
-      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 bg-blue-50 border border-blue-200 rounded-xl p-5 mb-6">
+      {/* Estate admin CTA */}
+      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 bg-blue-50 border border-blue-200 rounded-xl p-5 mb-10">
         <div className="flex-1">
           <p className="font-semibold text-foreground mb-1">Would you rather someone else handle all this?</p>
           <p className="text-sm text-muted leading-relaxed">
@@ -513,18 +525,6 @@ export default function TemplateLettersPage() {
           Get estate help
         </a>
       </div>
-
-      {/* Table of contents */}
-      <nav className="bg-card rounded-xl border border-border p-6 mb-10" aria-label="Template letters">
-        <h2 className="font-semibold text-foreground mb-3">Letters in this guide</h2>
-        <ul className="space-y-2">
-          {TEMPLATES.map(t => (
-            <li key={t.id}>
-              <a href={`#${t.id}`} className="text-primary hover:underline text-sm">{t.title}</a>
-            </li>
-          ))}
-        </ul>
-      </nav>
 
       {/* Template letters */}
       {TEMPLATES.map((template, index) => (
