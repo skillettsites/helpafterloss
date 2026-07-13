@@ -100,6 +100,12 @@ export default function BereavementLeavePage() {
         </ul>
       </div>
 
+      <div className="bg-primary-light rounded-lg p-4 mb-8">
+        <p className="text-sm text-foreground">
+          <strong>Taking this leave to sort out arrangements?</strong> Our <Link href="/notify" className="text-primary hover:underline">notify checklist</Link> and <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> can help you use the time off to get organised.
+        </p>
+      </div>
+
       <TableOfContents items={[
         { id: 'jacks-law', label: "Parental Bereavement Leave (Jack's Law)" },
         { id: 'time-off-dependants', label: 'Time off for dependants' },
