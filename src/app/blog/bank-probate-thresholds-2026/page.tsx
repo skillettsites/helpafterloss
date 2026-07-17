@@ -114,7 +114,7 @@ export default function BankProbateThresholdsPage() {
       ]} />
 
       <div className="flex items-center gap-3 text-xs text-muted mb-3">
-        <span>Updated 28 June 2026</span>
+        <span>Updated 17 July 2026</span>
         <span aria-hidden="true">|</span>
         <span>9 min read</span>
       </div>
@@ -172,8 +172,11 @@ export default function BankProbateThresholdsPage() {
         <p className="text-sm text-muted leading-relaxed mb-4">
           The threshold applies to the total held across all accounts at that bank or banking group. For example, Lloyds, Halifax, and Scottish Widows are all part of Lloyds Banking Group. If the deceased had accounts across these brands, the balances are combined when assessing against the threshold.
         </p>
-        <p className="text-sm text-muted leading-relaxed">
+        <p className="text-sm text-muted leading-relaxed mb-4">
           These thresholds are set by each institution individually and can change without notice. The figures below are correct as of March 2026. If you are dealing with a large balance, always confirm the current threshold directly with the bank&apos;s bereavement team.
+        </p>
+        <p className="text-sm text-muted leading-relaxed">
+          Note that not every bank publishes a fixed figure. Barclays, Lloyds, Halifax, Santander and Nationwide consistently confirm a £50,000 limit. HSBC and NatWest do not publish an official threshold and can assess larger or unusual estates case by case, so their bereavement team may give you a different figure to the one shown here. Always double-check with them directly if the balance is close to £50,000.
         </p>
       </div>
 
@@ -383,7 +386,7 @@ export default function BankProbateThresholdsPage() {
             headline: 'Bank Probate Thresholds 2026: Complete Comparison',
             description: 'Every major UK bank and building society probate threshold compared. How much each bank will release without a grant of probate in 2026.',
             datePublished: '2026-03-14',
-            dateModified: '2026-06-28',
+            dateModified: '2026-07-17',
             author: { '@type': 'Organization', name: 'Help After Loss' },
             publisher: {
               '@type': 'Organization',
