@@ -206,24 +206,6 @@ export default function DeathCertificateHowManyCopiesPage() {
         Every organisation that holds money, property, or an account in the deceased person's name will need to see a certified copy of the death certificate before they release funds or close the account. Here is a typical list. Note that most banks will release funds below a certain amount without needing a grant of probate at all, see our guide to <Link href="/blog/bank-probate-thresholds-2026" className="text-primary hover:underline">bank probate thresholds</Link> for the exact limits.
       </p>
 
-      {/* Solicitor CTA - before the list so overwhelmed readers see it immediately */}
-      <div className="bg-card rounded-xl border border-border p-6 mb-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-        <div className="flex-1">
-          <p className="font-semibold text-foreground mb-1">Feeling overwhelmed by the paperwork?</p>
-          <p className="text-sm text-muted leading-relaxed">
-            A probate solicitor can handle all the notifications, certificates, and estate administration for you. Compare local solicitors and get free quotes through Unbiased.co.uk.
-          </p>
-        </div>
-        <a
-          href="https://www.unbiased.co.uk/find/solicitors/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=death-certificate-copies"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
-        >
-          Compare solicitors
-        </a>
-      </div>
-
       <div className="space-y-3 mb-12">
         {WHO_NEEDS_A_COPY.map((item, i) => (
           <div key={i} className="bg-card rounded-xl border border-border p-5">
@@ -320,24 +302,6 @@ export default function DeathCertificateHowManyCopiesPage() {
         </table>
       </div>
 
-      {/* Estate admin financial advisor CTA - natural moment: user just saw the cost and complexity */}
-      <div className="bg-card rounded-xl border border-border p-6 mb-12 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-        <div className="flex-1">
-          <p className="font-semibold text-foreground mb-1">Worried about the inheritance tax or estate administration?</p>
-          <p className="text-sm text-muted leading-relaxed">
-            A specialist financial adviser can help you through inheritance tax calculations, estate administration, and making sure the estate is distributed correctly. Compare regulated advisers for free through Unbiased.
-          </p>
-        </div>
-        <a
-          href="https://www.unbiased.co.uk/find/financial-advisers?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=death-certificate-inheritance"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
-        >
-          Find a financial adviser
-        </a>
-      </div>
-
       {/* What to do next: mid-page cross-link to the notification guide */}
       <div className="bg-primary-light rounded-xl p-5 mb-10 flex flex-col sm:flex-row items-start sm:items-center gap-4">
         <div className="flex-1">
@@ -418,24 +382,6 @@ export default function DeathCertificateHowManyCopiesPage() {
           <li>The registration is done at the local district registrar's office.</li>
           <li>Northern Ireland certificates are accepted by all UK-wide organisations.</li>
         </ul>
-      </div>
-
-      {/* Will-writing nudge: natural moment after dealing with someone else's estate */}
-      <div className="bg-card rounded-xl border border-border p-6 mb-12 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-        <div className="flex-1">
-          <p className="font-semibold text-foreground mb-1">Going through this has reminded you to sort your own will?</p>
-          <p className="text-sm text-muted leading-relaxed">
-            A professionally drafted will means your family won't face the same uncertainty. Compare regulated solicitors and will-writing services for free through Unbiased.co.uk.
-          </p>
-        </div>
-        <a
-          href="https://www.unbiased.co.uk/find/solicitors/wills-probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=death-certificate-will"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
-        >
-          Find a wills solicitor
-        </a>
       </div>
 
       {/* FAQs */}
