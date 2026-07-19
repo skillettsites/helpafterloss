@@ -85,9 +85,23 @@ export default function BereavementLeavePage() {
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         Bereavement Leave in the UK: Your Rights in 2026
       </h1>
-      <p className="text-lg text-muted leading-relaxed mb-10">
+      <p className="text-lg text-muted leading-relaxed mb-6">
         The UK has surprisingly limited statutory bereavement leave rights. For most deaths, there is no legal right to any paid time off at all. This guide sets out exactly what the law says, what most employers actually offer, and what you can do if your employer refuses to give you time to grieve.
       </p>
+
+      {/* Quick answer: moved directly under the intro so the headline entitlement is visible without scrolling past the rest of the page */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+        <div className="bg-card rounded-xl border border-border p-5">
+          <p className="text-sm font-semibold text-foreground mb-1">For parents who lose a child</p>
+          <p className="text-2xl font-bold text-primary mb-1">2 weeks</p>
+          <p className="text-sm text-muted">Statutory paid Parental Bereavement Leave. A day-one right for all employees.</p>
+        </div>
+        <div className="bg-card rounded-xl border border-border p-5">
+          <p className="text-sm font-semibold text-foreground mb-1">For all other deaths</p>
+          <p className="text-2xl font-bold text-primary mb-1">No statutory right</p>
+          <p className="text-sm text-muted">Most employers voluntarily offer 3-5 days paid compassionate leave.</p>
+        </div>
+      </div>
 
       <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
         <h2 className="text-sm font-semibold text-amber-900 mb-3">Key takeaways</h2>
@@ -117,20 +131,6 @@ export default function BereavementLeavePage() {
         { id: 'for-employers', label: 'If you are an employer: best practice' },
         { id: 'faqs', label: 'Frequently asked questions' },
       ]} />
-
-      {/* Key summary cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
-        <div className="bg-card rounded-xl border border-border p-5">
-          <p className="text-sm font-semibold text-foreground mb-1">For parents who lose a child</p>
-          <p className="text-2xl font-bold text-primary mb-1">2 weeks</p>
-          <p className="text-sm text-muted">Statutory paid Parental Bereavement Leave. A day-one right for all employees.</p>
-        </div>
-        <div className="bg-card rounded-xl border border-border p-5">
-          <p className="text-sm font-semibold text-foreground mb-1">For all other deaths</p>
-          <p className="text-2xl font-bold text-primary mb-1">No statutory right</p>
-          <p className="text-sm text-muted">Most employers voluntarily offer 3-5 days paid compassionate leave.</p>
-        </div>
-      </div>
 
       {/* Parental Bereavement Leave */}
       <h2 id="jacks-law" className="text-2xl font-bold text-foreground mb-6">Parental Bereavement Leave (Jack's Law)</h2>
@@ -291,6 +291,12 @@ export default function BereavementLeavePage() {
         <p className="text-muted leading-relaxed mt-3">
           Kind regards,<br />
           [Your name]
+        </p>
+      </div>
+
+      <div className="bg-primary-light rounded-lg p-4 mb-12">
+        <p className="text-sm text-foreground">
+          <strong>Need something more detailed?</strong> Our <Link href="/template-letters#employer" className="text-primary hover:underline">full template letter for notifying an employer</Link> also covers outstanding pay, workplace pension, and death-in-service benefits.
         </p>
       </div>
 

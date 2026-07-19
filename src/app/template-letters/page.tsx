@@ -613,25 +613,6 @@ export default function TemplateLettersPage() {
         </ul>
       </section>
 
-      {/* Will-writing CTA */}
-      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 bg-card border border-border rounded-xl p-6 mb-8">
-        <div className="flex-1">
-          <p className="font-semibold text-foreground mb-1">Make sure your own will is up to date</p>
-          <p className="text-sm text-muted leading-relaxed">
-            Dealing with someone&apos;s estate without a will can be very difficult for those left behind.
-            Write or update your will online with Farewill from &pound;90.
-          </p>
-        </div>
-        <a
-          href="https://farewill.com/?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=template-letters-will"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
-        >
-          Write your will
-        </a>
-      </div>
-
       {/* CTA */}
       <div className="bg-primary-light rounded-xl p-8 text-center mt-12">
         <h2 className="text-2xl font-bold text-foreground mb-3">Need a personalised to-do list?</h2>
