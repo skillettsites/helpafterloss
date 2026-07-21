@@ -506,6 +506,9 @@ export default function TemplateLettersPage() {
         <p className="text-sm text-amber-800 leading-relaxed">
           <strong>Before you start:</strong> Make sure you have the following to hand: certified copies of the death certificate, the deceased person's full name, date of birth, and any relevant account or reference numbers. If you used the <Link href="/tell-us-once" className="font-medium underline">Tell Us Once</Link> service, some of these organisations will already have been notified.
         </p>
+        <p className="text-sm text-amber-800 leading-relaxed mt-2">
+          Prefer to call instead of write, or need the direct bereavement number for a specific organisation? See our <Link href="/notify" className="font-medium underline">who to notify guide</Link> for phone numbers and online forms for 60+ UK banks, utilities, and government departments.
+        </p>
       </div>
 
       {/* Estate admin CTA */}
@@ -645,7 +648,7 @@ export default function TemplateLettersPage() {
         }}
       />
       <FreeChecklistBanner variant="bottom" />
-      <RelatedGuides currentPath="/template-letters" guides={['/guides/bank-accounts-after-death', '/phone-directory', '/guides/document-checklist', '/guide']} />
+      <RelatedGuides currentPath="/template-letters" guides={['/notify', '/guides/bank-accounts-after-death', '/phone-directory', '/guides/document-checklist']} />
 
       <script
         type="application/ld+json"
