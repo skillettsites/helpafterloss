@@ -280,7 +280,7 @@ export default function BankProbateThresholdsPage() {
           </p>
         </div>
         <a
-          href="https://www.unbiased.co.uk/find/solicitors/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=bank-probate-steps"
+          href="https://www.unbiased.co.uk/find-an-adviser/wills-and-probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=bank-probate-steps"
           target="_blank"
           rel="noopener noreferrer"
           className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"

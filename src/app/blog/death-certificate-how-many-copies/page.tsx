@@ -378,7 +378,7 @@ export default function DeathCertificateHowManyCopiesPage() {
         <ul className="text-sm text-muted space-y-3 list-disc pl-5">
           <li>A death must be registered within <strong className="text-foreground">5 days</strong>, the same as England and Wales.</li>
           <li>Certified copies cost <strong className="text-foreground">£15 each</strong> when ordered at registration.</li>
-          <li>Additional copies can be ordered online from GRONI at <a href="https://www.nidirect.gov.uk/services/order-birth-death-marriage-or-civil-partnership-certificate" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">nidirect.gov.uk</a>.</li>
+          <li>Additional copies can be ordered online from GRONI at <a href="https://www.nidirect.gov.uk/services/order-death-certificate-online" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">nidirect.gov.uk</a>.</li>
           <li>The registration is done at the local district registrar's office.</li>
           <li>Northern Ireland certificates are accepted by all UK-wide organisations.</li>
         </ul>
