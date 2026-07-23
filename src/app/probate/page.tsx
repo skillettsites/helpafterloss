@@ -6,20 +6,20 @@ import { PageDisclaimer } from '@/components/PageDisclaimer';
 import { FreeChecklistBanner } from '@/components/FreeChecklistBanner';
 
 export const metadata: Metadata = {
-  title: 'Do I Need Probate? UK Guide 2026 | £300 Court Fee | How to Apply',
-  description: 'Find out if you need probate and how to apply yourself. Court fee is £300. Most applications take 12-16 weeks. Includes DIY steps, solicitor cost comparison, and what happens in Scotland and Northern Ireland. Updated 2026.',
+  title: 'Do I Need Probate? A Clear Guide to the UK Process (2026)',
+  description: 'Not sure if you need probate? This guide explains when it applies, what it costs, how long it takes, and how to apply, in plain English.',
   alternates: { canonical: 'https://helpafterloss.co.uk/probate' },
   openGraph: {
-    title: 'Do I Need Probate? UK Guide 2026 | £300 Court Fee | How to Apply',
-    description: 'Find out if you need probate and how to apply. Court fee £300. Processing: 12-16 weeks. DIY vs solicitor costs explained. Covers England, Wales, Scotland, and Northern Ireland.',
+    title: 'Do I Need Probate? A Clear Guide to the UK Process (2026)',
+    description: 'Not sure if you need probate? This guide explains when it applies, what it costs, how long it takes, and how to apply. Covers England, Wales, Scotland, and Northern Ireland.',
     url: 'https://helpafterloss.co.uk/probate',
     type: 'article',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Do I Need Probate? UK Guide 2026 | £300 Court Fee',
-    description: 'Find out if you need probate, how to apply yourself, and what it costs. Covers England, Wales, Scotland, and Northern Ireland. Updated for 2026.',
+    title: 'Do I Need Probate? A Clear Guide to the UK Process (2026)',
+    description: 'Not sure if you need probate? This guide explains when it applies, what it costs, how long it takes, and how to apply, in plain English.',
   },
 };
 

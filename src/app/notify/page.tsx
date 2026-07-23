@@ -5,20 +5,20 @@ import type { BereavementContact } from '@/lib/bereavement-contacts';
 import { RelatedGuides } from '@/components/RelatedGuides';
 
 export const metadata: Metadata = {
-  title: 'Who to Notify When Someone Dies: 60+ UK Organisations with Phone Numbers',
-  description: 'Every bank, energy company, insurer, and government department you need to contact after a death. Direct bereavement phone numbers, online forms, and what to say when you call.',
+  title: 'Who to Notify When Someone Dies: A Complete UK Checklist',
+  description: 'Every bank, energy company, insurer, and government department you need to contact after a death, with direct phone numbers and what to say when you call.',
   alternates: { canonical: 'https://helpafterloss.co.uk/notify' },
   openGraph: {
-    title: 'Who to Notify When Someone Dies: 60+ UK Organisations with Phone Numbers',
-    description: 'Every bank, energy company, insurer, and government department you need to contact after a death. Direct bereavement phone numbers, online forms, and what to say when you call.',
+    title: 'Who to Notify When Someone Dies: A Complete UK Checklist',
+    description: 'Every bank, energy company, insurer, and government department you need to contact after a death, with direct phone numbers and what to say when you call.',
     url: 'https://helpafterloss.co.uk/notify',
     type: 'article',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Who to Notify When Someone Dies: 60+ UK Organisations',
-    description: 'Every bank, energy company, insurer, and government department you need to contact after a death, with direct bereavement phone numbers.',
+    title: 'Who to Notify When Someone Dies: A Complete UK Checklist',
+    description: 'Every bank, energy company, insurer, and government department you need to contact after a death, with direct phone numbers.',
   },
 };
 
