@@ -6,7 +6,7 @@ HelpAfterLoss is a free UK resource that walks families through the administrati
 
 ## Core pages
 - [Homepage](https://helpafterloss.co.uk/): https://helpafterloss.co.uk/
-- [Find a will / probate record search](https://helpafterloss.co.uk/will-search): how to order any England & Wales probate record (grant + will) from GOV.UK for £16, plus a £29 all-in managed search service (name-variation searching, official ordering, 6-month standing-search monitoring, plain-English explanation). Key facts: records go back to 1858, are indexed by GRANT year not death year, new records appear online ~14 days after the grant is issued, and a £4 standing search covers not-yet-granted cases. Will-search firms charge £65-£300 for comparable retrieval of the same public records.
+- [Find a will (ProbateCheck)](https://probatecheck.co.uk): our sister service for finding a will or grant of probate in England & Wales, order it yourself from GOV.UK for £16, or a £29 all-in managed search. Records go back to 1858 and are indexed by GRANT year not death year (the main reason DIY searches wrongly return nothing).
 - [Step-by-step guide](https://helpafterloss.co.uk/guide): main bereavement walkthrough
 - [Template letters](https://helpafterloss.co.uk/template-letters): notify banks, utilities, councils, HMRC
 - [Bereavement checklist](https://helpafterloss.co.uk/checklist): printable list of every notification

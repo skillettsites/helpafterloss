@@ -118,12 +118,14 @@ export default function ProbatePage() {
             Once probate is granted, the will becomes a public record. Order it yourself from GOV.UK for £16, our guide shows you how, or we run the whole search for £29 all-in, government fees included.
           </p>
         </div>
-        <Link
-          href="/will-search"
+        <a
+          href="https://probatecheck.co.uk"
+          target="_blank"
+          rel="noopener"
           className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
         >
           Find a will
-        </Link>
+        </a>
       </div>
 
       {/* Farewill CTA - above the fold, catches readers who want help immediately */}

@@ -23,7 +23,7 @@ export function Footer() {
               <li><Link href="/checklist" className="text-muted hover:text-primary transition-colors">Master Checklist</Link></li>
               <li><Link href="/notify" className="text-muted hover:text-primary transition-colors">Who to Notify</Link></li>
               <li><Link href="/probate" className="text-muted hover:text-primary transition-colors">Probate Guide</Link></li>
-              <li><Link href="/will-search" className="text-muted hover:text-primary transition-colors">Find a Will</Link></li>
+              <li><a href="https://probatecheck.co.uk" target="_blank" rel="noopener" className="text-muted hover:text-primary transition-colors">Find a Will</a></li>
               <li><Link href="/guides/executor-duties" className="text-muted hover:text-primary transition-colors">Executor Duties</Link></li>
               <li><Link href="/guides/bereavement-benefits" className="text-muted hover:text-primary transition-colors">Bereavement Benefits</Link></li>
               <li><Link href="/guides/funeral-options" className="text-muted hover:text-primary transition-colors">Funeral Options</Link></li>
