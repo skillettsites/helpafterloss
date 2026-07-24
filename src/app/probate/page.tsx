@@ -110,6 +110,22 @@ export default function ProbatePage() {
         </ul>
       </div>
 
+      {/* Will-search CTA - our own service, for readers trying to FIND a will or grant */}
+      <div className="bg-card rounded-xl border border-border p-5 mb-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex-1">
+          <p className="font-semibold text-foreground mb-1">Trying to find a will or a grant of probate?</p>
+          <p className="text-sm text-muted leading-relaxed">
+            Once probate is granted, the will becomes a public record. Order it yourself from GOV.UK for £16, our guide shows you how, or we run the whole search for £29 all-in, government fees included.
+          </p>
+        </div>
+        <Link
+          href="/will-search"
+          className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
+        >
+          Find a will
+        </Link>
+      </div>
+
       {/* Farewill CTA - above the fold, catches readers who want help immediately */}
       <div className="bg-card rounded-xl border border-border p-5 mb-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
         <div className="flex-1">
