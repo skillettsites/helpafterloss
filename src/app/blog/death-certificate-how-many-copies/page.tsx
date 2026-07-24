@@ -41,6 +41,10 @@ const WHO_NEEDS_A_COPY = [
 
 const FAQS = [
   {
+    question: 'How many death certificates do I need?',
+    answer: 'Most families need 8 to 12 certified copies. Each organisation you notify, such as banks, insurers, pension providers, HMRC, and the Land Registry, needs its own original copy rather than a photocopy. Ordering a few extra at the start means you can notify several organisations at the same time instead of waiting for each one to return a certificate before sending it on.',
+  },
+  {
     question: 'How much is a death certificate?',
     answer: 'A death certificate (certified copy) costs £12.50 in England and Wales, £15 in Scotland, and £15 in Northern Ireland. There is no free option for certified copies. Most families need 8-12 copies, so budget £100-£150 total in England. The only faster option is the GRO priority service at £38.50 per copy, which delivers within 1 working day.',
   },
