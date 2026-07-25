@@ -409,7 +409,7 @@ export default function DeathCertificateHowManyCopiesPage() {
 
       <RelatedGuides
         currentPath="/blog/death-certificate-how-many-copies"
-        guides={['/phone-directory', '/blog/bank-probate-thresholds-2026', '/blog/registering-a-death-uk', '/guides/document-checklist']}
+        guides={['/probate', '/phone-directory', '/blog/bank-probate-thresholds-2026', '/blog/registering-a-death-uk', '/guides/document-checklist']}
       />
 
       <div className="bg-primary-light rounded-xl p-8 text-center">
