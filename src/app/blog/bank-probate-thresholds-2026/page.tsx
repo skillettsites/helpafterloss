@@ -255,6 +255,9 @@ export default function BankProbateThresholdsPage() {
 
       {/* Steps to release money */}
       <h2 id="how-to-release" className="text-2xl font-bold text-foreground mb-6">How to release money from a bank account without probate</h2>
+      <p className="text-sm text-muted mb-6">
+        The steps below are broadly the same for every bank. When you get to step 3, our free <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> give you ready-to-use wording for each bereavement team, and our <Link href="/call-scripts" className="text-primary hover:underline">call scripts</Link> cover what to say if you would rather phone.
+      </p>
       <div className="space-y-4 mb-12">
         {STEPS.map((s) => (
           <div key={s.step} className="bg-card rounded-xl border border-border p-6">
