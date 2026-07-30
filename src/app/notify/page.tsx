@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { bereavementContacts, categoryLabels, categoryOrder } from '@/lib/bereavement-contacts';
 import type { BereavementContact } from '@/lib/bereavement-contacts';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { FreeChecklistBanner } from '@/components/FreeChecklistBanner';
 
 export const metadata: Metadata = {
   title: 'Who to Notify When Someone Dies: A Complete UK Checklist',
@@ -207,7 +208,7 @@ export default function NotifyHubPage() {
         <div className="max-w-3xl mx-auto">
           <div className="bg-primary-light rounded-lg p-4">
             <p className="text-sm text-foreground">
-              <strong>Related guides:</strong> See <Link href="/blog/what-tell-us-once-doesnt-cover" className="text-primary hover:underline">what Tell Us Once does not cover</Link> for the full list of organisations you must contact yourself. Use our <Link href="/call-scripts" className="text-primary hover:underline">call scripts</Link> for what to say when you phone, and our <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> for what to write. For costs involved, see our <Link href="/costs" className="text-primary hover:underline">full cost breakdown</Link>.
+              <strong>Related guides:</strong> See <Link href="/blog/what-tell-us-once-doesnt-cover" className="text-primary hover:underline">what Tell Us Once does not cover</Link> for the full list of organisations you must contact yourself. Use our <Link href="/call-scripts" className="text-primary hover:underline">call scripts</Link> for what to say when you phone, and our <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> for what to write. For costs involved, see our <Link href="/costs" className="text-primary hover:underline">full cost breakdown</Link>. If you are seeing &quot;probate threshold&quot; mentioned below and are not sure whether probate applies to you, our <Link href="/probate" className="text-primary hover:underline">probate guide</Link> explains it in plain English.
             </p>
           </div>
         </div>
@@ -228,12 +229,19 @@ export default function NotifyHubPage() {
         </div>
       </section>
 
+      {/* Free checklist banner */}
+      <section className="py-4 px-4">
+        <div className="max-w-3xl mx-auto">
+          <FreeChecklistBanner variant="bottom" />
+        </div>
+      </section>
+
       {/* Related guides */}
       <section className="py-8 px-4 mb-8">
         <div className="max-w-3xl mx-auto">
           <RelatedGuides
             currentPath="/notify"
-            guides={['/tell-us-once', '/template-letters', '/phone-directory', '/checklist']}
+            guides={['/probate', '/tell-us-once', '/template-letters', '/phone-directory', '/checklist']}
           />
         </div>
       </section>
