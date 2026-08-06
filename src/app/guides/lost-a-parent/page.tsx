@@ -62,7 +62,7 @@ export default function LostAParentPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Registering the death</h3>
           <p className="text-sm text-muted leading-relaxed">
-            In England and Wales, the death must be registered within 5 days at the register office in the area where your parent died. In Scotland, you have 8 days. You will need the Medical Certificate of Cause of Death from the doctor or hospital. Order at least 5 certified copies of the death certificate (£12.50 each in England and Wales (£15 in Scotland)), as banks, insurers, and pension providers each need an original. Use Tell Us Once at the appointment to notify government departments in a single step.
+            In England and Wales, the death must be registered within 5 days at the register office in the area where your parent died. In Scotland, you have 8 days. You will need the Medical Certificate of Cause of Death from the doctor or hospital. Order at least 5 certified copies of the death certificate (£12.50 each in England and Wales, £15 in Scotland), as banks, insurers, and pension providers each need an original. Use Tell Us Once at the appointment to notify government departments in a single step.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -85,7 +85,7 @@ export default function LostAParentPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Applying for probate</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If your parent's estate includes property, or has more than around £5,000 to £50,000 in sole-name accounts, you will almost certainly need probate. Apply using form PA1P (with a will) at gov.uk. The court fee is £526. You will need to value the estate and complete an inheritance tax form first. Current processing time is around 12 to 16 weeks. For a detailed walkthrough, see our <Link href="/probate" className="text-primary font-medium hover:underline">full probate guide</Link>.
+            If your parent's estate includes property, or has more than around £5,000 to £50,000 in sole-name accounts, you will almost certainly need probate. Apply using form PA1P (with a will) at gov.uk. The court fee is £526. You will need to value the estate and complete an inheritance tax form first. Current processing time is around usually within 12 weeks. For a detailed walkthrough, see our <Link href="/probate" className="text-primary font-medium hover:underline">full probate guide</Link>.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -258,7 +258,7 @@ export default function LostAParentPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">What happens to my parent's house after they die?</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If your parent had a surviving spouse who owned the property as joint tenants, it passes to them automatically. If the property was in your parent's sole name, it becomes part of the estate and is distributed according to the will or intestacy rules. You cannot sell the property until probate is granted. Apply for a Class F council tax exemption immediately, as the property may be exempt from council tax from the date of death through to 6 months after probate.
+            If your parent had a surviving spouse who owned the property as joint tenants, it passes to them automatically. If the property was in your parent's sole name, it becomes part of the estate and is distributed according to the will or intestacy rules. You cannot sell the property until probate is granted. Apply for a Class F council tax exemption as soon as you can, because the property is usually exempt from the date of death right through until 6 months after the grant of probate in England, or 12 months in Wales. Note the clock runs from the grant, not from the day your parent died, and while you are still waiting for the grant there is no time limit at all.
           </p>
         </div>
       </div>
@@ -327,6 +327,7 @@ export default function LostAParentPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'When a Parent Dies',
             description: 'Practical and compassionate guidance for adult children after a parent dies in the UK.',
             datePublished: '2026-03-14',

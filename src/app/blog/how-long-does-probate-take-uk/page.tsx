@@ -43,12 +43,12 @@ const TIMELINE_STAGES = [
   {
     stage: 'Submitting the probate application',
     typical: '1 day to 1 week',
-    detail: 'You can apply online at GOV.UK or by post. The online application is quicker and you get confirmation immediately. You will need to sign a statement of truth (the oath was replaced in January 2024). The application fee is £526 (free if the estate is under £5,000).',
+    detail: 'You can apply online at GOV.UK or by post. The online application is quicker and you get confirmation immediately. You will need to sign a statement of truth, which replaced the old sworn oath under the Non-Contentious Probate (Amendment) Rules 2018. The application fee is £526 (free if the estate is £5,000 or under).',
   },
   {
     stage: 'Court processing the application',
-    typical: '4 to 12 weeks (2026)',
-    detail: 'The Probate Registry has faced significant backlogs in recent years. In early 2024, wait times were 8 to 16 weeks. By early 2026, the situation has improved somewhat, with most straightforward applications processed in 6 to 10 weeks. However, if the court raises questions or if your application has errors, it will take longer. Paper applications generally take longer than online ones.',
+    typical: 'Usually within 12 weeks',
+    detail: 'GOV.UK says you will usually get the grant within 12 weeks of submitting your application. The measured position is better than that: HMCTS figures for January to March 2026 show an average of 5 weeks from application to grant, and around 2 weeks for the digital applications that pass without a query, which is roughly seven in ten of them. The 12-week figure really covers the harder cases. If the Probate Registry has to stop your application to ask for more information, the average rises to around 14 weeks, and a stopped paper application averaged around 26 weeks. Applying online and getting the forms right first time is what keeps you at the short end.',
   },
   {
     stage: 'Receiving the grant of probate',
@@ -85,7 +85,7 @@ export default function HowLongDoesProbateTakePage() {
         How Long Does Probate Take in the UK? Realistic Timeline (2026)
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-6">
-        The honest answer is: longer than you expect. Government guidance says 16 weeks, but the real end-to-end process, from the date of death to final distribution, typically takes 6 to 12 months for a straightforward estate. Complex estates can take a year or more. This guide breaks down every stage so you know what to expect.
+        The honest answer is: longer than you expect. Government guidance says you will usually have the grant within 12 weeks, but that is only one stage. The real end-to-end process, from the date of death to final distribution, typically takes 6 to 12 months for a straightforward estate. Complex estates can take a year or more. This guide breaks down every stage so you know what to expect.
       </p>
 
       <div className="bg-card rounded-xl border border-border p-5 mb-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
@@ -104,7 +104,7 @@ export default function HowLongDoesProbateTakePage() {
           <li className="flex gap-2"><span className="font-bold">+</span> <strong>Simple estate, no IHT:</strong> 4 to 6 months from the date of death to distribution</li>
           <li className="flex gap-2"><span className="font-bold">+</span> <strong>Moderate estate with IHT:</strong> 6 to 12 months</li>
           <li className="flex gap-2"><span className="font-bold">+</span> <strong>Complex estate (property abroad, disputes, business assets):</strong> 12 to 24+ months</li>
-          <li className="flex gap-2"><span className="font-bold">+</span> <strong>Just the grant itself:</strong> 6 to 12 weeks from submitting the application</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> <strong>Just the grant itself:</strong> usually within 12 weeks of submitting the application, and often around 5 weeks</li>
         </ul>
       </div>
 
@@ -173,7 +173,7 @@ export default function HowLongDoesProbateTakePage() {
             <span className="text-lg">📋</span>
             <div>
               <p className="font-bold leading-none">Apply on GOV.UK</p>
-              <p className="text-green-100 text-xs font-normal mt-0.5">Online in 45 min, processed in 6-10 weeks</p>
+              <p className="text-green-100 text-xs font-normal mt-0.5">Online in 45 min, grant usually within 12 weeks</p>
             </div>
           </a>
           <a
@@ -221,8 +221,8 @@ export default function HowLongDoesProbateTakePage() {
         </div>
         <div className="bg-card rounded-xl border border-border p-5">
           <p className="text-sm font-semibold text-foreground mb-1">Court processing</p>
-          <p className="text-2xl font-bold text-primary mb-1">6 to 12 weeks</p>
-          <p className="text-sm text-muted">The Probate Registry reviewing and approving your application.</p>
+          <p className="text-2xl font-bold text-primary mb-1">Within 12 weeks</p>
+          <p className="text-sm text-muted">The Probate Registry reviewing and approving your application. The 2026 average is 5 weeks.</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-5">
           <p className="text-sm font-semibold text-foreground mb-1">Collecting and distributing</p>
@@ -403,7 +403,7 @@ export default function HowLongDoesProbateTakePage() {
       <h2 id="scotland" className="text-2xl font-bold text-foreground mb-6">Scotland: Confirmation timelines</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed mb-4">
-          In Scotland, the equivalent of probate is called Confirmation. The process is broadly similar but is handled by the Sheriff Court rather than the Probate Registry. Processing times in Scotland are generally shorter, with most straightforward applications completed in 4 to 8 weeks from submission. If you are dealing with a Scottish estate, see our <Link href="/guide/scotland" className="text-primary hover:underline">Scotland guide</Link> for specific details.
+          In Scotland, the equivalent of probate is called Confirmation. The process is broadly similar but is handled by the Sheriff Court rather than the Probate Registry. The Scottish Courts and Tribunals Service does not publish average processing times, so we would rather not quote a figure; ring the Sheriff Clerk's office handling your application and they will tell you where things stand. If you are dealing with a Scottish estate, see our <Link href="/guide/scotland" className="text-primary hover:underline">Scotland guide</Link> for specific details.
         </p>
       </div>
 
@@ -412,8 +412,8 @@ export default function HowLongDoesProbateTakePage() {
       <div className="space-y-4 mb-12">
         {[
           { q: 'Can I access money from the estate before probate is granted?', a: 'Most banks will release small amounts (typically up to £5,000 to £50,000 depending on the bank) without probate. Some will pay funeral costs directly from the account. Joint accounts can continue to be used by the surviving holder. For larger sums, you will usually need to wait for the grant.' },
-          { q: 'How long does it take to get grant of probate in 2026?', a: 'In 2026, most straightforward probate applications submitted online are processed in 6 to 10 weeks by the Probate Registry. Paper applications take longer. Before you can apply, you need 3 to 12 weeks to gather valuations and, if inheritance tax is due, 4 to 8 weeks for HMRC to process your IHT400. From application submission to receiving the grant, allow 6 to 10 weeks.' },
-          { q: 'What happens if probate takes longer than 12 months?', a: 'If probate is taking more than 12 months, you should first identify why. Common causes include HMRC enquiries on the inheritance tax return, difficulty locating all assets, a disputed will, or property that has not yet sold. Contact the Probate Registry if you have been waiting more than 16 weeks with no update. If complexity is the cause, consider engaging a probate solicitor. Beneficiaries cannot usually force a quicker distribution, but they can apply to court if an executor is unreasonably delaying.' },
+          { q: 'How long does it take to get grant of probate in 2026?', a: 'GOV.UK says you will usually get the grant within 12 weeks of submitting your application. HMCTS figures for January to March 2026 put the average at 5 weeks, and at around 2 weeks for an online application that passes without a query. Paper applications and any application the Registry has to stop for more information take considerably longer. Before you can apply at all, allow 3 to 12 weeks to gather valuations and, if inheritance tax is due, 4 to 8 weeks for HMRC to process your IHT400.' },
+          { q: 'What happens if probate takes longer than 12 months?', a: 'If probate is taking more than 12 months, you should first identify why. Common causes include HMRC enquiries on the inheritance tax return, difficulty locating all assets, a disputed will, or property that has not yet sold. Contact the Probate Registry if you have been waiting more than 12 weeks with no update. If complexity is the cause, consider engaging a probate solicitor. Beneficiaries cannot usually force a quicker distribution, but they can apply to court if an executor is unreasonably delaying.' },
           { q: 'How do I check the progress of my probate application?', a: 'You can call the Probate Registry on 0300 303 0648 or check online if you applied through the GOV.UK service. Have your application reference number ready.' },
           { q: 'What happens if the executor does nothing?', a: 'Beneficiaries can apply to the court to remove an executor who is not acting. This is called a "passing over" order. Alternatively, if there are multiple executors, the others can proceed without the inactive one. If you are a beneficiary and the executor is not responding, seek legal advice.' },
         ].map((faq, i) => (
@@ -500,6 +500,7 @@ export default function HowLongDoesProbateTakePage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'How Long Does Probate Take in the UK? Realistic Timeline (2026)',
             description: 'A realistic breakdown of how long probate takes in the UK in 2026, from application to final distribution.',
             datePublished: '2026-03-22',
@@ -539,8 +540,8 @@ export default function HowLongDoesProbateTakePage() {
             '@type': 'FAQPage',
             mainEntity: [
               { '@type': 'Question', name: 'Can I access money from the estate before probate is granted?', acceptedAnswer: { '@type': 'Answer', text: 'Most banks will release small amounts (typically up to £5,000 to £50,000 depending on the bank) without probate. Some will pay funeral costs directly from the account. Joint accounts can continue to be used by the surviving holder.' } },
-              { '@type': 'Question', name: 'How long does it take to get grant of probate in 2026?', acceptedAnswer: { '@type': 'Answer', text: 'In 2026, most straightforward probate applications submitted online are processed in 6 to 10 weeks by the Probate Registry. Before you can apply, allow 3 to 12 weeks to gather valuations and, if IHT is due, 4 to 8 weeks for HMRC to process the IHT400. Total from application submission to receiving the grant: 6 to 10 weeks.' } },
-              { '@type': 'Question', name: 'What happens if probate takes longer than 12 months?', acceptedAnswer: { '@type': 'Answer', text: 'If probate is taking more than 12 months, identify the cause first. Common reasons include HMRC enquiries on the IHT return, a disputed will, or property that has not yet sold. Contact the Probate Registry if you have been waiting more than 16 weeks with no update. Beneficiaries cannot usually force faster distribution, but can apply to court if an executor is unreasonably delaying.' } },
+              { '@type': 'Question', name: 'How long does it take to get grant of probate in 2026?', acceptedAnswer: { '@type': 'Answer', text: 'GOV.UK says you will usually get the grant within 12 weeks of submitting your application. HMCTS figures for January to March 2026 put the average at 5 weeks, and at around 2 weeks for an online application that passes without a query. Paper applications and any application the Registry has to stop for more information take considerably longer. Before you can apply at all, allow 3 to 12 weeks to gather valuations and, if inheritance tax is due, 4 to 8 weeks for HMRC to process your IHT400.' } },
+              { '@type': 'Question', name: 'What happens if probate takes longer than 12 months?', acceptedAnswer: { '@type': 'Answer', text: 'If probate is taking more than 12 months, identify the cause first. Common reasons include HMRC enquiries on the IHT return, a disputed will, or property that has not yet sold. Contact the Probate Registry if you have been waiting more than 12 weeks with no update. Beneficiaries cannot usually force faster distribution, but can apply to court if an executor is unreasonably delaying.' } },
               { '@type': 'Question', name: 'How do I check the progress of my probate application?', acceptedAnswer: { '@type': 'Answer', text: 'You can call the Probate Registry on 0300 303 0648 or check online if you applied through the GOV.UK service.' } },
               { '@type': 'Question', name: 'Do I need a solicitor for probate?', acceptedAnswer: { '@type': 'Answer', text: 'No, you can apply for probate yourself via GOV.UK. However, if the estate is complex, a solicitor can be worth the cost (typically £1,500 to £5,000).' } },
             ],

@@ -24,6 +24,25 @@ export const metadata: Metadata = {
   },
 };
 
+const FAQ = [
+  {
+    q: 'Is anxiety normal after a bereavement?',
+    a: 'Yes. Anxiety after a bereavement is extremely common. Grief shakes your sense of safety, and your nervous system responds by activating your fight-or-flight response. This produces stress hormones that cause a racing heart, shallow breathing, muscle tension, and a constant feeling of being on high alert. It is a normal biological response to loss, and it does not mean you are coping badly.',
+  },
+  {
+    q: 'Can grief cause panic attacks?',
+    a: 'Yes. Grief can trigger panic attacks, which are sudden, intense surges of fear with physical symptoms such as a racing heart, chest tightness, dizziness, and difficulty breathing. They are frightening, but they are not dangerous. Grounding techniques and slow breathing, with a longer breath out than in, can help while one is happening.',
+  },
+  {
+    q: 'When should I see a doctor about grief-related anxiety?',
+    a: 'It is worth speaking to your GP if anxiety is getting worse rather than better over weeks, you are having frequent panic attacks, you are avoiding places or situations, you cannot sleep most nights, it is affecting your work or relationships, or you are using alcohol or drugs to cope. You can also self-refer to NHS talking therapies without waiting for a GP referral.',
+  },
+  {
+    q: 'How long does anxiety after bereavement last?',
+    a: 'There is no fixed timeline. For many people the worst of it eases within the first few months as the initial shock subsides. For others it persists, or returns around anniversaries, milestones, or other stressful events. If it is not improving after several months, talking therapies or medication can help, and your GP can talk you through the options.',
+  },
+];
+
 export default function GriefAndAnxietyPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
@@ -62,6 +81,7 @@ export default function GriefAndAnxietyPage() {
         { id: 'managing', label: 'Practical ways to manage grief anxiety' },
         { id: 'when-professional', label: 'When to seek professional help' },
         { id: 'support', label: 'Where to get support' },
+        { id: 'faqs', label: 'Common questions' },
       ]} />
 
       {/* Why grief causes anxiety */}
@@ -245,6 +265,24 @@ export default function GriefAndAnxietyPage() {
         </ul>
       </div>
 
+      {/* FAQ */}
+      <h2 id="faqs" className="text-2xl font-bold text-foreground mb-6">Common questions</h2>
+      <div className="space-y-4 mb-12">
+        {FAQ.map((item, i) => (
+          <details key={i} className="bg-card rounded-xl border border-border group">
+            <summary className="p-5 md:p-6 font-semibold text-foreground cursor-pointer list-none flex items-center justify-between gap-4 hover:text-primary transition-colors">
+              <span>{item.q}</span>
+              <svg className="w-5 h-5 text-muted flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div className="px-5 md:px-6 pb-5 md:pb-6">
+              <p className="text-sm text-muted leading-relaxed">{item.a}</p>
+            </div>
+          </details>
+        ))}
+      </div>
+
       {/* Practical help links */}
       <SupportCta />
       <div className="bg-primary-light rounded-lg p-4 mb-8">
@@ -272,6 +310,7 @@ export default function GriefAndAnxietyPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Grief and Anxiety: Why Bereavement Triggers Panic and How to Manage It',
             description: 'Understanding the connection between grief and anxiety, and practical ways to manage panic, worry, and fear after a bereavement.',
             datePublished: '2026-03-22',
@@ -295,40 +334,11 @@ export default function GriefAndAnxietyPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'FAQPage',
-            mainEntity: [
-              {
-                '@type': 'Question',
-                name: 'Is anxiety normal after a bereavement?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'Yes. Anxiety after a bereavement is extremely common. Grief shatters your sense of safety, and your nervous system responds by activating your fight-or-flight response. This produces stress hormones that cause racing heart, shallow breathing, muscle tension, and a constant feeling of being on high alert. It is a normal biological response to loss.',
-                },
-              },
-              {
-                '@type': 'Question',
-                name: 'Can grief cause panic attacks?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'Yes. Grief can trigger panic attacks, which feel like intense sudden episodes of fear with physical symptoms such as racing heart, chest tightness, dizziness, and difficulty breathing. They are not dangerous, but they feel terrifying. Grounding techniques and breathing exercises can help during a panic attack.',
-                },
-              },
-              {
-                '@type': 'Question',
-                name: 'When should I see a doctor about grief-related anxiety?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'See your GP if anxiety is getting worse rather than better over weeks, you are having frequent panic attacks, you are avoiding places or situations, you cannot sleep most nights, it is affecting your work or relationships, or you are using alcohol or drugs to cope. You can self-refer to NHS talking therapies without a GP referral.',
-                },
-              },
-              {
-                '@type': 'Question',
-                name: 'How long does anxiety after bereavement last?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'There is no fixed timeline. For many people, the worst anxiety eases within the first few months as the initial shock subsides. However, anxiety can persist or return during anniversaries, milestones, or when other stressful events occur. If it is not improving after several months, professional support through talking therapies or medication can help.',
-                },
-              },
-            ],
+            mainEntity: FAQ.map(item => ({
+              '@type': 'Question',
+              name: item.q,
+              acceptedAnswer: { '@type': 'Answer', text: item.a },
+            })),
           }),
         }}
       />

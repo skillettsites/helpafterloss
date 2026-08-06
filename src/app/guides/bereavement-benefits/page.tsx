@@ -75,7 +75,7 @@ const FAQ = [
   },
   {
     q: 'Is there a time limit for claiming Bereavement Support Payment?',
-    a: 'Yes, and it is strict. You must claim within 21 months of your partner\'s death. If you claim within 3 months, you receive the full 18 monthly payments. Claim later and you receive fewer payments. Do not delay.',
+    a: 'Yes, and it works in stages. Claim within 3 months of the death and you get the one-off lump sum and all 18 monthly payments. Claim between 3 and 12 months and you still get the lump sum, but only some of the monthly payments. Claim after 12 months and you lose the lump sum entirely (£2,500 or £3,500), although you can still get some monthly payments up to 21 months. After 21 months you usually cannot get anything. The 12-month point is the one that costs the most, so it is worth claiming as early as you can manage.',
   },
   {
     q: 'Will claiming benefits affect my other income or savings?',
@@ -83,7 +83,7 @@ const FAQ = [
   },
   {
     q: 'What if I was not married but we lived together?',
-    a: 'Bereavement Support Payment is only available to married couples and civil partners. Cohabiting partners who were not legally married or in a civil partnership cannot claim it, regardless of how long they lived together. This is one of the few areas where the law still draws a sharp distinction.',
+    a: 'Since 9 February 2023, cohabiting partners can claim Bereavement Support Payment if they were living with their partner as though married and have a dependent child, meaning you were entitled to Child Benefit for a child living with you, or you were pregnant when your partner died. Cohabiting partners without dependent children still cannot claim. The window for backdating historic claims to before February 2023 closed on 8 February 2024.',
   },
   {
     q: 'Can I claim benefits if I am working?',
@@ -159,8 +159,8 @@ export default function BereavementBenefitsPage() {
           </div>
         </div>
         <div className="space-y-2 text-sm text-muted leading-relaxed">
-          <p><strong className="text-foreground">Who qualifies:</strong> You must have been married to or in a civil partnership with the person who has passed away. You must be under State Pension age. Your partner must have paid National Insurance contributions for at least 25 weeks, or died as a result of a work-related accident or disease.</p>
-          <p><strong className="text-foreground">Time limit:</strong> You must claim within 21 months of the death. Claim within 3 months to receive the full 18 monthly payments.</p>
+          <p><strong className="text-foreground">Who qualifies:</strong> You must have been married to or in a civil partnership with the person who has passed away, or living with them as though you were married. You must be under State Pension age. Your partner must have paid enough Class 1 or Class 2 National Insurance contributions in any one tax year since 6 April 1975, or died as a result of a work-related accident or disease. If you were not married or in a civil partnership, you also need a dependent child: you must have been entitled to Child Benefit for a child living with you, or have been pregnant when your partner died.</p>
+          <p><strong className="text-foreground">Time limit:</strong> This runs in stages, and one of them matters a great deal. Claim within 3 months and you get the lump sum plus all 18 monthly payments. Claim between 3 and 12 months and you still get the lump sum but only some of the monthly payments. Claim after 12 months and the lump sum is gone, though you can still get some monthly payments up to 21 months. After 21 months you usually cannot get anything at all.</p>
           <p><strong className="text-foreground">How to claim:</strong> Call 0800 151 2012 or apply online at gov.uk/bereavement-support-payment. You will need the death certificate and your National Insurance number.</p>
           <p><strong className="text-foreground">Tax status:</strong> Not taxable. Not counted as income for Universal Credit for the first 12 months.</p>
         </div>
@@ -211,7 +211,7 @@ export default function BereavementBenefitsPage() {
         </p>
         <div className="bg-background rounded-lg p-4 border border-border mb-4">
           <p className="text-primary font-bold">£22.95 per week per child</p>
-          <p className="text-sm text-muted mt-1">(2024-25 rate, paid on top of Child Benefit)</p>
+          <p className="text-sm text-muted mt-1">(2026-27 rate, paid on top of Child Benefit)</p>
         </div>
         <div className="space-y-2 text-sm text-muted leading-relaxed">
           <p><strong className="text-foreground">Who qualifies:</strong> Both parents must have passed away, or one parent has passed away and the other is untraceable or in prison for at least 2 years.</p>
@@ -256,7 +256,7 @@ export default function BereavementBenefitsPage() {
         <div className="space-y-4 text-sm text-muted leading-relaxed">
           <div>
             <p className="font-semibold text-foreground">Pension Credit</p>
-            <p>If you are State Pension age and your income is below £218.15 per week (single person, 2024-25), you may qualify for Pension Credit. Losing a partner's pension or State Pension often brings people below this threshold. Claim by calling 0800 731 0469. Pension Credit also unlocks other help: free dental treatment, Housing Benefit, and Cold Weather Payments.</p>
+            <p>If you are State Pension age and your income is below £238 per week for a single person, or £363.25 for a couple (2026-27 rates), Pension Credit can top it up to that level. Losing a partner's pension or State Pension often brings people below this threshold. Claim by calling 0800 99 1234. Pension Credit also unlocks other help: free dental treatment, Housing Benefit, and Cold Weather Payments.</p>
           </div>
           <div>
             <p className="font-semibold text-foreground">Universal Credit</p>
@@ -281,7 +281,7 @@ export default function BereavementBenefitsPage() {
       <div className="bg-card rounded-xl border border-border p-6 mb-6">
         <h2 className="text-xl font-bold text-foreground mb-3">Widowed Parent's Allowance (legacy benefit)</h2>
         <p className="text-sm text-muted leading-relaxed">
-          Widowed Parent's Allowance was replaced by Bereavement Support Payment in 2017. However, people who were already receiving it before that date continue to receive it. If you were receiving Widowed Parent's Allowance and your circumstances change (for example, you remarry or start living with a new partner), your payments will stop. Contact the Bereavement Service on 0800 151 2012 if you have questions about an existing claim.
+          Widowed Parent's Allowance closed to new claims on 6 April 2017, when Bereavement Support Payment replaced it. You can only claim it now if your partner passed away before that date. People who were already receiving it continue to do so. If you receive Widowed Parent's Allowance and your circumstances change (for example, you remarry or start living with a new partner), your payments will stop. Contact the Bereavement Service on 0800 151 2012 if you have questions about an existing claim.
         </p>
       </div>
 
@@ -366,6 +366,7 @@ export default function BereavementBenefitsPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Bereavement Benefits: Every Payment You Can Claim',
             description: 'A complete guide to every bereavement benefit available in the UK, who qualifies, and how to claim.',
             url: 'https://helpafterloss.co.uk/guides/bereavement-benefits',

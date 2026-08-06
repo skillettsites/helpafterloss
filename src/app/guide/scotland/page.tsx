@@ -44,11 +44,11 @@ const KEY_DIFFERENCES = [
   },
   {
     england: 'Probate court fee: £526 (estates over £5,000)',
-    scotland: 'Confirmation court fee: nothing up to £50,000, then £351, or £705 above £250,000',
+    scotland: 'Confirmation court fee: no fee up to £50,000, £351 from £50,000.01 to £250,000, £705 above £250,000',
   },
   {
     england: 'Small estates: no simplified process',
-    scotland: 'Small estates (under £36,000): simplified process, no solicitor needed',
+    scotland: 'Small estates (£36,000 or less): simplified process and free help from the Sheriff Clerk, no solicitor needed',
   },
   {
     england: 'Intestacy: spouse gets first £322,000 plus personal belongings, then split with children',
@@ -75,7 +75,7 @@ const SECTIONS = [
       },
       {
         title: 'Register within 8 days',
-        content: 'In Scotland, you must register the death within 8 days, which is a little more breathing room than the 5 days in England and Wales. You register at the registrar office for the area where they died, and you can book an appointment by ringing the local council. Take their full name, date and place of birth, last address, occupation, NHS or CHI number if you know it, and any marriage or civil partnership certificate.',
+        content: 'In Scotland, you must register the death within 8 days where possible, which is a little more breathing room than the 5 days in England and Wales. If the Procurator Fiscal is involved, registration may have to wait until they authorise it, and that is nothing to worry about. You register at the registrar office for the area where they died, and you can book an appointment by ringing the local council. Take their full name, date and place of birth, last address, occupation, NHS or CHI number if you know it, and any marriage or civil partnership certificate.',
       },
       {
         title: 'Death certificates cost £15 each',
@@ -119,15 +119,15 @@ const SECTIONS = [
       },
       {
         title: 'How to apply for Confirmation',
-        content: 'You need to prepare an inventory of the entire estate, listing every asset and its value at the date of death. Submit the inventory along with the will (if there is one), the death certificate, and the completed inheritance tax form to the Sheriff Court for the area where the person lived. Scotland has its own fee scale, and it is kinder than the English one at the lower end: there is no court fee at all if the estate is worth £50,000 or less, then £351 up to £250,000, and £705 above that. You can apply to any Sheriff Court in Scotland.',
+        content: 'You need to prepare an inventory of the entire estate, listing every asset and its value at the date of death. Submit the inventory along with the will (if there is one), the death certificate, and the completed inheritance tax form to the Sheriff Court for the area where the person lived. Scotland has its own fee scale, and it is kinder than the English one at the lower end: there is no court fee at all if the estate is worth £50,000 or less, then £351 from £50,000.01 up to £250,000, and £705 above £250,000. These are the figures set by the Sheriff Court Fees Order 2026, which took effect on 1 April 2026. You can apply to any Sheriff Court in Scotland.',
       },
       {
-        title: 'Small estates (under £36,000)',
-        content: 'If the whole estate is worth less than £36,000, you can use the simplified "small estate" procedure. The local Sheriff Clerk will sit with you and help you complete the paperwork, free of charge, and you do not need a solicitor at all. It is quicker and cheaper than full Confirmation, and a real advantage over the English system, which has no equivalent.',
+        title: 'Small estates (£36,000 or less)',
+        content: 'If the whole estate is worth £36,000 or less, it counts as a "small estate" and you can use the simplified procedure. The local Sheriff Clerk will sit with you and help you complete the inventory, free of charge, and you do not need a solicitor at all. When you work out that £36,000, you do not deduct debts such as funeral expenses or the balance of a mortgage. It is worth being clear that £36,000 and £50,000 are two separate thresholds doing different jobs, as they are easily confused. The £36,000 figure decides whether the estate counts as a small estate, which is what entitles you to that free help from the Sheriff Clerk and a simpler form; it comes from the Confirmation to Small Estates (Scotland) Order 2011. The £50,000 figure is purely about the court fee: nothing is payable at or below it. So an estate of, say, £45,000 is too large for Sheriff Clerk assistance but still pays no court fee at all.',
       },
       {
         title: 'Processing time',
-        content: 'Confirmation in Scotland currently takes around 6 to 8 weeks from submission, which is often faster than the 12 to 16 weeks typical for probate in England. Complex estates or those involving inheritance tax may take longer.',
+        content: 'The Scottish Courts and Tribunals Service does not publish average processing times for Confirmation, so we would rather not quote a figure than give you one we cannot stand behind. If you want to know where your application has got to, ring the Sheriff Clerk\'s office you applied to and they will tell you. Complex estates and those involving inheritance tax take longer.',
       },
       {
         title: 'Using Confirmation across the UK',
@@ -214,7 +214,7 @@ const SECTIONS = [
 const FAQ = [
   {
     q: 'Is probate the same in Scotland as in England?',
-    a: 'No. Scotland uses a process called Confirmation, which is applied for through the Sheriff Court rather than the Probate Registry. The legal framework, forms, and fees are different. Estates under £36,000 in Scotland benefit from a simplified small estate procedure.',
+    a: 'No. Scotland uses a process called Confirmation, which is applied for through the Sheriff Court rather than the Probate Registry. The legal framework, forms, and fees are different. Estates of £36,000 or less in Scotland count as "small estates" and benefit from a simplified procedure, with the Sheriff Clerk helping you prepare the paperwork free of charge.',
   },
   {
     q: 'What is the Procurator Fiscal?',
@@ -226,7 +226,7 @@ const FAQ = [
   },
   {
     q: 'How much does Confirmation cost in Scotland?',
-    a: 'There is no court fee at all for estates worth £50,000 or less. Above that it is £351 up to £250,000, and £705 for estates over £250,000. If you use a solicitor, expect fees of £1,500 to £5,000 depending on complexity. For small estates under £36,000, the Sheriff Clerk can help you apply for free.',
+    a: 'There is no court fee at all for estates worth £50,000 or less. Above that it is £351 from £50,000.01 up to £250,000, and £705 for estates over £250,000, under the Sheriff Court Fees Order 2026 which took effect on 1 April 2026. If you use a solicitor, expect fees of £1,500 to £5,000 depending on complexity. Separately, and it is a different threshold, estates of £36,000 or less count as "small estates", where the Sheriff Clerk will help you prepare the application free of charge.',
   },
   {
     q: 'What is the difference between prior rights and legal rights?',
@@ -416,6 +416,7 @@ export default function ScotlandGuidePage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'What to Do When Someone Dies in Scotland',
             description: 'A complete guide to registration, Procurator Fiscal, Confirmation, and intestacy rules in Scotland.',
             url: 'https://helpafterloss.co.uk/guide/scotland',

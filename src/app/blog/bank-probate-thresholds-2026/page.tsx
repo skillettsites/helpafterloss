@@ -89,7 +89,7 @@ const FAQS = [
   },
   {
     question: 'How long does it take for a bank to release funds after death?',
-    answer: 'Once all the required documents have been submitted, most banks release funds within 5 to 15 working days. Some are faster. If probate is required, the process takes longer because you first need to obtain the grant of probate, which typically takes 8 to 16 weeks from application.',
+    answer: 'Once all the required documents have been submitted, most banks release funds within 5 to 15 working days. Some are faster. If probate is required, the process takes longer because you first need the grant of probate, which usually arrives within 12 weeks of applying.',
   },
   {
     question: 'Will a bank release money to pay for a funeral before probate?',
@@ -328,7 +328,7 @@ export default function BankProbateThresholdsPage() {
         <div className="bg-success-light rounded-xl p-6">
           <h3 className="font-semibold text-green-800 mb-2">Order enough death certificates</h3>
           <p className="text-sm text-green-800/80 leading-relaxed">
-            Each bank typically needs an original death certificate. If they had accounts at three different banks, you will need at least three certificates. Order them when you register the death (£12.50 each in England and Wales (£15 in Scotland)). Ordering extras later costs more and takes longer.
+            Each bank typically needs an original death certificate. If they had accounts at three different banks, you will need at least three certificates. Order them when you register the death (£12.50 each in England and Wales, £15 in Scotland). Ordering extras later costs more and takes longer.
           </p>
         </div>
         <div className="bg-success-light rounded-xl p-6">
@@ -386,6 +386,7 @@ export default function BankProbateThresholdsPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Bank Probate Thresholds 2026: Complete Comparison',
             description: 'Every major UK bank and building society probate threshold compared. How much each bank will release without a grant of probate in 2026.',
             datePublished: '2026-03-14',

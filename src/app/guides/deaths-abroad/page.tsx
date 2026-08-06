@@ -35,34 +35,34 @@ const STEPS = [
   {
     step: '3',
     title: 'Decide: repatriation or local funeral',
-    desc: 'Repatriation (bringing your loved one home to the UK) typically costs between £3,000 and £10,000 or more, depending on the country. This includes embalming, a zinc-lined coffin, air freight, and a good deal of paperwork. A local burial or cremation in the country where they passed away is often much cheaper and can be arranged more quickly. There is no legal requirement to bring them home. Think about what they would have wanted and what the family can afford; neither choice is the wrong one.',
+    desc: 'Repatriation (bringing your loved one home to the UK) is expensive, and quotes commonly run into several thousand pounds, often £3,000 to £10,000 or more depending on the country. Ask an international funeral director for a written quote rather than relying on a general figure. The cost covers embalming, a zinc-lined coffin, air freight, and a good deal of paperwork. A local burial or cremation in the country where they passed away is often much cheaper and can be arranged more quickly. There is no legal requirement to bring them home. Think about what they would have wanted and what the family can afford; neither choice is the wrong one.',
   },
   {
     step: '4',
     title: 'Arrange repatriation',
-    desc: 'If you choose repatriation, use a specialist international funeral director. The FCDO can provide a list of experienced firms. They must be embalmed and placed in a zinc-lined coffin, accompanied by paperwork including a freedom from infection certificate, the local death certificate, and customs clearance documents. The funeral director will handle most of this, but expect the process to take 3 to 6 weeks.',
+    desc: 'If you choose repatriation, use a specialist international funeral director. The FCDO can provide a list of experienced firms. They must be embalmed and placed in a zinc-lined coffin, accompanied by paperwork including a freedom from infection certificate, the local death certificate, and customs clearance documents. The funeral director will handle most of this, but expect it to take several weeks, as nothing can move until the local procedures are complete.',
   },
   {
     step: '5',
     title: 'Check travel insurance',
-    desc: 'Most travel insurance policies cover repatriation costs, typically between £5,000 and £25,000. Contact the insurer immediately and provide the policy number and details of what happened. Keep every receipt for expenses including flights, accommodation, phone calls, and translation fees. If the person was on a package holiday, the tour operator may also assist with costs and logistics.',
+    desc: 'Travel insurance often covers repatriation, along with medical, legal, interpretation and translation costs, though limits vary by policy, so read the wording or ask the insurer what the cap is. Contact the insurer immediately and provide the policy number and details of what happened. Keep every receipt for expenses including flights, accommodation, phone calls, and translation fees. If the person was on a package holiday, the tour operator may also assist with costs and logistics.',
   },
   {
     step: '6',
-    title: 'Register the death in the UK',
-    desc: 'Registering the death in the UK is not legally required, but it is strongly recommended so there is a permanent UK record. You register at the General Register Office (GRO), not at your local register office. You can do this by post by sending the foreign death certificate (with a certified English translation) to the GRO. There is a fee for a UK death certificate. This UK registration does not replace the local registration abroad.',
+    title: 'Consider registering the death in the UK',
+    desc: 'You do not have to register the death in the UK, and many families do not. If you would like a permanent UK record, you can apply for a consular death registration through the FCDO Overseas Registration Unit rather than at your local register office. You apply by post, sending the foreign death certificate with a certified English translation. There are fees for registration and for each certified copy, listed on GOV.UK. This does not replace the registration in the country where they died.',
   },
   {
     step: '7',
-    title: 'Bring personal belongings home',
-    desc: 'The FCDO can help arrange the return of personal effects such as jewellery, clothing, and documents. In some countries, personal belongings may be held by the police or local authorities, especially if there is an investigation. You may need customs clearance to bring items back to the UK. The consulate can advise on what paperwork is needed and whether there are any local restrictions.',
+    title: 'Cancel the passport and bring belongings home',
+    desc: 'You will need their passport if you are bringing them home, so do not cancel it until they have been repatriated, or until they have been buried or cremated overseas. After that, fill in form D1, cut off the top right-hand corner of the passport, and send both to the Customer Service Management Team, HM Passport Office, PO Box 767, Southport, PR8 9PW, or hand them in at the nearest British embassy, high commission or consulate. Section 3a of the form lets you choose between having the passport cancelled and disposed of, or cancelled and returned to you, so do say if you would like it back as a keepsake. On belongings, the FCDO can point you to options for getting personal effects home, though it cannot return them for you, and your funeral director may be able to help. In some countries items are held by the police or local authorities while an investigation continues.',
   },
 ];
 
 const FAQ = [
   {
     q: 'Do I need to register the death in the UK?',
-    a: 'It is not legally required, but it is recommended. Registering the death with the General Register Office creates a permanent UK record, which can make dealing with UK institutions, probate, and pensions much simpler. You can register by post.',
+    a: 'No. GOV.UK is clear that you do not have to register the death in the UK. If you would like a permanent UK record, you can apply for a consular death registration through the FCDO Overseas Registration Unit by post, and there are fees for the registration and for each certified copy. Many families find the local certificate, translated and legalised, is enough for UK banks and probate.',
   },
   {
     q: 'Who pays for repatriation?',
@@ -74,11 +74,11 @@ const FAQ = [
   },
   {
     q: 'What if they had no travel insurance?',
-    a: 'You will need to fund repatriation yourself or choose a local funeral. Some charities, such as the Foreign and Commonwealth Office Association, may be able to help in exceptional circumstances. The FCDO can arrange an interest-free loan to cover essential costs in cases of extreme financial hardship, but this must be repaid.',
+    a: 'You will need to fund repatriation yourself or choose a local funeral. The FCDO cannot pay burial, cremation, repatriation or legal costs. It can, though, point you towards charities that help with repatriation, including the JackTheLad Foundation for people aged 16 to 30 who died in an accident overseas, the Kevin Bell Repatriation Trust for Northern Ireland and the Republic of Ireland, and the Repatriation Services Trust for families from Wales. A Funeral Expenses Payment or the Children\'s Funeral Fund may also help with some costs.',
   },
   {
     q: 'How long does repatriation take?',
-    a: 'Typically 3 to 6 weeks. The process can take longer if there is a post-mortem examination, a criminal investigation, or if the country has complex bureaucratic procedures. Countries with mandatory autopsies or those where the death was unexpected may add several weeks to the timeline.',
+    a: 'Usually several weeks. You can only bring someone home once all local procedures are finished, so the timing depends on the country. It takes longer if there is a post-mortem examination, a criminal investigation, or complex local paperwork. Countries with mandatory autopsies or those where the death was unexpected may add several weeks to the timeline.',
   },
   {
     q: 'Can I fly out to be with them?',
@@ -97,22 +97,22 @@ export default function DeathsAbroadPage() {
         When Someone Dies Abroad
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        Losing someone is hard enough without also having to deal with foreign legal systems, language barriers, and arrangements being made hundreds of miles away. Around 6,000 UK nationals die abroad each year, and bringing someone home or arranging a funeral overseas can feel like a great deal to take on. This guide explains what to do, step by step.
+        Losing someone is hard enough without also having to deal with foreign legal systems, language barriers, and arrangements being made hundreds of miles away. In 2024 to 2025 the FCDO supported the families of more than 6,000 British nationals who died overseas, so although it may feel it, you are not the only one facing this. This guide explains what to do, step by step.
       </p>
 
       {/* Quick summary stats */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
         <div className="bg-card rounded-xl border border-border p-5 text-center">
-          <p className="text-2xl font-bold text-primary">~6,000</p>
-          <p className="text-sm text-muted mt-1">UK nationals die abroad each year</p>
+          <p className="text-2xl font-bold text-primary">6,000+</p>
+          <p className="text-sm text-muted mt-1">Families the FCDO supported after a death abroad in 2024-25</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-5 text-center">
-          <p className="text-2xl font-bold text-primary">3-6 weeks</p>
-          <p className="text-sm text-muted mt-1">Typical repatriation time</p>
+          <p className="text-2xl font-bold text-primary">Weeks</p>
+          <p className="text-sm text-muted mt-1">Repatriation usually takes weeks, not days</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-5 text-center">
           <p className="text-2xl font-bold text-primary">£3,000-£10,000+</p>
-          <p className="text-sm text-muted mt-1">Repatriation cost range</p>
+          <p className="text-sm text-muted mt-1">Typical repatriation quotes, though it varies by country</p>
         </div>
       </div>
 
@@ -146,7 +146,7 @@ export default function DeathsAbroadPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">EU and EEA countries</h3>
           <p className="text-sm text-muted leading-relaxed">
-            The European Certificate of Death can simplify cross-border procedures. Many EU countries have well-established processes for dealing with foreign nationals, and English-speaking consular staff are usually available. Repatriation from EU countries tends to be faster and less expensive than from more distant destinations.
+            Many EU countries can issue a multilingual standard form alongside the local death certificate, which can save on translation costs, so it is worth asking the local registrar or the consulate. Many EU countries also have well-established processes for dealing with foreign nationals, and English-speaking consular staff are usually available. Repatriation from EU countries tends to be faster and less expensive than from more distant destinations.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -224,11 +224,12 @@ export default function DeathsAbroadPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'When Someone Dies Abroad: A Complete UK Guide',
             description: 'What to do when a UK national dies overseas, including FCDO contact, repatriation, local death certificates, and registering the death in the UK.',
             url: 'https://helpafterloss.co.uk/guides/deaths-abroad',
             datePublished: '2026-03-14',
-            dateModified: '2026-03-14',
+            dateModified: '2026-08-06',
             author: {
               '@type': 'Organization',
               name: 'Help After Loss',

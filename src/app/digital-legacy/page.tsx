@@ -47,7 +47,7 @@ const PLATFORMS = [
     name: 'Microsoft (Outlook, Hotmail, OneDrive)',
     what: 'Microsoft can pass account data to the next of kin, or close the account.',
     how: 'Contact Microsoft support with a death certificate, proof of your own identity, and something showing how you were related. It usually takes several weeks, so do not worry if you do not hear back quickly.',
-    url: 'https://support.microsoft.com/en-gb/account-billing/accessing-a-deceased-person-s-account',
+    url: 'https://support.microsoft.com/en-us/account-billing/accessing-outlook-com-onedrive-and-other-microsoft-services-when-someone-has-died-ebbd2860-917e-4b39-9913-212362da6b2f',
     note: 'Microsoft will not share their password with you.',
   },
   {
@@ -161,12 +161,13 @@ export default function DigitalLegacyPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Digital Legacy: Dealing With Online Accounts After a Death',
             description: 'How to handle email, social media, subscriptions, and other digital accounts when someone dies in the UK.',
             datePublished: '2026-03-13',
             dateModified: '2026-03-14',
             author: { '@type': 'Organization', name: 'Help After Loss' },
-            publisher: { '@type': 'Organization', name: 'Help After Loss' },
+            publisher: { '@type': 'Organization', name: 'Help After Loss', logo: { '@type': 'ImageObject', url: 'https://helpafterloss.co.uk/opengraph-image' } },
           }),
         }}
       />

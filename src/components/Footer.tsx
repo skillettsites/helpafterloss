@@ -42,6 +42,8 @@ export function Footer() {
               <li><Link href="/guides/bank-accounts-after-death" className="text-muted hover:text-primary transition-colors">Bank Accounts</Link></li>
               <li><Link href="/guides/debts-after-death" className="text-muted hover:text-primary transition-colors">Debts They Left Behind</Link></li>
               <li><Link href="/guides/property-after-death" className="text-muted hover:text-primary transition-colors">Property & Mortgages</Link></li>
+              <li><Link href="/guides/mortgage-after-death" className="text-muted hover:text-primary transition-colors">The Mortgage</Link></li>
+              <li><Link href="/guides/life-insurance-claim" className="text-muted hover:text-primary transition-colors">Claiming Life Insurance</Link></li>
               <li><Link href="/guides/pensions-after-death" className="text-muted hover:text-primary transition-colors">Pensions</Link></li>
               <li><Link href="/guides/inheritance-tax" className="text-muted hover:text-primary transition-colors">Inheritance Tax</Link></li>
               <li><Link href="/guides/council-tax-after-death" className="text-muted hover:text-primary transition-colors">Council Tax</Link></li>
@@ -60,6 +62,8 @@ export function Footer() {
               <li><Link href="/call-scripts" className="text-muted hover:text-primary transition-colors">Call Scripts</Link></li>
               <li><Link href="/blog" className="text-muted hover:text-primary transition-colors">Articles</Link></li>
               <li><Link href="/support" className="text-muted hover:text-primary transition-colors">Support & Helplines</Link></li>
+              <li><Link href="/guides/what-to-say-when-someone-dies" className="text-muted hover:text-primary transition-colors">What to Say to Someone Grieving</Link></li>
+              <li><Link href="/guides/helping-someone-grieve" className="text-muted hover:text-primary transition-colors">Helping Someone Grieve</Link></li>
               <li><Link href="/about" className="text-muted hover:text-primary transition-colors">About Us</Link></li>
               <li><Link href="/privacy" className="text-muted hover:text-primary transition-colors">Privacy Policy</Link></li>
               <li><Link href="/terms" className="text-muted hover:text-primary transition-colors">Terms of Use</Link></li>

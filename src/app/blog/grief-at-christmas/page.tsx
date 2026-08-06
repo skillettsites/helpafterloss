@@ -24,6 +24,25 @@ export const metadata: Metadata = {
   },
 };
 
+const FAQ = [
+  {
+    q: 'How do you cope with grief at Christmas?',
+    a: 'There is no single way, but a few things tend to help. Decide in advance what you want to do and what you would rather skip. Tell people what you need, and give yourself a way to leave a gathering early if you want one. Keep the traditions that bring comfort and set aside the ones that do not. Whatever you feel on the day, you do not have to explain it or perform anything for anyone else.',
+  },
+  {
+    q: 'Is it normal to find Christmas hard after a bereavement?',
+    a: 'Yes. Christmas is built around family and togetherness, which makes the absence of someone you love particularly sharp. The reminders are everywhere and they are difficult to avoid. Many bereaved people find the weeks of build-up harder than the day itself, and it does not only apply to the first year.',
+  },
+  {
+    q: 'Should I celebrate Christmas after someone dies?',
+    a: 'That is entirely up to you. Some people find comfort in keeping things exactly as they were. Others need to do something completely different, or to skip Christmas altogether. Many keep some parts and change others. You can also change your mind on the day, and that is fine.',
+  },
+  {
+    q: 'How do I help a grieving person at Christmas?',
+    a: 'Say the name of the person who died rather than tiptoeing around it. Invite them, but make it genuinely no pressure either way, and let them know they can leave whenever they want. Offer something specific rather than a vague "let me know if you need anything". And check in on the days after Christmas, when everyone else has gone quiet.',
+  },
+];
+
 export default function GriefAtChristmasPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
@@ -62,6 +81,7 @@ export default function GriefAtChristmasPage() {
         { id: 'for-friends-family', label: 'If someone you know is grieving at Christmas' },
         { id: 'new-year', label: 'Getting through New Year' },
         { id: 'support', label: 'Support over the holidays' },
+        { id: 'faqs', label: 'Common questions' },
       ]} />
 
       {/* Why Christmas hurts */}
@@ -248,6 +268,24 @@ export default function GriefAtChristmasPage() {
         </p>
       </div>
 
+      {/* FAQ */}
+      <h2 id="faqs" className="text-2xl font-bold text-foreground mb-6">Common questions</h2>
+      <div className="space-y-4 mb-12">
+        {FAQ.map((item, i) => (
+          <details key={i} className="bg-card rounded-xl border border-border group">
+            <summary className="p-5 md:p-6 font-semibold text-foreground cursor-pointer list-none flex items-center justify-between gap-4 hover:text-primary transition-colors">
+              <span>{item.q}</span>
+              <svg className="w-5 h-5 text-muted flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div className="px-5 md:px-6 pb-5 md:pb-6">
+              <p className="text-sm text-muted leading-relaxed">{item.a}</p>
+            </div>
+          </details>
+        ))}
+      </div>
+
       <SupportCta />
 
       <RelatedGuides
@@ -269,6 +307,7 @@ export default function GriefAtChristmasPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Coping With Grief at Christmas: Practical Ways to Get Through the Holidays',
             description: 'Practical, compassionate advice for coping with grief at Christmas and getting through the holiday season after a bereavement.',
             datePublished: '2026-03-22',
@@ -292,28 +331,11 @@ export default function GriefAtChristmasPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'FAQPage',
-            mainEntity: [
-              {
-                '@type': 'Question',
-                name: 'How do you cope with grief at Christmas?',
-                acceptedAnswer: { '@type': 'Answer', text: 'Give yourself permission to feel whatever you feel. Keep some traditions if they bring comfort, let go of others. Plan ahead, tell people what you need, and do not pressure yourself to be happy. It is OK to feel sad and to step away from gatherings when you need to.' },
-              },
-              {
-                '@type': 'Question',
-                name: 'Is it normal to find Christmas hard after a bereavement?',
-                acceptedAnswer: { '@type': 'Answer', text: 'Yes, completely normal. Christmas is built around family and togetherness, which makes the absence of someone you love especially painful. Many bereaved people find the build-up harder than the day itself.' },
-              },
-              {
-                '@type': 'Question',
-                name: 'Should I celebrate Christmas after someone dies?',
-                acceptedAnswer: { '@type': 'Answer', text: 'There is no right or wrong answer. Some people find comfort in continuing traditions. Others need to do something completely different. You can keep some parts of your usual Christmas and change others. Do what feels right for you.' },
-              },
-              {
-                '@type': 'Question',
-                name: 'How do I help a grieving person at Christmas?',
-                acceptedAnswer: { '@type': 'Answer', text: 'Say the name of the person who died. Acknowledge the loss openly. Ask specific questions rather than vague offers of help. Include them in plans but do not pressure them. Check in on the days after Christmas too.' },
-              },
-            ],
+            mainEntity: FAQ.map(item => ({
+              '@type': 'Question',
+              name: item.q,
+              acceptedAnswer: { '@type': 'Answer', text: item.a },
+            })),
           }),
         }}
       />

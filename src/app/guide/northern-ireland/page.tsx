@@ -40,7 +40,7 @@ const KEY_DIFFERENCES = [
   },
   {
     england: 'Probate court fee: £526 (estates over £5,000)',
-    ni: 'No probate fee at all if the estate is £10,000 or less; above that a fee applies, set by the Department of Justice',
+    ni: 'No probate fee at all if the estate is £10,000 or less; above that a flat £326, plus an £81 personal application fee if you apply without a solicitor',
   },
   {
     england: 'Coroner system investigates sudden or unexplained deaths',
@@ -48,11 +48,11 @@ const KEY_DIFFERENCES = [
   },
   {
     england: 'Death certificate: £12.50 per copy',
-    ni: 'Death certificate: £15 per copy',
+    ni: 'Death certificate: £8 per copy from the registrar on the day, or £15 for the first copy later from GRONI',
   },
   {
-    england: 'Intestacy: spouse gets first £322,000 plus personal belongings',
-    ni: 'Intestacy: spouse gets personal belongings plus first £250,000, remainder split with children',
+    england: 'Intestacy: spouse gets first £322,000 plus personal belongings; if there are no children the spouse takes everything',
+    ni: 'Intestacy: spouse gets personal belongings plus first £250,000 where there are children; where there are none it is £450,000 and the spouse shares the rest with parents or siblings',
   },
   {
     england: 'Bereavement Support Payment claimed through DWP',
@@ -78,8 +78,8 @@ const SECTIONS = [
         content: 'In Northern Ireland, the death must be registered within 5 days at any district registrar office. Registration is looked after by NISRA (Northern Ireland Statistics and Research Agency) through 26 district offices, and you can go to whichever is easiest for you, not only the one where they died. Take the MCCD, their full name, date and place of birth, last address, occupation, and the date of birth of any surviving husband, wife, or civil partner.',
       },
       {
-        title: 'Death certificates cost £15 each',
-        content: 'Certified copies of the death certificate cost £15 each in Northern Ireland. It is worth ordering at least 5 while you are registering, as they cost more later on. Banks, insurers, solicitors, and pension providers each need an original.',
+        title: 'Death certificates cost £8 each on the day',
+        content: 'This is one place where Northern Ireland genuinely rewards getting it done at the time. Certified copies cost £8 each if you buy them from the registrar while you are registering. Order them later from GRONI instead and the first copy is £15, with further copies £8 each if bought at the same time. So ordering 5 on the day costs £40 rather than £47. Banks, insurers, solicitors, and pension providers each need an original.',
       },
       {
         title: 'Tell Us Once is NOT available in Northern Ireland',
@@ -123,11 +123,11 @@ const SECTIONS = [
       },
       {
         title: 'Probate fees in Northern Ireland',
-        content: 'If the estate is worth £10,000 or less, there is no court fee to pay at all. Above that a fee is payable, based on the net value of the estate. Northern Ireland sets its own fees through the Department of Justice rather than following the England and Wales figure, and they are reviewed periodically, so please check the current Court Fees page on justice-ni.gov.uk before you budget. We would rather send you to the official figure than quote one that may have moved.',
+        content: 'If the estate is assessed at £10,000 or less, there is no court fee to pay at all. Above £10,000 the fee is a flat £326, not a sliding scale. If you are applying yourself rather than through a solicitor, there is a further personal application fee of £81, so most families applying on their own pay £407 in total. These figures come from the Court of Judicature (Non-Contentious Probate) Fees (Amendment) Order (Northern Ireland) 2026 and apply from 1 April 2026; they are already set to rise to £333 plus £83 in April 2027. Northern Ireland sets its own fees through the Department of Justice rather than following the England and Wales figure, so it is always worth checking the current Court Fees page on justice-ni.gov.uk before you budget. You may also be able to get the fee reduced or waived if you are on a low income or certain benefits.',
       },
       {
         title: 'Processing time',
-        content: 'Probate applications in Northern Ireland typically take 8 to 12 weeks to process. Straightforward cases can be faster. If inheritance tax is due or there are complications, it will take longer.',
+        content: 'The Northern Ireland Courts and Tribunals Service does not publish average processing times for probate, so we would rather not quote a figure than give you one we cannot stand behind. Straightforward cases move faster; if inheritance tax is due or there are complications, expect longer. The Probate Office in Belfast (028 9072 4678) will tell you where your application has got to.',
       },
       {
         title: 'Using probate across the UK',
@@ -141,19 +141,19 @@ const SECTIONS = [
     tasks: [
       {
         title: 'Spouse or civil partner with children',
-        content: 'If there was no will, and your loved one is survived by a husband, wife, or civil partner and by children, the surviving partner receives all the personal belongings plus the first £250,000 of the estate. What is left over is split: one-third to the surviving partner, and two-thirds shared equally between the children. If the estate is worth less than £250,000, the surviving partner inherits everything.',
+        content: 'If there was no will, and your loved one is survived by a husband, wife, or civil partner and by children, the surviving partner receives all the personal belongings plus the first £250,000 of the estate. If the estate is worth £250,000 or less, the surviving partner inherits all of it. Above that, how the remainder is split depends on how many children there are, which is a detail often missed: if there is only one child, the surviving partner takes one-half of the remainder and the child takes the other half; if there is more than one child, the surviving partner takes one-third and the children share the other two-thirds equally. A child who died before your loved one but left children of their own still counts for this purpose, and their share passes down to them.',
       },
       {
         title: 'Spouse or civil partner without children',
-        content: 'If there are no children, the surviving husband, wife, or civil partner inherits the whole estate. Parents, brothers and sisters, and other relatives do not receive anything.',
+        content: 'This is where Northern Ireland differs most from England and Wales, and where people are most often given the wrong answer. The surviving husband, wife, or civil partner does not automatically inherit everything. If there are no children but your loved one left parents, or brothers and sisters, or nieces and nephews through a sibling who has died, the surviving partner receives the personal belongings plus the first £450,000, and then one-half of whatever remains. The other half goes to the parents, or if no parent survives, to the brothers and sisters and their children. It is only where there are no children, no parents, and no siblings or their children that the surviving partner inherits the whole estate.',
       },
       {
         title: 'No spouse or civil partner',
-        content: 'If there is no surviving spouse or civil partner, the estate passes in this order: children (equally), then parents (equally), then siblings (equally), then half-siblings, then grandparents, then aunts and uncles, then half-aunts and half-uncles. If no relatives can be found, the estate passes to the Crown.',
+        content: 'If there is no surviving spouse or civil partner, the estate passes in this order: children (equally, with a deceased child\'s share passing to their own children), then parents (equally), then brothers and sisters, with the children of a sibling who died first taking their parent\'s share. Beyond that the law looks for the nearest blood relatives, which in practice usually means grandparents, then aunts and uncles or their children. If no relatives can be found, the estate passes to the Crown through the Crown Solicitor\'s Office. One important Northern Ireland difference: half-brothers and half-sisters are not pushed down the queue as they are in England and Wales. Relatives of the half-blood inherit equally with relatives of the whole blood in the same degree.',
       },
       {
         title: 'Key differences from England',
-        content: 'The main difference is the statutory legacy amount. In England, the surviving spouse receives the first £322,000. In Northern Ireland, it is £250,000. Northern Ireland also has slightly different rules about who qualifies as a relative and in what order they inherit.',
+        content: 'The statutory legacy amounts are different. In England and Wales the surviving spouse receives the first £322,000 where there are children, and the whole estate where there are none. In Northern Ireland it is £250,000 where there are children, and £450,000 plus half the remainder where there are no children but parents or siblings survive. Those Northern Ireland figures were set by the Administration of Estates (Rights of Surviving Spouse or Civil Partner) Order (Northern Ireland) 2007 and have not been raised since 1 January 2008, so they have stood still for well over a decade while the England and Wales figure has risen. Northern Ireland also treats half-blood relatives equally rather than ranking them below full siblings.',
       },
       {
         title: 'Unmarried partners',
@@ -226,11 +226,11 @@ const FAQ = [
   },
   {
     q: 'How much does probate cost in Northern Ireland?',
-    a: 'If the estate is worth £10,000 or less, there is no fee. Above that, the fee is based on the net value of the estate and is set by the Department of Justice, separately from the England and Wales fee. Because these are reviewed periodically, check the current Court Fees page on justice-ni.gov.uk for the figure that applies to you.',
+    a: 'If the estate is assessed at £10,000 or less, there is no fee. Above £10,000 the fee is a flat £326, and if you apply yourself rather than through a solicitor there is a further personal application fee of £81, giving £407 in total. These figures apply from 1 April 2026 and are set by the Department of Justice, separately from the England and Wales fee, so it is worth checking the current Court Fees page on justice-ni.gov.uk before you budget. Northern Ireland is cheaper than England and Wales, where the court fee is £526.',
   },
   {
     q: 'What are the intestacy rules in Northern Ireland?',
-    a: 'If there is no will in Northern Ireland, the surviving husband, wife, or civil partner receives the personal belongings plus the first £250,000. If there are children, what is left is split one-third to the surviving partner and two-thirds to the children. If there are no children, the surviving partner inherits everything. Partners who were not married receive nothing automatically.',
+    a: 'If there is no will in Northern Ireland and there are children, the surviving husband, wife, or civil partner receives the personal belongings plus the first £250,000. What is left is then split one-half to the surviving partner if there is only one child, or one-third if there is more than one child, with the children sharing the rest. If there are no children, the surviving partner does not automatically inherit everything: where parents, brothers or sisters, or their children survive, the partner takes the personal belongings plus the first £450,000 and one-half of the remainder, and the other half goes to those relatives. Only where there are no children, parents or siblings does the surviving partner take the whole estate. Partners who were not married receive nothing automatically.',
   },
   {
     q: 'Is the coroner system in Northern Ireland the same as England?',
@@ -261,7 +261,7 @@ export default function NorthernIrelandGuidePage() {
         When Someone Dies in Northern Ireland
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-4">
-        We are very sorry for your loss. Northern Ireland has its own registration system, probate process, and benefits administration, so it helps to know what to expect. The biggest practical difference is that Tell Us Once is not available, which means contacting each government department yourself. Probate goes through the Probate Office in Belfast rather than online, and the fees are higher than in England and Wales. This guide covers everything specific to Northern Ireland, in plain English.
+        We are very sorry for your loss. Northern Ireland has its own registration system, probate process, and benefits administration, so it helps to know what to expect. The biggest practical difference is that Tell Us Once is not available, which means contacting each government department yourself. Probate goes through the Probate Office in Belfast rather than online, though the court fees are lower than in England and Wales. This guide covers everything specific to Northern Ireland, in plain English.
       </p>
       <Link
         href="/start"
@@ -427,6 +427,7 @@ export default function NorthernIrelandGuidePage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'What to Do When Someone Dies in Northern Ireland',
             description: 'A complete guide to registration, probate, and intestacy rules in Northern Ireland.',
             url: 'https://helpafterloss.co.uk/guide/northern-ireland',

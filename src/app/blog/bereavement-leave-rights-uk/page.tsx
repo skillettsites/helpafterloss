@@ -150,7 +150,7 @@ export default function BereavementLeavePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">The pay rate</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Statutory Parental Bereavement Pay is paid at the lower of £194.32 per week (the 2026 statutory rate) or 90% of average weekly earnings. To receive the statutory pay, employees must have at least 26 weeks of continuous service and meet the minimum earnings threshold. If you do not qualify for statutory pay, you still have the right to take the leave unpaid. Many employers pay full salary during the leave regardless.
+            Statutory Parental Bereavement Pay is paid at the lower of £194.32 per week (the 2026-27 statutory rate) or 90% of average weekly earnings. To receive the statutory pay, employees must have at least 26 weeks of continuous service and earn on average at least £129 a week before tax. The leave itself is a day-one right, so if you do not qualify for the statutory pay you can still take the two weeks unpaid. Many employers pay full salary during the leave regardless.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -208,6 +208,9 @@ export default function BereavementLeavePage() {
           <h3 className="font-semibold text-foreground mb-2">Compassionate leave (unpaid in law, usually paid in practice)</h3>
           <p className="text-sm text-muted leading-relaxed">
             According to CIPD data, most UK employers offer between 3 and 5 days of paid compassionate leave for the loss of an immediate family member (spouse, parent, child, sibling). This is entirely at the employer's discretion and is not required by law. Some organisations offer more for closer relationships and less for extended family. Check your employment contract or staff handbook.
+          </p>
+          <p className="text-sm text-muted leading-relaxed mt-3">
+            Looking ahead, this is expected to change. The Employment Rights Act 2025 creates a wider day-one right to bereavement leave that goes beyond the loss of a child, covering a broader group of close relationships and pregnancy loss before 24 weeks. It is expected to be at least one week and unpaid, and the regulations setting out who qualifies are due in 2027. It does not apply yet, so the position described above is what stands today.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -344,7 +347,7 @@ export default function BereavementLeavePage() {
       <h2 id="faqs" className="text-2xl font-bold text-foreground mb-6">Frequently asked questions</h2>
       <div className="space-y-4 mb-12">
         {[
-          { q: 'How long is bereavement leave in the UK?', a: "There is no standard length. The only statutory right is 2 weeks of Parental Bereavement Leave for the loss of a child under 18. For all other bereavements, it depends entirely on your employer's policy. Most offer 3-5 days for immediate family members." },
+          { q: 'How long is bereavement leave in the UK?', a: "There is no standard length. The only statutory right at present is 2 weeks of Parental Bereavement Leave for the loss of a child under 18. For all other bereavements, it depends entirely on your employer's policy. Most offer 3-5 days for immediate family members. The Employment Rights Act 2025 will introduce a wider day-one right to bereavement leave, expected to be at least one week and unpaid, with regulations due in 2027." },
           { q: 'Is bereavement leave paid in the UK?', a: "Parental Bereavement Leave is paid at £194.32 per week (or 90% of average earnings if lower). For all other bereavements, there is no legal right to paid leave. However, most employers choose to pay compassionate leave as a matter of policy." },
           { q: 'Can my employer refuse bereavement leave?', a: "Your employer cannot refuse Parental Bereavement Leave as it is a statutory right. For other bereavements, your employer can technically refuse paid leave, but they cannot refuse reasonable unpaid time off to deal with a dependant emergency under the Employment Rights Act 1996." },
           { q: 'Do I get bereavement leave for a grandparent?', a: "There is no statutory bereavement leave for grandparents. Most employers offer 1-2 days paid compassionate leave, but this is entirely at their discretion. Check your employment contract or staff handbook." },
@@ -385,6 +388,7 @@ export default function BereavementLeavePage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Bereavement Leave in the UK: Your Rights in 2026',
             description: "A plain-English guide to bereavement leave rights in the UK, covering Parental Bereavement Leave, time off for dependants, and what to do if your employer refuses.",
             datePublished: '2026-03-14',
@@ -423,7 +427,7 @@ export default function BereavementLeavePage() {
             '@context': 'https://schema.org',
             '@type': 'FAQPage',
             mainEntity: [
-              { '@type': 'Question', name: 'How long is bereavement leave in the UK?', acceptedAnswer: { '@type': 'Answer', text: 'There is no standard length. The only statutory right is 2 weeks of Parental Bereavement Leave for the loss of a child under 18. For all other bereavements, it depends entirely on your employer\'s policy. Most offer 3-5 days for immediate family members.' } },
+              { '@type': 'Question', name: 'How long is bereavement leave in the UK?', acceptedAnswer: { '@type': 'Answer', text: 'There is no standard length. The only statutory right at present is 2 weeks of Parental Bereavement Leave for the loss of a child under 18. For all other bereavements, it depends entirely on your employer\'s policy. Most offer 3-5 days for immediate family members. The Employment Rights Act 2025 will introduce a wider day-one right to bereavement leave, expected to be at least one week and unpaid, with regulations due in 2027.' } },
               { '@type': 'Question', name: 'Is bereavement leave paid in the UK?', acceptedAnswer: { '@type': 'Answer', text: 'Parental Bereavement Leave is paid at £194.32 per week (or 90% of average earnings if lower). For all other bereavements, there is no legal right to paid leave. However, most employers choose to pay compassionate leave as a matter of policy.' } },
               { '@type': 'Question', name: 'Can my employer refuse bereavement leave?', acceptedAnswer: { '@type': 'Answer', text: 'Your employer cannot refuse Parental Bereavement Leave as it is a statutory right. For other bereavements, your employer can technically refuse paid leave, but they cannot refuse reasonable unpaid time off to deal with a dependant emergency under the Employment Rights Act 1996.' } },
               { '@type': 'Question', name: 'Do I get bereavement leave for a grandparent?', acceptedAnswer: { '@type': 'Answer', text: 'There is no statutory bereavement leave for grandparents. Most employers offer 1-2 days paid compassionate leave, but this is entirely at their discretion. Check your employment contract or staff handbook.' } },

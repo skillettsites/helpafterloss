@@ -128,6 +128,7 @@ export default async function NotifyOrganisationPage({ params }: PageProps) {
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'Article',
+    image: 'https://helpafterloss.co.uk/opengraph-image',
     headline: `${contact.name} Bereavement: How to Notify, Documents Needed & Timeline`,
     description: `Step-by-step guide to notifying ${contact.name} after a death.`,
     datePublished: '2026-03-14',

@@ -169,6 +169,7 @@ export default function BlogIndexPage() {
             },
             blogPost: POSTS.map(post => ({
               '@type': 'BlogPosting',
+              image: 'https://helpafterloss.co.uk/opengraph-image',
               headline: post.title,
               url: `https://helpafterloss.co.uk${post.href}`,
               datePublished: '2026-03-14',

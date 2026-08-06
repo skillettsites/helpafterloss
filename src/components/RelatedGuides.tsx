@@ -47,7 +47,7 @@ const ALL_GUIDES: Guide[] = [
   { href: '/guides/inheritance-tax', title: 'Inheritance Tax', description: 'Current thresholds, rates, exemptions, and practical ways to reduce the tax bill' },
   { href: '/guides/council-tax-after-death', title: 'Council Tax After Death', description: 'Exemptions for empty properties, single person discount, and what executors need to know' },
   { href: '/guides/subscriptions-after-death', title: 'Subscriptions & Direct Debits', description: 'How to find and cancel all subscriptions, direct debits, and standing orders' },
-  { href: '/guides/driving-after-death', title: 'Cars & DVLA', description: 'DVLA notification, car insurance (void immediately), V5C transfer, and selling the vehicle' },
+  { href: '/guides/driving-after-death', title: 'Cars & DVLA', description: 'DVLA notification, checking the car insurance, V5C transfer, and selling the vehicle' },
   { href: '/guides/scams-after-bereavement', title: 'Bereavement Scams', description: 'Common scams targeting bereaved families and how to protect yourself and the estate' },
   { href: '/guides/cohabiting-partners', title: 'Unmarried Partners', description: 'Your rights when an unmarried partner dies, the cohabitation trap, and how to protect yourself' },
   { href: '/guides/finding-accounts-after-death', title: 'Finding Their Accounts', description: 'How to discover all bank accounts, pensions, and policies the person held' },

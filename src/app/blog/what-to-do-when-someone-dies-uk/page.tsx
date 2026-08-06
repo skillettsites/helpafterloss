@@ -24,6 +24,25 @@ export const metadata: Metadata = {
   },
 };
 
+const FAQ = [
+  {
+    q: 'What is the first thing to do when someone dies?',
+    a: 'If the death was expected and happened at home with a care plan in place, call the GP surgery or out-of-hours service. If it was unexpected or unattended, call 999. There is no rush to do anything else in the first few hours. The person does not need to be moved immediately, and you can stay with them for as long as you need to.',
+  },
+  {
+    q: 'How long do I have to register a death in the UK?',
+    a: 'In England and Wales you have 5 days to register the death, and the 5 days run from when you receive the medical examiner\'s confirmation and the medical certificate of cause of death, not from the day the person died. In Scotland you have 8 days, and in Northern Ireland 5 days. If the coroner is involved, registration waits until they have issued the paperwork, and the register office will tell you when to come in.',
+  },
+  {
+    q: 'What is Tell Us Once and how does it work?',
+    a: 'Tell Us Once is a free government service that lets you report a death to most government departments in a single phone call or online session. It notifies the DWP, HMRC, the Passport Office, the DVLA and your local council. The registrar gives you a reference number when you register the death, and you use that number to access the service. It is available in England, Wales and Scotland, but not in Northern Ireland.',
+  },
+  {
+    q: 'Do I need probate when someone dies?',
+    a: 'Not always. Probate is usually needed if the person owned property in their sole name, had savings or investments above their bank\'s probate threshold, or held certain types of shares. The threshold varies from bank to bank, typically somewhere between £5,000 and £50,000. Joint bank accounts and jointly owned property usually pass automatically to the surviving owner without probate. The application fee is £526 for estates worth more than £5,000, and nothing for estates below that.',
+  },
+];
+
 export default function WhatToDoWhenSomeoneDiesPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
@@ -63,6 +82,7 @@ export default function WhatToDoWhenSomeoneDiesPage() {
         { id: 'probate', label: 'Probate and the estate' },
         { id: 'longer-term', label: 'Longer-term tasks' },
         { id: 'looking-after-yourself', label: 'Looking after yourself' },
+        { id: 'faqs', label: 'Common questions' },
       ]} />
 
       {/* First hours */}
@@ -118,13 +138,13 @@ export default function WhatToDoWhenSomeoneDiesPage() {
       <h2 id="register-death" className="text-2xl font-bold text-foreground mb-6">Registering the death</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-4">
         <p className="text-sm text-muted leading-relaxed mb-4">
-          You must register the death within 5 days in England and Wales (8 days in Scotland). Registration is free. You will need the MCCD and should bring the birth certificate of the person who died, their NHS number, and details of their address. For a full breakdown of everything to bring, see our guide on <Link href="/blog/registering-a-death-uk" className="text-primary hover:underline">registering a death in the UK</Link>.
+          In England and Wales you have 5 days to register the death, and those 5 days run from when you receive the medical examiner&apos;s confirmation and the medical certificate of cause of death, not from the day they died. In Scotland you have 8 days. Registration is free. You will need the MCCD and should bring the birth certificate of the person who died, their NHS number, and details of their address. For a full breakdown of everything to bring, see our guide on <Link href="/blog/registering-a-death-uk" className="text-primary hover:underline">registering a death in the UK</Link>.
         </p>
         <p className="text-sm text-muted leading-relaxed mb-4">
           You can register the death at any register office in England and Wales, but if you register in a different district to where the death occurred, it will take a few extra days because the paperwork has to be forwarded. Most register offices require an appointment. Book one by calling the local council or visiting their website.
         </p>
         <p className="text-sm text-muted leading-relaxed mb-4">
-          At the appointment, the registrar will ask you questions about the person who has died: their full name, date and place of birth, last address, occupation, marital status, and whether they were receiving a pension or benefits. The registrar will give you a certified copy of the death certificate (currently £11 each). We recommend ordering at least 3 or 4 copies, as many organisations require an original. See our guide on <Link href="/blog/death-certificate-how-many-copies" className="text-primary hover:underline">how many death certificates to order</Link>.
+          At the appointment, the registrar will ask you questions about the person who has died: their full name, date and place of birth, last address, occupation, marital status, and whether they were receiving a pension or benefits. The registrar will give you a certified copy of the death certificate (£12.50 each in England and Wales). It is worth ordering at least 5 copies, as many organisations require an original. See our guide on <Link href="/blog/death-certificate-how-many-copies" className="text-primary hover:underline">how many death certificates to order</Link>.
         </p>
         <p className="text-sm text-muted leading-relaxed">
           The registrar will also give you the green form (Certificate for Burial or Cremation), which your funeral director needs before the funeral can go ahead.
@@ -154,7 +174,7 @@ export default function WhatToDoWhenSomeoneDiesPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Types of funeral</h3>
           <p className="text-sm text-muted leading-relaxed">
-            The main options are: a traditional funeral with a service (average cost around £4,000 to £5,000 in 2026), a direct cremation with no service (from around £900 to £1,500), a woodland or green burial, or a DIY funeral organised without a funeral director. You should check whether the person left any wishes about their funeral, either in their will, a pre-paid funeral plan, or informally with family. Our <Link href="/guides/funeral-options" className="text-primary hover:underline">funeral options guide</Link> explains every type in detail.
+            The main options are: a traditional funeral with a service (averaging £4,510 in the SunLife Cost of Dying Report 2026), a direct cremation with no service (from around £1,095, with a UK average of £1,628), a woodland or green burial, or a DIY funeral organised without a funeral director. You should check whether the person left any wishes about their funeral, either in their will, a pre-paid funeral plan, or informally with family. Our <Link href="/guides/funeral-options" className="text-primary hover:underline">funeral options guide</Link> explains every type in detail.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -183,7 +203,7 @@ export default function WhatToDoWhenSomeoneDiesPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Council tax</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If the person lived alone, you may be entitled to a council tax exemption. A property left empty after a death is exempt from council tax for up to six months after probate is granted (Class F exemption). If you now live alone in a shared property, you may qualify for the 25% single person discount. Our <Link href="/guides/council-tax-after-death" className="text-primary hover:underline">council tax guide</Link> explains the rules in full.
+            If the person lived alone, you may be entitled to a council tax exemption. A property left empty since the death is exempt from council tax until six months after the grant of probate in England (twelve months in Wales), and there is no time limit at all while you are still waiting for the grant. This is the Class F exemption. If you now live alone in a shared property, you may qualify for the 25% single person discount. Our <Link href="/guides/council-tax-after-death" className="text-primary hover:underline">council tax guide</Link> explains the rules in full.
           </p>
         </div>
       </div>
@@ -200,7 +220,7 @@ export default function WhatToDoWhenSomeoneDiesPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Benefits you may be entitled to</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If you have lost a spouse or civil partner, you may be able to claim Bereavement Support Payment (a lump sum of up to £3,500 plus up to 18 monthly payments of £350). You must claim within 21 months of the death. If you have dependent children, the amounts are higher. Our <Link href="/guides/bereavement-benefits" className="text-primary hover:underline">bereavement benefits guide</Link> covers every available benefit and how to claim.
+            If you have lost a spouse or civil partner, you may be able to claim Bereavement Support Payment (a lump sum of up to £3,500 plus up to 18 monthly payments of £350). The timing matters: claim within 3 months and you get the lump sum and all 18 monthly payments, and after 12 months the lump sum is lost altogether, though you can still get some monthly payments up to 21 months. If you have dependent children, the amounts are higher. Our <Link href="/guides/bereavement-benefits" className="text-primary hover:underline">bereavement benefits guide</Link> covers every available benefit and how to claim.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -262,6 +282,24 @@ export default function WhatToDoWhenSomeoneDiesPage() {
         </ul>
       </div>
 
+      {/* FAQ */}
+      <h2 id="faqs" className="text-2xl font-bold text-foreground mb-6">Common questions</h2>
+      <div className="space-y-4 mb-12">
+        {FAQ.map((item, i) => (
+          <details key={i} className="bg-card rounded-xl border border-border group">
+            <summary className="p-5 md:p-6 font-semibold text-foreground cursor-pointer list-none flex items-center justify-between gap-4 hover:text-primary transition-colors">
+              <span>{item.q}</span>
+              <svg className="w-5 h-5 text-muted flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div className="px-5 md:px-6 pb-5 md:pb-6">
+              <p className="text-sm text-muted leading-relaxed">{item.a}</p>
+            </div>
+          </details>
+        ))}
+      </div>
+
       {/* Cross-links to tools */}
       <SupportCta />
       <div className="bg-primary-light rounded-lg p-4 mb-8">
@@ -289,6 +327,7 @@ export default function WhatToDoWhenSomeoneDiesPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'What to Do When Someone Dies: Complete UK Step-by-Step Checklist (2026)',
             description: 'A complete step-by-step checklist of what to do when someone dies in the UK, from the first hours to months later.',
             datePublished: '2026-03-22',
@@ -312,28 +351,11 @@ export default function WhatToDoWhenSomeoneDiesPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'FAQPage',
-            mainEntity: [
-              {
-                '@type': 'Question',
-                name: 'What is the first thing to do when someone dies?',
-                acceptedAnswer: { '@type': 'Answer', text: 'If the death was expected and happened at home with a care plan in place, call the GP surgery or out-of-hours service. If it was unexpected or unattended, call 999. There is no rush to do anything else in the first few hours. The body does not need to be moved immediately.' },
-              },
-              {
-                '@type': 'Question',
-                name: 'How long do I have to register a death in the UK?',
-                acceptedAnswer: { '@type': 'Answer', text: 'You must register the death within 5 days in England, Wales, and Northern Ireland, or within 8 days in Scotland. If the coroner is involved, registration may be delayed until their investigation is complete, but this does not affect the deadline for you to make the appointment.' },
-              },
-              {
-                '@type': 'Question',
-                name: 'What is Tell Us Once and how does it work?',
-                acceptedAnswer: { '@type': 'Answer', text: 'Tell Us Once is a free government service that lets you report a death to most government departments in a single phone call or online session. It notifies the DWP, HMRC, Passport Office, DVLA, council, and the local authority. You get a reference number when you register the death, then use it to access the Tell Us Once service.' },
-              },
-              {
-                '@type': 'Question',
-                name: 'Do I need probate when someone dies?',
-                acceptedAnswer: { '@type': 'Answer', text: 'Not always. Probate is needed if the deceased owned property in their sole name, had savings or investments above the bank\'s probate threshold (typically £50,000), or held certain types of shares. Joint bank accounts and jointly owned property usually pass automatically to the surviving owner without probate.' },
-              },
-            ],
+            mainEntity: FAQ.map(item => ({
+              '@type': 'Question',
+              name: item.q,
+              acceptedAnswer: { '@type': 'Answer', text: item.a },
+            })),
           }),
         }}
       />

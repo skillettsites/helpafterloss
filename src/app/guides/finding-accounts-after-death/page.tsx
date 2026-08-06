@@ -164,7 +164,7 @@ export default function FindingAccountsAfterDeathPage() {
         <ul className="space-y-3 text-sm text-muted">
           <li className="flex gap-3">
             <span className="text-primary font-bold flex-shrink-0">1.</span>
-            <span><strong className="text-foreground">Certified death certificate</strong> (at least 2 copies). Required by almost every institution. Order extra copies when registering the death (£12.50 each in England and Wales (£15 in Scotland)).</span>
+            <span><strong className="text-foreground">Certified death certificates.</strong> Required by almost every institution. Order around 5 to 10 copies when registering the death, depending on how many accounts and policies there were. They cost £12.50 each in England and Wales, around £15 in Scotland (set locally, so check with the registrar), and £8 in Northern Ireland at the time of registration.</span>
           </li>
           <li className="flex gap-3">
             <span className="text-primary font-bold flex-shrink-0">2.</span>
@@ -327,6 +327,7 @@ export default function FindingAccountsAfterDeathPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Finding All Their Accounts After Death',
             description: 'How to find every bank account, pension, insurance policy, and subscription the deceased held. Free and paid methods for executors.',
             url: 'https://helpafterloss.co.uk/guides/finding-accounts-after-death',

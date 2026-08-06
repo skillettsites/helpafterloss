@@ -66,15 +66,15 @@ const SECTIONS: ChecklistSection[] = [
       },
       {
         task: 'Register the death at the local register office',
-        note: 'Legally required within 5 days in England, Wales, and Northern Ireland, or 8 days in Scotland. Take the MCCD with you, along with their NHS card, passport, or driving licence if you have them to hand.',
+        note: 'Legally required within 5 days of getting the confirmation in England, Wales, and Northern Ireland, or 8 days in Scotland. The clock starts from that confirmation, not the date of death. Take the MCCD with you, along with their NHS card, passport, or driving licence if you have them to hand.',
       },
       {
-        task: 'Order at least 5 certified copies of the death certificate',
-        note: 'You can order these while you are registering. Each costs £12.50 in England and Wales (£15 in Scotland). Banks, insurers, and solicitors each need an original, so order a few more than you think you will need.',
+        task: 'Order around 5 to 10 certified copies of the death certificate',
+        note: 'You can order these while you are registering. Each costs £12.50 in England and Wales, around £15 in Scotland (set locally, so check with the registrar), and £8 in Northern Ireland at the time of registration. Banks, insurers, and solicitors each need an original, so order a few more than you think you will need.',
       },
       {
         task: 'Use the Tell Us Once service',
-        note: 'The registrar will offer this to you. It notifies DWP, HMRC, DVLA, Passport Office, and your local council in one go. Use it within 28 days. Not available in Northern Ireland.',
+        note: 'The registrar will offer this to you. It notifies DWP, HMRC, DVLA, Passport Office, and your local council in one go. Use it within 28 days of getting your unique reference number. Not available in Northern Ireland.',
       },
     ],
   },
@@ -146,7 +146,7 @@ const SECTIONS: ChecklistSection[] = [
       },
       {
         task: 'Set up Royal Mail post redirection',
-        note: 'Redirect post to the executor\'s address. Available at royalmail.com, costs from £36 for 3 months.',
+        note: 'Redirect post to the executor\'s address. Available at royalmail.com, from £45 for 3 months, with a discounted concession rate if you receive Universal Credit or Pension Credit.',
       },
     ],
   },
@@ -374,6 +374,7 @@ export default function PrintChecklistPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Printable Checklist: What to Do When Someone Dies',
             description: 'A comprehensive printable bereavement checklist covering every task from the first 24 hours through to the distribution of the estate.',
             datePublished: '2026-03-14',

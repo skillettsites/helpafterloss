@@ -107,11 +107,11 @@ const SECTIONS = [
       },
       {
         title: 'Apply for Bereavement Support Payment',
-        content: 'If your spouse or civil partner died and you are under State Pension age: higher rate (with children) gives £3,500 lump sum plus £350/month for 18 months. Standard rate: £2,500 plus £100/month. Claim within 3 months for full backdating. You can claim by calling 0800 151 2012 or online at gov.uk.',
+        content: 'If your spouse or civil partner died and you are under State Pension age: higher rate (with children) gives £3,500 lump sum plus £350/month for 18 months. Standard rate: £2,500 plus £100/month. Claim within 3 months for the lump sum and all 18 monthly payments; after 12 months the lump sum is lost, though some monthly payments can still be claimed up to 21 months. You can claim by calling 0800 151 2012 or online at gov.uk.',
       },
       {
         title: 'Redirect post',
-        content: 'Setting up Royal Mail post redirection from their address to yours costs £37 for 3 months, £52 for 6 months, or £73 for 12 months. It is one of the most useful things you can do, because it catches letters from organisations you may not know about, including insurance policies, investments, and subscriptions.',
+        content: 'Setting up Royal Mail post redirection from their address to yours costs £45 for 3 months, £66.50 for 6 months, or £95 for 12 months, and there is a discounted concession rate if you receive Universal Credit or Pension Credit, so do ask. It is one of the most useful things you can do, because it catches letters from organisations you may not know about, including insurance policies, investments, and subscriptions.',
       },
     ],
   },
@@ -121,7 +121,7 @@ const SECTIONS = [
     tasks: [
       {
         title: 'Apply for probate',
-        content: 'Probate (a Grant of Probate if there is a will, or Letters of Administration if there is not) gives you the legal right to deal with the estate. You value the estate, complete an inheritance tax form, and submit the application. The court fee is £526 for estates over £5,000, and processing takes around 12-16 weeks. You can apply online at gov.uk/applying-for-probate.',
+        content: 'Probate (a Grant of Probate if there is a will, or Letters of Administration if there is not) gives you the legal right to deal with the estate. You value the estate, complete an inheritance tax form, and submit the application. The court fee is £526 for estates over £5,000, and the grant usually arrives within 12 weeks of applying. You can apply online at gov.uk/applying-for-probate.',
       },
       {
         title: 'Check inheritance tax',
@@ -129,7 +129,7 @@ const SECTIONS = [
       },
       {
         title: 'Place statutory notices',
-        content: 'Placing a notice in The London Gazette (and a local newspaper) protects you personally from debts nobody knew about. It costs around £80-£150 and gives creditors 2 months to come forward, so wait at least 2 months before sharing out any assets. It is not strictly compulsory, but we would strongly encourage it.',
+        content: 'Placing a notice in The London Gazette (and a local newspaper) protects you personally from debts nobody knew about. A deceased estates notice costs £96.55 plus VAT, so around £116, and a local newspaper notice is charged separately. It gives creditors 2 months to come forward, so wait at least 2 months before sharing out any assets. It is not strictly compulsory, but we would strongly encourage it.',
       },
     ],
   },
@@ -409,7 +409,7 @@ export default function GuidePage() {
         <p className="text-sm text-muted mt-3">Free. No sign-up required. Takes about 3 minutes.</p>
       </div>
 
-      <PageDisclaimer lastReviewed="March 2026" jurisdiction="all-uk" />
+      <PageDisclaimer lastReviewed="August 2026" jurisdiction="all-uk" />
 
       <FreeChecklistBanner variant="bottom" />
       <RelatedGuides currentPath="/guide" guides={['/checklist', '/template-letters', '/deadline-tracker', '/print-checklist']} />

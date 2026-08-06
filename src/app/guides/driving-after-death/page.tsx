@@ -25,27 +25,31 @@ export const metadata: Metadata = {
 const SECTIONS = [
   {
     title: 'Notifying DVLA about the driving licence',
-    content: 'If you used Tell Us Once when registering the death, DVLA will be notified automatically and you do not need to do anything further about the driving licence. If you did not use Tell Us Once, post the driving licence to DVLA, Swansea, SA99 1AB with a covering letter stating the person\'s full name, date of birth, date of death, and driving licence number. You do not need to send the death certificate. DVLA will process this within about 4 weeks and send a confirmation letter.',
+    content: 'If you used Tell Us Once when registering the death, DVLA is notified automatically. That cancels the driving licence, removes the person as the registered keeper of up to 5 vehicles, and ends the vehicle tax. You still have to tell DVLA separately if you sell a vehicle, keep a vehicle (even temporarily, and even if you are not using it), or want to keep a personalised registration number. If you did not use Tell Us Once, there is no form to fill in: simply write to DVLA, Swansea, SA99 1AB. Your letter must include your relationship to the person who died, the date they died, and their name, address and date of birth. Include their driving licence with the letter if you have it. You do not need to send a death certificate.',
   },
   {
     title: 'Car insurance: act immediately',
-    content: 'This one is urgent. Their car insurance policy becomes void from the moment they pass away. If anyone drives the vehicle, they are driving without insurance, which is a criminal offence carrying a minimum £300 fine and 6 penalty points. You have three options: add the vehicle to your own existing insurance policy (call your insurer), take out a temporary short-term policy (available from companies like Cuvva or Tempcover), or SORN the vehicle immediately so it is not driven or kept on a public road.',
+    content: 'This one is worth doing early. Please do not assume the car is still insured. Some insurers keep cover running for a short period, and many follow guidance from the Association of British Insurers to keep named drivers covered until renewal, but that is guidance rather than law, and others end the policy at the date of death. So the vehicle should not be driven until you have checked with the insurer or arranged new cover. Anyone who drives it in the meantime is driving uninsured, which can mean a fixed penalty of £300 and 6 penalty points, an unlimited fine and disqualification in court, and the police seizing the vehicle. You have three options: add the vehicle to your own existing insurance policy (call your insurer), take out a temporary short-term policy (available from companies like Cuvva or Tempcover), or SORN the vehicle so it is kept off the public road. Ring the insurer either way, as there may be a refund of premium due to the estate.',
   },
   {
     title: 'Transferring the V5C (logbook)',
-    content: 'If you want to keep the vehicle, you need to transfer the V5C registration document into your name. Complete section 2 of the V5C (the "new keeper" section) and send it to DVLA with a covering letter explaining the circumstances. There is no fee for a bereavement transfer. DVLA will issue a new V5C in your name within 4-6 weeks. In the meantime, keep the green "new keeper" slip from the V5C as proof of your entitlement to the vehicle.',
+    content: 'If you want to keep the vehicle, fill in section 2 of the V5C if it is the newer style with multi-coloured numbered blocks on the front, or section 6 if it is the older style. Tear off and keep the green "new keeper" slip. Write a letter explaining your relationship to the person who died, the date they died, and who should be paid any vehicle tax refund, then send it with the V5C to the Sensitive Casework Team, DVLA, Swansea, SA99 1ZZ. There is no fee for this. DVLA will cancel the existing vehicle tax and any direct debits, send a cheque for the refund, and issue a new V5C. If the log book cannot be found, fill in form V62 instead, which costs £25.',
+  },
+  {
+    title: 'Vehicle tax cannot be transferred',
+    content: 'This is the step people most often miss. Vehicle tax cannot be transferred from one person to another, so the tax ends when DVLA is told about the death, even if you are keeping the car in the family. Use the green new keeper slip to tax the vehicle in your own name before you drive it on a public road, and do not wait for the new V5C to arrive. If you would rather not tax it yet, include form V890 with your letter to declare it off the road (SORN). You can be prosecuted if the vehicle is used on a public road before it is taxed in your own name and insured.',
   },
   {
     title: 'SORN (Statutory Off Road Notification)',
-    content: 'If the car will not be driven or kept on a public road, make a SORN. You can do this online at gov.uk, by phone on 0300 123 4321, or by post. SORN is free and means the vehicle does not need insurance or road tax while it is off the road. The vehicle must be kept on private land (a driveway, garage, or private car park), not on a public road.',
+    content: 'If the car will not be driven or kept on a public road, make a SORN. You can do this online at gov.uk, by phone on 0300 123 4321, or by including form V890 with your letter to the Sensitive Casework Team. SORN is free and means the vehicle does not need vehicle tax while it is off the road. The vehicle must be kept on private land (a driveway, garage, or private car park), not on a public road.',
   },
   {
     title: 'Vehicle tax (road tax) refund',
-    content: 'If the vehicle has remaining tax, DVLA will automatically refund any full calendar months remaining once the vehicle is either transferred to a new keeper, SORNed, or scrapped. The refund is sent to the registered keeper\'s address by cheque. If you have changed the address, let DVLA know so the refund reaches you.',
+    content: 'DVLA automatically refunds any full calendar months of remaining vehicle tax once it is told the vehicle has been sold or transferred, taken off the road, scrapped or written off. The refund comes as a cheque, sent to the name and address on the vehicle log book, which is why your letter should say who the refund should be paid to. Contact DVLA if the cheque has not arrived after 8 weeks. If it arrives in the wrong name, send it back to the Refund Section, DVLA, Swansea, SA99 1AL and tell them the right name.',
   },
   {
     title: 'Selling the vehicle',
-    content: 'The executor can sell the vehicle as part of the estate. Complete the V5C to transfer ownership to the buyer in the usual way. The sale price forms part of the estate value for probate purposes. Get the vehicle valued (a dealer quote, online valuation, or similar car listings will do) and keep a record of the valuation and the sale price. If the vehicle is worth more than a few hundred pounds, it should be included on the probate application.',
+    content: 'The executor can sell the vehicle as part of the estate. Write to the Sensitive Casework Team, DVLA, Swansea, SA99 1ZZ with your relationship to the person who died, the date they died, and who should be paid any vehicle tax refund, and send the relevant part of the V5C: section 2 or 6 for a private buyer (give them the green slip), or the yellow motor trade section if you are selling to a dealer. The tax does not go with the car, so the buyer must tax it in their own name before driving it. The sale price forms part of the estate value for probate purposes, so keep a record of the valuation and the sale price.',
   },
   {
     title: 'MOT',
@@ -53,38 +57,42 @@ const SECTIONS = [
   },
   {
     title: 'Motability vehicles',
-    content: 'If they had a vehicle through the Motability scheme, it must be returned. Motability will contact you or you can call them on 0300 456 4566. They allow 6 weeks from the date of death to arrange alternative transport before the vehicle needs to be returned. Any advance payment made when the vehicle was ordered is not refundable, but Motability may make a goodwill payment in some cases.',
+    content: 'If they had a vehicle through the Motability scheme, it must be returned. Call Motability on 0300 456 4566 before you use Tell Us Once or contact DVLA, because telling DVLA first ends the vehicle tax and the car then cannot be driven at all. Once Motability has been told, other named drivers can use the car for up to two weeks to sort out practical matters, after which it goes back to a dealer. Scooters and powered wheelchairs must stop being used straight away and be stored safely until they are collected.',
   },
   {
     title: 'Personalised number plates',
-    content: 'If they had a private or personalised registration plate, the executor can keep it. You need to apply to transfer the plate to a retention certificate (form V317, £80 fee) or assign it directly to another vehicle. If no action is taken, the personalised plate stays with the vehicle when it is sold or scrapped. Act before disposing of the vehicle if you want to keep the plate.',
+    content: 'If they had a private or personalised registration plate, the executor can keep it, but you have to tell DVLA separately and do it before the vehicle is sold or scrapped. Apply on form V317 to put the number on a retention certificate, which costs £80. The V778 retention document you get back gives the right to assign the number for the next 10 years. If no action is taken, the personalised plate stays with the vehicle when it is sold or scrapped.',
+  },
+  {
+    title: 'If you are in Northern Ireland',
+    content: 'The process is different. Tell Us Once is not available in Northern Ireland, so everything has to be done separately. Send the driving licence, with a covering letter giving the person\'s name, address and date of birth or driver number, the date they died, and your relationship to them, to DVA, Driver Licensing Division, Castlerock Road, Waterside, Coleraine, BT51 3TB. You do not need to send the death certificate. Anything to do with the vehicle itself still goes to DVLA in Swansea, SA99 1ZZ, so it is worth telling both.',
   },
 ];
 
 const FAQ = [
   {
     q: 'How do I notify DVLA of a death?',
-    a: 'The easiest way is through Tell Us Once, which notifies DVLA automatically when you register the death. If you did not use Tell Us Once, post the driving licence to DVLA, Swansea, SA99 1AB with a covering letter including the date of death. You do not need to send the death certificate.',
+    a: 'The easiest way is through Tell Us Once, which notifies DVLA automatically when you register the death. If you did not use Tell Us Once, there is no form to complete. Write to DVLA, Swansea, SA99 1AB, giving your relationship to the person who died, the date they died, and their name, address and date of birth. Include their driving licence if you have it. You do not need to send the death certificate.',
   },
   {
     q: 'Can I drive their car?',
-    a: 'Not under their insurance policy. The policy becomes void at the moment of death, meaning anyone driving the car is uninsured. You need to either add the car to your own insurance, take out a temporary policy, or SORN the vehicle. Driving without insurance is a criminal offence.',
+    a: 'Not without checking first. Please do not assume the car is still insured. Some insurers keep cover running for a short period, and many follow guidance from the Association of British Insurers to keep named drivers covered until renewal, but that is guidance rather than law, and some policies end at the date of death. One call to the insurer will tell you exactly where you stand, and driving on an assumption is not worth the risk. You need to add the car to your own insurance or take out a temporary policy, and tax it in your own name, or else keep it off the road with a SORN. Driving uninsured or untaxed can be prosecuted.',
   },
   {
     q: 'What happens to car insurance when someone dies?',
-    a: 'The policy ends immediately. Contact the insurance company to cancel and ask about any refund for the remaining premium. If they were paying monthly by direct debit, the insurer may try to collect further payments, so cancel the direct debit as well. Any named drivers on the policy also lose their cover.',
+    a: 'Cover for other drivers stops, and many insurers cancel the policy or allow only a short grace period once they are told. Contact the insurance company to tell them and ask about any refund for the remaining premium. If they were paying monthly by direct debit, the insurer may try to collect further payments, so cancel the direct debit as well. Named drivers on the policy should not rely on it either.',
   },
   {
     q: 'How do I transfer a car into my name after a death?',
-    a: 'Complete section 2 of the V5C (logbook), write a covering letter explaining the bereavement, and post both to DVLA. There is no fee. DVLA will issue a new V5C in your name within 4-6 weeks. Keep the green "new keeper" slip as temporary proof of ownership.',
+    a: 'Fill in section 2 of the V5C (or section 6 on an older log book), keep the green "new keeper" slip, and send the V5C with a letter giving your relationship to the person who died, the date they died, and who should receive any tax refund, to the Sensitive Casework Team, DVLA, Swansea, SA99 1ZZ. There is no fee. You must then tax the vehicle in your own name using the green slip before driving it, as vehicle tax cannot be transferred.',
   },
   {
     q: 'Do I get a refund on road tax?',
-    a: 'Yes. DVLA automatically refunds any full calendar months of remaining vehicle tax when the vehicle is transferred, SORNed, or scrapped. The refund is sent by cheque to the registered keeper\'s address.',
+    a: 'Yes. DVLA automatically refunds any full calendar months of remaining vehicle tax once it is told the vehicle has been sold, transferred, taken off the road or scrapped. The refund comes by cheque, sent to the name and address on the log book, so say in your letter who it should be paid to.',
   },
   {
     q: 'What happens to a Motability car when someone dies?',
-    a: 'It must be returned. Motability gives you 6 weeks from the date of death to arrange alternative transport. Call them on 0300 456 4566 to make arrangements. Advance payments are generally not refundable, though goodwill payments may be made.',
+    a: 'It must be returned. Call Motability on 0300 456 4566 before using Tell Us Once or contacting DVLA, because the vehicle tax ends once DVLA is told and the car then cannot be driven. After you have told Motability, other named drivers can use the car for up to two weeks before it goes back to a dealer.',
   },
 ];
 
@@ -99,7 +107,7 @@ export default function DrivingAfterDeathPage() {
         Cars, Driving Licences & DVLA After a Death
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        Sorting out your loved one's car means dealing with several different organisations, and one or two of these steps genuinely cannot wait. The most urgent is car insurance, which is void from the moment they pass away.
+        Sorting out your loved one's car means dealing with several different organisations, and one or two of these steps genuinely cannot wait. The most urgent is insurance, because a motor policy does not carry over to let anyone else drive the car.
       </p>
 
       <GuideImage
@@ -112,23 +120,23 @@ export default function DrivingAfterDeathPage() {
       {/* Urgent warning */}
       <div className="bg-warm border border-warm-border rounded-xl p-5 mb-10">
         <p className="text-sm text-amber-800 leading-relaxed">
-          <strong>Urgent:</strong> Their car insurance stopped being valid the moment they passed away. If anyone drives the vehicle without arranging separate insurance, they are committing a criminal offence. Sort insurance or SORN the vehicle before anything else.
+          <strong>Worth checking first:</strong> please do not assume the car is still insured, because what happens to cover after the policyholder dies varies from one insurer to the next. The vehicle tax cannot be transferred to anyone else either. Do not drive it until it is insured and taxed in the new keeper&apos;s name, or keep it off the road with a SORN.
         </p>
       </div>
 
       {/* Quick summary stats */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
         <div className="bg-card rounded-xl border border-border p-5 text-center">
-          <p className="text-2xl font-bold text-primary">4-6 weeks</p>
-          <p className="text-sm text-muted mt-1">For DVLA to process a V5C transfer</p>
-        </div>
-        <div className="bg-card rounded-xl border border-border p-5 text-center">
           <p className="text-2xl font-bold text-primary">Free</p>
-          <p className="text-sm text-muted mt-1">No fee for bereavement V5C transfers or SORN</p>
+          <p className="text-sm text-muted mt-1">No fee to send the V5C to DVLA, or to make a SORN</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-5 text-center">
-          <p className="text-2xl font-bold text-primary">6 weeks</p>
-          <p className="text-sm text-muted mt-1">Grace period for Motability vehicle returns</p>
+          <p className="text-2xl font-bold text-primary">£25</p>
+          <p className="text-sm text-muted mt-1">Fee for form V62 if the log book is missing</p>
+        </div>
+        <div className="bg-card rounded-xl border border-border p-5 text-center">
+          <p className="text-2xl font-bold text-primary">2 weeks</p>
+          <p className="text-sm text-muted mt-1">To return a Motability vehicle once you have told them</p>
         </div>
       </div>
 
@@ -198,6 +206,7 @@ export default function DrivingAfterDeathPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Cars, Driving Licences & DVLA After a Death',
             description: 'What to do about the deceased\'s car, driving licence, insurance, road tax, and DVLA notification after a death.',
             url: 'https://helpafterloss.co.uk/guides/driving-after-death',

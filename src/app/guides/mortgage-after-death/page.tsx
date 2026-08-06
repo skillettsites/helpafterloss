@@ -71,7 +71,7 @@ export default function MortgageAfterDeathPage() {
         </div>
         <div className="bg-card rounded-xl border border-border p-5 text-center">
           <p className="text-2xl font-bold text-primary">6 months</p>
-          <p className="text-sm text-muted mt-1">Council tax exemption on empty property after probate</p>
+          <p className="text-sm text-muted mt-1">Council tax exemption on an empty property, from the grant, in England</p>
         </div>
       </div>
 
@@ -214,7 +214,7 @@ export default function MortgageAfterDeathPage() {
         ))}
       </div>
 
-      <PageDisclaimer lastReviewed="March 2026" jurisdiction="england-wales" />
+      <PageDisclaimer lastReviewed="August 2026" jurisdiction="england-wales" />
 
       <RelatedGuides currentPath="/guides/mortgage-after-death" guides={['/guides/property-after-death', '/guides/life-insurance-claim', '/guides/inheritance-tax', '/guides/executor-duties']} />
 
@@ -260,6 +260,7 @@ export default function MortgageAfterDeathPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'What Happens to a Mortgage When Someone Dies? (UK Guide 2026)',
             description: 'What happens to a mortgage when someone dies in the UK. Joint mortgages, sole mortgages, insurance, and your options for the property.',
             url: 'https://helpafterloss.co.uk/guides/mortgage-after-death',

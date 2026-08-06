@@ -48,7 +48,7 @@ const CATEGORIES = [
   },
   {
     title: 'Insurance policies',
-    items: 'Car insurance, home insurance, travel insurance, pet insurance, life insurance, private medical insurance (Bupa, AXA, Aviva). Contact each provider. Some policies may have a payout to the estate, particularly life insurance and death-in-service benefits. Do not cancel life insurance without checking for a claim first.',
+    items: 'Car insurance, home insurance, travel insurance, pet insurance, life insurance, private medical insurance (Bupa, AXA, Aviva). Contact each provider. A motor policy does not carry over to other drivers when the policyholder dies, so nobody should drive the car until new cover is arranged. Some policies may have a payout to the estate, particularly life insurance and death-in-service benefits. Do not cancel life insurance without checking for a claim first.',
   },
   {
     title: 'Memberships and subscriptions',
@@ -71,7 +71,7 @@ const CATEGORIES = [
 const EXTRA_SECTIONS = [
   {
     title: 'Loyalty points and rewards',
-    content: 'Check airline miles (Avios, Virgin Points), hotel loyalty programmes, credit card rewards, and supermarket points (Tesco Clubcard, Nectar). Some can be transferred to a family member. Avios points can sometimes be transferred by contacting British Airways directly. NatWest MyRewards must be claimed within 90 days. Supermarket loyalty points can usually be spent by using the card or transferred to another account.',
+    content: 'Check airline miles (Avios, Virgin Points), hotel loyalty programmes, credit card rewards, and supermarket points (Tesco Clubcard, Nectar). Some can be transferred to a family member. Avios points can sometimes be transferred by contacting British Airways directly. Bank reward schemes often have their own time limits, so ask the bank early rather than assuming the points will wait. Supermarket loyalty points can usually be spent by using the card or transferred to another account.',
   },
   {
     title: 'How to find hidden subscriptions',
@@ -222,6 +222,7 @@ export default function SubscriptionsAfterDeathPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Cancelling Subscriptions and Direct Debits After a Death',
             description: 'How to find and cancel all subscriptions, direct debits, and standing orders after someone dies.',
             url: 'https://helpafterloss.co.uk/guides/subscriptions-after-death',

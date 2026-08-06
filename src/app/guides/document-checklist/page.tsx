@@ -54,7 +54,7 @@ const CATEGORIES = [
     subtitle: 'Needed by the funeral director and at the service',
     urgent: false,
     items: [
-      { doc: 'Death certificate (certified copies)', detail: 'Order at least 5 certified copies when you register (£12.50 each in England and Wales (£15 in Scotland)). You will need one for each bank, insurer, pension provider, and other institution. Ordering extras later costs more and takes longer.' },
+      { doc: 'Death certificate (certified copies)', detail: 'Order around 5 to 10 certified copies when you register, depending on how many accounts and policies there were. They cost £12.50 each in England and Wales, around £15 in Scotland (set locally, so check with the registrar), and £8 in Northern Ireland at the time of registration. You will need one for each bank, insurer, pension provider, and other institution. Ordering extras later costs the same per copy in England and Wales, but it takes longer.' },
       { doc: 'Green certificate (Certificate for Burial or Cremation)', detail: 'Issued by the registrar at the same time as the death certificate. The funeral director must have this before the funeral can take place.' },
       { doc: 'Pre-paid funeral plan documents', detail: 'If the person had a pre-paid plan, find the paperwork immediately. The plan number and provider details determine what costs are already covered.' },
       { doc: 'Any written funeral wishes', detail: 'A letter, note, or document where the person expressed their preferences. Check the will, any personal files, and conversations with close family.' },
@@ -68,7 +68,7 @@ const CATEGORIES = [
     urgent: false,
     items: [
       { doc: 'Death certificate (certified copies)', detail: 'Every bank requires an original certified copy. Do not send photocopies of the death certificate unless the bank specifically confirms this is acceptable.' },
-      { doc: 'Grant of Probate or Letters of Administration', detail: 'Required to close accounts above the bank\'s threshold (usually £5,000-£50,000, varies by bank). You cannot obtain this until probate is granted, which takes 12-16 weeks.' },
+      { doc: 'Grant of Probate or Letters of Administration', detail: 'Required to close accounts above the bank\'s threshold (usually £5,000-£50,000, varies by bank). You cannot obtain this until probate is granted, which usually happens within 12 weeks of applying.' },
       { doc: 'Bank statements', detail: 'Showing the balance at the date of death. Most banks will provide these once notified. You will need these to value the estate.' },
       { doc: 'Savings books and passbooks', detail: 'For building society and National Savings accounts. NS&I (Premium Bonds) will need to be notified separately.' },
       { doc: 'Share certificates', detail: 'Paper certificates for any shareholdings. The share registrar will need to see the death certificate and grant of probate.' },
@@ -168,7 +168,7 @@ export default function DocumentChecklistPage() {
       <div className="bg-warm border border-warm-border rounded-xl p-5 mb-10">
         <h3 className="font-semibold text-amber-800 mb-2">Practical tip before you start</h3>
         <p className="text-sm text-amber-800 leading-relaxed">
-          Keep everything in one folder or box. Make photocopies of the Death Certificate rather than sending originals wherever possible, but be aware that banks and solicitors will need to see original certified copies (not photocopies). Order at least 5 certified copies when you register the death: it is cheaper than ordering extras later and saves weeks of delay.
+          Keep everything in one folder or box. Make photocopies of the Death Certificate rather than sending originals wherever possible, but be aware that banks and solicitors will need to see original certified copies (not photocopies). Order around 5 to 10 certified copies when you register the death. Ordering more later costs the same per copy in England and Wales, but the wait for delivery can hold everything else up.
         </p>
       </div>
 
@@ -285,6 +285,7 @@ export default function DocumentChecklistPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Document Checklist: Everything You Need to Gather After a Death',
             description: 'A complete document checklist for dealing with a death in the UK, organised by category.',
             url: 'https://helpafterloss.co.uk/guides/document-checklist',

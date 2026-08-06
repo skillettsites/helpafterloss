@@ -175,6 +175,7 @@ export default async function CityGuidePage({ params }: PageProps) {
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'Article',
+    image: 'https://helpafterloss.co.uk/opengraph-image',
     headline: `What to Do When Someone Dies in ${displayName}`,
     description: `Practical guide covering registrar details, council contacts, funeral costs, and step-by-step guidance for bereavement in ${displayName}.`,
     datePublished: '2026-03-13',
@@ -491,7 +492,7 @@ export default async function CityGuidePage({ params }: PageProps) {
                 <li>Mortgage lender or landlord</li>
                 <li>Phone and TV providers</li>
                 <li>Subscriptions and memberships</li>
-                <li>Royal Mail (set up post redirection from £37 to catch correspondence)</li>
+                <li>Royal Mail (set up post redirection from £45 to catch correspondence)</li>
               </ul>
               <p>
                 Each organisation will usually need a certified copy of the death certificate.

@@ -36,7 +36,7 @@ const SECTIONS = [
   },
   {
     title: 'Council tax on an empty property',
-    content: 'When someone passes away and their home is left empty, you can apply for a Class F council tax exemption. This exempts the property from council tax from the date of death until six months after the Grant of Probate is issued. After that, the executor or beneficiary becomes liable. Some councils offer further discounts for empty properties, so check with the local authority. If a surviving partner or family member continues to live in the property and is now the only adult, they can claim the 25% single person discount.',
+    content: 'When someone passes away and their home is left empty, you can apply for a Class F council tax exemption. In England this exempts the property from the date of death, with no time limit while you are waiting for probate, and then for a further six months from the date the Grant of Probate is issued. It ends sooner if the property is sold or transferred to a beneficiary. After that, council tax is payable from the estate rather than out of the executor\'s own pocket. Wales changed its rules on 1 April 2026 and now runs the exemption until the second anniversary of the death where no grant has been obtained, or for twelve months from the grant. Scotland works like England but counts from the grant of confirmation, and Northern Ireland has domestic rates instead, with an exclusion you need to apply for. Some councils offer further discounts for empty properties, so check with the local authority. If a surviving partner or family member continues to live in the property and is now the only adult, they can claim the 25% single person discount.',
   },
   {
     title: 'Capital gains tax on inherited property',
@@ -67,7 +67,7 @@ const FAQ = [
   },
   {
     q: 'Do I have to pay council tax on an empty property after death?',
-    a: 'Not immediately. You can apply for a Class F council tax exemption, which covers the period from the date of death until six months after the Grant of Probate is issued. After that, council tax becomes payable. The executor or the person who inherits the property is responsible. Apply to the local council with a copy of the death certificate.',
+    a: 'Not immediately. You can apply for a Class F council tax exemption. In England it covers the period from the date of death, with no time limit while you are waiting for probate, and then six months from the date the Grant of Probate is issued, rather than six months from the death. Wales, Scotland and Northern Ireland have different rules. After the exemption ends, council tax is payable from the estate. Apply to the local council with a copy of the death certificate.',
   },
   {
     q: 'What is the difference between joint tenants and tenants in common?',
@@ -79,7 +79,7 @@ const FAQ = [
   },
   {
     q: 'How long can a property sit empty after someone dies?',
-    a: 'There is no legal time limit. However, practical issues arise over time: the council tax exemption expires six months after probate, insurance may lapse if the property is unoccupied for more than 30 days, and an empty property is at risk of damage or break-ins. Most advisers recommend dealing with the property within 12 months if possible, but there is no penalty for taking longer.',
+    a: 'There is no legal time limit. However, practical issues arise over time: in England the council tax exemption ends six months after the date of the grant, insurance may lapse if the property is unoccupied for more than 30 days, and an empty property is at risk of damage or break-ins. Most advisers recommend dealing with the property within 12 months if possible, but there is no penalty for taking longer.',
   },
 ];
 
@@ -105,7 +105,7 @@ export default function PropertyAfterDeathPage() {
         </div>
         <div className="bg-card rounded-xl border border-border p-5 text-center">
           <p className="text-2xl font-bold text-primary">6 months</p>
-          <p className="text-sm text-muted mt-1">Council tax exemption after probate</p>
+          <p className="text-sm text-muted mt-1">Council tax exemption from the date of the grant, in England</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-5 text-center">
           <p className="text-2xl font-bold text-primary">18-24%</p>
@@ -178,6 +178,7 @@ export default function PropertyAfterDeathPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Property After Death: Mortgages, Selling & Council Tax',
             description: 'What happens to property when someone dies in the UK, including mortgages, selling, council tax exemptions, and capital gains tax.',
             url: 'https://helpafterloss.co.uk/guides/property-after-death',

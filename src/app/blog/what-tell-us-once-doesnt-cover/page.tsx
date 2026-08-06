@@ -27,11 +27,13 @@ export const metadata: Metadata = {
 const COVERED = [
   { name: 'Department for Work and Pensions (DWP)', detail: 'State Pension, Pension Credit, Universal Credit, and all other benefits', link: '/notify/dwp' },
   { name: 'HM Revenue and Customs (HMRC)', detail: 'Income tax, tax credits, and National Insurance', link: '/notify/hmrc' },
-  { name: 'DVLA', detail: 'Driving licence and vehicle registration', link: '/notify/dvla' },
-  { name: 'HM Passport Office', detail: 'Cancellation of the passport', link: '/notify/passport-office' },
+  { name: 'DVLA', detail: 'cancels the driving licence, removes the person as registered keeper of up to 5 vehicles, and ends the vehicle tax. You must still tell DVLA yourself if you sell a vehicle, keep one, or want to keep a personalised registration number', link: '/notify/dvla' },
+  { name: 'HM Passport Office', detail: 'cancels the passport. It does not offer the option of having the passport returned as a keepsake, which form D1 does', link: '/notify/passport-office' },
   { name: 'Electoral register', detail: 'Removal from the electoral roll', link: null },
   { name: 'Local council', detail: 'Council tax, blue badge, library card', link: null },
   { name: 'Veterans UK', detail: 'Armed forces compensation and pensions', link: null },
+  { name: 'Social Security Scotland', detail: 'Devolved Scottish benefits', link: null },
+  { name: 'Public sector pension schemes', detail: 'NHS, Civil Service, Armed Forces, local government, and Scottish Public Pension Agency schemes', link: null },
 ];
 
 const NOT_COVERED: { category: string; intro: string; items: { name: string; link: string | null }[] }[] = [
@@ -110,7 +112,7 @@ const NOT_COVERED: { category: string; intro: string; items: { name: string; lin
   },
   {
     category: 'Pension providers',
-    intro: 'Both workplace pensions and private pensions must be contacted. The State Pension is covered by Tell Us Once through the DWP, but nothing else is.',
+    intro: 'Workplace and private pension providers must be contacted yourself. The State Pension is covered by Tell Us Once through the DWP, and most public sector schemes are covered too, but nothing in the private sector is.',
     items: [
       { name: 'Any workplace pension scheme', link: null },
       { name: 'Any private pension provider', link: null },
@@ -145,7 +147,7 @@ const NOT_COVERED: { category: string; intro: string; items: { name: string; lin
   },
   {
     category: 'Vehicle insurance and breakdown cover',
-    intro: 'Car insurance is void immediately on death, so the vehicle must not be driven until new insurance is arranged. Breakdown cover and any vehicle finance agreements must also be contacted.',
+    intro: 'Do not assume the car is still insured. Some insurers keep cover running for a while, others end it at the date of death, so check with them before the vehicle is driven or arrange cover that is arranged. The vehicle tax cannot be transferred either, so it needs taxing in the new keeper\'s name or declaring off the road. Breakdown cover and any vehicle finance agreements must also be contacted.',
     items: [],
   },
   {
@@ -183,7 +185,7 @@ const NOT_COVERED: { category: string; intro: string; items: { name: string; lin
 const FAQ = [
   {
     q: 'What does Tell Us Once actually do?',
-    a: 'Tell Us Once notifies selected government departments that someone has died. This includes HMRC, DWP (benefits and State Pension), DVLA (driving licence and vehicle registration), HM Passport Office, and the local council (council tax, electoral roll, blue badge, library card). It does not contact any private company, bank, insurer, or utility provider.',
+    a: 'Tell Us Once notifies selected government bodies that someone has died. This includes HMRC, DWP (benefits and State Pension), DVLA (driving licence, vehicle keeper records and vehicle tax), HM Passport Office, the local council (council tax, electoral roll, blue badge, library card), Veterans UK, Social Security Scotland, and most public sector pension schemes. It does not contact any private company, bank, insurer, or utility provider.',
   },
   {
     q: 'Do I still need to contact banks after Tell Us Once?',
@@ -199,7 +201,7 @@ const FAQ = [
   },
   {
     q: 'How long do I have to use my Tell Us Once reference?',
-    a: 'You have 120 days (about 4 months) from the date the death was registered to use your Tell Us Once reference. After that, the reference expires and you would need to contact each department individually.',
+    a: 'You have 28 days from the day your unique reference number is issued to use the service. The clock starts when the registrar gives you the number, not from the registration itself. After that you would need to contact each department individually, so it is worth ringing the register office if the date is close.',
   },
   {
     q: 'Can I use Tell Us Once for someone who died abroad?',
@@ -216,7 +218,7 @@ export default function TellUsOnceNotCoveredPage() {
       ]} />
 
       <div className="flex items-center gap-3 text-xs text-muted mb-3">
-        <span>Updated 17 March 2026</span>
+        <span>Updated 6 August 2026</span>
         <span aria-hidden="true">|</span>
         <span>8 min read</span>
       </div>
@@ -231,11 +233,11 @@ export default function TellUsOnceNotCoveredPage() {
       <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
         <h2 className="text-sm font-semibold text-amber-900 mb-3">Key takeaways</h2>
         <ul className="space-y-1.5 text-sm text-amber-800">
-          <li className="flex gap-2"><span className="font-bold">+</span> Tell Us Once only notifies 7 government departments (DWP, HMRC, DVLA, Passport Office, electoral register, council, Veterans UK)</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> Tell Us Once only notifies government bodies and public sector pension schemes (DWP, HMRC, DVLA, Passport Office, electoral register, council, Veterans UK, Social Security Scotland)</li>
           <li className="flex gap-2"><span className="font-bold">+</span> You still need to contact every bank, insurer, pension, energy company, and telecoms provider yourself</li>
           <li className="flex gap-2"><span className="font-bold">+</span> The free Death Notification Service can notify multiple banks at once</li>
           <li className="flex gap-2"><span className="font-bold">+</span> Tell Us Once is not available in Northern Ireland</li>
-          <li className="flex gap-2"><span className="font-bold">+</span> Your Tell Us Once reference expires after 120 days</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> Your Tell Us Once reference must be used within 28 days of being issued</li>
         </ul>
       </div>
 
@@ -265,7 +267,7 @@ export default function TellUsOnceNotCoveredPage() {
           ))}
         </ul>
         <p className="text-sm text-muted mt-4">
-          That is the complete list. Everything below is <strong className="text-foreground">left for you to do</strong>.
+          That is what it covers. Everything below is <strong className="text-foreground">left for you to do</strong>.
         </p>
       </div>
 
@@ -354,10 +356,11 @@ export default function TellUsOnceNotCoveredPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'What Tell Us Once Doesn\'t Cover: The Full List',
             description: 'The complete list of organisations Tell Us Once does not notify, and what you need to do yourself after someone dies.',
             datePublished: '2026-03-14',
-            dateModified: '2026-03-17',
+            dateModified: '2026-08-06',
             author: { '@type': 'Organization', name: 'Help After Loss' },
             publisher: {
               '@type': 'Organization',

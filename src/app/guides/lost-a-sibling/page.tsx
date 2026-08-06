@@ -130,7 +130,7 @@ export default function LostASiblingPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Applying for probate</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If your sibling owned property or had significant assets in their sole name, you will need to apply for probate. Use form PA1P (with a will) at gov.uk. The court fee is £526 for estates over £5,000. Current processing time is around 12 to 16 weeks. Once granted, you can access their accounts, sell property, and distribute the estate. See our <Link href="/probate" className="text-primary font-medium hover:underline">probate guide</Link> for the full process.
+            If your sibling owned property or had significant assets in their sole name, you will need to apply for probate. Use form PA1P (with a will) at gov.uk. The court fee is £526 for estates over £5,000. Current processing time is around usually within 12 weeks. Once granted, you can access their accounts, sell property, and distribute the estate. See our <Link href="/probate" className="text-primary font-medium hover:underline">probate guide</Link> for the full process.
           </p>
         </div>
       </div>
@@ -287,6 +287,7 @@ export default function LostASiblingPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'When a Brother or Sister Dies',
             description: 'Compassionate guidance for bereaved siblings in the UK, covering grief, practical help, executor duties, and specialist support.',
             datePublished: '2026-03-14',

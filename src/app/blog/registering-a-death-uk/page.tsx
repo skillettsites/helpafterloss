@@ -48,7 +48,7 @@ export default function RegisteringADeathPage() {
       <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
         <h2 className="text-sm font-semibold text-amber-900 mb-3">Key facts</h2>
         <ul className="space-y-1.5 text-sm text-amber-800">
-          <li className="flex gap-2"><span className="font-bold">+</span> <strong>Deadline:</strong> Within 5 days in England and Wales (8 days in Scotland)</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> <strong>Deadline:</strong> Within 5 days of getting the confirmation in England and Wales (8 days in Scotland)</li>
           <li className="flex gap-2"><span className="font-bold">+</span> <strong>Cost:</strong> Registration is free. Death certificates cost £12.50 each in England and Wales.</li>
           <li className="flex gap-2"><span className="font-bold">+</span> <strong>Appointment:</strong> Most register offices require a booked appointment</li>
           <li className="flex gap-2"><span className="font-bold">+</span> <strong>Duration:</strong> About 30 minutes</li>
@@ -74,7 +74,7 @@ export default function RegisteringADeathPage() {
       <h2 id="when" className="text-2xl font-bold text-foreground mb-6">When to register</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed mb-4">
-          In England and Wales, a death must be registered within 5 days. In Scotland, the deadline is 8 days. In Northern Ireland, it is 5 days. The clock starts from the date of death, not the date you received the medical certificate.
+          In England and Wales, a death must be registered within 5 days of getting the confirmation from the medical examiner or coroner. In Scotland, the deadline is 8 days. In Northern Ireland, it is 5 days. The clock starts from that confirmation, not from the date of death, so waiting for the paperwork does not eat into your time. The 5 days include weekends and bank holidays.
         </p>
         <p className="text-sm text-muted leading-relaxed mb-4">
           If the coroner is involved (for example, because the cause of death is unknown or the death was sudden), the registration may be delayed. The coroner's office will advise you on when registration can proceed. In some cases, the coroner will register the death themselves, and you will not need to attend the register office.
@@ -159,7 +159,7 @@ export default function RegisteringADeathPage() {
           The registrar will check the information with you and enter it into the register. You will be asked to confirm that the details are correct. Once registered, the death cannot be un-registered, so do take your time over this part.
         </p>
         <p className="text-sm text-muted leading-relaxed">
-          At the end of the appointment, the registrar will explain the Tell Us Once service and give you a unique reference number. You can complete Tell Us Once at the register office, online, or by phone. See our <Link href="/blog/tell-us-once-service-guide" className="text-primary hover:underline">Tell Us Once guide</Link> for the full details.
+          At the end of the appointment, the registrar will explain the Tell Us Once service and give you a unique reference number. You must use the service within 28 days of getting that number. You can complete Tell Us Once at the register office, online, or by phone. See our <Link href="/blog/tell-us-once-service-guide" className="text-primary hover:underline">Tell Us Once guide</Link> for the full details.
         </p>
       </div>
 
@@ -175,7 +175,7 @@ export default function RegisteringADeathPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Certified copies of the death certificate</h3>
           <p className="text-sm text-muted leading-relaxed">
-            These are the official documents that banks, solicitors, insurance companies, and other organisations require as proof of death. They cost £11 each and you can order as many as you need. It is cheaper and quicker to order them at registration than to request them later from the General Register Office.
+            These are the official documents that banks, solicitors, insurance companies, and other organisations require as proof of death. In England and Wales they cost £12.50 each and you can order as many as you need. The price is the same later, but it is quicker to order them at registration than to request them from the General Register Office.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -196,7 +196,7 @@ export default function RegisteringADeathPage() {
       <h2 id="death-certificates" className="text-2xl font-bold text-foreground mb-6">Death certificates: how many and cost</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-4">
         <p className="text-sm text-muted leading-relaxed mb-4">
-          Death certificates cost £12.50 each in England and Wales, and that price is the same whether you order them at registration or later from the General Register Office, online or by post. Ordering later is not more expensive, just slower. It is worth getting at least 3 to 5 copies while you are there. You will need them for:
+          Death certificates cost £12.50 each in England and Wales, and that price is the same whether you order them at registration or later from the General Register Office, online or by post. Ordering later is not more expensive, just slower. Around 5 to 10 copies suits most families, depending on how many accounts and policies there were, and a larger estate can need 8 to 12. You will need them for:
         </p>
         <ul className="space-y-2 text-sm text-muted">
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Each bank and building society (most require an original, though some accept a certified copy)</li>
@@ -243,13 +243,13 @@ export default function RegisteringADeathPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Scotland</h3>
           <p className="text-sm text-muted leading-relaxed">
-            In Scotland, the death must be registered within 8 days at the registrar for the area where the death occurred. The process is very similar to England and Wales. Death certificates cost £12 each. The medical examiner system was introduced earlier in Scotland. See our <Link href="/guide/scotland" className="text-primary hover:underline">Scotland guide</Link> for details.
+            In Scotland, the death must be registered within 8 days of getting the confirmation, at the registrar for the area where the death occurred. The process is very similar to England and Wales. Death certificates cost around £15 each, though the exact fee is set locally rather than nationally, so check with the registrar. The medical examiner system was introduced earlier in Scotland. See our <Link href="/guide/scotland" className="text-primary hover:underline">Scotland guide</Link> for details.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Northern Ireland</h3>
           <p className="text-sm text-muted leading-relaxed">
-            In Northern Ireland, the death must be registered within 5 days at the district registrar. The death can only be registered in the district where it occurred. Death certificates cost £15 each. Tell Us Once is not available; you will need to contact government departments separately. See our <Link href="/guide/northern-ireland" className="text-primary hover:underline">Northern Ireland guide</Link> for details.
+            In Northern Ireland, the death must be registered within 5 days at the district registrar. The death can only be registered in the district where it occurred. Death certificates cost £8 each when bought from the registrar on the day. Ordered later from GRONI, the first copy is £15 and each additional copy ordered at the same time is £8, so it is worth getting what you need at registration. Tell Us Once is not available; you will need to contact government departments separately. See our <Link href="/guide/northern-ireland" className="text-primary hover:underline">Northern Ireland guide</Link> for details.
           </p>
         </div>
       </div>
@@ -300,6 +300,7 @@ export default function RegisteringADeathPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Registering a Death in the UK: What to Bring, Where to Go (2026)',
             description: 'Everything you need to know about registering a death in the UK, including what documents to bring, where to register, and what to expect.',
             datePublished: '2026-03-22',

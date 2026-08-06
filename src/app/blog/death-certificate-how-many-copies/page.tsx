@@ -9,11 +9,11 @@ import { FreeChecklistBanner } from '@/components/FreeChecklistBanner';
 
 export const metadata: Metadata = {
   title: '8-12 Death Certificates at £12.50 Each: How Many You Need (2026)',
-  description: 'Most UK families need 8-12 certified copies at £12.50 each (£15 in Scotland). See who needs one, how to order today, and how to avoid the £38.50 rush fee.',
+  description: 'Most UK families need 8-12 certified copies at £12.50 each in England and Wales. See who needs one, how to order today, and how to avoid the £38.50 rush fee.',
   alternates: { canonical: 'https://helpafterloss.co.uk/blog/death-certificate-how-many-copies' },
   openGraph: {
     title: '8-12 Death Certificates at £12.50 Each: How Many You Need',
-    description: 'Most UK families need 8-12 certified copies at £12.50 each (£15 in Scotland). See who needs one, how to order today, and how to avoid the £38.50 rush fee.',
+    description: 'Most UK families need 8-12 certified copies at £12.50 each in England and Wales. See who needs one, how to order today, and how to avoid the £38.50 rush fee.',
     url: 'https://helpafterloss.co.uk/blog/death-certificate-how-many-copies',
     type: 'article',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: '8-12 Death Certificates at £12.50 Each: How Many You Need',
-    description: 'Most UK families need 8-12 certified copies at £12.50 each (£15 in Scotland). See who needs one, how to order today, and how to avoid the £38.50 rush fee.',
+    description: 'Most UK families need 8-12 certified copies at £12.50 each in England and Wales. See who needs one, how to order today, and how to avoid the £38.50 rush fee.',
   },
 };
 
@@ -35,22 +35,22 @@ const WHO_NEEDS_A_COPY = [
   { organisation: 'Land Registry', note: 'Needed to transfer or sell any property owned by the person who died.' },
   { organisation: 'Stockbrokers and investment platforms', note: 'ISAs, shares, premium bonds, and other investments each require notification.' },
   { organisation: 'Utility companies', note: 'Gas, electricity, water, and broadband providers. Some accept a certified photocopy rather than an original, but many still require the real thing.' },
-  { organisation: 'Vehicle insurance and DVLA', note: 'Car insurance is void from the date of death. DVLA needs to be notified to update the V5C.' },
+  { organisation: 'Vehicle insurance and DVLA', note: 'Do not assume the car is still insured once the policyholder has passed away. Cover is sometimes kept running for a short period, but not always, so please do not drive the car until you have arranged cover. DVLA also needs telling so the V5C can be updated.' },
   { organisation: 'Employer', note: 'To process any outstanding salary, holiday pay, or death-in-service benefits.' },
 ];
 
 const FAQS = [
   {
     question: 'How many death certificates do I need?',
-    answer: 'Most families need 8 to 12 certified copies. Each organisation you notify, such as banks, insurers, pension providers, HMRC, and the Land Registry, needs its own original copy rather than a photocopy. Ordering a few extra at the start means you can notify several organisations at the same time instead of waiting for each one to return a certificate before sending it on.',
+    answer: 'Around 5 to 10 suits most families, and 8 to 12 is more realistic where there were several banks, pensions and insurance policies. Each organisation you notify, such as banks, insurers, pension providers, HMRC, and the Land Registry, needs its own original copy rather than a photocopy. Ordering a few extra at the start means you can notify several organisations at the same time instead of waiting for each one to return a certificate before sending it on.',
   },
   {
     question: 'How much is a death certificate?',
-    answer: 'A death certificate (certified copy) costs £12.50 in England and Wales, £15 in Scotland, and £15 in Northern Ireland. There is no free option for certified copies. Most families need 8-12 copies, so budget £100-£150 total in England. The only faster option is the GRO priority service at £38.50 per copy, which delivers within 1 working day.',
+    answer: 'A death certificate (certified copy) costs £12.50 in England and Wales. In Scotland it is around £15, though the exact fee is set locally, so check with the registrar. In Northern Ireland it is £8 from the registrar at the time of registration, or £15 for the first copy ordered later from GRONI and £8 for each additional copy ordered at the same time. There is no free option for certified copies. Most families need 8-12 copies, so budget £100-£150 in England and Wales. The only faster option is the GRO priority service at £38.50 per copy, which delivers within 1 working day.',
   },
   {
     question: 'How much does a death certificate cost?',
-    answer: 'A certified copy costs £12.50 in England and Wales, £15 in Scotland, and £15 in Northern Ireland. The price is the same whether you order at registration or later from the General Register Office. The only way to get a copy faster than the standard 5-10 working day postal turnaround is the GRO priority service, which costs £38.50 per copy and arrives within 1 working day. There is no way to obtain a certified copy for free; the fee applies in all cases, whatever the circumstances.',
+    answer: 'A certified copy costs £12.50 in England and Wales, around £15 in Scotland (the exact fee is set locally, so check with the registrar), and £8 in Northern Ireland when bought from the registrar at the time of registration. In England and Wales the price is the same whether you order at registration or later from the General Register Office. The only way to get a copy faster than the standard 5-10 working day postal turnaround is the GRO priority service, which costs £38.50 per copy and arrives within 1 working day. There is no way to obtain a certified copy for free; the fee applies in all cases, whatever the circumstances.',
   },
   {
     question: 'Can I photocopy a death certificate?',
@@ -74,7 +74,7 @@ const FAQS = [
   },
   {
     question: 'Can I get a death certificate for someone who died years ago?',
-    answer: 'Yes. You can order a certified copy of any death registered in England and Wales from the GRO, regardless of how long ago the death occurred. The fee is £12.50 per copy in England and Wales. For deaths registered in Scotland, contact National Records of Scotland (£15 per copy). For Northern Ireland, contact the General Register Office for Northern Ireland.',
+    answer: 'Yes. You can order a certified copy of any death registered in England and Wales from the GRO, regardless of how long ago the death occurred. The fee is £12.50 per copy in England and Wales. For deaths registered in Scotland, contact National Records of Scotland (around £15 per copy, set locally). For Northern Ireland, contact the General Register Office for Northern Ireland, where the first copy is £15 and each additional copy ordered at the same time is £8.',
   },
 ];
 
@@ -96,7 +96,7 @@ export default function DeathCertificateHowManyCopiesPage() {
         How Many Death Certificates Do I Need? (2026 Guide)
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-6">
-        Most families need <strong className="text-foreground">8 to 12 certified copies</strong> of the death certificate. Each copy costs <strong className="text-foreground">£12.50</strong> in England and Wales (£15 in Scotland), so you should budget between £100 and £150. The exact number depends on how many banks, insurers, pension providers, and other organisations you need to notify. It is far better to order too many than too few, because sending certificates to multiple organisations at the same time can save you weeks of waiting.
+        Most families need <strong className="text-foreground">8 to 12 certified copies</strong> of the death certificate. Each copy costs <strong className="text-foreground">£12.50</strong> in England and Wales, so you should budget between £100 and £150. A simple estate with one bank account and no property may only need around 5. The exact number depends on how many banks, insurers, pension providers, and other organisations you need to notify. It is far better to order too many than too few, because sending certificates to multiple organisations at the same time can save you weeks of waiting.
       </p>
       <p className="text-sm text-muted mb-6">
         Not registered the death yet? Read our guide to <Link href="/blog/registering-a-death-uk" className="text-primary hover:underline">registering a death in the UK</Link> first, it covers what to bring and how many certificates to order on the day.
@@ -150,17 +150,17 @@ export default function DeathCertificateHowManyCopiesPage() {
             <p className="text-xs text-blue-600">per certified copy</p>
           </div>
           <div className="bg-white rounded-lg p-3 border border-blue-100">
-            <p className="text-xl font-bold text-blue-700">£15.00</p>
+            <p className="text-xl font-bold text-blue-700">~£15</p>
             <p className="text-xs text-blue-800 mt-1 font-medium">Scotland</p>
-            <p className="text-xs text-blue-600">per certified copy</p>
+            <p className="text-xs text-blue-600">set locally, so check</p>
           </div>
           <div className="bg-white rounded-lg p-3 border border-blue-100">
-            <p className="text-xl font-bold text-blue-700">£15.00</p>
+            <p className="text-xl font-bold text-blue-700">£8.00</p>
             <p className="text-xs text-blue-800 mt-1 font-medium">Northern Ireland</p>
-            <p className="text-xs text-blue-600">per certified copy</p>
+            <p className="text-xs text-blue-600">at registration</p>
           </div>
         </div>
-        <p className="text-xs text-blue-700 leading-relaxed">The cost of a death certificate in the UK is <strong>£12.50 per certified copy in England and Wales</strong>, and £15 in Scotland and Northern Ireland. This is a fixed government fee, the same whether you order at registration or later. Most families need 8-12 copies, so budget <strong>£100-£150</strong> in England. The only faster option is the GRO priority service at £38.50 per copy (next working day). Order at registration to avoid delays.</p>
+        <p className="text-xs text-blue-700 leading-relaxed">The cost of a death certificate in the UK is <strong>£12.50 per certified copy in England and Wales</strong>, a fixed fee that is the same whether you order at registration or later. In Scotland it is around £15, but the fee is set locally, so it is worth checking with the registrar. In Northern Ireland it is £8 from the registrar at the time of registration, rising to £15 for the first copy if you order later from GRONI (£8 for each additional copy ordered at the same time). Most families need 8-12 copies, so budget <strong>£100-£150</strong> in England and Wales. The only faster option is the GRO priority service at £38.50 per copy (next working day). Order at registration to avoid delays.</p>
       </div>
 
       {/* Early probate CTA: many readers are overwhelmed and want someone to handle it */}
@@ -184,9 +184,9 @@ export default function DeathCertificateHowManyCopiesPage() {
       <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
         <h2 className="text-sm font-semibold text-amber-900 mb-3">Key takeaways</h2>
         <ul className="space-y-1.5 text-sm text-amber-800">
-          <li className="flex gap-2"><span className="font-bold">+</span> Most families need 8-12 certified copies, costing £100-£150 in England</li>
-          <li className="flex gap-2"><span className="font-bold">+</span> Each copy costs £12.50 in England and Wales (£15 in Scotland)</li>
-          <li className="flex gap-2"><span className="font-bold">+</span> Order copies at registration for the fastest, cheapest option</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> Around 5 to 10 suits most families; 8 to 12 where there were several accounts and policies, costing £100 to £150 in England and Wales</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> Each copy costs £12.50 in England and Wales; around £15 in Scotland, set locally</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> Order copies at registration for the fastest option, and the cheapest in Northern Ireland</li>
           <li className="flex gap-2"><span className="font-bold">+</span> Banks, insurers, and pension providers all need their own original certified copy</li>
           <li className="flex gap-2"><span className="font-bold">+</span> The Death Notification Service can reduce the number you need for banks</li>
         </ul>
@@ -251,7 +251,7 @@ export default function DeathCertificateHowManyCopiesPage() {
       <h2 id="how-to-order" className="text-2xl font-bold text-foreground mb-4">How to order death certificates</h2>
       <div className="space-y-4 mb-12">
         <div className="bg-card rounded-xl border border-border p-6">
-          <h3 className="font-semibold text-foreground mb-2">1. At registration (cheapest and fastest)</h3>
+          <h3 className="font-semibold text-foreground mb-2">1. At registration (easiest and fastest)</h3>
           <p className="text-sm text-muted leading-relaxed">
             When you register the death at your local register office, you can order as many certified copies as you need on the spot. The cost is £12.50 per copy in England and Wales. This is the easiest time to order because you are already there, and the certificates are often available the same day or within a few working days. Order at least 8 copies. If the estate is complicated, with multiple bank accounts, insurers, or properties, order 12 or more.
           </p>
@@ -265,7 +265,7 @@ export default function DeathCertificateHowManyCopiesPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">3. By post from the GRO</h3>
           <p className="text-sm text-muted leading-relaxed">
-            You can also request copies by post. Download form CAS 66 from the GRO website, complete it, and send it with a cheque or postal order for £12.50 per copy (England). Allow at least two weeks for delivery. This is the slowest option but useful if you cannot access the internet.
+            You can also request copies by post. Download the relevant GRO certificate application form from GOV.UK, complete it, and send it to the address on the form with a cheque or postal order for £12.50 per copy. Allow at least two weeks for delivery. This is the slowest option, but it helps if you would rather not order online. You can also order by phone on 0300 123 1837, Monday to Friday, 8am to 6pm.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -284,7 +284,7 @@ export default function DeathCertificateHowManyCopiesPage() {
             <tr className="border-b border-border">
               <th className="text-left py-3 pr-4 font-semibold text-foreground">Copies</th>
               <th className="text-right py-3 px-4 font-semibold text-foreground">England &amp; Wales</th>
-              <th className="text-right py-3 px-4 font-semibold text-foreground">Scotland</th>
+              <th className="text-right py-3 px-4 font-semibold text-foreground">Scotland (approx.)</th>
               <th className="text-left py-3 pl-4 font-semibold text-foreground">When to order this many</th>
             </tr>
           </thead>
@@ -304,6 +304,7 @@ export default function DeathCertificateHowManyCopiesPage() {
             ))}
           </tbody>
         </table>
+        <p className="text-xs text-muted mt-3">The Scotland column assumes around £15 a copy. Fees there are set locally rather than nationally, so confirm the figure with the registrar before you order.</p>
       </div>
 
       {/* What to do next: mid-page cross-link to the notification guide */}
@@ -366,8 +367,8 @@ export default function DeathCertificateHowManyCopiesPage() {
           In Scotland, the process is broadly similar but there are a few key differences:
         </p>
         <ul className="text-sm text-muted space-y-3 list-disc pl-5">
-          <li>A death must be registered within <strong className="text-foreground">8 days</strong>, compared to 5 days in England and Wales.</li>
-          <li>Certified copies cost <strong className="text-foreground">£15 each</strong> from National Records of Scotland (NRS).</li>
+          <li>A death must be registered within <strong className="text-foreground">8 days of getting the confirmation</strong>, compared to 5 days in England and Wales.</li>
+          <li>Certified copies cost <strong className="text-foreground">around £15 each</strong>, though the exact fee is set locally rather than nationally, so check with the registrar before you order.</li>
           <li>You can order copies from any local registrar in Scotland or directly from NRS at <a href="https://www.nrscotland.gov.uk" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">nrscotland.gov.uk</a>.</li>
           <li>Scotland uses a different form and the certificate format is slightly different, but it is accepted by all UK-wide organisations including banks and HMRC.</li>
         </ul>
@@ -381,7 +382,7 @@ export default function DeathCertificateHowManyCopiesPage() {
         </p>
         <ul className="text-sm text-muted space-y-3 list-disc pl-5">
           <li>A death must be registered within <strong className="text-foreground">5 days</strong>, the same as England and Wales.</li>
-          <li>Certified copies cost <strong className="text-foreground">£15 each</strong> when ordered at registration.</li>
+          <li>Certified copies cost <strong className="text-foreground">£8 each</strong> when bought from the registrar at the time of registration. Ordered later from GRONI, the first copy is £15 and each additional copy ordered at the same time is £8, so it pays to order what you need on the day.</li>
           <li>Additional copies can be ordered online from GRONI at <a href="https://www.nidirect.gov.uk/services/order-death-certificate-online" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">nidirect.gov.uk</a>.</li>
           <li>The registration is done at the local district registrar's office.</li>
           <li>Northern Ireland certificates are accepted by all UK-wide organisations.</li>
@@ -426,6 +427,7 @@ export default function DeathCertificateHowManyCopiesPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'How Many Death Certificates Do I Need? (2026 Guide)',
             description: 'You typically need 8-12 certified copies of a death certificate, at £12.50 each in England. Full breakdown of who needs one, how to order, and how to save money.',
             datePublished: '2026-03-14',

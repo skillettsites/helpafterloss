@@ -24,6 +24,25 @@ export const metadata: Metadata = {
   },
 };
 
+const FAQ = [
+  {
+    q: 'What are the stages of grief?',
+    a: 'The best known model describes five stages: denial, anger, bargaining, depression, and acceptance. They were first set out by Elisabeth Kubler-Ross in 1969, and she was writing about people who were dying rather than people who had been bereaved. Modern grief research finds that grief is not linear, and many people do not experience these stages in order, or at all.',
+  },
+  {
+    q: 'Do you have to go through all five stages of grief?',
+    a: 'No. The five stages were never meant to be a checklist. Plenty of people skip stages entirely, move through them out of order, or feel things the model does not cover at all. If your grief does not match any of it, that does not mean anything has gone wrong.',
+  },
+  {
+    q: 'How long do the stages of grief last?',
+    a: 'There is no set timeline. Some people begin to feel more able to function within a few months, and for others it takes years. Grief does not have a deadline, and feeling it intensely months or even years later is not unusual.',
+  },
+  {
+    q: 'What is complicated grief?',
+    a: 'Complicated grief, also called prolonged grief disorder, is when grief becomes stuck and does not ease over many months. It is characterised by intense yearning for the person, difficulty accepting the death, and an inability to function day to day. It is estimated to affect around 7% to 10% of bereaved people, and it is recognised in the ICD-11 and DSM-5-TR. It usually responds well to grief-focused therapy, and your GP can refer you.',
+  },
+];
+
 export default function GriefStagesExplainedPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
@@ -61,6 +80,7 @@ export default function GriefStagesExplainedPage() {
         { id: 'complicated-grief', label: 'When grief becomes complicated' },
         { id: 'helping-yourself', label: 'Helping yourself through grief' },
         { id: 'support', label: 'Getting support' },
+        { id: 'faqs', label: 'Common questions' },
       ]} />
 
       {/* Five stages */}
@@ -257,6 +277,24 @@ export default function GriefStagesExplainedPage() {
         </ul>
       </div>
 
+      {/* FAQ */}
+      <h2 id="faqs" className="text-2xl font-bold text-foreground mb-6">Common questions</h2>
+      <div className="space-y-4 mb-12">
+        {FAQ.map((item, i) => (
+          <details key={i} className="bg-card rounded-xl border border-border group">
+            <summary className="p-5 md:p-6 font-semibold text-foreground cursor-pointer list-none flex items-center justify-between gap-4 hover:text-primary transition-colors">
+              <span>{item.q}</span>
+              <svg className="w-5 h-5 text-muted flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div className="px-5 md:px-6 pb-5 md:pb-6">
+              <p className="text-sm text-muted leading-relaxed">{item.a}</p>
+            </div>
+          </details>
+        ))}
+      </div>
+
       {/* Practical help links */}
       <SupportCta />
       <div className="bg-primary-light rounded-lg p-4 mb-8">
@@ -284,6 +322,7 @@ export default function GriefStagesExplainedPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'The Stages of Grief: What They Really Mean and Why Grief is Not Linear',
             description: 'An honest look at the stages of grief, why they are widely misunderstood, and what grief actually looks like in real life.',
             datePublished: '2026-03-22',
@@ -307,28 +346,11 @@ export default function GriefStagesExplainedPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'FAQPage',
-            mainEntity: [
-              {
-                '@type': 'Question',
-                name: 'What are the stages of grief?',
-                acceptedAnswer: { '@type': 'Answer', text: 'The most well-known model describes five stages: denial, anger, bargaining, depression, and acceptance. These were originally proposed by Elisabeth Kubler-Ross in 1969. However, modern grief research shows that grief is not linear and most people do not experience these stages in order or at all.' },
-              },
-              {
-                '@type': 'Question',
-                name: 'Do you have to go through all five stages of grief?',
-                acceptedAnswer: { '@type': 'Answer', text: 'No. The five stages model was never intended as a checklist. Many people skip stages entirely, experience them out of order, or feel emotions not included in the model. There is no right or wrong way to grieve.' },
-              },
-              {
-                '@type': 'Question',
-                name: 'How long do the stages of grief last?',
-                acceptedAnswer: { '@type': 'Answer', text: 'There is no set timeline. Grief is different for everyone. Some people begin to feel more functional within a few months, while others take years. Grief does not have a deadline, and feeling intense emotions months or even years later is completely normal.' },
-              },
-              {
-                '@type': 'Question',
-                name: 'What is complicated grief?',
-                acceptedAnswer: { '@type': 'Answer', text: 'Complicated grief, or prolonged grief disorder, is when grief becomes stuck and does not ease over many months. It is characterised by intense yearning, difficulty accepting the death, and inability to function in daily life. It affects around 7% to 10% of bereaved people and may require specialist support.' },
-              },
-            ],
+            mainEntity: FAQ.map(item => ({
+              '@type': 'Question',
+              name: item.q,
+              acceptedAnswer: { '@type': 'Answer', text: item.a },
+            })),
           }),
         }}
       />

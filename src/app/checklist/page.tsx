@@ -36,9 +36,9 @@ const CATEGORIES = [
       'Tell the people closest to you. There is no rush, and no right order.',
       'Collect the Medical Certificate of Cause of Death (MCCD) from the doctor or hospital',
       'If the death was sudden or unexplained, a coroner will be involved and will guide you through it',
-      'Register the death at the local register office (legally required within 5 days, or 8 in Scotland)',
-      'Order at least 5 certified copies of the death certificate while you are there (£12.50 each in England and Wales, £15 in Scotland)',
-      'Use the Tell Us Once service at the register office (not available in Northern Ireland)',
+      'Register the death at the local register office (legally required within 5 days of getting the confirmation, or 8 days in Scotland)',
+      'Order around 5 to 10 certified copies of the death certificate while you are there, depending on how many accounts and policies there were (£12.50 each in England and Wales, around £15 in Scotland, £8 in Northern Ireland at registration)',
+      'Use the Tell Us Once service at the register office, within 28 days of getting your unique reference number (not available in Northern Ireland)',
     ],
   },
   {

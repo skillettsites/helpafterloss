@@ -35,6 +35,7 @@ export default function EditorialPolicyPage() {
           <li>GOV.UK (death registration, probate, Tell Us Once, benefits)</li>
           <li>HMRC (inheritance tax, capital gains tax, income tax after death)</li>
           <li>DWP (Bereavement Support Payment, other benefits)</li>
+          <li>Office for National Statistics (death registration figures)</li>
           <li>Individual bank and building society bereavement pages</li>
           <li>Energy, telecoms, and water company bereavement processes</li>
           <li>SunLife Cost of Dying Report (funeral cost data)</li>
@@ -55,12 +56,31 @@ export default function EditorialPolicyPage() {
           accuracy through:
         </p>
         <ul className="text-muted space-y-1.5 list-disc list-inside">
-          <li>Annual review of all financial figures (aligned with the April tax year)</li>
-          <li>Quarterly checks of organisation phone numbers and URLs</li>
+          <li>Reviewing financial figures against the current tax year</li>
+          <li>Re-checking organisation phone numbers, addresses and URLs against the organisation&apos;s own pages</li>
           <li>Monitoring GOV.UK updates for policy and process changes</li>
-          <li>&quot;Last reviewed&quot; dates on every guide page</li>
+          <li>&quot;Last reviewed&quot; dates on our main guide pages, which we are working to extend across the site</li>
           <li>A feedback mechanism for readers to report errors</li>
         </ul>
+        <p className="text-muted mt-3">
+          We would rather be honest about this than promise a schedule we do not keep. Reviews happen when a source changes or when we find something wrong, not on a fixed calendar, and not every page carries a review date yet.
+        </p>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-xl font-semibold text-foreground mb-3">Last full review</h2>
+        <p className="text-muted mb-3">
+          In August 2026 we carried out a full accuracy review of our guidance on DVLA notification,
+          passport cancellation and the Tell Us Once service, checking every process, address and
+          deadline against GOV.UK. That review corrected several things, including the process for
+          telling DVLA about a driving licence (a letter, not a form), the separate Swansea addresses
+          used for licences, vehicles and refunds, and the deadline for using a Tell Us Once
+          reference, which is 28 days from the day the reference number is issued.
+        </p>
+        <p className="text-muted">
+          In the same review we removed statistics we could not trace back to a named source. Where we
+          quote a figure, we now say where it comes from.
+        </p>
       </section>
 
       <section className="mb-8">
@@ -111,7 +131,7 @@ export default function EditorialPolicyPage() {
           >
             contact@helpafterloss.co.uk
           </a>
-          . We aim to investigate and correct errors within 48 hours.
+          . We investigate reported errors as quickly as we can, and we would much rather hear about a mistake than leave it on the page.
         </p>
       </section>
     </main>

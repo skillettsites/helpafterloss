@@ -89,7 +89,7 @@ const FAQ = [
   },
   {
     q: 'How long does it take to release money after death?',
-    a: 'For small accounts below the bank\'s probate threshold, funds are usually released within 2 to 4 weeks of submitting the death certificate and required forms. For larger accounts requiring probate, the total process typically takes 4 to 6 months, as you need to wait for the Grant of Probate (currently 12 to 16 weeks) before the bank will act.',
+    a: 'For small accounts below the bank\'s probate threshold, funds are usually released within 2 to 4 weeks of submitting the death certificate and required forms. For larger accounts requiring probate, the total process typically takes 4 to 6 months, as you need to wait for the Grant of Probate (currently usually within 12 weeks) before the bank will act.',
   },
   {
     q: 'What is the Death Notification Service?',
@@ -305,6 +305,7 @@ export default function BankAccountsAfterDeathPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Bank Accounts After Death: What Happens and What to Do',
             description: 'How to find, notify, and close bank accounts after someone dies in the UK. Includes probate thresholds for major banks.',
             url: 'https://helpafterloss.co.uk/guides/bank-accounts-after-death',

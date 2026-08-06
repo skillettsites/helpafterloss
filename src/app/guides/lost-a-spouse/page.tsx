@@ -56,7 +56,7 @@ export default function LostASpousePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Registering the death</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Register the death within 5 days in England and Wales (8 days in Scotland) at the local register office. You will need the Medical Certificate of Cause of Death. Order at least 6 to 8 certified copies of the death certificate (£12.50 each in England and Wales (£15 in Scotland)): you will need one for each bank, insurance policy, pension provider, the mortgage lender, and various government departments. Use Tell Us Once at the appointment to notify the DWP, HMRC, DVLA, and other bodies in a single step.
+            Register the death within 5 days in England and Wales (8 days in Scotland) at the local register office. You will need the Medical Certificate of Cause of Death. Order at least 6 to 8 certified copies of the death certificate (£12.50 each in England and Wales, £15 in Scotland): you will need one for each bank, insurance policy, pension provider, the mortgage lender, and various government departments. Use Tell Us Once at the appointment to notify the DWP, HMRC, DVLA, and other bodies in a single step.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -73,7 +73,7 @@ export default function LostASpousePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">What is Bereavement Support Payment?</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Bereavement Support Payment (BSP) is a government benefit for surviving spouses and civil partners who are under State Pension age when their partner dies. It is paid as a lump sum followed by monthly payments for 18 months. It does not count as income for tax purposes and does not affect most other benefits. You must have been legally married or in a civil partnership. Since 2024, cohabiting partners with dependent children can also claim BSP following a court ruling that extended eligibility.
+            Bereavement Support Payment (BSP) is a government benefit for surviving partners who are under State Pension age when their partner dies. It is paid as a lump sum followed by monthly payments for 18 months. It does not count as income for tax purposes and does not affect most other benefits. Married couples and civil partners qualify. Since 9 February 2023, when the Bereavement Benefits (Remedial) Order 2023 came into force, cohabiting partners with dependent children can also claim.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -91,7 +91,7 @@ export default function LostASpousePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">How to claim and the time limit</h3>
           <p className="text-sm text-muted leading-relaxed">
-            It is worth claiming as early as you can manage, even if it feels too soon. If you claim within 3 months, your payments are backdated to the date of death. If you claim later, you will lose some months of payment. Claim online at gov.uk/bereavement-support-payment or by calling the DWP on 0800 151 2012. You will need the death certificate, your partner's National Insurance number, and your bank details.
+            It is worth claiming as early as you can manage, even if it feels too soon, because the amount you receive depends on when you claim. Within 3 months of the death, you get the lump sum and all 18 monthly payments. Between 3 and 12 months, you still get the lump sum but only some of the monthly payments. After 12 months, the lump sum is lost entirely (£2,500 or £3,500), though you can still get some monthly payments up to 21 months. After 21 months you usually cannot get anything. The 12-month point is the one that costs the most. Claim online at gov.uk/bereavement-support-payment or by calling the DWP on 0800 151 2012. You will need the death certificate, your partner's National Insurance number, and your bank details.
           </p>
         </div>
       </div>
@@ -142,7 +142,7 @@ export default function LostASpousePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">State pension for surviving spouses</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If your partner had a state pension or had made National Insurance contributions, you may be able to inherit some of their entitlement to boost your own state pension. This is more likely if you or your partner reached State Pension age before April 2016, under the old system. Under the new state pension (post-2016), inheritance is more limited. Contact the Pension Service on 0800 731 0469 to find out exactly what you are entitled to.
+            If your partner had a State Pension or had made National Insurance contributions, you may be able to inherit some of their entitlement to boost your own. If they reached State Pension age before 6 April 2016, you may inherit part of their Additional State Pension (SERPS or State Second Pension). If they reached State Pension age on or after that date, what you can inherit is narrower: half of any protected payment they had. In both cases your marriage or civil partnership must have begun before 6 April 2016. Contact the Pension Service on 0800 731 0469 to find out exactly what you are entitled to.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -189,7 +189,7 @@ export default function LostASpousePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Cohabiting partners have fewer legal rights</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If you were living together but not married or in a civil partnership, the law treats you very differently from a spouse. You are not automatically entitled to inherit anything unless you are named in the will. You cannot claim Bereavement Support Payment. You may not have the right to remain in a jointly rented home without being named on the tenancy. You may have fewer rights to pension death benefits, depending on the scheme rules. This is a deeply unfair situation that many people do not discover until it is too late.
+            If you were living together but not married or in a civil partnership, the law treats you very differently from a spouse. You are not automatically entitled to inherit anything unless you are named in the will. You may not have the right to remain in a jointly rented home without being named on the tenancy. You may have fewer rights to pension death benefits, depending on the scheme rules. This is a deeply unfair situation that many people do not discover until it is too late. One thing you may well be entitled to: since 9 February 2023, cohabiting partners with dependent children can claim Bereavement Support Payment, so long as you were living together as though married and were entitled to Child Benefit for a child living with you, or were pregnant when your partner died.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -235,7 +235,7 @@ export default function LostASpousePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">How much is Bereavement Support Payment in 2026?</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If you have dependent children, you receive a lump sum of £3,500 plus £350 per month for up to 18 months. Without dependent children, the lump sum is £2,500 plus £100 per month for up to 18 months. Claim within 3 months of the death to receive the full amount. Apply at gov.uk/bereavement-support-payment or call 0800 151 2012.
+            If you have dependent children, you receive a lump sum of £3,500 plus £350 per month for up to 18 months. Without dependent children, the lump sum is £2,500 plus £100 per month for up to 18 months. Claim within 3 months of the death to receive the full amount. Claim between 3 and 12 months and you keep the lump sum but lose some monthly payments. Claim after 12 months and the lump sum is lost altogether, though some monthly payments can still be claimed up to 21 months. Apply at gov.uk/bereavement-support-payment or call 0800 151 2012.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -247,7 +247,7 @@ export default function LostASpousePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Can I inherit my spouse's state pension?</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Under the new state pension (post-April 2016), you may inherit a protected payment if your spouse had one. Under the old system, you may inherit additional state pension. The rules are complex and depend on when you and your spouse reached state pension age. Contact the Pension Service on 0800 731 0469 for a detailed calculation.
+            Under the new State Pension, you can inherit half of your partner's protected payment if your marriage or civil partnership began before 6 April 2016, they reached State Pension age on or after that date, and they died on or after it. If they reached State Pension age before 6 April 2016, you may instead inherit part of their Additional State Pension (SERPS or State Second Pension), again provided your relationship began before 6 April 2016. The rules are complex and depend on when each of you reached State Pension age. Contact the Pension Service on 0800 731 0469 for a detailed calculation.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -290,7 +290,7 @@ export default function LostASpousePage() {
               {
                 '@type': 'Question',
                 name: 'How much is Bereavement Support Payment in 2026?',
-                acceptedAnswer: { '@type': 'Answer', text: 'With dependent children: £3,500 lump sum plus £350 per month for 18 months. Without children: £2,500 lump sum plus £100 per month for 18 months. Claim within 3 months of the death for the full amount.' },
+                acceptedAnswer: { '@type': 'Answer', text: 'With dependent children: £3,500 lump sum plus £350 per month for 18 months. Without children: £2,500 lump sum plus £100 per month for 18 months. Claim within 3 months of the death for the full amount. Claim between 3 and 12 months and you keep the lump sum but lose some monthly payments. Claim after 12 months and the lump sum is lost altogether, though some monthly payments can still be claimed up to 21 months.' },
               },
               {
                 '@type': 'Question',
@@ -300,7 +300,7 @@ export default function LostASpousePage() {
               {
                 '@type': 'Question',
                 name: "Can I inherit my spouse's state pension?",
-                acceptedAnswer: { '@type': 'Answer', text: 'Under the new state pension (post-April 2016), you may inherit a protected payment. Under the old system, you may inherit additional state pension. Contact the Pension Service on 0800 731 0469 for a detailed calculation.' },
+                acceptedAnswer: { '@type': 'Answer', text: 'Under the new State Pension, you can inherit half of your partner\'s protected payment if your marriage or civil partnership began before 6 April 2016, they reached State Pension age on or after that date, and they died on or after it. If they reached State Pension age before 6 April 2016, you may instead inherit part of their Additional State Pension (SERPS or State Second Pension). Contact the Pension Service on 0800 731 0469 for a detailed calculation.' },
               },
               {
                 '@type': 'Question',
@@ -317,6 +317,7 @@ export default function LostASpousePage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'When Your Spouse or Partner Dies',
             description: 'Financial and practical guidance for surviving spouses and civil partners in the UK.',
             datePublished: '2026-03-14',

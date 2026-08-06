@@ -271,7 +271,7 @@ export default function WhatToSayPage() {
         ))}
       </div>
 
-      <PageDisclaimer lastReviewed="March 2026" />
+      <PageDisclaimer lastReviewed="August 2026" />
 
       <RelatedGuides currentPath="/guides/what-to-say-when-someone-dies" guides={['/guides/helping-someone-grieve', '/guides/lost-a-parent', '/guides/lost-a-spouse', '/guides/first-year-after-loss']} />
 
@@ -317,6 +317,7 @@ export default function WhatToSayPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'What to Say When Someone Dies: A Compassionate Guide',
             description: 'Honest, practical guidance on what to say, what not to say, and how to support someone who is grieving.',
             url: 'https://helpafterloss.co.uk/guides/what-to-say-when-someone-dies',

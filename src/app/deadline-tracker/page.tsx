@@ -85,10 +85,10 @@ const DEADLINES: DeadlineDefinition[] = [
   {
     id: 'bereavement-support-payment',
     label: 'Claim Bereavement Support Payment',
-    description: 'If your husband, wife, or civil partner has passed away and you were under State Pension age, you may be entitled to a lump sum and 18 monthly payments.',
+    description: 'If your partner has passed away and you were under State Pension age, you may be entitled to a lump sum and 18 monthly payments. Married couples and civil partners qualify, as do cohabiting partners with a dependent child.',
     priority: 'important',
     calculateDate: (dod) => addMonths(dod, 3),
-    note: 'Claims can be backdated up to 21 months, but claiming within 3 months means you receive the full amount. Apply at gov.uk or call 0800 731 0469.',
+    note: 'Claim within 3 months for the lump sum and all 18 monthly payments. Between 3 and 12 months you keep the lump sum but lose some monthly payments. After 12 months the lump sum (£2,500 or £3,500) is lost altogether, though some monthly payments can still be claimed up to 21 months. After 21 months you usually cannot claim at all. Apply at gov.uk or call the Bereavement Service on 0800 151 2012.',
   },
   {
     id: 'funeral-expenses-payment',
@@ -96,7 +96,7 @@ const DEADLINES: DeadlineDefinition[] = [
     description: 'If you are on qualifying benefits (Universal Credit, Income Support, etc.) you can claim a contribution towards funeral costs from the DWP.',
     priority: 'important',
     calculateDate: (dod) => addMonths(dod, 6),
-    note: 'The deadline is 6 months from the date of the funeral, not the date of death. Apply at gov.uk or call 0800 731 0469.',
+    note: 'The deadline is 6 months from the date of the funeral, not the date of death. It covers burial or cremation fees in full plus up to £1,000 towards other funeral expenses. Apply at gov.uk or call the Bereavement Service on 0800 151 2012.',
   },
   {
     id: 'probate',
@@ -140,7 +140,7 @@ const DEADLINES: DeadlineDefinition[] = [
     description: 'If you have lost a child under 18, or a baby was stillborn after 24 weeks, you are entitled to 2 weeks of paid leave. You can take it in one block or in two separate ones, whatever you need.',
     priority: 'normal',
     calculateDate: (dod) => addWeeks(dod, 56),
-    note: 'Must be taken within 56 weeks of the date of death. Statutory Parental Bereavement Pay is paid at £194.32 per week (or 90% of earnings if lower).',
+    note: 'Must be taken within 56 weeks of the date of death. The leave is a day-one right. Statutory Parental Bereavement Pay is £194.32 per week (the 2026-27 rate) or 90% of average weekly earnings if lower, and needs 26 weeks of continuous service.',
   },
   {
     id: 'final-tax-return',

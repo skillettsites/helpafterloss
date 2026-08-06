@@ -29,15 +29,15 @@ const FAQ = [
   },
   {
     q: 'How do I get a Tell Us Once reference number?',
-    a: 'The registrar gives you a Tell Us Once reference number when you register the death. You cannot use the service without this number. If you forget to ask, contact the register office afterwards and they can provide it.',
+    a: 'The registrar gives you a unique Tell Us Once reference number when you register the death. You cannot use the service without this number, and you have 28 days from the day it is issued to use it. If you forget to ask, contact the register office afterwards and they can provide it.',
   },
   {
     q: 'Can I use Tell Us Once online?',
-    a: 'Yes. You can use it online at gov.uk/tell-us-once or by calling 0800 085 7308. The online service is available 24 hours a day. The phone line is open Monday to Friday, 8am to 8pm, and Saturday 9am to 4pm.',
+    a: 'Yes. You can use it online at gov.uk/tell-us-once at any time, or by phone. The registrar will give you the number to call along with your reference number, and the line most people are given is 0800 085 7308.',
   },
   {
     q: 'What happens if I miss the 28-day deadline?',
-    a: 'If the 28 days pass, you would need to contact each government department yourself. It is not the end of the world. The registrar can sometimes issue a new reference number, so it is always worth ringing the register office to ask before you assume the worst.',
+    a: 'The 28 days run from the day you are given your unique reference number, not from the registration itself. If that time passes, you would need to contact each government department yourself. It is not the end of the world, and it is always worth ringing the register office to ask before you assume the worst.',
   },
   {
     q: 'Does Tell Us Once notify banks?',
@@ -112,26 +112,34 @@ export default function TellUsOncePage() {
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-foreground mb-3">What does Tell Us Once do?</h2>
         <p className="text-muted leading-relaxed">
-          Tell Us Once notifies the DWP (state pension and benefits), HMRC (tax and National Insurance), DVLA (driving licence), HM Passport Office, your local council (council tax, electoral roll, Blue Badge, library cards, housing benefit), and public sector pension schemes (NHS, Teachers, Civil Service, Armed Forces, Police, Fire). It does not cover banks, building societies, utility companies, insurance providers, or private pensions.
+          Tell Us Once notifies the DWP (state pension and benefits), HMRC (tax and National Insurance), DVLA (driving licence, and removal as registered keeper of up to 5 vehicles), HM Passport Office, your local council (council tax, electoral roll, Blue Badge, library cards, housing benefit), Social Security Scotland, and public sector pension schemes (NHS, Civil Service, Armed Forces, local government). It does not cover banks, building societies, utility companies, insurance providers, or private pensions.
         </p>
       </section>
 
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-foreground mb-3">How do I use Tell Us Once?</h2>
         <p className="text-muted leading-relaxed">
-          The registrar gives you a unique reference number when you register the death. Use it at <a href="https://www.gov.uk/tell-us-once" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">gov.uk/tell-us-once</a> or call <a href="tel:08000857308" className="text-primary hover:underline">0800 085 7308</a> within 28 days. Have their National Insurance number, benefit details, and driving licence or passport numbers to hand if you can find them.
+          The registrar gives you a unique reference number when you register the death. Use it at <a href="https://www.gov.uk/tell-us-once" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">gov.uk/tell-us-once</a> or call <a href="tel:08000857308" className="text-primary hover:underline">0800 085 7308</a> within 28 days of that number being issued. Have their National Insurance number, benefit details, and driving licence or passport numbers to hand if you can find them.
         </p>
       </section>
 
       {/* Step by step */}
       <section id="how-to-use" className="mb-10 scroll-mt-20">
         <h2 className="text-2xl font-bold text-foreground mb-6">How to use Tell Us Once: step by step</h2>
+
+        <div className="bg-warm border border-warm-border rounded-xl p-5 mb-6">
+          <h3 className="font-semibold text-amber-900 mb-2">One thing to do first, if they had a Motability car</h3>
+          <p className="text-sm text-amber-800 leading-relaxed">
+            Please ring Motability on <a href="tel:03004564566" className="font-semibold underline">0300 456 4566</a> before you use Tell Us Once. Motability are clear that once Tell Us Once has gone through, the vehicle can no longer be driven. If you speak to them first, the family can usually keep using the car for up to two weeks while you make other arrangements. It is a small thing that is very easily missed, and it can leave you without transport at the worst possible moment.
+          </p>
+        </div>
+
         <div className="space-y-4 mb-6">
           {[
             { step: '1', title: 'Register the death', desc: 'Book an appointment at the register office for the area where they died. In England and Wales you have 5 days; in Scotland, 8 days. The registrar will explain Tell Us Once and hand you a reference number while you are there.' },
             { step: '2', title: 'Gather what you can', desc: 'Before you start, gather their National Insurance number, details of any benefits or tax credits they received, their driving licence and passport numbers, and details of any council services they used. You do not need every single one, but having them to hand makes it quicker.' },
-            { step: '3', title: 'Use it online or by phone', desc: 'Go to gov.uk/tell-us-once (open 24 hours) or call 0800 085 7308 (Monday to Friday 8am-8pm, Saturday 9am-4pm). Enter your reference number and follow the prompts. Online it takes around 15 minutes.' },
-            { step: '4', title: 'Use it within 28 days', desc: 'The service must be used within 28 days of getting your reference number. If that date passes, you would need to contact each government department yourself, which takes considerably longer, so it is worth setting a reminder.' },
+            { step: '3', title: 'Use it online or by phone', desc: 'Go to gov.uk/tell-us-once, or call the number the registrar gives you (usually 0800 085 7308). Enter your reference number and follow the prompts. Online it takes around 15 minutes.' },
+            { step: '4', title: 'Use it within 28 days', desc: 'The service must be used within 28 days of getting your unique reference number, so the clock starts when the registrar hands it to you rather than at the registration itself. If that date passes, you would need to contact each government department yourself, which takes considerably longer, so it is worth setting a reminder.' },
           ].map(s => (
             <div key={s.step} className="bg-card rounded-xl border border-border p-5 md:p-6 flex gap-4">
               <div className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">{s.step}</div>
@@ -179,11 +187,12 @@ export default function TellUsOncePage() {
             {[
               { org: 'DWP', detail: 'All benefits: State Pension, Universal Credit, PIP, Attendance Allowance, ESA, Carer\'s Allowance, and more' },
               { org: 'HMRC', detail: 'Income tax, National Insurance, tax credits' },
-              { org: 'DVLA', detail: 'Driving licence cancellation' },
-              { org: 'HM Passport Office', detail: 'Passport cancellation' },
+              { org: 'DVLA', detail: 'Cancels the driving licence, removes the person as registered keeper of up to 5 vehicles, and ends the vehicle tax. You must still tell DVLA separately if you sell a vehicle, keep one, or want to keep a personalised registration number' },
+              { org: 'HM Passport Office', detail: 'Cancels the passport. There is no option here to ask for the passport back, so if you would like it as a keepsake, use form D1 instead' },
               { org: 'Local council', detail: 'Council tax, electoral register, Blue Badge, library cards, housing benefit' },
-              { org: 'Public sector pensions', detail: 'NHS, Teachers, Civil Service, Armed Forces, Police, Fire' },
+              { org: 'Public sector pensions', detail: 'NHS, Civil Service, Armed Forces, local government, and the Scottish Public Pension Agency schemes' },
               { org: 'Veterans UK', detail: 'Armed Forces compensation and pension schemes' },
+              { org: 'Social Security Scotland', detail: 'Devolved Scottish benefits' },
             ].map((item, i) => (
               <li key={i} className="flex items-start gap-2">
                 <svg className="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -209,7 +218,7 @@ export default function TellUsOncePage() {
             {[
               { org: 'Banks and building societies', tip: 'Use the free Death Notification Service at deathnotificationservice.co.uk to notify multiple banks at once' },
               { org: 'Private and workplace pensions', tip: 'Check for death-in-service benefits through the employer too' },
-              { org: 'Insurance companies', tip: 'Life, home, car, travel, and pet insurance' },
+              { org: 'Insurance companies', tip: 'Life, home, car, travel, and pet insurance. Check with the motor insurer before anyone drives the car, since cover is not guaranteed to continue, and arrange cover before anyone drives the car' },
               { org: 'Mortgage lender', tip: 'Check whether the mortgage had life insurance attached' },
               { org: 'Utility companies', tip: 'Gas, electricity, water. Transfer to surviving occupant or close the account' },
               { org: 'Phone and broadband providers', tip: 'Cancel or transfer contracts. You may be entitled to exit without penalty' },
@@ -218,7 +227,7 @@ export default function TellUsOncePage() {
               { org: 'Employer', tip: 'Ask about outstanding salary, holiday pay, and death-in-service benefits' },
               { org: 'Landlord or housing association', tip: 'Give appropriate notice. Check tenancy terms for your rights' },
               { org: 'Subscriptions', tip: 'Streaming, gym, magazines, charities, breakdown cover' },
-              { org: 'Royal Mail', tip: 'Set up post redirection (from £37 for 3 months). This catches mail from organisations you may not know about' },
+              { org: 'Royal Mail', tip: 'Set up post redirection through their special circumstances service. There is a charge, and current prices are on royalmail.com. It catches mail from organisations you may not know about' },
               { org: 'Social media and email', tip: 'Facebook and Instagram can be memorialised or deleted. Google has an Inactive Account Manager' },
             ].map((item, i) => (
               <li key={i} className="flex items-start gap-2">
@@ -269,7 +278,7 @@ export default function TellUsOncePage() {
         <p className="text-sm text-muted mt-3">Free. No sign-up required. Takes about 3 minutes.</p>
       </div>
 
-      <PageDisclaimer lastReviewed="March 2026" jurisdiction="england-wales" />
+      <PageDisclaimer lastReviewed="August 2026" jurisdiction="england-wales" />
 
       <RelatedGuides currentPath="/tell-us-once" guides={['/guide', '/template-letters', '/phone-directory', '/deadline-tracker']} />
 
@@ -296,7 +305,7 @@ export default function TellUsOncePage() {
             name: 'How to Use Tell Us Once to Report a Death',
             description: 'Step-by-step guide to using the Tell Us Once service to notify government departments after a death in the UK.',
             datePublished: '2026-03-13',
-            dateModified: '2026-03-20',
+            dateModified: '2026-08-06',
             author: { '@type': 'Organization', name: 'Help After Loss', url: 'https://helpafterloss.co.uk' },
             step: [
               { '@type': 'HowToStep', name: 'Register the death', text: 'Book an appointment at the register office. The registrar will give you a Tell Us Once reference number.' },
@@ -313,10 +322,11 @@ export default function TellUsOncePage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Tell Us Once Service UK 2026',
             description: 'How to use the Tell Us Once service to report a death to government departments in the UK.',
             datePublished: '2026-03-13',
-            dateModified: '2026-03-20',
+            dateModified: '2026-08-06',
             author: { '@type': 'Organization', name: 'Help After Loss', url: 'https://helpafterloss.co.uk' },
             publisher: { '@type': 'Organization', name: 'Help After Loss', url: 'https://helpafterloss.co.uk' },
             mainEntityOfPage: 'https://helpafterloss.co.uk/tell-us-once',

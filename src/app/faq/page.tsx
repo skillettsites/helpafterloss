@@ -24,7 +24,7 @@ const faqs = [
     questions: [
       {
         q: 'How long do I have to register a death in the UK?',
-        a: 'In England and Wales, you must register a death within 5 days. In Scotland, it is 8 days. In Northern Ireland, it is 5 days. Registration is done at the local register office in the district where the person died, not necessarily where they lived.',
+        a: 'In England and Wales, you must register a death within 5 days of getting the confirmation from the medical examiner or coroner. In Scotland, it is 8 days. In Northern Ireland, it is 5 days. The clock starts from that confirmation rather than from the date of death, so a wait for the paperwork does not put you behind. Registration is done at the local register office in the district where the person died, not necessarily where they lived.',
       },
       {
         q: 'Who can register a death?',
@@ -41,11 +41,11 @@ const faqs = [
     questions: [
       {
         q: 'How much does a death certificate cost?',
-        a: 'In England and Wales, a certified copy costs £12.50. In Scotland, it is £15. Prices may vary slightly in Northern Ireland. You should order at least 10 certified copies, as banks, insurers, and other organisations often need to keep or retain them temporarily.',
+        a: 'In England and Wales, a certified copy costs £12.50, and the GRO priority service is £38.50. In Scotland it is around £15, though the exact fee is set locally, so check with the registrar. In Northern Ireland it is £8 from the registrar at the time of registration, or £15 for the first copy ordered later from GRONI and £8 for each additional copy ordered at the same time. Around 5 to 10 copies suits most families, as banks, insurers, and other organisations often need to keep them for a while.',
       },
       {
         q: 'How many death certificates do I need?',
-        a: 'We recommend ordering 10 to 15 certified copies. Each bank, insurer, pension provider, and utility company may need a copy, and some retain them for weeks. Having extras saves time. You can order more later, but it is cheaper to order them all at once during registration.',
+        a: 'Around 5 to 10 certified copies suits most families, depending on how many accounts and policies there were. Each bank, insurer, pension provider, and utility company may need a copy, and some retain them for weeks, so a larger estate can need 8 to 12. You can order more later at the same price per copy, but it takes longer, so it is better to have a spare than to run short.',
       },
     ],
   },
@@ -62,7 +62,7 @@ const faqs = [
       },
       {
         q: 'How long does probate take?',
-        a: 'The grant of probate itself usually takes 8 to 12 weeks after application. However, the entire estate administration process (collecting assets, paying debts, distributing to beneficiaries) commonly takes 6 to 12 months, and complex estates can take longer.',
+        a: 'The grant of probate itself usually arrives within 12 weeks of applying, and often sooner. However, the entire estate administration process (collecting assets, paying debts, distributing to beneficiaries) commonly takes 6 to 12 months, and complex estates can take longer.',
       },
       {
         q: 'Can I apply for probate without a solicitor?',
@@ -105,7 +105,7 @@ const faqs = [
     questions: [
       {
         q: 'What is Tell Us Once?',
-        a: 'Tell Us Once is a free government service that notifies multiple government departments of a death in a single step. It covers HMRC, DWP, the Passport Office, DVLA, and local council services. The registrar will give you a reference number to use. It is not available in Northern Ireland.',
+        a: 'Tell Us Once is a free government service that notifies multiple government departments of a death in a single step. It covers HMRC, DWP, the Passport Office, DVLA, and local council services. The registrar will give you a unique reference number, and you need to use the service within 28 days of getting that number. It is not available in Northern Ireland.',
       },
       {
         q: 'What does Tell Us Once not cover?',
@@ -131,7 +131,7 @@ const faqs = [
     questions: [
       {
         q: 'What is Bereavement Support Payment?',
-        a: 'Bereavement Support Payment is a DWP benefit for the surviving husband, wife, or civil partner. It provides an initial lump sum of up to £3,500, plus monthly payments of up to £350 for 18 months. You must claim within 21 months of the death. It is not means-tested, so it does not matter what you have in savings.',
+        a: 'Bereavement Support Payment is a DWP benefit for the surviving husband, wife, or civil partner. It provides an initial lump sum of up to £3,500, plus monthly payments of up to £350 for 18 months. Timing matters: claim within 3 months and you get the lump sum and all 18 monthly payments, and after 12 months the lump sum is lost altogether, though some monthly payments can still be claimed up to 21 months. It is not means-tested, so it does not matter what you have in savings.',
       },
       {
         q: 'Can I get help with funeral costs?',
@@ -246,7 +246,7 @@ export default function FAQPage() {
         ))}
       </div>
 
-      <PageDisclaimer lastReviewed="March 2026" jurisdiction="all-uk" />
+      <PageDisclaimer lastReviewed="August 2026" jurisdiction="all-uk" />
 
       <RelatedGuides
         currentPath="/faq"

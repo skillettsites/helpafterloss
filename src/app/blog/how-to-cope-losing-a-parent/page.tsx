@@ -24,6 +24,25 @@ export const metadata: Metadata = {
   },
 };
 
+const FAQ = [
+  {
+    q: 'How long does it take to get over losing a parent?',
+    a: 'You do not really "get over" losing a parent. Over time the pain tends to change shape and become more manageable, but the absence stays. Many people find the first year particularly difficult, especially around birthdays, holidays, and the anniversary. There is no correct timeline, and nobody else gets to set one for you.',
+  },
+  {
+    q: 'Is it normal to feel relief when a parent dies?',
+    a: 'Yes. Relief is a very common reaction, particularly if your parent was suffering, had a long illness, or if the relationship was a difficult one. Feeling relief does not mean you did not love them, and it is quite possible to feel relief and deep sadness at the same time.',
+  },
+  {
+    q: 'How do I cope with losing my last surviving parent?',
+    a: 'Losing your last parent can bring a particular kind of grief, because you become the oldest generation and it can feel like losing your safety net. It is worth letting yourself grieve that specific loss rather than only the person. Lean on brothers and sisters if you have them, talk to friends who have been through it, and consider grief counselling through Cruse (0808 808 1677) or NHS talking therapies.',
+  },
+  {
+    q: 'What practical things need to be done when a parent dies?',
+    a: 'The immediate priorities are getting the medical certificate of cause of death, registering the death, using Tell Us Once to notify the DWP, HMRC and others, and arranging the funeral. In England and Wales you have 5 days to register, and those 5 days run from when you receive the medical examiner\'s confirmation rather than from the day they died. In Scotland it is 8 days. After that comes their property, bank accounts, utilities, and possibly probate, which costs £526 for estates worth more than £5,000.',
+  },
+];
+
 export default function HowToCopeLosingParentPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
@@ -63,6 +82,7 @@ export default function HowToCopeLosingParentPage() {
         { id: 'complicated-relationships', label: 'When the relationship was complicated' },
         { id: 'looking-after-yourself', label: 'Looking after yourself' },
         { id: 'support', label: 'Where to find support' },
+        { id: 'faqs', label: 'Common questions' },
       ]} />
 
       {/* What it feels like */}
@@ -216,6 +236,24 @@ export default function HowToCopeLosingParentPage() {
         </ul>
       </div>
 
+      {/* FAQ */}
+      <h2 id="faqs" className="text-2xl font-bold text-foreground mb-6">Common questions</h2>
+      <div className="space-y-4 mb-12">
+        {FAQ.map((item, i) => (
+          <details key={i} className="bg-card rounded-xl border border-border group">
+            <summary className="p-5 md:p-6 font-semibold text-foreground cursor-pointer list-none flex items-center justify-between gap-4 hover:text-primary transition-colors">
+              <span>{item.q}</span>
+              <svg className="w-5 h-5 text-muted flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div className="px-5 md:px-6 pb-5 md:pb-6">
+              <p className="text-sm text-muted leading-relaxed">{item.a}</p>
+            </div>
+          </details>
+        ))}
+      </div>
+
       <SupportCta />
 
       <RelatedGuides
@@ -237,6 +275,7 @@ export default function HowToCopeLosingParentPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'How to Cope With Losing a Parent: A Practical and Emotional Guide',
             description: 'A compassionate guide to coping with the loss of a parent, covering the emotional impact, practical steps, and where to find support.',
             datePublished: '2026-03-22',
@@ -260,28 +299,11 @@ export default function HowToCopeLosingParentPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'FAQPage',
-            mainEntity: [
-              {
-                '@type': 'Question',
-                name: 'How long does it take to get over losing a parent?',
-                acceptedAnswer: { '@type': 'Answer', text: 'You do not "get over" losing a parent. Over time, the pain changes shape and becomes more manageable, but the loss remains. Most people find the first year especially difficult, with particular pain around birthdays, holidays, and anniversaries. There is no correct timeline for grief.' },
-              },
-              {
-                '@type': 'Question',
-                name: 'Is it normal to feel relief when a parent dies?',
-                acceptedAnswer: { '@type': 'Answer', text: 'Yes. Relief is a very common and normal reaction, especially if the parent was suffering, had a long illness, or if the relationship was difficult. Feeling relief does not mean you did not love them. It is possible to feel relief and sadness at the same time.' },
-              },
-              {
-                '@type': 'Question',
-                name: 'How do I cope with losing my last surviving parent?',
-                acceptedAnswer: { '@type': 'Answer', text: 'Losing your last parent can trigger a particular kind of grief because you become the oldest generation. It can feel like losing your safety net. Allow yourself to grieve this specific loss. Lean on siblings if you have them, connect with friends who have been through it, and consider grief counselling through Cruse (0808 808 1677) or NHS talking therapies.' },
-              },
-              {
-                '@type': 'Question',
-                name: 'What practical things need to be done when a parent dies?',
-                acceptedAnswer: { '@type': 'Answer', text: 'The immediate priorities are: get a medical certificate of cause of death, register the death within 5 days (8 in Scotland), notify the DWP and HMRC via Tell Us Once, and arrange the funeral. After that, you will need to deal with their property, bank accounts, utilities, and potentially probate. Our personalised guide walks you through every step.' },
-              },
-            ],
+            mainEntity: FAQ.map(item => ({
+              '@type': 'Question',
+              name: item.q,
+              acceptedAnswer: { '@type': 'Answer', text: item.a },
+            })),
           }),
         }}
       />

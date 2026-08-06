@@ -24,30 +24,30 @@ export const metadata: Metadata = {
 const FUNERAL_TYPES = [
   {
     type: 'Traditional burial with service',
-    cost: '£5,000 to £7,000',
+    cost: '£4,000 to £8,000',
     description: 'The most familiar type of funeral: a service at a church, chapel, or crematorium, followed by burial in a churchyard or cemetery. A funeral director manages the whole process, from bringing the person into their care through to the graveside.',
     includes: ['Collecting and caring for the person who has passed away', 'Coffin of your choice', 'Hearse to the service and graveside', 'Service at a church or chapel', 'Burial plot (if not already owned)', 'Grave digging and backfilling', 'Minister or officiant'],
     pros: 'A permanent physical place to visit and grieve. Well understood by most families and supported by most faiths.',
     cons: 'The most expensive option. Burial plots in many areas are scarce and expensive. Annual maintenance costs for the grave may follow.',
-    note: 'Burial plot costs vary enormously by location. In London and the South East, a new single grave can cost £4,000-£7,000 alone. In rural areas, costs can be much lower.',
+    note: 'The UK average for a traditional attended burial is £5,440 (SunLife Cost of Dying Report 2026). Burial plot costs vary enormously by location. In London and the South East, a new single grave can cost £4,000-£7,000 alone. In rural areas, costs can be much lower.',
   },
   {
     type: 'Traditional cremation with service',
-    cost: '£4,000 to £5,500',
+    cost: '£3,000 to £6,500',
     description: 'A service at a crematorium or church, followed by cremation. The ashes (also called cremated remains) are returned to the family, usually within a week or two. The family can then scatter, bury, or keep the ashes.',
     includes: ['Collecting and caring for the person who has passed away', 'Coffin', 'Hearse', 'Service at crematorium or chapel', 'Cremation fees', 'Return of ashes in a container'],
     pros: 'More affordable than burial. No ongoing grave maintenance. Flexibility with what you do with the ashes. Can scatter in a meaningful place.',
     cons: 'No permanent grave for those who want one. The crematorium slot is typically 30-60 minutes, which can feel rushed.',
-    note: 'You can split the ashes between family members or scatter them in multiple locations. Ask your funeral director about the legal requirements for scattering in your chosen location.',
+    note: 'The UK average for a traditional attended cremation is £4,200 (SunLife Cost of Dying Report 2026). You can split the ashes between family members or scatter them in multiple locations. Ask your funeral director about the legal requirements for scattering in your chosen location.',
   },
   {
     type: 'Direct cremation',
-    cost: '£1,000 to £2,000',
+    cost: '£1,095 to £2,500',
     description: 'The most affordable option. Your loved one is taken into the funeral director\'s care and cremated without a formal service. No mourners attend the cremation itself. The ashes are returned to the family, who can then hold a memorial at any time and place they choose.',
     includes: ['Bringing your loved one into the funeral director\'s care', 'Basic coffin', 'Transport to crematorium', 'Cremation', 'Return of ashes'],
     pros: 'Significantly cheaper than a traditional funeral. No time pressure. The family can plan a personal and meaningful memorial at their own pace. Becoming much more common and widely accepted.',
     cons: 'No service at the time, which some families find hard. The family does not see the coffin go into the crematorium.',
-    note: 'Direct cremation has grown from around 4% of funerals in 2016 to over 20% today. Many families follow it with a personal gathering, a memorial walk, or a scattering ceremony.',
+    note: 'The UK average is £1,628, and the national providers publish prices from around £1,095 (SunLife Cost of Dying Report 2026). Direct cremation has grown from around 3% of funerals in 2019 to 21% today. Many families follow it with a personal gathering, a memorial walk, or a scattering ceremony.',
   },
   {
     type: 'Direct burial',
@@ -60,7 +60,7 @@ const FUNERAL_TYPES = [
   },
   {
     type: 'Green or woodland burial',
-    cost: '£2,000 to £4,500',
+    cost: '£2,000 to £5,000',
     description: 'The person is buried in a natural burial ground, often a meadow or woodland. A biodegradable coffin or shroud is used. No concrete or metal. The grave is typically marked with a native tree or wildflowers rather than a headstone.',
     includes: ['Natural burial ground plot', 'Biodegradable coffin or shroud', 'Simple ceremony (often outdoors at the graveside)', 'Tree or wildflower marking'],
     pros: 'Environmentally conscious. Often a beautiful, peaceful setting. Lower cost than traditional burial in many cases. Appeals to those who want to give something back to the earth.',
@@ -87,12 +87,12 @@ const FUNERAL_TYPES = [
   },
   {
     type: 'DIY funeral',
-    cost: 'Potentially £500 to £2,000 or less',
+    cost: 'Roughly £800 to £1,500',
     description: 'It is entirely legal in the UK to arrange a funeral yourself without using a funeral director. The family can wash and dress their loved one, choose the coffin, take them to the crematorium or burial ground, and hold the service entirely themselves.',
     includes: ['Whatever the family chooses to include'],
     pros: 'Can save thousands of pounds. Very personal. Full control over every aspect.',
-    cons: 'Requires significant practical organisation at an already difficult time. You will need to handle paperwork yourself, including the cremation forms or burial registration. Not suitable for all families.',
-    note: 'The Natural Death Centre (naturaldeath.org.uk) provides detailed guidance on arranging a DIY funeral. They also have a helpline: 01962 712690.',
+    cons: 'Requires significant practical organisation at an already difficult time. You will need to handle the paperwork and the booking yourself. Not suitable for all families.',
+    note: 'Most of the cost is the crematorium or burial ground fee, typically £700 to £1,100, plus £100 to £400 for a simple coffin. Since 9 September 2024 the medical examiner system has replaced the old two-doctor cremation forms in England and Wales, so those doctors\' fees no longer apply. The Natural Death Centre (naturaldeath.org.uk) provides detailed guidance on arranging a DIY funeral. They also have a helpline: 01962 712690.',
   },
   {
     type: 'Repatriation',
@@ -115,11 +115,11 @@ const QUOTE_ITEMS = [
   { item: 'Minister or officiant', note: 'Church minister, humanist celebrant, or civil celebrant' },
   { item: 'Flowers', note: 'Usually quoted separately; families can provide their own' },
   { item: 'Order of service', note: 'Printing costs; families can often do this themselves' },
-  { item: 'Death certificates', note: '£12.50 each in England and Wales (£15 in Scotland); order at least 5 when you register the death' },
+  { item: 'Death certificates', note: '£12.50 each in England and Wales; in Scotland the fee is set by the council and is usually £10 to £15. Order at least 5 when you register the death' },
 ];
 
 const COST_REDUCTION = [
-  { title: 'Choose direct cremation', detail: 'Saves £2,500-£4,000 compared to a traditional cremation with service. You can still hold a meaningful memorial gathering afterwards.' },
+  { title: 'Choose direct cremation', detail: 'At a UK average of £1,628, it saves around £2,600 compared with a traditional attended cremation and around £3,800 compared with a traditional attended burial. You can still hold a meaningful memorial gathering afterwards.' },
   { title: 'Get at least 3 quotes', detail: 'Funeral director prices vary by thousands of pounds in the same area. Since 2021, the Competition and Markets Authority requires funeral directors to publish itemised price lists online. Use these to compare.' },
   { title: 'Choose a simple coffin', detail: 'Coffins range from under £300 to over £3,000. A simple chipboard or cardboard coffin is dignified and significantly cheaper. Nobody at the funeral will know or care what the coffin cost.' },
   { title: 'Skip what you don\'t need', detail: 'You don\'t have to have flowers, a limousine, or a printed order of service. Remove any item from the quote that doesn\'t feel meaningful to you.' },
@@ -156,11 +156,11 @@ export default function FuneralOptionsPage() {
           <p className="text-sm text-muted mt-1">UK average cremation with service</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-5 text-center">
-          <p className="text-2xl font-bold text-primary">£1,600</p>
+          <p className="text-2xl font-bold text-primary">£1,628</p>
           <p className="text-sm text-muted mt-1">UK average direct cremation</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-5 text-center">
-          <p className="text-2xl font-bold text-primary">£5,400</p>
+          <p className="text-2xl font-bold text-primary">£5,440</p>
           <p className="text-sm text-muted mt-1">UK average traditional burial</p>
         </div>
       </div>
@@ -242,11 +242,11 @@ export default function FuneralOptionsPage() {
       <div className="space-y-4 mb-12">
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Funeral Expenses Payment</h3>
-          <p className="text-sm text-muted leading-relaxed">If you receive Universal Credit, Pension Credit, Housing Benefit, or certain other means-tested benefits, you may be entitled to help from the DWP. This covers burial or cremation fees in full, plus up to £1,000 towards other costs. Apply within 6 months of the funeral on form SF200. Call 0800 151 2012 for more information.</p>
+          <p className="text-sm text-muted leading-relaxed">In England and Wales, if you receive Universal Credit, income-related Employment and Support Allowance, Pension Credit or Housing Benefit, you may be entitled to help from the DWP. This covers burial or cremation fees in full, with no cap on that part, plus up to £1,000 towards other costs such as the funeral director's fee, coffin and flowers. If they had a pre-paid funeral plan, that £1,000 drops to £120. Apply within 6 months of the funeral, not the death, on form SF200. Call 0800 151 2012 for more information. Scotland has its own Funeral Support Payment, with a wider list of qualifying benefits and a flat rate of £1,327.75 (£162.05 if there was a pre-paid plan).</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Children's Funeral Fund</h3>
-          <p className="text-sm text-muted leading-relaxed">If a child under 18 passes away in England (or a baby is stillborn after 24 weeks), the Children's Funeral Fund covers burial or cremation costs. There is no means test. Tell your funeral director at the first meeting and they will handle the application.</p>
+          <p className="text-sm text-muted leading-relaxed">If a child under 18 passes away in England (or a baby is stillborn after 24 weeks), the Children's Funeral Fund covers burial or cremation fees, plus up to £300 towards a coffin, shroud or casket. There is no means test. Tell your funeral director at the first meeting and they will handle the application. Wales waives the fees and adds a £500 contribution, Scottish councils do not charge burial or cremation fees for under-18s at all, and Northern Ireland pays a £3,441 lump sum.</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Trade union and employer schemes</h3>
@@ -299,6 +299,7 @@ export default function FuneralOptionsPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Funeral Options: Every Type of Funeral Explained',
             description: 'A complete guide to every type of funeral in the UK with honest cost comparisons.',
             url: 'https://helpafterloss.co.uk/guides/funeral-options',

@@ -162,12 +162,13 @@ export default function CulturalGuidePage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Cultural and Religious Funeral Guidance for the UK',
             description: 'Guidance on funeral and bereavement practices for Muslim, Jewish, Hindu, Sikh, Buddhist, and Christian traditions in the UK.',
             datePublished: '2026-03-13',
             dateModified: '2026-03-14',
             author: { '@type': 'Organization', name: 'Help After Loss' },
-            publisher: { '@type': 'Organization', name: 'Help After Loss' },
+            publisher: { '@type': 'Organization', name: 'Help After Loss', logo: { '@type': 'ImageObject', url: 'https://helpafterloss.co.uk/opengraph-image' } },
           }),
         }}
       />

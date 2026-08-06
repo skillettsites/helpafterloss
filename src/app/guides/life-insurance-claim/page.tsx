@@ -216,7 +216,7 @@ export default function LifeInsuranceClaimPage() {
         ))}
       </div>
 
-      <PageDisclaimer lastReviewed="March 2026" jurisdiction="all-uk" />
+      <PageDisclaimer lastReviewed="August 2026" jurisdiction="all-uk" />
 
       <RelatedGuides currentPath="/guides/life-insurance-claim" guides={['/guides/mortgage-after-death', '/guides/pensions-after-death', '/guides/inheritance-tax', '/guides/finding-accounts-after-death']} />
 
@@ -262,6 +262,7 @@ export default function LifeInsuranceClaimPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'How to Claim Life Insurance After a Death in the UK (2026)',
             description: 'Step-by-step guide to finding and claiming life insurance policies after a death. Covers employer policies, mortgage protection, trust status, and tax.',
             url: 'https://helpafterloss.co.uk/guides/life-insurance-claim',

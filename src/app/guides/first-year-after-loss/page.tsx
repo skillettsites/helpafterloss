@@ -54,7 +54,7 @@ const MONTHS = [
     title: 'Chasing and dealing with admin',
     emotional: 'By now, the constant administrative work can feel exhausting and relentless. It is common to feel angry that you are spending so much time on paperwork rather than grieving. Take breaks when you need them. The admin will still be there tomorrow.',
     tasks: [
-      { text: 'Chase the probate application if you have not heard back (current processing times are 12-16 weeks)', link: '/probate', urgent: false },
+      { text: 'Chase the probate application if you have not heard back (the Probate Registry usually issues the grant within 12 weeks)', link: '/probate', urgent: false },
       { text: 'Deal with the mortgage: notify the lender, check life cover, decide whether to sell or keep the property', link: '/guides/property-after-death', urgent: false },
       { text: 'Cancel remaining subscriptions and direct debits', link: '/guides/subscriptions-after-death', urgent: false },
       { text: 'Contact pension providers about any death benefits or dependant\'s pension', link: '/guides/pensions-after-death', urgent: false },
@@ -260,6 +260,7 @@ export default function FirstYearAfterLossPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'The First Year After Loss: A Month-by-Month Guide',
             description: 'A practical month-by-month guide to the first year after someone dies, covering administrative tasks, key deadlines, and emotional milestones.',
             url: 'https://helpafterloss.co.uk/guides/first-year-after-loss',

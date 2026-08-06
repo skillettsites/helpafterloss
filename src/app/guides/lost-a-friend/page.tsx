@@ -322,6 +322,7 @@ export default function LostAFriendPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'When a Friend Dies',
             description: 'Support and practical guidance for people who have lost a close friend in the UK.',
             datePublished: '2026-03-14',

@@ -42,7 +42,7 @@ const faqSchema = {
       name: 'Do I need probate to access a deceased person\'s bank account?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Not always, and often not at all. Each bank sets its own probate threshold, usually between £5,000 and £50,000. If the balance sits below it, the bank may release the funds without a grant of probate. Lloyds, Halifax, NatWest, and RBS have thresholds around £50,000. Nationwide is £50,000. Santander releases up to £10,000 through a simplified email process.',
+        text: 'Not always, and often not at all. Each bank sets its own probate threshold, usually somewhere between £5,000 and £50,000. If the balance sits below it, the bank may release the funds without a grant of probate. Barclays, Santander and Nationwide each publish £50,000, counting only money held in the deceased\'s sole accounts. Metro Bank publishes £25,000 and NS&I £5,000. HSBC, Lloyds and Halifax publish no figure at all and decide case by case. Treat any threshold as a discretion rather than a right: every bank reserves the right to ask for a grant whatever the balance, and you will usually be asked to sign an indemnity before funds are released.',
       },
     },
     {
@@ -182,7 +182,8 @@ export default function BanksPage() {
           </h2>
           <p className="text-muted mb-4">
             Building societies work in much the same way as banks. Most have their own
-            bereavement teams and will release smaller balances without asking for probate.
+            bereavement teams and may release smaller balances without asking for probate,
+            though the decision is always theirs.
           </p>
 
           <div className="overflow-x-auto">
@@ -273,15 +274,28 @@ export default function BanksPage() {
           <div className="bg-card border border-border rounded-xl p-6">
             <h3 className="font-semibold text-foreground mb-2">Probate thresholds explained</h3>
             <p className="text-muted mb-2">
-              Each bank sets its own threshold below which it will release funds without
-              requiring a grant of probate. This varies from £5,000 (Santander simplified process)
-              to £50,000 (Lloyds, NatWest, Nationwide). If the balance is above the threshold,
-              you will need to apply for{' '}
+              Each bank sets its own threshold below which it may release funds without
+              requiring a grant of probate. Barclays, Santander and Nationwide each publish
+              £50,000, as do Yorkshire, Skipton and Coventry building societies. Principality
+              publishes £40,000, Metro Bank £25,000, and NS&amp;I £5,000. HSBC, Lloyds and
+              Halifax publish no figure at all and decide each case on its own facts. If the
+              balance is above the threshold, you will need to apply for{' '}
               <Link href="/probate" className="text-primary hover:underline">
                 probate
               </Link>{' '}
               before the bank will release funds. Most banks will still pay funeral invoices
               directly from the account before probate is granted.
+            </p>
+            <p className="text-muted mb-2">
+              Three things are worth knowing before you rely on a threshold. It is a
+              discretionary ceiling, not a right: banks word these limits as what they
+              &ldquo;may&rdquo; do, and they reserve the right to ask for a grant at any balance.
+              It applies to sole accounts only, and it is aggregated, so the bank adds up
+              everything held in their sole name across that brand rather than looking at each
+              account separately; joint accounts are left out of the calculation because they
+              pass to the surviving holder anyway. And you will usually have to sign an indemnity
+              or a statutory declaration, sometimes witnessed by a solicitor, taking on
+              responsibility if it later turns out the money should have gone elsewhere.
             </p>
           </div>
 

@@ -38,7 +38,7 @@ export default function IntestacyPage() {
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-foreground mb-3">Who inherits if there is no will?</h2>
         <p className="text-muted leading-relaxed">
-          Under the intestacy rules in England and Wales, the surviving husband, wife, or civil partner inherits the first £322,000 plus the personal belongings, plus half of anything above that. What remains is shared equally between the children. If there is no surviving partner, the children inherit everything. Partners who were not married inherit nothing automatically, however long they lived together.
+          Under the intestacy rules in England and Wales, the surviving husband, wife, or civil partner inherits the first £322,000 plus the personal belongings, plus half of anything above that. What remains is shared equally between the children. That £322,000 figure applies to deaths on or after 26 July 2023; for an earlier death the lower figure that applied at the time is used instead. If there is no surviving partner, the children inherit everything. Partners who were not married inherit nothing automatically, however long they lived together.
         </p>
       </section>
 
@@ -117,7 +117,7 @@ export default function IntestacyPage() {
         <h2 className="text-2xl font-bold text-foreground mb-4">Northern Ireland</h2>
         <div className="bg-card rounded-xl border border-border p-6">
           <p className="text-sm text-muted leading-relaxed">
-            Northern Ireland follows similar rules to England and Wales, but with different financial thresholds. The surviving husband, wife, or civil partner gets the personal belongings and a statutory legacy (currently £250,000), plus a share of what remains depending on whether there are children.
+            Northern Ireland follows broadly similar rules to England and Wales, but the figures and one important principle are different. Where there are children, the surviving husband, wife, or civil partner gets the personal belongings plus a statutory legacy of £250,000, then half of the remainder if there is one child or a third if there is more than one. Where there are no children, the surviving partner does not necessarily inherit everything, which surprises many people: if parents, brothers or sisters, or their children survive, the partner takes the personal belongings plus £450,000 and half of what is left, and those relatives take the other half.
           </p>
           <p className="text-sm mt-4">
             <Link href="/guide/northern-ireland" className="text-primary hover:underline font-medium">Read our full Northern Ireland guide</Link> for detailed coverage of intestacy, probate through the Belfast Probate Office, and NI-specific contacts.
@@ -158,12 +158,13 @@ export default function IntestacyPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Intestacy Rules: Who Inherits When There Is No Will in the UK',
             description: 'What happens when someone dies without a will in the UK. Intestacy rules for England, Wales, Scotland, and Northern Ireland.',
             datePublished: '2026-03-13',
             dateModified: '2026-03-14',
             author: { '@type': 'Organization', name: 'Help After Loss' },
-            publisher: { '@type': 'Organization', name: 'Help After Loss' },
+            publisher: { '@type': 'Organization', name: 'Help After Loss', logo: { '@type': 'ImageObject', url: 'https://helpafterloss.co.uk/opengraph-image' } },
           }),
         }}
       />

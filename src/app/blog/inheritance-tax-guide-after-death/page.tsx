@@ -33,7 +33,7 @@ export default function InheritanceTaxGuidePage() {
       ]} />
 
       <div className="flex items-center gap-3 text-xs text-muted mb-3">
-        <span>Updated 22 March 2026</span>
+        <span>Updated 6 August 2026</span>
         <span aria-hidden="true">|</span>
         <span>13 min read</span>
       </div>
@@ -48,7 +48,7 @@ export default function InheritanceTaxGuidePage() {
       <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
         <h2 className="text-sm font-semibold text-amber-900 mb-3">Key figures for 2026/27</h2>
         <ul className="space-y-1.5 text-sm text-amber-800">
-          <li className="flex gap-2"><span className="font-bold">+</span> <strong>Nil-rate band:</strong> £325,000 (frozen until April 2028)</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> <strong>Nil-rate band:</strong> £325,000 (frozen until 5 April 2031)</li>
           <li className="flex gap-2"><span className="font-bold">+</span> <strong>Residence nil-rate band:</strong> £175,000 (if a home is left to direct descendants)</li>
           <li className="flex gap-2"><span className="font-bold">+</span> <strong>Combined threshold for a couple:</strong> Up to £1,000,000</li>
           <li className="flex gap-2"><span className="font-bold">+</span> <strong>IHT rate:</strong> 40% on the amount above the threshold</li>
@@ -84,10 +84,10 @@ export default function InheritanceTaxGuidePage() {
       <h2 id="nil-rate-band" className="text-2xl font-bold text-foreground mb-6">The nil-rate band (£325,000)</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed mb-4">
-          Every individual has a nil-rate band of £325,000. This means the first £325,000 of their estate is tax-free. Anything above that threshold is taxed at 40%. The nil-rate band has been frozen at £325,000 since 2009 and the government has confirmed it will remain frozen until at least April 2028. Because property values and savings have risen significantly since 2009, more and more estates are crossing this threshold each year.
+          Every individual has a nil-rate band of £325,000. This means the first £325,000 of their estate is tax-free. Anything above that threshold is taxed at 40%. The nil-rate band has been frozen at £325,000 since 2009, and at Budget 2025 the government extended the freeze again, so it stays at this level until 5 April 2031. Because property values and savings have risen significantly since 2009, more and more estates are crossing this threshold each year.
         </p>
         <p className="text-sm text-muted leading-relaxed">
-          The estate includes everything the person owned at the date of death: property, savings, investments, personal possessions, and the value of any gifts made within the 7 years before death. It also includes any assets held in certain types of trust and the payout from life insurance policies that are not written in trust.
+          The estate includes everything the person owned at the date of death: property, savings, investments, personal possessions, and the value of any gifts made within the 7 years before death. It also includes any assets held in certain types of trust and the payout from life insurance policies that are not written in trust. One change to keep in mind if you are planning ahead: for deaths on or after 6 April 2027, most unused pension funds and pension death benefits will also count as part of the estate for inheritance tax, which is not the case today.
         </p>
       </div>
 
@@ -128,7 +128,7 @@ export default function InheritanceTaxGuidePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Spouse or civil partner exemption</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Everything left to a spouse or civil partner who is domiciled in the UK is completely exempt from IHT, regardless of the amount. This is the most important exemption and the reason most married couples pay no IHT on the first death. Note: this does not apply to unmarried partners, no matter how long they have lived together. See our guide on <Link href="/guides/cohabiting-partners" className="text-primary hover:underline">unmarried partners' rights</Link>.
+            Everything left to a spouse or civil partner is completely exempt from IHT, regardless of the amount. For deaths on or after 6 April 2025, the test is whether the surviving spouse is a long-term UK resident rather than UK domiciled, as domicile was replaced for inheritance tax purposes. Where the survivor does not meet that test, the exemption is capped rather than unlimited. This is the most important exemption and the reason most married couples pay no IHT on the first death. Note: this does not apply to unmarried partners, no matter how long they have lived together. See our guide on <Link href="/guides/cohabiting-partners" className="text-primary hover:underline">unmarried partners' rights</Link>.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -140,7 +140,7 @@ export default function InheritanceTaxGuidePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Business Property Relief (BPR)</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Certain business assets can qualify for 50% or 100% relief from IHT. This includes shares in unlisted companies, business assets used in a partnership, and agricultural land and buildings. The person must have owned the assets for at least 2 years. Note: from April 2026, the government has announced changes to agricultural and business property relief. The first £1 million of combined agricultural and business property will continue to attract 100% relief, but amounts above that will be taxed at an effective rate of 20% (50% relief at the 40% IHT rate). This is a significant change for farming families.
+            Certain business assets can qualify for 50% or 100% relief from IHT. This includes shares in unlisted companies, business assets used in a partnership, and agricultural land and buildings. The person must have owned the assets for at least 2 years. Note: the rules changed for deaths on or after 6 April 2026. The first £1 million of combined agricultural and business property still attracts 100% relief, but amounts above that get 50% relief, which works out at an effective rate of 20% against the 40% IHT rate. That £1 million allowance is itself frozen until 5 April 2031. This is a significant change for farming families.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -221,7 +221,7 @@ export default function InheritanceTaxGuidePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">The deadline</h3>
           <p className="text-sm text-muted leading-relaxed">
-            IHT is due by the end of the sixth month after the month of death. For example, if someone dies on 15 March 2026, the tax is due by 30 September 2026. Interest is charged on late payments. You must pay at least some of the tax before applying for probate, because HMRC needs to issue a receipt (the IHT421) before the Probate Registry will process your application.
+            IHT is due by the end of the sixth month after the month of death. For example, if someone dies on 15 March 2026, the tax is due by 30 September 2026. Interest is charged on late payments. You must pay at least some of the tax before applying for probate, because HMRC has to confirm to the court that enough tax has been paid. In England and Wales, HMRC now does that by sending you a letter or email containing a unique code, which you quote on the probate application. The old IHT421 probate summary is no longer used there. You will usually get the code within 20 working days of HMRC receiving your IHT400 or your payment, whichever is later. Northern Ireland still uses form IHT421, and in Scotland the equivalent application is for confirmation.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -245,7 +245,7 @@ export default function InheritanceTaxGuidePage() {
           The form you need depends on the size of the estate:
         </p>
         <ul className="space-y-2 text-sm text-muted">
-          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Excepted estates</strong> (gross value under £325,000, or under £650,000 with a transferable nil-rate band, and other conditions met): You report the estate value within the online probate application. No separate IHT form is needed.</li>
+          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Excepted estates</strong>, where no separate IHT form is needed and you report the estate value within the probate application instead. There are three routes, each with other conditions to meet. Low value estates: gross value up to £325,000, or up to £650,000 where a nil-rate band is transferred from a spouse or civil partner who died first. Exempt estates: gross value up to £3,000,000, where what is left after the spouse and charity exemptions is no more than £325,000. Foreign domiciliaries (for deaths from 6 April 2025, people who were not long-term UK residents): UK assets of no more than £150,000, made up only of cash or quoted shares and securities.</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>All other estates:</strong> Complete the full IHT400 form and any relevant supplementary pages. This is a substantial form (over 16 pages) and requires detailed valuations of every asset and liability. Submit it to HMRC with any tax payment due.</li>
         </ul>
         <p className="text-sm text-muted leading-relaxed mt-4">
@@ -305,10 +305,11 @@ export default function InheritanceTaxGuidePage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Inheritance Tax After a Death: UK Thresholds and Exemptions (2026/27)',
             description: 'A clear guide to inheritance tax after a death in the UK, covering thresholds, exemptions, and how to pay.',
             datePublished: '2026-03-22',
-            dateModified: '2026-03-22',
+            dateModified: '2026-08-06',
             author: { '@type': 'Organization', name: 'Help After Loss' },
             publisher: {
               '@type': 'Organization',

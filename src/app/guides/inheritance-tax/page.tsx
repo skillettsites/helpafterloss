@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const SECTIONS = [
   {
     title: 'Current thresholds',
-    content: 'The nil-rate band is £325,000. This means the first £325,000 of an estate is tax-free. On top of that, there is the residence nil-rate band of £175,000, which applies if the family home is left to direct descendants (children, grandchildren, stepchildren). This gives a total threshold of £500,000 per person. Married couples and civil partners can transfer any unused threshold to the surviving partner, giving a combined threshold of up to £1,000,000. These thresholds have been frozen since 2009 (nil-rate band) and are set to remain at these levels until at least April 2030.',
+    content: 'The nil-rate band is £325,000. This means the first £325,000 of an estate is tax-free. On top of that, there is the residence nil-rate band of £175,000, which applies if the family home is left to direct descendants (children, grandchildren, stepchildren). This gives a total threshold of £500,000 per person. Married couples and civil partners can transfer any unused threshold to the surviving partner, giving a combined threshold of up to £1,000,000. The nil-rate band has been frozen since 2009, and at Budget 2025 the freeze on both bands was extended again, so they are set to stay at these levels until 5 April 2031.',
   },
   {
     title: 'The rate',
@@ -32,7 +32,7 @@ const SECTIONS = [
   },
   {
     title: 'What counts towards the estate',
-    content: 'The estate includes: all property (at market value), bank and savings accounts, investments and shares, personal possessions of value (jewellery, art, vehicles), life insurance policies payable to the estate (not those written in trust), business assets, and any gifts made in the seven years before death. Jointly owned assets are included based on the share they owned. Pension pots are usually outside the estate because they are paid at the trustees\' discretion.',
+    content: 'The estate includes: all property (at market value), bank and savings accounts, investments and shares, personal possessions of value (jewellery, art, vehicles), life insurance policies payable to the estate (not those written in trust), business assets, and any gifts made in the seven years before death. Jointly owned assets are included based on the share they owned. Pension pots are usually outside the estate because they are paid at the trustees\' discretion, though this is changing: for deaths on or after 6 April 2027, most unused pension funds and pension death benefits will count as part of the estate for inheritance tax. Death in service benefits from a registered scheme are not affected.',
   },
   {
     title: 'What doesn\'t count (exemptions)',
@@ -52,7 +52,7 @@ const SECTIONS = [
   },
   {
     title: 'Deadlines and penalties',
-    content: 'Inheritance tax must be paid within 6 months of death. After that, interest accrues automatically at the current HMRC rate. The IHT400 form must be filed within 12 months of death. A late filing attracts a £100 penalty initially, escalating to up to £3,000 for continued non-compliance. You can pay IHT on property in 10 equal annual instalments (with interest), which helps if the estate includes a house that takes time to sell. IHT on other assets (cash, shares) must be paid in full before probate is granted.',
+    content: 'Inheritance tax must be paid by the end of the sixth month after the month of death. So if someone died on 15 March, the tax is due by 30 September. After that, interest accrues automatically at the current HMRC rate. The IHT400 form must be filed within 12 months of death. A late filing attracts a £100 penalty initially, escalating to up to £3,000 for continued non-compliance. You can pay IHT on property in 10 equal annual instalments (with interest), which helps if the estate includes a house that takes time to sell. IHT on other assets (cash, shares) must be paid in full before probate is granted.',
   },
   {
     title: 'Paying inheritance tax',
@@ -80,7 +80,7 @@ const FAQ = [
   },
   {
     q: 'What is the inheritance tax threshold for 2026?',
-    a: 'The nil-rate band remains at £325,000, where it has been since 2009. The residence nil-rate band is £175,000. Together, they give an individual threshold of £500,000, or £1,000,000 for a married couple or civil partnership where the first to die did not use their allowances. The government has confirmed these thresholds will remain frozen until at least April 2030.',
+    a: 'The nil-rate band remains at £325,000, where it has been since 2009. The residence nil-rate band is £175,000. Together, they give an individual threshold of £500,000, or £1,000,000 for a married couple or civil partnership where the first to die did not use their allowances. Following Budget 2025, the government has confirmed these thresholds will remain frozen until 5 April 2031.',
   },
   {
     q: 'How do I reduce inheritance tax?',
@@ -88,7 +88,7 @@ const FAQ = [
   },
   {
     q: 'When is the inheritance tax deadline?',
-    a: 'IHT must be paid within 6 months of the date of death. Interest is charged automatically on any amount unpaid after that deadline. The IHT400 form must be filed with HMRC within 12 months of death, with penalties starting at £100 for late filing. For property, you can apply to pay IHT in 10 annual instalments, though interest is charged on the outstanding balance.',
+    a: 'IHT must be paid by the end of the sixth month after the month of death, so a death in March means tax due by 30 September. Interest is charged automatically on any amount unpaid after that deadline. The IHT400 form must be filed with HMRC within 12 months of death, with penalties starting at £100 for late filing. For property, you can apply to pay IHT in 10 annual instalments, though interest is charged on the outstanding balance.',
   },
   {
     q: 'Do married couples pay inheritance tax?',
@@ -166,7 +166,7 @@ export default function InheritanceTaxPage() {
       <div className="bg-warm border border-warm-border rounded-xl p-5 mb-12">
         <h3 className="font-semibold text-amber-800 mb-2">Deadlines matter</h3>
         <p className="text-sm text-amber-800 leading-relaxed">
-          IHT must be paid within 6 months of death, and interest is charged automatically after that. The IHT400 form must be filed within 12 months. Late filing penalties start at £100 and can escalate to £3,000. If the estate includes property, you can apply to pay IHT in 10 annual instalments to avoid having to sell the property quickly.
+          IHT must be paid by the end of the sixth month after the month of death, and interest is charged automatically after that. The IHT400 form must be filed within 12 months of the death. Late filing penalties start at £100 and can escalate to £3,000. If the estate includes property, you can apply to pay IHT in 10 annual instalments to avoid having to sell the property quickly.
         </p>
       </div>
 
@@ -225,6 +225,7 @@ export default function InheritanceTaxPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Inheritance Tax in the UK: Thresholds, Rates & How to Reduce It',
             description: 'Complete guide to UK inheritance tax: thresholds, rates, exemptions, the 7-year gift rule, and practical ways to reduce your IHT bill.',
             url: 'https://helpafterloss.co.uk/guides/inheritance-tax',

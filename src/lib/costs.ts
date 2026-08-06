@@ -90,10 +90,10 @@ export const COST_ESTIMATES: CostEstimate[] = [
   },
   {
     item: 'Post redirection',
-    low: 37,
-    mid: 62,
-    high: 90,
-    notes: 'Royal Mail redirection from £36.99 for 3 months, £52.99 for 6 months, £72.99 for 12 months.',
+    low: 45,
+    mid: 66.5,
+    high: 95,
+    notes: 'Royal Mail redirection for one person: £45 for 3 months, £66.50 for 6 months, £95 for 12 months. If you receive Universal Credit or Pension Credit, ask about the discounted concession rate when you apply.',
     showIf: (a: A) => a.deceasedAge !== 'under18',
   },
 ];

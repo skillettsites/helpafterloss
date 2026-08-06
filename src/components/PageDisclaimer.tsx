@@ -5,7 +5,12 @@ interface PageDisclaimerProps {
   jurisdiction?: 'england-wales' | 'scotland' | 'northern-ireland' | 'all-uk';
 }
 
-export function PageDisclaimer({ lastReviewed = 'March 2026', jurisdiction }: PageDisclaimerProps) {
+// Bump this whenever the site's figures are reviewed in full. Every page that
+// does not pass an explicit date inherits it, so leaving it stale tells readers
+// the content was checked more recently than it was.
+const LAST_FULL_REVIEW = 'August 2026';
+
+export function PageDisclaimer({ lastReviewed = LAST_FULL_REVIEW, jurisdiction }: PageDisclaimerProps) {
   const jurisdictionNote = jurisdiction === 'scotland'
     ? ' This guide covers Scotland specifically.'
     : jurisdiction === 'northern-ireland'

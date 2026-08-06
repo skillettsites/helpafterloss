@@ -30,7 +30,7 @@ const STEPS = [
   {
     step: '2',
     title: 'Register the death (if not already done)',
-    desc: 'In England and Wales, the death must be registered within 5 days (8 days in Scotland). This is usually done by the next of kin, but you may need to assist. You register at the local Register Office for the area where the person died. You will receive a Death Certificate (certified copy of entry) and a green certificate for burial or cremation. Order at least 5 certified copies of the Death Certificate at registration (£12.50 each in England and Wales (£15 in Scotland)), as every bank, insurer, and institution will need one.',
+    desc: 'In England and Wales, the death must be registered within 5 days of getting the confirmation from the medical examiner or coroner (8 days in Scotland, 5 days in Northern Ireland). The clock starts from that confirmation, not from the date of death. This is usually done by the next of kin, but you may need to assist. You register at the local Register Office for the area where the person died. You will receive a Death Certificate (certified copy of entry) and a green certificate for burial or cremation. Order around 5 to 10 certified copies at registration, depending on how many accounts and policies there were, as every bank, insurer, and institution will need one. They cost £12.50 each in England and Wales, around £15 in Scotland (set locally, so check with the registrar), and £8 in Northern Ireland at the time of registration.',
   },
   {
     step: '3',
@@ -40,7 +40,7 @@ const STEPS = [
   {
     step: '4',
     title: 'Use Tell Us Once',
-    desc: 'Tell Us Once is a free government service that notifies multiple departments in a single registration: HMRC, DWP, DVLA, Passport Office, local council, and others. Ask for the Tell Us Once reference number when you register the death, then use it online at gov.uk/after-a-death/organisations-you-need-to-contact-and-tell-us-once or by phone on 0800 085 7308.',
+    desc: 'Tell Us Once is a free government service that notifies multiple departments in a single registration: HMRC, DWP, DVLA, Passport Office, local council, and others. Ask for the Tell Us Once unique reference number when you register the death, then use it online at gov.uk/after-a-death/organisations-you-need-to-contact-and-tell-us-once or by phone on 0800 085 7308. You must use the service within 28 days of getting that reference number. It is not available in Northern Ireland, where you will need to contact each department separately.',
   },
   {
     step: '5',
@@ -60,12 +60,12 @@ const STEPS = [
   {
     step: '8',
     title: 'Apply for Grant of Probate',
-    desc: 'If the estate requires probate (almost always needed if the person owned property), complete form PA1P (with a will) or PA1A (without). You can apply online at gov.uk/applying-for-probate. You will need to send the original will, a certified copy of the Death Certificate, and the completed IHT form. The court fee is £526 for estates over £5,000, and free for estates under £5,000. Current processing times are 12-16 weeks.',
+    desc: 'If the estate requires probate (almost always needed if the person owned property), complete form PA1P (with a will) or PA1A (without). You can apply online at gov.uk/applying-for-probate. You will need to send the original will, a certified copy of the Death Certificate, and the completed IHT form. The court fee is £526 for estates over £5,000, and free for estates under £5,000. Current processing times are usually within 12 weeks.',
   },
   {
     step: '9',
     title: 'Place a statutory notice in The London Gazette',
-    desc: 'This step is strongly recommended even though it is not legally required. Placing a notice in The London Gazette (and optionally a local newspaper) gives unknown creditors two months to come forward. If a creditor appears after you have distributed the estate and you have not placed this notice, you may be personally liable for the debt. The notice costs around £80-150. Visit thegazette.co.uk to place it.',
+    desc: 'This step is strongly recommended even though it is not legally required. Placing a notice in The London Gazette (and optionally a local newspaper) gives unknown creditors two months to come forward. If a creditor appears after you have distributed the estate and you have not placed this notice, you may be personally liable for the debt. A deceased estates notice costs £96.55 plus VAT, so around £116. Visit thegazette.co.uk to place it.',
   },
   {
     step: '10',
@@ -108,7 +108,7 @@ const FAQ = [
   },
   {
     q: 'How long does the whole process take?',
-    a: 'Most estates are fully administered within 6 to 18 months. Simple estates with straightforward assets and no disputes can be done in 6 months. Complex estates with property, business interests, overseas assets, or disputes can take 2 years or more. The probate application itself currently takes 12-16 weeks to process.',
+    a: 'Most estates are fully administered within 6 to 12 months. Simple estates with straightforward assets and no disputes can be done in 6 months. Complex estates with property, business interests, overseas assets, or disputes can take 2 years or more. The probate application itself is usually granted within 12 weeks of applying.',
   },
   {
     q: 'Can I hire a solicitor to help me?',
@@ -261,6 +261,7 @@ export default function ExecutorDutiesPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Executor Duties: A Complete Step-by-Step Guide',
             description: 'Everything an executor needs to do, in the right order, from locating the will to distributing assets.',
             url: 'https://helpafterloss.co.uk/guides/executor-duties',

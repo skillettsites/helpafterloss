@@ -166,12 +166,12 @@ export const TASKS: Task[] = [
   {
     id: 'tell-us-once',
     title: 'Use the Tell Us Once service',
-    description: 'Tell Us Once lets you report the death to most government organisations in one go, so you do not have to explain what has happened again and again. The registrar will give you a Tell Us Once reference number. Use it online or by phone within 28 days. It notifies: DWP (benefits and State Pension), HMRC, DVLA, Passport Office, local council (council tax, electoral register, Blue Badge, libraries), and public sector pensions.',
+    description: 'Tell Us Once lets you report the death to most government organisations in one go, so you do not have to explain what has happened again and again. The registrar will give you a Tell Us Once reference number, and the 28 days runs from when you get that number. It notifies: DWP (benefits and State Pension), HMRC, DVLA, Passport Office, local council (council tax, electoral register, Blue Badge, libraries), and public sector pensions. One important thing first: if they had a Motability vehicle, ring Motability on 0300 456 4566 BEFORE you use Tell Us Once. Once Tell Us Once has gone through, the car can no longer be driven. It is not available in Northern Ireland.',
     category: 'registration',
     priority: 'important',
     estimatedMinutes: 30,
     deadlineDaysFromDeath: 28,
-    deadlineLabel: 'Within 28 days of registration',
+    deadlineLabel: 'Within 28 days of getting your reference number',
     url: 'https://www.gov.uk/after-a-death/organisations-you-need-to-contact-and-tell-us-once',
     phoneNumber: '0800 085 7308',
     showIf: (a: A) => !isNorthernIreland(a) && isNotFriendUnlessNextOfKin(a),
@@ -377,7 +377,7 @@ export const TASKS: Task[] = [
   {
     id: 'apply-probate',
     title: 'Apply for probate (Grant of Probate)',
-    description: 'Probate gives you the legal right to deal with the estate. There are a few steps: value the estate, report the estate values on the probate application (for excepted estates below the threshold) or complete form IHT400 (if above), submit the probate application (PA1P form), then pay the court fee (£526 for estates over £5,000, free if under). Many people do this themselves, and you can use a solicitor if you would rather not. Processing currently takes around 12-16 weeks.',
+    description: 'Probate gives you the legal right to deal with the estate. There are a few steps: value the estate, report the estate values on the probate application (for excepted estates below the threshold) or complete form IHT400 (if above), submit the probate application (PA1P form), then pay the court fee (£526 for estates over £5,000, free if under). Many people do this themselves, and you can use a solicitor if you would rather not. The grant usually arrives within 12 weeks of applying.',
     category: 'legal',
     priority: 'important',
     estimatedMinutes: 240,
@@ -439,7 +439,7 @@ export const TASKS: Task[] = [
   {
     id: 'statutory-notices',
     title: 'Place statutory notices to protect yourself',
-    description: 'As an executor or administrator, placing a notice in The London Gazette (and a local newspaper) under the Trustee Act 1925 protects you personally from liability for debts you had no way of knowing about. You need to wait at least 2 months after placing the notice before distributing any assets. The Gazette notice costs around £100.',
+    description: 'As an executor or administrator, placing a notice in The London Gazette (and a local newspaper) under the Trustee Act 1925 protects you personally from liability for debts you had no way of knowing about. You need to wait at least 2 months after placing the notice before distributing any assets. The Gazette notice costs £96.55 plus VAT, so around £116.',
     category: 'legal',
     priority: 'normal',
     estimatedMinutes: 30,
@@ -510,7 +510,7 @@ export const TASKS: Task[] = [
   {
     id: 'redirect-post',
     title: 'Redirect their post',
-    description: 'A Royal Mail redirection forwards their post to your address, from £36.99 for 3 months. It quietly helps you catch any letters, bills, or accounts you did not know about. You can set it up online or at a post office.',
+    description: 'A Royal Mail redirection forwards their post to your address, from £45 for 3 months, with a discounted concession rate if you receive Universal Credit or Pension Credit. It quietly helps you catch any letters, bills, or accounts you did not know about. You can set it up online or at a post office.',
     category: 'property',
     priority: 'normal',
     estimatedMinutes: 15,

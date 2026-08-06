@@ -246,6 +246,7 @@ export default function DebtsAfterDeathPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'What Happens to Debt When Someone Dies in the UK',
             description: 'Debts are not inherited in the UK. Learn what happens to credit cards, mortgages, and loans after death.',
             url: 'https://helpafterloss.co.uk/guides/debts-after-death',

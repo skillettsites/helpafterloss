@@ -34,7 +34,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold text-foreground mb-4">Why we built this</h2>
           <div className="bg-card rounded-xl border border-border p-6 space-y-4 text-muted leading-relaxed">
             <p>
-              Every year, over 680,000 people in the UK are left to deal with bereavement paperwork. Research by Marie Curie found that the average person has to contact 21 different organisations after a death. A year on, 100,000 people still have accounts they have not managed to close.
+              Every year in the UK, hundreds of thousands of families are left to work through the paperwork that follows a death. The Office for National Statistics recorded 568,613 deaths registered in England and Wales in 2024 alone, and behind each one is someone facing a long list of banks, insurers, pension providers, utilities and government departments to contact.
             </p>
             <p>
               The information is out there, but it is scattered across dozens of government websites, charity pages, and forums, and none of it speaks to your situation. Someone in their twenties who has lost a parent suddenly needs very different guidance from someone in their seventies whose husband or wife has passed away after a long illness.
@@ -76,7 +76,7 @@ export default function AboutPage() {
               Help After Loss offers general guidance only. It is not legal, financial, or tax advice. Every situation is different, and we would always encourage you to speak to a professional about complicated estates, inheritance tax questions, or any disagreement within the family.
             </p>
             <p>
-              While we make every effort to keep information accurate and up to date, laws and regulations change. Always check the latest information on GOV.UK for the most current guidance.
+              While we make every effort to keep information accurate and up to date, laws and regulations change. Our guidance was last checked against GOV.UK and other primary sources in August 2026, and we would always encourage you to confirm anything important on GOV.UK before you act on it.
             </p>
           </div>
         </section>
@@ -115,7 +115,7 @@ export default function AboutPage() {
             name: 'About Help After Loss',
             description: 'Help After Loss is a free service providing personalised bereavement guidance for the UK.',
             datePublished: '2026-03-13',
-            dateModified: '2026-03-14',
+            dateModified: '2026-08-06',
             author: { '@type': 'Organization', name: 'Help After Loss' },
             about: {
               '@type': 'Organization',

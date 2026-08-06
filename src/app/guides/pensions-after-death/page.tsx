@@ -24,11 +24,11 @@ export const metadata: Metadata = {
 const SECTIONS = [
   {
     title: 'State pension inheritance',
-    content: 'You may be able to inherit extra state pension from your late spouse or civil partner. This applies to the additional state pension (SERPS or State Second Pension/S2P) built up before April 2016. The average inherited amount is around £3,377 per year. Over 17,000 people boosted their state pension by more than £10,000 in a single year through inherited state pension. Contact the DWP Bereavement Service on 0800 151 2012 to check what you may be entitled to. If they reached state pension age before 6 April 2016, different (often more generous) rules apply.',
+    content: 'You may be able to inherit extra State Pension from your late spouse or civil partner, provided your marriage or civil partnership began before 6 April 2016. If they reached State Pension age before 6 April 2016, you may inherit part of their Additional State Pension (SERPS or State Second Pension). If they reached State Pension age on or after that date, what you can inherit is narrower: half of any protected payment they had. Royal London put the average inherited SERPS payment at around £3,377 a year in 2023-24, and found that more than 17,000 people boosted their State Pension by over £10,000 that year through the inheritance rules. Contact the Pension Service on 0800 731 0469 to check what you may be entitled to.',
   },
   {
     title: 'Bereavement Support Payment',
-    content: 'If your spouse or civil partner paid National Insurance contributions, you may be eligible for Bereavement Support Payment. This is a tax-free lump sum of £2,500 or £3,500 (higher rate if you have dependent children), followed by up to 18 monthly payments of £100 or £350. You must claim within 21 months of the death. See our full guide for eligibility details and how to apply.',
+    content: 'If your partner paid enough National Insurance contributions, you may be eligible for Bereavement Support Payment. This is a tax-free lump sum of £2,500 or £3,500 (the higher rate if you have dependent children), followed by up to 18 monthly payments of £100 or £350. When you claim changes what you get: within 3 months you receive the lump sum and all 18 monthly payments; between 3 and 12 months you keep the lump sum but lose some monthly payments; after 12 months the lump sum is lost altogether, though some monthly payments remain claimable up to 21 months; after 21 months you usually cannot claim at all. See our full guide for eligibility details and how to apply.',
   },
   {
     title: 'Workplace pension death benefits',
@@ -67,7 +67,7 @@ const FAQ = [
   },
   {
     q: 'Can I inherit my spouse\'s state pension?',
-    a: 'You may be able to inherit some of their additional state pension (SERPS or State Second Pension) if it was built up before April 2016. You cannot inherit the new state pension (post-2016), but if your own state pension is low, you may be able to use your late spouse\'s National Insurance record to boost it. Contact the DWP Bereavement Service on 0800 151 2012 to check your specific entitlement.',
+    a: 'It depends on when they reached State Pension age, and your marriage or civil partnership must have begun before 6 April 2016. If they reached State Pension age before 6 April 2016, you may inherit part of their Additional State Pension (SERPS or State Second Pension). If they reached it on or after that date, you can inherit half of any protected payment they had. You cannot inherit the main new State Pension itself, but if your own is low you may be able to use your late partner\'s National Insurance record to boost it. Contact the Pension Service on 0800 731 0469 to check your specific entitlement.',
   },
   {
     q: 'What is death in service benefit?',
@@ -105,7 +105,7 @@ export default function PensionsAfterDeathPage() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
         <div className="bg-card rounded-xl border border-border p-5 text-center">
           <p className="text-2xl font-bold text-primary">£3,377/yr</p>
-          <p className="text-sm text-muted mt-1">Average inherited state pension amount</p>
+          <p className="text-sm text-muted mt-1">Average inherited SERPS payment (Royal London, 2023-24)</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-5 text-center">
           <p className="text-2xl font-bold text-primary">2-4x salary</p>
@@ -120,7 +120,7 @@ export default function PensionsAfterDeathPage() {
       {/* Important note */}
       <div className="bg-warm border border-warm-border rounded-xl p-5 mb-10">
         <p className="text-sm text-amber-800 leading-relaxed">
-          <strong>Do not assume there is nothing to claim.</strong> Many people have pensions from previous employers they have forgotten about. Over 17,000 people inherited more than £10,000 in extra state pension in a single year. Always check with the DWP, the employer, and use the Pension Tracing Service.
+          <strong>Do not assume there is nothing to claim.</strong> Many people have pensions from previous employers they have forgotten about. Royal London found that more than 17,000 people inherited over £10,000 in extra State Pension in 2023-24 alone. Always check with the DWP, the employer, and use the Pension Tracing Service.
         </p>
       </div>
 
@@ -200,6 +200,7 @@ export default function PensionsAfterDeathPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Pensions After Death: State, Workplace & Private Pensions',
             description: 'What happens to pensions when someone dies in the UK. State pension inheritance, workplace death benefits, and how to trace lost pensions.',
             url: 'https://helpafterloss.co.uk/guides/pensions-after-death',

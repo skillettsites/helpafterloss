@@ -224,6 +224,7 @@ export default function ScamsAfterBereavementPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Bereavement Scams: How to Protect Yourself After a Death',
             description: 'Common scams that target bereaved families and how to protect yourself and the estate.',
             url: 'https://helpafterloss.co.uk/guides/scams-after-bereavement',

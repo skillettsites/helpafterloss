@@ -96,7 +96,7 @@ export default function LostAChildPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Registering if the cause of death is known</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If the doctor can certify the cause of death and there is no coroner involvement, you register the death at the local register office within 5 days (8 days in Scotland). You will need the Medical Certificate of Cause of Death. Either parent can register. The registrar will be experienced in supporting bereaved parents and the appointment will be handled with great sensitivity. Order several certified copies of the death certificate (£12.50 each in England and Wales (£15 in Scotland)).
+            If the doctor can certify the cause of death and there is no coroner involvement, you register the death at the local register office within 5 days (8 days in Scotland). You will need the Medical Certificate of Cause of Death. Either parent can register. The registrar will be experienced in supporting bereaved parents and the appointment will be handled with great sensitivity. Order several certified copies of the death certificate (£12.50 each in England and Wales, £15 in Scotland).
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -177,7 +177,10 @@ export default function LostAChildPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Your legal entitlement</h3>
           <p className="text-sm text-muted leading-relaxed">
-            As of 2026, there is no statutory right to paid parental bereavement leave for parents who lose a child aged 18 or over (the Parental Bereavement Leave Act 2018 covers loss of a child under 18, and of a stillborn baby after 24 weeks). If your child was under 18, you are entitled to 2 weeks of Parental Bereavement Leave, which can be taken as two separate weeks within 56 weeks of the death. You are entitled to the statutory rate of pay (currently £194.32 per week, or 90% of your average weekly earnings if that is lower) if you qualify. Check gov.uk for full eligibility details.
+            If your child was under 18, or was stillborn after 24 weeks of pregnancy, you are entitled to 2 weeks of Parental Bereavement Leave. This is a day-one right, so it does not matter how long you have worked for your employer. You can take it as one block of two weeks or as two separate weeks, at any point within 56 weeks of the death. The statutory rate of pay is £194.32 per week (the 2026-27 rate) or 90% of your average weekly earnings, whichever is lower. To receive the pay you need at least 26 weeks of continuous service and average earnings of at least £129 a week, but the leave itself is yours either way.
+          </p>
+          <p className="text-sm text-muted leading-relaxed mt-3">
+            As things stand in 2026, there is no statutory right to paid bereavement leave for parents whose child was 18 or over. The Employment Rights Act 2025 will introduce a wider right to bereavement leave, expected to be at least one week and unpaid, with the regulations due in 2027. Until then, this comes down to your employer's own policy, and many are more generous than the law requires.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -258,7 +261,7 @@ export default function LostAChildPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Am I entitled to parental bereavement leave?</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If your child was under 18, or was a stillborn baby after 24 weeks of pregnancy, you are entitled to 2 weeks of Parental Bereavement Leave. This can be taken as two separate weeks within 56 weeks of the death. You are entitled to statutory pay (currently £194.32 per week or 90% of average weekly earnings, whichever is lower). Many employers offer additional paid leave beyond this.
+            If your child was under 18, or was a stillborn baby after 24 weeks of pregnancy, you are entitled to 2 weeks of Parental Bereavement Leave from your first day of employment. This can be taken as one block or as two separate weeks, within 56 weeks of the death. Statutory Parental Bereavement Pay is £194.32 per week (the 2026-27 rate) or 90% of average weekly earnings, whichever is lower, if you have 26 weeks of continuous service and earn at least £129 a week on average. Many employers offer additional paid leave beyond this.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -312,7 +315,7 @@ export default function LostAChildPage() {
               {
                 '@type': 'Question',
                 name: 'Am I entitled to parental bereavement leave?',
-                acceptedAnswer: { '@type': 'Answer', text: 'If your child was under 18 or stillborn after 24 weeks, you are entitled to 2 weeks of Parental Bereavement Leave within 56 weeks of the death, with statutory pay of £194.32 per week or 90% of average weekly earnings.' },
+                acceptedAnswer: { '@type': 'Answer', text: 'If your child was under 18 or stillborn after 24 weeks, you are entitled to 2 weeks of Parental Bereavement Leave from your first day of employment, taken within 56 weeks of the death. Statutory Parental Bereavement Pay is £194.32 per week (the 2026-27 rate) or 90% of average weekly earnings, whichever is lower, if you have 26 weeks of continuous service and earn at least £129 a week on average.' },
               },
               {
                 '@type': 'Question',
@@ -334,6 +337,7 @@ export default function LostAChildPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'When a Child Dies',
             description: 'Support and practical guidance for bereaved parents in the UK after losing a child.',
             datePublished: '2026-03-14',

@@ -24,6 +24,25 @@ export const metadata: Metadata = {
   },
 };
 
+const FAQ = [
+  {
+    q: 'How much bereavement leave am I entitled to in the UK?',
+    a: 'At present the only statutory paid bereavement leave in the UK is Parental Bereavement Leave, which is 2 weeks for the loss of a child under 18 (sometimes called Jack\'s Law). Statutory Parental Bereavement Pay is £194.32 a week, or 90% of your average weekly earnings if that is lower. For every other bereavement, paid leave is at your employer\'s discretion, and most offer 3 to 5 days for an immediate family member. Check your contract or staff handbook.',
+  },
+  {
+    q: 'When should I go back to work after a bereavement?',
+    a: 'There is no right answer. Some people return within a week because the routine and the distraction help. Others need several weeks or months. A phased return can make it easier if your employer offers one. It is worth knowing that waiting until you feel completely like yourself again may mean waiting a very long time, so going back is a step rather than a verdict on how you are doing.',
+  },
+  {
+    q: 'Can I be sacked for taking time off after a bereavement?',
+    a: 'Dismissal solely for taking bereavement leave could be challenged as unfair dismissal if you have been employed for 2 or more years. That qualifying period drops to 6 months from 1 January 2027 under the Employment Rights Act 2025. You also have a statutory right to reasonable unpaid time off to deal with an emergency involving a dependant, which includes arranging a funeral. If you are being pressured to return before you are ready, ACAS gives free advice on 0300 123 1100.',
+  },
+  {
+    q: 'How do I tell my employer someone has died?',
+    a: 'Contact your line manager or HR as soon as you are able. A short message is enough: "My [relationship] has died. I will need some time off. I will be in touch when I can." You do not need to explain the circumstances. If you cannot face making the call, it is fine to ask a friend or family member to do it for you.',
+  },
+];
+
 export default function ReturningToWorkPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
@@ -66,6 +85,7 @@ export default function ReturningToWorkPage() {
         { id: 'self-employed', label: 'If you are self-employed' },
         { id: 'employer-guidance', label: 'Guidance for employers and managers' },
         { id: 'support', label: 'Where to get support' },
+        { id: 'faqs', label: 'Common questions' },
       ]} />
 
       {/* When ready */}
@@ -88,7 +108,7 @@ export default function ReturningToWorkPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Bereavement leave</h3>
           <p className="text-sm text-muted leading-relaxed">
-            The only statutory paid bereavement leave in the UK is Parental Bereavement Leave (2 weeks for the loss of a child under 18). For all other bereavements, any paid leave is at your employer's discretion. Most employers offer 3 to 5 days for the loss of an immediate family member. Check your contract or staff handbook for your organisation's policy. For a full breakdown, see our guide on <Link href="/blog/bereavement-leave-rights-uk" className="text-primary hover:underline">bereavement leave rights in the UK</Link>.
+            The only statutory paid bereavement leave in the UK at present is Parental Bereavement Leave (2 weeks for the loss of a child under 18). For all other bereavements, any paid leave is at your employer's discretion. Most employers offer 3 to 5 days for the loss of an immediate family member. Check your contract or staff handbook for your organisation's policy. This is due to widen: the Employment Rights Act 2025 creates a day-one right to bereavement leave covering a broader group of close relationships, expected to be at least one week and unpaid, with the regulations due in 2027. For a full breakdown, see our guide on <Link href="/blog/bereavement-leave-rights-uk" className="text-primary hover:underline">bereavement leave rights in the UK</Link>.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -100,7 +120,7 @@ export default function ReturningToWorkPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Sick leave</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Grief is not classified as an illness, but the physical and mental effects of grief (anxiety, depression, insomnia, inability to concentrate) absolutely can be. If your GP signs you off, you are entitled to Statutory Sick Pay (£123.25 per week in 2026, for up to 28 weeks) if you earn at least £123 per week. Many employers pay more than the statutory minimum for the first few weeks. Bereavement-related sick leave should be treated sensitively and not counted toward absence triggers for disciplinary purposes. If your employer does penalise you, contact ACAS on 0300 123 1100.
+            Grief is not classified as an illness, but the physical and mental effects of grief (anxiety, depression, insomnia, inability to concentrate) absolutely can be. If your GP signs you off, you are entitled to Statutory Sick Pay for up to 28 weeks. From 6 April 2026 this is paid at £123.25 per week (the 2026-27 rate) or 80% of your average weekly earnings, whichever is lower. Two things changed on that date under the Employment Rights Act 2025: SSP is now paid from the first day of sickness rather than the fourth, and the lower earnings limit has been removed, so there is no longer a minimum you must earn to qualify. Many employers pay more than the statutory minimum for the first few weeks. Bereavement-related sick leave should be treated sensitively and not counted toward absence triggers for disciplinary purposes. If your employer does penalise you, contact ACAS on 0300 123 1100.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -236,6 +256,24 @@ export default function ReturningToWorkPage() {
         </ul>
       </div>
 
+      {/* FAQ */}
+      <h2 id="faqs" className="text-2xl font-bold text-foreground mb-6">Common questions</h2>
+      <div className="space-y-4 mb-12">
+        {FAQ.map((item, i) => (
+          <details key={i} className="bg-card rounded-xl border border-border group">
+            <summary className="p-5 md:p-6 font-semibold text-foreground cursor-pointer list-none flex items-center justify-between gap-4 hover:text-primary transition-colors">
+              <span>{item.q}</span>
+              <svg className="w-5 h-5 text-muted flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div className="px-5 md:px-6 pb-5 md:pb-6">
+              <p className="text-sm text-muted leading-relaxed">{item.a}</p>
+            </div>
+          </details>
+        ))}
+      </div>
+
       {/* Practical links */}
       <SupportCta />
       <div className="bg-primary-light rounded-lg p-4 mb-8">
@@ -263,6 +301,7 @@ export default function ReturningToWorkPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Returning to Work After Bereavement: Your Rights and How to Cope (2026)',
             description: 'A practical guide to returning to work after a bereavement in the UK, covering legal rights, phased returns, and coping strategies.',
             datePublished: '2026-03-22',
@@ -286,28 +325,11 @@ export default function ReturningToWorkPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'FAQPage',
-            mainEntity: [
-              {
-                '@type': 'Question',
-                name: 'How much bereavement leave am I entitled to in the UK?',
-                acceptedAnswer: { '@type': 'Answer', text: 'There is no statutory right to paid bereavement leave for most employees in the UK, except for parents who lose a child under 18 (2 weeks under Jack\'s Law). Many employers offer 3 to 5 days of paid compassionate leave, but this varies. Check your employment contract or staff handbook for your specific entitlement.' },
-              },
-              {
-                '@type': 'Question',
-                name: 'When should I go back to work after a bereavement?',
-                acceptedAnswer: { '@type': 'Answer', text: 'There is no right answer. Some people return within a week because they need the routine and distraction. Others need several weeks or months. Consider a phased return if your employer offers it. Do not rush back before you are ready, but also know that waiting until you feel completely "normal" may mean waiting a very long time.' },
-              },
-              {
-                '@type': 'Question',
-                name: 'Can I be sacked for taking time off after a bereavement?',
-                acceptedAnswer: { '@type': 'Answer', text: 'Dismissal solely for taking bereavement leave could be challenged as unfair dismissal if you have been employed for 2 or more years. You also have a statutory right to reasonable unpaid time off for dependants. If you are being pressured to return before you are ready, contact ACAS on 0300 123 1100 for free advice.' },
-              },
-              {
-                '@type': 'Question',
-                name: 'How do I tell my employer someone has died?',
-                acceptedAnswer: { '@type': 'Answer', text: 'Contact your line manager or HR department as soon as you are able. A short message is fine: "My [relationship] has died. I will need time off. I will be in touch when I can." You do not need to go into detail about the circumstances. Ask a friend or family member to make the call if you cannot face it.' },
-              },
-            ],
+            mainEntity: FAQ.map(item => ({
+              '@type': 'Question',
+              name: item.q,
+              acceptedAnswer: { '@type': 'Answer', text: item.a },
+            })),
           }),
         }}
       />

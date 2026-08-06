@@ -52,6 +52,7 @@ export default async function CountyGuidePage({ params }: PageProps) {
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'Article',
+    image: 'https://helpafterloss.co.uk/opengraph-image',
     headline: `Register a Death in ${county.name}`,
     description: `Registrar offices, contact details, and step-by-step guidance for registering a death in ${county.name}, ${county.nation}.`,
     datePublished: '2026-03-14',

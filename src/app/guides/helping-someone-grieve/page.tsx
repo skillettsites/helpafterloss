@@ -313,6 +313,7 @@ export default function HelpingSomeoneGrievePage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'How to Help Someone Who Is Grieving',
             description: 'Practical guidance on supporting a bereaved friend, family member, or colleague through grief.',
             datePublished: '2026-03-14',

@@ -41,7 +41,7 @@ const ENTITLED = [
   },
   {
     title: 'Bereavement Support Payment',
-    desc: 'Since 2024, cohabiting partners with dependent children can claim Bereavement Support Payment. Previously this was only available to married couples and civil partners. The payment is a lump sum of £3,500 plus up to 18 monthly payments of £350. You must have been living with your partner as a couple and have a dependent child.',
+    desc: 'Since 9 February 2023, when the Bereavement Benefits (Remedial) Order 2023 came into force, cohabiting partners with dependent children can claim Bereavement Support Payment. Before that it was only available to married couples and civil partners. With a dependent child the payment is a lump sum of £3,500 plus up to 18 monthly payments of £350. You must have been living with your partner as though you were married, and you must have been entitled to Child Benefit for a child living with you, or have been pregnant when your partner died. Timing matters: claim within 3 months for the lump sum and all 18 monthly payments, and note that after 12 months the lump sum is lost altogether, though some monthly payments remain claimable up to 21 months. The separate window for backdating historic claims to before February 2023 closed on 8 February 2024.',
   },
 ];
 
@@ -124,7 +124,7 @@ const FAQ = [
   },
   {
     q: 'Are cohabiting partners entitled to bereavement support payment?',
-    a: 'Since 2024, cohabiting partners with dependent children can claim Bereavement Support Payment. This is a lump sum of £3,500 plus up to 18 monthly payments of £350. You must have been living with your partner as a couple and have a qualifying child. Cohabiting partners without children are still not eligible.',
+    a: 'Since 9 February 2023, cohabiting partners with dependent children can claim Bereavement Support Payment. With a dependent child it is a lump sum of £3,500 plus up to 18 monthly payments of £350. You must have been living with your partner as though you were married, and you must have been entitled to Child Benefit for a child living with you, or have been pregnant when your partner died. Cohabiting partners without dependent children are still not eligible. Claim within 3 months to get the lump sum and all 18 monthly payments; after 12 months the lump sum is lost, though some monthly payments can still be claimed up to 21 months.',
   },
   {
     q: 'What is the Inheritance Act 1975 claim?',
@@ -290,6 +290,7 @@ export default function CohabitingPartnersPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'When an Unmarried Partner Dies: Your Rights and Options',
             description: 'Legal rights for cohabiting partners after a death. Property, inheritance, pensions, and how to protect yourself.',
             url: 'https://helpafterloss.co.uk/guides/cohabiting-partners',

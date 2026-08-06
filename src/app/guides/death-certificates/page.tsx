@@ -25,11 +25,11 @@ export const metadata: Metadata = {
 const FAQ = [
   {
     q: 'How many death certificates do I need?',
-    a: 'We recommend ordering between 10 and 15 certified copies. You will need to send one to each bank, building society, pension provider, insurance company, the mortgage lender, HMRC, the probate registry, and any other organisation that holds accounts or assets. Some organisations return the certificate after checking it, but many do not, and the process is much faster if you can send certificates to multiple organisations at the same time rather than waiting for one to be returned before sending it to the next.',
+    a: 'Around 5 to 10 certified copies suits most families, depending on how many accounts and policies there were. You will need to send one to each bank, building society, pension provider, insurance company, the mortgage lender, HMRC, the probate registry, and any other organisation that holds accounts or assets, so a larger estate can need 8 to 12. Some organisations return the certificate after checking it, but many do not, and the process is much faster if you can send certificates to several organisations at the same time rather than waiting for one to come back. Ordering more later costs the same per copy, but it takes longer, so it is better to have a spare than to run short.',
   },
   {
     q: 'How much does a death certificate cost in the UK?',
-    a: 'In England and Wales a certified copy costs £12.50, and the price is the same whether you order at registration, later from the register office, or online through the General Register Office. The GRO priority service is £38.50 per copy. In Scotland a full extract is around £15, set locally, so check with the registrar. In Northern Ireland copies are cheaper if you buy them from the registrar when you register than if you order them later from GRONI. These prices are correct as of August 2026 but can change.',
+    a: 'In England and Wales a certified copy costs £12.50, and the price is the same whether you order at registration, later from the register office, or online through the General Register Office. The GRO priority service is £38.50 per copy. In Scotland a full extract is around £15, though the exact fee is set locally, so check with the registrar. In Northern Ireland a copy is £8 if you buy it from the registrar at the time of registration, while the first copy ordered later from GRONI is £15, with further copies ordered at the same time £8 each. These prices are correct as of August 2026 but can change.',
   },
   {
     q: 'Can I use a photocopy of a death certificate?',
@@ -66,12 +66,12 @@ export default function DeathCertificatesPage() {
           <p className="text-sm text-muted mt-1">Cost per certified copy in England and Wales</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-5 text-center">
-          <p className="text-2xl font-bold text-primary">10-15</p>
-          <p className="text-sm text-muted mt-1">Recommended number of copies to order</p>
+          <p className="text-2xl font-bold text-primary">5-10</p>
+          <p className="text-sm text-muted mt-1">Copies most families need</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-5 text-center">
           <p className="text-2xl font-bold text-primary">5 days</p>
-          <p className="text-sm text-muted mt-1">Registration deadline after death (England and Wales)</p>
+          <p className="text-sm text-muted mt-1">To register once you have the confirmation (England and Wales)</p>
         </div>
       </div>
 
@@ -98,7 +98,7 @@ export default function DeathCertificatesPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Why you need multiple copies</h3>
           <p className="text-sm text-muted leading-relaxed mb-3">
-            Every organisation that holds an account, policy, or asset in your loved one's name will need to see a death certificate before they will close the account, release funds, or transfer ownership. While some organisations return the certificate after processing, many do not, and even those that do can take several weeks. Having multiple copies allows you to contact several organisations at the same time, which significantly speeds up the administration. We recommend ordering between 10 and 15 copies. Here is a typical list of who will need one:
+            Every organisation that holds an account, policy, or asset in your loved one's name will need to see a death certificate before they will close the account, release funds, or transfer ownership. While some organisations return the certificate after processing, many do not, and even those that do can take several weeks. Having multiple copies allows you to contact several organisations at the same time, which significantly speeds up the administration. Around 5 to 10 copies suits most families, depending on how many accounts and policies there were. If there are several banks, insurers, and pensions to deal with, 8 to 12 is a safer number. Here is a typical list of who will need one:
           </p>
           <ul className="text-sm text-muted leading-relaxed space-y-2 list-disc pl-5">
             <li>Each bank and building society (one per institution)</li>
@@ -117,7 +117,7 @@ export default function DeathCertificatesPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Saving money if the estate is small</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If the estate is simple, with only one or two bank accounts and no property, you may only need 3 to 5 copies. You can always order more later if needed, though there will be a short wait for postal delivery. It is generally cheaper per copy to order them all at the time of registration, as some register offices offer a small discount for bulk orders on the day.
+            If the estate is simple, with only one or two bank accounts and no property, you may only need 3 to 5 copies. You can always order more later if needed, though there will be a short wait for postal delivery. The price per copy is the same whenever you order, so ordering at registration does not save you money; it simply saves you the wait.
           </p>
         </div>
       </div>
@@ -134,13 +134,13 @@ export default function DeathCertificatesPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Scotland</h3>
           <p className="text-sm text-muted leading-relaxed">
-            In Scotland, a full extract of the death certificate costs around £15, though the exact fee is set locally, so it is worth checking with the registrar. You can order copies from the registrar at the time of registration or later from National Records of Scotland (nrscotland.gov.uk). The registration process in Scotland is slightly different: the death must be registered within 8 days (compared to 5 days in England and Wales). Two qualified informants can register the death, not just one.
+            In Scotland, a full extract of the death certificate costs around £15, though the exact fee is set locally, so it is worth checking with the registrar. You can order copies from the registrar at the time of registration or later from National Records of Scotland (nrscotland.gov.uk). The registration process in Scotland is slightly different: the death must be registered within 8 days of getting the confirmation (compared to 5 days in England and Wales). Two qualified informants can register the death, not just one.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Northern Ireland</h3>
           <p className="text-sm text-muted leading-relaxed">
-            In Northern Ireland, a certified copy of the death certificate costs £15. Copies can be ordered from the district registrar's office where the death was registered or from the General Register Office for Northern Ireland (nidirect.gov.uk/gro). The death must be registered within 5 days. The registration process is similar to England and Wales but administered separately.
+            In Northern Ireland, a certified copy costs £8 if you buy it from the registrar at the time of registration. If you order later from the General Register Office for Northern Ireland (nidirect.gov.uk/gro), the first copy is £15 and each additional copy ordered at the same time is £8. That is a good reason to order the copies you need on the day. Copies can be ordered from the district registrar's office where the death was registered or from GRONI. The death must be registered within 5 days. The registration process is similar to England and Wales but administered separately.
           </p>
         </div>
       </div>
@@ -151,7 +151,7 @@ export default function DeathCertificatesPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">At the time of registration</h3>
           <p className="text-sm text-muted leading-relaxed">
-            The easiest and cheapest time to order copies is when you register the death. The registrar will ask how many copies you want, and they are usually printed and handed to you on the spot or posted within a few days. This is the most efficient option, so order as many as you think you will need. If in doubt, order 12. At £12.50 each that comes to £150, which is money well spent if it saves you weeks of chasing.
+            The easiest time to order copies is when you register the death. The registrar will ask how many copies you want, and they are usually printed and handed to you on the spot or posted within a few days. This is the most efficient option, so order as many as you think you will need. If in doubt, order 10. In England and Wales, at £12.50 each, that comes to £125, which is money well spent if it saves you weeks of chasing.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -185,7 +185,7 @@ export default function DeathCertificatesPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Who can register the death</h3>
           <p className="text-sm text-muted leading-relaxed mb-3">
-            In England and Wales, the death must be registered within 5 days at the register office in the district where the person died (or where they were living). The following people can act as the informant:
+            In England and Wales, the death must be registered within 5 days of getting the confirmation from the medical examiner or coroner, at the register office in the district where the person died (or where they were living). The 5 days run from that confirmation, not from the date of death. The following people can act as the informant:
           </p>
           <ul className="text-sm text-muted leading-relaxed space-y-2 list-disc pl-5">
             <li>A relative who was present at the death</li>
@@ -239,7 +239,7 @@ export default function DeathCertificatesPage() {
         ))}
       </div>
 
-      <PageDisclaimer lastReviewed="March 2026" jurisdiction="all-uk" />
+      <PageDisclaimer lastReviewed="August 2026" jurisdiction="all-uk" />
 
       <RelatedGuides currentPath="/guides/death-certificates" guides={['/guides/document-checklist', '/guides/executor-duties', '/tell-us-once', '/probate']} />
 
@@ -285,6 +285,7 @@ export default function DeathCertificatesPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Death Certificates UK: How Many Do You Need, Costs, and How to Order (2026)',
             description: 'How many death certificates to order, current costs, and how to get extra copies in England, Wales, Scotland, and Northern Ireland.',
             url: 'https://helpafterloss.co.uk/guides/death-certificates',

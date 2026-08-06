@@ -38,11 +38,11 @@ const FAQ = [
   },
   {
     q: 'How long does probate take in 2026?',
-    a: 'The Probate Registry currently takes around 12 to 16 weeks to process applications, though complex cases or those requiring extra checks can take longer. The entire estate administration, from death to final distribution, typically takes 6 to 18 months depending on complexity, whether property needs to be sold, and whether there are any disputes.',
+    a: 'GOV.UK says you will usually get the grant within 12 weeks of submitting your application. In practice most come through sooner: HMCTS figures for January to March 2026 put the average at 5 weeks from application to grant, and around 2 weeks for a straightforward online application. It takes longer if the Probate Registry stops your application to ask for more information (around 14 weeks on average) or if you apply on paper. The whole estate administration, from death to final distribution, usually takes 6 to 12 months, and longer if a property has to be sold or there is a dispute.',
   },
   {
     q: 'How much does probate cost in 2026?',
-    a: 'The court fee is £526 for estates over £5,000 (free if under). If you use a solicitor, expect to pay 1% to 5% of the estate value, or hourly rates of £150 to £400 or more. For a £526,000 estate, solicitor fees might range from £3,000 to £15,000. Many straightforward estates can be handled with DIY probate, saving thousands.',
+    a: 'The court fee is £526 for estates over £5,000 (free if under). If you use a solicitor, expect to pay 1% to 5% of the estate value, or hourly rates of £150 to £400 or more. For a £300,000 estate, solicitor fees might range from £3,000 to £15,000. Many straightforward estates can be handled with DIY probate, saving thousands.',
   },
   {
     q: 'Can I do probate myself without a solicitor?',
@@ -54,11 +54,11 @@ const FAQ = [
   },
   {
     q: 'What happens if there is no will?',
-    a: 'If there is no will (known as dying intestate), the estate is shared out according to the rules of intestacy. In England and Wales, the surviving husband, wife, or civil partner receives the first £322,000 plus the personal possessions, with the remainder split between them and the children. If there is no surviving partner, the children inherit everything. Partners who were not married receive nothing under the intestacy rules, however long they lived together.',
+    a: 'If there is no will (known as dying intestate), the estate is shared out according to the rules of intestacy. In England and Wales, where there are children, the surviving husband, wife, or civil partner receives the personal possessions plus the first £322,000, then half of whatever is left; the children share the other half. If there are no children, the surviving partner inherits everything. If there is no surviving partner, the children inherit everything. Partners who were not married receive nothing under the intestacy rules, however long they lived together.',
   },
   {
     q: 'What happens in Scotland?',
-    a: 'In Scotland, probate is called "Confirmation". You apply to the Sheriff Court rather than the Probate Registry. The process is similar but uses different forms. Estates under £36,000 can use a simplified "small estate" process through the Sheriff Clerk\'s office without a solicitor. Scotland also has "Legal Rights" which give the spouse and children a fixed share of moveable property, even if the will says otherwise.',
+    a: 'In Scotland, probate is called "Confirmation". You apply to the Sheriff Court rather than the Probate Registry. The process is similar but uses different forms. There is no court fee at all on estates of £50,000 or less. Separately, estates of £36,000 or less count as "small estates", where the Sheriff Clerk will help you prepare the paperwork free of charge and you do not need a solicitor. Scotland also has "Legal Rights" which give the spouse and children a fixed share of moveable property, even if the will says otherwise.',
   },
   {
     q: 'Do I need to pay inheritance tax before probate?',
@@ -89,11 +89,11 @@ export default function ProbatePage() {
           </li>
           <li className="flex items-start gap-2">
             <span className="font-semibold text-primary min-w-[100px] flex-shrink-0">Processing:</span>
-            <span>12 to 16 weeks from the Probate Registry</span>
+            <span>Usually within 12 weeks of applying (the 2026 average is 5 weeks)</span>
           </li>
           <li className="flex items-start gap-2">
             <span className="font-semibold text-primary min-w-[100px] flex-shrink-0">Total time:</span>
-            <span>6 to 18 months from death to final distribution</span>
+            <span>6 to 12 months from death to final distribution, longer for complex estates</span>
           </li>
           <li className="flex items-start gap-2">
             <span className="font-semibold text-primary min-w-[100px] flex-shrink-0">DIY:</span>
@@ -153,8 +153,8 @@ export default function ProbatePage() {
           <p className="text-sm text-muted mt-1">Court fee (free if estate under £5,000)</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-5 text-center">
-          <p className="text-2xl font-bold text-primary">12-16 weeks</p>
-          <p className="text-sm text-muted mt-1">Current processing time</p>
+          <p className="text-2xl font-bold text-primary">Within 12 weeks</p>
+          <p className="text-sm text-muted mt-1">Usual wait for the grant (2026 average: 5 weeks)</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-5 text-center">
           <p className="text-2xl font-bold text-primary">DIY friendly</p>
@@ -264,7 +264,7 @@ export default function ProbatePage() {
       <section id="how-long" className="mb-10 scroll-mt-20">
         <h2 className="text-2xl font-bold text-foreground mb-3">How long does probate take?</h2>
         <p className="text-muted leading-relaxed mb-4">
-          Probate typically takes 6 to 12 months from application to final distribution of the estate. The application itself takes 12 to 16 weeks to process by the Probate Registry. Simple estates with straightforward assets can be resolved faster, while complex estates involving property sales or inheritance tax often take longer.
+          Dealing with an estate typically takes 6 to 12 months from the date of death to final distribution. Waiting for the grant itself is a smaller part of that than most people expect: GOV.UK says you will usually receive it within 12 weeks of applying, and HMCTS figures for January to March 2026 put the average at 5 weeks, or around 2 weeks for a straightforward online application. Applications the Probate Registry has to stop and query averaged 14 weeks, and paper applications longer again. Simple estates can be resolved faster than 6 months, while complex estates involving property sales or inheritance tax often take longer than 12.
         </p>
         <div className="bg-card rounded-xl border border-border p-5 md:p-6 mb-4">
           <h3 className="font-semibold text-foreground mb-3">Typical timeline</h3>
@@ -278,15 +278,15 @@ export default function ProbatePage() {
               <span>Submit the probate application</span>
             </div>
             <div className="flex items-start gap-3">
-              <span className="font-semibold text-primary min-w-[120px] flex-shrink-0">Week 6-22:</span>
-              <span>Probate Registry processes the application (12-16 weeks)</span>
+              <span className="font-semibold text-primary min-w-[120px] flex-shrink-0">Week 6-18:</span>
+              <span>Probate Registry processes the application (usually within 12 weeks)</span>
             </div>
             <div className="flex items-start gap-3">
-              <span className="font-semibold text-primary min-w-[120px] flex-shrink-0">Week 22-30:</span>
+              <span className="font-semibold text-primary min-w-[120px] flex-shrink-0">Week 18-26:</span>
               <span>Collect assets, pay debts, place statutory notices</span>
             </div>
             <div className="flex items-start gap-3">
-              <span className="font-semibold text-primary min-w-[120px] flex-shrink-0">Week 30+:</span>
+              <span className="font-semibold text-primary min-w-[120px] flex-shrink-0">Week 26+:</span>
               <span>Distribute estate to beneficiaries, prepare estate accounts</span>
             </div>
           </div>
@@ -306,9 +306,9 @@ export default function ProbatePage() {
             { step: '1', title: 'Check whether probate is needed at all', desc: 'Ring each bank and financial institution. If the total held in sole-name accounts is below their threshold (it varies by bank, usually £5,000-50,000), they may release the funds without probate. If they owned property in their sole name, probate is almost always needed.' },
             { step: '2', title: 'Value the estate', desc: 'List everything they owned and everything they owed. Get a property valuation (most estate agents will do one free of charge). Work through the bank statements, investments, pensions, and personal possessions, then take off any debts, mortgages, and loans. You need an accurate total for the inheritance tax form, so take your time over it.' },
             { step: '3', title: 'Complete the inheritance tax form', desc: 'If the estate is below the IHT threshold (£325,000, or up to £500,000 with the residence nil-rate band), report the estate values as part of the probate application itself. If above, complete form IHT400 (the detailed form) and send it to HMRC. Pay any IHT due within 6 months of death. You can arrange to pay tax on property in 10 annual instalments.' },
-            { step: '4', title: 'Apply for probate', desc: 'Complete form PA1P (with a will) or PA1A (without a will). You can apply online at gov.uk/applying-for-probate or download paper forms. You will need the original will, the death certificate, and the completed IHT information. Pay the £526 court fee. Order extra sealed copies of the grant (£2 each when ordered with the application (£16 each afterwards)) as banks and the Land Registry need them.' },
+            { step: '4', title: 'Apply for probate', desc: 'Complete form PA1P (with a will) or PA1A (without a will). You can apply online at gov.uk/applying-for-probate or download paper forms. You will need the original will, the death certificate, and the completed IHT information. Pay the £526 court fee. Order extra sealed copies of the grant (£2 each when ordered with the application, £16 each afterwards) as banks and the Land Registry need them.' },
             { step: '5', title: 'Place statutory notices', desc: 'Once you have submitted the application, place a notice in The London Gazette (around £80) and a local newspaper to protect yourself from unknown creditors. This gives creditors 2 months to come forward. This step is strongly recommended.' },
-            { step: '6', title: 'Wait for the grant', desc: 'The Probate Registry now processes your application, which currently takes 12-16 weeks. You may be asked to attend an interview or send extra information. If anything needs clearing up, the Registry will write to you. There is nothing more you need to do in the meantime.' },
+            { step: '6', title: 'Wait for the grant', desc: 'The Probate Registry now processes your application. You will usually get the grant within 12 weeks, and often a good deal sooner: the 2026 average is around 5 weeks. You may be asked to attend an interview or send extra information. If anything needs clearing up, the Registry will write to you. There is nothing more you need to do in the meantime.' },
             { step: '7', title: 'Deal with the estate', desc: 'Once the grant arrives, send certified copies to the banks, the Land Registry, and any other institutions. Collect in the assets, settle the debts and any outstanding tax, then share out what remains according to the will (or the intestacy rules). Keep a careful record of every transaction for the estate accounts; it will save you a great deal of bother later.' },
           ].map(s => (
             <div key={s.step} className="bg-card rounded-xl border border-border p-5 md:p-6 flex gap-4">
@@ -398,11 +398,11 @@ export default function ProbatePage() {
           <div className="flex flex-col sm:flex-row gap-3">
             <Link href="/guide/scotland" className="flex-1 bg-primary-light rounded-lg p-4 hover:bg-primary/10 transition-colors group">
               <p className="font-semibold text-foreground group-hover:text-primary transition-colors">Scotland</p>
-              <p className="text-xs text-muted mt-1">Confirmation via Sheriff Court, small estates under £36,000, legal rights</p>
+              <p className="text-xs text-muted mt-1">Confirmation via Sheriff Court, no court fee up to £50,000, Sheriff Clerk help for small estates up to £36,000, legal rights</p>
             </Link>
             <Link href="/guide/northern-ireland" className="flex-1 bg-primary-light rounded-lg p-4 hover:bg-primary/10 transition-colors group">
               <p className="font-semibold text-foreground group-hover:text-primary transition-colors">Northern Ireland</p>
-              <p className="text-xs text-muted mt-1">Belfast Probate Office, sliding scale fees, no online applications</p>
+              <p className="text-xs text-muted mt-1">Belfast Probate Office, no fee up to £10,000 then a flat £326, no online applications</p>
             </Link>
           </div>
         </div>
@@ -437,7 +437,7 @@ export default function ProbatePage() {
         <p className="text-sm text-muted mt-3">Free. No sign-up required. Takes about 3 minutes.</p>
       </div>
 
-      <PageDisclaimer lastReviewed="March 2026" jurisdiction="all-uk" />
+      <PageDisclaimer lastReviewed="August 2026" jurisdiction="all-uk" />
 
       <FreeChecklistBanner variant="bottom" />
       <RelatedGuides currentPath="/probate" guides={['/guides/executor-duties', '/intestacy', '/costs', '/template-letters']} />
@@ -462,6 +462,7 @@ export default function ProbatePage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Probate Guide UK 2026 - How to Apply, Costs, Timelines',
             description: 'Complete UK probate guide for 2026. Learn when you need probate, how to apply, court fees, solicitor costs, and DIY probate steps.',
             datePublished: '2026-03-13',

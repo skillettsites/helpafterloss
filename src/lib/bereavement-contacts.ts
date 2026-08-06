@@ -112,7 +112,8 @@ export const bereavementContacts: BereavementContact[] = [
     jointAccountProcess: 'With right of survivorship: funds automatically transfer to surviving holder after death certificate provided. Without right of survivorship: deceased\'s share treated as part of estate.',
     soleAccountProcess: 'Sole accounts are frozen. Funeral invoices may receive priority payment from the estate funds.',
     typicalTimeline: 'Account closure can take up to 6 weeks. Probate-related processing takes longer.',
-    probateThreshold: '£50,000',
+    // Lloyds publishes no figure in its bereavement guide; it assesses case by case.
+    probateThreshold: 'Not published, decided case by case',
     specialForms: ['Bereavement notification form'],
     additionalNotes: [
       'Part of Lloyds Banking Group (also covers Halifax, Bank of Scotland, Scottish Widows)',
@@ -509,8 +510,9 @@ export const bereavementContacts: BereavementContact[] = [
     ],
     jointAccountProcess: 'Joint account access transfers to surviving holder after documentation.',
     soleAccountProcess: 'Sole accounts frozen. Funds released only with proper documentation.',
-    typicalTimeline: 'Varies depending on balance and documentation. Probate required for balances over £10,000.',
-    probateThreshold: '£10,000',
+    typicalTimeline: 'Varies depending on balance and documentation. It is worth asking their bereavement team what they need for the balance involved.',
+    // Starling publishes no figure we could verify, so we do not state one.
+    probateThreshold: 'Not published, ask them directly',
     additionalNotes: [
       'Digital-only bank',
       'Existing Starling customers don\'t need to provide certified ID',
@@ -678,7 +680,8 @@ export const bereavementContacts: BereavementContact[] = [
       'Bereavement Notification Information Request Form',
       'Letter of Indemnity (for balances £1,000 or less)',
     ],
-    probateThreshold: '£5,000 (for simplified email process)',
+    // £5,000 is Skipton's simplified-form tier, not the point at which a grant is needed.
+    probateThreshold: '£50,000',
     slug: 'skipton-building-society',
   },
   {
@@ -1253,10 +1256,12 @@ export const bereavementContacts: BereavementContact[] = [
     ],
     typicalTimeline: 'DVLA processes notifications within 4 weeks.',
     additionalNotes: [
-      'Also need to notify about any vehicles registered to the deceased',
-      'Vehicle tax (road tax) will be cancelled and refunded',
-      'V5C (log book) needs to be updated if vehicle is being kept',
-      'SORN the vehicle if it will not be driven or taxed',
+      'Please check with the insurer before anyone drives the car. Do not assume it is still covered: some insurers keep the policy running for a short period, and many follow ABI guidance to keep named drivers covered until renewal, but that is guidance rather than law and some policies end at the date of death. One phone call settles it. In the meantime you can arrange temporary cover in your own name, check whether your own policy lets you drive other cars, or declare it SORN using form V890',
+      'The vehicle goes to a different address from the licence: send the V5C to DVLA Sensitive Casework Team, Swansea, SA99 1ZZ',
+      'Vehicle tax is cancelled and any full remaining months are refunded automatically by cheque, sent to the name and address on the log book. Tax cannot be transferred to a new keeper, so it must be taxed afresh before the car is driven again',
+      'V5C (log book) needs to be updated whether the vehicle is being kept or sold',
+      'Tell Us Once cancels the licence and ends the tax, but you still need to tell DVLA separately if you sell the vehicle, keep it, or want to keep a personalised registration',
+      'In Northern Ireland the licence goes to DVA, Driver Licensing Division, Castlerock Road, Waterside, Coleraine, BT51 3TB, but the vehicle still goes to DVLA in Swansea',
     ],
     slug: 'dvla',
   },
@@ -1269,14 +1274,15 @@ export const bereavementContacts: BereavementContact[] = [
     howToNotify: [
       'Tell Us Once: Covers passport cancellation across England, Scotland and Wales (not available in Northern Ireland). Note it gives no option to have the passport returned as a keepsake',
       'Phone: Call 0300 222 0000 (HM Passport Office helpline)',
-      'Post: Return passport to HM Passport Office',
+      'Post: Send form D1 and the passport to Customer Service Management Team, HM Passport Office, PO Box 767, Southport, PR8 9PW',
       'If abroad: Contact the Foreign, Commonwealth & Development Office',
     ],
     documentsRequired: [
+      'Form D1 (What to do when a British passport holder dies), from GOV.UK',
       'Their passport (cut off the top right-hand corner before sending, which HM Passport Office asks for to prevent misuse)',
-      'Covering letter with deceased\'s details',
+      'If the passport is lost or stolen, an original death certificate instead. It is returned to you once the passport is cancelled',
     ],
-    typicalTimeline: 'Passport is officially cancelled and securely destroyed by HMPO.',
+    typicalTimeline: 'The passport is officially cancelled. Unless you ask for it back on the form, it is then securely destroyed.',
     additionalNotes: [
       'Tell Us Once is the preferred method and eliminates need to post the passport',
       'Cut off the top right-hand corner of the passport before posting, as HM Passport Office asks. If you would like the passport back afterwards as a keepsake, you must say so on form D1: unless you ask, it is destroyed',
@@ -1289,7 +1295,7 @@ export const bereavementContacts: BereavementContact[] = [
     category: 'government',
     bereavementUrl: 'https://www.gov.uk/after-a-death',
     howToNotify: [
-      'Tell Us Once: Covers council tax notification in most areas',
+      'Tell Us Once: Covers council tax across England, Scotland and Wales (Northern Ireland has domestic rates instead, and no Tell Us Once)',
       'Direct: Contact your local council\'s council tax department',
       'Notify within a month if possible',
     ],
@@ -1298,12 +1304,16 @@ export const bereavementContacts: BereavementContact[] = [
       'Property address',
       'Details of any remaining occupants',
     ],
-    typicalTimeline: 'Exemptions and discounts applied from date of death. Class F exemption lasts until 6 months after probate is granted.',
+    typicalTimeline: 'Exemptions and discounts apply from the date of death. In England the Class F exemption runs until 6 months after the grant of probate; in Wales it is 12 months.',
     additionalNotes: [
-      'Class F exemption: Property left empty after death is exempt from council tax until 6 months after probate granted',
-      'Single person discount: If one adult remains, 25% discount applies from date of death',
-      'Rented properties: Exempt from date of death until tenancy ends',
-      'Executor not personally liable; council tax paid from estate',
+      'Class F exemption (England): a property left empty since the death is exempt until 6 months after the grant of probate. Note the 6 months runs from the GRANT, not from the date of death, and before a grant there is no time limit at all',
+      'Wales differs since 1 April 2026: exempt while no grant has been obtained and the second anniversary of the death has not passed, or for 12 months after the grant',
+      'Scotland: broadly matches England at 6 months after confirmation',
+      'Northern Ireland has domestic rates rather than council tax. There is 100% relief where a personal representative is responsible, but it must be applied for and is not automatic',
+      'The exemption ends early if the property is sold or transferred to a beneficiary, even if it stays empty',
+      'Single person discount: if one adult remains, a 25% discount applies from the date of death',
+      'Rented properties: exempt from the date of death until the tenancy ends',
+      'Executor not personally liable; council tax is paid from the estate',
       'Contact your specific local council for their process',
     ],
     slug: 'council-tax',

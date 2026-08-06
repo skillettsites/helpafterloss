@@ -33,7 +33,7 @@ export default function TellUsOnceGuidePage() {
       ]} />
 
       <div className="flex items-center gap-3 text-xs text-muted mb-3">
-        <span>Updated 22 March 2026</span>
+        <span>Updated 6 August 2026</span>
         <span aria-hidden="true">|</span>
         <span>11 min read</span>
       </div>
@@ -49,8 +49,8 @@ export default function TellUsOnceGuidePage() {
         <h2 className="text-sm font-semibold text-amber-900 mb-3">Key facts</h2>
         <ul className="space-y-1.5 text-sm text-amber-800">
           <li className="flex gap-2"><span className="font-bold">+</span> Tell Us Once is free to use</li>
-          <li className="flex gap-2"><span className="font-bold">+</span> Available in England and Wales (Scotland has a similar service; not available in Northern Ireland)</li>
-          <li className="flex gap-2"><span className="font-bold">+</span> You need the unique reference number given to you by the registrar</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> Available throughout England, Scotland and Wales, but not in Northern Ireland</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> You need the unique reference number given to you by the registrar, and you have 28 days from the day it is issued to use it</li>
           <li className="flex gap-2"><span className="font-bold">+</span> You can complete it online, by phone, or at the register office</li>
           <li className="flex gap-2"><span className="font-bold">+</span> It does not notify banks, utilities, insurers, or private companies</li>
         </ul>
@@ -76,7 +76,7 @@ export default function TellUsOnceGuidePage() {
           Tell Us Once is a service run by the Department for Work and Pensions (DWP) that allows you to report a death to most central government departments and your local council in a single step. Without it, you would need to contact each department individually: DWP to stop benefits, HMRC to update tax records, the Passport Office to cancel the passport, DVLA to update driving records, and the council for council tax and electoral register changes.
         </p>
         <p className="text-sm text-muted leading-relaxed">
-          The service was introduced in 2012 and has since become available in most areas of England and Wales. It is one of the most genuinely helpful government services for bereaved people, though its name is slightly misleading because it does not cover everything. You will still need to contact many organisations yourself. More on that below.
+          The service is available throughout England, Scotland and Wales, including when the person died while temporarily abroad, though not in Northern Ireland and not if they lived abroad permanently. It is one of the most genuinely helpful government services for bereaved people, though its name is slightly misleading because it does not cover everything. You will still need to contact many organisations yourself. More on that below.
         </p>
       </div>
 
@@ -89,12 +89,12 @@ export default function TellUsOnceGuidePage() {
         <ul className="space-y-2 text-sm text-muted mb-4">
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Department for Work and Pensions (DWP):</strong> Stops benefits and pensions (State Pension, Pension Credit, Universal Credit, ESA, JSA, Attendance Allowance, DLA, PIP, Carer's Allowance)</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>HM Revenue and Customs (HMRC):</strong> Updates tax records, stops tax credits, deals with their Self Assessment if applicable</li>
-          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>HM Passport Office:</strong> Cancels the passport</li>
-          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Driver and Vehicle Licensing Agency (DVLA):</strong> Cancels the driving licence</li>
-          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Identity and Passport Service:</strong> Cancels identity documents</li>
+          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>HM Passport Office:</strong> Cancels the passport. It does not offer the option of having the passport returned as a keepsake, so if you would like it back, use form D1 instead</li>
+          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Driver and Vehicle Licensing Agency (DVLA):</strong> Cancels the driving licence, removes the person as registered keeper of up to 5 vehicles, and ends the vehicle tax. You still have to tell DVLA yourself if you sell a vehicle, keep one, or want to keep a personalised registration number</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Local council:</strong> Updates council tax records, removes from the electoral register, cancels any blue badge, notifies housing benefit and council tax reduction teams</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Veterans UK:</strong> If the person received an Armed Forces pension or compensation</li>
-          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>National Savings and Investments (NS&I):</strong> If the person held Premium Bonds or other NS&I products</li>
+          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Social Security Scotland:</strong> Devolved Scottish benefits</li>
+          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Public sector pension schemes:</strong> NHS Pensions, the Civil Service and Armed Forces schemes, Local Government Pension Schemes, the Scottish Public Pension Agency schemes, the Pension Protection Fund and the Financial Assistance Scheme</li>
         </ul>
         <p className="text-sm text-muted leading-relaxed">
           Each department will act on the notification independently. DWP will stop benefits (usually within a few days), HMRC will update tax records, and the council will adjust council tax. You do not need to follow up with each department unless there is a specific issue.
@@ -108,7 +108,7 @@ export default function TellUsOnceGuidePage() {
           {
             step: '1',
             title: 'Register the death',
-            desc: 'You must register the death at a register office before you can use Tell Us Once. At the end of the registration appointment, the registrar will give you a unique Tell Us Once reference number. Keep this safe.',
+            desc: 'You must register the death at a register office before you can use Tell Us Once. At the end of the registration appointment, the registrar will give you a unique Tell Us Once reference number. Keep this safe, and note the date, because you have 28 days from the day it is issued to use the service.',
           },
           {
             step: '2',
@@ -159,7 +159,7 @@ export default function TellUsOnceGuidePage() {
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Details of any benefits or pensions they were receiving</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Details of any council tax account</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> The name and address of the next of kin or person dealing with the estate</li>
-          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Details of any NS&I accounts (Premium Bonds, savings certificates)</li>
+          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Details of any public sector pension they received or paid into</li>
         </ul>
         <p className="text-sm text-muted leading-relaxed mt-4">
           Please do not worry if you do not have all of these details. You can still complete the service and provide anything missing later if needed. The system will not reject your report if some fields are left blank.
@@ -172,13 +172,13 @@ export default function TellUsOnceGuidePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Online</h3>
           <p className="text-sm text-muted leading-relaxed">
-            The quickest option. You can complete it at any time (not limited to office hours), in your own home, and at your own pace. You can start, save your progress, and come back to it later. The website is accessible and works on phones and tablets.
+            The quickest option. You can complete it at any time, not just during office hours, in your own home and at your own pace. The website is accessible and works on phones and tablets.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">By phone</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Call 0800 085 7308 (Monday to Friday, 8am to 8pm). A trained operator will guide you through the process. This is a good option if you are not comfortable online or if you would prefer someone to talk you through it. The call usually takes 15 to 20 minutes.
+            Call the number the registrar gives you, usually 0800 085 7308. A trained operator will guide you through the process. This is a good option if you are not comfortable online or if you would prefer someone to talk you through it. The call usually takes 15 to 20 minutes.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -223,7 +223,7 @@ export default function TellUsOnceGuidePage() {
         </p>
         <ul className="space-y-2 text-sm text-muted">
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Contact the bank to notify them and ask about releasing funds (see <Link href="/blog/bank-probate-thresholds-2026" className="text-primary hover:underline">bank probate thresholds</Link>)</li>
-          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Contact home and car insurance companies (car insurance is void immediately upon death)</li>
+          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Contact home and car insurance companies, and check where you stand on the car before anyone drives it, as cover after the policyholder dies varies from one insurer to the next</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Arrange the funeral</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Begin gathering documents for probate</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Notify utility companies and update names on accounts</li>
@@ -237,7 +237,7 @@ export default function TellUsOnceGuidePage() {
       <h2 id="scotland" className="text-2xl font-bold text-foreground mb-6">Scotland</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed">
-          Scotland has its own version of Tell Us Once, which works in a very similar way. The registrar will provide you with the reference number when you register the death. You can complete it online or by phone. The service notifies the same government departments. For more details on the Scottish process, see our <Link href="/guide/scotland" className="text-primary hover:underline">Scotland guide</Link>.
+          Tell Us Once covers Scotland in the same way as England and Wales. The registrar will provide you with the reference number when you register the death, and you can complete it online or by phone. Alongside the departments listed above, it also notifies Social Security Scotland and the Scottish Public Pension Agency schemes. Bear in mind that a death must be registered within 8 days in Scotland rather than 5. For more details on the Scottish process, see our <Link href="/guide/scotland" className="text-primary hover:underline">Scotland guide</Link>.
         </p>
       </div>
 
@@ -245,7 +245,7 @@ export default function TellUsOnceGuidePage() {
       <h2 id="northern-ireland" className="text-2xl font-bold text-foreground mb-6">Northern Ireland</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed">
-          Tell Us Once is <strong>not available in Northern Ireland</strong>. You will need to contact each government department separately. This includes notifying the NI Social Security Agency, HMRC, the Passport Office, and the DVA (the Northern Ireland equivalent of DVLA). For more details, see our <Link href="/guide/northern-ireland" className="text-primary hover:underline">Northern Ireland guide</Link>.
+          Tell Us Once is <strong>not available in Northern Ireland</strong>. You will need to contact each government department separately. This includes notifying the NI Social Security Agency, HMRC, the Passport Office, and the DVA (the Northern Ireland equivalent of DVLA). The driving licence goes to DVA, Driver Licensing Division, Castlerock Road, Waterside, Coleraine, BT51 3TB, but anything to do with the vehicle itself still goes to DVLA in Swansea. For more details, see our <Link href="/guide/northern-ireland" className="text-primary hover:underline">Northern Ireland guide</Link>.
         </p>
       </div>
 
@@ -296,10 +296,11 @@ export default function TellUsOnceGuidePage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Tell Us Once Service: How It Works and How to Register (2026)',
             description: 'A complete guide to the Tell Us Once service, covering who it notifies, how to use it, and what it does not cover.',
             datePublished: '2026-03-22',
-            dateModified: '2026-03-22',
+            dateModified: '2026-08-06',
             author: { '@type': 'Organization', name: 'Help After Loss' },
             publisher: {
               '@type': 'Organization',

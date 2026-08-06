@@ -33,7 +33,7 @@ const SECTIONS = [
   },
   {
     title: 'Class F exemption for empty properties',
-    content: 'If the property is left empty (because they lived alone, or because everyone else has moved out), it qualifies for a Class F exemption. This means no council tax is payable from the date of death until six months after probate (Grant of Representation) is granted. The exemption is not automatic. You must apply to the council and provide a copy of the death certificate. Once probate is granted, send a copy of the grant to the council so they can calculate the six-month period correctly.',
+    content: 'If the property is left empty (because they lived alone, or because everyone else has moved out), it qualifies for a Class F exemption. In England, no council tax is payable from the date of death for as long as the home stays empty and the personal representative is the only person liable. There is no time limit on that while you are still waiting for probate. Once a grant of probate or letters of administration is made, the exemption runs for a further six months from the date of the grant, not from the date of death. It ends sooner if the property is sold or transferred to a beneficiary. The exemption is not automatic. You must apply to the council and provide a copy of the death certificate, then send them a copy of the grant when you have it so they can work out the six months correctly.',
   },
   {
     title: 'What executors are responsible for',
@@ -49,14 +49,14 @@ const SECTIONS = [
   },
   {
     title: 'After the exemption period ends',
-    content: 'Once the Class F exemption expires (six months after probate), full council tax becomes payable on the property. If the property is still empty, some councils charge a premium on top of the standard rate for long-term empty properties. It is worth asking the council about any discretionary discounts or hardship relief if the estate is taking longer than expected to administer. Every council has slightly different policies, so always ask.',
+    content: 'Once the Class F exemption expires (six months after the date of the grant, in England), full council tax becomes payable on the property. If the property is still empty, some councils charge a premium on top of the standard rate for long-term empty properties. In England, that premium cannot be charged on a home that was exempt under Class F until at least a year has passed since the grant was made, so there is a little more breathing space than you might expect. It is worth asking the council about any discretionary discounts or hardship relief if the estate is taking longer than expected to administer. Every council has slightly different policies, so always ask.',
   },
 ];
 
 const FAQ = [
   {
     q: 'Do I have to pay council tax on an empty property after someone dies?',
-    a: 'Not immediately. An empty property qualifies for the Class F exemption, which means no council tax is payable from the date of death until six months after probate is granted. You must apply to the council for this exemption. After the six-month period, full council tax applies.',
+    a: 'Not immediately. An empty property qualifies for the Class F exemption, so no council tax is payable while the home stays empty and the personal representative is the only person liable. In England there is no time limit while you are waiting for probate, and once the grant is made the exemption runs for a further six months from the date of the grant. You must apply to the council for it. After that, full council tax applies, paid from the estate.',
   },
   {
     q: 'How do I get a council tax exemption after a death?',
@@ -64,7 +64,7 @@ const FAQ = [
   },
   {
     q: 'How long does the council tax exemption last?',
-    a: 'The Class F exemption runs from the date of death until six months after probate (the Grant of Representation) is issued. If probate takes 4 months and then you get a further 6 months of exemption, the total could be 10 months or more. After that, full council tax is payable.',
+    a: 'In England it runs from the date of death, with no time limit while you are waiting for probate, and then for six months from the date the grant is issued. The six months runs from the grant, not from the death, so if probate takes 4 months the total is 10 months or more. It ends sooner if the property is sold or transferred to a beneficiary. Wales, Scotland and Northern Ireland have different rules.',
   },
   {
     q: 'Can I claim single person discount after bereavement?',
@@ -105,7 +105,7 @@ export default function CouncilTaxAfterDeathPage() {
         </div>
         <div className="bg-card rounded-xl border border-border p-5 text-center">
           <p className="text-2xl font-bold text-primary">6 months</p>
-          <p className="text-sm text-muted mt-1">Exemption after probate for empty properties</p>
+          <p className="text-sm text-muted mt-1">Exemption from the date of the grant, in England</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-5 text-center">
           <p className="text-2xl font-bold text-primary">Class F</p>
@@ -116,7 +116,7 @@ export default function CouncilTaxAfterDeathPage() {
       {/* Important note */}
       <div className="bg-warm border border-warm-border rounded-xl p-5 mb-10">
         <p className="text-sm text-amber-800 leading-relaxed">
-          <strong>Important:</strong> Council tax rules and discretionary discounts vary between local authorities. The information here covers the standard rules in England. Scotland, Wales, and Northern Ireland have slightly different systems. Always contact your local council directly to confirm what applies.
+          <strong>Important:</strong> Council tax rules and discretionary discounts vary between local authorities, and the information here covers the standard rules in England. Wales changed its rules on 1 April 2026: there, an empty home is exempt while no grant has been obtained and the second anniversary of the death has not passed, or where the grant was made less than twelve months ago. Scotland uses the same six-month period as England, counted from the grant of confirmation. Northern Ireland has domestic rates rather than council tax, and a property left in the hands of a personal representative can be excluded from rates entirely, though you have to apply to Land and Property Services for it. Always contact your local council directly to confirm what applies.
         </p>
       </div>
 
@@ -186,6 +186,7 @@ export default function CouncilTaxAfterDeathPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
+            image: 'https://helpafterloss.co.uk/opengraph-image',
             headline: 'Council Tax After Death: Exemptions, Discounts & What to Do',
             description: 'What happens to council tax when someone dies. Exemptions, discounts, and what executors need to know.',
             url: 'https://helpafterloss.co.uk/guides/council-tax-after-death',

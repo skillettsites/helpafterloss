@@ -1,6 +1,10 @@
 import type { NextConfig } from "next";
+import path from "node:path";
 
 const nextConfig: NextConfig = {
+  // A package.json in the parent directory makes Next infer the wrong workspace
+  // root and warn about competing lockfiles. Pin it to this project.
+  outputFileTracingRoot: path.join(__dirname),
   trailingSlash: false,
   images: {
     remotePatterns: [

@@ -377,7 +377,7 @@ const CATEGORIES: PhoneCategory[] = [
         note: 'Redirecting their post to your address catches bills, letters, and financial correspondence you may know nothing about. It is one of the most useful things you can set up.',
         hours: 'Mon to Fri, 8am to 6pm. Sat, 8am to 1pm.',
         script: 'Hello, I need to set up a post redirect from [deceased\'s address] to [your address] following a bereavement. The person who died was [name].',
-        docsNeeded: ['Death certificate', 'Your ID', 'The deceased\'s full address', 'Payment (from around £35 for 3 months)'],
+        docsNeeded: ['Death certificate', 'Your ID', 'The deceased\'s full address', 'Payment (£45 for 3 months, for one person)'],
       },
       {
         name: 'Land Registry',
@@ -457,6 +457,29 @@ const CATEGORIES: PhoneCategory[] = [
   },
 ];
 
+const FAQ = [
+  {
+    q: 'What phone number do I call to report a death to the bank?',
+    a: 'Each bank has a dedicated bereavement line. For example: Barclays 0800 151 0023, HSBC 0800 092 1406, Lloyds 0345 302 1044, NatWest 0800 085 0960, Santander 0800 085 8375, Nationwide 0800 464 3139. Have the death certificate and account details ready before you call.',
+  },
+  {
+    q: 'What is the Tell Us Once phone number?',
+    a: 'The Tell Us Once phone number is 0800 085 7308. This free service lets you report a death to most government departments in one call. You will need the reference number given to you when you registered the death. It is available Monday to Friday 8am to 8pm, and Saturday 9am to 4pm.',
+  },
+  {
+    q: 'How do I stop someone\'s credit file being used for fraud after they die?',
+    a: 'Contact all three credit reference agencies to add a deceased marker: Experian on 0344 481 0800, Equifax on 0333 321 4043, and TransUnion on 0330 024 7574. This helps prevent identity fraud. You will need their full name, date of birth, date of death, and last known address.',
+  },
+  {
+    q: 'What should I say when I call to report a death?',
+    a: 'A simple opening is: "Hello, I am calling to notify you of a death. The account holder was [name] and they passed away on [date]. Their account number is [number]. I am their [relationship]." Bereavement teams are specially trained and will guide you through the rest of the call. Have the death certificate and account details ready.',
+  },
+  {
+    q: 'Can someone else make bereavement phone calls on my behalf?',
+    a: 'Yes, most organisations will allow someone else to call on your behalf. They will usually need a letter of authority signed by you (or by the executor of the estate), along with a copy of the death certificate. Some banks may also accept verbal authorisation over the phone if you are present during the call.',
+  },
+];
+
 export default function PhoneDirectoryPage() {
   const allEntries = CATEGORIES.reduce((acc, cat) => acc + cat.entries.length, 0);
 
@@ -506,6 +529,11 @@ export default function PhoneDirectoryPage() {
               </a>
             </li>
           ))}
+          <li>
+            <a href="#faqs" className="text-primary hover:underline text-sm">
+              &#10067; Common questions ({FAQ.length})
+            </a>
+          </li>
         </ul>
       </nav>
 
@@ -599,6 +627,26 @@ export default function PhoneDirectoryPage() {
         </Link>
       </div>
 
+      {/* FAQ */}
+      <section id="faqs" className="mb-12 scroll-mt-20">
+        <h2 className="text-2xl font-bold text-foreground mb-6">Common questions</h2>
+        <div className="space-y-4">
+          {FAQ.map((item, i) => (
+            <details key={i} className="bg-card rounded-xl border border-border group">
+              <summary className="p-5 md:p-6 font-semibold text-foreground cursor-pointer list-none flex items-center justify-between gap-4 hover:text-primary transition-colors">
+                <span>{item.q}</span>
+                <svg className="w-5 h-5 text-muted flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="px-5 md:px-6 pb-5 md:pb-6">
+                <p className="text-sm text-muted leading-relaxed">{item.a}</p>
+              </div>
+            </details>
+          ))}
+        </div>
+      </section>
+
       {/* CTA */}
       <div className="bg-primary-light rounded-xl p-8 text-center mt-12">
         <h2 className="text-2xl font-bold text-foreground mb-3">Need a personalised to-do list?</h2>
@@ -620,48 +668,11 @@ export default function PhoneDirectoryPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'FAQPage',
-            mainEntity: [
-              {
-                '@type': 'Question',
-                name: 'What phone number do I call to report a death to the bank?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'Each bank has a dedicated bereavement line. For example: Barclays 0800 151 0023, HSBC 0800 092 1406, Lloyds 0345 302 1044, NatWest 0800 085 0960, Santander 0800 085 8375, Nationwide 0800 464 3139. Have the death certificate and account details ready before you call.',
-                },
-              },
-              {
-                '@type': 'Question',
-                name: 'What is the Tell Us Once phone number?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'The Tell Us Once phone number is 0800 085 7308. This free service lets you report a death to most government departments in one call. You will need the reference number given to you when you registered the death. It is available Monday to Friday 8am to 8pm, and Saturday 9am to 4pm.',
-                },
-              },
-              {
-                '@type': 'Question',
-                name: 'How do I stop someone\'s credit file being used for fraud after they die?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'Contact all three credit reference agencies to add a deceased marker: Experian on 0344 481 0800, Equifax on 0333 321 4043, and TransUnion on 0330 024 7574. This helps prevent identity fraud. You will need the deceased\'s full name, date of birth, date of death, and last known address.',
-                },
-              },
-              {
-                '@type': 'Question',
-                name: 'What should I say when I call to report a death?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'A simple opening is: "Hello, I am calling to notify you of a death. The account holder was [name] and they passed away on [date]. Their account number is [number]. I am their [relationship]." Bereavement teams are specially trained and will guide you through the rest of the call. Have the death certificate and account details ready.',
-                },
-              },
-              {
-                '@type': 'Question',
-                name: 'Can someone else make bereavement phone calls on my behalf?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'Yes, most organisations will allow someone else to call on your behalf. They will usually need a letter of authority signed by you (or by the executor of the estate), along with a copy of the death certificate. Some banks may also accept verbal authorisation over the phone if you are present during the call.',
-                },
-              },
-            ],
+            mainEntity: FAQ.map(item => ({
+              '@type': 'Question',
+              name: item.q,
+              acceptedAnswer: { '@type': 'Answer', text: item.a },
+            })),
           }),
         }}
       />
