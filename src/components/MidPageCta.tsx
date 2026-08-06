@@ -6,8 +6,8 @@ interface MidPageCtaProps {
 }
 
 export function MidPageCta({
-  heading = 'Not sure what applies to you?',
-  text = 'Answer a few simple questions and get a personalised checklist with deadlines and next steps tailored to your situation.',
+  heading = 'Not sure what applies in your situation?',
+  text = 'Answer a few short questions and we will put together a checklist for your circumstances, with the dates that matter and what to do next.',
 }: MidPageCtaProps) {
   return (
     <div className="bg-primary-light/60 border border-primary/10 rounded-xl p-6 my-10 flex flex-col md:flex-row items-center gap-4">

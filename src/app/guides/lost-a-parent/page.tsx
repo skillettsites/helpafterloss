@@ -34,7 +34,7 @@ export default function LostAParentPage() {
         When a Parent Dies
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        Losing a parent is one of life's most significant moments, even when it is expected. As an adult child, you may find yourself responsible for a great deal of the practical work at a time when you are also grieving deeply. This guide walks you through what needs to happen, in a sensible order, so nothing important gets missed.
+        Losing a parent is one of the hardest things most people go through, even when it has been expected for a long time. As an adult child, you may find yourself carrying most of the practical work at a time when you are also grieving. This guide takes you through what needs to happen, in a sensible order, so nothing important gets missed. There is no need to read it all at once.
       </p>
 
       <GuideImage
@@ -56,7 +56,7 @@ export default function LostAParentPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Finding the will</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Your first task is to locate the will. Check the house carefully: filing cabinets, desk drawers, a safe, a solicitor's office, or their bank. You can also search the National Will Register at certainty.co.uk (around £100) or contact the Probate Registry to see if a will has been deposited. If you find a will, do not act on it until you have a solicitor or probate service verify it is valid and the most recent version. The will names the executor and states who inherits what.
+            One of the first things to look for is the will. When you feel able to, check the house carefully: filing cabinets, desk drawers, a safe, a solicitor's office, or their bank. You can also search the National Will Register at certainty.co.uk (around £100) or contact the Probate Registry to see if a will has been deposited. If you find a will, do not act on it until you have a solicitor or probate service verify it is valid and the most recent version. The will names the executor and states who inherits what.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -68,7 +68,7 @@ export default function LostAParentPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Arranging the funeral</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If your parent left funeral wishes, try to honour them. If not, the decision falls to the executor (or the next of kin if there is no will). Get at least three itemised quotes from funeral directors. A traditional burial averages around £5,400, cremation around £4,200, and direct cremation from around £1,600. You do not have to use the most expensive option. A direct cremation followed by a meaningful memorial can be just as personal, and far less financially draining.
+            If your parent left funeral wishes, try to honour them where you can. If not, the decision falls to the executor (or the next of kin if there is no will). It is worth asking for at least three itemised quotes from funeral directors. A traditional burial averages around £5,400, cremation around £4,200, and direct cremation from around £1,600. Spending more does not mean caring more. A direct cremation followed by a memorial you plan in your own time can be just as personal, and far less of a strain on the family's finances.
           </p>
         </div>
       </div>
@@ -85,7 +85,7 @@ export default function LostAParentPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Applying for probate</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If your parent's estate includes property, or has more than around £5,000 to £50,000 in sole-name accounts, you will almost certainly need probate. Apply using form PA1P (with a will) at gov.uk. The court fee is £300. You will need to value the estate and complete an inheritance tax form first. Current processing time is around 12 to 16 weeks. For a detailed walkthrough, see our <Link href="/probate" className="text-primary font-medium hover:underline">full probate guide</Link>.
+            If your parent's estate includes property, or has more than around £5,000 to £50,000 in sole-name accounts, you will almost certainly need probate. Apply using form PA1P (with a will) at gov.uk. The court fee is £526. You will need to value the estate and complete an inheritance tax form first. Current processing time is around 12 to 16 weeks. For a detailed walkthrough, see our <Link href="/probate" className="text-primary font-medium hover:underline">full probate guide</Link>.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -97,8 +97,8 @@ export default function LostAParentPage() {
       </div>
 
       <MidPageCta
-        heading="Need help working out what to do first?"
-        text="Our personalised guide asks a few questions about your parent's situation and gives you a step-by-step checklist with real deadlines."
+        heading="Not sure what needs doing first?"
+        text="Our personalised guide asks a few questions about your parent's situation and gives you a step-by-step checklist with the deadlines that actually apply to you."
       />
 
       {/* Home and possessions */}
@@ -107,19 +107,19 @@ export default function LostAParentPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Secure the property immediately</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If your parent lived alone, secure the property straight away. Check the heating, remove perishable food, lock all doors and windows, and cancel any milk or newspaper deliveries. Contact the home insurer: most standard policies become void if the property is empty for more than 30 days, and you may need to switch to specialist unoccupied property insurance. Apply to the council for a council tax exemption, which runs from the date of death through probate and for 6 months afterwards.
+            If your parent lived alone, the house will need securing before too long. Check the heating, clear out perishable food, lock all doors and windows, and cancel any milk or newspaper deliveries. Going back to an empty home is hard, so take someone with you if that helps. Contact the home insurer: most standard policies become void if the property is empty for more than 30 days, and you may need to switch to specialist unoccupied property insurance. Apply to the council for a council tax exemption, which runs from the date of death through probate and for 6 months afterwards.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Clearing the house</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Do not rush to clear the property. Take time to go through belongings carefully: important documents can be mixed in with ordinary paperwork, and some items may have significant financial or sentimental value. Look for bank statements, insurance policies, share certificates, premium bonds (check at nsandi.com), pension paperwork, and any assets you were not aware of. Only once you have a full picture of the estate should you start clearing.
+            There is no need to rush this, and most people find it takes longer than they expected. Go through belongings slowly: important documents can be mixed in with ordinary paperwork, and some items may have real financial or sentimental value. Look for bank statements, insurance policies, share certificates, premium bonds (check at nsandi.com), pension paperwork, and any assets you were not aware of. Only once you have a full picture of the estate should you start clearing.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Sentimental items and family disagreements</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Sentimental items can cause more conflict than money. If the will does not specify who receives particular items, they form part of the residuary estate to be divided among the beneficiaries. Try to handle this sensitively: a family meeting where people choose items in turn can help. Keep a written record of any informal agreements. If items of significant value are involved, get them properly valued before distributing. A mediator can help if disagreements become serious.
+            Sentimental items often cause more difficulty than money does, and that is rarely about the objects themselves. If the will does not specify who receives particular items, they form part of the residuary estate to be divided among the beneficiaries. A quiet family gathering where people choose items in turn can take a lot of the heat out of it. Keep a written record of any informal agreements. If items of significant value are involved, get them properly valued before distributing. A mediator can help if disagreements become serious.
           </p>
         </div>
       </div>
@@ -142,7 +142,7 @@ export default function LostAParentPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Bereavement Support Payment: not available to children</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Bereavement Support Payment is only available to surviving spouses and civil partners. As an adult child, you cannot claim it following a parent's death. If you are struggling financially, check whether you are entitled to any other benefits at gov.uk/benefits. Some employers offer enhanced compassionate leave; check your contract or speak to HR.
+            Bereavement Support Payment is only available to surviving spouses and civil partners. As an adult child, you cannot claim it after losing a parent, which comes as a surprise to a lot of people. If money is tight, it is worth checking what else you may be entitled to at gov.uk/benefits. Some employers offer enhanced compassionate leave; check your contract or speak to HR.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -165,7 +165,7 @@ export default function LostAParentPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">If there is no will (intestacy)</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If your parent died without a will, the intestacy rules determine who inherits. In England and Wales: if there is a surviving spouse or civil partner, they receive the first £322,000 and half of anything above that. Children share the remaining half equally. If there is no surviving spouse, children inherit equally. In Scotland, children always have a right to a minimum share (Legal Rights) regardless of what a will says. See our <Link href="/intestacy" className="text-primary font-medium hover:underline">intestacy guide</Link> for the full rules.
+            If your parent passed away without leaving a will, the intestacy rules decide who inherits. In England and Wales: if there is a surviving spouse or civil partner, they receive the first £322,000 and half of anything above that. Children share the remaining half equally. If there is no surviving spouse, children inherit equally. In Scotland, children always have a right to a minimum share (Legal Rights) regardless of what a will says. See our <Link href="/intestacy" className="text-primary font-medium hover:underline">intestacy guide</Link> for the full rules.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -182,7 +182,7 @@ export default function LostAParentPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Why disagreements happen</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Sibling disagreements after a parent's death are extremely common. Grief affects people differently, and old tensions can resurface at an already stressful time. Conflict most often centres on the will's fairness, who cared for the parent in later life, specific items, or how quickly to sell the family home. Try to separate the practical decisions from the emotional ones and address them separately.
+            Falling out with brothers and sisters after a parent passes away is very common, and it does not mean your family is a difficult one. Grief affects people in different ways, and old tensions tend to resurface at an already painful time. Disagreements most often centre on whether the will feels fair, who cared for the parent in later life, particular items, or how quickly to sell the family home. It can help to separate the practical decisions from the emotional ones and deal with them apart from each other.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -194,7 +194,7 @@ export default function LostAParentPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Mediation and legal challenge</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If informal discussions are not working, family mediation is a much cheaper and faster option than court. A mediator helps all parties reach a negotiated agreement. If you believe the will is invalid (due to lack of mental capacity, undue influence, or fraud), you can contest it, but this is expensive and emotionally exhausting. Legal advice is essential before taking this step. The Contentious Probate team at any solicitor can advise.
+            If conversations at home are not getting anywhere, family mediation is far cheaper and quicker than going to court, and it keeps relationships intact more often than litigation does. A mediator helps everyone reach an agreement between themselves. If you believe the will is invalid (due to lack of mental capacity, undue influence, or fraud), you can contest it, but it is expensive and it takes a real emotional toll. Legal advice is essential before taking this step. The Contentious Probate team at any solicitor can advise.
           </p>
         </div>
       </div>
@@ -202,7 +202,7 @@ export default function LostAParentPage() {
       {/* Emotional support */}
       <div className="bg-warm border border-warm-border rounded-xl p-5 mb-10">
         <p className="text-sm text-amber-800 leading-relaxed">
-          Losing a parent reshapes your sense of the world in ways that are hard to anticipate. Even when the death was expected, the grief can be profound. You do not have to manage it alone. Cruse Bereavement Support offers free, confidential help on <a href="tel:08088081677" className="font-medium underline">0808 808 1677</a>, and your GP can refer you to counselling if you are struggling.
+          Losing a parent can change how the world feels in ways that are hard to anticipate. Even when it was expected, the grief can still take you by surprise. You do not have to carry it on your own. Cruse Bereavement Support offers free, confidential help on <a href="tel:08088081677" className="font-medium underline">0808 808 1677</a>, and your GP can refer you to counselling if you are struggling.
         </p>
       </div>
 
@@ -211,19 +211,19 @@ export default function LostAParentPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Grief after losing a parent</h3>
           <p className="text-sm text-muted leading-relaxed">
-            The death of a parent, even in old age, can feel like losing a foundation. Many people describe feeling unexpectedly lost, vulnerable, or like they are suddenly "the older generation". These feelings are completely normal. Give yourself permission to grieve, even while managing the practical work. The two things do not have to happen at separate times.
+            Losing a parent, even in old age, can feel like losing the ground under your feet. Many people describe feeling unexpectedly adrift, vulnerable, or as though they have suddenly become "the older generation". None of that is unusual. Grieving and getting through the paperwork are not separate stages, and there is no order you are supposed to do them in.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Support organisations</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Cruse Bereavement Support: free helpline on 0808 808 1677, open Monday to Friday 9:30am to 5pm (with extended hours on some days). Sue Ryder offers online bereavement counselling at sueryder.org. At a Loss (ataloss.org) is a UK directory of bereavement services. Your GP can refer you to NHS counselling or a local bereavement service. Many hospices also offer free community bereavement support, even if your parent did not die in a hospice.
+            Cruse Bereavement Support: free helpline on 0808 808 1677, open Monday to Friday 9:30am to 5pm (with extended hours on some days). Sue Ryder offers online bereavement counselling at sueryder.org. At a Loss (ataloss.org) is a UK directory of bereavement services. Your GP can refer you to NHS counselling or a local bereavement service. Many hospices also offer free community bereavement support, even if your parent was never in their care.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Looking after yourself</h3>
           <p className="text-sm text-muted leading-relaxed">
-            The administrative burden after a parent's death is significant and can go on for months. Try to pace yourself. Delegate tasks to siblings or other family members where you can. Accept offers of help with practical things like cooking or shopping. If you are working, speak to your employer early about what you need. Most employers are accommodating, but they cannot help if they do not know what you are going through.
+            The paperwork after a parent passes away is heavier than most people expect, and it can go on for months. Pace yourself where you can. Share tasks with brothers, sisters, or other family members rather than carrying it all. When people offer help with cooking or shopping, it is fine to say yes. If you are working, speak to your employer early about what you need. Most are more understanding than you might think, but they cannot help if they do not know what you are dealing with.
           </p>
         </div>
       </div>
@@ -240,7 +240,7 @@ export default function LostAParentPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Do I need to apply for probate when a parent dies?</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If your parent owned property, or had more than around £5,000 to £50,000 in sole-name bank accounts (the threshold varies by bank), you will almost certainly need probate. Apply using form PA1P at gov.uk if there is a will, or PA1A if there is no will. The court fee is £300. You do not need a solicitor, though one can help if the estate is complex.
+            If your parent owned property, or had more than around £5,000 to £50,000 in sole-name bank accounts (the threshold varies by bank), you will almost certainly need probate. Apply using form PA1P at gov.uk if there is a will, or PA1A if there is no will. The court fee is £526. You do not need a solicitor, though one can help if the estate is complex.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -277,7 +277,7 @@ export default function LostAParentPage() {
 
       <div className="bg-primary-light rounded-xl p-8 text-center">
         <h2 className="text-2xl font-bold text-foreground mb-3">Get a personalised checklist for your situation</h2>
-        <p className="text-muted mb-6">Answer a few questions and we will give you a step-by-step list with real deadlines, tailored to your parent's estate.</p>
+        <p className="text-muted mb-6">Answer a few questions and we will give you a step-by-step list with the deadlines that matter, tailored to your parent's circumstances.</p>
         <Link href="/start" className="inline-block px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors">
           Get Your Personalised Guide
         </Link>
@@ -300,7 +300,7 @@ export default function LostAParentPage() {
               {
                 '@type': 'Question',
                 name: 'Do I need to apply for probate when a parent dies?',
-                acceptedAnswer: { '@type': 'Answer', text: 'If your parent owned property, or had more than around £5,000 to £50,000 in sole-name bank accounts, you will almost certainly need probate. Apply using form PA1P at gov.uk if there is a will, or PA1A if there is no will. The court fee is £300.' },
+                acceptedAnswer: { '@type': 'Answer', text: 'If your parent owned property, or had more than around £5,000 to £50,000 in sole-name bank accounts, you will almost certainly need probate. Apply using form PA1P at gov.uk if there is a will, or PA1A if there is no will. The court fee is £526.' },
               },
               {
                 '@type': 'Question',

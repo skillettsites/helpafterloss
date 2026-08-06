@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 const SECTIONS = [
   {
     title: 'Notify the council as soon as possible',
-    content: 'The council needs to know about the death so they can adjust the council tax account. If you used Tell Us Once when registering the death, the council will be notified automatically. If not, contact them directly by phone or in writing. They will need the date of death, the full name and address of the deceased, and details of anyone else living at the property. Most councils have a dedicated bereavement team who can deal with this quickly.',
+    content: 'The council needs to know about the death so they can adjust the council tax account. If you used Tell Us Once when registering the death, the council will be notified automatically. If not, contact them directly by phone or in writing. They will need the date of death, their full name and address, and details of anyone else living at the property. Most councils have a dedicated bereavement team who can deal with this quickly.',
   },
   {
     title: 'Single person discount (25% off)',
@@ -33,11 +33,11 @@ const SECTIONS = [
   },
   {
     title: 'Class F exemption for empty properties',
-    content: 'If the property is left empty after the death (because the deceased lived alone, or because all occupants have moved out), it qualifies for a Class F exemption. This means no council tax is payable from the date of death until six months after probate (Grant of Representation) is granted. The exemption is not automatic. You must apply to the council and provide a copy of the death certificate. Once probate is granted, send a copy of the grant to the council so they can calculate the six-month period correctly.',
+    content: 'If the property is left empty (because they lived alone, or because everyone else has moved out), it qualifies for a Class F exemption. This means no council tax is payable from the date of death until six months after probate (Grant of Representation) is granted. The exemption is not automatic. You must apply to the council and provide a copy of the death certificate. Once probate is granted, send a copy of the grant to the council so they can calculate the six-month period correctly.',
   },
   {
     title: 'What executors are responsible for',
-    content: 'Council tax on the deceased\'s property is paid from the estate, not from the executor\'s personal funds. During the Class F exemption period, nothing is owed. Once the exemption ends, full council tax becomes payable and should be paid from estate funds. If the property is sold or transferred to a beneficiary before the exemption expires, the new owner becomes responsible from that point. Keep all council tax correspondence and receipts as part of the estate records.',
+    content: 'Council tax on the property is paid from the estate, not out of the executor\'s own pocket. During the Class F exemption period, nothing is owed. Once the exemption ends, full council tax becomes payable and should be paid from estate funds. If the property is sold or transferred to a beneficiary before the exemption expires, the new owner becomes responsible from that point. Keep all council tax correspondence and receipts as part of the estate records.',
   },
   {
     title: 'Second adult rebate',
@@ -45,7 +45,7 @@ const SECTIONS = [
   },
   {
     title: 'Council tax reduction (benefit) changes',
-    content: 'If the deceased was receiving council tax reduction (formerly council tax benefit), this stops on the date of death. The surviving partner will need to make a new claim in their own name, based on their own income and circumstances. Do this promptly, as some councils will backdate claims but others will not. If the surviving partner is a pensioner on a low income, they are very likely to qualify for a council tax reduction in their own right.',
+    content: 'If they were receiving council tax reduction (formerly council tax benefit), this stops on the date of death. The surviving partner will need to make a new claim in their own name, based on their own income and circumstances. Do this promptly, as some councils will backdate claims but others will not. If the surviving partner is a pensioner on a low income, they are very likely to qualify for a council tax reduction in their own right.',
   },
   {
     title: 'After the exemption period ends',
@@ -87,7 +87,7 @@ export default function CouncilTaxAfterDeathPage() {
         Council Tax After a Death
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        When someone dies, their council tax situation changes immediately. You may be entitled to an exemption, a discount, or both. Knowing what to claim and when can save hundreds of pounds.
+        When someone passes away, the council tax on their home changes straight away. You may be entitled to an exemption, a discount, or both, and neither is applied automatically. Knowing what to claim, and when, can save hundreds of pounds at a time when money is often tight.
       </p>
 
       <GuideImage

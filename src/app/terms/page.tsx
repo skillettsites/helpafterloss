@@ -28,7 +28,7 @@ export default function TermsPage() {
         <section>
           <h2 className="text-xl font-semibold text-foreground mb-3">About this site</h2>
           <p>
-            Help After Loss is a free information website that provides general guidance for people dealing with bereavement in the United Kingdom. The site is provided as a public resource at no cost to users.
+            Help After Loss is a free information website that provides general guidance for people in the United Kingdom who are dealing with a bereavement. The site is provided as a public resource at no cost to users.
           </p>
         </section>
 

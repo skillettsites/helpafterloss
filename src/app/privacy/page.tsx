@@ -28,7 +28,7 @@ export default function PrivacyPage() {
         <section>
           <h2 className="text-xl font-semibold text-foreground mb-3">Summary</h2>
           <p>
-            Help After Loss does not collect, store, or share any of your personal information. Your questionnaire answers and checklist progress are saved only on your own device using your browser's local storage. We have no database, no user accounts, and no way to access what you enter.
+            Help After Loss does not collect, store, or share any of your personal information. Your questionnaire answers and checklist progress are saved only on your own device using your browser's local storage. We have no database, no user accounts, and no way to see anything you enter.
           </p>
         </section>
 

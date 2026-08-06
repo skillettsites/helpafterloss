@@ -24,31 +24,31 @@ export const metadata: Metadata = {
 const PLATFORMS = [
   {
     name: 'Google (Gmail, YouTube, Drive, Photos)',
-    what: 'Google\'s Inactive Account Manager lets the person set up what happens to their account after inactivity. If they did not set this up, you can request access or deletion.',
-    how: 'Submit a request through Google\'s deceased user process. You will need: proof of your identity, the death certificate, and proof of your relationship. Google may provide account content or delete the account.',
+    what: 'Google\'s Inactive Account Manager lets people decide in advance what happens to their account. If your loved one did not set this up, you can still ask for access or for the account to be deleted.',
+    how: 'Submit a request through Google\'s bereavement process. You will need proof of your own identity, the death certificate, and proof of how you were related. Google may share the account content with you, or close the account.',
     url: 'https://support.google.com/accounts/troubleshooter/6357590',
     note: 'Google will not provide passwords. They may share some content but not all.',
   },
   {
     name: 'Facebook and Instagram (Meta)',
-    what: 'Facebook accounts can be memorialised (the word "Remembering" appears next to the name) or permanently deleted. Instagram follows the same process.',
-    how: 'Submit a memorialisation or removal request through Facebook\'s Help Centre. You need proof of your relationship and a death certificate. A "legacy contact" set by the person can manage the memorialised account.',
+    what: 'A Facebook account can be memorialised, so the word "Remembering" appears beside their name and friends can still visit and leave messages, or it can be closed for good. Instagram works the same way.',
+    how: 'Submit a memorialisation or removal request through Facebook\'s Help Centre. You will need proof of how you were related and a death certificate. If they named a "legacy contact", that person can look after the memorialised account.',
     url: 'https://www.facebook.com/help/1506822589577997',
-    note: 'Memorialised accounts cannot be logged into but remain visible to friends.',
+    note: 'Nobody can log in to a memorialised account, but friends can still see it. Many families find that a comfort.',
   },
   {
     name: 'Apple (iCloud, Apple ID)',
-    what: 'Apple\'s Digital Legacy programme lets someone name a Legacy Contact. Without this, accessing the account requires a court order.',
-    how: 'If a Legacy Contact was set up, they can request access using their access key and the death certificate. Without one, you need to obtain a court order and submit it to Apple. Apple will then provide access to the account data.',
+    what: 'Apple\'s Digital Legacy programme lets people name a Legacy Contact in advance. Without one, getting into the account needs a court order, which is a shame when there are photographs inside.',
+    how: 'If a Legacy Contact was named, they can ask for access using their access key and the death certificate. If not, you will need a court order to send to Apple, and they will then release the account data.',
     url: 'https://support.apple.com/en-gb/HT212360',
-    note: 'A court order is the only way without a Legacy Contact. Solicitors can help with this.',
+    note: 'Without a Legacy Contact, a court order really is the only route. A solicitor can help you with it.',
   },
   {
     name: 'Microsoft (Outlook, Hotmail, OneDrive)',
-    what: 'Microsoft can provide account data to the next of kin or close a deceased person\'s account.',
-    how: 'Contact Microsoft support. Provide a death certificate, proof of your identity, and documentation of your relationship. The process typically takes several weeks.',
+    what: 'Microsoft can pass account data to the next of kin, or close the account.',
+    how: 'Contact Microsoft support with a death certificate, proof of your own identity, and something showing how you were related. It usually takes several weeks, so do not worry if you do not hear back quickly.',
     url: 'https://support.microsoft.com/en-gb/account-billing/accessing-a-deceased-person-s-account',
-    note: 'Microsoft will not share the person\'s password.',
+    note: 'Microsoft will not share their password with you.',
   },
   {
     name: 'Twitter / X',
@@ -66,15 +66,15 @@ const PLATFORMS = [
   },
   {
     name: 'PayPal',
-    what: 'PayPal accounts should be closed and any remaining balance returned to the estate.',
-    how: 'Contact PayPal\'s bereavement team. Provide the death certificate and proof of your role as executor/administrator. PayPal will close the account and transfer the balance.',
+    what: 'A PayPal account should be closed, with any remaining balance returned to the estate.',
+    how: 'Contact PayPal\'s bereavement team with the death certificate and proof that you are the executor or administrator. They will close the account and transfer the balance.',
     url: 'https://www.paypal.com/uk/cshelp/contact-us',
-    note: 'Do not withdraw money using the person\'s login, as this could cause legal complications.',
+    note: 'Please do not withdraw the money using their login, however tempting. It can cause legal complications later.',
   },
   {
     name: 'Amazon',
-    what: 'Close the account and cancel any active subscriptions (Prime, Kindle Unlimited, etc.).',
-    how: 'Contact Amazon customer service. Provide the death certificate and order number or account details.',
+    what: 'The account can be closed and any live subscriptions cancelled (Prime, Kindle Unlimited, and so on).',
+    how: 'Contact Amazon customer service with the death certificate and an order number or the account details.',
     url: 'https://www.amazon.co.uk/gp/help/customer/contact-us',
     note: 'Digital purchases (Kindle books, music) are licensed and may not be transferable.',
   },
@@ -90,15 +90,15 @@ export default function DigitalLegacyPage() {
         Digital Legacy: Dealing With Online Accounts
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        Most people have dozens of online accounts. After a death, these need to be closed, memorialised, or transferred. Each platform has its own process. Here is what to do for the most common services.
+        Most of us have dozens of online accounts, and after someone passes away those accounts need to be closed, memorialised, or moved into someone else's name. Every platform does it differently, which is why this page exists. There is no rush with any of it, and you may want to keep some accounts open for a while.
       </p>
 
       <div className="bg-warm border border-warm-border rounded-xl p-6 mb-10">
-        <h2 className="font-semibold text-amber-800 mb-2">Important notes</h2>
+        <h2 className="font-semibold text-amber-800 mb-2">A few things worth knowing first</h2>
         <ul className="text-sm text-amber-800 space-y-1 list-disc list-inside">
-          <li>Do not log in using the person\'s passwords. This can cause legal complications and may violate terms of service.</li>
-          <li>Cancel paid subscriptions as soon as possible to stop ongoing charges to the estate.</li>
-          <li>Check email accounts for any unknown financial accounts, subscriptions, or correspondence.</li>
+          <li>Try not to log in using their passwords. It is understandable, but it can cause legal complications and usually breaks the terms of service.</li>
+          <li>Do cancel paid subscriptions when you can, so the estate is not charged month after month.</li>
+          <li>Their email account is often the best place to find accounts, subscriptions, and letters nobody knew about.</li>
         </ul>
       </div>
 
@@ -141,7 +141,7 @@ export default function DigitalLegacyPage() {
           ))}
         </div>
         <p className="text-xs text-muted mt-4">
-          Check bank statements for direct debits and recurring payments. Many subscriptions continue charging unless actively cancelled.
+          Bank statements are the quickest way to spot direct debits and recurring payments. Most subscriptions keep taking money until somebody cancels them.
         </p>
       </div>
 

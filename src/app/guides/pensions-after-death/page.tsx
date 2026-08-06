@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const SECTIONS = [
   {
     title: 'State pension inheritance',
-    content: 'You may be able to inherit extra state pension from your late spouse or civil partner. This applies to the additional state pension (SERPS or State Second Pension/S2P) built up before April 2016. The average inherited amount is around £3,377 per year. Over 17,000 people boosted their state pension by more than £10,000 in a single year through inherited state pension. Contact the DWP Bereavement Service on 0800 731 0469 to check what you may be entitled to. If the deceased reached state pension age before 6 April 2016, different (often more generous) rules apply.',
+    content: 'You may be able to inherit extra state pension from your late spouse or civil partner. This applies to the additional state pension (SERPS or State Second Pension/S2P) built up before April 2016. The average inherited amount is around £3,377 per year. Over 17,000 people boosted their state pension by more than £10,000 in a single year through inherited state pension. Contact the DWP Bereavement Service on 0800 151 2012 to check what you may be entitled to. If they reached state pension age before 6 April 2016, different (often more generous) rules apply.',
   },
   {
     title: 'Bereavement Support Payment',
@@ -32,19 +32,19 @@ const SECTIONS = [
   },
   {
     title: 'Workplace pension death benefits',
-    content: 'Most workplace pensions pay a death benefit, which could be a lump sum (typically 2 to 4 times the deceased\'s annual salary), a dependant\'s pension paid to a surviving spouse or partner, or both. Contact the deceased\'s employer\'s HR department or the pension scheme administrator. They will send you a claim form and explain what benefits are available. These payments are often made at the pension trustees\' discretion, so they are usually paid outside the estate and are free from inheritance tax.',
+    content: 'Most workplace pensions pay a death benefit, which could be a lump sum (typically 2 to 4 times their annual salary), a dependant\'s pension paid to a surviving spouse or partner, or both. Contact their employer\'s HR department or the pension scheme administrator. They will send you a claim form and explain what benefits are available. These payments are often made at the pension trustees\' discretion, so they are usually paid outside the estate and are free from inheritance tax.',
   },
   {
     title: 'Death in service benefit',
-    content: 'Death in service is a separate benefit from the pension, provided by the employer as part of the employee benefits package. It pays a lump sum (often 2 to 4 times salary, sometimes more) to the deceased\'s nominated beneficiary or next of kin. Check the employee handbook, benefits portal, or contact HR directly. This benefit only applies if the person died while still employed by the company. If they had left the job, the death in service benefit no longer applies, though pension death benefits may still be available.',
+    content: 'Death in service is a separate benefit from the pension, provided by the employer as part of the employee benefits package. It pays a lump sum (often 2 to 4 times salary, sometimes more) to the person they nominated, or to their next of kin. Check the employee handbook, benefits portal, or contact HR directly. This benefit only applies if they were still employed by the company. If they had left the job, the death in service benefit no longer applies, though pension death benefits may still be available.',
   },
   {
     title: 'Private and personal pensions',
-    content: 'What happens to a private pension depends on the type of scheme. For defined contribution pensions (where the deceased had a pot of money), the pension provider pays the pot to the nominated beneficiary or, if no nomination was made, to whoever they consider appropriate. For defined benefit pensions (salary-related, final salary), the scheme may pay a dependant\'s pension to a surviving spouse, civil partner, or qualifying partner. Check with the pension provider for the specific scheme rules.',
+    content: 'What happens to a private pension depends on the type of scheme. For defined contribution pensions (where they had built up a pot of money), the pension provider pays the pot to the nominated beneficiary or, if no nomination was made, to whoever they consider appropriate. For defined benefit pensions (salary-related, final salary), the scheme may pay a dependant\'s pension to a surviving spouse, civil partner, or qualifying partner. Check with the pension provider for the specific scheme rules.',
   },
   {
     title: 'The Pension Tracing Service',
-    content: 'People often lose track of pensions from previous employers, particularly if they changed jobs frequently. The Pension Tracing Service is a free government tool that helps you search for lost or forgotten pensions. Visit gov.uk/find-pension-contact-details or call 0800 731 0193. You will need the name of the deceased\'s former employer or pension provider. The service gives you contact details for the scheme so you can enquire about any benefits.',
+    content: 'People often lose track of pensions from previous employers, particularly if they changed jobs frequently. The Pension Tracing Service is a free government tool that helps you search for lost or forgotten pensions. Visit gov.uk/find-pension-contact-details or call 0800 731 0193. You will need the name of their former employer or pension provider. The service gives you contact details for the scheme so you can enquire about any benefits.',
   },
   {
     title: 'NHS pension death benefits',
@@ -52,11 +52,11 @@ const SECTIONS = [
   },
   {
     title: 'Teachers\' and civil service pensions',
-    content: 'The Teachers\' Pension Scheme (teacherspensions.co.uk) and Civil Service Pension Scheme (civilservicepensionscheme.org.uk) both provide death benefits. These typically include a lump sum and a dependant\'s pension. Contact the relevant scheme administrator as soon as possible after the death. You will need the deceased\'s pension reference number, which should be on any pension correspondence.',
+    content: 'The Teachers\' Pension Scheme (teacherspensions.co.uk) and Civil Service Pension Scheme (civilservicepensionscheme.org.uk) both provide death benefits. These typically include a lump sum and a dependant\'s pension. Contact the relevant scheme administrator when you are able to. You will need their pension reference number, which should be on any pension correspondence.',
   },
   {
     title: 'Tax on inherited pensions',
-    content: 'The tax treatment depends on the deceased\'s age at death. If the deceased was under 75, pension benefits (lump sum or drawdown) are normally paid tax-free to the beneficiary. If the deceased was 75 or over, any pension benefits are taxed as income at the beneficiary\'s marginal rate. These rules apply to defined contribution pensions. Defined benefit dependant\'s pensions are always taxed as income regardless of the deceased\'s age at death. Pension death benefits paid at the trustees\' discretion are normally outside the estate for inheritance tax.',
+    content: 'The tax treatment depends on how old they were when they died. If they were under 75, pension benefits (lump sum or drawdown) are normally paid tax-free to the beneficiary. If they were 75 or over, any pension benefits are taxed as income at the beneficiary\'s marginal rate. These rules apply to defined contribution pensions. Defined benefit dependant\'s pensions are always taxed as income, whatever their age. Pension death benefits paid at the trustees\' discretion are normally outside the estate for inheritance tax.',
   },
 ];
 
@@ -67,7 +67,7 @@ const FAQ = [
   },
   {
     q: 'Can I inherit my spouse\'s state pension?',
-    a: 'You may be able to inherit some of their additional state pension (SERPS or State Second Pension) if it was built up before April 2016. You cannot inherit the new state pension (post-2016), but if your own state pension is low, you may be able to use your late spouse\'s National Insurance record to boost it. Contact the DWP Bereavement Service on 0800 731 0469 to check your specific entitlement.',
+    a: 'You may be able to inherit some of their additional state pension (SERPS or State Second Pension) if it was built up before April 2016. You cannot inherit the new state pension (post-2016), but if your own state pension is low, you may be able to use your late spouse\'s National Insurance record to boost it. Contact the DWP Bereavement Service on 0800 151 2012 to check your specific entitlement.',
   },
   {
     q: 'What is death in service benefit?',
@@ -75,15 +75,15 @@ const FAQ = [
   },
   {
     q: 'How do I trace a lost pension?',
-    a: 'Use the free government Pension Tracing Service at gov.uk/find-pension-contact-details or call 0800 731 0193. You will need the name of the former employer or pension provider. The service searches a database of over 200,000 pension schemes and gives you the contact details so you can enquire about benefits. Also check for old pension statements in the deceased\'s paperwork, as these will have scheme names and reference numbers.',
+    a: 'Use the free government Pension Tracing Service at gov.uk/find-pension-contact-details or call 0800 731 0193. You will need the name of the former employer or pension provider. The service searches a database of over 200,000 pension schemes and gives you the contact details so you can enquire about benefits. Also look for old pension statements in their paperwork, as these will have scheme names and reference numbers.',
   },
   {
     q: 'Are inherited pensions taxable?',
-    a: 'If the deceased was under 75 at death, defined contribution pension benefits (lump sum or drawdown) are normally paid tax-free. If the deceased was 75 or over, benefits are taxed as income at the beneficiary\'s marginal tax rate. Defined benefit dependant\'s pensions are always taxed as income regardless of age. Most pension death benefits are outside the estate for inheritance tax purposes because they are paid at the trustees\' discretion.',
+    a: 'If they were under 75, defined contribution pension benefits (lump sum or drawdown) are normally paid tax-free. If they were 75 or over, benefits are taxed as income at the beneficiary\'s marginal tax rate. Defined benefit dependant\'s pensions are always taxed as income regardless of age. Most pension death benefits are outside the estate for inheritance tax purposes because they are paid at the trustees\' discretion.',
   },
   {
     q: 'How do I claim workplace pension death benefits?',
-    a: 'Contact the deceased\'s employer\'s HR department or the pension scheme administrator. They will confirm what benefits are available and send the necessary claim forms. You will typically need to provide a death certificate, proof of your identity, and proof of your relationship to the deceased. Processing times vary, but most schemes aim to pay within 4 to 8 weeks of receiving a completed claim.',
+    a: 'Contact their employer\'s HR department or the pension scheme administrator. They will confirm what benefits are available and send the necessary claim forms. You will typically need to provide a death certificate, proof of your identity, and proof of your relationship to them. Processing times vary, but most schemes aim to pay within 4 to 8 weeks of receiving a completed claim.',
   },
 ];
 
@@ -98,7 +98,7 @@ export default function PensionsAfterDeathPage() {
         Pensions After Death: State, Workplace & Private Pensions
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        Pensions are one of the most commonly overlooked assets after a death, yet they can be worth a significant amount. Between state pension inheritance, workplace death benefits, and private pension pots, there may be more available than you expect. This guide explains what to check and how to claim.
+        Pensions are one of the most commonly overlooked assets after someone passes away, yet they can be worth a great deal. Between state pension inheritance, workplace death benefits, and private pension pots, there may be more available than you expect. This guide explains what to check and how to claim.
       </p>
 
       {/* Quick summary stats */}
@@ -138,7 +138,7 @@ export default function PensionsAfterDeathPage() {
       <div className="bg-accent/50 rounded-xl p-6 mb-12">
         <h2 className="font-semibold text-foreground mb-2">Bereavement Support Payment: full guide</h2>
         <p className="text-sm text-muted leading-relaxed mb-3">
-          If your spouse or civil partner has died, you may be eligible for up to £9,800 in Bereavement Support Payment. Read our full guide for eligibility details, how to claim, and what to do if you miss the initial deadline.
+          If your spouse or civil partner has passed away, you may be eligible for up to £9,800 in Bereavement Support Payment. Read our full guide for eligibility details, how to claim, and what to do if you miss the initial deadline.
         </p>
         <Link href="/guides/bereavement-benefits" className="inline-block text-sm font-semibold text-primary hover:underline">
           Read the Bereavement Benefits guide

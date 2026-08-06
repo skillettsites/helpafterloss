@@ -37,7 +37,7 @@ const FAQ = [
   },
   {
     q: 'What happens if I miss the 28-day deadline?',
-    a: 'If you miss the 28-day deadline, you will need to contact each government department individually. The registrar may be able to issue a new reference number in some cases, but this is not guaranteed. It is worth contacting the register office to ask.',
+    a: 'If the 28 days pass, you would need to contact each government department yourself. It is not the end of the world. The registrar can sometimes issue a new reference number, so it is always worth ringing the register office to ask before you assume the worst.',
   },
   {
     q: 'Does Tell Us Once notify banks?',
@@ -49,11 +49,11 @@ const FAQ = [
   },
   {
     q: 'What information do I need to use Tell Us Once?',
-    a: 'You need the Tell Us Once reference number from the registrar, the deceased person\'s National Insurance number (if known), details of any benefits or tax credits they received, their driving licence number, their passport number, and details of any local council services they used (council tax, Blue Badge, library cards, etc.).',
+    a: 'You need the Tell Us Once reference number from the registrar, their National Insurance number if you know it, details of any benefits or tax credits they received, their driving licence number, their passport number, and details of any local council services they used (council tax, Blue Badge, library cards, and so on).',
   },
   {
     q: 'Does Tell Us Once stop benefit payments automatically?',
-    a: 'Yes. Tell Us Once notifies the DWP, which will stop benefits paid to the deceased person. If you are a surviving spouse or partner, your own benefits will not be affected, but you may need to contact the DWP separately about changes to your household income or claiming Bereavement Support Payment.',
+    a: 'Yes. Tell Us Once notifies the DWP, which will stop the benefits that were being paid to them. If you are their surviving husband, wife, or partner, your own benefits will not be affected, though you may need to speak to the DWP separately about changes to your household income or about claiming Bereavement Support Payment.',
   },
 ];
 
@@ -67,7 +67,7 @@ export default function TellUsOncePage() {
         Tell Us Once: Report a Death to Government in One Step
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-4">
-        Tell Us Once is a free government service that lets you report a death to most national and local government organisations with a single notification. It saves hours of phone calls and paperwork during an already difficult time.
+        Tell Us Once is a free government service that lets you report a death to most national and local government organisations in one go. It is one of the genuinely kind parts of this process, saving you hours of phone calls and paperwork at a time when you have quite enough to carry.
       </p>
 
       {/* Key facts at a glance */}
@@ -119,7 +119,7 @@ export default function TellUsOncePage() {
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-foreground mb-3">How do I use Tell Us Once?</h2>
         <p className="text-muted leading-relaxed">
-          The registrar gives you a unique reference number when you register the death. Use this number at <a href="https://www.gov.uk/tell-us-once" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">gov.uk/tell-us-once</a> or call <a href="tel:08000857308" className="text-primary hover:underline">0800 085 7308</a> within 28 days. You will need the person's National Insurance number, benefit details, and driving licence or passport numbers if available.
+          The registrar gives you a unique reference number when you register the death. Use it at <a href="https://www.gov.uk/tell-us-once" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">gov.uk/tell-us-once</a> or call <a href="tel:08000857308" className="text-primary hover:underline">0800 085 7308</a> within 28 days. Have their National Insurance number, benefit details, and driving licence or passport numbers to hand if you can find them.
         </p>
       </section>
 
@@ -128,10 +128,10 @@ export default function TellUsOncePage() {
         <h2 className="text-2xl font-bold text-foreground mb-6">How to use Tell Us Once: step by step</h2>
         <div className="space-y-4 mb-6">
           {[
-            { step: '1', title: 'Register the death', desc: 'Book an appointment at the register office in the area where the person died. In England and Wales, you have 5 days; in Scotland, 8 days. The registrar will explain Tell Us Once and give you a reference number at the appointment.' },
-            { step: '2', title: 'Gather the information you need', desc: 'Before using Tell Us Once, collect the person\'s National Insurance number, details of any benefits or tax credits they received, their driving licence number, their passport number, and details of any council services they used. You do not need all of these, but having them speeds up the process.' },
-            { step: '3', title: 'Use it online or by phone', desc: 'Go to gov.uk/tell-us-once (available 24 hours) or call 0800 085 7308 (Monday to Friday 8am-8pm, Saturday 9am-4pm). Enter your reference number and follow the prompts. The online process takes around 15 minutes.' },
-            { step: '4', title: 'Complete within 28 days', desc: 'You must use the service within 28 days of getting the reference number. If you miss this deadline, you will need to contact each government department individually, which takes considerably longer.' },
+            { step: '1', title: 'Register the death', desc: 'Book an appointment at the register office for the area where they died. In England and Wales you have 5 days; in Scotland, 8 days. The registrar will explain Tell Us Once and hand you a reference number while you are there.' },
+            { step: '2', title: 'Gather what you can', desc: 'Before you start, gather their National Insurance number, details of any benefits or tax credits they received, their driving licence and passport numbers, and details of any council services they used. You do not need every single one, but having them to hand makes it quicker.' },
+            { step: '3', title: 'Use it online or by phone', desc: 'Go to gov.uk/tell-us-once (open 24 hours) or call 0800 085 7308 (Monday to Friday 8am-8pm, Saturday 9am-4pm). Enter your reference number and follow the prompts. Online it takes around 15 minutes.' },
+            { step: '4', title: 'Use it within 28 days', desc: 'The service must be used within 28 days of getting your reference number. If that date passes, you would need to contact each government department yourself, which takes considerably longer, so it is worth setting a reminder.' },
           ].map(s => (
             <div key={s.step} className="bg-card rounded-xl border border-border p-5 md:p-6 flex gap-4">
               <div className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">{s.step}</div>
@@ -148,11 +148,11 @@ export default function TellUsOncePage() {
       <section id="what-you-need" className="mb-10 scroll-mt-20">
         <h2 className="text-2xl font-bold text-foreground mb-4">What information you need</h2>
         <div className="bg-card rounded-xl border border-border p-5 md:p-6">
-          <p className="text-sm text-muted leading-relaxed mb-4">Gather as much of the following as you can before starting. You do not need every item, but it helps:</p>
+          <p className="text-sm text-muted leading-relaxed mb-4">Gather as much of this as you can before you start. You do not need every item, but each one helps things go smoothly:</p>
           <ul className="space-y-2 text-sm text-muted">
             {[
               'Your Tell Us Once reference number (from the registrar)',
-              'The deceased person\'s National Insurance number',
+              'Their National Insurance number',
               'Details of any benefits or tax credits they received',
               'Their driving licence number',
               'Their passport number',
@@ -201,7 +201,7 @@ export default function TellUsOncePage() {
         <h2 className="text-2xl font-bold text-foreground mb-4">What you still need to do yourself</h2>
         <div className="bg-primary-light rounded-lg p-4 mb-4">
           <p className="text-sm text-foreground">
-            <strong>Important:</strong> Tell Us Once handles government departments only. There is a long list of private organisations you need to contact yourself. Our <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> can save you time, or use the <Link href="/notify" className="text-primary hover:underline">complete notification list</Link> with contact details for each one.
+            <strong>Worth knowing:</strong> Tell Us Once covers government departments only, so there is still a list of private organisations to contact yourself. Our <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> will save you time writing them, and the <Link href="/notify" className="text-primary hover:underline">complete notification list</Link> has contact details for each one.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-5 md:p-6">

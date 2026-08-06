@@ -42,7 +42,7 @@ export default function WhatToDoWhenSomeoneDiesPage() {
         What to Do When Someone Dies: Complete UK Step-by-Step Checklist (2026)
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        When someone you love dies, the practical demands can feel overwhelming. There are phone calls to make, forms to complete, organisations to notify, and decisions to take at a time when you can barely think straight. This guide walks you through every step, in order, so you do not have to figure it out alone.
+        When someone you love passes away, the practical demands can feel overwhelming. There are phone calls to make, forms to complete, organisations to notify, and decisions to take at a time when you can barely think straight. This guide walks you through every step, in order, so you do not have to work it out on your own.
       </p>
 
       <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
@@ -69,18 +69,18 @@ export default function WhatToDoWhenSomeoneDiesPage() {
       <h2 id="first-hours" className="text-2xl font-bold text-foreground mb-6">The first few hours</h2>
       <div className="space-y-4 mb-12">
         <div className="bg-card rounded-xl border border-border p-6">
-          <h3 className="font-semibold text-foreground mb-2">If they died at home</h3>
+          <h3 className="font-semibold text-foreground mb-2">If they passed away at home</h3>
           <p className="text-sm text-muted leading-relaxed mb-3">
-            If the death was expected and the person was under the care of a GP or district nurse, call the GP surgery. The GP (or another doctor from the practice) will come to the house to confirm the death and issue a medical certificate of cause of death (MCCD). There is no legal requirement for this to happen immediately, so do not feel you must rush. You can stay with the person for as long as you need to.
+            If it was expected and the person was under the care of a GP or district nurse, call the GP surgery. The GP (or another doctor from the practice) will come to the house to confirm the death and issue a medical certificate of cause of death (MCCD). There is no legal requirement for this to happen immediately, so please do not feel rushed. You can stay with them for as long as you need to.
           </p>
           <p className="text-sm text-muted leading-relaxed">
-            If the death was sudden or unexplained, call 999. The police and an ambulance will attend. This is standard procedure and does not mean anyone has done anything wrong. The police will arrange for the body to be taken to the mortuary. A coroner will investigate and decide whether a post-mortem is needed.
+            If it was sudden or unexplained, call 999. The police and an ambulance will attend. This is standard procedure and does not mean anyone has done anything wrong. The police will arrange for them to be taken to the mortuary. A coroner will investigate and decide whether a post-mortem is needed.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
-          <h3 className="font-semibold text-foreground mb-2">If they died in hospital or a care home</h3>
+          <h3 className="font-semibold text-foreground mb-2">If they passed away in hospital or a care home</h3>
           <p className="text-sm text-muted leading-relaxed">
-            The hospital or care home will handle the medical certification. A doctor at the hospital will issue the MCCD. The staff will explain the next steps and ask about your preferred funeral director. You do not have to decide this immediately. You can ask them to keep the person in the hospital mortuary while you make arrangements. There is usually no charge for a few days.
+            The hospital or care home will handle the medical certification. A doctor at the hospital will issue the MCCD. The staff will explain the next steps and ask about your preferred funeral director. You do not have to decide this straight away. You can ask them to keep the person in the hospital mortuary while you make arrangements. There is usually no charge for a few days.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -97,7 +97,7 @@ export default function WhatToDoWhenSomeoneDiesPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Collect the medical certificate of cause of death</h3>
           <p className="text-sm text-muted leading-relaxed">
-            The MCCD is the green form issued by the doctor. You will need it to register the death. If the person died in hospital, you usually collect it from the bereavement office. If they died at home, the GP surgery will have it ready. Since September 2024, all deaths in England and Wales must be reviewed by a medical examiner before the MCCD is issued. This is a free process and usually takes 1 to 2 working days. The medical examiner may contact you to discuss the circumstances of the death. This is normal.
+            The MCCD is the green form issued by the doctor. You will need it to register the death. If the person died in hospital, you usually collect it from the bereavement office. If they died at home, the GP surgery will have it ready. Since September 2024, all deaths in England and Wales must be reviewed by a medical examiner before the MCCD is issued. This is a free process and usually takes 1 to 2 working days. The medical examiner may contact you to talk through the circumstances. This is routine, and nothing to worry about.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -118,7 +118,7 @@ export default function WhatToDoWhenSomeoneDiesPage() {
       <h2 id="register-death" className="text-2xl font-bold text-foreground mb-6">Registering the death</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-4">
         <p className="text-sm text-muted leading-relaxed mb-4">
-          You must register the death within 5 days in England and Wales (8 days in Scotland). Registration is free. You will need the MCCD and should bring the deceased person's birth certificate, NHS number, and details of their address. For a full breakdown of everything to bring, see our guide on <Link href="/blog/registering-a-death-uk" className="text-primary hover:underline">registering a death in the UK</Link>.
+          You must register the death within 5 days in England and Wales (8 days in Scotland). Registration is free. You will need the MCCD and should bring the birth certificate of the person who died, their NHS number, and details of their address. For a full breakdown of everything to bring, see our guide on <Link href="/blog/registering-a-death-uk" className="text-primary hover:underline">registering a death in the UK</Link>.
         </p>
         <p className="text-sm text-muted leading-relaxed mb-4">
           You can register the death at any register office in England and Wales, but if you register in a different district to where the death occurred, it will take a few extra days because the paperwork has to be forwarded. Most register offices require an appointment. Book one by calling the local council or visiting their website.
@@ -160,7 +160,7 @@ export default function WhatToDoWhenSomeoneDiesPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Paying for the funeral</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If money is a concern, you are not alone. The person arranging the funeral is legally responsible for the cost, but there is help available. You may be able to claim the DWP Funeral Expenses Payment (now called the Funeral Payment within Universal Credit) if you receive certain benefits. Some charities also help with funeral costs. Banks may release money from the deceased's account to pay the funeral director directly, even before probate. Our guide to <Link href="/blog/free-funeral-options-uk" className="text-primary hover:underline">free and low-cost funeral options</Link> covers every available route.
+            If money is a concern, you are not alone. The person arranging the funeral is legally responsible for the cost, but there is help available. You may be able to claim the DWP Funeral Expenses Payment (now called the Funeral Payment within Universal Credit) if you receive certain benefits. Some charities also help with funeral costs. Banks may release money from the person's account to pay the funeral director directly, even before probate. Our guide to <Link href="/blog/free-funeral-options-uk" className="text-primary hover:underline">free and low-cost funeral options</Link> covers every available route.
           </p>
         </div>
       </div>
@@ -218,7 +218,7 @@ export default function WhatToDoWhenSomeoneDiesPage() {
           Probate is the legal process that gives someone the authority to deal with a deceased person's estate (their money, property, and possessions). You may not need probate if the estate is small, if all assets were jointly owned, or if bank balances are below the bank's probate threshold. Our <Link href="/probate" className="text-primary hover:underline">probate guide</Link> explains when you need it and how to apply.
         </p>
         <p className="text-sm text-muted leading-relaxed mb-4">
-          The probate application fee is £300 (free if the estate is worth less than £5,000). You can apply yourself through the government's online service at <a href="https://www.gov.uk/applying-for-probate" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">GOV.UK</a>, or you can instruct a solicitor (typically £1,500 to £5,000 or a percentage of the estate). For a realistic timeline, see our article on <Link href="/blog/how-long-does-probate-take-uk" className="text-primary hover:underline">how long probate takes in the UK</Link>.
+          The probate application fee is £526 (free if the estate is worth less than £5,000). You can apply yourself through the government's online service at <a href="https://www.gov.uk/applying-for-probate" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">GOV.UK</a>, or you can instruct a solicitor (typically £1,500 to £5,000 or a percentage of the estate). For a realistic timeline, see our article on <Link href="/blog/how-long-does-probate-take-uk" className="text-primary hover:underline">how long probate takes in the UK</Link>.
         </p>
         <p className="text-sm text-muted leading-relaxed">
           If the person died without a will, the estate is distributed according to the rules of intestacy. Our <Link href="/intestacy" className="text-primary hover:underline">intestacy guide</Link> explains who inherits what. If inheritance tax is due, it must be paid within 6 months of the end of the month of death to avoid interest. See our <Link href="/blog/inheritance-tax-guide-after-death" className="text-primary hover:underline">inheritance tax guide</Link> for thresholds and exemptions.
@@ -246,7 +246,7 @@ export default function WhatToDoWhenSomeoneDiesPage() {
       <h2 id="looking-after-yourself" className="text-2xl font-bold text-foreground mb-6">Looking after yourself</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-4">
         <p className="text-sm text-muted leading-relaxed mb-4">
-          While you are dealing with all these practical tasks, do not forget to look after yourself. Grief is physically exhausting. It can affect your sleep, appetite, concentration, and immune system. Try to eat regularly, rest when you can, and accept help when it is offered. You do not have to be strong for everyone else.
+          While you are working through all these practical tasks, try not to lose sight of yourself. Grief is physically exhausting. It can affect your sleep, appetite, concentration, and immune system. Eat when you can, rest when you can, and accept help when it is offered. You do not have to be strong for everyone else.
         </p>
         <p className="text-sm text-muted leading-relaxed">
           If you are finding it hard to cope, please reach out. You deserve support.

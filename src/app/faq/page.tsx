@@ -28,11 +28,11 @@ const faqs = [
       },
       {
         q: 'Who can register a death?',
-        a: 'A relative of the deceased, someone present at the death, the occupier of the building where the death occurred, or the person arranging the funeral. In practice, it is usually a close family member. You will need to attend the register office in person.',
+        a: 'A relative, someone who was present at the death, the occupier of the building where they died, or whoever is arranging the funeral. In practice it is usually a close family member. You do need to go to the register office in person, so take someone with you if that would help.',
       },
       {
         q: 'What documents do I need to register a death?',
-        a: 'You will need the medical certificate of cause of death (issued by the doctor or hospital), the deceased\'s birth certificate, marriage or civil partnership certificate, NHS number, and details of their occupation. Not all are essential, but bring as many as you can.',
+        a: 'Take the medical certificate of cause of death (issued by the doctor or hospital), along with their birth certificate, marriage or civil partnership certificate, NHS number, and details of their occupation. Not all of these are essential, so bring what you can find and do not worry about the rest.',
       },
     ],
   },
@@ -54,11 +54,11 @@ const faqs = [
     questions: [
       {
         q: 'Do I need probate?',
-        a: 'Not always. If the deceased only had joint assets (which pass automatically to the survivor), or if individual accounts are below each bank\'s probate threshold (typically £5,000 to £50,000), you may not need probate. If the deceased owned property in their sole name, probate is almost always required.',
+        a: 'Not always. If everything was jointly owned (which passes automatically to the surviving owner), or if the individual accounts sit below each bank\'s probate threshold (typically £5,000 to £50,000), you may not need probate at all. If they owned property in their sole name, probate is almost always required.',
       },
       {
         q: 'How much does probate cost?',
-        a: 'The court fee for a grant of probate in England and Wales is £300 (free for estates under £5,000). Solicitor fees, if you use one, typically range from £2,000 to £15,000, or 1% to 5% of the estate value. You can apply for probate yourself to save on solicitor fees.',
+        a: 'The court fee for a grant of probate in England and Wales is £526 (free for estates under £5,000). Solicitor fees, if you use one, typically range from £2,000 to £15,000, or 1% to 5% of the estate value. You can apply for probate yourself to save on solicitor fees.',
       },
       {
         q: 'How long does probate take?',
@@ -75,7 +75,7 @@ const faqs = [
     questions: [
       {
         q: 'What happens to bank accounts when someone dies?',
-        a: 'Sole accounts are frozen as soon as the bank is notified. Joint accounts usually pass to the surviving account holder. Most banks will release funds for funeral costs before probate is granted. Each bank has its own probate threshold, typically £5,000 to £50,000, below which they may release funds without probate.',
+        a: 'Accounts in their sole name are frozen as soon as the bank is told. Joint accounts usually pass to the surviving account holder. Most banks will release money for funeral costs before probate is granted, so do ask. Each bank has its own probate threshold, typically £5,000 to £50,000, below which they may release funds without it.',
       },
       {
         q: 'Do I need to notify every bank separately?',
@@ -83,7 +83,7 @@ const faqs = [
       },
       {
         q: 'Can the bank release money for the funeral?',
-        a: 'Yes. Most banks will pay funeral invoices directly from the deceased\'s account before probate is granted. You will need to provide the funeral director\'s invoice. This is standard practice across UK banks.',
+        a: 'Yes. Most banks will pay funeral invoices directly from their account before probate is granted. You just need to give them the funeral director\'s invoice. This is standard practice across UK banks, so please do not feel awkward asking.',
       },
     ],
   },
@@ -96,7 +96,7 @@ const faqs = [
       },
       {
         q: 'Who pays for the funeral?',
-        a: 'There is no legal obligation on any specific person to pay. In practice, the cost usually comes from the deceased\'s estate. If the estate has insufficient funds, the person who arranged the funeral may be liable. The government\'s Funeral Expenses Payment may help if you receive certain benefits.',
+        a: 'No one person is legally obliged to pay. In practice the cost comes out of the estate. If there is not enough in the estate, whoever arranged the funeral may become responsible, so it is worth being clear about that before you sign anything. The government\'s Funeral Expenses Payment may help if you receive certain benefits.',
       },
     ],
   },
@@ -131,7 +131,7 @@ const faqs = [
     questions: [
       {
         q: 'What is Bereavement Support Payment?',
-        a: 'Bereavement Support Payment is a DWP benefit for the surviving spouse or civil partner of someone who died. It provides an initial lump sum of up to £3,500 plus monthly payments of up to £350 for 18 months. You must claim within 21 months of the death. It is not means-tested.',
+        a: 'Bereavement Support Payment is a DWP benefit for the surviving husband, wife, or civil partner. It provides an initial lump sum of up to £3,500, plus monthly payments of up to £350 for 18 months. You must claim within 21 months of the death. It is not means-tested, so it does not matter what you have in savings.',
       },
       {
         q: 'Can I get help with funeral costs?',
@@ -144,15 +144,15 @@ const faqs = [
     questions: [
       {
         q: 'What happens to the deceased\'s property?',
-        a: 'If the property was jointly owned with right of survivorship, it passes automatically to the surviving owner. If the property was owned solely or as tenants in common, it forms part of the estate and will be distributed according to the will, or intestacy rules if there is no will. Probate is required before the property can be sold or transferred.',
+        a: 'If the property was jointly owned with right of survivorship, it passes automatically to the surviving owner. If it was owned solely, or as tenants in common, it forms part of the estate and is shared out according to the will, or the intestacy rules if there is no will. Probate is needed before the property can be sold or transferred.',
       },
       {
         q: 'Do I need to cancel direct debits?',
-        a: 'Yes. You should cancel or redirect direct debits and standing orders from the deceased\'s sole account. For joint accounts, the surviving holder can manage them directly. Contact each company to close the account, transfer it, or arrange a final bill. Our template letters can help with this.',
+        a: 'Yes. Cancel or redirect the direct debits and standing orders on any account in their sole name. On a joint account, the surviving holder can sort these out directly. Contact each company to close the account, transfer it, or ask for a final bill. Our template letters take the hard work out of that.',
       },
       {
         q: 'What happens to debts when someone dies?',
-        a: 'Debts do not disappear. They are paid from the estate before beneficiaries receive anything. If the estate has insufficient funds, debts are written off in a specific order of priority. Family members are not personally liable for the deceased\'s debts unless they were a joint borrower or guarantor.',
+        a: 'Debts do not simply disappear. They are paid out of the estate before anyone receives their inheritance. If there is not enough in the estate, debts are written off in a set order of priority. Importantly, family members are not personally responsible for their debts unless they were a joint borrower or a guarantor, so please do not let anyone tell you otherwise.',
       },
     ],
   },
@@ -188,8 +188,8 @@ export default function FAQPage() {
         Frequently Asked Questions
       </h1>
       <p className="text-lg text-muted mb-4 max-w-3xl">
-        Clear answers to the most common questions people ask after a death in
-        the UK. If you cannot find what you are looking for, our{' '}
+        Clear, honest answers to the questions people most often ask us after
+        losing someone. If you cannot find what you need here, our{' '}
         <Link href="/start" className="text-primary hover:underline">
           personalised checklist
         </Link>{' '}

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://helpafterloss.co.uk/blog/returning-to-work-after-bereavement' },
   openGraph: {
     title: 'Returning to Work After Bereavement: Your Rights and How to Cope (2026)',
-    description: 'Your legal rights when returning to work after a death, plus practical advice on phased returns, talking to your manager, and managing grief at work.',
+    description: 'Your legal rights when returning to work after a bereavement, plus practical advice on phased returns, talking to your manager, and managing grief at work.',
     url: 'https://helpafterloss.co.uk/blog/returning-to-work-after-bereavement',
     type: 'article',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
@@ -42,7 +42,7 @@ export default function ReturningToWorkPage() {
         Returning to Work After Bereavement: Your Rights and How to Cope (2026)
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        Going back to work after someone dies is one of the hardest transitions you will face. Your brain is foggy, your energy is depleted, and the world expects you to function as if nothing has happened. This guide covers your legal rights, how to talk to your employer, and honest advice for coping when grief follows you into the workplace.
+        Going back to work after someone close to you passes away is one of the hardest transitions you will face. Your mind is foggy, your energy is gone, and the world expects you to carry on as if nothing has happened. This guide covers your legal rights, how to talk to your employer, and honest advice for coping when grief follows you into the workplace.
       </p>
 
       <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
@@ -75,7 +75,7 @@ export default function ReturningToWorkPage() {
           The truth is, you may never feel fully "ready." Many bereaved people go back to work when their leave runs out rather than when they feel ready, and that is OK. Some find that work provides structure, distraction, and a sense of normality. Others find it overwhelming. Both experiences are valid.
         </p>
         <p className="text-sm text-muted leading-relaxed mb-4">
-          Signs you might benefit from more time off include: not being able to sleep for more than a few hours, crying for much of the day, not being able to eat or look after yourself, or feeling unable to leave the house. If this is where you are, speak to your GP. They can sign you off with stress, anxiety, or bereavement-related depression, and this is treated as any other illness for sick pay purposes.
+          Signs you might benefit from more time off include: not being able to sleep for more than a few hours, crying for much of the day, not being able to eat or look after yourself, or feeling unable to leave the house. If that is where you are at the moment, please speak to your GP. They can sign you off with stress, anxiety, or bereavement-related depression, and this is treated as any other illness for sick pay purposes.
         </p>
         <p className="text-sm text-muted leading-relaxed">
           Signs you might be ready to try going back include: wanting some structure in your day, missing the routine or the people, feeling able to concentrate on simple tasks for short periods, or simply needing the income. Going back does not mean you are over it. It just means you are taking a step.
@@ -88,7 +88,7 @@ export default function ReturningToWorkPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Bereavement leave</h3>
           <p className="text-sm text-muted leading-relaxed">
-            The only statutory paid bereavement leave in the UK is Parental Bereavement Leave (2 weeks for the loss of a child under 18). For all other bereavements, any paid leave is at your employer's discretion. Most employers offer 3 to 5 days for the death of an immediate family member. Check your contract or staff handbook for your organisation's policy. For a full breakdown, see our guide on <Link href="/blog/bereavement-leave-rights-uk" className="text-primary hover:underline">bereavement leave rights in the UK</Link>.
+            The only statutory paid bereavement leave in the UK is Parental Bereavement Leave (2 weeks for the loss of a child under 18). For all other bereavements, any paid leave is at your employer's discretion. Most employers offer 3 to 5 days for the loss of an immediate family member. Check your contract or staff handbook for your organisation's policy. For a full breakdown, see our guide on <Link href="/blog/bereavement-leave-rights-uk" className="text-primary hover:underline">bereavement leave rights in the UK</Link>.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -100,7 +100,7 @@ export default function ReturningToWorkPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Sick leave</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Grief is not classified as an illness, but the physical and mental effects of grief (anxiety, depression, insomnia, inability to concentrate) absolutely can be. If your GP signs you off, you are entitled to Statutory Sick Pay (£116.75 per week in 2026, for up to 28 weeks) if you earn at least £123 per week. Many employers pay more than the statutory minimum for the first few weeks. Bereavement-related sick leave should be treated sensitively and not counted toward absence triggers for disciplinary purposes. If your employer does penalise you, contact ACAS on 0300 123 1100.
+            Grief is not classified as an illness, but the physical and mental effects of grief (anxiety, depression, insomnia, inability to concentrate) absolutely can be. If your GP signs you off, you are entitled to Statutory Sick Pay (£123.25 per week in 2026, for up to 28 weeks) if you earn at least £123 per week. Many employers pay more than the statutory minimum for the first few weeks. Bereavement-related sick leave should be treated sensitively and not counted toward absence triggers for disciplinary purposes. If your employer does penalise you, contact ACAS on 0300 123 1100.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -140,7 +140,7 @@ export default function ReturningToWorkPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Handling awkward reactions</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Colleagues will react in different ways. Some will avoid you because they do not know what to say. Others will say well-meaning but unhelpful things like "at least they are at peace" or "you look like you're doing really well." A few will get it right. Try to be patient with the ones who get it wrong. Most people are trying their best with a situation they have no training for. If someone says something that hurts, you can say: "I know you mean well, but that's quite hard to hear right now."
+            Colleagues will react in different ways. Some will keep their distance because they do not know what to say. Others will say well-meaning but unhelpful things like "at least they are at peace" or "you look like you're doing really well." A few will get it right. If you can, be patient with the ones who get it wrong. Most people are doing their best with a situation nobody trains them for. If someone says something that hurts, you can say: "I know you mean well, but that's quite hard to hear right now."
           </p>
         </div>
       </div>
@@ -164,10 +164,10 @@ export default function ReturningToWorkPage() {
       <h2 id="grief-at-work" className="text-2xl font-bold text-foreground mb-6">When grief hits at work</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed mb-4">
-          Grief does not respect your working hours. A song on the radio, an email from someone who does not know, a smell in the kitchen, or simply a quiet moment can trigger a wave of emotion. This is completely normal and does not mean you came back too soon.
+          Grief does not respect your working hours. A song on the radio, an email from someone who has not heard, a smell in the kitchen, or simply a quiet moment can bring on a wave of emotion. This is completely normal and does not mean you came back too soon.
         </p>
         <p className="text-sm text-muted leading-relaxed mb-4">
-          If it happens: step away if you can. Go to the bathroom, step outside, or find a quiet room. Let the wave pass. It will pass. Then go back when you are ready. If you work in a role where stepping away is not possible (retail, teaching, healthcare), have a signal agreed with a colleague who can cover for you for five minutes.
+          If it happens: step away if you can. Go to the bathroom, step outside, or find a quiet room. Let the wave come, and let it pass. It will pass. Then go back when you are ready. If you work in a role where stepping away is not possible (retail, teaching, healthcare), have a signal agreed with a colleague who can cover for you for five minutes.
         </p>
         <p className="text-sm text-muted leading-relaxed">
           Over time, these waves come less often and less intensely. But they can still catch you off guard months or years later, particularly around anniversaries, holidays, or milestones. That is not weakness. That is love.

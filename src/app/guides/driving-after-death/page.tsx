@@ -29,7 +29,7 @@ const SECTIONS = [
   },
   {
     title: 'Car insurance: act immediately',
-    content: 'This is urgent. The deceased\'s car insurance policy becomes void from the moment of death. If anyone drives the vehicle, they are driving without insurance, which is a criminal offence carrying a minimum £300 fine and 6 penalty points. You have three options: add the vehicle to your own existing insurance policy (call your insurer), take out a temporary short-term policy (available from companies like Cuvva or Tempcover), or SORN the vehicle immediately so it is not driven or kept on a public road.',
+    content: 'This one is urgent. Their car insurance policy becomes void from the moment they pass away. If anyone drives the vehicle, they are driving without insurance, which is a criminal offence carrying a minimum £300 fine and 6 penalty points. You have three options: add the vehicle to your own existing insurance policy (call your insurer), take out a temporary short-term policy (available from companies like Cuvva or Tempcover), or SORN the vehicle immediately so it is not driven or kept on a public road.',
   },
   {
     title: 'Transferring the V5C (logbook)',
@@ -53,11 +53,11 @@ const SECTIONS = [
   },
   {
     title: 'Motability vehicles',
-    content: 'If the deceased had a vehicle through the Motability scheme, it must be returned. Motability will contact you or you can call them on 0300 456 4566. They allow 6 weeks from the date of death to arrange alternative transport before the vehicle needs to be returned. Any advance payment made when the vehicle was ordered is not refundable, but Motability may make a goodwill payment in some cases.',
+    content: 'If they had a vehicle through the Motability scheme, it must be returned. Motability will contact you or you can call them on 0300 456 4566. They allow 6 weeks from the date of death to arrange alternative transport before the vehicle needs to be returned. Any advance payment made when the vehicle was ordered is not refundable, but Motability may make a goodwill payment in some cases.',
   },
   {
     title: 'Personalised number plates',
-    content: 'If the deceased had a private or personalised registration plate, the executor can retain it. You need to apply to transfer the plate to a retention certificate (form V317, £80 fee) or assign it directly to another vehicle. If no action is taken, the personalised plate stays with the vehicle when it is sold or scrapped. Act before disposing of the vehicle if you want to keep the plate.',
+    content: 'If they had a private or personalised registration plate, the executor can keep it. You need to apply to transfer the plate to a retention certificate (form V317, £80 fee) or assign it directly to another vehicle. If no action is taken, the personalised plate stays with the vehicle when it is sold or scrapped. Act before disposing of the vehicle if you want to keep the plate.',
   },
 ];
 
@@ -67,12 +67,12 @@ const FAQ = [
     a: 'The easiest way is through Tell Us Once, which notifies DVLA automatically when you register the death. If you did not use Tell Us Once, post the driving licence to DVLA, Swansea, SA99 1AB with a covering letter including the date of death. You do not need to send the death certificate.',
   },
   {
-    q: 'Can I drive the deceased\'s car?',
+    q: 'Can I drive their car?',
     a: 'Not under their insurance policy. The policy becomes void at the moment of death, meaning anyone driving the car is uninsured. You need to either add the car to your own insurance, take out a temporary policy, or SORN the vehicle. Driving without insurance is a criminal offence.',
   },
   {
     q: 'What happens to car insurance when someone dies?',
-    a: 'The policy ends immediately. Contact the insurance company to cancel and ask about any refund for the remaining premium. If the deceased was paying monthly by direct debit, the insurer may try to collect further payments, so cancel the direct debit as well. Any named drivers on the policy also lose their cover.',
+    a: 'The policy ends immediately. Contact the insurance company to cancel and ask about any refund for the remaining premium. If they were paying monthly by direct debit, the insurer may try to collect further payments, so cancel the direct debit as well. Any named drivers on the policy also lose their cover.',
   },
   {
     q: 'How do I transfer a car into my name after a death?',
@@ -99,7 +99,7 @@ export default function DrivingAfterDeathPage() {
         Cars, Driving Licences & DVLA After a Death
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        Dealing with the deceased's vehicle involves several different organisations and some time-sensitive steps. The most urgent is car insurance, which is void from the moment of death.
+        Sorting out your loved one's car means dealing with several different organisations, and one or two of these steps genuinely cannot wait. The most urgent is car insurance, which is void from the moment they pass away.
       </p>
 
       <GuideImage
@@ -112,7 +112,7 @@ export default function DrivingAfterDeathPage() {
       {/* Urgent warning */}
       <div className="bg-warm border border-warm-border rounded-xl p-5 mb-10">
         <p className="text-sm text-amber-800 leading-relaxed">
-          <strong>Urgent:</strong> The deceased's car insurance is void from the moment of death. If anyone drives the vehicle without arranging separate insurance, they are committing a criminal offence. Sort insurance or SORN the vehicle before anything else.
+          <strong>Urgent:</strong> Their car insurance stopped being valid the moment they passed away. If anyone drives the vehicle without arranging separate insurance, they are committing a criminal offence. Sort insurance or SORN the vehicle before anything else.
         </p>
       </div>
 

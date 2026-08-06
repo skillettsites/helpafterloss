@@ -49,8 +49,24 @@ function getDeathInvestigatorText(city: CityData): string {
 
 function getRegistrationCost(city: CityData): string {
   if (city.nation === 'Scotland') return '£15';
-  if (city.nation === 'Wales') return '£11';
+  // England and Wales share a single GRO fee. There is no separate Welsh price.
   return '£12.50';
+}
+
+// Each nation sets its own court fee, so this must not be a single figure.
+// England and Wales: £526 for estates over £5,000 (from 13 July 2026).
+// Scotland: nil up to £50,000, then £351, then £705 over £250,000.
+// Northern Ireland: nil up to £10,000, then a fee set by the Department of Justice.
+function getProbateFee(city: CityData): string {
+  if (city.nation === 'Scotland') return 'From £0';
+  if (city.nation === 'Northern Ireland') return 'From £0';
+  return '£526';
+}
+
+function getProbateFeeNote(city: CityData): string {
+  if (city.nation === 'Scotland') return 'Confirmation fee: nothing up to £50,000';
+  if (city.nation === 'Northern Ireland') return 'No fee up to £10,000';
+  return 'Probate court fee';
 }
 
 function getCityFAQ(city: CityData, displayName: string) {
@@ -87,8 +103,8 @@ function getCityFAQ(city: CityData, displayName: string) {
       a: city.nation === 'Scotland'
         ? `You usually need Confirmation (the Scottish equivalent of probate) if the person owned property, had savings above bank thresholds, or had investments. Apply through your local Sheriff Court. For small estates under £36,000, you can use a simplified process through the Sheriff Clerk's office without a solicitor.`
         : city.nation === 'Northern Ireland'
-        ? `You usually need probate if the person owned property, had savings above bank thresholds, or had investments. In Northern Ireland, apply through the Probate Office at the Royal Courts of Justice in Belfast or the District Probate Registry. The court fee is £300 for estates over £5,000.`
-        : `You usually need probate if the person owned property in their sole name, had savings above bank thresholds (typically £5,000-£50,000, varies by bank), or had investments. Apply online at gov.uk/applying-for-probate. The court fee is £300 for estates over £5,000. Many straightforward estates can be handled without a solicitor.`,
+        ? `You usually need probate if the person owned property, had savings above bank thresholds, or had investments. In Northern Ireland, apply through the Probate Office at the Royal Courts of Justice in Belfast or the District Probate Registry. There is no court fee at all if the estate is £10,000 or less; above that, Northern Ireland sets its own fee through the Department of Justice, so check the current Court Fees page on justice-ni.gov.uk.`
+        : `You usually need probate if the person owned property in their sole name, had savings above bank thresholds (typically £5,000-£50,000, varies by bank), or had investments. Apply online at gov.uk/applying-for-probate. The court fee is £526 for estates over £5,000. Many straightforward estates can be handled without a solicitor.`,
     },
     {
       q: `What bereavement support is available in ${displayName}?`,
@@ -233,8 +249,8 @@ export default async function CityGuidePage({ params }: PageProps) {
             <p className="text-xs text-muted mt-1">Per death certificate</p>
           </div>
           <div className="bg-card rounded-xl border border-border p-4 text-center">
-            <p className="text-xl font-bold text-primary">£300</p>
-            <p className="text-xs text-muted mt-1">{city.probateTerm} court fee</p>
+            <p className="text-xl font-bold text-primary">{getProbateFee(city)}</p>
+            <p className="text-xs text-muted mt-1">{getProbateFeeNote(city)}</p>
           </div>
           <div className="bg-card rounded-xl border border-border p-4 text-center">
             <p className="text-xl font-bold text-primary">{city.hasTellUsOnce ? '28 days' : 'N/A'}</p>
@@ -325,9 +341,9 @@ export default async function CityGuidePage({ params }: PageProps) {
             </div>
             <div className="space-y-3 text-sm text-muted leading-relaxed">
               <p>
-                When someone dies, a doctor must confirm the death and issue a Medical Certificate of Cause of Death (MCCD).
-                If the person died at home in {displayName}, call their GP surgery. If they died in hospital, the hospital
-                will arrange this.
+                When someone passes away, a doctor must confirm the death and issue a Medical Certificate of Cause of Death (MCCD).
+                If they passed away at home in {displayName}, call their GP surgery. If they were in hospital, the hospital
+                will arrange this for you.
               </p>
               <p>{getDeathInvestigatorText(city)}</p>
               {city.localNotes && (
@@ -336,8 +352,8 @@ export default async function CityGuidePage({ params }: PageProps) {
                 </div>
               )}
               <p>
-                You do not need to choose a funeral director at this stage. If the person died at home and you would like them to
-                be moved, most funeral directors will provide an initial collection service, even if you have not yet decided on
+                You do not need to choose a funeral director at this stage. If they passed away at home and you would like them to
+                be moved, most funeral directors will come and collect them, even if you have not yet decided on any
                 arrangements.
               </p>
             </div>
@@ -372,7 +388,7 @@ export default async function CityGuidePage({ params }: PageProps) {
               <p>
                 Order at least <strong>5 certified copies</strong> of the death certificate at the time of
                 registration. They cost {getRegistrationCost(city)} each and are needed by banks, insurers, pension providers,
-                and solicitors. If the person had many accounts and policies, order 8 to 10. Ordering extra copies later costs more.
+                and solicitors. If they had a lot of accounts and policies, order 8 to 10. Ordering extra copies later costs more.
               </p>
             </div>
           </div>
@@ -408,7 +424,7 @@ export default async function CityGuidePage({ params }: PageProps) {
               <p>
                 If you are on a low income, you may be eligible for a Funeral Expenses Payment from the DWP, which
                 covers basic costs plus up to £1,000 for extras. Apply within 6 months of the funeral by calling
-                {' '}<a href="tel:08007310469" className="text-primary hover:underline">0800 731 0469</a>.
+                {' '}<a href="tel:08001512012" className="text-primary hover:underline">0800 151 2012</a>.
               </p>
               <p>
                 <Link href="/costs" className="text-primary hover:underline">See our detailed costs breakdown</Link> or
@@ -425,23 +441,25 @@ export default async function CityGuidePage({ params }: PageProps) {
             </div>
             <div className="space-y-3 text-sm text-muted leading-relaxed">
               <p>
-                If the person left a will, the named executor is responsible for handling the estate. If there was no
+                If your loved one left a will, the named executor is responsible for handling the estate. If there was no
                 will, the next of kin can apply to administer the estate under the rules of intestacy.
               </p>
               <p>
                 {city.probateTerm === 'Confirmation' ? (
                   <>
                     In Scotland, you will need to apply for <strong>Confirmation</strong> (the Scottish equivalent of
-                    probate) through the local Sheriff Court. This gives you the legal authority to deal with the
-                    person&apos;s assets. For small estates (under £36,000), you can use a simplified process through
+                    probate) through the local Sheriff Court. This gives you the legal authority to deal with
+                    their assets. For small estates (under £36,000), you can use a simplified process through
                     the Sheriff Clerk&apos;s office without needing a solicitor.
                   </>
                 ) : (
                   <>
                     You may need to apply for <strong>{city.probateTerm}</strong> through the{' '}
                     {city.nation === 'Northern Ireland' ? 'Probate Office at the Royal Courts of Justice in Belfast' : 'Probate Registry'}.
-                    This gives you the legal authority to deal with the person&apos;s bank accounts, property, and
-                    other assets. The court fee is £300 for estates over £5,000. You can apply online or by post.
+                    This gives you the legal authority to deal with their bank accounts, property, and
+                    other assets. {city.nation === 'Northern Ireland'
+                ? 'There is no court fee if the estate is £10,000 or less; above that, the fee is set by the Department of Justice.'
+                : 'The court fee is £526 for estates over £5,000.'} You can apply online or by post.
                   </>
                 )}
               </p>

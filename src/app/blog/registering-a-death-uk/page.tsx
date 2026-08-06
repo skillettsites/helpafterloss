@@ -42,14 +42,14 @@ export default function RegisteringADeathPage() {
         Registering a Death in the UK: What to Bring, Where to Go (2026)
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        Registering a death is one of the first things you need to do, and it can feel daunting when you are already overwhelmed. This guide covers everything in plain English: the deadline, who can register, where to go, what documents to bring, what the registrar will ask you, and what you will receive at the end.
+        Registering a death is one of the first things you need to do, and it can feel daunting when you are already coping with so much. This guide covers everything in plain English: the deadline, who can register, where to go, what documents to bring, what the registrar will ask you, and what you will receive at the end.
       </p>
 
       <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
         <h2 className="text-sm font-semibold text-amber-900 mb-3">Key facts</h2>
         <ul className="space-y-1.5 text-sm text-amber-800">
           <li className="flex gap-2"><span className="font-bold">+</span> <strong>Deadline:</strong> Within 5 days in England and Wales (8 days in Scotland)</li>
-          <li className="flex gap-2"><span className="font-bold">+</span> <strong>Cost:</strong> Registration is free. Death certificates cost £11 each.</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> <strong>Cost:</strong> Registration is free. Death certificates cost £12.50 each in England and Wales.</li>
           <li className="flex gap-2"><span className="font-bold">+</span> <strong>Appointment:</strong> Most register offices require a booked appointment</li>
           <li className="flex gap-2"><span className="font-bold">+</span> <strong>Duration:</strong> About 30 minutes</li>
           <li className="flex gap-2"><span className="font-bold">+</span> <strong>Where:</strong> Any register office in England and Wales (ideally the district where the death occurred)</li>
@@ -91,14 +91,14 @@ export default function RegisteringADeathPage() {
           The following people can register a death:
         </p>
         <ul className="space-y-2 text-sm text-muted mb-4">
-          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> A relative of the deceased (this is the most common)</li>
+          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> A relative of the person who died (this is the most common)</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Someone who was present at the death</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> An official from the hospital or care home where the death occurred</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> The person arranging the funeral (if none of the above are available)</li>
-          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> A person who found the body (if the death was at home and no relative is available)</li>
+          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> A person who found them (if they died at home and no relative is available)</li>
         </ul>
         <p className="text-sm text-muted leading-relaxed">
-          You do not need to be the next of kin to register a death. If you are not a relative but were present at the death or are arranging the funeral, you can register. The registrar may ask about your relationship to the deceased and your reason for registering.
+          You do not need to be the next of kin to register a death. If you are not a relative but were present at the death or are arranging the funeral, you can register. The registrar may ask about your relationship to the person who died and your reason for registering.
         </p>
       </div>
 
@@ -126,7 +126,7 @@ export default function RegisteringADeathPage() {
           You should also bring (if available):
         </p>
         <ul className="space-y-2 text-sm text-muted mb-4">
-          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> The deceased's birth certificate</li>
+          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Their birth certificate</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Their marriage or civil partnership certificate</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Their NHS medical card or number</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Their passport or driving licence (as proof of identity)</li>
@@ -135,7 +135,7 @@ export default function RegisteringADeathPage() {
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Details of any pension or benefits they were receiving from the DWP</li>
         </ul>
         <p className="text-sm text-muted leading-relaxed">
-          Do not worry if you do not have all of these. The only essential document is the MCCD. The registrar can work with whatever information you have. If you are missing something, they will tell you whether it is needed and how to provide it later.
+          Please do not worry if you do not have all of these. The only essential document is the MCCD. The registrar can work with whatever information you have. If something is missing, they will tell you whether it is needed and how to provide it later.
         </p>
       </div>
 
@@ -143,7 +143,7 @@ export default function RegisteringADeathPage() {
       <h2 id="at-the-appointment" className="text-2xl font-bold text-foreground mb-6">What happens at the appointment</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed mb-4">
-          The appointment typically takes about 30 minutes. The registrar will be sympathetic and will guide you through the process. They will ask you the following information about the person who has died:
+          The appointment typically takes about 30 minutes. Registrars do this every day and are used to sitting with people who are grieving; they will guide you gently through it. They will ask you the following information about the person who has died:
         </p>
         <ul className="space-y-2 text-sm text-muted mb-4">
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Full name (and maiden name if applicable)</li>
@@ -156,7 +156,7 @@ export default function RegisteringADeathPage() {
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Their NHS number (if known)</li>
         </ul>
         <p className="text-sm text-muted leading-relaxed mb-4">
-          The registrar will check the information with you and enter it into the register. You will be asked to verify that the details are correct. Once registered, the death cannot be un-registered, so take a moment to check everything.
+          The registrar will check the information with you and enter it into the register. You will be asked to confirm that the details are correct. Once registered, the death cannot be un-registered, so do take your time over this part.
         </p>
         <p className="text-sm text-muted leading-relaxed">
           At the end of the appointment, the registrar will explain the Tell Us Once service and give you a unique reference number. You can complete Tell Us Once at the register office, online, or by phone. See our <Link href="/blog/tell-us-once-service-guide" className="text-primary hover:underline">Tell Us Once guide</Link> for the full details.
@@ -196,7 +196,7 @@ export default function RegisteringADeathPage() {
       <h2 id="death-certificates" className="text-2xl font-bold text-foreground mb-6">Death certificates: how many and cost</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-4">
         <p className="text-sm text-muted leading-relaxed mb-4">
-          Death certificates cost £11 each when ordered at registration. If you order them later from the General Register Office (GRO), they cost £11 online or £11 by post (though processing takes longer). We recommend ordering at least 3 to 5 copies at registration. You will need them for:
+          Death certificates cost £12.50 each in England and Wales, and that price is the same whether you order them at registration or later from the General Register Office, online or by post. Ordering later is not more expensive, just slower. It is worth getting at least 3 to 5 copies while you are there. You will need them for:
         </p>
         <ul className="space-y-2 text-sm text-muted">
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Each bank and building society (most require an original, though some accept a certified copy)</li>
@@ -230,7 +230,7 @@ export default function RegisteringADeathPage() {
           Since September 2024, all deaths in England and Wales (that are not referred to the coroner) must be reviewed by a medical examiner before the MCCD is issued. The medical examiner is an independent, senior doctor who reviews the cause of death and may contact the bereaved family or the attending doctor with questions.
         </p>
         <p className="text-sm text-muted leading-relaxed mb-4">
-          This process is free and usually takes 1 to 2 working days. It was introduced to improve the accuracy of death registration and to give bereaved families an opportunity to raise concerns about the care the person received. If the medical examiner contacts you, it does not mean anything is wrong. It is a routine part of the process.
+          This process is free and usually takes 1 to 2 working days. It was introduced to improve the accuracy of death registration and to give bereaved families a chance to raise any concerns about the care the person received. If the medical examiner gets in touch, it does not mean anything is wrong. It is simply a routine part of the process.
         </p>
         <p className="text-sm text-muted leading-relaxed">
           Once the medical examiner has approved the cause of death, the MCCD can be issued and you can proceed to register the death.
@@ -288,7 +288,7 @@ export default function RegisteringADeathPage() {
 
       <div className="bg-primary-light rounded-xl p-8 text-center">
         <h2 className="text-2xl font-bold text-foreground mb-3">Need a personalised checklist?</h2>
-        <p className="text-muted mb-6">Our free tool creates a step-by-step plan for everything you need to do after a death, with deadlines calculated from the date of death.</p>
+        <p className="text-muted mb-6">Our free tool creates a step-by-step plan for everything you need to do after a bereavement, with deadlines calculated from the date of death.</p>
         <Link href="/start" className="inline-block px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors">
           Get Your Personalised Guide
         </Link>

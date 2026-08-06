@@ -34,7 +34,7 @@ export default function LostASpousePage() {
         When Your Spouse or Partner Dies
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        Losing your partner is the most significant loss most people will ever experience. At the same time, the financial and practical implications are considerable. This guide focuses on the steps that matter most for surviving spouses and partners, including the benefits you may be entitled to and the financial changes you will need to manage.
+        Losing your husband, wife, or partner touches every part of daily life, and at the same time you are asked to deal with money, paperwork, and decisions you never expected to make alone. This guide covers the things that matter most for surviving spouses and partners: the help you may be entitled to, and the financial changes that come with being on your own. Take it a section at a time.
       </p>
 
       <GuideImage
@@ -62,7 +62,7 @@ export default function LostASpousePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Contacting the DWP immediately</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If your partner received any state benefits or the state pension, these must be stopped promptly. Overpayments have to be repaid. Call the DWP bereavement service on 0800 731 0469. They will also tell you what you may be entitled to claim, including Bereavement Support Payment (see below). The earlier you call, the more of your entitlement you will receive.
+            If your partner received any state benefits or the state pension, these need to be stopped fairly quickly, because anything overpaid has to be paid back out of the estate later. Call the DWP bereavement service on 0800 151 2012. The same call tells you what you may be able to claim, including Bereavement Support Payment (see below), so it is one of the more worthwhile phone calls to make early. The earlier you call, the more of your entitlement you will receive.
           </p>
         </div>
       </div>
@@ -91,7 +91,7 @@ export default function LostASpousePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">How to claim and the time limit</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Claim as soon as possible after the death. If you claim within 3 months, your payments are backdated to the date of death. If you claim later, you will lose some months of payment. Claim online at gov.uk/bereavement-support-payment or by calling the DWP on 0800 731 0469. You will need the death certificate, your partner's National Insurance number, and your bank details.
+            It is worth claiming as early as you can manage, even if it feels too soon. If you claim within 3 months, your payments are backdated to the date of death. If you claim later, you will lose some months of payment. Claim online at gov.uk/bereavement-support-payment or by calling the DWP on 0800 151 2012. You will need the death certificate, your partner's National Insurance number, and your bank details.
           </p>
         </div>
       </div>
@@ -107,7 +107,7 @@ export default function LostASpousePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Joint bank accounts</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Joint accounts continue to operate normally after one account holder dies. The surviving partner can continue using the account. Notify the bank of the death so they can update their records and remove the deceased's name. Joint accounts do not form part of the estate and do not require probate. Sole accounts in your partner's name will be frozen until probate is granted.
+            Joint accounts carry on working normally after one account holder passes away, so you can keep using the account as usual. Let the bank know so they can update their records and take your partner's name off the account. Joint accounts do not form part of the estate and do not require probate. Sole accounts in your partner's name will be frozen until probate is granted.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -119,13 +119,13 @@ export default function LostASpousePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Property ownership: joint tenants vs tenants in common</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If you owned the property as joint tenants, your partner's share passes automatically to you on their death, without going through probate. You will need to register the change with the Land Registry (form DJP, no fee for the survivorship application itself). If you owned as tenants in common, your partner's share forms part of their estate and must go through probate. Check the Land Registry title for your property to confirm which applies.
+            If you owned the property as joint tenants, your partner's share passes automatically to you when they pass away, without going through probate. You will need to register the change with the Land Registry (form DJP, no fee for the survivorship application itself). If you owned as tenants in common, your partner's share forms part of their estate and must go through probate. Check the Land Registry title for your property to confirm which applies.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Council tax: single person discount</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Once you are the only adult in the property, you are entitled to a 25% council tax discount. Contact your local council to apply. The discount is not automatic: you must request it. You may also be entitled to a council tax exemption for the period immediately after the death (up to 6 months in some circumstances). If you move to a smaller property, council tax will obviously also change.
+            Once you are the only adult in the property, you are entitled to a 25% council tax discount. You will need to contact your local council to ask for it, as the discount is not applied automatically. You may also be entitled to a council tax exemption for the period straight after your partner passes away (up to 6 months in some circumstances). If you later move to a smaller property, your council tax will change again.
           </p>
         </div>
       </div>
@@ -148,7 +148,7 @@ export default function LostASpousePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Other benefits to check</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Your household income will have changed significantly. Check whether you are now entitled to Universal Credit, Pension Credit (if you are over the qualifying age), Housing Benefit, or Council Tax Support. Use the benefits calculator at entitledto.co.uk or turn2us.org.uk to see what you qualify for. Do not assume you are not entitled: many surviving spouses are surprised by what they can claim.
+            Your household income will have changed a great deal, often overnight. It is worth checking whether you are now entitled to Universal Credit, Pension Credit (if you are over the qualifying age), Housing Benefit, or Council Tax Support. The benefits calculators at entitledto.co.uk and turn2us.org.uk will show what you qualify for. Please do not assume it is not for you: many people who have lost a partner are surprised by what they can claim.
           </p>
         </div>
       </div>
@@ -178,7 +178,7 @@ export default function LostASpousePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Your own will and lasting power of attorney</h3>
           <p className="text-sm text-muted leading-relaxed">
-            This is a difficult time to think about, but important: review your own will. If your partner was your main beneficiary and executor, you need to update it. Similarly, if your partner held Lasting Power of Attorney for you, that ends with their death and you should consider putting a new one in place. A solicitor can help, or you can update a will through a reputable online service from around £100.
+            This is probably the last thing you want to think about, and there is no rush, but it does matter: at some point, review your own will. If your partner was your main beneficiary and executor, it will need updating. In the same way, if your partner held Lasting Power of Attorney for you, that came to an end when they passed away, and it is worth putting a new one in place when you feel ready. A solicitor can help, or you can update a will through a reputable online service from around £100.
           </p>
         </div>
       </div>
@@ -212,7 +212,7 @@ export default function LostASpousePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">The grief of losing a partner</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Losing your partner affects every part of your daily life. The grief is not just emotional: it is the absence of someone who shared your routines, your decisions, your home, and your plans for the future. Many people describe it as losing their identity as much as losing a person. Grief after losing a spouse can last for years and may look very different from what you expected. There is no correct way to grieve and no set timeline.
+            Losing your partner runs through every part of ordinary life. It is not only the grief: it is the empty side of the bed, the second cup of tea you still make, the person who shared your routines, your decisions, your home, and your plans. Many people say it feels like losing part of themselves as much as losing someone else. It can go on for years, and it may look nothing like you expected. There is no right way to do this and no timetable you are behind on.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -224,7 +224,7 @@ export default function LostASpousePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">If you have children</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If you have children, you are managing your own grief while also supporting theirs. Winston's Wish supports bereaved children and their families: winstonswish.org or 08088 020 021. Child Bereavement UK also offers support for the whole family: childbereavementuk.org or 0800 02 888 40. Be honest with children at an age-appropriate level: children generally cope better with truthful, simple explanations than with silence or euphemism.
+            If you have children, you are carrying your own grief while holding theirs as well, which is a great deal to ask of anyone. Winston's Wish supports bereaved children and their families: winstonswish.org or 08088 020 021. Child Bereavement UK also offers support for the whole family: childbereavementuk.org or 0800 02 888 40. Be honest with children at an age-appropriate level: children generally cope better with truthful, simple explanations than with silence or euphemism.
           </p>
         </div>
       </div>
@@ -235,7 +235,7 @@ export default function LostASpousePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">How much is Bereavement Support Payment in 2026?</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If you have dependent children, you receive a lump sum of £3,500 plus £350 per month for up to 18 months. Without dependent children, the lump sum is £2,500 plus £100 per month for up to 18 months. Claim within 3 months of the death to receive the full amount. Apply at gov.uk/bereavement-support-payment or call 0800 731 0469.
+            If you have dependent children, you receive a lump sum of £3,500 plus £350 per month for up to 18 months. Without dependent children, the lump sum is £2,500 plus £100 per month for up to 18 months. Claim within 3 months of the death to receive the full amount. Apply at gov.uk/bereavement-support-payment or call 0800 151 2012.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">

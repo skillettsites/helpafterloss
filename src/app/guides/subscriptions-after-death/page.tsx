@@ -25,11 +25,11 @@ export const metadata: Metadata = {
 const SECTIONS = [
   {
     title: 'Start with bank statements',
-    content: 'The quickest way to find all outgoing payments is to request a full list of direct debits and standing orders from the deceased\'s bank. Most banks will provide this once you present the death certificate and proof that you are the executor or next of kin. Go through at least three months of bank statements to catch quarterly or annual payments that might not show up every month.',
+    content: 'The quickest way to find all the outgoing payments is to ask their bank for a full list of direct debits and standing orders. Most banks will provide this once you present the death certificate and proof that you are the executor or next of kin. Go through at least three months of bank statements to catch quarterly or annual payments that might not show up every month.',
   },
   {
     title: 'Direct debits vs standing orders',
-    content: 'Direct debits are set up by the company and allow them to pull money from the account. Standing orders are set up by the account holder and push a fixed amount at regular intervals. Both need cancelling, but the process is different. Direct debits are cancelled by contacting the company directly, while standing orders can be cancelled through the bank. When the bank account is frozen after death, direct debits will bounce, but it is still important to formally cancel them to avoid debt collection letters.',
+    content: 'Direct debits are set up by the company and allow them to pull money from the account. Standing orders are set up by the account holder and push a fixed amount at regular intervals. Both need cancelling, but the process is different. Direct debits are cancelled by contacting the company directly, while standing orders can be cancelled through the bank. Once the bank account is frozen, direct debits will bounce, but it is still worth formally cancelling them to avoid debt collection letters later.',
   },
 ];
 
@@ -56,7 +56,7 @@ const CATEGORIES = [
   },
   {
     title: 'Charity donations',
-    items: 'Regular charity donations by direct debit should be stopped, but consider notifying the charity rather than just cancelling. Many charities will want to acknowledge the person\'s support, and the family may wish to set up a memorial fund or continue the donation in the deceased\'s name.',
+    items: 'Regular charity donations by direct debit should be stopped, but consider notifying the charity rather than just cancelling. Many charities will want to acknowledge the person\'s support, and the family may wish to set up a memorial fund or carry on the donation in their name.',
   },
   {
     title: 'Software and digital services',
@@ -75,7 +75,7 @@ const EXTRA_SECTIONS = [
   },
   {
     title: 'How to find hidden subscriptions',
-    content: 'Search the deceased\'s email inbox for words like "subscription", "renewal", "payment confirmation", "receipt", and "billing". Check the app store on their phone for active subscriptions (Settings > Apple ID > Subscriptions on iPhone, or Google Play > Payments > Subscriptions on Android). Also check for PayPal recurring payments, as many online subscriptions are billed through PayPal rather than directly from the bank.',
+    content: 'Search their email inbox for words like "subscription", "renewal", "payment confirmation", "receipt", and "billing". Check the app store on their phone for active subscriptions (Settings > Apple ID > Subscriptions on iPhone, or Google Play > Payments > Subscriptions on Android). Also check for PayPal recurring payments, as many online subscriptions are billed through PayPal rather than directly from the bank.',
   },
   {
     title: 'Do not cancel everything at once',
@@ -102,7 +102,7 @@ const FAQ = [
   },
   {
     q: 'Should I cancel direct debits or close the bank account first?',
-    a: 'Cancel the direct debits first. If you close the bank account while direct debits are still active, the companies will receive returned payments and may send debt collection letters to the deceased\'s address. Formally cancelling each subscription first, with a copy of the death certificate, ensures a clean closure and avoids unnecessary chasing letters.',
+    a: 'Cancel the direct debits first. If you close the bank account while direct debits are still active, the companies will receive returned payments and may send debt collection letters to their address. Formally cancelling each subscription first, with a copy of the death certificate, ensures a clean closure and avoids unnecessary chasing letters.',
   },
 ];
 
@@ -117,7 +117,7 @@ export default function SubscriptionsAfterDeathPage() {
         Cancelling Subscriptions and Direct Debits After a Death
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        Most people have more active subscriptions and direct debits than they realise. Working through them systematically helps you avoid paying for services no one is using, and prevents confusing letters arriving at the deceased's address months later.
+        Most people have more subscriptions and direct debits running than anyone realises. Working through them steadily saves the estate paying for services nobody is using, and stops letters addressed to your loved one arriving months later, which can be upsetting to open.
       </p>
 
       <GuideImage

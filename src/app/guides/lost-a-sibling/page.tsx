@@ -34,7 +34,7 @@ export default function LostASiblingPage() {
         When a Brother or Sister Dies
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        Bereaved siblings are sometimes called "the forgotten mourners". When a brother or sister dies, the focus often falls on the surviving parents or the spouse of the deceased, while siblings are expected to be strong, to support others, or simply to get on with it. This guide is for you. Your grief is real, your loss matters, and you deserve support too.
+        Bereaved siblings are sometimes called "the forgotten mourners". When a brother or sister passes away, attention tends to go to the parents or to the husband or wife, while siblings are quietly expected to be the strong ones, to look after everyone else, or simply to get on with it. This guide is for you. Your grief is real, your loss matters, and you deserve support too.
       </p>
 
       <GuideImage
@@ -50,7 +50,7 @@ export default function LostASiblingPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Why sibling grief is often invisible</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Society tends to focus condolences and sympathy on parents and spouses when someone dies. Siblings can find that their own grief is overlooked, minimised, or expected to take second place to others. Friends and colleagues may not know what to say, or may not realise how significant the loss is. You may find yourself in the strange position of comforting others while needing comfort yourself. Recognising this dynamic is the first step to getting the support you deserve.
+            Condolences and sympathy tend to go to parents and partners when someone passes away. Siblings often find their own grief overlooked, played down, or quietly expected to come second. Friends and colleagues may not know what to say, or may not realise how much this person meant to you. You can end up in the strange position of comforting everyone else while needing comfort yourself. Simply noticing that is happening is the first step to getting the support you deserve.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -62,7 +62,7 @@ export default function LostASiblingPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Grief and family relationships</h3>
           <p className="text-sm text-muted leading-relaxed">
-            The death of a sibling can shift relationships within a family in ways that are hard to predict. Families sometimes pull together; sometimes they fragment. Old rivalries, resentments, or unresolved tensions can surface. If you had a complicated relationship with your sibling, the grief may be complicated too. Grief for an estranged sibling, or for a sibling with whom you had a difficult relationship, is still grief. You do not need to have been close to be devastated.
+            Losing a brother or sister can shift relationships within a family in ways nobody can predict. Some families pull together; others come apart for a while. Old rivalries, resentments, or unresolved tensions can surface. If you had a complicated relationship with your sibling, the grief may be complicated too. Grief for an estranged sibling, or for a sibling with whom you had a difficult relationship, is still grief. You do not need to have been close to be devastated.
           </p>
         </div>
       </div>
@@ -71,7 +71,7 @@ export default function LostASiblingPage() {
       <h2 className="text-2xl font-bold text-foreground mb-6">Supporting your parents through their grief</h2>
       <div className="space-y-4 mb-10">
         <div className="bg-card rounded-xl border border-border p-6">
-          <h3 className="font-semibold text-foreground mb-2">No parent should bury a child</h3>
+          <h3 className="font-semibold text-foreground mb-2">No parent expects to outlive their child</h3>
           <p className="text-sm text-muted leading-relaxed">
             Your parents are dealing with an unimaginable loss. The grief of a parent for a child is different from any other grief, and they may be in a state of profound shock, even if your sibling was older or had been ill. Be patient with them. Their grief does not diminish yours. You can hold both at the same time: your own grief and theirs.
           </p>
@@ -79,7 +79,7 @@ export default function LostASiblingPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Balancing support and your own needs</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Siblings often feel a strong pull to support their parents, sometimes at the cost of their own grieving. This is natural, but unsustainable. You cannot pour from an empty cup. Try to find at least one person, outside the immediate family, with whom you can be honest about your own grief. A friend, a counsellor, or a bereavement support service can give you a space that is purely yours.
+            Siblings often feel a strong pull to hold their parents up, sometimes at the cost of their own grieving. That is a natural thing to do, but it is not something anyone can keep up for long. Try to find at least one person outside the immediate family with whom you can be honest about how you are. A friend, a counsellor, or a bereavement support service can give you a space that is purely yours.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -130,7 +130,7 @@ export default function LostASiblingPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Applying for probate</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If your sibling owned property or had significant assets in their sole name, you will need to apply for probate. Use form PA1P (with a will) at gov.uk. The court fee is £300 for estates over £5,000. Current processing time is around 12 to 16 weeks. Once granted, you can access their accounts, sell property, and distribute the estate. See our <Link href="/probate" className="text-primary font-medium hover:underline">probate guide</Link> for the full process.
+            If your sibling owned property or had significant assets in their sole name, you will need to apply for probate. Use form PA1P (with a will) at gov.uk. The court fee is £526 for estates over £5,000. Current processing time is around 12 to 16 weeks. Once granted, you can access their accounts, sell property, and distribute the estate. See our <Link href="/probate" className="text-primary font-medium hover:underline">probate guide</Link> for the full process.
           </p>
         </div>
       </div>
@@ -141,7 +141,7 @@ export default function LostASiblingPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Under intestacy (no will)</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If your sibling died without a will, the intestacy rules determine who inherits. In England and Wales, siblings only inherit if there is no surviving spouse, civil partner, children, or parents. This means that for most adults, siblings receive nothing under intestacy. If your sibling was unmarried, had no children, and both parents have also died, then siblings inherit equally. In Scotland, siblings may receive a share under the rules of succession if there is no surviving spouse or children. See our <Link href="/intestacy" className="text-primary font-medium hover:underline">intestacy guide</Link> for the full rules.
+            If your sibling passed away without leaving a will, the intestacy rules decide who inherits. In England and Wales, siblings only inherit if there is no surviving spouse, civil partner, children, or parents. This means that for most adults, siblings receive nothing under intestacy. If your sibling was unmarried, had no children, and both parents have also passed away, then siblings inherit equally. In Scotland, siblings may receive a share under the rules of succession if there is no surviving spouse or children. See our <Link href="/intestacy" className="text-primary font-medium hover:underline">intestacy guide</Link> for the full rules.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -151,9 +151,9 @@ export default function LostASiblingPage() {
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
-          <h3 className="font-semibold text-foreground mb-2">Decisions about the body and funeral</h3>
+          <h3 className="font-semibold text-foreground mb-2">Decisions about the funeral and your sibling's care</h3>
           <p className="text-sm text-muted leading-relaxed">
-            The legal right to decide what happens to a body follows a specific order: spouse or civil partner first, then children, then parents, then siblings. If your sibling was married or had adult children, you may not have a legal say in funeral decisions, even if you have strong views. Try to express your wishes respectfully and to reach an agreement. A funeral director or mediator can help if there is significant disagreement.
+            The legal right to decide what happens to your sibling's body follows a set order: spouse or civil partner first, then children, then parents, then siblings. If your sibling was married or had adult children, you may not have a legal say in funeral decisions, even when you feel strongly about them, and that can be painful. Say what you would like calmly and try to reach an agreement together. A funeral director or mediator can help if there is significant disagreement.
           </p>
         </div>
       </div>
@@ -217,7 +217,7 @@ export default function LostASiblingPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Do siblings have a legal right to inherit?</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Under intestacy rules in England and Wales, siblings only inherit if the deceased had no surviving spouse, civil partner, children, or parents. If your sibling left a will, they can leave you whatever they wish. If you were financially dependent on your sibling, you may be able to make a claim under the Inheritance (Provision for Family and Dependants) Act 1975.
+            Under intestacy rules in England and Wales, siblings only inherit if your sibling left no surviving spouse, civil partner, children, or parents. If your sibling left a will, they can leave you whatever they wish. If you were financially dependent on your sibling, you may be able to make a claim under the Inheritance (Provision for Family and Dependants) Act 1975.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -260,7 +260,7 @@ export default function LostASiblingPage() {
               {
                 '@type': 'Question',
                 name: 'Do siblings have a legal right to inherit?',
-                acceptedAnswer: { '@type': 'Answer', text: 'Under intestacy rules in England and Wales, siblings only inherit if the deceased had no surviving spouse, civil partner, children, or parents. If your sibling left a will, they can leave you whatever they wish.' },
+                acceptedAnswer: { '@type': 'Answer', text: 'Under intestacy rules in England and Wales, siblings only inherit if your sibling left no surviving spouse, civil partner, children, or parents. If your sibling left a will, they can leave you whatever they wish.' },
               },
               {
                 '@type': 'Question',

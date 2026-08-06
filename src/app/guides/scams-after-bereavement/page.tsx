@@ -33,19 +33,19 @@ const SCAMS = [
   },
   {
     title: 'Fake debt collectors',
-    desc: 'Letters or phone calls claiming the deceased owed money, often with threats of bailiffs or court action if you do not pay immediately. Remember: you are not personally responsible for the deceased\'s debts. Debts are paid from the estate, and only if there are sufficient funds. Always ask for proof of the debt in writing before taking any action, and pass any legitimate claims to the executor.',
+    desc: 'Letters or phone calls claiming your loved one owed money, often with threats of bailiffs or court action if you do not pay immediately. Remember: you are not personally responsible for their debts. Debts are paid from the estate, and only if there are sufficient funds. Always ask for proof of the debt in writing before taking any action, and pass any legitimate claims to the executor.',
   },
   {
     title: 'Identity theft from obituaries',
-    desc: 'Scammers harvest personal details from death notices and obituaries, including full names, dates of birth, maiden names, and addresses. They use this information to open bank accounts, apply for credit cards, or make fraudulent benefit claims in the deceased\'s name. Minimise the personal details you include in obituaries. Register the death with all three credit reference agencies (Experian, Equifax, TransUnion) to flag the record as deceased.',
+    desc: 'Scammers harvest personal details from death notices and obituaries, including full names, dates of birth, maiden names, and addresses. They use this information to open bank accounts, apply for credit cards, or make fraudulent benefit claims in their name. Minimise the personal details you include in obituaries. Register the death with all three credit reference agencies (Experian, Equifax, TransUnion) to flag the record as deceased.',
   },
   {
     title: 'Bogus charities',
-    desc: 'People appearing at the door or calling by phone, claiming to collect donations in the deceased\'s name for a charity. They may reference the funeral or the cause of death to sound convincing. Only donate through official charity websites. Check the Charity Commission register (register-of-charities.charitycommission.gov.uk) to verify any organisation before giving money.',
+    desc: 'People appearing at the door or calling by phone, claiming to collect donations in your loved one\'s name for a charity. They may reference the funeral or the cause of death to sound convincing. Only donate through official charity websites. Check the Charity Commission register (register-of-charities.charitycommission.gov.uk) to verify any organisation before giving money.',
   },
   {
     title: 'Will and inheritance scams',
-    desc: 'Unsolicited letters, emails, or calls claiming the deceased named you in their will, that you are entitled to an unclaimed inheritance, or that a long-lost relative has left you money. These are always scams. A genuine executor or solicitor would contact you formally by post and would never ask for upfront fees or bank details by email or phone.',
+    desc: 'Unsolicited letters, emails, or calls claiming that your loved one named you in their will, that you are entitled to an unclaimed inheritance, or that a long-lost relative has left you money. These are always scams. A genuine executor or solicitor would contact you formally by post and would never ask for upfront fees or bank details by email or phone.',
   },
   {
     title: 'Utility scam calls',
@@ -56,15 +56,15 @@ const SCAMS = [
 const PROTECTION = [
   {
     title: 'Register with credit reference agencies',
-    desc: 'Contact Experian, Equifax, and TransUnion to flag the deceased\'s credit file as "deceased". This makes it much harder for anyone to open new accounts in their name. You can do this online or by post with a copy of the death certificate.',
+    desc: 'Contact Experian, Equifax, and TransUnion to flag their credit file as "deceased". This makes it much harder for anyone to open new accounts in their name. You can do this online or by post with a copy of the death certificate.',
   },
   {
     title: 'Use the Bereavement Register',
-    desc: 'Register at thebereavementregister.org.uk to stop addressed mail for the deceased. This reduces the amount of post arriving in their name, which both reduces distress and limits the information available to potential scammers.',
+    desc: 'Register at thebereavementregister.org.uk to stop mail addressed to your loved one. It reduces the number of letters arriving in their name, which is both easier on the family and gives scammers less to work with.',
   },
   {
     title: 'Redirect the post',
-    desc: 'Set up Royal Mail redirection for the deceased\'s post, especially if their property will be empty. This ensures important letters (and any suspicious ones) come to you rather than sitting in an unattended letterbox.',
+    desc: 'Set up Royal Mail redirection for their post, especially if the property will be empty. This ensures important letters (and any suspicious ones) come to you rather than sitting in an unattended letterbox.',
   },
   {
     title: 'Never share details with cold callers',
@@ -79,10 +79,10 @@ const FAQ = [
   },
   {
     q: 'How do I stop scam calls after someone dies?',
-    a: 'Register the deceased\'s phone number with the Telephone Preference Service (TPS) at tpsonline.org.uk. If the phone line is being kept, consider getting the number changed. For mobile phones, once you have retrieved any data you need, cancel the contract. Report persistent scam calls to Action Fraud on 0300 123 2040.',
+    a: 'Register their phone number with the Telephone Preference Service (TPS) at tpsonline.org.uk. If the phone line is being kept, consider getting the number changed. For mobile phones, once you have retrieved any data you need, cancel the contract. Report persistent scam calls to Action Fraud on 0300 123 2040.',
   },
   {
-    q: 'How do I protect the deceased from identity theft?',
+    q: 'How do I protect their identity from theft?',
     a: 'Register the death with all three credit reference agencies (Experian, Equifax, TransUnion) so the file is flagged as deceased. Sign up with the Bereavement Register to stop post. Close or transfer all bank accounts, and cancel the driving licence and passport through DVLA and HMPO. Minimise personal details in public obituaries.',
   },
   {
@@ -90,8 +90,8 @@ const FAQ = [
     a: 'Yes, always. Report to Action Fraud (0300 123 2040 or actionfraud.police.uk), which is the UK\'s national fraud reporting centre. You can also report to Trading Standards through the Citizens Advice consumer helpline on 0808 223 1133. Reporting helps protect other bereaved families from the same scam.',
   },
   {
-    q: 'How do I stop post addressed to a deceased person?',
-    a: 'Register with the Bereavement Register at thebereavementregister.org.uk (free). This removes the deceased from most mailing lists within a few weeks. You can also set up Royal Mail redirection to forward their post to your address. Contact individual companies directly to close accounts and remove them from mailing lists.',
+    q: 'How do I stop post addressed to someone who has passed away?',
+    a: 'Register with the Bereavement Register at thebereavementregister.org.uk (free). This removes their name from most mailing lists within a few weeks. You can also set up Royal Mail redirection to forward their post to your address. Contact individual companies directly to close accounts and remove them from mailing lists.',
   },
 ];
 
@@ -106,7 +106,7 @@ export default function ScamsAfterBereavementPage() {
         Bereavement Scams: How to Protect Yourself
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        It is an uncomfortable truth that bereaved families are deliberately targeted by scammers. Knowing the common tactics used helps you recognise them quickly and protect both yourself and the estate.
+        It is an uncomfortable thing to have to read about while you are grieving, but bereaved families are deliberately targeted by scammers. Knowing the usual tactics makes them much easier to spot, and a few minutes here can protect both you and the estate.
       </p>
 
       <GuideImage

@@ -34,8 +34,8 @@ interface TemplateLetter {
 const TEMPLATES: TemplateLetter[] = [
   {
     id: 'bank',
-    title: 'Notifying a bank or building society',
-    description: 'Use this letter to notify any bank, building society, or financial institution of the death. Send separately to each provider.',
+    title: 'Letting a bank or building society know',
+    description: 'Use this letter for any bank, building society, or financial institution. Send one to each provider separately.',
     letter: `[Your full name]
 [Your address line 1]
 [Your address line 2]
@@ -76,15 +76,15 @@ Yours faithfully,
 Enclosures: Certified copy of death certificate`,
     tips: [
       'Send a separate letter to each bank or building society.',
-      'You can also use the free Death Notification Service (deathnotificationservice.co.uk) to notify multiple banks at once.',
-      'Most banks will release reasonable funeral costs from the account before probate is granted.',
-      'If the account was jointly held, it usually passes automatically to the surviving account holder.',
-      'Keep copies of all letters you send and note the date you posted them.',
+      'The free Death Notification Service (deathnotificationservice.co.uk) lets you tell several banks at once, which saves repeating yourself.',
+      'Most banks will release reasonable funeral costs from the account before probate is granted, so do ask.',
+      'If the account was held jointly, it usually passes automatically to the surviving account holder.',
+      'Keep a copy of every letter you send, and jot down the date you posted it. It saves a lot of worry later.',
     ],
   },
   {
     id: 'utility',
-    title: 'Notifying utility companies',
+    title: 'Letting utility companies know',
     description: 'Use this letter for gas, electricity, water, broadband, phone, or TV licence providers.',
     letter: `[Your full name]
 [Your address line 1]
@@ -130,8 +130,8 @@ Yours faithfully,
   },
   {
     id: 'hmrc',
-    title: 'Notifying HMRC',
-    description: 'If Tell Us Once was used, HMRC will already be aware. Otherwise, use this letter to notify them directly.',
+    title: 'Letting HMRC know',
+    description: 'If you have used Tell Us Once, HMRC will already know. If not, this letter tells them directly.',
     letter: `[Your full name]
 [Your address line 1]
 [Your address line 2]
@@ -169,17 +169,17 @@ Yours faithfully,
 
 Enclosures: Certified copy of death certificate`,
     tips: [
-      'If you used the Tell Us Once service at the register office, HMRC will already have been notified. You do not need to write separately.',
-      'You can also call the HMRC bereavement helpline on 0300 200 3300.',
-      'If the deceased was self-employed, a final tax return will need to be filed covering the start of the tax year to the date of death.',
-      'Any tax refund owed to the deceased will form part of the estate.',
-      'Keep the deceased person\'s tax records for at least 4 years after the end of the tax year in which they died.',
+      'If you used Tell Us Once at the register office, HMRC already know. There is no need to write separately.',
+      'You can also ring the HMRC bereavement helpline on 0300 200 3300.',
+      'If they were self-employed, one final tax return is needed, covering the start of the tax year up to the date of death.',
+      'Any tax refund owed to them forms part of the estate.',
+      'Hold on to their tax records for at least 4 years after the end of the tax year in which they died.',
     ],
   },
   {
     id: 'council-tax',
-    title: 'Notifying the council (council tax)',
-    description: 'Tell the local council about the death to claim any exemptions or discounts on council tax.',
+    title: 'Letting the council know (council tax)',
+    description: 'Telling the local council means you can claim any council tax exemption or discount you are entitled to.',
     letter: `[Your full name]
 [Your address line 1]
 [Your address line 2]
@@ -228,8 +228,8 @@ Yours faithfully,
   },
   {
     id: 'employer',
-    title: 'Notifying an employer',
-    description: 'If the deceased was employed at the time of death, notify their employer.',
+    title: 'Letting an employer know',
+    description: 'If they were working at the time, their employer will need to hear from you.',
     letter: `[Your full name]
 [Your address line 1]
 [Your address line 2]
@@ -264,11 +264,11 @@ Yours faithfully,
 
 [Your full name]`,
     tips: [
-      'Many employers offer death-in-service benefits (typically 2 to 4 times annual salary), so always ask.',
-      'Workplace pensions may include a lump sum death benefit. Contact the pension scheme administrator directly if needed.',
-      'The employer may also need to issue a P45 to HMRC.',
-      'If the deceased was a member of a trade union, the union may also offer a death benefit.',
-      'Ask a friend or family member to make the initial phone call if you find it too difficult.',
+      'Many employers offer death-in-service benefits, often 2 to 4 times annual salary, so always ask even if nobody mentions it.',
+      'Workplace pensions may include a lump sum death benefit. You can contact the pension scheme administrator directly.',
+      'The employer will also need to issue a P45 to HMRC.',
+      'If they were a member of a trade union, the union may offer a death benefit too.',
+      'If making the first phone call feels like too much, ask a friend or family member to do it for you. That is a perfectly reasonable thing to ask.',
     ],
   },
   {
@@ -312,8 +312,8 @@ Yours faithfully,
   },
   {
     id: 'insurance',
-    title: 'Notifying insurance companies',
-    description: 'Use this letter for life insurance, home insurance, car insurance, travel insurance, or any other insurance policies.',
+    title: 'Letting insurance companies know',
+    description: 'Use this letter for life, home, car, travel, or any other insurance policy.',
     letter: `[Your full name]
 [Your address line 1]
 [Your address line 2]
@@ -364,8 +364,8 @@ Enclosures: Certified copy of death certificate`,
   },
   {
     id: 'dvla',
-    title: 'Notifying the DVLA',
-    description: 'If the deceased held a driving licence or was the registered keeper of a vehicle. Tell Us Once will notify the DVLA about the driving licence, but you still need to deal with vehicle registration separately.',
+    title: 'Letting the DVLA know',
+    description: 'For a driving licence or a vehicle they were the registered keeper of. Tell Us Once handles the licence, but the vehicle registration still needs sorting separately.',
     letter: `[Your full name]
 [Your address line 1]
 [Your address line 2]
@@ -423,8 +423,8 @@ Enclosures: Certified copy of death certificate, V5C log book [and driving licen
   },
   {
     id: 'passport',
-    title: 'Notifying the Passport Office',
-    description: 'Cancel the passport of the deceased. Tell Us Once will handle this automatically, but you can also do it directly.',
+    title: 'Letting the Passport Office know',
+    description: 'To cancel their passport. Tell Us Once does this for you automatically, but you can also write directly if you prefer.',
     letter: `[Your full name]
 [Your address line 1]
 [Your address line 2]
@@ -488,7 +488,7 @@ export default function TemplateLettersPage() {
         Template Letters and Scripts
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-4">
-        Ready-to-use template letters for notifying organisations after someone dies. Copy the letter, fill in the details marked in [square brackets], and send by post or email. Each letter includes practical tips to help you.
+        Finding the right words is hard enough at the best of times, so we have written these letters for you. Copy the one you need, fill in the details marked in [square brackets], and send it by post or email. Each one comes with a few practical tips underneath.
       </p>
       {/* Table of contents: moved above the tips/CTA boxes so the actual list of letters, the reason people land on this page, is visible without scrolling past unrelated content first */}
       <nav className="bg-card rounded-xl border border-border p-6 mb-8" aria-label="Template letters">
@@ -504,10 +504,10 @@ export default function TemplateLettersPage() {
 
       <div className="bg-warm border border-warm-border rounded-xl p-5 mb-6">
         <p className="text-sm text-amber-800 leading-relaxed">
-          <strong>Before you start:</strong> Make sure you have the following to hand: certified copies of the death certificate, the deceased person's full name, date of birth, and any relevant account or reference numbers. If you used the <Link href="/tell-us-once" className="font-medium underline">Tell Us Once</Link> service, some of these organisations will already have been notified.
+          <strong>Before you start:</strong> it helps to have these beside you: certified copies of the death certificate, their full name and date of birth, and any account or reference numbers you can find. If you have already used <Link href="/tell-us-once" className="font-medium underline">Tell Us Once</Link>, some of these organisations will know already.
         </p>
         <p className="text-sm text-amber-800 leading-relaxed mt-2">
-          Prefer to call instead of write, or need the direct bereavement number for a specific organisation? See our <Link href="/notify" className="font-medium underline">who to notify guide</Link> for phone numbers and online forms for 60+ UK banks, utilities, and government departments.
+          If you would rather call than write, or you need the direct bereavement number for a particular organisation, our <Link href="/notify" className="font-medium underline">who to notify guide</Link> has phone numbers and online forms for 60+ UK banks, utilities, and government departments.
         </p>
       </div>
 
@@ -561,7 +561,7 @@ export default function TemplateLettersPage() {
                 </p>
               </div>
               <a
-                href="https://www.unbiased.co.uk/find/solicitors/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=template-letters-bank"
+                href="https://www.unbiased.co.uk/find-an-adviser/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=template-letters-bank"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
@@ -587,7 +587,7 @@ export default function TemplateLettersPage() {
 
       {/* General tips section */}
       <section className="bg-card rounded-xl border border-border p-6 mb-10">
-        <h2 className="text-xl font-bold text-foreground mb-4">General tips for sending notification letters</h2>
+        <h2 className="text-xl font-bold text-foreground mb-4">A few general tips for sending these letters</h2>
         <ul className="space-y-3">
           <li className="text-sm text-muted leading-relaxed flex gap-2">
             <span className="text-primary mt-0.5 shrink-0">&#8226;</span>
@@ -599,7 +599,7 @@ export default function TemplateLettersPage() {
           </li>
           <li className="text-sm text-muted leading-relaxed flex gap-2">
             <span className="text-primary mt-0.5 shrink-0">&#8226;</span>
-            <span><strong>Order enough death certificates.</strong> We recommend at least 5 certified copies. You can order more from the register office at any time (currently £12.50 each in England and Wales (£15 in Scotland)).</span>
+            <span><strong>Order enough death certificates.</strong> At least 5 certified copies is our advice. You can order more from the register office at any time (currently £12.50 each in England and Wales, £15 in Scotland).</span>
           </li>
           <li className="text-sm text-muted leading-relaxed flex gap-2">
             <span className="text-primary mt-0.5 shrink-0">&#8226;</span>
@@ -611,7 +611,7 @@ export default function TemplateLettersPage() {
           </li>
           <li className="text-sm text-muted leading-relaxed flex gap-2">
             <span className="text-primary mt-0.5 shrink-0">&#8226;</span>
-            <span><strong>Ask for help.</strong> A trusted friend, family member, solicitor, or Citizens Advice can help you with the paperwork. You do not need to do this alone.</span>
+            <span><strong>Ask for help.</strong> A trusted friend, a family member, a solicitor, or Citizens Advice can all help you with the paperwork. You do not have to do this on your own.</span>
           </li>
         </ul>
       </section>
@@ -619,7 +619,7 @@ export default function TemplateLettersPage() {
       {/* CTA */}
       <div className="bg-primary-light rounded-xl p-8 text-center mt-12">
         <h2 className="text-2xl font-bold text-foreground mb-3">Need a personalised to-do list?</h2>
-        <p className="text-muted mb-6">Answer a few questions and we will create a step-by-step checklist tailored to your exact situation, including which organisations to contact and when.</p>
+        <p className="text-muted mb-6">Answer a few questions and we will put together a step-by-step checklist for your own situation, including who to contact and when.</p>
         <Link
           href="/start"
           className="inline-block px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors"

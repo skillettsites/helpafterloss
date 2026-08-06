@@ -35,12 +35,12 @@ const STEPS = [
   {
     step: '3',
     title: 'Decide: repatriation or local funeral',
-    desc: 'Repatriation (bringing the body back to the UK) typically costs between £3,000 and £10,000 or more, depending on the country. This includes embalming, a zinc-lined coffin, air freight, and extensive paperwork. A local burial or cremation in the country where the person died is often significantly cheaper and can be arranged more quickly. There is no legal requirement to bring the body home. Consider the person\'s wishes and what the family can afford.',
+    desc: 'Repatriation (bringing your loved one home to the UK) typically costs between £3,000 and £10,000 or more, depending on the country. This includes embalming, a zinc-lined coffin, air freight, and a good deal of paperwork. A local burial or cremation in the country where they passed away is often much cheaper and can be arranged more quickly. There is no legal requirement to bring them home. Think about what they would have wanted and what the family can afford; neither choice is the wrong one.',
   },
   {
     step: '4',
     title: 'Arrange repatriation',
-    desc: 'If you choose repatriation, use a specialist international funeral director. The FCDO can provide a list of experienced firms. The body must be embalmed, placed in a zinc-lined coffin, and accompanied by paperwork including a freedom from infection certificate, the local death certificate, and customs clearance documents. The funeral director will handle most of this, but expect the process to take 3 to 6 weeks.',
+    desc: 'If you choose repatriation, use a specialist international funeral director. The FCDO can provide a list of experienced firms. They must be embalmed and placed in a zinc-lined coffin, accompanied by paperwork including a freedom from infection certificate, the local death certificate, and customs clearance documents. The funeral director will handle most of this, but expect the process to take 3 to 6 weeks.',
   },
   {
     step: '5',
@@ -66,11 +66,11 @@ const FAQ = [
   },
   {
     q: 'Who pays for repatriation?',
-    a: 'The family or the deceased person\'s estate pays for repatriation. Travel insurance may cover most or all of the costs. The FCDO does not pay for repatriation. If the person had no insurance and the family cannot afford it, a local burial or cremation is usually the most practical option.',
+    a: 'The family, or the estate, pays for repatriation. Travel insurance may cover most or all of the costs. The FCDO does not pay for repatriation. If the person had no insurance and the family cannot afford it, a local burial or cremation is usually the most practical option.',
   },
   {
     q: 'Can I arrange a funeral in the country where they died?',
-    a: 'Yes, and it is often significantly cheaper than repatriation. The local British consulate can help find funeral directors and advise on local customs and legal requirements. Many families choose a local cremation and then bring the ashes home, which is simpler and less expensive than repatriating a body.',
+    a: 'Yes, and it is often significantly cheaper than repatriation. The local British consulate can help find funeral directors and advise on local customs and legal requirements. Many families choose a local cremation and then bring the ashes home, which is simpler and less expensive than full repatriation.',
   },
   {
     q: 'What if they had no travel insurance?',
@@ -97,7 +97,7 @@ export default function DeathsAbroadPage() {
         When Someone Dies Abroad
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        Losing someone is difficult enough without the added complexity of dealing with foreign legal systems, language barriers, and international logistics. Around 6,000 UK nationals die abroad each year, and the process of bringing them home or arranging a funeral overseas can feel overwhelming. This guide explains exactly what to do, step by step.
+        Losing someone is hard enough without also having to deal with foreign legal systems, language barriers, and arrangements being made hundreds of miles away. Around 6,000 UK nationals die abroad each year, and bringing someone home or arranging a funeral overseas can feel like a great deal to take on. This guide explains what to do, step by step.
       </p>
 
       {/* Quick summary stats */}

@@ -29,23 +29,23 @@ const SECTIONS = [
     tasks: [
       {
         title: 'Get the Medical Certificate of Cause of Death (MCCD)',
-        content: 'A doctor must verify the death and issue the MCCD. If the death happened at home, call the GP surgery. If in hospital, the hospital will arrange this. If the death was sudden or unexplained, it may be referred to a coroner (or Procurator Fiscal in Scotland), which can delay the process.',
+        content: 'A doctor needs to confirm the death and issue the MCCD. If your loved one died at home, call their GP surgery. If they were in hospital, the hospital will arrange it for you. If the death was sudden or unexplained, it may be referred to a coroner (or the Procurator Fiscal in Scotland), which can take a little longer.',
       },
       {
-        title: 'Secure the person\'s home',
-        content: 'If they lived alone, lock the property, check heating is on (to prevent frozen pipes in winter), and remove perishable food. Let neighbours know if appropriate. Check the letterbox for post and remove anything visible through windows that might attract burglars.',
+        title: 'Make their home secure',
+        content: 'If they lived on their own, lock the property up, check the heating is on so the pipes do not freeze in winter, and clear out any food that will spoil. Let a trusted neighbour know if that feels right. Collect the post, and move anything valuable out of sight of the windows.',
       },
       {
         title: 'Find the will',
-        content: 'Check at home, with their solicitor, their bank, or search the National Will Register (nationalwillregister.co.uk, costs around £30). The will may contain funeral wishes and names the executor. If you cannot find a will, do not panic. Many estates are dealt with under intestacy rules.',
+        content: 'Have a look at home, and ask their solicitor or their bank. You can also search the National Will Register (nationalwillregister.co.uk, around £30). A will often sets out funeral wishes and names the executor. If you cannot find one, please try not to worry. Many estates are dealt with under the intestacy rules.',
       },
       {
         title: 'Tell close family and friends',
-        content: 'You do not have to do this alone. Ask someone to help you share the news. If appropriate, agree who will contact the person\'s workplace, neighbours, and wider circle. Consider whether you want to place a newspaper notice later.',
+        content: 'You do not have to do this on your own. Ask someone you trust to help you share the news. It can help to agree who will contact their workplace, their neighbours, and the wider circle. You can decide later whether you would like to place a notice in a newspaper.',
       },
       {
         title: 'Contact a funeral director (if needed)',
-        content: 'If the death occurred at home and you would like the person to be moved, a funeral director can collect them at any time. You do not need to have chosen a funeral director for this step; most will provide the initial collection service. There is no rush to decide on funeral arrangements.',
+        content: 'If your loved one died at home and you would like them to be moved, a funeral director can collect them at any time of the day or night. You do not need to have chosen who will handle the funeral yet; most will carry out this first collection for you. There is no rush at all to decide on the arrangements.',
       },
     ],
   },
@@ -55,15 +55,15 @@ const SECTIONS = [
     tasks: [
       {
         title: 'Book an appointment at the register office',
-        content: 'Register at the register office in the area where the person died. In England and Wales this must be done within 5 days. In Scotland, within 8 days. You will need the MCCD, the person\'s full name, date of birth, last address, occupation, NHS number (if known), and marriage or civil partnership certificate (if applicable). The registrar will issue a green "certificate for burial or cremation" which the funeral director needs.',
+        content: 'You register at the register office for the area where they died. In England and Wales this must be done within 5 days. In Scotland, within 8 days. Take the MCCD with you, along with their full name, date of birth, last address, occupation, NHS number (if you know it), and their marriage or civil partnership certificate if there is one. The registrar will give you a green "certificate for burial or cremation", which the funeral director will need.',
       },
       {
         title: 'Order death certificate copies',
-        content: 'Order at least 5 certified copies (£12.50 each in England and Wales (£15 in Scotland)). Banks, insurers, pension providers, and solicitors all need an original. It costs more to order extras later. Some people need 8 to 10 copies if the person had multiple bank accounts, investments, and insurance policies.',
+        content: 'It is worth ordering at least 5 certified copies (£12.50 each in England and Wales, £15 in Scotland). Banks, insurers, pension providers, and solicitors each need an original. Extra copies cost more if you order them later, so it is better to have a few too many than too few. If there were several bank accounts, investments, and insurance policies, 8 to 10 copies is not unusual.',
       },
       {
         title: 'Use Tell Us Once',
-        content: 'The registrar will give you a Tell Us Once reference number. This single service notifies the DWP (benefits), HMRC, DVLA, Passport Office, local council, and public sector pensions. Use it within 28 days. It is not available in Northern Ireland. You can use it online at gov.uk/tell-us-once or by phone on 0800 085 7308.',
+        content: 'The registrar will give you a Tell Us Once reference number. This one service notifies the DWP (benefits), HMRC, DVLA, the Passport Office, your local council, and public sector pensions, so you do not have to contact them all separately. Use it within 28 days. It is not available in Northern Ireland. You can use it online at gov.uk/tell-us-once or by phone on 0800 085 7308.',
       },
     ],
   },
@@ -73,19 +73,19 @@ const SECTIONS = [
     tasks: [
       {
         title: 'Choose a funeral director',
-        content: 'Shop around and ask for itemised quotes from at least 3 funeral directors. Costs vary significantly between providers. You are entitled to see a price list. You do not have to use the funeral director suggested by the hospital. All funeral directors must comply with the Funeral Director Compliance Scheme.',
+        content: 'Take your time, and ask for itemised quotes from at least 3 funeral directors. Prices vary a great deal between providers. You are entitled to see a price list, and you do not have to use the funeral director the hospital suggests. All funeral directors must comply with the Funeral Director Compliance Scheme.',
       },
       {
         title: 'Consider your options',
-        content: 'Traditional burial averages around £5,400, cremation with a service around £4,200, and direct cremation from around £1,600. A direct cremation is the most affordable option, with no ceremony at the crematorium. You can hold a separate memorial later. Green burials and woodland burials are also growing in popularity.',
+        content: 'Traditional burial averages around £5,400, cremation with a service around £4,200, and direct cremation from around £1,600. A direct cremation is the gentlest on the budget, with no ceremony at the crematorium, and you can still hold a memorial of your own later, whenever feels right. Green burials and woodland burials are becoming more popular too.',
       },
       {
         title: 'Check for financial help with funeral costs',
-        content: 'If you receive means-tested benefits, you may be able to get a Funeral Expenses Payment from the DWP (up to £1,000 for extras, plus burial/cremation fees). Call 0800 731 0469 to apply. If the person was under 18, the Children\'s Funeral Fund covers costs in England. Some trade unions, employers, and charities also offer help with funeral costs.',
+        content: 'If you receive means-tested benefits, you may be able to get a Funeral Expenses Payment from the DWP (up to £1,000 for extras, plus burial or cremation fees). Call 0800 151 2012 to apply. If they were under 18, the Children\'s Funeral Fund covers the costs in England. Some trade unions, employers, and charities help with funeral costs as well, so it is always worth asking.',
       },
       {
-        title: 'Consider the person\'s wishes',
-        content: 'Check the will, any pre-paid funeral plans, letters, or conversations about their preferences. They may have specified burial or cremation, a religious or secular service, specific music, or a particular location. If there are no recorded wishes, choose what feels right for the family.',
+        title: 'Think about what they would have wanted',
+        content: 'Have a look at the will, any pre-paid funeral plan, letters, or conversations you remember about their preferences. They may have had views on burial or cremation, a religious or secular service, particular music, or a certain place. If nothing was written down, choose whatever feels right for you and your family.',
       },
     ],
   },
@@ -95,23 +95,23 @@ const SECTIONS = [
     tasks: [
       {
         title: 'Notify banks and building societies',
-        content: 'Contact each bank individually, or use the free Death Notification Service (deathnotificationservice.co.uk) to notify multiple banks at once. Sole accounts will be frozen. Banks will usually release money for funeral costs before probate is granted. Joint accounts normally continue to operate for the surviving account holder.',
+        content: 'You can contact each bank yourself, or use the free Death Notification Service (deathnotificationservice.co.uk) to tell several banks at once and save yourself the repeat calls. Accounts in their sole name will be frozen. Banks will usually release money for funeral costs before probate is granted. Joint accounts normally carry on as usual for the surviving account holder.',
       },
       {
         title: 'Check for life insurance',
-        content: 'Look through paperwork, emails, and bank statements for any life insurance policies. Contact the insurer with the death certificate. If written in trust, it pays out directly to the beneficiary without waiting for probate. Also check for death-in-service benefits through the person\'s employer.',
+        content: 'Have a look through paperwork, emails, and bank statements for any life insurance policies. Contact the insurer with the death certificate. If a policy was written in trust, it pays out directly to the beneficiary without waiting for probate. It is also worth asking their employer about any death-in-service benefits.',
       },
       {
         title: 'Notify pension providers',
-        content: 'Contact state, workplace, and private pension providers. There may be a survivor\'s pension, a lump sum death benefit, or remaining guaranteed payments. For the State Pension, contact the Pension Service on 0800 731 0469. Use the Pension Tracing Service at gov.uk/find-pension-contact-details to find lost pensions.',
+        content: 'Get in touch with any state, workplace, and private pension providers. There may be a survivor\'s pension, a lump sum death benefit, or remaining guaranteed payments due to you. For the State Pension, contact the Pension Service on 0800 731 0469. If you think a pension has been lost track of, the Pension Tracing Service at gov.uk/find-pension-contact-details can help you find it.',
       },
       {
         title: 'Apply for Bereavement Support Payment',
-        content: 'If your spouse or civil partner died and you are under State Pension age: higher rate (with children) gives £3,500 lump sum plus £350/month for 18 months. Standard rate: £2,500 plus £100/month. Claim within 3 months for full backdating. You can claim by calling 0800 731 0469 or online at gov.uk.',
+        content: 'If your spouse or civil partner died and you are under State Pension age: higher rate (with children) gives £3,500 lump sum plus £350/month for 18 months. Standard rate: £2,500 plus £100/month. Claim within 3 months for full backdating. You can claim by calling 0800 151 2012 or online at gov.uk.',
       },
       {
         title: 'Redirect post',
-        content: 'Set up Royal Mail post redirection from the person\'s address to yours (costs £37 for 3 months, £52 for 6 months, £73 for 12 months). This helps you catch correspondence from organisations you may not know about, including insurance policies, investments, and subscriptions.',
+        content: 'Setting up Royal Mail post redirection from their address to yours costs £37 for 3 months, £52 for 6 months, or £73 for 12 months. It is one of the most useful things you can do, because it catches letters from organisations you may not know about, including insurance policies, investments, and subscriptions.',
       },
     ],
   },
@@ -121,7 +121,7 @@ const SECTIONS = [
     tasks: [
       {
         title: 'Apply for probate',
-        content: 'Probate (Grant of Probate if there is a will, Letters of Administration if not) gives you the legal right to deal with the estate. You need to value the estate, complete an inheritance tax form, and submit the application. The court fee is £300 for estates over £5,000. Processing takes around 12-16 weeks. You can apply online at gov.uk/applying-for-probate.',
+        content: 'Probate (a Grant of Probate if there is a will, or Letters of Administration if there is not) gives you the legal right to deal with the estate. You value the estate, complete an inheritance tax form, and submit the application. The court fee is £526 for estates over £5,000, and processing takes around 12-16 weeks. You can apply online at gov.uk/applying-for-probate.',
       },
       {
         title: 'Check inheritance tax',
@@ -129,7 +129,7 @@ const SECTIONS = [
       },
       {
         title: 'Place statutory notices',
-        content: 'Place a notice in The London Gazette (and a local newspaper) to protect yourself from liability for unknown debts. This costs around £80-£150 and gives creditors 2 months to come forward. Wait at least 2 months before distributing assets. This step is strongly recommended even though it is not strictly mandatory.',
+        content: 'Placing a notice in The London Gazette (and a local newspaper) protects you personally from debts nobody knew about. It costs around £80-£150 and gives creditors 2 months to come forward, so wait at least 2 months before sharing out any assets. It is not strictly compulsory, but we would strongly encourage it.',
       },
     ],
   },
@@ -139,23 +139,23 @@ const SECTIONS = [
     tasks: [
       {
         title: 'Check home insurance urgently',
-        content: 'Many policies become void after 30 days if the property is empty. Contact the insurer urgently to let them know. You may need specialist unoccupied property insurance, which costs around £200-£500 per year. Continue visiting the property regularly.',
+        content: 'This one is worth doing sooner rather than later, as many policies become void after 30 days if the property is empty. Let the insurer know what has happened. You may need specialist unoccupied property insurance, which costs around £200-£500 per year. It also helps to keep visiting the property regularly.',
       },
       {
         title: 'Apply for council tax exemption',
-        content: 'An empty property is exempt from council tax from the date of death until probate is granted, and for 6 months after that. Contact the local council to apply. You will need a copy of the death certificate.',
+        content: 'An empty property is exempt from council tax from the date of death until probate is granted, and for 6 months after that. Ring the local council to apply. They will ask for a copy of the death certificate.',
       },
       {
         title: 'Cancel subscriptions and direct debits',
-        content: 'Check bank statements for regular payments: TV licence, phone, broadband, streaming services, gym, insurance, charity donations, breakdown cover. You may be entitled to refunds for advance payments. Keep a list of what you cancel and when.',
+        content: 'Bank statements are the easiest place to spot regular payments: TV licence, phone, broadband, streaming services, gym, insurance, charity donations, breakdown cover. You may be owed refunds for anything paid in advance. Keep a simple list of what you have cancelled and when, so you do not have to hold it all in your head.',
       },
       {
         title: 'Deal with digital accounts',
-        content: 'Facebook and Instagram can be memorialised or deleted. Google has an Inactive Account Manager. Cancel paid subscriptions. Each platform has its own process. Our digital legacy guide has step-by-step instructions for every major platform.',
+        content: 'Facebook and Instagram accounts can be memorialised so friends can still visit them, or closed altogether, whichever feels right. Google has an Inactive Account Manager. Do cancel any paid subscriptions. Every platform works a little differently, and our digital legacy guide walks through each of the main ones.',
       },
       {
-        title: 'Consider the long-term plan for property',
-        content: 'If the person owned their home, it will need to be valued for probate. You may need to decide whether to sell, transfer to a beneficiary, or rent it out. Speak to an estate agent for a current valuation. The property may be exempt from capital gains tax if sold within a reasonable time.',
+        title: 'Decide what happens to the property in the longer term',
+        content: 'If they owned their home, it will need to be valued for probate. In time you will need to decide whether to sell it, transfer it to a beneficiary, or let it out. An estate agent can give you a current valuation. The property may be exempt from capital gains tax if it is sold within a reasonable time. There is no need to decide any of this quickly.',
       },
     ],
   },
@@ -168,7 +168,7 @@ const FAQ = [
   },
   {
     q: 'How many death certificates do I need?',
-    a: 'Order at least 5 certified copies when you register the death. Each bank, insurer, and pension provider will need an original. If the person had many accounts and policies, you may need 8 to 10. Extra copies cost more if ordered later.',
+    a: 'Order at least 5 certified copies when you register the death. Each bank, insurer, and pension provider will need an original. If they had a lot of accounts and policies, you may need 8 to 10. Extra copies cost more if you order them later.',
   },
   {
     q: 'What is Tell Us Once and who does it notify?',
@@ -176,7 +176,7 @@ const FAQ = [
   },
   {
     q: 'Do I need to pay for the funeral upfront?',
-    a: 'Most funeral directors will wait for payment until after the funeral. If you are on means-tested benefits, you can apply for a Funeral Expenses Payment from the DWP to help cover costs. Some funeral directors also offer payment plans. Banks will often release funds from the deceased person\'s account specifically for funeral costs, even before probate.',
+    a: 'Most funeral directors will wait for payment until after the funeral. If you are on means-tested benefits, you can apply for a Funeral Expenses Payment from the DWP to help cover costs. Some funeral directors also offer payment plans. Banks will often release funds from their account specifically for funeral costs, even before probate.',
   },
   {
     q: 'How much does a funeral cost in the UK?',
@@ -184,7 +184,7 @@ const FAQ = [
   },
   {
     q: 'Do I need probate?',
-    a: 'You usually need probate if the person owned property in their sole name, had savings above the bank\'s threshold (typically £5,000-£50,000), or had investments. You usually do not need probate if all assets were jointly owned, as they pass automatically to the surviving owner.',
+    a: 'You usually need probate if they owned property in their sole name, had savings above the bank\'s threshold (typically £5,000-£50,000), or had investments. You usually do not need probate if everything was jointly owned, as it passes automatically to the surviving owner.',
   },
   {
     q: 'Can I arrange the funeral before registering the death?',
@@ -192,7 +192,7 @@ const FAQ = [
   },
   {
     q: 'What benefits can I claim after my spouse dies?',
-    a: 'If your spouse or civil partner died and you are under State Pension age, you can claim Bereavement Support Payment: £3,500 lump sum plus £350/month for 18 months if you have children, or £2,500 plus £100/month without children. Claim within 3 months for full backdating. You may also be entitled to Widowed Parent\'s Allowance or other means-tested benefits.',
+    a: 'If your spouse or civil partner died and you are under State Pension age, you can claim Bereavement Support Payment: £3,500 lump sum plus £350/month for 18 months if you have children, or £2,500 plus £100/month without children. Claim within 3 months and you get the lump sum and all 18 monthly payments; leave it past 12 months and the lump sum is lost entirely. You may also be entitled to other means-tested benefits.',
   },
 ];
 
@@ -203,7 +203,7 @@ export default function GuidePage() {
         What to Do When Someone Dies
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-4">
-        A complete step-by-step guide covering everything from the first 24 hours through to the first year. This is a general guide for the UK, updated for 2026. For a checklist personalised to your exact situation, use our free tool.
+        We are very sorry for your loss. This guide takes you gently through what needs doing, from the first 24 hours to the first year, so you never have to wonder what comes next. It covers the UK generally and is updated for 2026. If you would like a checklist built around your own circumstances, our free tool can do that for you.
       </p>
       <Link
         href="/start"
@@ -223,7 +223,7 @@ export default function GuidePage() {
           <p className="text-xs text-muted mt-1">Per death certificate</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-4 text-center">
-          <p className="text-xl font-bold text-primary">£300</p>
+          <p className="text-xl font-bold text-primary">£526</p>
           <p className="text-xs text-muted mt-1">Probate court fee</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-4 text-center">
@@ -236,7 +236,7 @@ export default function GuidePage() {
       <div className="bg-card rounded-xl border border-border p-5 md:p-6 mb-6">
         <h2 className="font-semibold text-foreground mb-3">In Scotland or Northern Ireland?</h2>
         <p className="text-sm text-muted leading-relaxed mb-3">
-          The process differs depending on where the death occurred. This guide covers England and Wales. For nation-specific guidance, see:
+          The process is a little different depending on where your loved one died. This guide covers England and Wales. If you need guidance for elsewhere in the UK:
         </p>
         <div className="flex flex-col sm:flex-row gap-3">
           <Link href="/guide/scotland" className="flex-1 bg-primary-light rounded-lg p-4 hover:bg-primary/10 transition-colors group">
@@ -375,7 +375,7 @@ export default function GuidePage() {
       <section className="mb-12">
         <h2 className="text-2xl font-bold text-foreground mb-4">Find your local guide</h2>
         <p className="text-sm text-muted leading-relaxed mb-4">
-          We have step-by-step guides for cities across the UK with local registrar details, council contacts, and area-specific information.
+          We have step-by-step guides for cities across the UK, with local registrar details, council contacts, and information for your area.
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
           {[
@@ -399,7 +399,7 @@ export default function GuidePage() {
       {/* CTA */}
       <div className="bg-primary-light rounded-xl p-6 md:p-8 text-center mt-12">
         <h2 className="text-2xl font-bold text-foreground mb-3">Want a guide specific to your situation?</h2>
-        <p className="text-muted mb-6">Answer a few questions and get a personalised checklist with real deadlines and costs.</p>
+        <p className="text-muted mb-6">Answer a few gentle questions and we will put together a checklist just for you, with the deadlines and costs that actually apply.</p>
         <Link
           href="/start"
           className="inline-block px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors"

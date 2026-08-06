@@ -25,8 +25,8 @@ const FUNERAL_TYPES = [
   {
     type: 'Traditional burial with service',
     cost: '£5,000 to £7,000',
-    description: 'The most familiar type of funeral: a service at a church, chapel, or crematorium, followed by burial in a churchyard or cemetery. A funeral director manages the whole process from collecting the deceased to the graveside.',
-    includes: ['Collecting and caring for the deceased', 'Coffin of your choice', 'Hearse to the service and graveside', 'Service at a church or chapel', 'Burial plot (if not already owned)', 'Grave digging and backfilling', 'Minister or officiant'],
+    description: 'The most familiar type of funeral: a service at a church, chapel, or crematorium, followed by burial in a churchyard or cemetery. A funeral director manages the whole process, from bringing the person into their care through to the graveside.',
+    includes: ['Collecting and caring for the person who has passed away', 'Coffin of your choice', 'Hearse to the service and graveside', 'Service at a church or chapel', 'Burial plot (if not already owned)', 'Grave digging and backfilling', 'Minister or officiant'],
     pros: 'A permanent physical place to visit and grieve. Well understood by most families and supported by most faiths.',
     cons: 'The most expensive option. Burial plots in many areas are scarce and expensive. Annual maintenance costs for the grave may follow.',
     note: 'Burial plot costs vary enormously by location. In London and the South East, a new single grave can cost £4,000-£7,000 alone. In rural areas, costs can be much lower.',
@@ -35,7 +35,7 @@ const FUNERAL_TYPES = [
     type: 'Traditional cremation with service',
     cost: '£4,000 to £5,500',
     description: 'A service at a crematorium or church, followed by cremation. The ashes (also called cremated remains) are returned to the family, usually within a week or two. The family can then scatter, bury, or keep the ashes.',
-    includes: ['Collecting and caring for the deceased', 'Coffin', 'Hearse', 'Service at crematorium or chapel', 'Cremation fees', 'Return of ashes in a container'],
+    includes: ['Collecting and caring for the person who has passed away', 'Coffin', 'Hearse', 'Service at crematorium or chapel', 'Cremation fees', 'Return of ashes in a container'],
     pros: 'More affordable than burial. No ongoing grave maintenance. Flexibility with what you do with the ashes. Can scatter in a meaningful place.',
     cons: 'No permanent grave for those who want one. The crematorium slot is typically 30-60 minutes, which can feel rushed.',
     note: 'You can split the ashes between family members or scatter them in multiple locations. Ask your funeral director about the legal requirements for scattering in your chosen location.',
@@ -43,17 +43,17 @@ const FUNERAL_TYPES = [
   {
     type: 'Direct cremation',
     cost: '£1,000 to £2,000',
-    description: 'The most affordable option. The person is collected and cremated without a formal service. No mourners attend the cremation itself. The ashes are returned to the family, who can then hold a memorial at any time and place they choose.',
-    includes: ['Collecting the deceased', 'Basic coffin', 'Transport to crematorium', 'Cremation', 'Return of ashes'],
+    description: 'The most affordable option. Your loved one is taken into the funeral director\'s care and cremated without a formal service. No mourners attend the cremation itself. The ashes are returned to the family, who can then hold a memorial at any time and place they choose.',
+    includes: ['Bringing your loved one into the funeral director\'s care', 'Basic coffin', 'Transport to crematorium', 'Cremation', 'Return of ashes'],
     pros: 'Significantly cheaper than a traditional funeral. No time pressure. The family can plan a personal and meaningful memorial at their own pace. Becoming much more common and widely accepted.',
-    cons: 'No service at the time of death, which some families find hard. The family does not see the coffin go into the crematorium.',
+    cons: 'No service at the time, which some families find hard. The family does not see the coffin go into the crematorium.',
     note: 'Direct cremation has grown from around 4% of funerals in 2016 to over 20% today. Many families follow it with a personal gathering, a memorial walk, or a scattering ceremony.',
   },
   {
     type: 'Direct burial',
     cost: '£2,000 to £3,500',
     description: 'Similar to direct cremation, but the person is buried without a formal service at the graveside. A simpler, lower-cost burial that gives the family a permanent place to visit.',
-    includes: ['Collecting the deceased', 'Basic coffin', 'Transport and burial', 'Burial plot (if available in package)'],
+    includes: ['Bringing your loved one into the funeral director\'s care', 'Basic coffin', 'Transport and burial', 'Burial plot (if available in package)'],
     pros: 'More affordable than a traditional burial. Gives a permanent grave.',
     cons: 'No service. Fewer providers offer this compared to direct cremation.',
     note: 'Some cemeteries and providers offer direct burial packages. Contact local cemeteries directly, as prices vary significantly.',
@@ -88,7 +88,7 @@ const FUNERAL_TYPES = [
   {
     type: 'DIY funeral',
     cost: 'Potentially £500 to £2,000 or less',
-    description: 'It is entirely legal in the UK to arrange a funeral yourself without using a funeral director. The family can wash and lay out the deceased, choose the coffin, transport the body to the crematorium or burial ground, and hold the service entirely themselves.',
+    description: 'It is entirely legal in the UK to arrange a funeral yourself without using a funeral director. The family can wash and dress their loved one, choose the coffin, take them to the crematorium or burial ground, and hold the service entirely themselves.',
     includes: ['Whatever the family chooses to include'],
     pros: 'Can save thousands of pounds. Very personal. Full control over every aspect.',
     cons: 'Requires significant practical organisation at an already difficult time. You will need to handle paperwork yourself, including the cremation forms or burial registration. Not suitable for all families.',
@@ -97,17 +97,17 @@ const FUNERAL_TYPES = [
   {
     type: 'Repatriation',
     cost: '£3,000 to £10,000+ depending on distance',
-    description: 'If the person died abroad, repatriation involves returning the body to the UK for a funeral here. Alternatively, some families choose to hold the funeral in the country where the person died and have the ashes repatriated, or arrange a local funeral there.',
-    includes: ['Embalming and preparation of the deceased', 'Documentation and customs clearance', 'Specialist flight coffin', 'International transport'],
+    description: 'If someone passes away abroad, repatriation means bringing them home to the UK for a funeral here. Alternatively, some families choose to hold the funeral in the country where they passed away and have the ashes repatriated, or arrange a local funeral there.',
+    includes: ['Embalming and preparation of the person who has passed away', 'Documentation and customs clearance', 'Specialist flight coffin', 'International transport'],
     pros: 'Allows the family to be together in their home country. May be required by faith or family tradition.',
     cons: 'Significantly more expensive. Can take days or weeks. Requires specialist funeral directors with international experience.',
-    note: 'The Foreign, Commonwealth and Development Office (FCDO) can provide guidance if someone dies abroad. Call 020 7008 5000. The British Embassy in the country of death will also assist.',
+    note: 'The Foreign, Commonwealth and Development Office (FCDO) can provide guidance if someone passes away abroad. Call 020 7008 5000. The British Embassy in the country where they died will also help.',
   },
 ];
 
 const QUOTE_ITEMS = [
-  { item: 'Collection and care of the deceased', note: 'From the place of death to the funeral home, 24 hours a day' },
-  { item: 'Preparation and laying out', note: 'Washing, dressing, and care of the body' },
+  { item: 'Collection and care of your loved one', note: 'From wherever they passed away to the funeral home, 24 hours a day' },
+  { item: 'Preparation and laying out', note: 'Washing, dressing, and caring for them' },
   { item: 'Coffin', note: 'Ranges from simple MDF to solid oak; ask for a basic option if cost is a concern' },
   { item: 'Hearse', note: 'Transport from funeral home to the service and then to the crematorium or cemetery' },
   { item: 'Funeral director\'s service', note: 'Coordinating the whole event' },
@@ -115,7 +115,7 @@ const QUOTE_ITEMS = [
   { item: 'Minister or officiant', note: 'Church minister, humanist celebrant, or civil celebrant' },
   { item: 'Flowers', note: 'Usually quoted separately; families can provide their own' },
   { item: 'Order of service', note: 'Printing costs; families can often do this themselves' },
-  { item: 'Death certificates', note: '£12.50 each in England (£11 Wales, £15 Scotland); order at least 5 when you register the death' },
+  { item: 'Death certificates', note: '£12.50 each in England and Wales (£15 in Scotland); order at least 5 when you register the death' },
 ];
 
 const COST_REDUCTION = [
@@ -146,7 +146,7 @@ export default function FuneralOptionsPage() {
         Funeral Options: Every Type Explained
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        There are more options than most people realise. Funerals do not have to follow a single template, and the right choice depends on the wishes of the person who died, your family's needs, and your budget. This guide explains every type of funeral honestly, with real cost comparisons, so you can make the decision that is right for you.
+        There are more options than most people realise. Funerals do not have to follow a single template, and the right choice depends on the wishes of the person who has passed away, what your family needs, and what you can afford. This guide explains every type of funeral honestly, with real cost comparisons, so you can make the decision that is right for you. Spending more is not a measure of how much someone was loved.
       </p>
 
       {/* Key stat callout */}
@@ -242,19 +242,19 @@ export default function FuneralOptionsPage() {
       <div className="space-y-4 mb-12">
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Funeral Expenses Payment</h3>
-          <p className="text-sm text-muted leading-relaxed">If you receive Universal Credit, Pension Credit, Housing Benefit, or certain other means-tested benefits, you may be entitled to help from the DWP. This covers burial or cremation fees in full, plus up to £1,000 towards other costs. Apply within 6 months of the funeral on form SF200. Call 0800 731 0469 for more information.</p>
+          <p className="text-sm text-muted leading-relaxed">If you receive Universal Credit, Pension Credit, Housing Benefit, or certain other means-tested benefits, you may be entitled to help from the DWP. This covers burial or cremation fees in full, plus up to £1,000 towards other costs. Apply within 6 months of the funeral on form SF200. Call 0800 151 2012 for more information.</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Children's Funeral Fund</h3>
-          <p className="text-sm text-muted leading-relaxed">If a child under 18 dies in England (or a baby is stillborn after 24 weeks), the Children's Funeral Fund covers burial or cremation costs. There is no means test. Tell your funeral director at the first meeting and they will handle the application.</p>
+          <p className="text-sm text-muted leading-relaxed">If a child under 18 passes away in England (or a baby is stillborn after 24 weeks), the Children's Funeral Fund covers burial or cremation costs. There is no means test. Tell your funeral director at the first meeting and they will handle the application.</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Trade union and employer schemes</h3>
-          <p className="text-sm text-muted leading-relaxed">Some trade unions and employer pension schemes include a death grant or lump sum that can help with funeral costs. Check the deceased's union membership and any workplace pension documentation.</p>
+          <p className="text-sm text-muted leading-relaxed">Some trade unions and employer pension schemes include a death grant or lump sum that can help with funeral costs. It is worth checking whether they were a union member, and looking through any workplace pension paperwork.</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Crowdfunding</h3>
-          <p className="text-sm text-muted leading-relaxed">GoFundMe and similar platforms are increasingly used to raise money for funeral costs, particularly when deaths are unexpected or when the deceased was young. This can be set up quickly and shared through social media. Many people are glad to have a practical way to help.</p>
+          <p className="text-sm text-muted leading-relaxed">GoFundMe and similar platforms are increasingly used to raise money for funeral costs, particularly when a loss is sudden or the person was young. This can be set up quickly and shared through social media. Many people are glad to have a practical way to help.</p>
         </div>
       </div>
 

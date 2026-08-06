@@ -42,7 +42,7 @@ export default function GriefAndAnxietyPage() {
         Grief and Anxiety: Why Bereavement Triggers Panic and How to Manage It
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        When someone you love dies, you expect sadness. What you may not expect is the anxiety. The racing heart, the constant worry, the feeling that something terrible is about to happen, the panic attacks that come out of nowhere. Anxiety after bereavement is extremely common, but it is rarely talked about. This article explains why it happens and what you can do about it.
+        When someone you love passes away, you expect sadness. What you may not expect is the anxiety: the racing heart, the constant worry, the feeling that something terrible is about to happen, the panic attacks that arrive out of nowhere. Anxiety after bereavement is extremely common, but it is rarely talked about. This article explains why it happens, and what can help.
       </p>
 
       <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
@@ -56,7 +56,7 @@ export default function GriefAndAnxietyPage() {
         { id: 'why-grief-causes-anxiety', label: 'Why grief causes anxiety' },
         { id: 'types', label: 'Types of anxiety after bereavement' },
         { id: 'panic-attacks', label: 'Panic attacks and grief' },
-        { id: 'health-anxiety', label: 'Health anxiety after a death' },
+        { id: 'health-anxiety', label: 'Health anxiety after a loss' },
         { id: 'sleep', label: 'Anxiety and sleep' },
         { id: 'children', label: 'Anxiety in bereaved children' },
         { id: 'managing', label: 'Practical ways to manage grief anxiety' },
@@ -68,13 +68,13 @@ export default function GriefAndAnxietyPage() {
       <h2 id="why-grief-causes-anxiety" className="text-2xl font-bold text-foreground mb-6">Why grief causes anxiety</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed mb-4">
-          Grief and anxiety are deeply connected because bereavement shatters your sense of safety. Before the death, you had a certain understanding of the world: that the people you love would be there tomorrow, that life had a basic predictability, that you were safe. A death destroys that illusion. If this could happen, what else could happen? If they could die, who is next?
+          Grief and anxiety are deeply connected because bereavement shakes your sense of safety. Before your loss, you had a certain understanding of the world: that the people you love would be there tomorrow, that life had a basic predictability, that you were safe. Losing someone takes that certainty away. If this could happen, what else could happen? If they could be here one day and gone the next, who else might you lose?
         </p>
         <p className="text-sm text-muted leading-relaxed mb-4">
           Your nervous system responds to this threat by activating your fight-or-flight response. The same system that would protect you from a physical danger treats the emotional danger of loss as a threat to your survival. The result is a body flooded with stress hormones: cortisol and adrenaline. These hormones cause the physical symptoms of anxiety: racing heart, shallow breathing, muscle tension, stomach problems, and the feeling that you are on high alert all the time.
         </p>
         <p className="text-sm text-muted leading-relaxed">
-          This is not a flaw in your response. It is your body doing exactly what it is designed to do. The problem is that the threat (grief) does not go away, so the stress response keeps firing. Over time, this sustained activation can develop into a clinical anxiety disorder if it is not addressed.
+          None of this means you are coping badly. It is your body doing exactly what it is designed to do. The difficulty is that grief does not simply pass, so the stress response keeps firing. Over time, this sustained activation can develop into a clinical anxiety disorder if it is not addressed.
         </p>
       </div>
 
@@ -90,19 +90,19 @@ export default function GriefAndAnxietyPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Separation anxiety</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Separation anxiety is not just for children. After a death, many adults develop an intense fear of losing other people. You may feel anxious when your partner goes to work, panic when your child is late home, or feel unable to be apart from family members. You may start checking on people constantly, calling them more than usual, or feeling a surge of fear when they do not answer. This is a direct response to the experience of loss: your brain has learned that people can disappear, and it is trying to prevent it from happening again.
+            Separation anxiety is not just for children. After losing someone, many adults develop an intense fear of losing other people too. You may feel anxious when your partner goes to work, panic when your child is late home, or feel unable to be apart from family members. You may start checking on people constantly, calling them more than usual, or feeling a surge of fear when they do not answer. This is a direct response to what you have been through: your mind has learned that people can be lost, and it is trying to keep everyone else safe.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Death anxiety (thanatophobia)</h3>
           <p className="text-sm text-muted leading-relaxed">
-            A death in your life can trigger an acute awareness of your own mortality. You may become preoccupied with thoughts about your own death, avoid situations that feel risky, or lie awake thinking about what will happen to your children or partner if you die. This is a very common but rarely discussed aspect of bereavement grief. It does not mean you are suicidal; it means the death has made your own mortality feel immediate and real in a way it did not before.
+            Losing someone can bring your own mortality sharply into focus. You may become preoccupied with thoughts about your own death, avoid situations that feel risky, or lie awake wondering what would happen to your children or partner if you were no longer here. This is a very common but rarely discussed part of bereavement grief. It does not mean you are suicidal; it means the loss has made your own mortality feel immediate and real in a way it did not before.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Social anxiety</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Some bereaved people develop anxiety about social situations: going back to work, attending gatherings, meeting people who do not know about the death. You may dread the "how are you?" question, worry about crying in public, or feel unable to make small talk when your internal world is in chaos. This often leads to withdrawal and isolation, which can make both the grief and the anxiety worse.
+            Some bereaved people develop anxiety about social situations: going back to work, attending gatherings, meeting people who do not yet know what has happened. You may dread the "how are you?" question, worry about crying in public, or feel unable to make small talk when everything inside you feels upside down. This often leads to withdrawal and isolation, which can make both the grief and the anxiety harder to bear.
           </p>
         </div>
       </div>
@@ -114,7 +114,7 @@ export default function GriefAndAnxietyPage() {
           Panic attacks are sudden, intense surges of fear that peak within minutes. They can include: a pounding heart, chest tightness, difficulty breathing, dizziness, tingling or numbness, sweating, nausea, and a feeling that you are dying or losing control. Many people go to A&E during their first panic attack because they genuinely believe they are having a heart attack.
         </p>
         <p className="text-sm text-muted leading-relaxed mb-4">
-          Panic attacks during grief can be triggered by anything: a reminder of the death, a stressful situation, or nothing at all. They can happen at any time, including while you are asleep (nocturnal panic attacks). They are frightening, but they are not dangerous. Your body is producing a massive stress response, but it cannot harm you.
+          Panic attacks during grief can be triggered by almost anything: a reminder of the person you have lost, a stressful situation, or nothing at all. They can happen at any time, including while you are asleep (nocturnal panic attacks). They are frightening, but they are not dangerous. Your body is producing a very large stress response, and it cannot harm you.
         </p>
         <p className="text-sm text-muted leading-relaxed mb-4">
           <strong>If you are having a panic attack right now:</strong>
@@ -128,13 +128,13 @@ export default function GriefAndAnxietyPage() {
       </div>
 
       {/* Health anxiety */}
-      <h2 id="health-anxiety" className="text-2xl font-bold text-foreground mb-6">Health anxiety after a death</h2>
+      <h2 id="health-anxiety" className="text-2xl font-bold text-foreground mb-6">Health anxiety after a loss</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed mb-4">
-          Health anxiety (sometimes called hypochondria) is very common after bereavement, particularly if the person died of an illness. If your parent died of cancer, you may become hyper-aware of every lump, ache, or unusual symptom in your own body. If they died of a heart attack, you may interpret your grief-related chest tightness as a cardiac event.
+          Health anxiety (sometimes called hypochondria) is very common after a bereavement, particularly if the person you lost had been ill. If your parent had cancer, you may become hyper-aware of every lump, ache, or unusual symptom in your own body. If they had a heart attack, you may interpret your grief-related chest tightness as a cardiac event.
         </p>
         <p className="text-sm text-muted leading-relaxed mb-4">
-          This anxiety is not irrational. You have just had vivid, first-hand evidence that bodies fail. The problem is that grief itself causes physical symptoms (fatigue, chest pain, headaches, stomach problems, weakened immunity) that mimic the very illnesses you are afraid of. This creates a feedback loop: you feel a symptom, you worry it means something terrible, the worry makes the symptom worse, which increases the worry.
+          This anxiety is not irrational. You have just seen at close range that bodies are fragile. The difficulty is that grief itself causes physical symptoms (fatigue, chest pain, headaches, stomach problems, weakened immunity) that mimic the very illnesses you are afraid of. This creates a loop: you notice a symptom, you worry it means something terrible, the worry makes the symptom worse, which increases the worry.
         </p>
         <p className="text-sm text-muted leading-relaxed">
           If health anxiety is affecting your daily life, speak to your GP. They can reassure you about specific symptoms and, if needed, refer you to talking therapies. The NHS talking therapies service offers CBT (cognitive behavioural therapy) specifically for health anxiety, and you can self-refer without a GP appointment.
@@ -145,10 +145,10 @@ export default function GriefAndAnxietyPage() {
       <h2 id="sleep" className="text-2xl font-bold text-foreground mb-6">Anxiety and sleep</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed mb-4">
-          Sleep problems are almost universal in bereavement. The combination of grief and anxiety creates a perfect storm for insomnia: your mind races with thoughts about the person, worries about the future, and replays of what happened. You may fall asleep from exhaustion and then wake at 3am with your heart pounding.
+          Sleep problems are almost universal in bereavement. Grief and anxiety together make insomnia very likely: your mind races with thoughts of the person you have lost, worries about the future, and replays of what happened. You may fall asleep from sheer exhaustion and then wake at 3am with your heart pounding.
         </p>
         <p className="text-sm text-muted leading-relaxed mb-4">
-          Sleep deprivation makes both grief and anxiety worse. When you are not sleeping, your emotional regulation suffers, your stress hormones stay elevated, and your ability to cope with the day diminishes. It is a vicious cycle.
+          Sleep deprivation makes both grief and anxiety harder. When you are not sleeping, your emotions are harder to steady, your stress hormones stay elevated, and your ability to cope with the day diminishes. It becomes a difficult cycle to break.
         </p>
         <p className="text-sm text-muted leading-relaxed">
           Some things that may help: keeping a regular bedtime (even if you do not feel sleepy), avoiding screens for an hour before bed, keeping the bedroom cool and dark, writing down your worries before bed (to get them out of your head), listening to a sleep meditation or podcast, and avoiding caffeine after midday. If sleep problems persist for more than a few weeks, speak to your GP. Short-term medication can sometimes help break the cycle.
@@ -159,10 +159,10 @@ export default function GriefAndAnxietyPage() {
       <h2 id="children" className="text-2xl font-bold text-foreground mb-6">Anxiety in bereaved children</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed mb-4">
-          Children who experience a bereavement are particularly vulnerable to anxiety. They may worry that other people they love will die, that they caused the death, or that they will die too. Their anxiety may show up as: clinginess, not wanting to go to school, stomach aches or headaches with no physical cause, difficulty sleeping, bedwetting (after being dry), behavioural changes, or frequent questions about death.
+          Children who experience a bereavement are particularly vulnerable to anxiety. They may worry that other people they love will die, that they somehow caused what happened, or that they will die too. Their anxiety may show up as: clinginess, not wanting to go to school, stomach aches or headaches with no physical cause, difficulty sleeping, bedwetting (after being dry), changes in behaviour, or frequent questions about death.
         </p>
         <p className="text-sm text-muted leading-relaxed mb-4">
-          The most helpful thing you can do is provide honest, age-appropriate answers and a consistent routine. Children need to know that it is safe to ask questions and that their feelings are normal. Avoid phrases like "gone to sleep" or "gone away," which can increase anxiety (the child may fear going to sleep or fear that you too will "go away").
+          The most helpful thing you can do is give honest, age-appropriate answers and keep to a consistent routine. Children need to know that it is safe to ask questions and that their feelings are normal. Avoid phrases like "gone to sleep" or "gone away," which can increase anxiety (the child may fear going to sleep or fear that you too will "go away").
         </p>
         <p className="text-sm text-muted leading-relaxed">
           If a child's anxiety is severe or persistent, organisations like <strong>Winston's Wish (08088 020 021)</strong> and <strong>Grief Encounter (0808 802 0111)</strong> provide specialist support for bereaved children and their families.
@@ -205,7 +205,7 @@ export default function GriefAndAnxietyPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Talk to someone</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Sharing what you are going through, whether with a friend, family member, support group, or counsellor, reduces the isolation that feeds anxiety. You do not have to have the words perfectly. "I'm struggling with anxiety since the death" is enough. Our <Link href="/support" className="text-primary hover:underline">support page</Link> lists free helplines and organisations that can help.
+            Sharing what you are going through, whether with a friend, family member, support group, or counsellor, eases the isolation that feeds anxiety. You do not need to find the perfect words. "I have been really anxious since I lost them" is enough. Our <Link href="/support" className="text-primary hover:underline">support page</Link> lists free helplines and organisations that can help.
           </p>
         </div>
       </div>
@@ -214,7 +214,7 @@ export default function GriefAndAnxietyPage() {
       <h2 id="when-professional" className="text-2xl font-bold text-foreground mb-6">When to seek professional help</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed mb-4">
-          Some anxiety after a bereavement is normal and will ease over time. But if any of the following apply, it is worth speaking to your GP:
+          Some anxiety after a bereavement is normal, and for many people it eases with time. If any of the following apply, though, it is worth speaking to your GP:
         </p>
         <ul className="space-y-2 text-sm text-muted">
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Anxiety is getting worse, not better, over weeks or months</li>
@@ -260,7 +260,7 @@ export default function GriefAndAnxietyPage() {
 
       <div className="bg-primary-light rounded-xl p-8 text-center">
         <h2 className="text-2xl font-bold text-foreground mb-3">Need help with the practical side too?</h2>
-        <p className="text-muted mb-6">If you are also dealing with the paperwork and admin after a death, our free tool creates a personalised checklist for your situation.</p>
+        <p className="text-muted mb-6">If you are also dealing with the paperwork and admin after a bereavement, our free tool creates a personalised checklist for your situation.</p>
         <Link href="/start" className="inline-block px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors">
           Get Your Personalised Guide
         </Link>

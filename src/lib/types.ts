@@ -58,14 +58,14 @@ export type QuestionSection =
   | 'funeral';
 
 export const SECTION_LABELS: Record<QuestionSection, string> = {
-  about_deceased: 'About the person who died',
+  about_deceased: 'About the person you have lost',
   about_you: 'About you',
-  circumstances: 'The circumstances',
-  cultural: 'Cultural or religious needs',
-  legal: 'Will and estate',
-  property: 'Property',
-  financial: 'Financial situation',
-  funeral: 'Funeral arrangements',
+  circumstances: 'What happened',
+  cultural: 'Faith and tradition',
+  legal: 'Their will and estate',
+  property: 'Their home',
+  financial: 'Money matters',
+  funeral: 'The funeral',
 };
 
 export type TaskCategory =
@@ -92,15 +92,15 @@ export const CATEGORY_LABELS: Record<TaskCategory, string> = {
 };
 
 export const CATEGORY_DESCRIPTIONS: Record<TaskCategory, string> = {
-  immediate: 'Things to do in the first 24-48 hours',
-  registration: 'Formally registering the death and getting certificates',
-  funeral: 'Planning and arranging the funeral',
-  financial: 'Banks, pensions, insurance, and other financial matters',
-  legal: 'Probate, wills, and estate administration',
-  government: 'Notifying government departments and services',
-  property: 'Dealing with the home and property',
-  digital: 'Email, social media, and online accounts',
-  ongoing: 'Things to deal with over the coming months',
+  immediate: 'The few things worth doing in the first day or two',
+  registration: 'Registering the death and getting the certificates you will need',
+  funeral: 'Arranging the funeral, at whatever pace feels right',
+  financial: 'Banks, pensions, insurance and other money matters',
+  legal: 'Probate, the will, and sorting out the estate',
+  government: 'Letting government departments and services know',
+  property: 'Looking after their home',
+  digital: 'Email, social media and online accounts',
+  ongoing: 'Things that can wait for the coming months',
 };
 
 export type TaskPriority = 'urgent' | 'important' | 'normal';

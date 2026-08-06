@@ -5,7 +5,8 @@ import { bereavementContacts } from '@/lib/bereavement-contacts';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://helpafterloss.co.uk';
-  const now = '2026-03-15';
+  // Bumped when site content is materially revised, so crawlers see a real change date
+  const now = '2026-08-06';
 
   const staticPages: MetadataRoute.Sitemap = [
     { url: baseUrl, lastModified: now, changeFrequency: 'monthly', priority: 1.0 },
@@ -52,7 +53,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/guides/lost-a-child`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/guides/lost-a-sibling`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/guides/lost-a-friend`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/print-checklist`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/deadline-tracker`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/document-vault`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/blog`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },

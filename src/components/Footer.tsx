@@ -8,7 +8,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <h2 className="text-lg font-semibold text-primary-dark mb-3">Help After Loss</h2>
             <p className="text-sm text-muted leading-relaxed max-w-md">
-              Free, compassionate guidance when someone dies. We help you navigate the practical steps so you can focus on what matters most.
+              Free, gentle guidance for families after someone passes away. We take care of explaining the practical steps, so you can give your attention to the people who need you.
             </p>
             <p className="text-sm text-muted mt-4">
               Need someone to talk to right now?<br />
@@ -27,7 +27,7 @@ export function Footer() {
               <li><Link href="/guides/executor-duties" className="text-muted hover:text-primary transition-colors">Executor Duties</Link></li>
               <li><Link href="/guides/bereavement-benefits" className="text-muted hover:text-primary transition-colors">Bereavement Benefits</Link></li>
               <li><Link href="/guides/funeral-options" className="text-muted hover:text-primary transition-colors">Funeral Options</Link></li>
-              <li><Link href="/intestacy" className="text-muted hover:text-primary transition-colors">Dying Without a Will</Link></li>
+              <li><Link href="/intestacy" className="text-muted hover:text-primary transition-colors">When There Is No Will</Link></li>
               <li><Link href="/costs" className="text-muted hover:text-primary transition-colors">Costs Breakdown</Link></li>
               <li><Link href="/tell-us-once" className="text-muted hover:text-primary transition-colors">Tell Us Once</Link></li>
               <li><Link href="/template-letters" className="text-muted hover:text-primary transition-colors">Template Letters</Link></li>
@@ -40,7 +40,7 @@ export function Footer() {
             <h3 className="text-sm font-semibold text-foreground mb-3">Money & Property</h3>
             <ul className="space-y-2 text-sm">
               <li><Link href="/guides/bank-accounts-after-death" className="text-muted hover:text-primary transition-colors">Bank Accounts</Link></li>
-              <li><Link href="/guides/debts-after-death" className="text-muted hover:text-primary transition-colors">Debts After Death</Link></li>
+              <li><Link href="/guides/debts-after-death" className="text-muted hover:text-primary transition-colors">Debts They Left Behind</Link></li>
               <li><Link href="/guides/property-after-death" className="text-muted hover:text-primary transition-colors">Property & Mortgages</Link></li>
               <li><Link href="/guides/pensions-after-death" className="text-muted hover:text-primary transition-colors">Pensions</Link></li>
               <li><Link href="/guides/inheritance-tax" className="text-muted hover:text-primary transition-colors">Inheritance Tax</Link></li>

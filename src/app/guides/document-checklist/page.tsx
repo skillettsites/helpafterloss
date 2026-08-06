@@ -28,10 +28,10 @@ const CATEGORIES = [
     urgent: true,
     items: [
       { doc: 'Medical Certificate of Cause of Death (MCCD)', detail: 'Issued by the doctor or hospital. This is the document you take to the Register Office to register the death. Without it, you cannot register and the funeral cannot proceed.' },
-      { doc: 'Photo ID of the deceased', detail: 'Passport or driving licence. Useful for the registrar and for closing accounts. Not always required but keep it to hand.' },
+      { doc: 'Photo ID for the person who has passed away', detail: 'Passport or driving licence. Useful for the registrar and for closing accounts. Not always required but keep it to hand.' },
       { doc: 'Photo ID of the person registering the death', detail: 'Your own passport, driving licence, or other government-issued ID. The registrar will want to see it.' },
-      { doc: 'NHS number of the deceased', detail: 'Found on any NHS letter, prescription, or medical card. Needed to cancel NHS registration and return prescriptions.' },
-      { doc: 'Details of the deceased\'s GP', detail: 'Name, address, and phone number of the GP surgery. The registrar or coroner\'s office may need this.' },
+      { doc: 'Their NHS number', detail: 'Found on any NHS letter, prescription, or medical card. Needed to cancel NHS registration and return prescriptions.' },
+      { doc: 'Their GP\'s details', detail: 'Name, address, and phone number of the GP surgery. The registrar or coroner\'s office may need this.' },
     ],
   },
   {
@@ -40,7 +40,7 @@ const CATEGORIES = [
     urgent: false,
     items: [
       { doc: 'Medical Certificate of Cause of Death (MCCD)', detail: 'The key document. Without this, registration cannot take place.' },
-      { doc: 'Birth certificate of the deceased', detail: 'If available. Not always required but helps the registrar record details accurately.' },
+      { doc: 'Their birth certificate', detail: 'If available. Not always required but helps the registrar record details accurately.' },
       { doc: 'Marriage or civil partnership certificate', detail: 'If the person was married or in a civil partnership. Confirms marital status for the death record.' },
       { doc: 'Decree absolute (if divorced)', detail: 'If the person was divorced, the registrar may need this to record the correct marital status.' },
       { doc: 'National Insurance number', detail: 'Found on any HMRC letter, payslip, or NI card. The registrar uses this for the Tell Us Once service.' },
@@ -83,7 +83,7 @@ const CATEGORIES = [
     urgent: false,
     items: [
       { doc: 'Title deeds or Land Registry documents', detail: 'Confirms ownership and whether the property is held as joint tenants (passes automatically to co-owner) or tenants in common (goes into the estate). Check at HM Land Registry: search the register at gov.uk for £3.' },
-      { doc: 'Mortgage documents', detail: 'Contact the mortgage lender immediately after the death. They need to be notified. If there was life insurance linked to the mortgage, this may clear the balance.' },
+      { doc: 'Mortgage documents', detail: 'Contact the mortgage lender as soon as you are able to. They do need to be told. If there was life insurance linked to the mortgage, this may clear the balance.' },
       { doc: 'Tenancy agreement', detail: 'If the person rented, the landlord must be notified. Check the tenancy agreement for notice periods and the process for ending the tenancy.' },
       { doc: 'Home insurance policy', detail: 'Notify the insurer immediately. An empty property may not be covered under a standard home insurance policy after 30-60 days.' },
       { doc: 'Buildings and contents insurance', detail: 'Separate policies may cover buildings and contents. Both need to be updated or cancelled.' },
@@ -97,7 +97,7 @@ const CATEGORIES = [
     subtitle: 'To stop or transfer pension payments',
     urgent: false,
     items: [
-      { doc: 'State Pension letters', detail: 'The most recent letter from DWP or HMRC showing State Pension entitlement. State Pension payments must stop immediately after death; overpayments will need to be returned.' },
+      { doc: 'State Pension letters', detail: 'The most recent letter from DWP or HMRC showing State Pension entitlement. State Pension payments must stop as soon as someone passes away; anything overpaid will need to be returned.' },
       { doc: 'Workplace pension details', detail: 'Contact each employer\'s pension scheme. There may be a dependant\'s pension payable to a surviving spouse or civil partner, or a lump-sum death benefit.' },
       { doc: 'Private or personal pension documents', detail: 'Any SIPP (Self-Invested Personal Pension), annuity, or personal pension. Check for death benefits, which may pass outside the estate (and potentially free of inheritance tax).' },
       { doc: 'Life insurance policies', detail: 'Policies may pay out a lump sum to named beneficiaries. Contact each insurer with a copy of the death certificate. Policies written in trust pass outside the estate and do not require probate.' },
@@ -126,12 +126,12 @@ const CATEGORIES = [
     items: [
       { doc: 'Passport', detail: 'Cancel the passport by sending it to HM Passport Office (no fee to cancel). If you use Tell Us Once, the Passport Office is notified automatically.' },
       { doc: 'Driving licence', detail: 'Return to DVLA or notify via Tell Us Once. Vehicle tax may also need to be cancelled if the person owned a car.' },
-      { doc: 'Blue Badge', detail: 'Must be returned to the issuing local authority. Blue Badges cannot be used by anyone else after the holder\'s death.' },
+      { doc: 'Blue Badge', detail: 'Must be returned to the issuing local authority. Blue Badges cannot be used by anyone else once the holder has passed away.' },
       { doc: 'Bus pass or travel card', detail: 'Local bus passes and Freedom Passes should be returned to the issuing council.' },
       { doc: 'Library card', detail: 'Return to the local library. Check for any books or items on loan.' },
       { doc: 'Council tax bill', detail: 'Needed to notify the council and claim any applicable exemptions.' },
       { doc: 'Electoral roll', detail: 'Notify the local Electoral Registration Office to remove the person from the register.' },
-      { doc: 'Jury summons', detail: 'If one arrives after the death, write to the court explaining the person has died. Include a copy of the death certificate.' },
+      { doc: 'Jury summons', detail: 'If one arrives after they have passed away, write to the court to explain. Include a copy of the death certificate.' },
     ],
   },
   {
@@ -142,7 +142,7 @@ const CATEGORIES = [
       { doc: 'Life insurance policy documents', detail: 'Contact the insurer to make a claim. Some policies are written in trust and pay directly to named beneficiaries without going through the estate.' },
       { doc: 'Car insurance', detail: 'Cancel the policy and obtain a refund of unused premium. If someone else will drive the car, transfer cover. The car may need to be registered in a new name.' },
       { doc: 'Pet insurance', detail: 'Cancel or transfer to whoever is taking on the pets.' },
-      { doc: 'Travel insurance', detail: 'Cancel any existing policies. If the person died abroad, travel insurance may cover repatriation costs.' },
+      { doc: 'Travel insurance', detail: 'Cancel any existing policies. If they passed away abroad, travel insurance may cover repatriation costs.' },
       { doc: 'Private medical insurance', detail: 'Cancel the policy and claim any refund on unused premium.' },
       { doc: 'Income protection or critical illness insurance', detail: 'These policies typically end at death, but check whether there is a death benefit or outstanding claim.' },
       { doc: 'Over-50s or funeral plan insurance', detail: 'Many people have over-50s life insurance policies designed to pay funeral costs. Check for these among the person\'s paperwork and bank statements.' },
@@ -161,7 +161,7 @@ export default function DocumentChecklistPage() {
         Document Checklist: Everything You Need to Gather
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        Dealing with paperwork after a bereavement feels overwhelming. This checklist organises every document you will need, by category, so you can work through it at your own pace and know exactly where you stand.
+        The paperwork after a bereavement can feel like one thing too many, particularly in the first few weeks. This checklist sets out every document you are likely to need, grouped by category, so you can work through it at your own pace and see exactly where you stand.
       </p>
 
       {/* Top tip */}
@@ -250,7 +250,7 @@ export default function DocumentChecklistPage() {
           </div>
           <div>
             <p className="font-semibold text-foreground">Unknown creditors or accounts?</p>
-            <p>You can check the deceased's credit file through Experian, Equifax, or TransUnion by writing to them and providing evidence of your authority to act. This reveals credit cards, loans, and accounts you may not have known about.</p>
+            <p>You can check their credit file through Experian, Equifax, or TransUnion by writing to them and providing evidence of your authority to act. This reveals credit cards, loans, and accounts you may not have known about.</p>
           </div>
         </div>
       </div>

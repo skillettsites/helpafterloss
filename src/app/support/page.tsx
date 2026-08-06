@@ -31,13 +31,13 @@ export default function SupportPage() {
         Support and Helplines
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        You do not have to go through this alone. These organisations offer free, confidential support for anyone affected by bereavement. Whether you need someone to talk to, practical advice, or financial guidance.
+        You do not have to go through this on your own. Every organisation below offers free, confidential support to anyone affected by bereavement, whether you need someone to talk to at 3am, practical advice, or help with money worries. Reaching out is not a weakness, and there is no wrong time to do it.
       </p>
 
       {/* Emergency banner */}
       <div className="bg-primary rounded-xl p-6 mb-10 text-white">
         <h2 className="text-xl font-bold mb-2">Need someone to talk to right now?</h2>
-        <p className="text-white/90 mb-4">Samaritans are available 24 hours a day, 365 days a year. Free to call.</p>
+        <p className="text-white/90 mb-4">Samaritans are there 24 hours a day, every day of the year. Free to call, and you do not need to know what to say before you ring.</p>
         <a
           href="tel:116123"
           className="inline-block px-6 py-3 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-colors"

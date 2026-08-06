@@ -72,7 +72,7 @@ export function Checklist({ tasksByCategory }: ChecklistProps) {
         )}
         {completedCount === totalTasks && totalTasks > 0 && (
           <p className="text-sm text-success mt-3 font-medium">
-            You have completed everything on your list. Well done.
+            You have worked through everything on your list. That is no small thing.
           </p>
         )}
         {user && syncError && (
@@ -96,7 +96,7 @@ export function Checklist({ tasksByCategory }: ChecklistProps) {
             {catIndex === 3 && (
               <div className="bg-warm border border-warm-border rounded-xl p-5 mb-6">
                 <p className="text-sm text-amber-800 leading-relaxed">
-                  You are doing really well. Remember, there is no rush. If a task feels too much right now, come back to it later. Your wellbeing matters more than any deadline.
+                  You are doing well. There is no rush with any of this. If something feels like too much today, leave it and come back when you are ready. Looking after yourself matters more than any deadline.
                 </p>
               </div>
             )}

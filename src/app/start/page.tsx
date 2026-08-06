@@ -3,7 +3,7 @@ import { Questionnaire } from '@/components/Questionnaire';
 
 export const metadata: Metadata = {
   title: 'Get Your Personalised Guide',
-  description: 'Answer a few questions about your situation and we will create a personalised step-by-step guide with everything you need to do, tailored to your circumstances.',
+  description: 'Answer a few gentle questions about your situation and we will put together a personalised step-by-step guide, shaped around your circumstances. Free, and nothing is stored.',
   alternates: { canonical: 'https://helpafterloss.co.uk/start' },
   openGraph: {
     title: 'Get Your Personalised Bereavement Guide',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Get Your Personalised Bereavement Guide',
-    description: 'Free, personalised guidance when someone dies in the UK. Takes about 3 minutes.',
+    description: 'Free, personalised guidance for UK families after someone passes away. Takes about 3 minutes.',
   },
 };
 
@@ -24,13 +24,13 @@ export default function StartPage() {
     <div className="max-w-3xl mx-auto px-4 py-8">
       <div className="text-center mb-8">
         <h1 className="text-3xl font-semibold text-foreground mb-3">
-          Let us help you work out what to do
+          Let us take some of this off your shoulders
         </h1>
         <p className="text-muted leading-relaxed max-w-lg mx-auto">
-          We will ask you some simple questions about your situation. Based on your answers, we will create a personalised checklist with everything you need to do, in the right order, with deadlines and helpful links.
+          A few gentle questions, and then we will put together a clear list of what needs doing, in a sensible order, with the dates that matter and the links you will need. Some of the questions are difficult ones. Answer what you can, and skip anything you would rather not.
         </p>
         <p className="text-sm text-muted mt-3">
-          Your answers are saved on your device only. We do not store any of your information.
+          Everything you type stays on your own device. We never see it, store it, or share it.
         </p>
       </div>
 

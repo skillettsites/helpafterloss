@@ -29,15 +29,15 @@ const FAQ = [
   },
   {
     q: 'Do I need probate to claim life insurance?',
-    a: 'Not if the policy was written in trust. Policies held in trust are paid directly to the named beneficiaries without waiting for probate. If the policy was not in trust, the payout forms part of the deceased\'s estate, and probate is usually required before the insurer will release the funds. This is one of the key reasons financial advisers recommend placing life insurance policies in trust.',
+    a: 'Not if the policy was written in trust. Policies held in trust are paid directly to the named beneficiaries without waiting for probate. If the policy was not in trust, the payout forms part of the estate, and probate is usually required before the insurer will release the funds. This is one of the key reasons financial advisers recommend placing life insurance policies in trust.',
   },
   {
     q: 'Is life insurance payout taxable in the UK?',
-    a: 'The payout itself is not subject to income tax or capital gains tax. However, if the policy was not written in trust, the payout forms part of the deceased\'s estate for inheritance tax purposes. If the total estate (including the life insurance payout) exceeds the inheritance tax threshold (currently £325,000, or up to £500,000 with the residence nil-rate band), inheritance tax at 40% may be due on the amount above the threshold. Policies written in trust avoid this entirely.',
+    a: 'The payout itself is not subject to income tax or capital gains tax. However, if the policy was not written in trust, the payout forms part of the estate for inheritance tax purposes. If the total estate (including the life insurance payout) exceeds the inheritance tax threshold (currently £325,000, or up to £500,000 with the residence nil-rate band), inheritance tax at 40% may be due on the amount above the threshold. Policies written in trust avoid this entirely.',
   },
   {
     q: 'How do I find out if someone had life insurance?',
-    a: 'Check the deceased\'s paperwork, bank and credit card statements for premium payments, their email inbox, and any documents from financial advisers or mortgage brokers. Contact their employer\'s HR department about death in service benefits. Ask their bank if any policies were sold alongside accounts or mortgages. You can also search the unclaimed assets register at the Association of British Insurers (abi.org.uk). Finally, check with any trade unions or professional bodies they belonged to, as these sometimes include life cover as a membership benefit.',
+    a: 'Check their paperwork, bank and credit card statements for premium payments, their email inbox, and any documents from financial advisers or mortgage brokers. Contact their employer\'s HR department about death in service benefits. Ask their bank if any policies were sold alongside accounts or mortgages. You can also search the unclaimed assets register at the Association of British Insurers (abi.org.uk). Finally, check with any trade unions or professional bodies they belonged to, as these sometimes include life cover as a membership benefit.',
   },
   {
     q: 'Can a life insurance claim be rejected?',
@@ -56,7 +56,7 @@ export default function LifeInsuranceClaimPage() {
         How to Claim Life Insurance After a Death in the UK
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        Life insurance can provide crucial financial support after a death, but many families do not know whether a policy exists, where to find it, or how to make a claim. This guide walks you through the entire process: finding policies, gathering documents, submitting the claim, and understanding what happens to the payout.
+        Life insurance can make a real difference financially after someone passes away, but many families do not know whether a policy exists, where to find it, or how to make a claim. This guide walks you through the entire process: finding policies, gathering documents, submitting the claim, and understanding what happens to the payout.
       </p>
 
       {/* Quick summary stats */}
@@ -91,7 +91,7 @@ export default function LifeInsuranceClaimPage() {
             <li><strong>Mortgage lender or broker:</strong> many mortgages have associated life cover</li>
             <li><strong>Bank accounts:</strong> some current accounts include free life insurance as a perk</li>
             <li><strong>Trade unions and professional bodies:</strong> some include life cover with membership</li>
-            <li><strong>Financial adviser:</strong> if the deceased used an IFA, they will have records of all policies arranged</li>
+            <li><strong>Financial adviser:</strong> if they used an IFA, that adviser will have records of every policy they arranged</li>
             <li><strong>Association of British Insurers:</strong> the unclaimed assets register at abi.org.uk can help trace lost policies</li>
           </ul>
         </div>
@@ -103,7 +103,7 @@ export default function LifeInsuranceClaimPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Step 1: Contact the insurer</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Call the insurance company's bereavement or claims team. They will confirm whether the policy is active and in force, explain what benefits are payable, and send you a claim form. Have the policy number ready if you have it, but insurers can also look up policies using the deceased's name, date of birth, and address. Most insurers have dedicated bereavement teams who will guide you through the process.
+            Call the insurance company's bereavement or claims team. They will confirm whether the policy is active and in force, explain what benefits are payable, and send you a claim form. Have the policy number ready if you have it, but insurers can also look up policies using their name, date of birth, and address. Most insurers have dedicated bereavement teams who will guide you through the process.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -116,7 +116,7 @@ export default function LifeInsuranceClaimPage() {
             <li>The policy document (if available)</li>
             <li>A completed claim form (provided by the insurer)</li>
             <li>Proof of the claimant's identity (passport or driving licence)</li>
-            <li>Proof of relationship to the deceased (marriage certificate, birth certificate)</li>
+            <li>Proof of your relationship to them (marriage certificate, birth certificate)</li>
             <li>The Grant of Probate or Letters of Administration (if the policy is not in trust)</li>
             <li>The claimant's bank details for the payout</li>
           </ul>
@@ -124,7 +124,7 @@ export default function LifeInsuranceClaimPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Step 3: Submit the claim</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Return the completed claim form with all supporting documents. Send copies rather than originals where possible, and use tracked delivery. Keep copies of everything you send. The insurer will acknowledge receipt and give you a reference number. They may need to verify the claim with the deceased's GP or request further information. Ask for a specific timeline so you know when to expect the decision.
+            Return the completed claim form with all supporting documents. Send copies rather than originals where possible, and use tracked delivery. Keep copies of everything you send. The insurer will acknowledge receipt and give you a reference number. They may need to verify the claim with their GP or ask for further information. Ask for a specific timeline so you know when to expect the decision.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -141,13 +141,13 @@ export default function LifeInsuranceClaimPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">What does "written in trust" mean?</h3>
           <p className="text-sm text-muted leading-relaxed">
-            When a life insurance policy is placed in trust, it is legally held by trustees for the benefit of named beneficiaries. This means the payout does not form part of the deceased's estate. It is paid directly to the beneficiaries without waiting for probate, and it does not count towards the estate for inheritance tax purposes. This is a significant advantage. Many financial advisers recommend placing life insurance in trust as standard. Check the policy documents for any mention of a trust deed, or ask the insurer directly.
+            When a life insurance policy is placed in trust, it is legally held by trustees for the benefit of named beneficiaries. This means the payout does not form part of the estate. It is paid directly to the beneficiaries without waiting for probate, and it does not count towards the estate for inheritance tax purposes. This is a significant advantage. Many financial advisers recommend placing life insurance in trust as standard. Check the policy documents for any mention of a trust deed, or ask the insurer directly.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">What if the policy is not in trust?</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If the policy was not written in trust, the payout goes into the deceased's estate. This means you will usually need probate before the insurer releases the funds. The payout also counts towards the total estate value for inheritance tax. If the estate (including the life insurance payout) exceeds the inheritance tax threshold, 40% tax is due on the excess. The executor will need to account for the payout in the IHT return (form IHT400) before distributing the estate.
+            If the policy was not written in trust, the payout goes into the estate. This means you will usually need probate before the insurer releases the funds. The payout also counts towards the total estate value for inheritance tax. If the estate (including the life insurance payout) exceeds the inheritance tax threshold, 40% tax is due on the excess. The executor will need to account for the payout in the IHT return (form IHT400) before distributing the estate.
           </p>
         </div>
       </div>
@@ -187,7 +187,7 @@ export default function LifeInsuranceClaimPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Lapsed policy</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If premium payments stopped before the death, the policy may have lapsed. Some policies have a grace period (typically 30 days) during which the policy remains active even if a payment is missed. Check with the insurer whether the policy was still in force at the date of death. If premiums were missed due to the policyholder's illness, you may be able to argue that the policy should be reinstated.
+            If premium payments stopped before they passed away, the policy may have lapsed. Some policies have a grace period (typically 30 days) during which the policy remains active even if a payment is missed. Check with the insurer whether the policy was still in force at the date of death. If premiums were missed due to the policyholder's illness, you may be able to argue that the policy should be reinstated.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -201,7 +201,7 @@ export default function LifeInsuranceClaimPage() {
       {/* Important note */}
       <div className="bg-warm border border-warm-border rounded-xl p-5 mb-10">
         <p className="text-sm text-amber-800 leading-relaxed">
-          <strong>There is no time limit for making a life insurance claim.</strong> Even if the death happened months or years ago, you can still claim. Insurers cannot refuse a valid claim simply because it was submitted late. If you have recently discovered a policy you did not know about, contact the insurer and they will process it.
+          <strong>There is no time limit for making a life insurance claim.</strong> Even if it has been months or years, you can still claim. Insurers cannot refuse a valid claim simply because it was submitted late. If you have recently discovered a policy you did not know about, contact the insurer and they will process it.
         </p>
       </div>
 

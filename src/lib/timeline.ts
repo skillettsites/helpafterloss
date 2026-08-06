@@ -32,7 +32,6 @@ export function buildTimeline(answers: Partial<UserAnswers>): TimelineEntry[] {
 
   const dod = new Date(answers.dateOfDeath);
   const tasks = getFilteredTasks(answers);
-  const today = new Date();
 
   const regDays = answers.location === 'scotland' ? 8 : 5;
   const hasUrgentFaith = answers.faithRequirements === 'muslim' || answers.faithRequirements === 'jewish';
@@ -45,18 +44,25 @@ export function buildTimeline(answers: Partial<UserAnswers>): TimelineEntry[] {
     periods.push({
       daysFromDeath: 1,
       label: 'Funeral (urgent)',
-      description: 'Your faith tradition prioritises burial within 24-48 hours',
+      description: 'Your faith tradition asks for burial within 24-48 hours',
       isUrgent: true,
     });
   }
 
+  // In England, Wales and NI the 5 days runs from getting confirmation from the
+  // medical examiner, not from the date of death, so this date is a guide only and
+  // is deliberately not presented as a hard statutory deadline.
+  const regDescription = answers.location === 'scotland'
+    ? 'This needs to be done within 8 days'
+    : 'Usually within 5 days of the medical examiner confirming the cause of death. If that confirmation took a while to come through, you will have longer than this date suggests.';
+
   periods.push(
-    { daysFromDeath: regDays, label: 'Register the death', description: `Must be done within ${regDays} days`, isUrgent: true },
-    { daysFromDeath: 14, label: 'First two weeks', description: 'Funeral, Tell Us Once, and urgent notifications', isUrgent: false },
+    { daysFromDeath: regDays, label: 'Register the death', description: regDescription, isUrgent: true },
+    { daysFromDeath: 14, label: 'First two weeks', description: 'Funeral arrangements, Tell Us Once, and the most pressing notifications', isUrgent: false },
     { daysFromDeath: 30, label: 'First month', description: 'Financial notifications and insurance checks', isUrgent: false },
-    { daysFromDeath: 90, label: 'First three months', description: 'Probate application, estate valuation', isUrgent: false },
+    { daysFromDeath: 90, label: 'First three months', description: 'Probate application and estate valuation', isUrgent: false },
     { daysFromDeath: 180, label: 'Six months', description: 'Inheritance tax deadline, funeral payment claim', isUrgent: false },
-    { daysFromDeath: 365, label: 'First year', description: 'Estate distribution, ongoing matters', isUrgent: false },
+    { daysFromDeath: 365, label: 'First year', description: 'Estate distribution and anything still outstanding', isUrgent: false },
   );
 
   if (answers.relationship === 'spouse' || answers.relationship === 'civilPartner') {

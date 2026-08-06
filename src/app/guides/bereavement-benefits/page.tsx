@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const QUICK_CHECKS = [
   {
-    title: 'Did your spouse or civil partner die?',
+    title: 'Have you lost your husband, wife, or civil partner?',
     benefit: 'Bereavement Support Payment',
     amount: 'Up to £3,500 + £350/month',
     href: '#bsp',
@@ -39,18 +39,18 @@ const QUICK_CHECKS = [
     eligible: 'Universal Credit, Pension Credit, and others',
   },
   {
-    title: 'Did a child under 18 die?',
+    title: 'Have you lost a child under 18?',
     benefit: "Children's Funeral Fund",
     amount: 'Burial/cremation fees covered',
     href: '#childrens-fund',
     eligible: 'No means test. England only.',
   },
   {
-    title: 'Are you now caring for orphaned children?',
+    title: 'Are you now raising a child who has lost both parents?',
     benefit: "Guardian's Allowance",
-    amount: '£21.75 per week, per child',
+    amount: '£22.95 per week, per child',
     href: '#guardians',
-    eligible: 'Both parents must have died',
+    eligible: 'Both parents must have passed away',
   },
   {
     title: 'Has your income dropped significantly?',
@@ -60,7 +60,7 @@ const QUICK_CHECKS = [
     eligible: 'Depends on age and income',
   },
   {
-    title: 'Did someone die serving in the armed forces?',
+    title: 'Did you lose someone serving in the armed forces?',
     benefit: 'War Pension / AFCS',
     amount: 'Lump sum and ongoing pension',
     href: '#armed-forces',
@@ -106,7 +106,7 @@ export default function BereavementBenefitsPage() {
         Bereavement Benefits: Every Payment You Can Claim
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-6">
-        When someone dies, a range of financial support is available from the government and other organisations. Many people never claim what they are fully entitled to, either because they do not know it exists or because the paperwork feels too much to deal with at a difficult time. This guide covers every benefit, who qualifies, and how to claim.
+        When someone passes away, there is a range of financial support available from the government and other organisations. A lot of people never claim everything they are entitled to, either because they did not know it existed or because the forms felt like one thing too many at an already hard time. This guide covers every benefit, who qualifies, and how to claim.
       </p>
 
       <GuideImage
@@ -159,9 +159,9 @@ export default function BereavementBenefitsPage() {
           </div>
         </div>
         <div className="space-y-2 text-sm text-muted leading-relaxed">
-          <p><strong className="text-foreground">Who qualifies:</strong> You must have been married to or in a civil partnership with the person who died. You must be under State Pension age. Your partner must have paid National Insurance contributions for at least 25 weeks, or died as a result of a work-related accident or disease.</p>
+          <p><strong className="text-foreground">Who qualifies:</strong> You must have been married to or in a civil partnership with the person who has passed away. You must be under State Pension age. Your partner must have paid National Insurance contributions for at least 25 weeks, or died as a result of a work-related accident or disease.</p>
           <p><strong className="text-foreground">Time limit:</strong> You must claim within 21 months of the death. Claim within 3 months to receive the full 18 monthly payments.</p>
-          <p><strong className="text-foreground">How to claim:</strong> Call 0800 731 0469 or apply online at gov.uk/bereavement-support-payment. You will need the death certificate and your National Insurance number.</p>
+          <p><strong className="text-foreground">How to claim:</strong> Call 0800 151 2012 or apply online at gov.uk/bereavement-support-payment. You will need the death certificate and your National Insurance number.</p>
           <p><strong className="text-foreground">Tax status:</strong> Not taxable. Not counted as income for Universal Credit for the first 12 months.</p>
         </div>
       </div>
@@ -184,8 +184,8 @@ export default function BereavementBenefitsPage() {
         <div className="space-y-2 text-sm text-muted leading-relaxed">
           <p><strong className="text-foreground">Who qualifies:</strong> You must be receiving Universal Credit, Pension Credit, Housing Benefit, Income Support, income-based Jobseeker's Allowance, income-related Employment and Support Allowance, or Child Tax Credit. You must be responsible for paying for the funeral (as partner, close relative, or close friend with no closer relative).</p>
           <p><strong className="text-foreground">Time limit:</strong> You must apply within 6 months of the funeral on form SF200. Apply as soon as possible.</p>
-          <p><strong className="text-foreground">How to claim:</strong> Call 0800 731 0469 or get form SF200 from a Jobcentre Plus.</p>
-          <p><strong className="text-foreground">Important note:</strong> If the deceased had money in their estate, DWP will recover the payment from it. This does not affect your entitlement to claim.</p>
+          <p><strong className="text-foreground">How to claim:</strong> Call 0800 151 2012 or get form SF200 from a Jobcentre Plus.</p>
+          <p><strong className="text-foreground">Important note:</strong> If there is money in the estate, DWP will recover the payment from it. This does not affect your entitlement to claim.</p>
         </div>
       </div>
 
@@ -193,7 +193,7 @@ export default function BereavementBenefitsPage() {
       <div id="childrens-fund" className="bg-card rounded-xl border border-border p-6 mb-6">
         <h2 className="text-xl font-bold text-foreground mb-3">Children's Funeral Fund</h2>
         <p className="text-sm text-muted leading-relaxed mb-4">
-          If a child under 18 dies (or a baby is stillborn after 24 weeks of pregnancy), the Children's Funeral Fund covers the burial or cremation costs in England. There is no means test: any family qualifies regardless of income or savings.
+          If a child under 18 passes away (or a baby is stillborn after 24 weeks of pregnancy), the Children's Funeral Fund covers the burial or cremation costs in England. There is no means test: any family qualifies regardless of income or savings.
         </p>
         <div className="space-y-2 text-sm text-muted leading-relaxed">
           <p><strong className="text-foreground">What is covered:</strong> Burial or cremation fees, the coffin or casket, and in some cases the funeral director's basic disbursements.</p>
@@ -207,14 +207,14 @@ export default function BereavementBenefitsPage() {
       <div id="guardians" className="bg-card rounded-xl border border-border p-6 mb-6">
         <h2 className="text-xl font-bold text-foreground mb-3">Guardian's Allowance</h2>
         <p className="text-sm text-muted leading-relaxed mb-4">
-          If you are raising a child whose parents have both died, you may be entitled to Guardian's Allowance on top of Child Benefit.
+          If you are raising a child whose parents have both passed away, you may be entitled to Guardian's Allowance on top of Child Benefit.
         </p>
         <div className="bg-background rounded-lg p-4 border border-border mb-4">
-          <p className="text-primary font-bold">£21.75 per week per child</p>
+          <p className="text-primary font-bold">£22.95 per week per child</p>
           <p className="text-sm text-muted mt-1">(2024-25 rate, paid on top of Child Benefit)</p>
         </div>
         <div className="space-y-2 text-sm text-muted leading-relaxed">
-          <p><strong className="text-foreground">Who qualifies:</strong> Both parents must have died, or one parent has died and the other is untraceable or in prison for at least 2 years.</p>
+          <p><strong className="text-foreground">Who qualifies:</strong> Both parents must have passed away, or one parent has passed away and the other is untraceable or in prison for at least 2 years.</p>
           <p><strong className="text-foreground">How to claim:</strong> Complete form BG1, available from gov.uk or your local HMRC office.</p>
           <p><strong className="text-foreground">Tax status:</strong> Not taxable and does not affect other benefits.</p>
         </div>
@@ -229,7 +229,7 @@ export default function BereavementBenefitsPage() {
       <div id="armed-forces" className="bg-card rounded-xl border border-border p-6 mb-6">
         <h2 className="text-xl font-bold text-foreground mb-3">War Pension and Armed Forces Compensation</h2>
         <p className="text-sm text-muted leading-relaxed mb-4">
-          If someone died as a result of service in the armed forces, or if an ex-serviceperson has died, there are specific schemes providing ongoing financial support for dependants.
+          If someone died as a result of service in the armed forces, or if an ex-serviceperson has passed away, there are specific schemes providing ongoing financial support for dependants.
         </p>
         <div className="space-y-3 text-sm text-muted leading-relaxed">
           <div>
@@ -251,7 +251,7 @@ export default function BereavementBenefitsPage() {
       <div id="income-benefits" className="bg-card rounded-xl border border-border p-6 mb-6">
         <h2 className="text-xl font-bold text-foreground mb-3">Changes to income-related benefits</h2>
         <p className="text-sm text-muted leading-relaxed mb-4">
-          When a partner or spouse dies, your household income often changes significantly. You may become newly eligible for income-related benefits, or you may lose entitlements that depended on joint income. It is worth checking all of the following.
+          When a partner or spouse passes away, your household income often changes a great deal, sometimes overnight. You may become newly eligible for income-related benefits, or you may lose entitlements that depended on joint income. It is worth checking all of the following.
         </p>
         <div className="space-y-4 text-sm text-muted leading-relaxed">
           <div>
@@ -281,7 +281,7 @@ export default function BereavementBenefitsPage() {
       <div className="bg-card rounded-xl border border-border p-6 mb-6">
         <h2 className="text-xl font-bold text-foreground mb-3">Widowed Parent's Allowance (legacy benefit)</h2>
         <p className="text-sm text-muted leading-relaxed">
-          Widowed Parent's Allowance was replaced by Bereavement Support Payment in 2017. However, people who were already receiving it before that date continue to receive it. If you were receiving Widowed Parent's Allowance and your circumstances change (for example, you remarry or start living with a new partner), your payments will stop. Contact DWP on 0800 731 0469 if you have questions about an existing claim.
+          Widowed Parent's Allowance was replaced by Bereavement Support Payment in 2017. However, people who were already receiving it before that date continue to receive it. If you were receiving Widowed Parent's Allowance and your circumstances change (for example, you remarry or start living with a new partner), your payments will stop. Contact the Bereavement Service on 0800 151 2012 if you have questions about an existing claim.
         </p>
       </div>
 
@@ -302,7 +302,7 @@ export default function BereavementBenefitsPage() {
           </div>
           <div>
             <p className="font-semibold text-foreground">Trade union and occupational benevolent funds</p>
-            <p>Many industries have benevolent funds for workers and their families. Examples include the Electrical Industries Charity, Hospitality Action, and the Police Dependants' Trust. Search for the industry the deceased worked in plus "benevolent fund".</p>
+            <p>Many industries have benevolent funds for workers and their families. Examples include the Electrical Industries Charity, Hospitality Action, and the Police Dependants' Trust. Search for the industry your loved one worked in plus "benevolent fund".</p>
           </div>
           <div>
             <p className="font-semibold text-foreground">Local councils and emergency hardship funds</p>

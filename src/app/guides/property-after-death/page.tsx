@@ -24,19 +24,19 @@ export const metadata: Metadata = {
 const SECTIONS = [
   {
     title: 'Joint tenants vs tenants in common',
-    content: 'How a property is owned makes a huge difference to what happens next. If the property was held as "joint tenants," the deceased\'s share passes automatically to the surviving owner. This happens outside of the will and probate. You just need to send the death certificate to the Land Registry to update the title. If the property was held as "tenants in common," the deceased\'s share forms part of their estate and is dealt with through probate. It goes to whoever is named in the will, or according to intestacy rules if there is no will. You can check the ownership type on the Land Registry title register (gov.uk/search-property-information-land-registry, £3 per title).',
+    content: 'How a property is owned makes a huge difference to what happens next. If the property was held as "joint tenants," their share passes automatically to the surviving owner. This happens outside of the will and probate. You just need to send the death certificate to the Land Registry to update the title. If the property was held as "tenants in common," their share forms part of the estate and is dealt with through probate. It goes to whoever is named in the will, or according to intestacy rules if there is no will. You can check the ownership type on the Land Registry title register (gov.uk/search-property-information-land-registry, £3 per title).',
   },
   {
     title: 'What happens to the mortgage',
-    content: 'The first thing to check is whether there is a life insurance policy or mortgage protection policy. Many mortgages, particularly those taken out through a broker, have an associated life policy designed to pay off the balance on death. Check the deceased\'s paperwork and contact the mortgage lender to ask. If there is no insurance and the mortgage was joint, the surviving borrower takes over the full mortgage. The lender cannot demand immediate repayment. If the mortgage was in the deceased\'s sole name, the estate must either continue the payments, pay off the mortgage, or sell the property. Contact the lender as soon as possible, as they will usually allow a period of grace while the estate is being administered.',
+    content: 'The first thing to check is whether there is a life insurance policy or mortgage protection policy. Many mortgages, particularly those taken out through a broker, have an associated life policy designed to pay off the balance on death. Check through their paperwork and contact the mortgage lender to ask. If there is no insurance and the mortgage was joint, the surviving borrower takes over the full mortgage. The lender cannot demand immediate repayment. If the mortgage was in their sole name, the estate must either continue the payments, pay off the mortgage, or sell the property. Contact the lender as soon as possible, as they will usually allow a period of grace while the estate is being administered.',
   },
   {
     title: 'Can you sell the property before probate?',
-    content: 'If the property was owned as joint tenants, the surviving owner can sell at any time after updating the Land Registry, because the property belongs to them. If the property was in the deceased\'s sole name or held as tenants in common, you cannot complete a sale until probate is granted. You can put the property on the market and accept an offer before probate, but the sale cannot legally complete until you hold the Grant of Probate. Estate agents and conveyancers are used to this and will work around probate timelines.',
+    content: 'If the property was owned as joint tenants, the surviving owner can sell at any time after updating the Land Registry, because the property belongs to them. If the property was in their sole name or held as tenants in common, you cannot complete a sale until probate is granted. You can put the property on the market and accept an offer before probate, but the sale cannot legally complete until you hold the Grant of Probate. Estate agents and conveyancers are used to this and will work around probate timelines.',
   },
   {
     title: 'Council tax on an empty property',
-    content: 'When someone dies and their property is left empty, you can apply for a Class F council tax exemption. This exempts the property from council tax from the date of death until six months after the Grant of Probate is issued. After that, the executor or beneficiary becomes liable. Some councils offer further discounts for empty properties, so check with the local authority. If a surviving partner or family member continues to live in the property and is now the only adult, they can claim the 25% single person discount.',
+    content: 'When someone passes away and their home is left empty, you can apply for a Class F council tax exemption. This exempts the property from council tax from the date of death until six months after the Grant of Probate is issued. After that, the executor or beneficiary becomes liable. Some councils offer further discounts for empty properties, so check with the local authority. If a surviving partner or family member continues to live in the property and is now the only adult, they can claim the 25% single person discount.',
   },
   {
     title: 'Capital gains tax on inherited property',
@@ -44,11 +44,11 @@ const SECTIONS = [
   },
   {
     title: 'Clearing the property',
-    content: 'There is no legal deadline to clear a deceased person\'s property. While the Class F council tax exemption is in place, you have time. Take it at the pace that feels right. If the property is rented, check the tenancy agreement for notice periods. For owned properties, consider whether items should be valued for the estate before being removed. Keep receipts for anything you pay for (clearance, repairs, storage) as these may be claimable as estate administration expenses.',
+    content: 'There is no legal deadline for clearing the property, and most people find it takes longer than they expected. While the Class F council tax exemption is in place, you have time. Take it at the pace that feels right. If the property is rented, check the tenancy agreement for notice periods. For owned properties, consider whether items should be valued for the estate before being removed. Keep receipts for anything you pay for (clearance, repairs, storage) as these may be claimable as estate administration expenses.',
   },
   {
     title: 'Rented property',
-    content: 'If the deceased was renting, the tenancy does not automatically end on death. For secure or assured tenancies, the tenancy may pass to a spouse or partner who was living in the property. Check the tenancy agreement and speak to the landlord or housing association. For private rentals, the executor may need to give notice and clear the property. The estate is responsible for rent up to the end of the notice period. Shelter (shelter.org.uk, 0808 800 4444) provides free advice on tenancy succession rights.',
+    content: 'If they were renting, the tenancy does not automatically end when they pass away. For secure or assured tenancies, the tenancy may pass to a spouse or partner who was living in the property. Check the tenancy agreement and speak to the landlord or housing association. For private rentals, the executor may need to give notice and clear the property. The estate is responsible for rent up to the end of the notice period. Shelter (shelter.org.uk, 0808 800 4444) provides free advice on tenancy succession rights.',
   },
   {
     title: 'Insuring an empty property',
@@ -59,7 +59,7 @@ const SECTIONS = [
 const FAQ = [
   {
     q: 'Can you sell a house before probate is granted?',
-    a: 'You can put the house on the market and accept an offer before probate, but the sale cannot legally complete until you hold the Grant of Probate. This is because you do not have the legal authority to transfer ownership until probate is granted. The exception is joint tenants: if the property was owned as joint tenants, the surviving owner can sell without probate because the property passed to them automatically on death.',
+    a: 'You can put the house on the market and accept an offer before probate, but the sale cannot legally complete until you hold the Grant of Probate. This is because you do not have the legal authority to transfer ownership until probate is granted. The exception is joint tenants: if the property was owned as joint tenants, the surviving owner can sell without probate because the property passed to them automatically.',
   },
   {
     q: 'What happens to a mortgage when someone dies?',
@@ -94,7 +94,7 @@ export default function PropertyAfterDeathPage() {
         Property After Death: Mortgages, Selling & Council Tax
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        Dealing with a property after someone dies raises many practical questions. Can you sell it? What happens to the mortgage? Do you owe council tax on an empty house? The answers depend on how the property was owned and whether probate is needed. This guide covers all the common situations.
+        Dealing with a house or flat after someone passes away raises a lot of practical questions. Can you sell it? What happens to the mortgage? Do you owe council tax on an empty home? The answers depend on how the property was owned and whether probate is needed. This guide covers all the common situations.
       </p>
 
       {/* Quick summary stats */}

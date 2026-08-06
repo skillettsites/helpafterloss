@@ -53,18 +53,18 @@ const DEADLINES: DeadlineDefinition[] = [
   {
     id: 'register-death',
     label: 'Register the death',
-    description: 'Register at your local register office. In England, Wales, and Northern Ireland you have 5 days; in Scotland you have 8 days.',
+    description: 'You register at your local register office. In England, Wales, and Northern Ireland you have 5 days; in Scotland you have 8 days.',
     priority: 'urgent',
     calculateDate: (dod) => addDays(dod, 5),
-    note: 'If the coroner is involved, you cannot register until they have completed their investigation.',
+    note: 'If a coroner is involved, you cannot register until they have finished their enquiries. That is out of your hands, and nobody will hold it against you.',
   },
   {
     id: 'home-insurance',
     label: 'Notify the home insurer',
-    description: 'Many home insurance policies become void if a property is unoccupied for more than 30 days. Notify the insurer now to avoid any gap in cover.',
+    description: 'Many home insurance policies become void if a property is unoccupied for more than 30 days. A quick call to the insurer now avoids any gap in cover.',
     priority: 'urgent',
     calculateDate: (dod) => addDays(dod, 30),
-    note: 'Ask the insurer what their unoccupied property policy is and whether you need separate cover.',
+    note: 'Ask what their rules are for unoccupied properties and whether you need separate cover.',
   },
   {
     id: 'tell-us-once',
@@ -77,18 +77,18 @@ const DEADLINES: DeadlineDefinition[] = [
   {
     id: 'funeral',
     label: 'Hold the funeral',
-    description: 'There is no legal deadline, but most funerals are held within 2 to 3 weeks of the death. Some faiths require much sooner.',
+    description: 'There is no legal deadline for this. Most funerals are held within 2 to 3 weeks, though some faiths ask for much sooner.',
     priority: 'urgent',
     calculateDate: (dod) => addWeeks(dod, 2),
-    note: 'If the coroner is involved, they must release the body first. Contact a funeral director as soon as possible.',
+    note: 'If a coroner is involved, they will need to release your loved one first. It helps to speak to a funeral director early, even if you have not decided anything yet.',
   },
   {
     id: 'bereavement-support-payment',
     label: 'Claim Bereavement Support Payment',
-    description: 'If your spouse or civil partner died and you were under State Pension age, you may be entitled to a lump sum and 18 monthly payments. Claim within 3 months for the full amount.',
+    description: 'If your husband, wife, or civil partner has passed away and you were under State Pension age, you may be entitled to a lump sum and 18 monthly payments.',
     priority: 'important',
     calculateDate: (dod) => addMonths(dod, 3),
-    note: 'Claims can be backdated up to 21 months, but claiming within 3 months ensures you receive the maximum amount. Apply at gov.uk or call 0800 731 0469.',
+    note: 'Claims can be backdated up to 21 months, but claiming within 3 months means you receive the full amount. Apply at gov.uk or call 0800 731 0469.',
   },
   {
     id: 'funeral-expenses-payment',
@@ -101,10 +101,10 @@ const DEADLINES: DeadlineDefinition[] = [
   {
     id: 'probate',
     label: 'Apply for probate (recommended)',
-    description: 'There is no legal deadline, but applying within 3 months means banks, pension providers, and insurers can release funds sooner.',
+    description: 'There is no legal deadline here either, but applying within 3 months means banks, pension providers, and insurers can release money to you sooner.',
     priority: 'important',
     calculateDate: (dod) => addMonths(dod, 3),
-    note: 'In Scotland this is called Confirmation and is applied for at the Sheriff Court. Without probate, most financial institutions cannot release funds.',
+    note: 'In Scotland this is called Confirmation and you apply at the Sheriff Court. Without it, most financial institutions are not able to release funds.',
   },
   {
     id: 'iht-payment',
@@ -137,15 +137,15 @@ const DEADLINES: DeadlineDefinition[] = [
   {
     id: 'parental-bereavement-leave',
     label: 'Take Parental Bereavement Leave (if applicable)',
-    description: 'If a child under 18 died, or a baby was stillborn after 24 weeks, parents are entitled to 2 weeks of paid leave. This can be taken in one or two separate blocks.',
+    description: 'If you have lost a child under 18, or a baby was stillborn after 24 weeks, you are entitled to 2 weeks of paid leave. You can take it in one block or in two separate ones, whatever you need.',
     priority: 'normal',
     calculateDate: (dod) => addWeeks(dod, 56),
-    note: 'Must be taken within 56 weeks of the date of death. Statutory Parental Bereavement Pay is paid at £184.03 per week (or 90% of earnings if lower).',
+    note: 'Must be taken within 56 weeks of the date of death. Statutory Parental Bereavement Pay is paid at £194.32 per week (or 90% of earnings if lower).',
   },
   {
     id: 'final-tax-return',
     label: 'File the final Self Assessment tax return',
-    description: 'If the person was registered for Self Assessment, a final tax return is required for the tax year in which they died.',
+    description: 'If they were registered for Self Assessment, one last tax return is needed for the tax year in which they died.',
     priority: 'normal',
     calculateDate: (dod) => nextJan31After(dod),
     note: 'The deadline is 31 January following the end of the relevant tax year. HMRC will confirm any tax owed or refund due to the estate.',
@@ -250,7 +250,7 @@ export default function DeadlineTrackerPage() {
         Deadline Tracker: Key Dates After a Death
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-8">
-        Enter the date of death and we will calculate every important deadline for you, from the first 5 days right through to the final tax return.
+        Keeping track of dates is the last thing you need right now. Enter the date of death and we will work out every deadline for you, from the first 5 days right through to the final tax return, so you can stop carrying it in your head.
       </p>
 
       {/* Date input */}
@@ -294,9 +294,9 @@ export default function DeadlineTrackerPage() {
       {!dod && (
         <div className="bg-primary-light rounded-xl p-8 text-center">
           <p className="text-2xl mb-3">📅</p>
-          <p className="text-foreground font-medium mb-2">Enter the date of death above to get started</p>
+          <p className="text-foreground font-medium mb-2">Enter the date of death above whenever you are ready</p>
           <p className="text-sm text-muted">
-            We will calculate every key deadline and show how many days you have left for each one.
+            We will work out every key deadline and show how long you have for each one. Nothing is saved or sent anywhere.
           </p>
         </div>
       )}
@@ -308,7 +308,7 @@ export default function DeadlineTrackerPage() {
             {overdueCount} {overdueCount === 1 ? 'deadline has' : 'deadlines have'} passed
           </p>
           <p className="text-sm text-urgent">
-            Some deadlines may have already passed. You may still be able to act on several of them. Check each one carefully and seek advice if needed.
+            Please try not to worry. A date passing rarely closes the door completely, and several of these can still be sorted out. Have a look through each one, and do ask for advice if you are unsure.
           </p>
         </div>
       )}
@@ -369,7 +369,7 @@ export default function DeadlineTrackerPage() {
       {dod && (
         <div className="bg-warm border border-warm-border rounded-xl p-5 mb-10">
           <p className="text-sm text-amber-800 leading-relaxed">
-            These are general deadlines based on the most common situations in England and Wales. Deadlines can differ in Scotland and Northern Ireland. Some deadlines depend on when you registered the death or arranged the funeral, not the date of death itself. For personalised advice, use our free guide or speak to a solicitor.
+            These are general deadlines based on the most common situations in England and Wales, and they can differ in Scotland and Northern Ireland. A few of them run from when you registered the death or held the funeral rather than from the date of death itself, so treat them as a guide. For something closer to your own circumstances, use our free guide or have a word with a solicitor.
           </p>
         </div>
       )}

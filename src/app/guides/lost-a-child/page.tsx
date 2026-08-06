@@ -34,7 +34,7 @@ export default function LostAChildPage() {
         When a Child Dies
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        There are no words adequate to this loss. Losing a child is the most devastating thing a parent can experience, and this guide is written with that in mind. Alongside the overwhelming grief, there are practical things that need to happen. We have tried to explain them as simply and gently as possible, so you only need to read what is relevant to you right now.
+        There are no words for this, and we are not going to pretend that anything written on a page will help with how you are feeling. Alongside everything else, there are some practical things that have to happen, and we have set them out as simply and gently as we can. Please read only the part you need today, and leave the rest until another time.
       </p>
 
       <GuideImage
@@ -50,13 +50,13 @@ export default function LostAChildPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">At the hospital</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If your child died in hospital, the medical team will support you through the immediate practical steps. You do not need to leave straight away: most hospitals will allow you as much time as you need with your child. A bereavement midwife or specialist nurse may be assigned to you. Ask for this support if it is not offered. You are allowed to hold your child, take photographs, and have any meaningful time that feels right for your family.
+            If your child passed away in hospital, the medical team will stay with you through the first practical steps. You do not need to leave straight away: most hospitals will give you as much time as you need with your child. A bereavement midwife or specialist nurse may be assigned to you. Ask for this support if it is not offered. You are allowed to hold your child, take photographs, and have any meaningful time that feels right for your family.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
-          <h3 className="font-semibold text-foreground mb-2">If your child died at home or unexpectedly</h3>
+          <h3 className="font-semibold text-foreground mb-2">If your child passed away at home or unexpectedly</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If your child died at home or the death was unexpected, call 999. The ambulance service will attend, and the death will be referred to the coroner. This is a legal requirement in England and Wales when a death is sudden, unexplained, or the circumstances are unclear. It is not a reflection on you or on what happened. The police may also attend as part of the standard process: this is routine and does not imply any suspicion.
+            If your child passed away at home, or it happened without warning, call 999. The ambulance service will attend, and the death will be referred to the coroner. This is a legal requirement in England and Wales when a death is sudden, unexplained, or the circumstances are unclear. It is not a reflection on you or on anything you did. The police may attend as part of the same standard process: that is routine, and it does not mean anyone suspects you of anything.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -131,7 +131,7 @@ export default function LostAChildPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Other funeral costs</h3>
           <p className="text-sm text-muted leading-relaxed">
-            The Children's Funeral Fund does not cover all the costs involved: funeral director fees, coffin, transportation, and any service costs are not always included. Many funeral directors offer significantly reduced rates, or waive fees entirely, for children's funerals. Ask directly: most are willing to help. If you are on means-tested benefits, you may also be eligible for a Funeral Expenses Payment from the DWP, which can help with other costs. See our <Link href="/costs" className="text-primary font-medium hover:underline">full costs guide</Link>.
+            The Children's Funeral Fund does not cover everything: funeral director fees, the coffin, transport, and service costs are not always included. Many funeral directors greatly reduce their charges, or waive them altogether, for a child's funeral. It is worth asking directly, and most will want to help. If you are on means-tested benefits, you may also be eligible for a Funeral Expenses Payment from the DWP, which can help with other costs. See our <Link href="/costs" className="text-primary font-medium hover:underline">full costs guide</Link>.
           </p>
         </div>
       </div>
@@ -154,7 +154,7 @@ export default function LostAChildPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">When to tell them</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Tell siblings as soon as you can, even if you are not sure how. Children generally cope better with honest, age-appropriate information than with being shielded from the truth. They will sense that something serious has happened. If you delay telling them, and they find out from someone else, it can damage trust. You do not have to have all the answers: it is okay to say you are sad too, and that you do not know exactly why this happened.
+            Tell brothers and sisters as soon as you can, even if you have no idea how to start. Children generally cope better with honest, age-appropriate information than with being shielded from it, and they will already sense that something serious has happened. If they hear it from someone else first, it can be harder for them to trust what they are told afterwards. You do not have to have all the answers: it is fine to say that you are sad too, and that you do not know exactly why this happened.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -177,7 +177,7 @@ export default function LostAChildPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Your legal entitlement</h3>
           <p className="text-sm text-muted leading-relaxed">
-            As of 2026, there is no statutory right to paid parental bereavement leave for parents who lose a child aged 18 or over (the Parental Bereavement Leave Act 2018 covers loss of a child under 18, and of a stillborn baby after 24 weeks). If your child was under 18, you are entitled to 2 weeks of Parental Bereavement Leave, which can be taken as two separate weeks within 56 weeks of the death. You are entitled to the statutory rate of pay (currently £184.03 per week, or 90% of your average weekly earnings if that is lower) if you qualify. Check gov.uk for full eligibility details.
+            As of 2026, there is no statutory right to paid parental bereavement leave for parents who lose a child aged 18 or over (the Parental Bereavement Leave Act 2018 covers loss of a child under 18, and of a stillborn baby after 24 weeks). If your child was under 18, you are entitled to 2 weeks of Parental Bereavement Leave, which can be taken as two separate weeks within 56 weeks of the death. You are entitled to the statutory rate of pay (currently £194.32 per week, or 90% of your average weekly earnings if that is lower) if you qualify. Check gov.uk for full eligibility details.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -241,7 +241,7 @@ export default function LostAChildPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Online memorials</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Many families create an online memorial where friends and extended family can share memories and photographs. MuchLoved (muchloved.com) specialises in this and is free. Facebook also allows memorial pages. If your child had their own social media accounts, speak to the platforms about memorialising them: Instagram, Facebook, and TikTok all have policies for this. Our <Link href="/digital-legacy" className="text-primary font-medium hover:underline">digital legacy guide</Link> explains how to manage online accounts after a death.
+            Many families create an online memorial where friends and extended family can share memories and photographs. MuchLoved (muchloved.com) specialises in this and is free. Facebook also allows memorial pages. If your child had their own social media accounts, speak to the platforms about memorialising them: Instagram, Facebook, and TikTok all have policies for this. Our <Link href="/digital-legacy" className="text-primary font-medium hover:underline">digital legacy guide</Link> explains how to manage online accounts after someone passes away.
           </p>
         </div>
       </div>
@@ -258,7 +258,7 @@ export default function LostAChildPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Am I entitled to parental bereavement leave?</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If your child was under 18, or was a stillborn baby after 24 weeks of pregnancy, you are entitled to 2 weeks of Parental Bereavement Leave. This can be taken as two separate weeks within 56 weeks of the death. You are entitled to statutory pay (currently £184.03 per week or 90% of average weekly earnings, whichever is lower). Many employers offer additional paid leave beyond this.
+            If your child was under 18, or was a stillborn baby after 24 weeks of pregnancy, you are entitled to 2 weeks of Parental Bereavement Leave. This can be taken as two separate weeks within 56 weeks of the death. You are entitled to statutory pay (currently £194.32 per week or 90% of average weekly earnings, whichever is lower). Many employers offer additional paid leave beyond this.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -280,7 +280,7 @@ export default function LostAChildPage() {
       <div className="bg-card rounded-xl border border-border p-6 mb-10">
         <ul className="text-sm text-muted leading-relaxed space-y-2">
           <li><a href="https://www.gov.uk/parental-bereavement-pay-leave" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">gov.uk/parental-bereavement-pay-leave</a> : Parental Bereavement Leave and Pay</li>
-          <li><a href="https://www.gov.uk/childrens-funeral-fund" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">gov.uk/childrens-funeral-fund</a> : Children's Funeral Fund for England</li>
+          <li><a href="https://www.gov.uk/child-funeral-costs" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">gov.uk/child-funeral-costs</a> : Children's Funeral Fund for England</li>
           <li><a href="https://www.childbereavementuk.org" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">childbereavementuk.org</a> : Free support for bereaved parents and families</li>
           <li><a href="https://www.tcf.org.uk" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">tcf.org.uk</a> : The Compassionate Friends</li>
           <li><a href="https://www.sands.org.uk" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">sands.org.uk</a> : Sands, stillbirth and neonatal death charity</li>
@@ -312,7 +312,7 @@ export default function LostAChildPage() {
               {
                 '@type': 'Question',
                 name: 'Am I entitled to parental bereavement leave?',
-                acceptedAnswer: { '@type': 'Answer', text: 'If your child was under 18 or stillborn after 24 weeks, you are entitled to 2 weeks of Parental Bereavement Leave within 56 weeks of the death, with statutory pay of £184.03 per week or 90% of average weekly earnings.' },
+                acceptedAnswer: { '@type': 'Answer', text: 'If your child was under 18 or stillborn after 24 weeks, you are entitled to 2 weeks of Parental Bereavement Leave within 56 weeks of the death, with statutory pay of £194.32 per week or 90% of average weekly earnings.' },
               },
               {
                 '@type': 'Question',

@@ -47,7 +47,7 @@ export default function ResultsPage() {
   if (!loaded || !answers) {
     return (
       <div className="min-h-[60vh] flex items-center justify-center">
-        <div className="text-muted">Loading your guide...</div>
+        <div className="text-muted">Putting your guide together...</div>
       </div>
     );
   }
@@ -63,15 +63,15 @@ export default function ResultsPage() {
       {/* Header */}
       <div className="bg-warm border border-warm-border rounded-xl p-6 mb-8">
         <h1 className="text-2xl font-semibold text-foreground mb-2">
-          Your Personalised Guide
+          Your guide, made just for you
         </h1>
         <p className="text-muted leading-relaxed">
-          We are sorry for your loss. Based on your answers, we have put together {totalTasks} tasks for you to work through at your own pace. There is no rush. Do what you can, when you can.
+          We are so sorry for your loss. From what you have told us, there are {totalTasks} things that will need doing at some point. Please do not look at that number and feel daunted: most of them are small, very few are urgent, and they will keep. Do what you can, when you can.
         </p>
         {nextDeadline && nextDeadline.daysLeft >= 0 && (
           <div className="mt-4 bg-white/70 rounded-lg p-3">
             <p className="text-sm font-medium text-foreground">
-              Your next deadline: <span className="text-primary">{nextDeadline.label}</span>
+              The next thing with a date on it: <span className="text-primary">{nextDeadline.label}</span>
             </p>
             <p className="text-xs text-muted mt-0.5">
               {nextDeadline.daysLeft === 0
@@ -99,7 +99,7 @@ export default function ResultsPage() {
         </Link>
         <button
           onClick={() => {
-            if (confirm('This will clear all your saved progress and answers. Are you sure?')) {
+            if (confirm('This will clear everything you have saved so far, including anything you have ticked off. Are you sure?')) {
               clearProgress();
               router.push('/start');
             }
@@ -124,9 +124,9 @@ export default function ResultsPage() {
 
       {/* Support section */}
       <div className="bg-primary-light rounded-xl p-6 mt-8">
-        <h3 className="font-semibold text-primary-dark mb-2">Need support?</h3>
+        <h3 className="font-semibold text-primary-dark mb-2">If today is a hard day</h3>
         <p className="text-sm text-primary-dark/80 mb-4">
-          You do not have to do this alone. These organisations offer free help and support:
+          You really do not have to carry this on your own. These people are kind, free to call, and used to conversations like yours:
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div className="bg-white/70 rounded-lg p-3">

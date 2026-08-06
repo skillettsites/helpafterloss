@@ -29,8 +29,8 @@ export default function NotifyForMePage() {
       </h1>
 
       <p className="text-lg text-muted mb-3 leading-relaxed">
-        Contacting every bank, energy provider, and insurer is one of the most draining parts of dealing with a death.
-        We can send bereavement notification emails on your behalf, so you do not have to.
+        Contacting every bank, energy provider, and insurer is one of the most draining parts of dealing with a bereavement.
+        We can send the notification emails on your behalf, so you do not have to.
       </p>
 
       <div className="bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800 rounded-xl p-5 mb-8">
@@ -72,7 +72,7 @@ export default function NotifyForMePage() {
           </a>
           <a href="/call-scripts" className="bg-background rounded-lg border border-border p-4 hover:border-primary transition-colors">
             <h3 className="font-semibold text-foreground mb-1">Call Scripts</h3>
-            <p className="text-sm text-muted">Word-for-word scripts for difficult phone calls</p>
+            <p className="text-sm text-muted">Word-for-word scripts for the calls that are hardest to make</p>
           </a>
           <a href="/tell-us-once" className="bg-background rounded-lg border border-border p-4 hover:border-primary transition-colors">
             <h3 className="font-semibold text-foreground mb-1">Tell Us Once</h3>

@@ -43,9 +43,9 @@ const MONTHS = [
     tasks: [
       { text: 'Apply for probate if the estate requires it (most do if property is involved)', link: '/probate', urgent: false },
       { text: 'Start notifying all organisations: utilities, subscriptions, insurance, council tax', link: '/notify', urgent: false },
-      { text: 'Set up a Royal Mail redirect from the deceased person\'s address', link: null, urgent: false },
+      { text: 'Set up a Royal Mail redirect from their address', link: null, urgent: false },
       { text: 'Gather all financial documents and start valuing the estate', link: '/guides/document-checklist', urgent: false },
-      { text: 'Cancel or transfer vehicle insurance (it is void immediately after death)', link: '/guides/driving-after-death', urgent: false },
+      { text: 'Cancel or transfer vehicle insurance (the policy is no longer valid once the policyholder has passed away)', link: '/guides/driving-after-death', urgent: false },
       { text: 'Place a statutory notice in The London Gazette to protect against unknown creditors', link: null, urgent: false },
     ],
   },
@@ -69,7 +69,7 @@ const MONTHS = [
     tasks: [
       { text: 'Grant of Probate typically arrives around this time', link: '/probate', urgent: false },
       { text: 'Use the Grant to close bank accounts and collect assets', link: '/guides/bank-accounts-after-death', urgent: false },
-      { text: 'File the deceased person\'s final Self Assessment tax return with HMRC (April to date of death)', link: null, urgent: false },
+      { text: 'File their final Self Assessment tax return with HMRC (April to date of death)', link: null, urgent: false },
       { text: 'Deal with any outstanding debts from estate funds (not from your own money)', link: '/guides/debts-after-death', urgent: false },
       { text: 'Begin distributing specific legacies if the will names them', link: '/guides/executor-duties', urgent: false },
       { text: 'Sell the property if that is the plan, or transfer ownership', link: '/guides/property-after-death', urgent: false },
@@ -90,7 +90,7 @@ const MONTHS = [
   {
     period: 'Months 10-12',
     title: 'Closing the estate and the first anniversary',
-    emotional: 'The first anniversary of the death can bring a fresh wave of grief, even if you have been coping well. Some people find it helpful to mark the day: visiting a place that was special, gathering with family, or simply taking the day off. There is no right or wrong way to acknowledge it. The second year is often harder than people expect, because the shock has worn off and the reality is permanent.',
+    emotional: 'The first anniversary can bring a fresh wave of grief, even if you have been coping well. Some people find it helpful to mark the day: visiting a place that was special, gathering with family, or simply taking the day off. There is no right or wrong way to acknowledge it. The second year is often harder than people expect, because the shock has worn off and the reality is permanent.',
     tasks: [
       { text: 'Finalise estate accounts and get approval from all residuary beneficiaries', link: '/guides/executor-duties', urgent: false },
       { text: 'Distribute remaining estate assets to beneficiaries', link: null, urgent: false },
@@ -146,7 +146,7 @@ export default function FirstYearAfterLossPage() {
         The First Year After Loss: A Month-by-Month Guide
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        The year after someone dies is one of the most difficult periods you will ever face. There is grief to navigate and, at the same time, a mountain of practical tasks that will not wait. This guide breaks the year down month by month, covering both the administrative steps and the emotional milestones, so you know roughly what to expect and when.
+        The year after someone passes away is one of the hardest you will go through. There is the grief, and at the same time a pile of practical tasks that will not wait. This guide takes the year month by month, covering both the paperwork and the harder days, so you have some idea of what is coming and roughly when.
       </p>
 
       {/* Key deadlines summary */}
@@ -165,7 +165,7 @@ export default function FirstYearAfterLossPage() {
       {/* Important note */}
       <div className="bg-warm border border-warm-border rounded-xl p-5 mb-10">
         <p className="text-sm text-amber-800 leading-relaxed">
-          <strong>Everyone&apos;s situation is different.</strong> This guide covers the most common tasks, but your circumstances may vary. If the person died without a will, see our <Link href="/intestacy" className="underline font-medium">intestacy guide</Link>. If you are the executor, our <Link href="/guides/executor-duties" className="underline font-medium">executor duties guide</Link> covers your legal responsibilities in detail.
+          <strong>Everyone&apos;s situation is different.</strong> This guide covers the most common tasks, but your circumstances may be different. If they did not leave a will, see our <Link href="/intestacy" className="underline font-medium">intestacy guide</Link>. If you are the executor, our <Link href="/guides/executor-duties" className="underline font-medium">executor duties guide</Link> covers your legal responsibilities in detail.
         </p>
       </div>
 
@@ -227,7 +227,7 @@ export default function FirstYearAfterLossPage() {
           <p className="text-sm text-muted leading-relaxed">If you have lost a spouse or partner, this date can be especially painful. Allow yourself to feel whatever comes up without judgement. There is no expectation to "be strong."</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-5">
-          <h3 className="font-semibold text-foreground mb-2">The first anniversary of the death</h3>
+          <h3 className="font-semibold text-foreground mb-2">The first anniversary</h3>
           <p className="text-sm text-muted leading-relaxed">Some people dread this day for weeks beforehand. Others find that the anticipation is worse than the day itself. Mark it in whatever way feels right for you, whether quietly or with family and friends.</p>
         </div>
       </div>

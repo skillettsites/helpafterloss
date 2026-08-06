@@ -24,22 +24,22 @@ const CATEGORIES: DocumentCategory[] = [
     id: 'personal-id',
     title: 'Personal Identification',
     icon: '🪪',
-    description: 'Official documents that prove identity and status. You will need these for almost every notification and claim.',
+    description: 'The official documents that prove who someone was. Almost every organisation you contact will ask for one of these, so they are worth gathering first.',
     items: [
       {
         id: 'death-certificate',
         name: 'Death certificate (original + certified copies)',
-        tip: 'You will need 5 to 10 certified copies. Order extras when you register the death at the register office. Each copy costs around £11. Many organisations will not accept photocopies.',
+        tip: 'You will need 5 to 10 certified copies. Order extras when you register the death at the register office. Each copy costs £12.50 in England and Wales. Many organisations will not accept photocopies.',
       },
       {
         id: 'will',
         name: 'Will',
-        tip: 'Check the person\'s home (filing cabinet, safe, desk drawers), their solicitor, their bank\'s safe deposit box, and the National Will Register (certainty.co.uk). Some people also store wills with Will Aid or local probate registries.',
+        tip: 'Have a look through their home (the filing cabinet, a safe, desk drawers), and ask their solicitor and their bank, as some hold wills in a safe deposit box. You can also search the National Will Register (certainty.co.uk). Wills are sometimes stored with Will Aid or a local probate registry too.',
       },
       {
         id: 'birth-certificate',
-        name: 'Birth certificate of the deceased',
-        tip: 'Usually kept at home with other important papers. If lost, order a replacement from the General Register Office (gro.gov.uk) for £11. In Scotland, apply to National Records of Scotland.',
+        name: 'Their birth certificate',
+        tip: 'Usually kept at home with the other important papers. If you cannot find it, you can order a replacement from the General Register Office (gro.gov.uk) for £11. In Scotland, apply to National Records of Scotland.',
       },
       {
         id: 'marriage-certificate',
@@ -54,7 +54,7 @@ const CATEGORIES: DocumentCategory[] = [
       {
         id: 'passport',
         name: 'Passport',
-        tip: 'Check at home. HM Passport Office will cancel it when notified via Tell Us Once. Do not send it off yourself; keep it until you have finished using it as ID for banks and insurers.',
+        tip: 'Have a look at home. HM Passport Office will cancel it once they are told through Tell Us Once. Do not post it off straight away; hold on to it until you have finished using it as identification for banks and insurers.',
       },
       {
         id: 'driving-licence',
@@ -67,7 +67,7 @@ const CATEGORIES: DocumentCategory[] = [
     id: 'financial',
     title: 'Financial Documents',
     icon: '💷',
-    description: 'Bank accounts, savings, investments, and debts. Gather as much as you can so nothing is missed when settling the estate.',
+    description: 'Bank accounts, savings, investments, and debts. Gather what you can, so nothing is overlooked when the estate is settled.',
     items: [
       {
         id: 'bank-details',
@@ -115,7 +115,7 @@ const CATEGORIES: DocumentCategory[] = [
     id: 'property',
     title: 'Property and Home',
     icon: '🏡',
-    description: 'Documents related to where the person lived, from deeds to utility bills. These are needed for probate and transferring services.',
+    description: 'Paperwork to do with where they lived, from the deeds to the utility bills. These are needed for probate and for moving services into a new name.',
     items: [
       {
         id: 'property-deeds',
@@ -158,7 +158,7 @@ const CATEGORIES: DocumentCategory[] = [
     id: 'vehicle',
     title: 'Vehicle and Transport',
     icon: '🚗',
-    description: 'If the person owned a vehicle, you will need these documents to notify insurers, transfer or sell the car, and update the DVLA.',
+    description: 'If they owned a vehicle, these are the documents you will need to tell the insurer, transfer or sell the car, and update the DVLA.',
     items: [
       {
         id: 'v5c',
@@ -181,22 +181,22 @@ const CATEGORIES: DocumentCategory[] = [
     id: 'other',
     title: 'Other Important Documents',
     icon: '📋',
-    description: 'Miscellaneous documents that can be easy to overlook but are important for a complete picture.',
+    description: 'The odds and ends that are easy to overlook, but which help complete the picture.',
     items: [
       {
         id: 'funeral-plan',
         name: 'Funeral plan or wishes document',
-        tip: 'Check at home for a prepaid funeral plan, a letter of wishes, or instructions left with a solicitor. Some people arrange and pay for funerals in advance through companies like Dignity or the Co-op.',
+        tip: 'Have a look at home for a prepaid funeral plan, a letter of wishes, or instructions left with a solicitor. Many people arrange and pay for their funeral in advance through companies such as Dignity or the Co-op, and finding this can be a real comfort.',
       },
       {
         id: 'medical-records',
         name: 'Medical records, prescriptions, and GP details',
-        tip: 'The GP surgery holds the main records. These may be needed for ongoing insurance claims, cause of death queries, or pension applications that require medical evidence.',
+        tip: 'The GP surgery holds the main records. You may need them for insurance claims, any questions about the cause of death, or pension applications that ask for medical evidence.',
       },
       {
         id: 'digital-accounts',
         name: 'Digital accounts (email, social media, subscriptions)',
-        tip: 'Check the person\'s phone, computer, and any password manager they used. Look at bank statements for subscription payments (Netflix, Amazon, Spotify, etc.). Facebook has a memorialisation option; Google has an Inactive Account Manager.',
+        tip: 'Have a look at their phone and computer, and any password manager they used. Bank statements will show subscription payments such as Netflix, Amazon, or Spotify. Facebook can memorialise an account, and Google has an Inactive Account Manager.',
       },
     ],
   },
@@ -284,7 +284,7 @@ export default function DocumentVaultPage() {
         Document Vault Checklist
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-4">
-        When someone dies, there are many important documents to find and organise. It is easy to forget things when you are going through so much. Use this checklist to keep track of what you have found and what you still need.
+        There is a surprising amount of paperwork to track down after someone passes away, and it is very easy to lose your thread when you are carrying so much. Use this checklist to keep hold of what you have found and what is still outstanding, so it is not all in your head.
       </p>
       <p className="text-sm text-muted mb-8">
         Your progress is saved automatically on this device. Nothing is sent anywhere.
@@ -453,7 +453,7 @@ export default function DocumentVaultPage() {
             <span className="font-medium">Check recent post.</span> Letters from banks, insurers, pension providers, and HMRC often reveal accounts you did not know about.
           </li>
           <li>
-            <span className="font-medium">Search the whole house.</span> Check filing cabinets, desk drawers, kitchen drawers, bedside tables, wardrobes, and even inside books. People keep important papers in surprising places.
+            <span className="font-medium">Look everywhere.</span> Filing cabinets, desk drawers, kitchen drawers, bedside tables, wardrobes, and even inside books. People keep important papers in the most surprising places.
           </li>
           <li>
             <span className="font-medium">Ask the solicitor.</span> If the person had a solicitor, they may hold the will, property deeds, or other important documents.
@@ -467,7 +467,7 @@ export default function DocumentVaultPage() {
       {/* Disclaimer */}
       <div className="bg-primary-light rounded-xl p-5 mb-10">
         <p className="text-sm text-primary-dark leading-relaxed">
-          This checklist covers the most common documents needed after a death in the UK. Your situation may require additional documents not listed here. If the estate is complex (business interests, overseas assets, trusts), consider speaking to a solicitor or probate specialist.
+          This checklist covers the documents most people need after a death in the UK. Your situation may call for others that are not listed here. If the estate is complicated, with business interests, assets abroad, or trusts, it is worth having a word with a solicitor or probate specialist.
         </p>
       </div>
 

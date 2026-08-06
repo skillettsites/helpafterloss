@@ -69,7 +69,7 @@ export function SavePrompt() {
             <>
               <h3 className="font-semibold text-amber-900 mb-1">Check your email</h3>
               <p className="text-sm text-amber-800 mb-2">
-                We have sent a sign-in link to <span className="font-medium">{email}</span>. Click it to save your progress and access your personal dashboard anytime.
+                We have sent a sign-in link to <span className="font-medium">{email}</span>. Click it to save your progress and come back to your dashboard whenever you are ready.
               </p>
               <p className="text-xs text-amber-700">
                 Did not receive it? Check your spam folder, or{' '}
@@ -78,9 +78,9 @@ export function SavePrompt() {
             </>
           ) : (
             <>
-              <h3 className="font-semibold text-amber-900 mb-1">Save your progress so you can come back anytime</h3>
+              <h3 className="font-semibold text-amber-900 mb-1">Save your progress so you can come back whenever you are ready</h3>
               <p className="text-sm text-amber-800 mb-3">
-                Enter your email and we will send you a link. No password needed. Your data is private and encrypted.
+                Leave your email and we will send you a link. There is no password to remember, and your details stay private and encrypted.
               </p>
               {error && (
                 <p className="text-sm text-urgent mb-2">{error}</p>

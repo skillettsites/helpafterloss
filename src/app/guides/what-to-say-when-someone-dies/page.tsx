@@ -41,7 +41,7 @@ const FAQ = [
   },
   {
     q: 'How do you support someone who is grieving long-term?',
-    a: 'Keep checking in after the funeral, when everyone else has gone back to their normal lives. Send a message on difficult dates: the anniversary, their birthday, Christmas, Mother\'s Day or Father\'s Day. Mention the person who died by name. Invite the bereaved person to do ordinary things: a walk, a coffee, dinner. Do not expect them to be "over it" after a certain period. Grief does not have a deadline, and your ongoing presence means more than you realise.',
+    a: 'Keep checking in after the funeral, when everyone else has gone back to their normal lives. Send a message on difficult dates: the anniversary, their birthday, Christmas, Mother\'s Day or Father\'s Day. Mention the person who has passed away by name. Invite the bereaved person to do ordinary things: a walk, a coffee, dinner. Do not expect them to be "over it" after a certain period. Grief does not have a deadline, and your ongoing presence means more than you realise.',
   },
 ];
 
@@ -56,7 +56,7 @@ export default function WhatToSayPage() {
         What to Say When Someone Dies: A Compassionate Guide
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        When someone you know loses a person they love, finding the right words can feel impossible. You want to help, but you are terrified of saying the wrong thing. The truth is that there are no perfect words, and that is OK. What matters is that you show up. This guide covers what to say, what to avoid, and how to support someone not just in the first few days but in the weeks and months that follow.
+        When someone you know loses a person they love, finding the right words can feel impossible. You want to help, but you are worried about making it worse. The truth is that there are no perfect words, and nobody is expecting you to find them. What matters is that you show up at all. This guide covers what tends to help, what tends to land badly, and how to keep supporting someone beyond the first few days, into the weeks and months that follow.
       </p>
 
       {/* What to say */}
@@ -92,7 +92,7 @@ export default function WhatToSayPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Phrases to avoid</h3>
           <p className="text-sm text-muted leading-relaxed mb-3">
-            These phrases are almost always well-intentioned, but they frequently land badly. The person may nod politely, but inside these words can feel dismissive, minimising, or tone-deaf.
+            These phrases are almost always kindly meant, but they often land badly. The person may nod politely, while inside the words feel dismissive or as though their loss is being made smaller than it is.
           </p>
           <ul className="text-sm text-muted leading-relaxed space-y-3 list-disc pl-5">
             <li><strong>&quot;Everything happens for a reason.&quot;</strong> Some deaths have no reason and no silver lining. This can feel deeply dismissive of someone's pain.</li>
@@ -149,7 +149,7 @@ export default function WhatToSayPage() {
             <li>An invitation to go for a walk or have a coffee</li>
             <li>Dropping round a meal or some shopping</li>
             <li>Remembering difficult dates: the anniversary, their birthday, Christmas, Mother's Day, Father's Day</li>
-            <li>Saying the dead person's name. Do not be afraid to mention them. It is a comfort, not a reminder.</li>
+            <li>Saying their name out loud. Do not be afraid to mention them. It is a comfort, not a reminder.</li>
           </ul>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -211,7 +211,7 @@ export default function WhatToSayPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">What to say</h3>
           <p className="text-sm text-muted leading-relaxed">
-            A death by suicide carries an additional layer of pain: shock, confusion, guilt, anger, and the feeling of stigma. Many people avoid the bereaved family because they do not know what to say. Do not be one of those people. Acknowledge the death directly: &quot;I am so sorry about [name]. I am here for you.&quot; Do not speculate about reasons, assign blame, or try to make sense of it. Use the language &quot;died by suicide&quot; rather than &quot;committed suicide&quot;, which carries connotations of crime or sin. Let them talk if they want to, and do not flinch from the conversation.
+            A death by suicide carries an additional layer of pain: shock, confusion, guilt, anger, and the feeling of stigma. Many people avoid the bereaved family because they do not know what to say. Please try not to be one of them, even if you get the words wrong. Acknowledge what has happened directly: &quot;I am so sorry about [name]. I am here for you.&quot; Do not speculate about reasons, assign blame, or try to make sense of it. Use the language &quot;died by suicide&quot; rather than &quot;committed suicide&quot;, which carries connotations of crime or sin. Let them talk if they want to, and do not flinch from the conversation.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">

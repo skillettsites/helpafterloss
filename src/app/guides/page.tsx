@@ -53,7 +53,7 @@ export default function GuidesIndexPage() {
         <div className="max-w-3xl mx-auto">
           <div className="bg-card rounded-xl border border-border p-6 space-y-4 text-sm text-muted leading-relaxed">
             <p>
-              When someone dies, one of the first steps is registering the death at your local register office. The rules vary depending on where in the UK you are. In England and Wales, you must register within 5 days. In Scotland, the deadline is 8 days. In Northern Ireland, it is also 5 days, but the Tell Us Once service is not available.
+              When someone passes away, one of the first steps is registering the death at your local register office. The rules vary depending on where in the UK you are. In England and Wales, you must register within 5 days. In Scotland, the deadline is 8 days. In Northern Ireland, it is also 5 days, but the Tell Us Once service is not available.
             </p>
             <p>
               Each of our local guides includes the contact details for your nearest register office, your local council, and information about what services are available in your area. We also cover the differences between probate in England and Wales, Confirmation in Scotland, and the process in Northern Ireland, so you get guidance that applies to your specific location.

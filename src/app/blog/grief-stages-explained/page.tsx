@@ -42,7 +42,7 @@ export default function GriefStagesExplainedPage() {
         The Stages of Grief: What They Really Mean and Why Grief is Not Linear
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        You have probably heard of the "five stages of grief." They are everywhere: in books, films, therapy sessions, and well-meaning advice from people who think grief follows a predictable path. But the reality is messier, more confusing, and more human than any neat model suggests. This article explains what the stages actually mean, why they are so widely misunderstood, and what grief really looks like day to day.
+        You have probably heard of the "five stages of grief." They are everywhere: in books, films, therapy sessions, and well-meaning advice from people who think grief follows a predictable path. The reality is messier, more confusing, and far more human than any neat model suggests. This article explains what the stages actually mean, why they are so widely misunderstood, and what grief tends to look like day to day.
       </p>
 
       <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
@@ -69,13 +69,13 @@ export default function GriefStagesExplainedPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">1. Denial</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Denial is often the first response to loss. It does not mean you literally do not believe the person has died (though sometimes that happens too). It is more of a numbness, a feeling of unreality, as if you are watching your own life from a distance. You might go through the motions, attend the funeral, make the phone calls, and feel nothing. This is not coldness. It is your mind's way of protecting you from the full weight of what has happened. Denial buys you time to absorb the loss at a pace you can manage.
+            Denial is often the first response to loss. It does not mean you literally do not believe they have gone (though sometimes that happens too). It is more of a numbness, a feeling of unreality, as if you are watching your own life from a distance. You might go through the motions, attend the funeral, make the phone calls, and feel nothing at all. This is not coldness. It is your mind's way of shielding you from the full weight of what has happened. Denial gives you time to take the loss in at a pace you can manage.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">2. Anger</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Anger in grief can be directed anywhere: at the person who died (for leaving you), at doctors (for not doing more), at God or fate (for letting it happen), at family members (for not understanding), or at yourself (for things left unsaid). Some people feel angry at the world for carrying on as normal while theirs has fallen apart. This anger is not irrational. It is a natural response to something deeply unfair. Underneath anger, there is usually pain.
+            Anger in grief can be directed anywhere: at the person you have lost (for leaving you), at doctors (for not doing more), at God or fate (for letting it happen), at family members (for not understanding), or at yourself (for things left unsaid). Some people feel angry at the world for carrying on as normal while theirs has fallen apart. This anger is not irrational. It is a natural response to something deeply unfair. Underneath anger, there is usually pain.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -87,7 +87,7 @@ export default function GriefStagesExplainedPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">4. Depression</h3>
           <p className="text-sm text-muted leading-relaxed">
-            This stage is not clinical depression in the psychiatric sense (though grief can trigger that too). It is the deep sadness that arrives when the reality of the loss fully lands. The numbness has worn off, the anger has quieted, and what is left is sorrow. You may withdraw from others, lose interest in things you used to enjoy, struggle to sleep or eat, and feel that nothing matters. This is often the longest stage, and it can feel like it will never end. But it is the stage where the real work of grief happens: learning to live with the loss.
+            This stage is not clinical depression in the psychiatric sense (though grief can trigger that too). It is the deep sadness that arrives when the reality of the loss fully lands. The numbness has worn off, the anger has quietened, and what is left is sorrow. You may withdraw from others, lose interest in things you used to enjoy, struggle to sleep or eat, and feel that nothing matters. This is often the longest stage, and while you are in it, it can feel as though it will never end. It is also where much of the slow work of grief happens: learning to live alongside the loss.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -102,7 +102,7 @@ export default function GriefStagesExplainedPage() {
       <h2 id="misunderstood" className="text-2xl font-bold text-foreground mb-6">Why the stages are misunderstood</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed mb-4">
-          The five stages were originally described by Elisabeth Kubler-Ross in her 1969 book "On Death and Dying." Here is the crucial point that most people miss: <strong>she was writing about people who were dying, not people who were grieving a death.</strong> The stages described the emotional journey of terminally ill patients coming to terms with their own mortality. They were later applied to grief more broadly, and Kubler-Ross herself acknowledged that this was a simplification.
+          The five stages were originally described by Elisabeth Kubler-Ross in her 1969 book "On Death and Dying." Here is the crucial point that most people miss: <strong>she was writing about people who were dying, not people who were grieving someone they had lost.</strong> The stages described the emotional experience of terminally ill patients coming to terms with their own mortality. They were later applied to grief more broadly, and Kubler-Ross herself acknowledged that this was a simplification.
         </p>
         <p className="text-sm text-muted leading-relaxed mb-4">
           In her later work with David Kessler, she was explicit that the stages were never meant to be a linear progression. They were not supposed to be a checklist that you work through in order. They were intended as a framework for understanding common emotional responses, not a prescription for how grief should go.
@@ -116,7 +116,7 @@ export default function GriefStagesExplainedPage() {
       <h2 id="not-linear" className="text-2xl font-bold text-foreground mb-6">Grief is not linear</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed mb-4">
-          Real grief is chaotic. You might feel numb on Monday, furious on Tuesday, fine on Wednesday, and unable to get out of bed on Thursday. You might go weeks feeling relatively OK and then be blindsided by a wave of grief triggered by a song, a smell, or a stranger who walks like they did.
+          Real grief rarely moves in a straight line. You might feel numb on Monday, furious on Tuesday, fine on Wednesday, and unable to get out of bed on Thursday. You might go weeks feeling relatively OK and then be caught off guard by a wave of grief brought on by a song, a smell, or a stranger who walks like they did.
         </p>
         <p className="text-sm text-muted leading-relaxed mb-4">
           You can experience multiple "stages" in a single hour. You can feel acceptance and anger at the same time. You can have a good day and feel guilty about it. You can be months or years into your grief and suddenly feel like you are back at the beginning. None of this is unusual. All of it is normal.
@@ -141,7 +141,7 @@ export default function GriefStagesExplainedPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Continuing Bonds</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Older models of grief suggested that the goal was to "let go" of the deceased and "move on." The continuing bonds approach, developed by Klass, Silverman, and Nickman in the 1990s, challenges this. It suggests that maintaining an ongoing connection with the person who has died is not only normal but healthy. Talking to them, keeping their photo by the bed, visiting their grave, celebrating their birthday, or simply carrying their memory with you are all ways of continuing the bond. You do not have to let go to heal.
+            Older models of grief suggested that the goal was to "let go" of the person who died and "move on." The continuing bonds approach, developed by Klass, Silverman, and Nickman in the 1990s, challenges this. It suggests that keeping an ongoing connection with the person you have lost is not only normal but healthy. Talking to them, keeping their photo by the bed, visiting their grave, celebrating their birthday, or simply carrying their memory with you are all ways of continuing the bond. You do not have to let go to heal.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -221,13 +221,13 @@ export default function GriefStagesExplainedPage() {
       <h2 id="complicated-grief" className="text-2xl font-bold text-foreground mb-6">When grief becomes complicated</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed mb-4">
-          For most people, grief gradually becomes more manageable over time, even if it never fully goes away. But for some people, grief becomes stuck. This is sometimes called "complicated grief" or "prolonged grief disorder." It is characterised by an intense yearning for the person that does not ease after many months, difficulty accepting the death, feeling that life has no meaning without them, and an inability to function in daily life.
+          For most people, grief gradually becomes more manageable over time, even if it never fully goes away. For some people, though, grief becomes stuck. This is sometimes called "complicated grief" or "prolonged grief disorder." It is characterised by an intense yearning for the person that does not ease after many months, difficulty accepting the death, feeling that life has no meaning without them, and an inability to function in daily life.
         </p>
         <p className="text-sm text-muted leading-relaxed mb-4">
           Prolonged grief disorder was formally recognised as a diagnosis in the ICD-11 and DSM-5-TR. It is not the same as normal grief, which is painful but gradually allows you to function. Complicated grief may require specialist support, including grief-focused therapy. It is estimated to affect around 7% to 10% of bereaved people.
         </p>
         <p className="text-sm text-muted leading-relaxed">
-          If you feel that your grief is not easing at all after many months, or if you are finding it impossible to function, please speak to your GP. There is no shame in needing professional help. Treatment is effective, and asking for it is a sign of strength.
+          If you feel that your grief is not easing at all after many months, or if you are finding it impossible to function, please speak to your GP. There is no shame in needing professional help. Treatment is effective, and there is nothing weak about asking for it.
         </p>
       </div>
 
@@ -272,7 +272,7 @@ export default function GriefStagesExplainedPage() {
 
       <div className="bg-primary-light rounded-xl p-8 text-center">
         <h2 className="text-2xl font-bold text-foreground mb-3">Dealing with the practical side too?</h2>
-        <p className="text-muted mb-6">If you also need help with the practical tasks after a death, our personalised guide creates a step-by-step plan based on your situation.</p>
+        <p className="text-muted mb-6">If you also need help with the practical tasks after a bereavement, our personalised guide creates a step-by-step plan based on your situation.</p>
         <Link href="/start" className="inline-block px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors">
           Get Your Personalised Guide
         </Link>

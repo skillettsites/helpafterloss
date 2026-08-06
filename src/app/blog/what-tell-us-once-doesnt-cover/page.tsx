@@ -29,7 +29,7 @@ const COVERED = [
   { name: 'HM Revenue and Customs (HMRC)', detail: 'Income tax, tax credits, and National Insurance', link: '/notify/hmrc' },
   { name: 'DVLA', detail: 'Driving licence and vehicle registration', link: '/notify/dvla' },
   { name: 'HM Passport Office', detail: 'Cancellation of the passport', link: '/notify/passport-office' },
-  { name: 'Electoral register', detail: 'Removal from the electoral roll', link: '/notify/electoral-register' },
+  { name: 'Electoral register', detail: 'Removal from the electoral roll', link: null },
   { name: 'Local council', detail: 'Council tax, blue badge, library card', link: null },
   { name: 'Veterans UK', detail: 'Armed forces compensation and pensions', link: null },
 ];
@@ -41,7 +41,7 @@ const NOT_COVERED: { category: string; intro: string; items: { name: string; lin
     items: [
       { name: 'Barclays', link: '/notify/barclays' },
       { name: 'HSBC', link: '/notify/hsbc' },
-      { name: 'Lloyds Bank', link: '/notify/lloyds' },
+      { name: 'Lloyds Bank', link: '/notify/lloyds-bank' },
       { name: 'NatWest', link: '/notify/natwest' },
       { name: 'Santander', link: '/notify/santander' },
       { name: 'Halifax', link: '/notify/halifax' },
@@ -58,12 +58,12 @@ const NOT_COVERED: { category: string; intro: string; items: { name: string; lin
     intro: 'Life insurance, home insurance, car insurance, travel insurance, pet insurance, and private medical insurance all need to be contacted directly. Policies may pay out a lump sum or need to be transferred to another name.',
     items: [
       { name: 'Aviva', link: '/notify/aviva' },
-      { name: 'AXA', link: '/notify/axa' },
-      { name: 'Direct Line', link: '/notify/direct-line' },
+      { name: 'AXA', link: null },
+      { name: 'Direct Line', link: null },
       { name: 'Legal & General', link: '/notify/legal-and-general' },
-      { name: 'LV=', link: '/notify/lv' },
+      { name: 'LV=', link: null },
       { name: 'Royal London', link: '/notify/royal-london' },
-      { name: 'Zurich', link: '/notify/zurich' },
+      { name: 'Zurich', link: null },
     ],
   },
   {
@@ -76,8 +76,8 @@ const NOT_COVERED: { category: string; intro: string; items: { name: string; lin
       { name: 'Octopus Energy', link: '/notify/octopus-energy' },
       { name: 'Scottish Power', link: '/notify/scottish-power' },
       { name: 'OVO Energy', link: '/notify/ovo-energy' },
-      { name: 'Shell Energy', link: '/notify/shell-energy' },
-      { name: 'Utilita', link: '/notify/utilita' },
+      { name: 'Shell Energy', link: null },
+      { name: 'Utilita', link: null },
     ],
   },
   {
@@ -86,10 +86,10 @@ const NOT_COVERED: { category: string; intro: string; items: { name: string; lin
     items: [
       { name: 'BT', link: '/notify/bt' },
       { name: 'Sky', link: '/notify/sky' },
-      { name: 'Virgin Media O2', link: '/notify/virgin-media-o2' },
-      { name: 'Vodafone', link: '/notify/vodafone' },
-      { name: 'EE', link: '/notify/ee' },
-      { name: 'Three', link: '/notify/three' },
+      { name: 'Virgin Media O2', link: '/notify/virgin-media' },
+      { name: 'Vodafone', link: null },
+      { name: 'EE', link: null },
+      { name: 'Three', link: null },
       { name: 'TalkTalk', link: '/notify/talktalk' },
     ],
   },
@@ -98,14 +98,14 @@ const NOT_COVERED: { category: string; intro: string; items: { name: string; lin
     intro: 'Your local water company needs to be contacted to close or transfer the account. Water companies are regional, so contact whichever one serves the property.',
     items: [
       { name: 'Thames Water', link: '/notify/thames-water' },
-      { name: 'Severn Trent', link: '/notify/severn-trent' },
-      { name: 'United Utilities', link: '/notify/united-utilities' },
-      { name: 'Anglian Water', link: '/notify/anglian-water' },
-      { name: 'Yorkshire Water', link: '/notify/yorkshire-water' },
-      { name: 'South West Water', link: '/notify/south-west-water' },
-      { name: 'Southern Water', link: '/notify/southern-water' },
-      { name: 'Welsh Water', link: '/notify/welsh-water' },
-      { name: 'Northumbrian Water', link: '/notify/northumbrian-water' },
+      { name: 'Severn Trent', link: null },
+      { name: 'United Utilities', link: null },
+      { name: 'Anglian Water', link: null },
+      { name: 'Yorkshire Water', link: null },
+      { name: 'South West Water', link: null },
+      { name: 'Southern Water', link: null },
+      { name: 'Welsh Water', link: null },
+      { name: 'Northumbrian Water', link: null },
     ],
   },
   {
@@ -265,7 +265,7 @@ export default function TellUsOnceNotCoveredPage() {
           ))}
         </ul>
         <p className="text-sm text-muted mt-4">
-          That is the complete list. Everything below is <strong className="text-foreground">your responsibility</strong>.
+          That is the complete list. Everything below is <strong className="text-foreground">left for you to do</strong>.
         </p>
       </div>
 

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 };
 
 const COST_SUMMARY = [
-  { item: 'Death certificates', low: '£62.50', high: '£125+', note: '£12.50 each in England (£11 Wales, £15 Scotland); order at least 5' },
+  { item: 'Death certificates', low: '£62.50', high: '£125+', note: '£12.50 each in England and Wales (£15 in Scotland); order at least 5' },
   { item: 'Direct cremation', low: '£1,000', high: '£2,500', note: 'No service; most affordable' },
   { item: 'Cremation with service', low: '£3,000', high: '£6,500', note: 'UK average £4,184 (SunLife)' },
   { item: 'Burial with service', low: '£4,000', high: '£9,000+', note: 'UK average £5,423 (SunLife)' },
@@ -34,7 +34,7 @@ const COST_SUMMARY = [
   { item: 'Flowers', low: '£150', high: '£500', note: 'Family tributes and coffin spray' },
   { item: 'Wake / reception', low: '£300', high: '£2,000+', note: 'Venue, catering, drinks' },
   { item: 'Obituary notice', low: '£100', high: '£500', note: 'Local newspaper listing' },
-  { item: 'Probate court fee', low: '£0', high: '£300', note: 'Free if estate under £5,000' },
+  { item: 'Probate court fee', low: '£0', high: '£526', note: 'Free if estate under £5,000' },
   { item: 'Solicitor fees (probate)', low: '£2,000', high: '£15,000+', note: '1-5% of estate value' },
   { item: 'Statutory notice (London Gazette)', low: '£80', high: '£100', note: 'Recommended to protect the executor' },
   { item: 'Post redirection', low: '£36', high: '£76', note: '3-12 months, Royal Mail' },
@@ -44,7 +44,7 @@ const COST_SUMMARY = [
 const HIDDEN_COSTS = [
   {
     title: 'Time off work',
-    detail: 'Most employers offer 3-5 days paid leave. For many people, the practical administration of an estate takes weeks or months of time, including unpaid leave or using annual holiday. There is no statutory right to paid bereavement leave for most deaths.',
+    detail: 'Most employers offer 3-5 days paid leave. For many people, the practical administration of an estate takes weeks or months of time, including unpaid leave or using annual holiday. There is no statutory right to paid bereavement leave for most bereavements.',
   },
   {
     title: 'Travel costs',
@@ -68,7 +68,7 @@ const HIDDEN_COSTS = [
   },
   {
     title: 'Debt you did not know about',
-    detail: 'The estate is liable for the deceased person\'s debts before beneficiaries inherit anything. Placing a statutory notice in the London Gazette (£80-£100) protects the executor from unknown creditors making claims later.',
+    detail: 'The estate is liable for any debts the person left behind before beneficiaries inherit anything. Placing a statutory notice in the London Gazette (£80-£100) protects the executor from unknown creditors making claims later.',
   },
   {
     title: 'Accountant fees for tax',
@@ -87,7 +87,7 @@ const SAVINGS_TIPS = [
   },
   {
     title: 'Do probate yourself',
-    detail: 'For straightforward estates (a property, bank accounts, known beneficiaries, no disputes), DIY probate is perfectly manageable. The government\'s online service guides you through every step. You pay only the £300 court fee, potentially saving thousands in solicitor fees.',
+    detail: 'For straightforward estates (a property, bank accounts, known beneficiaries, no disputes), DIY probate is perfectly manageable. The government\'s online service guides you through every step. You pay only the £526 court fee, potentially saving thousands in solicitor fees.',
   },
   {
     title: 'Order enough death certificates upfront',
@@ -103,7 +103,7 @@ const SAVINGS_TIPS = [
   },
   {
     title: 'Check if you qualify for Funeral Expenses Payment',
-    detail: 'If you are on Universal Credit, Pension Credit, Housing Benefit, or certain other means-tested benefits, you may be entitled to help from the DWP: burial or cremation fees plus up to £1,000 for other costs. Call 0800 731 0469 or apply online within 6 months of the funeral.',
+    detail: 'If you are on Universal Credit, Pension Credit, Housing Benefit, or certain other means-tested benefits, you may be entitled to help from the DWP: burial or cremation fees plus up to £1,000 for other costs. Call 0800 151 2012 or apply online within 6 months of the funeral.',
   },
 ];
 
@@ -125,7 +125,7 @@ export default function TrueCostPage() {
         The True Cost of Dying in the UK in 2026
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        When someone dies, the financial reality can come as a shock. The average UK funeral now costs between £4,000 and £5,500. But the funeral is only the start. By the time you include probate, solicitors, certificates, and all the smaller costs nobody warns you about, the total can easily reach £10,000 to £15,000 or more. This article sets out every cost you are likely to face, with real 2026 figures, so you can plan and avoid surprises.
+        When someone passes away, the financial reality can come as a shock. The average UK funeral now costs between £4,000 and £5,500. The funeral is only the start, though. By the time you include probate, solicitors, certificates, and all the smaller costs nobody warns you about, the total can easily reach £10,000 to £15,000 or more. This article sets out every cost you are likely to face, with real 2026 figures, so you can plan and avoid surprises.
       </p>
 
       <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
@@ -200,7 +200,7 @@ export default function TrueCostPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Direct cremation: £1,000-£2,500</h3>
           <p className="text-sm text-muted leading-relaxed">
-            The UK average for a direct cremation was £1,647 in the most recent SunLife Cost of Dying Report. With a direct cremation, there is no service at the crematorium. The body is collected, cremated, and the ashes are returned. It is a dignified option, and there is nothing to stop you holding a separate memorial service at a later date, in a garden, a church hall, or anywhere that meant something to the person.{' '}See our <Link href="/blog/free-funeral-options-uk" className="text-primary hover:underline">guide to free and low-cost funeral options</Link> for more ways to reduce costs.
+            The UK average for a direct cremation was £1,647 in the most recent SunLife Cost of Dying Report. With a direct cremation, there is no service at the crematorium. The person is collected, cremated, and their ashes returned to you. It is a dignified option, and there is nothing to stop you holding a separate memorial service at a later date, in a garden, a church hall, or anywhere that meant something to them.{' '}See our <Link href="/blog/free-funeral-options-uk" className="text-primary hover:underline">guide to free and low-cost funeral options</Link> for more ways to reduce costs.
           </p>
         </div>
 
@@ -219,9 +219,9 @@ export default function TrueCostPage() {
         </div>
 
         <div className="bg-card rounded-xl border border-border p-6">
-          <h3 className="font-semibold text-foreground mb-2">Death certificates: £12.50 each (England)</h3>
+          <h3 className="font-semibold text-foreground mb-2">Death certificates: £12.50 each (England and Wales)</h3>
           <p className="text-sm text-muted leading-relaxed">
-            In England, each certified copy of a death certificate costs £12.50. In Wales the fee is £11, and in Scotland the fee is £15 for an extract from National Records of Scotland. Most families need at least five: one each for the main bank account, any additional savings or investment accounts, the pension provider, the mortgage lender or insurer, and one spare. Ordering them all at registration is cheaper and faster than ordering them individually later through the General Register Office.{' '}Our <Link href="/blog/death-certificate-how-many-copies" className="text-primary hover:underline">death certificate guide</Link> explains how many copies you need and why.
+            In England and Wales, each certified copy of a death certificate costs £12.50, and in Scotland it is around £15 for an extract from National Records of Scotland. Most families need at least five: one each for the main bank account, any additional savings or investment accounts, the pension provider, the mortgage lender or insurer, and one spare. Ordering them all at registration is cheaper and faster than ordering them individually later through the General Register Office.{' '}Our <Link href="/blog/death-certificate-how-many-copies" className="text-primary hover:underline">death certificate guide</Link> explains how many copies you need and why.
           </p>
         </div>
 
@@ -235,7 +235,7 @@ export default function TrueCostPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Probate and legal costs</h3>
           <p className="text-sm text-muted leading-relaxed">
-            The probate court fee is £300 for any estate valued over £5,000. If the estate is below £5,000, there is no fee. If you use a solicitor to handle probate, they typically charge 1-5% of the estate value, or hourly rates of £150-£400. For a £300,000 estate, that means £3,000-£15,000 in solicitor fees. Most straightforward estates can be handled without a solicitor using the government's online probate service.{' '}See our <Link href="/blog/bank-probate-thresholds-2026" className="text-primary hover:underline">bank probate thresholds guide</Link> for how much each bank will release without probate.
+            The probate court fee is £526 for any estate valued over £5,000. If the estate is below £5,000, there is no fee. If you use a solicitor to handle probate, they typically charge 1-5% of the estate value, or hourly rates of £150-£400. For a £526,000 estate, that means £3,000-£15,000 in solicitor fees. Most straightforward estates can be handled without a solicitor using the government's online probate service.{' '}See our <Link href="/blog/bank-probate-thresholds-2026" className="text-primary hover:underline">bank probate thresholds guide</Link> for how much each bank will release without probate.
           </p>
         </div>
 
@@ -278,7 +278,7 @@ export default function TrueCostPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">DWP Funeral Expenses Payment</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If you are on Universal Credit, Pension Credit, Income Support, income-based JSA, income-related ESA, Housing Benefit, Child Tax Credit, or Working Tax Credit with a disability element, you may qualify for help with funeral costs. The payment covers the cremation or burial fee in full plus up to £1,000 for other costs. Apply on form SF200 within 6 months of the funeral. Call 0800 731 0469 or apply at gov.uk.
+            If you are on Universal Credit, Pension Credit, Income Support, income-based JSA, income-related ESA, Housing Benefit, Child Tax Credit, or Working Tax Credit with a disability element, you may qualify for help with funeral costs. The payment covers the cremation or burial fee in full plus up to £1,000 for other costs. Apply on form SF200 within 6 months of the funeral. Call 0800 151 2012 or apply at gov.uk.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -298,7 +298,7 @@ export default function TrueCostPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Funeral costs as a priority debt</h3>
           <p className="text-sm text-muted leading-relaxed">
-            It is worth knowing that reasonable funeral costs are treated as a priority debt of the estate. This means they can be paid from the deceased person's bank accounts before the estate is formally distributed. Most banks will release funds directly to the funeral director on production of the invoice and a death certificate, even before probate is granted. Ask the funeral director and bank about this arrangement.
+            It is worth knowing that reasonable funeral costs are treated as a priority debt of the estate. This means they can be paid from the person's bank accounts before the estate is formally distributed. Most banks will release funds directly to the funeral director on production of the invoice and a death certificate, even before probate is granted. Ask the funeral director and bank about this arrangement.
           </p>
         </div>
       </div>
@@ -372,7 +372,7 @@ export default function TrueCostPage() {
               {
                 '@type': 'Question',
                 name: 'What other costs are there when someone dies besides the funeral?',
-                acceptedAnswer: { '@type': 'Answer', text: 'Beyond the funeral, costs include death certificates (£11 each, you need 3 to 4 copies), probate application (£300 if the estate exceeds £5,000), solicitor fees if you use one, property clearance, headstone or memorial (£500 to £3,000+), ongoing grave maintenance fees, and potential inheritance tax. The total can be significantly more than the funeral itself.' },
+                acceptedAnswer: { '@type': 'Answer', text: 'Beyond the funeral, costs include death certificates (£12.50 each in England and Wales, and most families need 5 or more), the probate application (£526 if the estate exceeds £5,000), solicitor fees if you use one, property clearance, headstone or memorial (£500 to £3,000+), ongoing grave maintenance fees, and potential inheritance tax. The total can be significantly more than the funeral itself.' },
               },
             ],
           }),

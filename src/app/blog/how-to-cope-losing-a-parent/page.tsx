@@ -42,20 +42,20 @@ export default function HowToCopeLosingParentPage() {
         How to Cope With Losing a Parent: A Practical and Emotional Guide
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        Losing a parent changes you. It does not matter whether you were close or distant, whether the death was expected or sudden, whether you are 25 or 65. The person who brought you into the world, or who raised you, is gone. And nothing quite prepares you for how that feels. This guide is for anyone navigating life after the death of a mother or father, covering both the emotional and the practical side.
+        Losing a parent changes you. It does not matter whether you were close or distant, whether you had time to prepare or it came without warning, whether you are 25 or 65. The person who brought you into the world, or who raised you, is no longer here. Nothing quite prepares you for how that feels. This guide is for anyone finding their way after the loss of a mother or father, covering both the emotional and the practical side.
       </p>
 
       <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
         <h2 className="text-sm font-semibold text-amber-900 mb-3">Before anything else</h2>
         <p className="text-sm text-amber-800 leading-relaxed">
-          If you are reading this in the days after your parent's death, please be gentle with yourself. You do not have to have it together. You do not have to be strong for everyone else. If you need to talk, <strong>Cruse Bereavement Support (0808 808 1677)</strong> and the <strong>Samaritans (116 123)</strong> are available for free.
+          If you are reading this in the days after losing your parent, please be gentle with yourself. You do not have to have it together. You do not have to be strong for everyone else. If you need to talk, <strong>Cruse Bereavement Support (0808 808 1677)</strong> and the <strong>Samaritans (116 123)</strong> are available for free.
         </p>
       </div>
 
       <TableOfContents items={[
         { id: 'what-it-feels-like', label: 'What losing a parent feels like' },
-        { id: 'expected-vs-sudden', label: 'Expected death vs sudden death' },
-        { id: 'family-dynamics', label: 'Family dynamics after a parent dies' },
+        { id: 'expected-vs-sudden', label: 'When it was expected, and when it was sudden' },
+        { id: 'family-dynamics', label: 'Family dynamics after losing a parent' },
         { id: 'surviving-parent', label: 'Supporting the surviving parent' },
         { id: 'practical', label: 'The practical side' },
         { id: 'identity', label: 'The identity shift' },
@@ -69,44 +69,44 @@ export default function HowToCopeLosingParentPage() {
       <h2 id="what-it-feels-like" className="text-2xl font-bold text-foreground mb-6">What losing a parent feels like</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed mb-4">
-          Losing a parent is often described as losing your foundation. They were the person you called when things went wrong, or the person whose approval still mattered, or the person who remembered your childhood. Even if your relationship was difficult, their death leaves a gap that nothing else fills.
+          Losing a parent is often described as losing your foundation. They were the person you called when things went wrong, or the person whose approval still mattered, or the person who remembered your childhood. Even if your relationship was difficult, their absence leaves a gap that nothing else fills.
         </p>
         <p className="text-sm text-muted leading-relaxed mb-4">
-          Common feelings include: shock and disbelief (even when the death was expected), a deep sadness that comes in waves, anxiety about your own mortality, guilt about things said or unsaid, anger (at doctors, at fate, at the parent who died, at yourself), a feeling of being orphaned (even as an adult), and an unexpected sense of freedom or relief if the parent was ill for a long time. All of these are normal. You can feel several of them at the same time.
+          Common feelings include: shock and disbelief (even when you knew it was coming), a deep sadness that comes in waves, anxiety about your own mortality, guilt about things said or unsaid, anger (at doctors, at fate, at the parent you have lost, at yourself), a feeling of being orphaned (even as an adult), and an unexpected sense of freedom or relief if the parent was ill for a long time. All of these are normal. You can feel several of them at the same time.
         </p>
         <p className="text-sm text-muted leading-relaxed">
-          Many people are surprised by the physical effects. Grief is exhausting. You may experience fatigue, insomnia, loss of appetite, headaches, muscle tension, or a weakened immune system. Your body is processing a huge amount of stress, and it shows. Do not ignore these symptoms; they are part of grieving.
+          Many people are surprised by the physical effects. Grief is exhausting. You may experience fatigue, insomnia, loss of appetite, headaches, muscle tension, or a weakened immune system. Your body is carrying a great deal of stress, and it shows. Please do not brush these symptoms aside; they are part of grieving.
         </p>
       </div>
 
       {/* Expected vs sudden */}
-      <h2 id="expected-vs-sudden" className="text-2xl font-bold text-foreground mb-6">Expected death vs sudden death</h2>
+      <h2 id="expected-vs-sudden" className="text-2xl font-bold text-foreground mb-6">When it was expected, and when it was sudden</h2>
       <div className="space-y-4 mb-12">
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">When you had time to prepare</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If your parent had a long illness, you may have already been grieving before they died. This is called anticipatory grief, and it is real grief, not a dress rehearsal. You may have spent months watching them decline, adjusting to each new loss of ability, and dreading the final one. When the death comes, you might feel relief that their suffering has ended, and then immediately feel guilty for feeling relieved. This is one of the most common experiences in bereavement, and it does not make you a bad person.
+            If your parent had a long illness, you may have already been grieving before they passed away. This is called anticipatory grief, and it is real grief, not a dress rehearsal. You may have spent months watching them decline, adjusting to each new loss of ability, and dreading the final one. When the moment comes, you might feel relief that their suffering has ended, and then immediately feel guilty for feeling relieved. This is one of the most common experiences in bereavement, and it does not make you a bad person.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">When it was sudden</h3>
           <p className="text-sm text-muted leading-relaxed">
-            A sudden death, whether from a heart attack, an accident, or an unexpected medical event, leaves no time to prepare. The shock can last for weeks or months. You may replay the last conversation over and over, searching for signs you missed. You may struggle to believe it really happened. The trauma of a sudden loss can sometimes lead to symptoms similar to PTSD: flashbacks, hypervigilance, difficulty sleeping, and an exaggerated startle response. If you are experiencing these, speak to your GP. There is no need to manage this alone.
+            A sudden loss, whether from a heart attack, an accident, or an unexpected medical event, leaves no time to prepare. The shock can last for weeks or months. You may replay the last conversation over and over, searching for signs you missed. You may struggle to believe it really happened. The trauma of a sudden loss can sometimes lead to symptoms similar to PTSD: flashbacks, hypervigilance, difficulty sleeping, and an exaggerated startle response. If you are experiencing these, speak to your GP. There is no need to manage this alone.
           </p>
         </div>
       </div>
 
       {/* Family dynamics */}
-      <h2 id="family-dynamics" className="text-2xl font-bold text-foreground mb-6">Family dynamics after a parent dies</h2>
+      <h2 id="family-dynamics" className="text-2xl font-bold text-foreground mb-6">Family dynamics after losing a parent</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed mb-4">
-          A parent's death reshuffles the family. Old roles change. The peacekeeper is gone, the person who organised everything is gone, the one who held the family together is gone. Siblings who were close may drift apart. Siblings who were distant may reconnect. Arguments about the funeral, the will, or clearing the house can surface old resentments and create new ones.
+          Losing a parent reshuffles the family. Old roles change. The peacekeeper is gone, the person who organised everything is gone, the one who held the family together is gone. Siblings who were close may drift apart. Siblings who were distant may reconnect. Arguments about the funeral, the will, or clearing the house can surface old resentments and create new ones.
         </p>
         <p className="text-sm text-muted leading-relaxed mb-4">
           If tensions arise, try to remember that everyone grieves differently. One sibling may want to clear the house immediately; another may need more time. One may cry openly; another may seem unmoved. These differences do not mean anyone cares less. They reflect different coping styles, different relationships with the parent, and different emotional needs.
         </p>
         <p className="text-sm text-muted leading-relaxed">
-          Where possible, delay major decisions about the estate (selling the house, dividing possessions) until the initial shock has passed. Decisions made in acute grief are often regretted. If disputes arise about the will or the estate, consider mediation before resorting to legal action. Family relationships matter more than money, though it may not feel that way in the moment.
+          Where possible, delay major decisions about the estate (selling the house, dividing possessions) until the initial shock has eased. Decisions made in the rawest weeks of grief are often regretted later. If disputes arise about the will or the estate, consider mediation before resorting to legal action. Family relationships matter more than money, though it may not feel that way in the moment.
         </p>
       </div>
 
@@ -114,7 +114,7 @@ export default function HowToCopeLosingParentPage() {
       <h2 id="surviving-parent" className="text-2xl font-bold text-foreground mb-6">Supporting the surviving parent</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed mb-4">
-          If one parent is still alive, they are likely experiencing the most devastating loss of their life. After decades of partnership, the surviving parent faces not just grief but a complete restructuring of daily life. They may need practical help with things the deceased parent always handled: finances, cooking, driving, household maintenance. They may also struggle with loneliness, particularly in the evenings and at weekends.
+          If one parent is still alive, they are likely facing the most devastating loss of their life. After decades of partnership, the surviving parent faces not just grief but a complete restructuring of daily life. They may need practical help with things your other parent always handled: finances, cooking, driving, household maintenance. They may also struggle with loneliness, particularly in the evenings and at weekends.
         </p>
         <p className="text-sm text-muted leading-relaxed mb-4">
           At the same time, you are grieving too. You cannot pour from an empty cup. It is OK to say: "I want to help you, but I need some time for myself too." Setting boundaries is not selfish; it is necessary for everyone's wellbeing. If the surviving parent needs more support than you can give, help them connect with services: <Link href="/support" className="text-primary hover:underline">bereavement support groups</Link>, Age UK (0800 678 1602), or their GP.
@@ -166,13 +166,13 @@ export default function HowToCopeLosingParentPage() {
       <h2 id="milestones" className="text-2xl font-bold text-foreground mb-6">Milestones without them</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed mb-4">
-          Birthdays, weddings, graduations, the birth of a child, Christmas, the anniversary of their death, and your own birthday are all moments when the absence hits hard. You may dread these dates for weeks in advance. The anticipation is often worse than the day itself, but the day can still be brutal.
+          Birthdays, weddings, graduations, the birth of a child, Christmas, the anniversary of their death, and your own birthday are all moments when the absence is felt keenly. You may dread these dates for weeks in advance. The anticipation is often worse than the day itself, though the day can still be very hard.
         </p>
         <p className="text-sm text-muted leading-relaxed mb-4">
           Some people find comfort in honouring their parent at milestones: leaving an empty seat at a wedding, wearing a piece of their jewellery, telling stories about them, or raising a glass. Others prefer to get through the day quietly without drawing attention to the absence. Neither approach is better.
         </p>
         <p className="text-sm text-muted leading-relaxed">
-          The first year is full of "firsts" that catch you off guard: the first time you go to call them and remember you cannot, the first time something happens that you would have told them about, the first holiday without them. These firsts are painful, but surviving them proves that you can.
+          The first year is full of "firsts" that catch you off guard: the first time you go to call them and remember you cannot, the first time something happens that you would have told them about, the first holiday without them. These firsts are painful. You do not have to handle them gracefully; you only have to get through them.
         </p>
       </div>
 
@@ -180,7 +180,7 @@ export default function HowToCopeLosingParentPage() {
       <h2 id="complicated-relationships" className="text-2xl font-bold text-foreground mb-6">When the relationship was complicated</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed mb-4">
-          Not all parent-child relationships are loving. If your parent was abusive, neglectful, absent, or difficult, their death can bring a complicated mixture of emotions: grief for the relationship you never had, relief that the difficult dynamic is over, anger that you never got the apology or the closure you deserved, and guilt for feeling any of these things.
+          Not all parent-child relationships are loving. If your parent was abusive, neglectful, absent, or difficult, losing them can bring a complicated mixture of emotions: grief for the relationship you never had, relief that the difficult dynamic is over, anger that you never got the apology or the closure you deserved, and guilt for feeling any of these things.
         </p>
         <p className="text-sm text-muted leading-relaxed mb-4">
           You are allowed to grieve a complicated relationship. You are allowed to feel relieved. You are allowed to feel nothing. You are allowed to feel all of these at once. Society expects us to mourn our parents in a particular way, and if your relationship did not fit that mould, you may feel pressure to perform a grief you do not feel, or to suppress a grief that others do not understand.
@@ -199,7 +199,7 @@ export default function HowToCopeLosingParentPage() {
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Write things down.</strong> A journal, letters to them, memories you do not want to forget. Writing can process what talking cannot.</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Be kind to your body.</strong> Eat when you can, sleep when you can, move when you can. Grief is physical.</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Accept that you will have bad days.</strong> And good days. And days that are both. That is grief.</li>
-          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Seek professional help</strong> if you need it. Counselling is not a sign of weakness. It is a tool.</li>
+          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Ask for professional help</strong> if you need it. Counselling is not a sign of weakness. It is practical support, like any other.</li>
         </ul>
       </div>
 
@@ -210,7 +210,7 @@ export default function HowToCopeLosingParentPage() {
           <li><strong>Cruse Bereavement Support:</strong> 0808 808 1677 (free)</li>
           <li><strong>Samaritans:</strong> 116 123 (free, 24 hours)</li>
           <li><strong>Mind:</strong> 0300 123 3393 (Mon-Fri 9am-6pm)</li>
-          <li><strong>Sue Ryder online grief community:</strong> <a href="https://www.sueryder.org/online-bereavement-community" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">sueryder.org</a></li>
+          <li><strong>Sue Ryder online grief community:</strong> <a href="https://www.community.sueryder.org" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">sueryder.org</a></li>
           <li><strong>NHS talking therapies:</strong> Self-refer at <a href="https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/talking-therapies-and-counselling/nhs-talking-therapies/" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">nhs.uk</a></li>
           <li><strong>Age UK (for surviving parent):</strong> 0800 678 1602</li>
         </ul>
@@ -225,7 +225,7 @@ export default function HowToCopeLosingParentPage() {
 
       <div className="bg-primary-light rounded-xl p-8 text-center">
         <h2 className="text-2xl font-bold text-foreground mb-3">Need help with what to do next?</h2>
-        <p className="text-muted mb-6">Our personalised guide covers every practical step after a parent's death, with deadlines and specific guidance for your situation.</p>
+        <p className="text-muted mb-6">Our personalised guide covers every practical step after losing a parent, with deadlines and specific guidance for your situation.</p>
         <Link href="/start" className="inline-block px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors">
           Get Your Personalised Guide
         </Link>

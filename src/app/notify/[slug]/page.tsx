@@ -74,18 +74,18 @@ function generateFaqs(contact: BereavementContact) {
     {
       question: `How do I notify ${contact.name} of a death?`,
       answer: contact.bereavementPhone
-        ? `You can notify ${contact.name} by calling their bereavement team on ${contact.bereavementPhone}${contact.onlineFormUrl ? ', or by completing their online bereavement form' : ''}. ${contact.postalAddress ? `You can also write to them at ${contact.postalAddress}.` : ''} Have the death certificate and your identification ready before you make contact.`
-        : `You can notify ${contact.name} through their bereavement process${contact.onlineFormUrl ? ', including their online form' : ''}. Visit their bereavement page for full details and have the death certificate ready.`,
+        ? `You can let ${contact.name} know by calling their bereavement team on ${contact.bereavementPhone}${contact.onlineFormUrl ? ', or by filling in their online bereavement form' : ''}. ${contact.postalAddress ? `You can also write to them at ${contact.postalAddress}.` : ''} Have the death certificate and your own identification beside you before you get in touch.`
+        : `You can let ${contact.name} know through their bereavement process${contact.onlineFormUrl ? ', including their online form' : ''}. Their bereavement page has the full details. Have the death certificate ready before you start.`,
     },
     {
       question: `What documents does ${contact.name} need for bereavement?`,
-      answer: `${contact.name} typically requires: ${contact.documentsRequired.join(', ')}. It is a good idea to have certified copies of the death certificate ready, as originals may be retained temporarily.`,
+      answer: `${contact.name} usually asks for: ${contact.documentsRequired.join(', ')}. It helps to have certified copies of the death certificate ready, as originals are sometimes held on to for a while.`,
     },
     {
       question: `How long does ${contact.name} take to process a bereavement?`,
       answer: contact.typicalTimeline
         ? contact.typicalTimeline
-        : `Processing times at ${contact.name} vary depending on the complexity of the estate and whether probate is required. Contact their bereavement team for a specific estimate once you have submitted all documents.`,
+        : `How long ${contact.name} take depends on how complicated the estate is and whether probate is needed. Once you have sent everything in, their bereavement team can give you a clearer idea of the timescale.`,
     },
   ];
 
@@ -193,8 +193,9 @@ export default async function NotifyOrganisationPage({ params }: PageProps) {
             </a>
           )}
           <p className="text-lg text-muted leading-relaxed mt-4">
-            Everything you need to notify {contact.name} after a bereavement, including the
-            dedicated phone number, required documents, and how long the process takes.
+            Everything you need to let {contact.name} know, including their dedicated bereavement
+            number, the documents to have ready, and how long it usually takes. Their team handle
+            these calls every day and will be patient with you.
           </p>
         </div>
       </section>
@@ -344,7 +345,7 @@ export default async function NotifyOrganisationPage({ params }: PageProps) {
                 </p>
               </div>
               <a
-                href="https://www.unbiased.co.uk/find/solicitors/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=notify-bank-early"
+                href="https://www.unbiased.co.uk/find-an-adviser/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=notify-bank-early"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
@@ -426,7 +427,7 @@ export default async function NotifyOrganisationPage({ params }: PageProps) {
                 </p>
               </div>
               <a
-                href="https://www.unbiased.co.uk/find/solicitors/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=notify-bank"
+                href="https://www.unbiased.co.uk/find-an-adviser/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=notify-bank"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
@@ -444,8 +445,8 @@ export default async function NotifyOrganisationPage({ params }: PageProps) {
           <h2 className="text-2xl font-bold text-foreground mb-6">What to say when you call</h2>
           <div className="bg-accent/50 rounded-xl border border-border p-6">
             <p className="text-sm text-muted leading-relaxed italic mb-4">
-              You do not need to prepare a detailed explanation. A brief, straightforward call is
-              all that is needed. Here is a simple script you can follow:
+              You do not need to explain anything at length. A short, straightforward call is all
+              this takes. If it helps, read the words below straight off the screen. Nobody will mind.
             </p>
             <div className="bg-card rounded-lg border border-border p-5 space-y-3">
               <p className="text-sm text-foreground leading-relaxed">
@@ -462,8 +463,8 @@ export default async function NotifyOrganisationPage({ params }: PageProps) {
               </p>
             </div>
             <p className="text-xs text-muted mt-4">
-              The bereavement team will guide you through the rest of the call. Have the death
-              certificate, your photo ID, and any account details to hand before calling.
+              The bereavement team will take it from there and guide you through the rest. Have the
+              death certificate, your photo ID, and any account details beside you before you ring.
             </p>
           </div>
         </div>

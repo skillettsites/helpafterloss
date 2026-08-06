@@ -26,11 +26,11 @@ export const metadata: Metadata = {
 const SECTIONS = [
   {
     title: 'What happens immediately',
-    content: 'When a bank is told that an account holder has died, it freezes the account straight away. No money can go in or out. Standing orders and direct debits are cancelled. If any payments bounce as a result, the bank will not charge fees on the deceased\'s account. This is standard practice across all UK banks and building societies.',
+    content: 'When a bank is told that an account holder has passed away, it freezes the account straight away. No money can go in or out. Standing orders and direct debits are cancelled. If any payments bounce as a result, the bank will not charge fees on their account. This is standard practice across all UK banks and building societies.',
   },
   {
     title: 'Sole accounts vs joint accounts',
-    content: 'For sole accounts (in the deceased\'s name only), the bank freezes the account until probate is granted or the bank agrees to release the funds. For joint accounts, the money passes automatically to the surviving account holder under the "right of survivorship." The surviving holder keeps full access to the account and the balance does not form part of the estate for probate purposes, though it may still count for inheritance tax.',
+    content: 'For sole accounts (in their name only), the bank freezes the account until probate is granted or the bank agrees to release the funds. For joint accounts, the money passes automatically to the surviving account holder under the "right of survivorship." The surviving holder keeps full access to the account and the balance does not form part of the estate for probate purposes, though it may still count for inheritance tax.',
   },
   {
     title: 'How to find all their accounts',
@@ -38,11 +38,11 @@ const SECTIONS = [
   },
   {
     title: 'The Death Notification Service',
-    content: 'The Death Notification Service (deathnotificationservice.co.uk) lets you notify multiple banks and building societies of a death in one go. You fill in a single online form with the deceased\'s details and select which institutions to notify. It covers over 40 banks and building societies. It is free to use. Each bank will then contact you separately with their own requirements for closing the account and releasing funds.',
+    content: 'The Death Notification Service (deathnotificationservice.co.uk) lets you notify multiple banks and building societies in one go, rather than repeating the same conversation over and over. You fill in a single online form with their details and select which institutions to notify. It covers over 40 banks and building societies. It is free to use. Each bank will then contact you separately with their own requirements for closing the account and releasing funds.',
   },
   {
     title: 'Releasing money without probate',
-    content: 'Most banks will release money from a deceased person\'s account without a Grant of Probate if the balance is below a certain threshold. Each bank sets its own limit. Some banks will ask you to sign an indemnity form instead, which means you agree to return the money if a valid claim is made against the estate later. If the account balance is above the bank\'s threshold, you will need to apply for probate before the bank will release anything.',
+    content: 'Most banks will release money from the account of someone who has passed away without a Grant of Probate if the balance is below a certain threshold. Each bank sets its own limit. Some banks will ask you to sign an indemnity form instead, which means you agree to return the money if a valid claim is made against the estate later. If the account balance is above the bank\'s threshold, you will need to apply for probate before the bank will release anything.',
   },
   {
     title: 'Priority funeral payments',
@@ -72,7 +72,7 @@ const FAQ = [
     a: 'The bank freezes the account as soon as it is notified of the death. All standing orders and direct debits are cancelled. No withdrawals or deposits can be made. The money remains in the account until either probate is granted or the bank agrees to release the funds under its small estate procedure. Joint accounts are an exception; the surviving account holder keeps full access.',
   },
   {
-    q: 'Can I use the deceased\'s bank account to pay for the funeral?',
+    q: 'Can I use their bank account to pay for the funeral?',
     a: 'Yes. Almost all UK banks will release funds to pay for the funeral before probate is granted. You need to provide the funeral director\'s invoice to the bank. The bank will typically pay the funeral director directly rather than giving you the money. This applies even if the account balance is above the bank\'s normal probate threshold.',
   },
   {
@@ -81,11 +81,11 @@ const FAQ = [
   },
   {
     q: 'What happens to a joint bank account when someone dies?',
-    a: 'The money in a joint account passes automatically to the surviving account holder. The bank removes the deceased\'s name from the account and the surviving holder continues using it as normal. The money does not go through probate. However, the deceased\'s share of the joint account may still be counted for inheritance tax purposes.',
+    a: 'The money in a joint account passes automatically to the surviving account holder. The bank takes their name off the account and the surviving holder carries on using it as normal. The money does not go through probate. However, their share of the joint account may still be counted for inheritance tax purposes.',
   },
   {
     q: 'How do I find all the bank accounts someone had?',
-    a: 'Check their paperwork, post, email, and phone for banking apps. You can also request a deceased person\'s credit report from Experian, Equifax, or TransUnion, which will show any accounts linked to their name. The Unclaimed Assets Register (greatlakesuk.com) can help trace dormant accounts. NS&I (Premium Bonds and savings) is often overlooked, so check with them directly.',
+    a: 'Check their paperwork, post, email, and phone for banking apps. You can also request a credit report for the person who has passed away from Experian, Equifax, or TransUnion, which will show any accounts linked to their name. The Unclaimed Assets Register (greatlakesuk.com) can help trace dormant accounts. NS&I (Premium Bonds and savings) is often overlooked, so check with them directly.',
   },
   {
     q: 'How long does it take to release money after death?',
@@ -112,7 +112,7 @@ export default function BankAccountsAfterDeathPage() {
         Bank Accounts After Death: What Happens and What to Do
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        Dealing with someone&apos;s bank accounts after they die is one of the first practical tasks you will face. Banks freeze accounts as soon as they are told, which can leave families without access to money they need. This guide explains how the process works, how to find all the accounts, and how to get money released as quickly as possible.
+        Sorting out someone&apos;s bank accounts after they pass away is one of the first practical jobs you will face. Banks freeze accounts as soon as they are told, which can leave families without access to money they need. This guide explains how the process works, how to find all the accounts, and how to get money released as quickly as possible.
       </p>
 
       <GuideImage
@@ -161,7 +161,7 @@ export default function BankAccountsAfterDeathPage() {
           </p>
         </div>
         <a
-          href="https://www.unbiased.co.uk/find/solicitors/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=bank-accounts-mid"
+          href="https://www.unbiased.co.uk/find-an-adviser/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=bank-accounts-mid"
           target="_blank"
           rel="noopener noreferrer"
           className="shrink-0 inline-block px-4 py-2 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-xs whitespace-nowrap"
@@ -214,7 +214,7 @@ export default function BankAccountsAfterDeathPage() {
           </p>
         </div>
         <a
-          href="https://www.unbiased.co.uk/find/solicitors/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=bank-accounts-guide"
+          href="https://www.unbiased.co.uk/find-an-adviser/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=bank-accounts-guide"
           target="_blank"
           rel="noopener noreferrer"
           className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"

@@ -4,7 +4,9 @@ import Stripe from 'stripe';
 export const dynamic = 'force-dynamic';
 
 function getStripe() {
-  const key = process.env.STRIPE_SECRET_KEY;
+  // Env values exported from .env files can carry a literal trailing "\n", which
+  // Stripe rejects as an invalid key. Strip it before use.
+  const key = process.env.STRIPE_SECRET_KEY?.replace(/\\n$/, '').trim();
   if (!key) throw new Error('STRIPE_SECRET_KEY is not configured');
   return new Stripe(key);
 }

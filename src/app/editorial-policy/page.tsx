@@ -20,8 +20,9 @@ export default function EditorialPolicyPage() {
 
       <p className="text-lg text-muted mb-8">
         Help After Loss provides free bereavement guidance for people in the UK who have
-        lost someone. We take the accuracy and sensitivity of our content seriously.
-        This page explains how we research, write, and maintain our guides.
+        lost someone. We take both the accuracy and the sensitivity of our content seriously,
+        because people read these pages at a very difficult time. This page explains how we
+        research, write, and maintain our guides.
       </p>
 
       <section className="mb-8">
@@ -90,7 +91,7 @@ export default function EditorialPolicyPage() {
       <section className="mb-8">
         <h2 className="text-xl font-semibold text-foreground mb-3">Privacy and data</h2>
         <p className="text-muted">
-          We do not collect or store personal information about the deceased or your situation.
+          We do not collect or store personal information about the person who died or about your situation.
           Our personalised checklist tool saves data only to your device (localStorage).
           No bereavement data is sent to our servers. See our{' '}
           <Link href="/privacy" className="text-primary hover:underline">

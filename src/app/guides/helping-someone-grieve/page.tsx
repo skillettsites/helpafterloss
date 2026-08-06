@@ -33,7 +33,7 @@ export default function HelpingSomeoneGrievePage() {
         How to Help Someone Who Is Grieving
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        When someone you care about loses a person they love, it can be hard to know what to do. You want to help, but you are afraid of saying the wrong thing or overstepping. The truth is that your presence matters far more than perfect words. This guide covers what actually helps, what to avoid, and how to support someone not just in the first few days but in the months that follow.
+        When someone you care about loses a person they love, it is hard to know what to do. You want to help, but you are worried about saying the wrong thing or getting in the way. In practice, being there matters far more than finding the right words. This guide covers what actually helps, what tends to land badly, and how to keep supporting someone beyond the first few days, into the months that follow.
       </p>
 
       <GuideImage
@@ -62,7 +62,7 @@ export default function HelpingSomeoneGrievePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Things to avoid saying</h3>
           <p className="text-sm text-muted leading-relaxed mb-3">
-            These phrases are almost always well-intentioned, but they can land badly. The bereaved person may smile politely, but inside these words can feel dismissive, minimising, or even hurtful.
+            These phrases are almost always kindly meant, but they can land badly. The bereaved person may smile politely, while inside the words feel dismissive, or as though their loss is being made smaller than it is.
           </p>
           <ul className="text-sm text-muted leading-relaxed space-y-2 list-disc pl-5">
             <li><strong>&quot;They are in a better place.&quot;</strong> You do not know what the person believes, and for many people there is no better place than here.</li>
@@ -105,7 +105,7 @@ export default function HelpingSomeoneGrievePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Help with the admin</h3>
           <p className="text-sm text-muted leading-relaxed">
-            The amount of paperwork and phone calls after a death is overwhelming. If you are close to the person, offer to help with the administrative side. This might mean sitting with them while they make calls, keeping a list of who has been notified, or researching things like probate or pension entitlements. Our <Link href="/template-letters" className="text-primary font-medium hover:underline">template letters</Link> and <Link href="/phone-directory" className="text-primary font-medium hover:underline">phone directory</Link> can help you support them with this.
+            The paperwork and phone calls that follow when someone passes away can be overwhelming. If you are close to the person, offer to help with the administrative side. This might mean sitting with them while they make calls, keeping a list of who has been notified, or researching things like probate or pension entitlements. Our <Link href="/template-letters" className="text-primary font-medium hover:underline">template letters</Link> and <Link href="/phone-directory" className="text-primary font-medium hover:underline">phone directory</Link> can help you support them with this.
           </p>
         </div>
       </div>
@@ -139,13 +139,13 @@ export default function HelpingSomeoneGrievePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Remember the dates that matter</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Put a note in your calendar for the person's birthday, the anniversary of the death, and any other dates that will be difficult (wedding anniversaries, Mother's Day, Father's Day, Christmas). Send a message on those days. Even a simple &quot;Thinking of you today, I know it must be a hard one&quot; means the world. It tells the bereaved person that someone else still remembers.
+            Put a note in your calendar for their birthday, the anniversary of the day they passed away, and any other dates that will be difficult (wedding anniversaries, Mother's Day, Father's Day, Christmas). Send a message on those days. Even a simple &quot;Thinking of you today, I know it must be a hard one&quot; means the world. It tells the bereaved person that someone else still remembers.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
-          <h3 className="font-semibold text-foreground mb-2">Do not be afraid to mention the person who died</h3>
+          <h3 className="font-semibold text-foreground mb-2">Do not be afraid to mention the person who has passed away</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Many people avoid mentioning the dead person's name because they are worried about upsetting the bereaved. In reality, the opposite is true. Hearing their loved one's name, hearing a story about them, or being reminded that other people miss them too is usually a comfort, not a source of pain. Say their name. Share a memory. It helps.
+            Many people avoid saying their name because they are worried about upsetting the bereaved. In reality, the opposite is usually true. Hearing their loved one's name, hearing a story about them, or being reminded that other people miss them too is usually a comfort, not a source of pain. Say their name. Share a memory. It helps.
           </p>
         </div>
       </div>
@@ -238,13 +238,13 @@ export default function HelpingSomeoneGrievePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Supporting someone through grief is tiring</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Being present for someone in deep pain takes an emotional toll. You may find yourself absorbing their sadness, feeling helpless, or becoming anxious about saying the wrong thing. This is normal, but you need to look after your own wellbeing too. Set boundaries where you need them. It is OK to step back occasionally, to say &quot;I need a quiet evening tonight&quot;, or to talk to someone about how you are feeling. You cannot pour from an empty cup.
+            Being present for someone in deep pain takes an emotional toll. You may find yourself absorbing their sadness, feeling helpless, or becoming anxious about saying the wrong thing. This is normal, but you need to look after your own wellbeing too. Set boundaries where you need them. It is fine to step back occasionally, to say &quot;I need a quiet evening tonight&quot;, or to talk to someone about how you are feeling. You will be no use to them if you run yourself into the ground.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">You may be grieving too</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If the person who died was someone you also cared about, you are dealing with your own grief while trying to support someone else. Do not push your own feelings aside entirely. Find someone you can talk to, whether that is another friend, a family member, or a professional. Your grief matters too, even if it looks different from theirs.
+            If the person who has passed away was someone you cared about too, you are carrying your own grief while trying to hold someone else up. Do not push your own feelings aside entirely. Find someone you can talk to, whether that is another friend, a family member, or a professional. Your grief matters too, even if it looks different from theirs.
           </p>
         </div>
       </div>
@@ -280,7 +280,7 @@ export default function HelpingSomeoneGrievePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Should I go to the funeral even if I did not know the person well?</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If you are close to the bereaved person, yes. Your presence at the funeral is for them, not for the person who died. It shows that you care enough to give up your time and be there during one of the hardest days of their life. If you are unsure, ask: &quot;I would like to come to the funeral to support you. Would that be OK?&quot;
+            If you are close to the bereaved person, yes. Your presence at the funeral is for them, not for the person who has passed away. It shows that you care enough to give up your time and be there during one of the hardest days of their life. If you are unsure, ask: &quot;I would like to come to the funeral to support you. Would that be OK?&quot;
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -358,7 +358,7 @@ export default function HelpingSomeoneGrievePage() {
                 name: 'Should I go to the funeral even if I did not know the person well?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'If you are close to the bereaved person, yes. Your presence at the funeral is for them, not for the person who died. It shows that you care enough to be there during one of the hardest days of their life.',
+                  text: 'If you are close to the bereaved person, yes. Your presence at the funeral is for them, not for the person who has passed away. It shows that you care enough to be there during one of the hardest days of their life.',
                 },
               },
               {

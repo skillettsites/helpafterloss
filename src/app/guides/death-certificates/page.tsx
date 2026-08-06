@@ -29,7 +29,7 @@ const FAQ = [
   },
   {
     q: 'How much does a death certificate cost in the UK?',
-    a: 'In England and Wales, a certified copy of the death certificate costs £11 at the time of registration and £11 for additional copies ordered at the same time. If you order copies later, the cost is £11 per copy from the register office or £11 online via the General Register Office. In Scotland, the cost is £12 for a full extract. In Northern Ireland, the cost is £15 per certified copy. These prices are correct as of 2026 but may change.',
+    a: 'In England and Wales a certified copy costs £12.50, and the price is the same whether you order at registration, later from the register office, or online through the General Register Office. The GRO priority service is £38.50 per copy. In Scotland a full extract is around £15, set locally, so check with the registrar. In Northern Ireland copies are cheaper if you buy them from the registrar when you register than if you order them later from GRONI. These prices are correct as of August 2026 but can change.',
   },
   {
     q: 'Can I use a photocopy of a death certificate?',
@@ -37,7 +37,7 @@ const FAQ = [
   },
   {
     q: 'How do I order more death certificates after the registration?',
-    a: 'You can order additional certified copies at any time from the register office where the death was registered, or online through the General Register Office (gro.gov.uk). You will need the deceased\'s full name, date of death, and the district where the death was registered. Online orders typically arrive within 4 to 7 working days. You can also apply by post using form GRO150.',
+    a: 'You can order additional certified copies at any time from the register office where the death was registered, or online through the General Register Office (gro.gov.uk). You will need their full name, the date of death, and the district where the death was registered. Online orders typically arrive within 4 to 7 working days. You can also apply by post using form GRO150.',
   },
   {
     q: 'What is the difference between a certified copy and an informational copy?',
@@ -56,13 +56,13 @@ export default function DeathCertificatesPage() {
         Death Certificates UK: How Many Do You Need, Costs, and How to Order
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        One of the first practical tasks after someone dies is obtaining death certificates. You will need certified copies for banks, insurers, pension providers, the probate registry, and many other organisations. Getting enough copies from the start saves weeks of waiting later. This guide explains how many to order, what they cost, and how to get them.
+        One of the first practical jobs after someone passes away is getting hold of death certificates. You will need certified copies for banks, insurers, pension providers, the probate registry, and many other organisations. Ordering enough at the start saves weeks of waiting later on. This guide explains how many to order, what they cost, and how to get them.
       </p>
 
       {/* Quick summary stats */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
         <div className="bg-card rounded-xl border border-border p-5 text-center">
-          <p className="text-2xl font-bold text-primary">£11</p>
+          <p className="text-2xl font-bold text-primary">£12.50</p>
           <p className="text-sm text-muted mt-1">Cost per certified copy in England and Wales</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-5 text-center">
@@ -81,7 +81,7 @@ export default function DeathCertificatesPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">The official record of death</h3>
           <p className="text-sm text-muted leading-relaxed">
-            A death certificate is an official document issued by the register office that records the fact and cause of a death. It contains the deceased's full name, date and place of death, age, occupation, cause of death as determined by the doctor, and the name of the person who registered the death (the informant). It is printed on watermarked security paper and signed by the registrar. This certified copy is the document you need for all legal, financial, and administrative purposes.
+            A death certificate is an official document issued by the register office that records the fact and cause of a death. It contains the full name of the person who has passed away, their date and place of death, age, occupation, cause of death as determined by the doctor, and the name of the person who registered the death (the informant). It is printed on watermarked security paper and signed by the registrar. This certified copy is the document you need for all legal, financial, and administrative purposes.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -98,19 +98,19 @@ export default function DeathCertificatesPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Why you need multiple copies</h3>
           <p className="text-sm text-muted leading-relaxed mb-3">
-            Every organisation that holds an account, policy, or asset in the deceased's name will need to see a death certificate before they will close the account, release funds, or transfer ownership. While some organisations return the certificate after processing, many do not, and even those that do can take several weeks. Having multiple copies allows you to contact several organisations at the same time, which significantly speeds up the administration. We recommend ordering between 10 and 15 copies. Here is a typical list of who will need one:
+            Every organisation that holds an account, policy, or asset in your loved one's name will need to see a death certificate before they will close the account, release funds, or transfer ownership. While some organisations return the certificate after processing, many do not, and even those that do can take several weeks. Having multiple copies allows you to contact several organisations at the same time, which significantly speeds up the administration. We recommend ordering between 10 and 15 copies. Here is a typical list of who will need one:
           </p>
           <ul className="text-sm text-muted leading-relaxed space-y-2 list-disc pl-5">
             <li>Each bank and building society (one per institution)</li>
             <li>Each pension provider (workplace, private, and state pension)</li>
             <li>Life insurance companies</li>
             <li>The mortgage lender</li>
-            <li>HMRC (for inheritance tax and the deceased's final tax return)</li>
+            <li>HMRC (for inheritance tax and their final tax return)</li>
             <li>The Probate Registry (if applying for probate)</li>
             <li>The Land Registry (if property ownership needs updating)</li>
             <li>The DVLA (to cancel or transfer a driving licence and vehicle registration)</li>
             <li>Utility companies (some require a certified copy)</li>
-            <li>The deceased's employer</li>
+            <li>Their employer</li>
             <li>Any investment or share platforms</li>
           </ul>
         </div>
@@ -128,13 +128,13 @@ export default function DeathCertificatesPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">England and Wales</h3>
           <p className="text-sm text-muted leading-relaxed">
-            A certified copy of the death certificate costs £11 when ordered at the time of registration. Additional copies ordered on the same day cost £11 each. If you order copies later from the register office where the death was registered, the cost is also £11 per copy. If you order from the General Register Office (GRO) online or by post, the cost is £11 per copy. Priority service (next working day dispatch) is available from the GRO for an additional fee.
+            In England and Wales a certified copy costs £12.50, and that is the same price whether you order at the time of registration, later from the register office where the death was registered, or from the General Register Office (GRO) online or by post. There is no saving to be had by choosing one route over another, so order as many as you need at registration simply because it is the least hassle. The GRO also offers a priority service for £38.50 per copy if you genuinely need one the next working day.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Scotland</h3>
           <p className="text-sm text-muted leading-relaxed">
-            In Scotland, a full extract of the death certificate costs £12. You can order copies from the registrar at the time of registration or later from National Records of Scotland (nrscotland.gov.uk). The registration process in Scotland is slightly different: the death must be registered within 8 days (compared to 5 days in England and Wales). Two qualified informants can register the death, not just one.
+            In Scotland, a full extract of the death certificate costs around £15, though the exact fee is set locally, so it is worth checking with the registrar. You can order copies from the registrar at the time of registration or later from National Records of Scotland (nrscotland.gov.uk). The registration process in Scotland is slightly different: the death must be registered within 8 days (compared to 5 days in England and Wales). Two qualified informants can register the death, not just one.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -151,13 +151,13 @@ export default function DeathCertificatesPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">At the time of registration</h3>
           <p className="text-sm text-muted leading-relaxed">
-            The easiest and cheapest time to order copies is when you register the death. The registrar will ask how many copies you want, and they are usually printed and handed to you on the spot or posted within a few days. This is the most efficient option, so order as many as you think you will need. If in doubt, order 12. The total cost at £11 each would be £132, which is a worthwhile investment to avoid weeks of delays.
+            The easiest and cheapest time to order copies is when you register the death. The registrar will ask how many copies you want, and they are usually printed and handed to you on the spot or posted within a few days. This is the most efficient option, so order as many as you think you will need. If in doubt, order 12. At £12.50 each that comes to £150, which is money well spent if it saves you weeks of chasing.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Online</h3>
           <p className="text-sm text-muted leading-relaxed">
-            In England and Wales, you can order additional copies online through the General Register Office at gro.gov.uk/gro/content/certificates. You will need the deceased's full name, date of death, and the registration district. Delivery typically takes 4 to 7 working days by standard post. In Scotland, order through scotlandspeople.gov.uk. In Northern Ireland, order through nidirect.gov.uk.
+            In England and Wales, you can order additional copies online through the General Register Office at gro.gov.uk/gro/content/certificates. You will need their full name, the date of death, and the registration district. Delivery typically takes 4 to 7 working days by standard post. In Scotland, order through scotlandspeople.gov.uk. In Northern Ireland, order through nidirect.gov.uk.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -202,7 +202,7 @@ export default function DeathCertificatesPage() {
             The registrar will need the medical certificate of cause of death (issued by the doctor or hospital). You should also bring, if available:
           </p>
           <ul className="text-sm text-muted leading-relaxed space-y-2 list-disc pl-5">
-            <li>The deceased's birth certificate</li>
+            <li>Their birth certificate</li>
             <li>Their marriage or civil partnership certificate</li>
             <li>Their NHS medical card</li>
             <li>Their driving licence</li>
@@ -216,7 +216,7 @@ export default function DeathCertificatesPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">What happens at the registration</h3>
           <p className="text-sm text-muted leading-relaxed">
-            The registrar will ask you questions about the deceased: their full name, date and place of birth, occupation, address, and marital status. They will record the cause of death from the medical certificate. You will then be asked to check and sign the register entry. The registrar will issue a green form (the certificate for burial or cremation, needed by the funeral director) and the death certificates you have ordered. The registrar will also ask if you want to use the Tell Us Once service, which notifies multiple government departments of the death in a single step.
+            The registrar will ask you a few questions about the person who has passed away: their full name, date and place of birth, occupation, address, and marital status. They will record the cause of death from the medical certificate. You will then be asked to check and sign the register entry. The registrar will issue a green form (the certificate for burial or cremation, needed by the funeral director) and the death certificates you have ordered. The registrar will also ask if you want to use the Tell Us Once service, which notifies multiple government departments of the death in a single step.
           </p>
         </div>
       </div>

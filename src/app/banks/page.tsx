@@ -34,7 +34,7 @@ const faqSchema = {
       name: 'How do I notify a bank when someone dies?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Call the bank\'s dedicated bereavement phone number or complete their online bereavement form. Most major UK banks have a specialist bereavement team. You will need a certified copy of the death certificate and your photo ID. You can also use the Death Notification Service to notify multiple banks at once.',
+        text: 'Call the bank\'s dedicated bereavement number, or fill in their online bereavement form. Most major UK banks have a specialist team for this. You will need a certified copy of the death certificate and your own photo ID. If you would rather not repeat yourself several times, the Death Notification Service lets you tell multiple banks at once.',
       },
     },
     {
@@ -42,7 +42,7 @@ const faqSchema = {
       name: 'Do I need probate to access a deceased person\'s bank account?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Not always. Each bank has a probate threshold, typically between £5,000 and £50,000. If the account balance is below this threshold, the bank may release funds without a grant of probate. Lloyds, Halifax, NatWest, and RBS have thresholds around £50,000. Nationwide is £50,000. Santander releases up to £10,000 via a simplified email process.',
+        text: 'Not always, and often not at all. Each bank sets its own probate threshold, usually between £5,000 and £50,000. If the balance sits below it, the bank may release the funds without a grant of probate. Lloyds, Halifax, NatWest, and RBS have thresholds around £50,000. Nationwide is £50,000. Santander releases up to £10,000 through a simplified email process.',
       },
     },
     {
@@ -50,7 +50,7 @@ const faqSchema = {
       name: 'What happens to joint bank accounts when someone dies?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Joint accounts with right of survivorship automatically pass to the surviving account holder. The bank removes the deceased\'s name and the surviving holder keeps full access. You still need to notify the bank and provide a death certificate. Sole accounts are frozen until the estate is settled.',
+        text: 'Joint accounts with right of survivorship pass automatically to the surviving account holder. The bank removes their name, and the surviving holder keeps full access throughout. You do still need to let the bank know and provide a death certificate. Accounts in their sole name are frozen until the estate is settled.',
       },
     },
     {
@@ -58,7 +58,7 @@ const faqSchema = {
       name: 'Can the bank pay funeral costs from the deceased\'s account?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, most banks will prioritise payment of funeral invoices directly from the deceased\'s account, even before probate is granted. You will need to provide the funeral director\'s invoice. This is standard practice across major UK banks.',
+        text: 'Yes. Most banks will pay funeral invoices directly from their account as a priority, even before probate is granted. You just need to give them the funeral director\'s invoice. This is standard practice across the major UK banks, so please do ask.',
       },
     },
     {
@@ -98,9 +98,10 @@ export default function BanksPage() {
       </h1>
 
       <p className="text-lg text-muted mb-6 max-w-3xl">
-        When someone dies, you need to notify every bank and building society they held
-        accounts with. Each has different bereavement phone numbers, processes, and
-        probate thresholds. This page compares them all so you know exactly what to expect.
+        Every bank and building society your loved one held an account with will need to know.
+        Each has its own bereavement number, its own process, and its own probate threshold,
+        which is a lot to keep track of. We have gathered them all here so you know what to
+        expect before you pick up the phone.
       </p>
 
       <p className="text-sm text-muted mb-8">
@@ -118,8 +119,8 @@ export default function BanksPage() {
         </h2>
         <p className="text-muted mb-4">
           Every number below is the bank&apos;s dedicated bereavement line, not the general
-          customer service number. These lines are staffed by specialist teams trained
-          to handle sensitive situations.
+          customer service number. These lines are answered by specialist teams who do this
+          every day and who will be kind and unhurried with you.
         </p>
 
         <div className="overflow-x-auto">
@@ -180,8 +181,8 @@ export default function BanksPage() {
             Building societies
           </h2>
           <p className="text-muted mb-4">
-            Building societies follow similar bereavement processes to banks. Most have
-            dedicated bereavement teams and will release small balances without probate.
+            Building societies work in much the same way as banks. Most have their own
+            bereavement teams and will release smaller balances without asking for probate.
           </p>
 
           <div className="overflow-x-auto">
@@ -243,11 +244,11 @@ export default function BanksPage() {
           <div className="bg-card border border-border rounded-xl p-6">
             <h3 className="font-semibold text-foreground mb-2">Documents to have ready</h3>
             <ul className="text-muted space-y-1.5 list-disc list-inside">
-              <li>Certified copy of the death certificate (order at least 5 copies)</li>
-              <li>Your photo ID (passport or driving licence)</li>
-              <li>The deceased&apos;s account details (if known)</li>
-              <li>The will (if there is one)</li>
-              <li>Grant of probate (if applicable and already obtained)</li>
+              <li>A certified copy of the death certificate (it is worth ordering at least 5)</li>
+              <li>Your own photo ID (passport or driving licence)</li>
+              <li>Their account details, if you have them</li>
+              <li>The will, if there is one</li>
+              <li>The grant of probate, if you have already been granted it</li>
             </ul>
           </div>
 
@@ -288,10 +289,10 @@ export default function BanksPage() {
             <h3 className="font-semibold text-foreground mb-2">Joint accounts</h3>
             <p className="text-muted">
               Joint accounts with right of survivorship pass automatically to the surviving
-              account holder. The bank will remove the deceased&apos;s name from the account after
-              you provide the death certificate. The surviving holder keeps full access throughout.
-              Sole accounts are frozen immediately and funds are released through the estate
-              administration process.
+              account holder. Once you provide the death certificate, the bank simply removes
+              their name from the account. The surviving holder keeps full access the whole time,
+              so there is no risk of being locked out. Accounts in their sole name are frozen
+              straight away, and the money is released as part of settling the estate.
             </p>
           </div>
         </div>
@@ -308,14 +309,14 @@ export default function BanksPage() {
             <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold">1</span>
             <div>
               <p className="font-semibold text-foreground">Gather documents</p>
-              <p className="text-muted text-sm">Get certified copies of the death certificate, the will (if one exists), and your own photo ID.</p>
+              <p className="text-muted text-sm">Gather certified copies of the death certificate, the will if there is one, and your own photo ID.</p>
             </div>
           </li>
           <li className="flex gap-4">
             <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold">2</span>
             <div>
               <p className="font-semibold text-foreground">Identify all accounts</p>
-              <p className="text-muted text-sm">Check bank statements, post, and the deceased&apos;s records. The <Link href="/guides/finding-accounts-after-death" className="text-primary hover:underline">finding accounts guide</Link> can help.</p>
+              <p className="text-muted text-sm">Look through bank statements, recent post, and their paperwork. Our <Link href="/guides/finding-accounts-after-death" className="text-primary hover:underline">finding accounts guide</Link> has more places to check.</p>
             </div>
           </li>
           <li className="flex gap-4">
@@ -329,7 +330,7 @@ export default function BanksPage() {
             <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold">4</span>
             <div>
               <p className="font-semibold text-foreground">Request funeral invoice payment</p>
-              <p className="text-muted text-sm">If needed, ask the bank to pay the funeral invoice directly from the deceased&apos;s account. Most banks do this before probate.</p>
+              <p className="text-muted text-sm">If it would help, ask the bank to pay the funeral invoice directly from their account. Most banks will do this before probate.</p>
             </div>
           </li>
           <li className="flex gap-4">

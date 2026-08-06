@@ -314,7 +314,7 @@ export default function DashboardPage() {
       <div className="mb-8">
         <h1 className="text-2xl font-semibold text-foreground mb-1">Your Guide</h1>
         <p className="text-muted">
-          Welcome back. Take things at your own pace. There is no rush.
+          Welcome back. Everything is just as you left it, and there is no rush at all.
         </p>
       </div>
 
@@ -361,8 +361,8 @@ export default function DashboardPage() {
       {/* Focus section */}
       {focusTasks.length > 0 && (
         <div className="mb-8">
-          <h2 className="text-lg font-semibold text-foreground mb-1">What to do next</h2>
-          <p className="text-sm text-muted mb-4">These are the most pressing tasks right now. It is okay to take your time.</p>
+          <h2 className="text-lg font-semibold text-foreground mb-1">If you only do one thing today</h2>
+          <p className="text-sm text-muted mb-4">These are the ones worth looking at soonest. Everything else can wait until you are ready.</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {focusTasks.map(task => {
               const countdown = answers.dateOfDeath ? getDeadlineCountdown(task, answers.dateOfDeath) : null;
@@ -398,7 +398,7 @@ export default function DashboardPage() {
       {/* Encouragement */}
       <div className="bg-warm border border-warm-border rounded-xl p-5 mb-8">
         <p className="text-sm text-amber-800 leading-relaxed">
-          You are doing well. Remember, there is no set order. If something feels too much right now, come back to it later. Your wellbeing matters more than any checklist.
+          You are doing better than you probably feel you are. There is no correct order to any of this. If something feels like too much today, leave it; it will still be here when you have more in the tank. You matter more than the list does.
         </p>
       </div>
 
@@ -575,7 +575,7 @@ export default function DashboardPage() {
                                     onClick={() => handleSkip(task.id)}
                                     className="text-xs text-muted hover:text-foreground bg-gray-50 hover:bg-gray-100 px-3 py-1.5 rounded-lg transition-colors"
                                   >
-                                    Does not apply to me
+                                    This one is not for me
                                   </button>
                                 </div>
                               </div>
@@ -656,9 +656,9 @@ export default function DashboardPage() {
 
       {/* Support section */}
       <div className="bg-primary-light rounded-xl p-6 mb-8">
-        <h3 className="font-semibold text-primary-dark mb-2">Need support?</h3>
+        <h3 className="font-semibold text-primary-dark mb-2">If today is a hard day</h3>
         <p className="text-sm text-primary-dark/80 mb-4">
-          You do not have to do this alone. These organisations offer free help and support:
+          You really do not have to carry this on your own. These people are kind, free to call, and used to conversations like yours:
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div className="bg-white/70 rounded-lg p-3">

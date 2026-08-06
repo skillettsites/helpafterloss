@@ -68,13 +68,13 @@ export default function GriefAtChristmasPage() {
       <h2 id="why-christmas-hurts" className="text-2xl font-bold text-foreground mb-6">Why Christmas hits so hard</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed mb-4">
-          Christmas is loaded with sensory memories: the smell of their cooking, the sound of their laugh, the gifts they would have chosen, the seat they would have sat in. These triggers are everywhere, and they are unavoidable. Every advertisement, every carol, every family film reminds you of what is missing.
+          Christmas is loaded with sensory memories: the smell of their cooking, the sound of their laugh, the gifts they would have chosen, the seat they would have sat in. These reminders are everywhere, and they are almost impossible to avoid. Every advertisement, every carol, every family film points to what is missing.
         </p>
         <p className="text-sm text-muted leading-relaxed mb-4">
           There is also the cultural pressure to be happy. Christmas is supposed to be joyful, and when you are grieving, that expectation can make you feel even more isolated. You might feel guilty for bringing everyone down, or angry that the world carries on as if nothing has happened. Both are normal responses.
         </p>
         <p className="text-sm text-muted leading-relaxed mb-4">
-          The first Christmas after a loss is often anticipated with dread, and that anticipation can be as painful as the day itself. Many bereaved people find that the weeks leading up to Christmas are actually harder than Christmas Day, because the build-up forces you to confront the absence again and again.
+          The first Christmas after a loss is often anticipated with dread, and that anticipation can be as painful as the day itself. Many bereaved people find that the weeks leading up to Christmas are actually harder than Christmas Day, because the build-up brings you up against the absence again and again.
         </p>
         <p className="text-sm text-muted leading-relaxed">
           It is also worth knowing that Christmas grief does not go away after the first year. The second, third, and tenth Christmases can all be hard in different ways. The sharp pain may soften over time, but the absence remains. That is not failure. That is love.
@@ -93,13 +93,13 @@ export default function GriefAtChristmasPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Tell people what you need</h3>
           <p className="text-sm text-muted leading-relaxed">
-            This is hard, but it helps. If you do not want people to avoid mentioning the person who has died, say so. If you need to leave a gathering early without explanation, let the host know in advance. If you do not want to receive a Christmas card addressed to both of you, gently tell people. Most people want to help but genuinely do not know how. Telling them what you need removes the guesswork for everyone.
+            This is hard, but it helps. If you do not want people tiptoeing around the person you have lost, say so. If you need to leave a gathering early without explanation, let the host know in advance. If you do not want to receive a Christmas card addressed to both of you, gently tell people. Most people want to help but genuinely do not know how. Telling them what you need removes the guesswork for everyone.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Have an exit plan</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If you are going to a family gathering, give yourself permission to leave when you need to. Drive yourself or book a taxi in advance so you are not dependent on anyone else's schedule. Having an escape route reduces the pressure. Knowing you can leave at any point makes it easier to stay.
+            If you are going to a family gathering, give yourself permission to leave when you need to. Drive yourself or book a taxi in advance so you are not dependent on anyone else's plans. Knowing you have a way out takes the pressure off, and knowing you can leave at any point often makes it easier to stay.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -146,19 +146,19 @@ export default function GriefAtChristmasPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Talk about them</h3>
           <p className="text-sm text-muted leading-relaxed">
-            One of the most common fears bereaved people have at Christmas is that no one will mention the person who has died. If you want to talk about them, do. Share a memory, tell a story, say their name. Most families are relieved when someone breaks the silence. If saying their name out loud is too hard, writing something down and reading it can feel easier.
+            One of the most common fears bereaved people have at Christmas is that no one will mention the person they have lost. If you want to talk about them, do. Share a memory, tell a story, say their name. Most families are relieved when someone breaks the silence. If saying their name out loud is too hard, writing something down and reading it can feel easier.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">It is OK to laugh</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If a funny moment happens, it is OK to laugh. Laughing does not mean you are over it or that you have forgotten. Grief and joy can exist at the same time. Some of the most healing moments at Christmas come from sharing funny memories of the person who has died.
+            If a funny moment happens, it is OK to laugh. Laughing does not mean you are over it or that you have forgotten. Grief and joy can sit side by side. For many families, the gentlest moments at Christmas come from sharing funny memories of the person they have lost.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Limit alcohol</h3>
           <p className="text-sm text-muted leading-relaxed">
-            This is worth mentioning because Christmas revolves around drinking for many families. Alcohol is a depressant, and while it might numb the pain temporarily, it often makes grief worse the next day. You do not have to avoid it entirely, but be aware that it can amplify difficult emotions.
+            This is worth mentioning because Christmas revolves around drinking for many families. Alcohol is a depressant, and while it might numb the pain for an evening, it often makes grief harder the next day. You do not have to avoid it entirely, but it is worth knowing that it can amplify difficult emotions.
           </p>
         </div>
       </div>
@@ -208,7 +208,7 @@ export default function GriefAtChristmasPage() {
           If you are reading this because someone you care about is dreading Christmas, here are some things that genuinely help:
         </p>
         <ul className="space-y-2 text-sm text-muted">
-          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Say their name.</strong> Do not avoid mentioning the person who has died. The bereaved person is already thinking about them constantly. Hearing their name spoken by someone else is comforting, not upsetting.</li>
+          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Say their name.</strong> Do not tiptoe around the person who has been lost. The bereaved person is already thinking about them constantly. Hearing their name spoken by someone else is usually a comfort, not an upset.</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Invite them, but do not pressure them.</strong> Say "You are welcome to join us. No pressure either way. And if you come, you can leave whenever you want." Then mean it.</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Check in on the 27th.</strong> Everyone remembers Christmas Day. Very few people check in on the days after, when the silence descends. A simple text on 27 December means more than you know.</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Do not say "they would want you to be happy."</strong> Even if it is true, it does not help. It puts pressure on the grieving person to perform happiness for your comfort.</li>
@@ -222,7 +222,7 @@ export default function GriefAtChristmasPage() {
       <h2 id="new-year" className="text-2xl font-bold text-foreground mb-6">Getting through New Year</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed mb-4">
-          New Year can be just as hard as Christmas, sometimes harder. The countdown, the "new beginnings" rhetoric, and the question of what you are looking forward to can all feel hollow when you are grieving. Moving into a new year means moving further away from a year when they were alive, and that can bring a fresh wave of sadness.
+          New Year can be just as hard as Christmas, sometimes harder. The countdown, the talk of new beginnings, and the question of what you are looking forward to can all feel hollow when you are grieving. Moving into a new year means moving further away from the last year they were here, and that can bring a fresh wave of sadness.
         </p>
         <p className="text-sm text-muted leading-relaxed">
           If midnight feels difficult, you do not have to mark it. Go to bed early, watch a film, or spend it doing something quiet. There is no obligation to celebrate. If you want to mark the occasion, you could light a candle at midnight, write a letter to them, or simply sit with your thoughts. The new year will arrive whether you celebrate or not.

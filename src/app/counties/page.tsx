@@ -46,14 +46,14 @@ export default function CountiesIndexPage() {
         <div className="max-w-3xl mx-auto">
           <div className="bg-card rounded-xl border border-border p-6 space-y-4 text-sm text-muted leading-relaxed">
             <p>
-              When someone dies in England or Wales, the death must be registered within 5 days at the
-              register office in the district where the person died. Each county has one or more registrar
+              When someone passes away in England or Wales, the death must be registered within 5 days at the
+              register office in the district where they died. Each county has one or more registrar
               offices, and most operate by appointment only.
             </p>
             <p>
               Our county guides list every registrar office with phone numbers, addresses, and website links.
-              Each guide also includes step-by-step instructions for the registration process and a list of
-              the documents you will need to bring.
+              Each guide also walks you through the registration process step by step and sets out the
+              documents you will need to bring, so there are no surprises on the day.
             </p>
             <p>
               If you need guidance that goes beyond registration, try our{' '}

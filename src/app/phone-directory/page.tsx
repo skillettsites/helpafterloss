@@ -115,7 +115,7 @@ const CATEGORIES: PhoneCategory[] = [
         phone: '03457212212',
         phoneDisplay: '0345 721 2212',
         hours: 'Mon to Fri, 8am to 8pm. Sat, 9am to 5pm.',
-        script: 'Hello, I am calling because an account holder has died. Their name was [name] and the date of death was [date]. Could you tell me what I need to do?',
+        script: 'Hello, I am calling because an account holder has passed away. Their name was [name] and the date of death was [date]. Could you tell me what I need to do?',
         docsNeeded: ['Death certificate', 'Account details', 'Your ID and relationship'],
       },
       {
@@ -155,14 +155,14 @@ const CATEGORIES: PhoneCategory[] = [
         phoneDisplay: '0800 085 7308',
         note: 'Notifies multiple government departments in one go. You will need the reference number given to you by the registrar.',
         hours: 'Mon to Fri, 8am to 8pm. Sat, 9am to 4pm.',
-        script: 'Hello, I would like to use the Tell Us Once service to report a death. My reference number is [reference from registrar]. The person who died was [name] and they passed away on [date].',
+        script: 'Hello, I would like to use the Tell Us Once service to report a death. My reference number is [reference from registrar]. The person who has passed away was [name], and the date of death was [date].',
         docsNeeded: ['Tell Us Once reference number (from the registrar)', 'National Insurance number of the deceased', 'Driving licence and passport numbers (if known)', 'Details of benefits they were receiving'],
       },
       {
         name: 'Register a Death (local registrar)',
         note: 'You register a death at your local register office. Find yours at gov.uk/register-offices.',
         hours: 'Varies by area. Most offices are Mon to Fri, 9am to 4pm. Some offer Saturday appointments.',
-        script: 'Hello, I need to register a death. The person who died was [name] and they passed away on [date] at [location]. I am their [relationship]. Could I book an appointment, please?',
+        script: 'Hello, I need to register a death. The person who has passed away was [name], on [date] at [location]. I am their [relationship]. Could I book an appointment, please?',
         docsNeeded: ['Medical Certificate of Cause of Death (from the doctor or hospital)', 'NHS medical card of the deceased (if available)', 'Birth and marriage certificates (if available)', 'Your own ID'],
       },
       {
@@ -171,13 +171,13 @@ const CATEGORIES: PhoneCategory[] = [
         phoneDisplay: '0300 200 3300',
         note: 'If you used Tell Us Once, HMRC will already know. Only call if you did not use Tell Us Once, or if you have specific tax queries.',
         hours: 'Mon to Fri, 8am to 6pm.',
-        script: 'Hello, I am calling about someone who has died. Their name was [name] and their National Insurance number was [NI number]. The date of death was [date]. I am the [executor/next of kin]. Could you tell me if there is any tax owed or any refund due?',
+        script: 'Hello, I am calling about someone who has passed away. Their name was [name] and their National Insurance number was [NI number]. The date of death was [date]. I am the [executor/next of kin]. Could you tell me whether there is any tax owed, or any refund due?',
         docsNeeded: ['National Insurance number', 'Date of death', 'Unique Taxpayer Reference (if self-employed)', 'Your own details as executor or next of kin'],
       },
       {
         name: 'DWP Bereavement',
-        phone: '08007310469',
-        phoneDisplay: '0800 731 0469',
+        phone: '08001512012',
+        phoneDisplay: '0800 151 2012',
         note: 'Report the death and ask about Bereavement Support Payment (if the deceased\'s spouse/civil partner is under State Pension age).',
         hours: 'Mon to Fri, 8am to 6pm.',
         script: 'Hello, I am calling to report the death of [name] who was receiving [benefit name]. Their National Insurance number was [NI number]. The date of death was [date]. I would also like to ask about Bereavement Support Payment.',
@@ -198,7 +198,7 @@ const CATEGORIES: PhoneCategory[] = [
         phoneDisplay: '0300 222 0000',
         note: 'Tell Us Once will cancel the passport. Only call if Tell Us Once was not used.',
         hours: 'Mon to Fri, 8am to 8pm. Sat and Sun, 9am to 5:30pm.',
-        script: 'Hello, I need to cancel the passport of someone who has died. Their name was [name], passport number [number], and the date of death was [date].',
+        script: 'Hello, I need to cancel the passport of someone who has passed away. Their name was [name], the passport number is [number], and the date of death was [date].',
         docsNeeded: ['Passport number', 'Date of death', 'Death certificate'],
       },
       {
@@ -356,8 +356,8 @@ const CATEGORIES: PhoneCategory[] = [
       },
       {
         name: 'State Pension',
-        phone: '08007310469',
-        phoneDisplay: '0800 731 0469',
+        phone: '08001512012',
+        phoneDisplay: '0800 151 2012',
         note: 'Same number as DWP Bereavement. If you used Tell Us Once, the State Pension will already be stopped.',
         hours: 'Mon to Fri, 8am to 6pm.',
         script: 'Hello, I am calling to report the death of a State Pension recipient. Their name was [name] and their National Insurance number was [NI number]. The date of death was [date]. I would also like to ask about any arrears or Bereavement Support Payment.',
@@ -374,7 +374,7 @@ const CATEGORIES: PhoneCategory[] = [
         name: 'Royal Mail Post Redirect',
         phone: '03457740740',
         phoneDisplay: '0345 774 0740',
-        note: 'Redirect the deceased person\'s post to your address to catch bills, letters, and financial correspondence you may not know about.',
+        note: 'Redirecting their post to your address catches bills, letters, and financial correspondence you may know nothing about. It is one of the most useful things you can set up.',
         hours: 'Mon to Fri, 8am to 6pm. Sat, 8am to 1pm.',
         script: 'Hello, I need to set up a post redirect from [deceased\'s address] to [your address] following a bereavement. The person who died was [name].',
         docsNeeded: ['Death certificate', 'Your ID', 'The deceased\'s full address', 'Payment (from around £35 for 3 months)'],
@@ -469,7 +469,7 @@ export default function PhoneDirectoryPage() {
         Phone Directory: Every Number You Need
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-4">
-        {allEntries} phone numbers in one place, organised by category. Each entry includes the number to call, what to say, and what documents to have ready. All numbers have been verified as bereavement or general contact lines.
+        {allEntries} phone numbers gathered in one place, sorted by category, so you are never left hunting for a number. Each entry gives you the number to ring, the words to open with, and what to have beside you. Every number has been checked as a bereavement or general contact line.
       </p>
       <p className="text-sm text-muted mb-8">
         Most of these numbers are free to call from landlines and mobiles. Numbers starting with 0345 and 0333 are charged at the same rate as a standard local call and are usually included in your phone plan.
@@ -480,12 +480,12 @@ export default function PhoneDirectoryPage() {
         <h2 className="font-semibold text-amber-900 mb-3">Before you start making calls</h2>
         <ul className="space-y-2.5">
           {[
-            'Have these ready: death certificate (or reference number), the deceased\'s account numbers, your own ID, and your relationship to the deceased.',
-            'Calls tend to be quicker earlier in the morning. Try ringing between 8am and 10am if you can.',
-            'Bereavement teams are specially trained and understand this is difficult. They will be patient with you.',
-            'You can ask someone else to call on your behalf. Most organisations will accept this with a letter of authority.',
-            'Keep a notebook by the phone. Write down who you called, the date, the name of the person you spoke to, and any reference numbers they give you.',
-            'You do not have to make all these calls in one day. Spread them out and take breaks when you need to.',
+            'Have these beside you: the death certificate or its reference number, their account numbers, your own ID, and how you were related to them.',
+            'Calls tend to be quicker first thing. Try ringing between 8am and 10am if you can.',
+            'Bereavement teams are specially trained and know how hard this is. They will be patient with you.',
+            'You can ask someone else to call on your behalf. Most organisations accept this with a letter of authority.',
+            'Keep a notebook by the phone. Jot down who you rang, the date, the name of the person you spoke to, and any reference numbers. You will be glad of it later.',
+            'You do not have to make all these calls in one day. Spread them out and stop whenever you need to.',
           ].map((tip, i) => (
             <li key={i} className="text-sm text-amber-800 leading-relaxed flex gap-2">
               <span className="mt-0.5 shrink-0">&#8226;</span>
@@ -589,7 +589,7 @@ export default function PhoneDirectoryPage() {
       <div className="bg-card rounded-xl border border-border p-6 mb-10">
         <h2 className="text-xl font-bold text-foreground mb-3">Need more help with what to say?</h2>
         <p className="text-sm text-muted leading-relaxed mb-4">
-          We have written detailed, word-for-word call scripts for every type of call. Each script covers exactly what to say, what questions they will ask, and what to do if you do not have the information they need.
+          We have written detailed, word-for-word scripts for every kind of call. Each one covers what to say, the questions they are likely to ask, and what to do if you do not have the information they need.
         </p>
         <Link
           href="/call-scripts"

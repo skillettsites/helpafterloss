@@ -9,12 +9,12 @@ import { FreeChecklistBanner } from '@/components/FreeChecklistBanner';
 import { ThresholdEmailCapture } from '@/components/ThresholdEmailCapture';
 
 export const metadata: Metadata = {
-  title: 'UK Bank Probate Thresholds 2026: £50,000 Limit at Barclays, HSBC, Lloyds & More',
-  description: 'Barclays, HSBC, Lloyds, NatWest, Santander and Nationwide all release up to £50,000 without probate. Building societies: £15,000-£50,000. Full comparison table, documents checklist, and step-by-step process for 2026.',
+  title: 'UK Bank Probate Thresholds 2026: The £50,000 Rule Explained',
+  description: 'Barclays, NatWest, Santander and Nationwide release up to £50,000 without probate. HSBC, Lloyds and Halifax decide case by case. Building societies: £40,000-£50,000. Full comparison table, documents checklist, and step-by-step process for 2026.',
   alternates: { canonical: 'https://helpafterloss.co.uk/blog/bank-probate-thresholds-2026' },
   openGraph: {
     title: 'Bank Probate Thresholds UK 2026: Every Bank Compared',
-    description: 'All six major UK banks release up to £50,000 without probate. Building societies range from £15,000 to £50,000. Full comparison with documents, steps, and process times.',
+    description: 'Barclays, NatWest, Santander and Nationwide release up to £50,000 without probate; HSBC, Lloyds and Halifax decide case by case. Building societies range from £40,000 to £50,000. Full comparison with documents, steps, and process times.',
     url: 'https://helpafterloss.co.uk/blog/bank-probate-thresholds-2026',
     type: 'article',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
@@ -28,23 +28,23 @@ export const metadata: Metadata = {
 
 const BANKS = [
   { name: 'Barclays', slug: 'barclays', threshold: '£50,000', type: 'Bank' },
-  { name: 'HSBC', slug: 'hsbc', threshold: '£50,000', type: 'Bank' },
-  { name: 'Lloyds Bank', slug: 'lloyds-bank', threshold: '£50,000', type: 'Bank' },
-  { name: 'Halifax', slug: 'halifax', threshold: '£50,000', type: 'Bank (Lloyds Group)' },
+  { name: 'HSBC', slug: 'hsbc', threshold: 'Not published', type: 'Bank' },
+  { name: 'Lloyds Bank', slug: 'lloyds-bank', threshold: 'Not published', type: 'Bank' },
+  { name: 'Halifax', slug: 'halifax', threshold: 'Not published', type: 'Bank (Lloyds Group)' },
   { name: 'NatWest', slug: 'natwest', threshold: '£50,000', type: 'Bank' },
   { name: 'Santander', slug: 'santander', threshold: '£50,000', type: 'Bank' },
   { name: 'Nationwide', slug: 'nationwide', threshold: '£50,000', type: 'Building Society' },
-  { name: 'Yorkshire BS', slug: 'yorkshire-building-society', threshold: '£30,000', type: 'Building Society' },
-  { name: 'Skipton BS', slug: 'skipton-building-society', threshold: '£30,000', type: 'Building Society' },
-  { name: 'Coventry BS', slug: 'coventry-building-society', threshold: '£25,000', type: 'Building Society' },
-  { name: 'Leeds BS', slug: 'leeds-building-society', threshold: '£25,000', type: 'Building Society' },
-  { name: 'Principality BS', slug: 'principality-building-society', threshold: '£15,000', type: 'Building Society' },
+  { name: 'Yorkshire BS', slug: 'yorkshire-building-society', threshold: '£50,000', type: 'Building Society' },
+  { name: 'Skipton BS', slug: 'skipton-building-society', threshold: '£50,000', type: 'Building Society' },
+  { name: 'Coventry BS', slug: 'coventry-building-society', threshold: '£50,000', type: 'Building Society' },
+  { name: 'Leeds BS', slug: 'leeds-building-society', threshold: '£50,000', type: 'Building Society' },
+  { name: 'Principality BS', slug: 'principality-building-society', threshold: '£40,000', type: 'Building Society' },
 ];
 
 const DOCUMENTS = [
   { document: 'Original death certificate', note: 'Most banks need an original, not a photocopy. Some will accept a certified copy.' },
   { document: 'Proof of your identity', note: 'Passport or driving licence. Some banks also ask for proof of address.' },
-  { document: 'Proof of your relationship to the deceased', note: 'The will, or if there is no will, evidence of your entitlement under intestacy rules (birth or marriage certificate).' },
+  { document: 'Proof of your relationship to the person who died', note: 'The will, or if there is no will, evidence of your entitlement under intestacy rules (birth or marriage certificate).' },
   { document: 'The original will (if there is one)', note: 'Or a certified copy. If there is no will, the bank may ask you to sign an indemnity form instead.' },
   { document: 'Account details', note: 'Account numbers, sort codes, or any recent statements you can find. The bank can usually trace accounts by name and address if you do not have these.' },
   { document: 'Your own bank account details', note: 'So the bank can transfer any released funds to you.' },
@@ -85,7 +85,7 @@ const FAQS = [
   },
   {
     question: 'Can I get money released from a bank account without probate?',
-    answer: 'Yes, if the total balance held at that particular bank is below their probate threshold. Most major UK banks set this at £50,000 as of 2026. Building societies tend to have lower thresholds, ranging from £15,000 to £50,000. The threshold applies per banking group, not per account, so if the deceased had a current account and a savings account with the same bank, the balances are combined.',
+    answer: 'Yes, if the total balance held at that particular bank is below their probate threshold. Barclays, NatWest, Santander and Nationwide publish £50,000; HSBC, Lloyds and Halifax do not publish a figure and decide case by case. Building societies are broadly in line, ranging from £40,000 to £50,000. The threshold applies per banking group, not per account, so if the person had a current account and a savings account with the same bank, the balances are combined.',
   },
   {
     question: 'How long does it take for a bank to release funds after death?',
@@ -93,15 +93,15 @@ const FAQS = [
   },
   {
     question: 'Will a bank release money to pay for a funeral before probate?',
-    answer: 'Most banks will pay a funeral director\'s invoice directly from the deceased\'s account, even if the balance is above the probate threshold and probate has not yet been granted. You will need to provide the funeral director\'s itemised invoice along with the death certificate. Contact the bank\'s bereavement team to arrange this.',
+    answer: 'Most banks will pay a funeral director\'s invoice directly from the account, even if the balance is above the probate threshold and probate has not yet been granted. You will need to provide the funeral director\'s itemised invoice along with the death certificate. Contact the bank\'s bereavement team to arrange this.',
   },
   {
     question: 'What happens if someone has accounts at multiple banks?',
-    answer: 'Each bank applies its threshold independently. If the deceased had £40,000 at Barclays and £30,000 at HSBC, both banks would release the funds without probate because each balance is below £50,000. However, if the total estate value (including property, investments, and all bank accounts) exceeds the inheritance tax threshold, you may still need to apply for probate for tax purposes.',
+    answer: 'Each bank applies its threshold independently. If the person had £40,000 at Barclays, that sits under its published £50,000 threshold. HSBC does not publish a figure, so you would need to ask them directly rather than assume. Either way, balances at different banks are not added together, so a smaller amount at each can still avoid probate because each balance is below £50,000. However, if the total estate value (including property, investments, and all bank accounts) exceeds the inheritance tax threshold, you may still need to apply for probate for tax purposes.',
   },
   {
     question: 'Do joint bank accounts need probate?',
-    answer: 'No. Joint bank accounts automatically pass to the surviving account holder by right of survivorship. The bank simply removes the deceased person\'s name from the account. You will need to provide the death certificate, but probate is not required for joint accounts regardless of the balance.',
+    answer: 'No. Joint bank accounts automatically pass to the surviving account holder by right of survivorship. The bank simply removes their name from the account. You will need to provide the death certificate, but probate is not required for joint accounts regardless of the balance.',
   },
 ];
 
@@ -123,7 +123,7 @@ export default function BankProbateThresholdsPage() {
         Bank Probate Thresholds 2026: Complete Comparison
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        When someone dies, their bank accounts are frozen. But you do not always need a grant of probate to access the money. Every bank sets a threshold below which they will release funds with just a death certificate and some identification. This guide compares the probate threshold for every major UK bank and building society in 2026, explains what documents you will need, and walks you through the process step by step.
+        When someone passes away, their bank accounts are frozen. You do not always need a grant of probate to access the money, though. Every bank sets a threshold below which they will release funds with just a death certificate and some identification. This guide compares the probate threshold for every major UK bank and building society in 2026, explains what documents you will need, and walks you through the process step by step.
       </p>
 
       <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-6">
@@ -135,7 +135,7 @@ export default function BankProbateThresholdsPage() {
             <p className="text-xs text-blue-600">Barclays, HSBC, Lloyds, Halifax, NatWest, Santander, Nationwide</p>
           </div>
           <div className="bg-white rounded-lg p-3 border border-blue-100">
-            <p className="text-xl font-bold text-blue-700">£15,000-£30,000</p>
+            <p className="text-xl font-bold text-blue-700">£40,000-£50,000</p>
             <p className="text-xs text-blue-800 mt-1 font-medium">Building societies</p>
             <p className="text-xs text-blue-600">Yorkshire BS, Skipton BS, Coventry BS, Leeds BS, Principality BS</p>
           </div>
@@ -146,8 +146,8 @@ export default function BankProbateThresholdsPage() {
       <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
         <h2 className="text-sm font-semibold text-amber-900 mb-3">Key takeaways</h2>
         <ul className="space-y-1.5 text-sm text-amber-800">
-          <li className="flex gap-2"><span className="font-bold">+</span> All six major high street banks share a £50,000 probate threshold</li>
-          <li className="flex gap-2"><span className="font-bold">+</span> Building society thresholds range from £15,000 to £50,000</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> Barclays, NatWest, Santander and Nationwide publish a £50,000 threshold; HSBC, Lloyds and Halifax decide case by case</li>
+          <li className="flex gap-2"><span className="font-bold">+</span> Building society thresholds range from £40,000 to £50,000</li>
           <li className="flex gap-2"><span className="font-bold">+</span> Joint accounts pass automatically to the surviving holder with no probate needed</li>
           <li className="flex gap-2"><span className="font-bold">+</span> Most banks will pay a funeral invoice directly, even above the threshold</li>
           <li className="flex gap-2"><span className="font-bold">+</span> The free Death Notification Service lets you notify multiple banks at once</li>
@@ -170,13 +170,13 @@ export default function BankProbateThresholdsPage() {
           A <strong className="text-foreground">probate threshold</strong> is the maximum balance a bank or building society will release from a deceased person&apos;s account without requiring a grant of probate or letters of administration. If the total amount held at that institution falls below their threshold, they will release the funds to the executor or next of kin on production of the death certificate and supporting documents.
         </p>
         <p className="text-sm text-muted leading-relaxed mb-4">
-          The threshold applies to the total held across all accounts at that bank or banking group. For example, Lloyds, Halifax, and Scottish Widows are all part of Lloyds Banking Group. If the deceased had accounts across these brands, the balances are combined when assessing against the threshold.
+          The threshold applies to the total held across all accounts at that bank or banking group. For example, Lloyds, Halifax, and Scottish Widows are all part of Lloyds Banking Group. If the person had accounts across these brands, the balances are combined when assessing against the threshold.
         </p>
         <p className="text-sm text-muted leading-relaxed mb-4">
-          These thresholds are set by each institution individually and can change without notice. The figures below are correct as of March 2026. If you are dealing with a large balance, always confirm the current threshold directly with the bank&apos;s bereavement team.
+          These thresholds are set by each institution individually and can change without notice. The figures below were checked against each provider&apos;s own published information in August 2026. Bear in mind they are a discretionary ceiling rather than a right: a bank can still ask for a grant below its stated figure, and will usually ask you to sign an indemnity. They also count sole accounts only, added together across that brand, with joint accounts excluded.
         </p>
         <p className="text-sm text-muted leading-relaxed">
-          Note that not every bank publishes a fixed figure. Barclays, Lloyds, Halifax, Santander and Nationwide consistently confirm a £50,000 limit. HSBC and NatWest do not publish an official threshold and can assess larger or unusual estates case by case, so their bereavement team may give you a different figure to the one shown here. Always double-check with them directly if the balance is close to £50,000.
+          Not every bank publishes a figure at all. Barclays, NatWest, Royal Bank of Scotland, Santander and Nationwide state £50,000 on their own websites or bereavement forms. HSBC, Lloyds, Halifax, Bank of Scotland and TSB publish nothing and assess each estate case by case, so their bereavement team may give you a number that differs from anything you read elsewhere. Two worth knowing separately: Metro Bank asks for a grant above £25,000, and NS&amp;I may ask for one from £5,000. Always check directly if the balance is anywhere near the limit.
         </p>
       </div>
 
@@ -236,15 +236,15 @@ export default function BankProbateThresholdsPage() {
         <ul className="space-y-2 text-sm text-muted">
           <li className="flex gap-2">
             <span className="text-primary font-bold">1.</span>
-            <span>All six major high street banks (Barclays, HSBC, Lloyds, NatWest, Santander, Nationwide) now share the same £50,000 threshold.</span>
+            <span>Barclays, NatWest, Santander and Nationwide all publish a £50,000 threshold. HSBC, Lloyds and Halifax publish no figure and decide case by case, so ask their bereavement team rather than assuming £50,000.</span>
           </li>
           <li className="flex gap-2">
             <span className="text-primary font-bold">2.</span>
-            <span>Building society thresholds are generally lower, ranging from £15,000 (Principality) to £50,000 (Nationwide).</span>
+            <span>Building societies are broadly in line with the banks: £40,000 at Principality, and £50,000 at Nationwide, Yorkshire, Skipton, Coventry and Leeds.</span>
           </li>
           <li className="flex gap-2">
             <span className="text-primary font-bold">3.</span>
-            <span>Halifax shares the Lloyds Banking Group threshold. If the deceased held accounts at both Lloyds and Halifax, the balances are combined.</span>
+            <span>Halifax shares the Lloyds Banking Group threshold. If they held accounts at both Lloyds and Halifax, the balances are combined.</span>
           </li>
           <li className="flex gap-2">
             <span className="text-primary font-bold">4.</span>
@@ -328,7 +328,7 @@ export default function BankProbateThresholdsPage() {
         <div className="bg-success-light rounded-xl p-6">
           <h3 className="font-semibold text-green-800 mb-2">Order enough death certificates</h3>
           <p className="text-sm text-green-800/80 leading-relaxed">
-            Each bank typically needs an original death certificate. If the deceased had accounts at three different banks, you will need at least three certificates. Order them when you register the death (£12.50 each in England and Wales (£15 in Scotland)). Ordering extras later costs more and takes longer.
+            Each bank typically needs an original death certificate. If they had accounts at three different banks, you will need at least three certificates. Order them when you register the death (£12.50 each in England and Wales (£15 in Scotland)). Ordering extras later costs more and takes longer.
           </p>
         </div>
         <div className="bg-success-light rounded-xl p-6">

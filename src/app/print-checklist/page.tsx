@@ -36,18 +36,18 @@ type ChecklistSection = {
 const SECTIONS: ChecklistSection[] = [
   {
     title: 'Right now',
-    subtitle: 'You do not need to do everything straight away. These are the only things that may need immediate attention.',
+    subtitle: 'Almost nothing has to happen straight away. These are the only things that may need attention today.',
     items: [
       {
-        task: 'If the death happened at home, call the GP surgery or 111',
-        note: 'They will tell you what to do next. If the person was under hospice care, call the hospice number instead. You do not need to call 999 unless the death was sudden and unexpected.',
+        task: 'If they died at home, call the GP surgery or 111',
+        note: 'They will gently talk you through what happens next. If your loved one was under hospice care, call the hospice number instead. There is no need to call 999 unless the death was sudden and unexpected.',
       },
       {
-        task: 'If Muslim or Jewish, contact the mosque or synagogue',
-        note: 'Both faiths require burial as soon as possible, often within 24 hours. The community will help you arrange this quickly.',
+        task: 'If your family is Muslim or Jewish, contact the mosque or synagogue',
+        note: 'Both faiths ask for burial as soon as possible, often within 24 hours. The community will help you arrange this quickly, and you will not be doing it alone.',
       },
       {
-        task: 'If the death happened abroad, call the Foreign Office on 020 7008 5000',
+        task: 'If they died abroad, call the Foreign Office on 020 7008 5000',
         note: 'They can help with repatriation and local legal requirements.',
       },
     ],
@@ -62,15 +62,15 @@ const SECTIONS: ChecklistSection[] = [
       },
       {
         task: 'Collect the Medical Certificate of Cause of Death (MCCD)',
-        note: 'The doctor or hospital will provide this. You need it before you can register the death. If the coroner is involved, they will issue it when their enquiries are complete.',
+        note: 'The doctor or hospital will give you this. You need it before you can register the death. If a coroner is involved, they will issue it once their enquiries are finished.',
       },
       {
         task: 'Register the death at the local register office',
-        note: 'Legally required within 5 days in England, Wales, and Northern Ireland, or 8 days in Scotland. Bring the MCCD, and the person\'s NHS card, passport, or driving licence if you have them.',
+        note: 'Legally required within 5 days in England, Wales, and Northern Ireland, or 8 days in Scotland. Take the MCCD with you, along with their NHS card, passport, or driving licence if you have them to hand.',
       },
       {
         task: 'Order at least 5 certified copies of the death certificate',
-        note: 'You can order these when you register. Each costs £12.50 in England and Wales (£15 in Scotland). Banks, insurers, and solicitors each need an original. Order more than you think you need.',
+        note: 'You can order these while you are registering. Each costs £12.50 in England and Wales (£15 in Scotland). Banks, insurers, and solicitors each need an original, so order a few more than you think you will need.',
       },
       {
         task: 'Use the Tell Us Once service',
@@ -84,29 +84,29 @@ const SECTIONS: ChecklistSection[] = [
     items: [
       {
         task: 'Contact a funeral director when you feel ready',
-        note: 'The hospital or mortuary will hold the body until you are ready. There is no rush. Get itemised quotes from at least 3 funeral directors so you can compare.',
+        note: 'Your loved one will be cared for at the hospital or mortuary until you are ready. There really is no rush. When you feel able, ask at least 3 funeral directors for itemised quotes so you can compare them fairly.',
       },
       {
         task: 'If there was a pre-paid funeral plan, contact that provider',
         note: 'The plan documents should have a phone number. The funeral director can also help you check.',
       },
       {
-        task: 'Apply for Funeral Expenses Payment if on benefits',
-        note: 'Call the DWP Bereavement Service on 0800 731 0469. This can help with funeral costs if you are on Universal Credit, Pension Credit, or other qualifying benefits.',
+        task: 'Apply for Funeral Expenses Payment if you are on benefits',
+        note: 'Call the DWP Bereavement Service on 0800 151 2012. They can help with funeral costs if you receive Universal Credit, Pension Credit, or other qualifying benefits.',
       },
       {
         task: 'Find the will',
-        note: 'Check at home, with their solicitor, at their bank (some banks hold wills), and on the National Will Register (certainty.co.uk). There is no legal deadline for this.',
+        note: 'Have a look at home, and ask their solicitor and their bank (some banks hold wills). You can also search the National Will Register (certainty.co.uk). There is no legal deadline for this one.',
       },
       {
-        task: 'Secure the person\'s home if they lived alone',
-        note: 'Check windows and doors, collect any post, and let a trusted neighbour know. Check home insurance, as some policies void if the property is unoccupied for more than 30 days.',
+        task: 'Make their home secure if they lived on their own',
+        note: 'Check the windows and doors, collect any post, and let a trusted neighbour know. Do check the home insurance too, as some policies become void if a property is unoccupied for more than 30 days.',
       },
     ],
   },
   {
     title: 'First month',
-    subtitle: 'Work through these as you get death certificates and start to feel more settled.',
+    subtitle: 'Work through these once you have the death certificates and are starting to feel a little steadier.',
     items: [
       {
         task: 'Notify banks and building societies',
@@ -122,11 +122,11 @@ const SECTIONS: ChecklistSection[] = [
       },
       {
         task: 'Contact their employer',
-        note: 'Ask about final pay, unused holiday, death-in-service benefits, and workplace pension entitlements. Get the details in writing.',
+        note: 'Ask about final pay, unused holiday, death-in-service benefits, and workplace pension entitlements. It helps to ask for the details in writing.',
       },
       {
         task: 'Apply for Bereavement Support Payment',
-        note: 'If your spouse or civil partner died and you were under State Pension age. Apply at gov.uk within 3 months for the full amount (lump sum plus up to 18 monthly payments). Can be backdated up to 21 months.',
+        note: 'If your husband, wife, or civil partner has passed away and you were under State Pension age. Apply at gov.uk within 3 months for the full amount (a lump sum plus up to 18 monthly payments). It can be backdated up to 21 months.',
       },
       {
         task: 'Update council tax',
@@ -152,11 +152,11 @@ const SECTIONS: ChecklistSection[] = [
   },
   {
     title: 'Within 3 months',
-    subtitle: 'Legal and estate administration. You may want professional help with some of these.',
+    subtitle: 'The legal side and sorting out the estate. There is no shame in asking a professional to help with some of these.',
     items: [
       {
         task: 'Apply for probate',
-        note: 'Grant of Probate (if there is a will) or Letters of Administration (if no will) at gov.uk/applying-for-probate. Fee: £300 for estates over £5,000. In Scotland, apply for Confirmation at the Sheriff Court.',
+        note: 'Grant of Probate (if there is a will) or Letters of Administration (if no will) at gov.uk/applying-for-probate. Fee: £526 for estates over £5,000. In Scotland, apply for Confirmation at the Sheriff Court.',
       },
       {
         task: 'Complete inheritance tax forms',
@@ -164,7 +164,7 @@ const SECTIONS: ChecklistSection[] = [
       },
       {
         task: 'Value the estate',
-        note: 'Get a property valuation from an estate agent or RICS surveyor. List all bank accounts, investments, pensions, and possessions. Subtract all debts.',
+        note: 'Ask an estate agent or a RICS surveyor for a property valuation. List all the bank accounts, investments, pensions, and possessions, then take off any debts.',
       },
       {
         task: 'Place statutory notices in The Gazette',
@@ -175,8 +175,8 @@ const SECTIONS: ChecklistSection[] = [
         note: 'Some mortgages include life insurance that pays off the balance. Do not make mortgage payments from the estate without advice.',
       },
       {
-        task: 'Check for outstanding debts',
-        note: 'Credit cards, personal loans, hire purchase. Debts are paid from the estate before anything goes to beneficiaries.',
+        task: 'Check for any outstanding debts',
+        note: 'Credit cards, personal loans, hire purchase. Debts are paid out of the estate before anything goes to the beneficiaries. You are not personally responsible for them.',
       },
       {
         task: 'File the final Self Assessment tax return if self-employed',
@@ -186,7 +186,7 @@ const SECTIONS: ChecklistSection[] = [
   },
   {
     title: 'Within 6 months',
-    subtitle: 'These have legal deadlines but do not need to be done sooner.',
+    subtitle: 'These have legal deadlines, but there is no need to rush them any sooner.',
     items: [
       {
         task: 'Pay any inheritance tax due',
@@ -219,12 +219,12 @@ const SECTIONS: ChecklistSection[] = [
         note: 'If the person was on Self Assessment, file for the tax year in which they died. Deadline: 31 January following the end of that tax year.',
       },
       {
-        task: 'Close remaining accounts and digital profiles',
-        note: 'Memorialise or close social media, email, and online accounts. Cancel remaining digital subscriptions.',
+        task: 'Close any remaining accounts and digital profiles',
+        note: 'Social media, email, and online accounts can be memorialised or closed, whichever feels right to you. Cancel any digital subscriptions still running.',
       },
       {
         task: 'Register with the Bereavement Register',
-        note: 'Register at thebereavementregister.org.uk to stop junk mail addressed to the person. Free. Takes a few weeks to take effect.',
+        note: 'Registering at thebereavementregister.org.uk stops junk mail arriving in their name, which can be painful to keep receiving. It is free and takes a few weeks to take effect.',
       },
       {
         task: 'Order a headstone or memorial',
@@ -257,11 +257,11 @@ export default function PrintChecklistPage() {
           Printable Checklist: What to Do When Someone Dies
         </h1>
         <p className="text-lg text-muted leading-relaxed mb-4">
-          A comprehensive checklist covering every task after a death in the UK, grouped by time period. Print it out and tick each item off as you go.
+          Everything that may need doing after someone passes away in the UK, grouped by when it needs to happen. Print it out and tick things off as you go, at whatever pace suits you.
         </p>
         <div className="bg-warm border border-warm-border rounded-xl p-4 mb-6">
           <p className="text-sm text-amber-800 leading-relaxed">
-            We know this is an incredibly difficult time. Take things at your own pace. This checklist is here whenever you need it, and not everything will apply to your situation.
+            We know this is an incredibly difficult time. Please take things at your own pace. This checklist will be here whenever you need it, and plenty of it will not apply to you.
           </p>
         </div>
         <div className="flex flex-wrap gap-3 mb-10">

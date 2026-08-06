@@ -41,13 +41,13 @@ const SCRIPTS: CallScript[] = [
   {
     id: 'bank',
     title: '1. Calling the bank',
-    intro: 'This is often the first call people dread the most, but bank bereavement teams handle these calls every day. They are trained to be kind and patient. You will not be rushed.',
+    intro: 'This is the call most people dread, and yet it is rarely as hard as expected. Bank bereavement teams do this every day. They are trained to be kind and patient, and you will not be hurried along.',
     docsNeeded: [
-      'Death certificate (or reference number)',
-      'Account number and sort code',
-      'Your full name and relationship to the deceased',
+      'The death certificate, or its reference number',
+      'The account number and sort code',
+      'Your full name and how you were related to them',
       'Your own address and contact details',
-      'Grant of Probate or Letters of Administration (if you have them, but most banks do not need these for the initial call)',
+      'The Grant of Probate or Letters of Administration if you have them, though most banks do not need these for a first call',
     ],
     script: [
       {
@@ -91,25 +91,25 @@ const SCRIPTS: CallScript[] = [
       'Is there a bereavement pack you can post or email to me?',
       'How long will the process take once you have everything?',
       'Can funeral costs be paid from the account before probate is granted?',
-      'Are there any other accounts in the deceased\'s name that I might not know about?',
+      'Are there any other accounts in their name that I might not know about?',
     ],
     afterTheCall: [
       'Write down the reference number and the name of the person you spoke to.',
       'Send any documents they requested by recorded delivery.',
       'Check whether the bank offers a Death Notification Service form to notify multiple banks at once.',
-      'Consider setting up a post redirect to catch any bank statements sent to the deceased\'s address.',
+      'Think about setting up a post redirect, so any statements sent to their address reach you instead.',
     ],
   },
   {
     id: 'utility',
     title: '2. Calling utility companies',
-    intro: 'You will need to call each utility company separately: gas, electricity, water, broadband, phone, and TV. These calls are usually straightforward. The main decision is whether to transfer the account to someone else or close it.',
+    intro: 'Each utility company needs a separate call: gas, electricity, water, broadband, phone, and TV. These are usually the easiest calls on the list. The only real decision is whether to move the account into someone else\'s name or close it.',
     docsNeeded: [
-      'Account number (check a recent bill)',
-      'Address where the service is provided',
-      'Final meter readings for gas and electricity (take a photo of the meters)',
-      'Name and date of birth of the deceased',
-      'Your contact details',
+      'The account number, which will be on a recent bill',
+      'The address where the service is provided',
+      'Final meter readings for gas and electricity (a photo of the meters is easiest)',
+      'Their name and date of birth',
+      'Your own contact details',
     ],
     script: [
       {
@@ -154,11 +154,11 @@ const SCRIPTS: CallScript[] = [
   {
     id: 'hmrc',
     title: '3. Calling HMRC',
-    intro: 'If you used Tell Us Once, HMRC will already have been notified. You only need to call HMRC directly if Tell Us Once was not available, or if you have specific questions about the deceased\'s tax affairs. HMRC bereavement calls can take a while, so try to call early in the morning.',
+    intro: 'If you have used Tell Us Once, HMRC already know and you can skip this. You only need to ring them directly if Tell Us Once was not available, or if you have questions about their tax affairs. HMRC calls can involve a wait, so early in the morning is usually best.',
     docsNeeded: [
-      'National Insurance number of the deceased',
-      'Date of death',
-      'Unique Taxpayer Reference (UTR) if they were self-employed',
+      'Their National Insurance number',
+      'The date of death',
+      'Their Unique Taxpayer Reference (UTR) if they were self-employed',
       'Details of their employment or pension income',
       'Your own details as executor or next of kin',
     ],
@@ -194,7 +194,7 @@ const SCRIPTS: CallScript[] = [
     ],
     afterTheCall: [
       'If a final tax return is needed, note the deadline and gather the relevant records.',
-      'Keep all of the deceased\'s tax documents for at least 4 years after the end of the tax year in which they died.',
+      'Hold on to their tax documents for at least 4 years after the end of the tax year in which they died.',
       'If a refund is due, it will form part of the estate.',
       'Write down the reference number and the name of the person you spoke to.',
     ],
@@ -202,11 +202,11 @@ const SCRIPTS: CallScript[] = [
   {
     id: 'council-tax',
     title: '4. Calling the council about council tax',
-    intro: 'Your local council needs to know so they can update the council tax account. If the property is now empty, it may be exempt from council tax. If someone else is still living there, they may qualify for a single person discount. This call is usually quick and straightforward.',
+    intro: 'The local council needs to know so they can update the council tax account. If the property is now empty it may be exempt altogether, and if someone else still lives there they may qualify for a single person discount. This call is usually short and easy.',
     docsNeeded: [
-      'Council tax account number (check a recent bill)',
-      'Address of the property',
-      'Name and date of death of the deceased',
+      'The council tax account number, which will be on a recent bill',
+      'The address of the property',
+      'Their name and the date of death',
       'Whether anyone else is still living at the property',
     ],
     script: [
@@ -247,13 +247,13 @@ const SCRIPTS: CallScript[] = [
   {
     id: 'pension',
     title: '5. Calling about a pension',
-    intro: 'The deceased may have had a workplace pension, a private pension, or the State Pension. Each one needs to be contacted separately. Pension providers are used to these calls and will explain the process clearly. There may be a lump sum death benefit or an ongoing pension for a surviving spouse.',
+    intro: 'Your loved one may have had a workplace pension, a private pension, or the State Pension, and each provider needs a separate call. They are used to these conversations and will explain things clearly. There may be a lump sum death benefit, or an ongoing pension for a surviving husband, wife, or civil partner, so it is well worth asking.',
     docsNeeded: [
-      'Pension reference number or policy number',
-      'National Insurance number of the deceased',
-      'Date of death',
-      'Death certificate',
-      'Your own details and relationship to the deceased',
+      'The pension reference or policy number',
+      'Their National Insurance number',
+      'The date of death',
+      'The death certificate',
+      'Your own details and how you were related to them',
     ],
     script: [
       {
@@ -300,14 +300,14 @@ const SCRIPTS: CallScript[] = [
   {
     id: 'insurance',
     title: '6. Calling about insurance',
-    intro: 'If the deceased had life insurance, the payout could be significant and may help with funeral costs or other expenses. Home and car insurance also need to be updated urgently, especially if the property will be empty. Insurance companies have bereavement teams who handle these calls regularly.',
+    intro: 'If there was life insurance, the payout can be substantial and may take real pressure off the funeral costs and other bills. Home and car insurance need updating fairly quickly too, especially if the property will be standing empty. Insurance companies have bereavement teams who take these calls all the time.',
     docsNeeded: [
-      'Policy number',
-      'Date of death',
-      'Death certificate',
-      'Cause of death (for life insurance claims)',
-      'Your ID and relationship to the deceased',
-      'Grant of Probate (may be needed for larger claims)',
+      'The policy number',
+      'The date of death',
+      'The death certificate',
+      'The cause of death, for life insurance claims',
+      'Your own ID and how you were related to them',
+      'The Grant of Probate, which is sometimes needed for larger claims',
     ],
     script: [
       {
@@ -354,13 +354,13 @@ const SCRIPTS: CallScript[] = [
   {
     id: 'mortgage',
     title: '7. Calling the mortgage company',
-    intro: 'If the deceased had a mortgage, the lender needs to know. Do not worry: they will not demand immediate repayment. Mortgage lenders have bereavement processes and will work with you. If there was mortgage protection insurance or life insurance, the mortgage may be paid off entirely.',
+    intro: 'If there was a mortgage, the lender needs to know. Please do not worry: nobody will demand immediate repayment. Lenders have proper bereavement processes and will work with you at your pace. If there was mortgage protection or life insurance attached, the mortgage may be cleared entirely.',
     docsNeeded: [
-      'Mortgage account number',
-      'Property address',
-      'Death certificate',
-      'Details of any mortgage protection insurance or life insurance',
-      'Your details as executor or next of kin',
+      'The mortgage account number',
+      'The property address',
+      'The death certificate',
+      'Details of any mortgage protection or life insurance',
+      'Your own details as executor or next of kin',
     ],
     script: [
       {
@@ -407,12 +407,12 @@ const SCRIPTS: CallScript[] = [
   {
     id: 'subscriptions',
     title: '8. Calling about subscriptions',
-    intro: 'This covers gyms, streaming services, magazines, breakdown cover, and any other regular payments. These calls are usually the quickest and easiest on the list. Most companies will cancel immediately once you explain the situation. You do not usually need to provide a death certificate.',
+    intro: 'This covers gyms, streaming services, magazines, breakdown cover, and any other regular payment. These are the quickest and easiest calls on the list. Most companies cancel straight away once you explain, and you rarely need a death certificate.',
     docsNeeded: [
-      'Account holder\'s name',
-      'Account number or email address linked to the subscription',
-      'Date of death',
-      'Your name and relationship to the deceased',
+      'The account holder\'s name',
+      'The account number, or the email address linked to the subscription',
+      'The date of death',
+      'Your name and how you were related to them',
     ],
     script: [
       {
@@ -462,23 +462,23 @@ export default function CallScriptsPage() {
         Call Scripts: Exactly What to Say
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-4">
-        Word-for-word scripts for every type of bereavement call. We know these calls feel daunting. Having the words in front of you makes them much easier.
+        Word-for-word scripts for every kind of call you may need to make. We know these calls feel daunting, and that the words can desert you completely. Having them written down in front of you makes an enormous difference.
       </p>
       <p className="text-sm text-muted leading-relaxed mb-8">
-        You can read these scripts out loud during the call. Nobody will mind. The person on the other end of the line handles bereavement calls regularly and will be patient with you. Take your time.
+        Please do read these out loud during the call. Nobody will mind, and nobody will think it odd. The person on the other end takes calls like yours all the time and will be patient and kind. Take as long as you need.
       </p>
 
       {/* Reassurance box */}
       <div className="bg-warm border border-warm-border rounded-xl p-6 mb-10">
-        <h2 className="font-semibold text-amber-900 mb-3">It is okay to feel nervous about these calls</h2>
+        <h2 className="font-semibold text-amber-900 mb-3">It is completely normal to dread these calls</h2>
         <ul className="space-y-2.5">
           {[
-            'You do not have to have all the answers. If they ask something you do not know, just say so. They will tell you what they need.',
-            'It is perfectly fine to read from a script. Many people do.',
-            'If you get upset during the call, take a moment. The person will wait.',
-            'You can hang up and call back another day if it gets too much.',
-            'You can ask a trusted friend or family member to make the call for you.',
-            'Most bereavement lines have shorter wait times than normal customer service lines.',
+            'You do not need to have all the answers. If they ask something you do not know, simply say so. They will tell you what they need.',
+            'Reading from a script is perfectly fine. A great many people do.',
+            'If you become upset during the call, take a moment. The person on the line will wait, and they will understand.',
+            'You can put the phone down and try again another day if it becomes too much.',
+            'You can ask a trusted friend or family member to make the call instead of you.',
+            'Bereavement lines usually have much shorter waits than ordinary customer service numbers.',
           ].map((tip, i) => (
             <li key={i} className="text-sm text-amber-800 leading-relaxed flex gap-2">
               <span className="mt-0.5 shrink-0">&#8226;</span>

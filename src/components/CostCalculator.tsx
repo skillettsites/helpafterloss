@@ -13,7 +13,7 @@ export function CostCalculator({ summary }: CostCalculatorProps) {
     <div className="bg-card rounded-xl border border-border p-6 mb-8">
       <h3 className="text-lg font-semibold text-foreground mb-2">Estimated Costs</h3>
       <p className="text-sm text-muted mb-6">
-        These are approximate costs based on your situation. Actual costs may vary.
+        These are rough estimates based on what you have told us. The real figures will vary.
       </p>
 
       <div className="space-y-4">

@@ -36,7 +36,7 @@ const categorySingularLabels: Record<BereavementContact['category'], string> = {
 const faqs = [
   {
     question: 'Who do I need to notify when someone dies?',
-    answer: 'You need to notify banks, building societies, energy suppliers, water companies, telecoms providers, insurers, pension providers, and government departments. Tell Us Once covers most government notifications, but you will need to contact every other organisation individually.',
+    answer: 'Banks, building societies, energy suppliers, water companies, telecoms providers, insurers, pension providers, and government departments all need to know. Tell Us Once covers most of the government side, but every other organisation needs to hear from you directly.',
   },
   {
     question: 'What does Tell Us Once not cover?',
@@ -48,7 +48,7 @@ const faqs = [
   },
   {
     question: 'What documents do I need to notify organisations?',
-    answer: 'Most organisations require a certified copy of the death certificate. Banks and financial institutions may also ask for the grant of probate or letters of administration, your photo ID, and proof of your authority to deal with the estate. Order at least 5 certified copies of the death certificate.',
+    answer: 'Most organisations ask for a certified copy of the death certificate. Banks and financial institutions may also want the grant of probate or letters of administration, your photo ID, and proof that you have authority to deal with the estate. It is worth ordering at least 5 certified copies of the death certificate so you are never waiting on one.',
   },
   {
     question: 'Can I notify organisations online?',
@@ -90,10 +90,10 @@ export default function NotifyHubPage() {
             Who to Notify When Someone Dies
           </h1>
           <p className="text-lg text-muted leading-relaxed">
-            The Tell Us Once service covers government departments, but it does not notify banks,
-            utility companies, insurers, or telecoms providers. You need to contact each of those
-            organisations yourself. This guide gives you every phone number, online form, and
-            step-by-step process you need.
+            The Tell Us Once service covers government departments, but it does not reach banks,
+            utility companies, insurers, or telecoms providers. Those need to hear from you
+            directly, which we know is a lot to take on. This guide gives you every phone number,
+            online form, and step to follow, so you never have to go hunting for them.
           </p>
         </div>
       </section>
@@ -123,8 +123,8 @@ export default function NotifyHubPage() {
           {/* Notify For Me CTA */}
           <div className="mt-6 bg-primary-light border border-primary/20 rounded-xl p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
             <div className="flex-1">
-              <h2 className="font-semibold text-foreground mb-1">Too much to deal with? Let us email them for you</h2>
-              <p className="text-sm text-muted">We can send bereavement notification emails on your behalf. You are CC&apos;d on every email so replies come straight to you.</p>
+              <h2 className="font-semibold text-foreground mb-1">If it all feels like too much, we can email them for you</h2>
+              <p className="text-sm text-muted">We can send the bereavement notification emails on your behalf. You are copied in on every one, so any replies come straight to you.</p>
             </div>
             <Link href="/notify-for-me" className="px-5 py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary-dark transition-colors whitespace-nowrap">
               Notify for me
@@ -138,15 +138,15 @@ export default function NotifyHubPage() {
         <div className="max-w-3xl mx-auto">
           <div className="bg-card rounded-xl border border-border p-6 space-y-4 text-sm text-muted leading-relaxed">
             <p>
-              After registering a death and using the Tell Us Once service, there is still a long list
-              of organisations to contact. Each one has its own process, phone number, and document
-              requirements.
+              Once you have registered the death and used Tell Us Once, there is still a long list of
+              organisations to contact. Each has its own process, phone number, and paperwork, which
+              is exactly the sort of thing nobody should have to work out from scratch right now.
             </p>
             <p>
-              We have researched and documented the bereavement process for every major UK bank,
-              building society, energy company, telecoms provider, water company, insurer, and
-              government department. Click on any organisation below to see their full notification
-              guide, including what to say when you call.
+              So we have done the digging for you, covering every major UK bank, building society,
+              energy company, telecoms provider, water company, insurer, and government department.
+              Choose any organisation below to see their full notification guide, including the words
+              to use when you call.
             </p>
           </div>
         </div>
@@ -254,8 +254,8 @@ export default function NotifyHubPage() {
               Need a personalised checklist?
             </h2>
             <p className="text-muted mb-6 max-w-xl mx-auto">
-              Answer a few simple questions and we will create a step-by-step guide tailored to your
-              exact circumstances, with real deadlines calculated from the date of death.
+              Answer a few simple questions and we will put together a step-by-step guide for your own
+              circumstances, with the deadlines worked out from the date of death so you do not have to.
             </p>
             <Link
               href="/start"

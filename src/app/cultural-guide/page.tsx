@@ -33,7 +33,7 @@ const TRADITIONS = [
       'The grave should face Makkah (Qibla direction).',
       'Mourning (iddah) lasts 3 days for most, 4 months and 10 days for a widow.',
     ],
-    ukNotes: 'Contact your local mosque immediately. Many UK mosques have dedicated burial committees. Some local authorities have Muslim burial sections in public cemeteries. Expedited registration may be possible; ask the registrar.',
+    ukNotes: 'Contact your local mosque as soon as you can. Many UK mosques have their own burial committees who will take much of this on for you, and some local authorities have Muslim sections in their cemeteries. Ask the registrar about a faster registration; it is usually possible.',
   },
   {
     faith: 'Judaism',
@@ -47,7 +47,7 @@ const TRADITIONS = [
       'Shiva (7 days of mourning) begins after burial, when family stays at home and receives visitors.',
       'Sheloshim (30 days) and the full mourning year follow.',
     ],
-    ukNotes: 'Contact the synagogue or Jewish Joint Burial Society immediately. They will handle most arrangements. The United Synagogue has its own burial grounds. Expedited registration may be possible.',
+    ukNotes: 'Contact the synagogue or the Jewish Joint Burial Society as soon as you can. They will take care of most of the arrangements for you. The United Synagogue has its own burial grounds. A faster registration is usually possible; simply ask.',
   },
   {
     faith: 'Hinduism',
@@ -100,7 +100,7 @@ const TRADITIONS = [
       'A wake or reception after the service is traditional in many communities.',
       'Catholic tradition may include a vigil or Rosary the evening before the funeral.',
     ],
-    ukNotes: 'Contact the person\'s church or parish. If they were not part of a congregation, any local minister will usually help. The Church of England provides funeral services for anyone in the parish.',
+    ukNotes: 'Contact their church or parish. If they were not part of a congregation, any local minister will usually be glad to help. The Church of England provides funeral services for anyone living in the parish, whether or not they attended.',
   },
 ];
 
@@ -114,12 +114,12 @@ export default function CulturalGuidePage() {
         Cultural and Religious Funeral Guidance
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        Different faiths and cultures have their own practices and timelines for funerals and mourning. This guide covers the main traditions observed in the UK, with practical notes on how they work within UK regulations.
+        Every faith and culture has its own customs and its own timings for funerals and mourning, and honouring them properly matters. This guide covers the main traditions observed in the UK, with practical notes on how each one fits alongside UK rules, so you can follow what is right for your family without worrying about the paperwork.
       </p>
 
       <div className="bg-warm border border-warm-border rounded-xl p-6 mb-10">
         <p className="text-sm text-amber-800">
-          If you need to arrange a burial within 24-48 hours for religious reasons, tell the registrar when you book the appointment. Most register offices can prioritise urgent registrations.
+          If your faith asks for burial within 24 to 48 hours, do say so when you book the appointment with the registrar. Most register offices will make room for an urgent registration, and they are used to being asked.
         </p>
       </div>
 

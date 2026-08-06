@@ -5,7 +5,9 @@ import { bereavementContacts } from '@/lib/bereavement-contacts';
 export const dynamic = 'force-dynamic';
 
 function getResend() {
-  const key = process.env.RESEND_API_KEY;
+  // Env values exported from .env files can carry a literal trailing "\n", which
+  // Resend rejects as an invalid key. Strip it before use.
+  const key = process.env.RESEND_API_KEY?.replace(/\\n$/, '').trim();
   if (!key) throw new Error('RESEND_API_KEY is not configured');
   return new Resend(key);
 }

@@ -24,15 +24,15 @@ export const metadata: Metadata = {
 const SECTIONS = [
   {
     title: 'Current thresholds',
-    content: 'The nil-rate band is £325,000. This means the first £325,000 of an estate is tax-free. On top of that, there is the residence nil-rate band of £175,000, which applies if the deceased\'s home is left to direct descendants (children, grandchildren, stepchildren). This gives a total threshold of £500,000 per person. Married couples and civil partners can transfer any unused threshold to the surviving partner, giving a combined threshold of up to £1,000,000. These thresholds have been frozen since 2009 (nil-rate band) and are set to remain at these levels until at least April 2030.',
+    content: 'The nil-rate band is £325,000. This means the first £325,000 of an estate is tax-free. On top of that, there is the residence nil-rate band of £175,000, which applies if the family home is left to direct descendants (children, grandchildren, stepchildren). This gives a total threshold of £500,000 per person. Married couples and civil partners can transfer any unused threshold to the surviving partner, giving a combined threshold of up to £1,000,000. These thresholds have been frozen since 2009 (nil-rate band) and are set to remain at these levels until at least April 2030.',
   },
   {
     title: 'The rate',
-    content: 'Inheritance tax is charged at 40% on everything above the threshold. So if someone leaves an estate worth £600,000 and their threshold is £500,000, the IHT bill is 40% of £100,000 = £40,000. There is a reduced rate of 36% if the deceased left 10% or more of their net estate to charity in their will. This is worth calculating, as the 4% reduction can sometimes mean the charity gift costs the estate very little overall.',
+    content: 'Inheritance tax is charged at 40% on everything above the threshold. So if someone leaves an estate worth £600,000 and their threshold is £500,000, the IHT bill is 40% of £100,000 = £40,000. There is a reduced rate of 36% if 10% or more of the net estate is left to charity in the will. This is worth calculating, as the 4% reduction can sometimes mean the charity gift costs the estate very little overall.',
   },
   {
     title: 'What counts towards the estate',
-    content: 'The estate includes: all property (at market value), bank and savings accounts, investments and shares, personal possessions of value (jewellery, art, vehicles), life insurance policies payable to the estate (not those written in trust), business assets, and any gifts made in the seven years before death. Jointly owned assets are included based on the deceased\'s share. Pension pots are usually outside the estate because they are paid at the trustees\' discretion.',
+    content: 'The estate includes: all property (at market value), bank and savings accounts, investments and shares, personal possessions of value (jewellery, art, vehicles), life insurance policies payable to the estate (not those written in trust), business assets, and any gifts made in the seven years before death. Jointly owned assets are included based on the share they owned. Pension pots are usually outside the estate because they are paid at the trustees\' discretion.',
   },
   {
     title: 'What doesn\'t count (exemptions)',
@@ -48,7 +48,7 @@ const SECTIONS = [
   },
   {
     title: 'The IHT400 form',
-    content: 'If the estate is above the IHT threshold, or involves complex assets, you must complete form IHT400 and submit it to HMRC before applying for probate. This is a detailed form (over 20 pages plus supplementary schedules) that requires a full breakdown of everything the deceased owned and owed. Common mistakes include: forgetting to include gifts made in the last 7 years, undervaluing property (HMRC will check), missing joint assets, and not claiming all available exemptions. For simpler estates below the threshold (excepted estates), the estate values are reported as part of the probate application itself, with no separate IHT form needed.',
+    content: 'If the estate is above the IHT threshold, or involves complex assets, you must complete form IHT400 and submit it to HMRC before applying for probate. This is a detailed form (over 20 pages plus supplementary schedules) that requires a full breakdown of everything they owned and owed. Common mistakes include: forgetting to include gifts made in the last 7 years, undervaluing property (HMRC will check), missing joint assets, and not claiming all available exemptions. For simpler estates below the threshold (excepted estates), the estate values are reported as part of the probate application itself, with no separate IHT form needed.',
   },
   {
     title: 'Deadlines and penalties',
@@ -56,7 +56,7 @@ const SECTIONS = [
   },
   {
     title: 'Paying inheritance tax',
-    content: 'IHT must usually be paid before probate is granted, which creates a practical problem: you need probate to access the money, but you need to pay IHT before you get probate. Most banks will release funds directly to HMRC to pay IHT from the deceased\'s accounts using the "Direct Payment Scheme" (IHT423 form). This avoids the need to find the money from other sources. For property, you can elect to pay in 10 annual instalments, though interest is charged on the outstanding balance.',
+    content: 'IHT must usually be paid before probate is granted, which creates a practical problem: you need probate to access the money, but you need to pay IHT before you get probate. Most banks will release funds directly to HMRC to pay IHT from their accounts using the "Direct Payment Scheme" (IHT423 form). This avoids the need to find the money from other sources. For property, you can elect to pay in 10 annual instalments, though interest is charged on the outstanding balance.',
   },
 ];
 
@@ -139,7 +139,7 @@ export default function InheritanceTaxPage() {
       {/* Taper relief table */}
       <h2 className="text-2xl font-bold text-foreground mb-6">Taper relief on gifts</h2>
       <p className="text-sm text-muted leading-relaxed mb-4">
-        If the deceased made gifts exceeding the nil-rate band within 7 years of death, taper relief reduces the rate of tax charged on those gifts depending on when they were made.
+        If they made gifts exceeding the nil-rate band within 7 years of death, taper relief reduces the rate of tax charged on those gifts depending on when they were made.
       </p>
       <div className="overflow-x-auto mb-12">
         <table className="w-full text-sm border border-border rounded-xl overflow-hidden">

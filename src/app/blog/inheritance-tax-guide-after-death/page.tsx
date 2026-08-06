@@ -42,7 +42,7 @@ export default function InheritanceTaxGuidePage() {
         Inheritance Tax After a Death: UK Thresholds and Exemptions (2026/27)
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        Inheritance tax is one of the most stressful parts of dealing with an estate after someone dies. The rules are complicated, the forms are long, and the tax must be paid before probate is granted. This guide explains the current thresholds, the main exemptions, and how the whole process works in plain English.
+        Inheritance tax is one of the most stressful parts of dealing with an estate after someone passes away. The rules are complicated, the forms are long, and the tax must be paid before probate is granted. This guide explains the current thresholds, the main exemptions, and how the whole process works in plain English.
       </p>
 
       <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
@@ -112,7 +112,7 @@ export default function InheritanceTaxGuidePage() {
       <h2 id="transferable" className="text-2xl font-bold text-foreground mb-6">Transferable allowances between spouses</h2>
       <div className="bg-card rounded-xl border border-border p-6 mb-12">
         <p className="text-sm text-muted leading-relaxed mb-4">
-          When the first spouse or civil partner dies, they often leave everything to the surviving partner. Because transfers between spouses are completely exempt from IHT (see below), the deceased spouse's nil-rate band is not used. The unused portion can then be transferred to the surviving spouse's estate when they die.
+          When the first spouse or civil partner dies, they often leave everything to the surviving partner. Because transfers between spouses are completely exempt from IHT (see below), the first spouse's nil-rate band is not used. The unused portion can then be transferred to the surviving spouse's estate when they die.
         </p>
         <p className="text-sm text-muted leading-relaxed mb-4">
           This works on a percentage basis, not a fixed amount. If the first spouse used none of their nil-rate band, 100% transfers. If they used 50%, then 50% transfers. The transferred percentage is applied to the nil-rate band at the time of the second death, not the first. For example, if the first spouse died in 2005 when the nil-rate band was £275,000 and used none of it, 100% transfers. If the second spouse dies in 2026 when the band is £325,000, the transferred amount is 100% of £325,000 = £325,000.
@@ -211,7 +211,7 @@ export default function InheritanceTaxGuidePage() {
           <li>Multiply the remaining amount by 40% (or 36% if the charity condition is met)</li>
         </ol>
         <p className="text-sm text-muted leading-relaxed">
-          HMRC provides an online calculator at <a href="https://www.gov.uk/guidance/inheritance-tax-calculator" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">GOV.UK</a> to help with the calculation. For complex estates, getting professional advice is strongly recommended.
+          HMRC provides an online calculator at <a href="https://www.gov.uk/valuing-estate-of-someone-who-died/estimate-estate-value" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">GOV.UK</a> to help with the calculation. For complex estates, getting professional advice is strongly recommended.
         </p>
       </div>
 
@@ -227,7 +227,7 @@ export default function InheritanceTaxGuidePage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Where the money comes from</h3>
           <p className="text-sm text-muted leading-relaxed">
-            This creates a difficult chicken-and-egg situation: you need to pay IHT before getting probate, but you often need probate to access the money to pay IHT. Solutions include: using the Direct Payment Scheme (banks can pay IHT directly to HMRC from the deceased's account), using joint accounts or your own savings (to be reimbursed from the estate later), or borrowing from a specialist estate administration lender.
+            This creates a difficult chicken-and-egg situation: you need to pay IHT before getting probate, but you often need probate to access the money to pay IHT. Solutions include: using the Direct Payment Scheme (banks can pay IHT directly to HMRC from the person's account), using joint accounts or your own savings (to be reimbursed from the estate later), or borrowing from a specialist estate administration lender.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -259,7 +259,7 @@ export default function InheritanceTaxGuidePage() {
         {[
           { q: 'Do I need to pay inheritance tax on money I inherit?', a: 'No. IHT is paid by the estate before the money is distributed to beneficiaries. Once you receive your inheritance, you do not pay income tax or capital gains tax on it (though you may pay CGT if you later sell an inherited asset for more than its probate value).' },
           { q: 'Is life insurance subject to inheritance tax?', a: 'If the life insurance policy is written in trust, the payout goes directly to the beneficiaries and is not part of the estate. If it is not in trust, the payout forms part of the estate and may be subject to IHT. This is one of the most commonly missed planning points.' },
-          { q: 'What about jointly owned property?', a: 'If the property was held as joint tenants, the deceased person\'s share passes automatically to the surviving owner and is valued for IHT purposes at the date of death. If held as tenants in common, the deceased person\'s share forms part of their estate and is distributed according to their will (or intestacy rules).' },
+          { q: 'What about jointly owned property?', a: 'If the property was held as joint tenants, their share passes automatically to the surviving owner and is valued for IHT purposes at the date of death. If held as tenants in common, their share forms part of the estate and is distributed according to their will (or intestacy rules).' },
           { q: 'Can I reduce the IHT bill after someone has died?', a: 'Options are limited after death, but a deed of variation allows beneficiaries to redirect their inheritance within 2 years of the death. For example, a beneficiary could redirect their share to a charity or to the next generation, potentially reducing the IHT liability. All affected beneficiaries must agree.' },
         ].map((faq, i) => (
           <div key={i} className="bg-card rounded-xl border border-border p-6">

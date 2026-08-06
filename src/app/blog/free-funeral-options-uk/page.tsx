@@ -42,7 +42,7 @@ export default function FreeFuneralOptionsPage() {
         Free and Low-Cost Funeral Options in the UK
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-6">
-        The average UK funeral costs over £4,000. For many families, that is simply not affordable, especially when the death was unexpected. This guide sets out every option available to you, honestly and without judgement. There is always a way to give someone a dignified farewell.
+        The average UK funeral costs over £4,000. For many families, that is simply not affordable, especially when the loss was unexpected. This guide sets out every option available to you, honestly and without judgement. There is always a way to give someone a dignified farewell.
       </p>
 
       <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
@@ -70,7 +70,7 @@ export default function FreeFuneralOptionsPage() {
       {/* Reassurance */}
       <div className="bg-primary-light rounded-xl p-6 mb-10">
         <p className="text-sm text-foreground leading-relaxed">
-          <strong>An important note before you read on:</strong> funeral costs are treated as a priority debt of the estate. This means they can be paid from the deceased person's bank accounts before anything else is settled. If the person had any savings at all, ask the funeral director and the bank about releasing funds directly for the funeral before probate is granted. Many banks will do this on receipt of a death certificate and an invoice. This option is often overlooked.
+          <strong>An important note before you read on:</strong> funeral costs are treated as a priority debt of the estate. This means they can be paid from the person's bank accounts before anything else is settled. If the person had any savings at all, ask the funeral director and the bank about releasing funds directly for the funeral before probate is granted. Many banks will do this on receipt of a death certificate and an invoice. This option is often overlooked.
         </p>
       </div>
 
@@ -83,7 +83,7 @@ export default function FreeFuneralOptionsPage() {
           <p className="text-sm text-muted leading-relaxed">If yes, these should cover costs first. Ask the bank about releasing funeral funds before probate. Contact the insurer with the death certificate to claim any life insurance. A pre-paid funeral plan transfers directly to the funeral director.</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
-          <p className="text-sm font-semibold text-foreground mb-2">Is the person a child under 18, or was it a stillbirth after 24 weeks?</p>
+          <p className="text-sm font-semibold text-foreground mb-2">Was the person a child under 18, or was it a stillbirth after 24 weeks?</p>
           <p className="text-sm text-muted leading-relaxed">If yes: the Children's Funeral Fund covers burial and cremation fees in England at no cost to you. There is no means test. See the section below for details.</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -112,13 +112,13 @@ export default function FreeFuneralOptionsPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">The cost to you</h3>
           <p className="text-sm text-muted leading-relaxed">
-            There is no upfront cost to the family. However, the council will attempt to recover reasonable costs from the estate of the deceased. If the person died with no money or assets, the costs are written off. If there is an estate, even a small one, the council will claim from it before anything is distributed to beneficiaries.
+            There is no upfront cost to the family. However, the council will attempt to recover reasonable costs from the estate. If the person left no money or assets, the costs are written off. If there is an estate, even a small one, the council will claim from it before anything is distributed to beneficiaries.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">When to use it</h3>
           <p className="text-sm text-muted leading-relaxed">
-            A public health funeral is appropriate when the deceased had no next of kin, when the family genuinely cannot afford any funeral at all, or when there are family disputes about who is responsible. It is not appropriate simply to avoid cost if other options are available. Contact your local council's environmental health department to start the process.
+            A public health funeral is appropriate when the person had no next of kin, when the family genuinely cannot afford any funeral at all, or when there are family disputes about who is responsible. It is not appropriate simply to avoid cost if other options are available. Contact your local council's environmental health department to start the process.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -157,13 +157,13 @@ export default function FreeFuneralOptionsPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">The relationship rules</h3>
           <p className="text-sm text-muted leading-relaxed">
-            You must have been close enough to the deceased. The DWP accepts: spouse or civil partner; partner you lived with; a child (including a stillborn child after 24 weeks); a close relative or close friend (if there is no other more appropriate person who could apply). The DWP will also check whether there are other people who could have applied instead. If there is a closer relative who is not on benefits, you may not qualify.
+            You must have been close enough to the person who died. The DWP accepts: spouse or civil partner; partner you lived with; a child (including a stillborn child after 24 weeks); a close relative or close friend (if there is no other more appropriate person who could apply). The DWP will also check whether there are other people who could have applied instead. If there is a closer relative who is not on benefits, you may not qualify.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">How to apply</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Apply on form SF200, which is available at gov.uk or by calling the Bereavement Service on 0800 731 0469 (free to call). You must apply within 6 months of the funeral. The DWP will tell you how much they will pay and may ask for evidence. Payment goes directly to the funeral director in most cases, so you do not need to fund the funeral first and claim back.
+            Apply on form SF200, which is available at gov.uk or by calling the Bereavement Service on 0800 151 2012 (free to call). You must apply within 6 months of the funeral. The DWP will tell you how much they will pay and may ask for evidence. Payment goes directly to the funeral director in most cases, so you do not need to fund the funeral first and claim back.
           </p>
         </div>
       </div>
@@ -188,7 +188,7 @@ export default function FreeFuneralOptionsPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">What it is</h3>
           <p className="text-sm text-muted leading-relaxed">
-            A direct cremation is a simple cremation with no funeral service and no mourners at the crematorium. The body is collected by the funeral director, cremated, and the ashes are returned to the family. The UK average cost is around £1,647, but prices start from around £1,000 with some providers. This is significantly cheaper than a traditional funeral but still a private, dignified arrangement.{' '}See our <Link href="/blog/true-cost-of-dying-uk" className="text-primary hover:underline">full cost of dying guide</Link> for a complete breakdown.
+            A direct cremation is a simple cremation with no funeral service and no mourners at the crematorium. The person is collected by the funeral director, cremated, and their ashes returned to the family. The UK average cost is around £1,647, but prices start from around £1,000 with some providers. This is significantly cheaper than a traditional funeral but still a private, dignified arrangement.{' '}See our <Link href="/blog/true-cost-of-dying-uk" className="text-primary hover:underline">full cost of dying guide</Link> for a complete breakdown.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -211,7 +211,7 @@ export default function FreeFuneralOptionsPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Is it legal?</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Yes. In England and Wales, there is no legal requirement to use a funeral director. You can legally keep the body at home (in appropriate conditions), build your own coffin, arrange transport in your own vehicle, and contact a crematorium or burial ground directly to book. You will need the death certificate and, for cremation, a Medical Certificate of Cause of Death (MCCD) completed by the attending practitioner and scrutinised by a Medical Examiner. Since September 2024, the old system of two separate cremation forms (Form Cremation 4 and 5, signed by two doctors) has been replaced by the Medical Examiner system, removing those fees. The Natural Death Centre (naturaldeath.org.uk) provides detailed, practical guidance for DIY funerals.
+            Yes. In England and Wales, there is no legal requirement to use a funeral director. You can legally keep the person at home (in appropriate conditions), build your own coffin, arrange transport in your own vehicle, and contact a crematorium or burial ground directly to book. You will need the death certificate and, for cremation, a Medical Certificate of Cause of Death (MCCD) completed by the attending practitioner and scrutinised by a Medical Examiner. Since September 2024, the old system of two separate cremation forms (Form Cremation 4 and 5, signed by two doctors) has been replaced by the Medical Examiner system, removing those fees. The Natural Death Centre (naturaldeath.org.uk) provides detailed, practical guidance for DIY funerals.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -223,7 +223,7 @@ export default function FreeFuneralOptionsPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Is it right for everyone?</h3>
           <p className="text-sm text-muted leading-relaxed">
-            A DIY funeral requires someone to be willing and able to handle the practicalities: caring for the body, dealing with paperwork, and coordinating with the crematorium or burial ground. This is not for everyone, and there is absolutely no obligation. But for those who are able and willing, it can be a very meaningful and cost-effective way to care for someone you love.
+            A DIY funeral requires someone to be willing and able to handle the practicalities: caring for the person, dealing with paperwork, and coordinating with the crematorium or burial ground. This is not for everyone, and there is absolutely no obligation. But for those who are able and willing, it can be a very meaningful and cost-effective way to care for someone you love.
           </p>
         </div>
       </div>
@@ -282,8 +282,8 @@ export default function FreeFuneralOptionsPage() {
         {[
           { q: 'What is the cheapest way to have a funeral in the UK?', a: 'A direct cremation is the most affordable private option, starting from around £1,000. There is no service at the crematorium. You can hold a separate memorial at a venue of your choice at little or no cost.' },
           { q: 'Can you have a funeral with no money?', a: "Yes. If you are on means-tested benefits, the DWP Funeral Expenses Payment can cover burial or cremation fees plus up to £1,000. If no one is able to arrange a funeral, the local council is legally required to do so at no cost to the family." },
-          { q: 'Who pays for a funeral if there is no money in the estate?', a: "If the deceased had no money and no one can afford to pay, the local council arranges a public health funeral under the Public Health (Control of Disease) Act 1984. This is a legal obligation, not charity. The family may also be able to claim DWP Funeral Expenses Payment if they are on qualifying benefits." },
-          { q: 'Can I arrange a funeral without a funeral director?', a: 'Yes. In England and Wales, there is no legal requirement to use a funeral director. You can keep the body at home, build your own coffin, and book directly with a crematorium or burial ground. The Natural Death Centre provides practical guidance.' },
+          { q: 'Who pays for a funeral if there is no money in the estate?', a: "If the person had no money and no one can afford to pay, the local council arranges a public health funeral under the Public Health (Control of Disease) Act 1984. This is a legal obligation, not charity. The family may also be able to claim DWP Funeral Expenses Payment if they are on qualifying benefits." },
+          { q: 'Can I arrange a funeral without a funeral director?', a: 'Yes. In England and Wales, there is no legal requirement to use a funeral director. You can keep the person at home, build your own coffin, and book directly with a crematorium or burial ground. The Natural Death Centre provides practical guidance.' },
         ].map((faq, i) => (
           <div key={i} className="bg-card rounded-xl border border-border p-6">
             <h3 className="font-semibold text-foreground mb-2">{faq.q}</h3>
@@ -359,8 +359,8 @@ export default function FreeFuneralOptionsPage() {
             mainEntity: [
               { '@type': 'Question', name: 'What is the cheapest way to have a funeral in the UK?', acceptedAnswer: { '@type': 'Answer', text: 'A direct cremation is the most affordable private option, starting from around £1,000. There is no service at the crematorium. You can hold a separate memorial at a venue of your choice at little or no cost.' } },
               { '@type': 'Question', name: 'Can you have a funeral with no money?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. If you are on means-tested benefits, the DWP Funeral Expenses Payment can cover burial or cremation fees plus up to £1,000. If no one is able to arrange a funeral, the local council is legally required to do so at no cost to the family.' } },
-              { '@type': 'Question', name: 'Who pays for a funeral if there is no money in the estate?', acceptedAnswer: { '@type': 'Answer', text: 'If the deceased had no money and no one can afford to pay, the local council arranges a public health funeral under the Public Health (Control of Disease) Act 1984. This is a legal obligation, not charity. The family may also be able to claim DWP Funeral Expenses Payment if they are on qualifying benefits.' } },
-              { '@type': 'Question', name: 'Can I arrange a funeral without a funeral director?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. In England and Wales, there is no legal requirement to use a funeral director. You can keep the body at home, build your own coffin, and book directly with a crematorium or burial ground. The Natural Death Centre provides practical guidance.' } },
+              { '@type': 'Question', name: 'Who pays for a funeral if there is no money in the estate?', acceptedAnswer: { '@type': 'Answer', text: 'If the person had no money and no one can afford to pay, the local council arranges a public health funeral under the Public Health (Control of Disease) Act 1984. This is a legal obligation, not charity. The family may also be able to claim DWP Funeral Expenses Payment if they are on qualifying benefits.' } },
+              { '@type': 'Question', name: 'Can I arrange a funeral without a funeral director?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. In England and Wales, there is no legal requirement to use a funeral director. You can keep the person at home, build your own coffin, and book directly with a crematorium or burial ground. The Natural Death Centre provides practical guidance.' } },
             ],
           }),
         }}

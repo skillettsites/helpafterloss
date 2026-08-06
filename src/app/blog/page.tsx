@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Guides & Articles - Help After Loss',
-  description: 'In-depth guides and articles on bereavement, funeral costs, workplace rights, and practical support after a death in the UK.',
+  description: 'In-depth guides and articles on bereavement, funeral costs, workplace rights, and practical support after a loss in the UK.',
   alternates: { canonical: 'https://helpafterloss.co.uk/blog' },
   openGraph: {
     title: 'Guides & Articles - Help After Loss',
@@ -66,7 +66,7 @@ const POSTS = [
     href: '/blog/how-to-cope-losing-a-parent',
     title: 'How to Cope With Losing a Parent: A Practical and Emotional Guide',
     date: 'March 2026',
-    description: 'A compassionate guide to navigating life after the death of a mother or father. Covers the emotional impact, family dynamics, practical tasks, and where to find support.',
+    description: 'A compassionate guide to finding your way after losing a mother or father. Covers the emotional impact, family dynamics, practical tasks, and where to find support.',
   },
   {
     href: '/blog/grief-and-anxiety',
@@ -90,7 +90,7 @@ const POSTS = [
     href: '/blog/bereavement-leave-rights-uk',
     title: 'Bereavement Leave in the UK: Your Rights in 2026',
     date: 'March 2026',
-    description: "What you are legally entitled to when a loved one dies, what most employers actually offer, what to do if your employer refuses, and guidance for HR professionals on best practice.",
+    description: "What you are legally entitled to when someone close to you passes away, what most employers actually offer, what to do if your employer refuses, and guidance for HR professionals on best practice.",
   },
   {
     href: '/blog/free-funeral-options-uk',
@@ -125,7 +125,7 @@ export default function BlogIndexPage() {
         Guides &amp; Articles
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        In-depth guides on the practical and financial side of bereavement. Written in plain English, with real figures and specific guidance for people in the UK.
+        In-depth guides on the practical and financial side of bereavement. Written in plain English, with real figures and specific guidance for people in the UK, so you can take things one step at a time.
       </p>
 
       <div className="space-y-6 mb-12">

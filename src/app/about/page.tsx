@@ -26,7 +26,7 @@ export default function AboutPage() {
         About Help After Loss
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        When someone dies, the last thing you need is to spend hours working out what to do. We built Help After Loss to give you clear, personalised guidance so you can focus on what matters most.
+        When you lose someone, the last thing you need is to spend hours working out what has to be done. We built Help After Loss to give you clear, personal guidance in plain English, so you can spend your energy on the people who matter instead of on paperwork.
       </p>
 
       <div className="space-y-8 mb-12">
@@ -34,13 +34,13 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold text-foreground mb-4">Why we built this</h2>
           <div className="bg-card rounded-xl border border-border p-6 space-y-4 text-muted leading-relaxed">
             <p>
-              Every year, over 680,000 people in the UK struggle with bereavement admin. Research by Marie Curie found that the average person needs to contact 21 different organisations after a death. 100,000 people still have not closed all accounts 12 months later.
+              Every year, over 680,000 people in the UK are left to deal with bereavement paperwork. Research by Marie Curie found that the average person has to contact 21 different organisations after a death. A year on, 100,000 people still have accounts they have not managed to close.
             </p>
             <p>
-              The information exists, but it is scattered across dozens of government websites, charity pages, and forums. None of it is personalised. A 25-year-old whose parent dies suddenly needs completely different guidance to a 70-year-old whose spouse dies after a long illness.
+              The information is out there, but it is scattered across dozens of government websites, charity pages, and forums, and none of it speaks to your situation. Someone in their twenties who has lost a parent suddenly needs very different guidance from someone in their seventies whose husband or wife has passed away after a long illness.
             </p>
             <p>
-              We built Help After Loss to solve this. Answer a few questions, get a personalised checklist with real deadlines, estimated costs, and links to the right places. Free, forever.
+              That is why we built Help After Loss. Answer a few questions and you get a checklist made for you, with the dates that matter, honest costs, and links straight to the right places. Free, and always will be.
             </p>
           </div>
         </section>
@@ -49,10 +49,10 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold text-foreground mb-4">How it works</h2>
           <div className="bg-card rounded-xl border border-border p-6 space-y-4 text-muted leading-relaxed">
             <p>
-              Our tool asks you simple questions about your situation: who died, your relationship to them, whether there is a will, whether there is property, and so on. Based on your answers, we generate a personalised checklist of everything you need to do, in the right order, with deadlines calculated from the date of death.
+              Our tool asks a few gentle questions about your situation: who has passed away, how you were related to them, whether there is a will, whether there is property, and so on. From your answers we put together a checklist of what needs doing, in a sensible order, with the deadlines worked out from the date of death.
             </p>
             <p>
-              The questionnaire adapts as you answer. If the person was under 18, we skip pension and probate questions and include the Children's Funeral Fund. If you are in Scotland, we show Confirmation instead of Probate and extend the registration deadline to 8 days. If you are Muslim or Jewish, we prioritise funeral arrangements for burial within 24-48 hours.
+              The questions adapt as you go, so you are never asked anything that does not apply. If your loved one was under 18, we leave out the pension and probate questions and include the Children's Funeral Fund. If you are in Scotland, we show Confirmation rather than Probate and extend the registration deadline to 8 days. If your family is Muslim or Jewish, we put the funeral arrangements first, for burial within 24 to 48 hours.
             </p>
           </div>
         </section>
@@ -61,7 +61,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold text-foreground mb-4">Your privacy</h2>
           <div className="bg-card rounded-xl border border-border p-6 space-y-4 text-muted leading-relaxed">
             <p>
-              We do not collect, store, or share any of your personal information. Your answers and progress are saved only on your own device using your browser's local storage. We have no database, no user accounts, and no way to see what you enter.
+              We do not collect, store, or share any of your personal information. Your answers and your progress stay on your own device, in your browser. There is no database, no account to create, and no way for us to see anything you type. What you write here is yours alone.
             </p>
             <p>
               We do not use advertising trackers, sell data, or share information with third parties.
@@ -73,7 +73,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold text-foreground mb-4">Important disclaimer</h2>
           <div className="bg-warm border border-warm-border rounded-xl p-6 text-sm text-amber-800 leading-relaxed space-y-3">
             <p>
-              Help After Loss provides general guidance only. It does not constitute legal, financial, or tax advice. Every situation is different, and we strongly recommend seeking professional advice for complex estates, inheritance tax queries, or disputes.
+              Help After Loss offers general guidance only. It is not legal, financial, or tax advice. Every situation is different, and we would always encourage you to speak to a professional about complicated estates, inheritance tax questions, or any disagreement within the family.
             </p>
             <p>
               While we make every effort to keep information accurate and up to date, laws and regulations change. Always check the latest information on GOV.UK for the most current guidance.
@@ -100,7 +100,7 @@ export default function AboutPage() {
 
       <div className="bg-primary-light rounded-xl p-8 text-center">
         <h2 className="text-2xl font-bold text-foreground mb-3">Get your personalised guide</h2>
-        <p className="text-muted mb-6">Tailored to your exact situation, with real deadlines and practical steps.</p>
+        <p className="text-muted mb-6">Built around your own situation, with the dates that matter and clear, practical steps.</p>
         <Link href="/start" className="inline-block px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors">
           Get Started
         </Link>

@@ -26,8 +26,8 @@ export default function DonatePage() {
 
       <p className="text-lg text-muted mb-6 leading-relaxed">
         Help After Loss is completely free to use and always will be. No ads, no paywalls, no selling your data.
-        We believe that when you are going through the worst time of your life, the last thing you need is
-        a paywall between you and the help you need.
+        We believe that when you are going through one of the hardest times of your life, the last thing you
+        need is a paywall standing between you and the help you are looking for.
       </p>
 
       <div className="bg-card rounded-xl border border-border p-6 mb-8">

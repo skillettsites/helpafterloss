@@ -4,12 +4,12 @@ import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
 
 export const metadata: Metadata = {
-  title: 'When Someone Dies in Northern Ireland: No Tell Us Once + Higher Probate Fees (2026)',
-  description: 'Northern Ireland has no Tell Us Once service, probate fees up to £7,000+, and different intestacy rules. Free step-by-step guide with every phone number, deadline, and cost.',
+  title: 'When Someone Dies in Northern Ireland: No Tell Us Once (2026)',
+  description: 'Northern Ireland has no Tell Us Once service, its own probate fees, and different intestacy rules. A free step-by-step guide with the phone numbers, deadlines and costs.',
   alternates: { canonical: 'https://helpafterloss.co.uk/guide/northern-ireland' },
   openGraph: {
-    title: 'When Someone Dies in Northern Ireland: No Tell Us Once + Higher Probate Fees (2026)',
-    description: 'No Tell Us Once, probate fees up to £7,000+, and different intestacy rules. Free step-by-step guide with every phone number, deadline, and cost.',
+    title: 'When Someone Dies in Northern Ireland: No Tell Us Once (2026)',
+    description: 'No Tell Us Once, Northern Ireland\'s own probate fees, and different intestacy rules. A free step-by-step guide with the phone numbers, deadlines and costs.',
     url: 'https://helpafterloss.co.uk/guide/northern-ireland',
     type: 'article',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
@@ -39,8 +39,8 @@ const KEY_DIFFERENCES = [
     ni: 'Probate application by post or in person at the Probate Office, Belfast',
   },
   {
-    england: 'Probate court fee: £300 (estates over £5,000)',
-    ni: 'Probate fee varies by estate value (sliding scale from £261 to £7,000+)',
+    england: 'Probate court fee: £526 (estates over £5,000)',
+    ni: 'No probate fee at all if the estate is £10,000 or less; above that a fee applies, set by the Department of Justice',
   },
   {
     england: 'Coroner system investigates sudden or unexplained deaths',
@@ -71,19 +71,19 @@ const SECTIONS = [
     tasks: [
       {
         title: 'Get the medical certificate',
-        content: 'A doctor who attended the person during their final illness issues the Medical Certificate of Cause of Death (MCCD). If the person died in hospital, the hospital arranges this. If they died at home, contact their GP surgery. If the death was sudden or the cause is unknown, the doctor must report it to the coroner.',
+        content: 'The doctor who cared for your loved one during their final illness issues the Medical Certificate of Cause of Death (MCCD). If they were in hospital, the hospital arranges this for you. If they were at home, call their GP surgery. If the death was sudden, or the cause is not known, the doctor has to report it to the coroner.',
       },
       {
         title: 'Register within 5 days',
-        content: 'In Northern Ireland, the death must be registered within 5 days at any district registrar office. Registration is administered by NISRA (Northern Ireland Statistics and Research Agency) through 26 district registrar offices. You can register in any district, not just where the person died. Bring the MCCD, the person\'s full name, date and place of birth, last address, occupation, and date of birth of any surviving spouse.',
+        content: 'In Northern Ireland, the death must be registered within 5 days at any district registrar office. Registration is looked after by NISRA (Northern Ireland Statistics and Research Agency) through 26 district offices, and you can go to whichever is easiest for you, not only the one where they died. Take the MCCD, their full name, date and place of birth, last address, occupation, and the date of birth of any surviving husband, wife, or civil partner.',
       },
       {
         title: 'Death certificates cost £15 each',
-        content: 'Certified copies of the death certificate cost £15 each in Northern Ireland. Order at least 5 copies at the time of registration, as it costs more to order them later. Banks, insurers, solicitors, and pension providers all need originals.',
+        content: 'Certified copies of the death certificate cost £15 each in Northern Ireland. It is worth ordering at least 5 while you are registering, as they cost more later on. Banks, insurers, solicitors, and pension providers each need an original.',
       },
       {
         title: 'Tell Us Once is NOT available in Northern Ireland',
-        content: 'This is one of the most significant differences. Tell Us Once does not operate in Northern Ireland. You must notify each government department individually: HMRC, the Department for Communities (DfC, which handles benefits), DVLA, the Passport Office, and the local council. This means more phone calls and letters, but our template letters and notify tool can help.',
+        content: 'This is one of the biggest differences, and it does mean more work for you. Tell Us Once does not operate in Northern Ireland, so each government department needs to hear from you separately: HMRC, the Department for Communities (DfC, which handles benefits), DVLA, the Passport Office, and the local council. That is more phone calls and letters than elsewhere in the UK, but our template letters and notify tool are there to take some of the weight off.',
       },
     ],
   },
@@ -101,11 +101,11 @@ const SECTIONS = [
       },
       {
         title: 'What happens during a coroner investigation',
-        content: 'The coroner may order a post-mortem examination to establish the cause of death. If the cause is confirmed and there are no suspicious circumstances, the coroner will issue a coroner\'s certificate that allows the death to be registered. You cannot register the death until the coroner authorises it.',
+        content: 'The coroner may ask for a post-mortem examination to establish the cause of death. Once the cause is confirmed and there is nothing untoward, the coroner issues a coroner\'s certificate so the death can be registered. You cannot register until the coroner gives that authorisation, so there may be a wait.',
       },
       {
         title: 'Inquests in Northern Ireland',
-        content: 'If the coroner decides a full inquest is needed, this is a public hearing to examine the circumstances of the death. Inquests in Northern Ireland can take some time to be scheduled, particularly if they involve historical cases or complex circumstances. The family will be notified of the date and can attend. Legal aid may be available for bereaved families at inquests.',
+        content: 'If the coroner decides a full inquest is needed, that is a public hearing to look at the circumstances of the death. Inquests in Northern Ireland can take a while to be scheduled, particularly where cases are historical or complicated. Your family will be told the date and can attend, and legal aid may be available to bereaved families at inquests.',
       },
     ],
   },
@@ -123,7 +123,7 @@ const SECTIONS = [
       },
       {
         title: 'Probate fees in Northern Ireland',
-        content: 'Northern Ireland uses a sliding scale of fees based on the net value of the estate. As a general guide: estates under £10,000 pay no fee, estates between £10,000 and £25,000 pay around £261, and fees increase with estate value. For large estates (over £400,000), fees can exceed £7,000. This is significantly more expensive than the flat £300 fee in England and Wales.',
+        content: 'If the estate is worth £10,000 or less, there is no court fee to pay at all. Above that a fee is payable, based on the net value of the estate. Northern Ireland sets its own fees through the Department of Justice rather than following the England and Wales figure, and they are reviewed periodically, so please check the current Court Fees page on justice-ni.gov.uk before you budget. We would rather send you to the official figure than quote one that may have moved.',
       },
       {
         title: 'Processing time',
@@ -141,11 +141,11 @@ const SECTIONS = [
     tasks: [
       {
         title: 'Spouse or civil partner with children',
-        content: 'If the person died without a will and is survived by a spouse or civil partner and children, the spouse receives all personal belongings plus the first £250,000 of the estate. The remainder is split: one-third to the spouse and two-thirds divided equally among the children. If the estate is worth less than £250,000, the spouse inherits everything.',
+        content: 'If there was no will, and your loved one is survived by a husband, wife, or civil partner and by children, the surviving partner receives all the personal belongings plus the first £250,000 of the estate. What is left over is split: one-third to the surviving partner, and two-thirds shared equally between the children. If the estate is worth less than £250,000, the surviving partner inherits everything.',
       },
       {
         title: 'Spouse or civil partner without children',
-        content: 'If there are no children, the surviving spouse or civil partner inherits the entire estate. Parents, siblings, and other relatives receive nothing.',
+        content: 'If there are no children, the surviving husband, wife, or civil partner inherits the whole estate. Parents, brothers and sisters, and other relatives do not receive anything.',
       },
       {
         title: 'No spouse or civil partner',
@@ -157,7 +157,7 @@ const SECTIONS = [
       },
       {
         title: 'Unmarried partners',
-        content: 'As in the rest of the UK, unmarried partners have no automatic right to inherit under intestacy rules in Northern Ireland. The Inheritance (Provision for Family and Dependants) (Northern Ireland) Order 1979 allows certain dependants to apply to court for provision from the estate, but this is not guaranteed and requires legal action.',
+        content: 'As in the rest of the UK, partners who were not married have no automatic right to inherit under the intestacy rules in Northern Ireland. This catches many people out, and it can feel very unfair. The Inheritance (Provision for Family and Dependants) (Northern Ireland) Order 1979 lets certain dependants apply to the court for provision from the estate, though nothing is guaranteed and it does mean going to law. If this is your situation, please get advice early.',
       },
     ],
   },
@@ -175,7 +175,7 @@ const SECTIONS = [
       },
       {
         title: 'Other benefits',
-        content: 'Universal Credit, Pension Credit, Housing Benefit, and other benefits are administered by the Department for Communities in Northern Ireland, not the DWP. If you are already receiving benefits, report the death to DfC as soon as possible. You may be entitled to a single person discount on rates (the Northern Ireland equivalent of council tax).',
+        content: 'Universal Credit, Pension Credit, Housing Benefit, and other benefits are handled by the Department for Communities in Northern Ireland rather than the DWP. If you receive benefits yourself, let DfC know what has happened as soon as you feel able. You may also be entitled to a single person discount on your rates (the Northern Ireland equivalent of council tax).',
       },
     ],
   },
@@ -226,11 +226,11 @@ const FAQ = [
   },
   {
     q: 'How much does probate cost in Northern Ireland?',
-    a: 'Probate fees in Northern Ireland are based on a sliding scale related to the estate value. Estates under £10,000 pay no fee. The fees increase with estate value and can be significantly higher than the flat £300 fee in England and Wales. For estates over £400,000, fees can exceed £7,000.',
+    a: 'If the estate is worth £10,000 or less, there is no fee. Above that, the fee is based on the net value of the estate and is set by the Department of Justice, separately from the England and Wales fee. Because these are reviewed periodically, check the current Court Fees page on justice-ni.gov.uk for the figure that applies to you.',
   },
   {
     q: 'What are the intestacy rules in Northern Ireland?',
-    a: 'If someone dies without a will in Northern Ireland, the surviving spouse or civil partner receives personal belongings plus the first £250,000. If there are children, the remainder is split one-third to the spouse and two-thirds to the children. If there are no children, the spouse inherits everything. Unmarried partners receive nothing automatically.',
+    a: 'If there is no will in Northern Ireland, the surviving husband, wife, or civil partner receives the personal belongings plus the first £250,000. If there are children, what is left is split one-third to the surviving partner and two-thirds to the children. If there are no children, the surviving partner inherits everything. Partners who were not married receive nothing automatically.',
   },
   {
     q: 'Is the coroner system in Northern Ireland the same as England?',
@@ -261,7 +261,7 @@ export default function NorthernIrelandGuidePage() {
         When Someone Dies in Northern Ireland
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-4">
-        Northern Ireland has its own registration system, probate process, and benefits administration. The biggest practical difference is that Tell Us Once is not available, meaning you must notify each government department individually. Probate is handled through the Probate Office in Belfast, not online, and fees are higher than in England and Wales. This guide covers everything specific to Northern Ireland.
+        We are very sorry for your loss. Northern Ireland has its own registration system, probate process, and benefits administration, so it helps to know what to expect. The biggest practical difference is that Tell Us Once is not available, which means contacting each government department yourself. Probate goes through the Probate Office in Belfast rather than online, and the fees are higher than in England and Wales. This guide covers everything specific to Northern Ireland, in plain English.
       </p>
       <Link
         href="/start"
@@ -273,7 +273,7 @@ export default function NorthernIrelandGuidePage() {
       {/* Important warning about Tell Us Once */}
       <div className="bg-warm border border-warm-border rounded-xl p-5 mb-10">
         <p className="text-sm text-amber-800 leading-relaxed">
-          <strong>Important:</strong> Tell Us Once is not available in Northern Ireland. You will need to contact HMRC, the Department for Communities, DVLA, the Passport Office, and Land and Property Services individually. This means more paperwork, but our <Link href="/template-letters" className="text-amber-800 font-medium underline">template letters</Link> and <Link href="/notify" className="text-amber-800 font-medium underline">notification guide</Link> can help you through each one.
+          <strong>Worth knowing:</strong> Tell Us Once is not available in Northern Ireland, so HMRC, the Department for Communities, DVLA, the Passport Office, and Land and Property Services each need to hear from you separately. That is more paperwork than we would wish on anyone, but our <Link href="/template-letters" className="text-amber-800 font-medium underline">template letters</Link> and <Link href="/notify" className="text-amber-800 font-medium underline">notification guide</Link> will walk you through each one.
         </p>
       </div>
 
@@ -355,7 +355,7 @@ export default function NorthernIrelandGuidePage() {
       ))}
 
       {/* FAQ */}
-      <h2 className="text-2xl font-bold text-foreground mb-6">Common questions about deaths in Northern Ireland</h2>
+      <h2 className="text-2xl font-bold text-foreground mb-6">Common questions about the process in Northern Ireland</h2>
       <div className="space-y-4 mb-12">
         {FAQ.map((item, i) => (
           <div key={i} className="bg-card rounded-xl border border-border p-6">

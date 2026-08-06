@@ -3,11 +3,11 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Help After Loss - Free Bereavement Guidance for the UK',
-  description: 'When someone dies, there is so much to do. We give you a free, personalised step-by-step guide covering everything from registering the death to probate, finances, and beyond. Trusted UK bereavement support.',
+  description: 'When someone you love passes away, there is a great deal to sort out. We give you a free, personalised step-by-step guide, from registering the death through to probate and finances. Gentle, plain English, no sign-up.',
   alternates: { canonical: 'https://helpafterloss.co.uk' },
   openGraph: {
     title: 'Help After Loss - Free Bereavement Guidance for the UK',
-    description: 'Free, personalised step-by-step guidance when someone dies. Covers everything from registering the death to probate and beyond.',
+    description: 'Free, personalised step-by-step guidance after someone passes away. From registering the death through to probate and finances.',
     url: 'https://helpafterloss.co.uk',
     type: 'website',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
@@ -15,73 +15,73 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Help After Loss - Free Bereavement Guidance',
-    description: 'Free, personalised step-by-step guidance when someone dies in the UK.',
+    description: 'Free, personalised step-by-step guidance for UK families after someone passes away.',
   },
 };
 
 const STEPS = [
   {
     number: '1',
-    title: 'Answer a few questions',
-    description: 'Tell us about your situation. We will ask about the person who died, your relationship, and the circumstances. It takes about 3 minutes.',
+    title: 'Tell us a little about your situation',
+    description: 'A few gentle questions about the person you have lost and where things stand. Skip anything you would rather not answer. It takes about three minutes.',
   },
   {
     number: '2',
-    title: 'Get your personalised guide',
-    description: 'We create a checklist of everything you need to do, tailored to your exact situation, with real deadlines, helpful links, and estimated costs.',
+    title: 'We put your guide together',
+    description: 'A calm list of what needs doing, shaped around your answers, with the dates that matter, the links you will need, and a rough idea of any costs.',
   },
   {
     number: '3',
-    title: 'Work through it at your own pace',
-    description: 'Tick things off as you go. Your progress is saved. Come back whenever you need to. There is no rush.',
+    title: 'Take it at whatever pace suits you',
+    description: 'Tick things off as you manage them. Your progress is kept safe on your own device, so you can close the page and come back whenever you feel able.',
   },
 ];
 
 const STATS = [
-  { number: '680,000+', label: 'people struggle with bereavement admin in the UK each year' },
-  { number: '21', label: 'organisations you may need to contact after a death' },
-  { number: '100%', label: 'free, with no sign-up required' },
+  { number: '5 days', label: 'is all you usually have to register a death in England, Wales and Northern Ireland. We will work out your date for you.' },
+  { number: '47', label: 'banks, utilities, insurers and government offices in our directory, with their bereavement phone numbers' },
+  { number: 'Free', label: 'from start to finish, with no sign-up and nothing saved about you' },
 ];
 
 const FEATURES = [
   {
-    title: 'Personalised to your situation',
-    description: 'Not a generic list. Our guide adapts based on your answers, so you only see what applies to you. Whether there is a will or not, property or not, in England, Wales, Scotland, or Northern Ireland.',
+    title: 'Shaped around you, not a generic list',
+    description: 'Your guide changes with your answers, so you are never handed jobs that do not apply to you. Whether there is a will or not, property or not, in England, Wales, Scotland, or Northern Ireland.',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
     ),
   },
   {
-    title: 'Actual deadlines from the date of death',
-    description: 'We calculate your real deadlines. Register within 5 days. Apply for probate within 3 months. Inheritance tax within 6 months. So you never miss anything important.',
+    title: 'The dates that genuinely matter',
+    description: 'We work the real dates out for you, so nothing important slips by while you have enough on your mind. Registering the death, inheritance tax, probate: you will see what is due and when.',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
     ),
   },
   {
-    title: 'Estimated costs so nothing is a surprise',
-    description: 'From death certificates to funeral costs, probate fees to solicitor charges. We estimate the total cost based on your situation, with tips on how to save money.',
+    title: 'No unwelcome surprises about money',
+    description: 'Certificates, the funeral, probate fees, solicitors if you need one. We give you a realistic idea of the cost up front, along with the ways families most often save.',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
     ),
   },
   {
-    title: 'Covers all four UK nations',
-    description: 'Different rules for England, Wales, Scotland, and Northern Ireland. We adjust everything automatically. Probate becomes Confirmation in Scotland. Tell Us Once is not available in NI.',
+    title: 'Right for your part of the UK',
+    description: 'The rules differ across England, Wales, Scotland and Northern Ireland, and we adjust for that quietly in the background. Probate is called Confirmation in Scotland, and Tell Us Once is not offered in Northern Ireland.',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
     ),
   },
   {
-    title: 'Respects cultural and religious needs',
-    description: 'Muslim, Jewish, Hindu, Sikh, Buddhist, and Christian traditions are all supported. We adjust timelines and guidance to respect your faith requirements.',
+    title: 'Mindful of faith and tradition',
+    description: 'Muslim, Jewish, Hindu, Sikh, Buddhist and Christian traditions are all accounted for, including where a funeral needs to happen quickly. Your beliefs shape the timings we suggest.',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
     ),
   },
   {
-    title: 'Your data stays on your device',
-    description: 'We do not collect, store, or share any of your personal information. Everything is saved locally on your phone or computer. No sign-up, no tracking, no selling data.',
+    title: 'What you tell us stays with you',
+    description: 'Your answers never leave your own phone or computer. We do not collect them, store them, or pass them to anyone. No sign-up, and nothing sold on.',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
     ),
@@ -94,27 +94,31 @@ export default function HomePage() {
       {/* Hero */}
       <section className="bg-gradient-to-b from-primary-light to-background py-16 md:py-24 px-4">
         <div className="max-w-3xl mx-auto text-center">
+          <p className="text-sm font-medium text-primary-dark mb-4">We are so sorry for your loss</p>
           <h1 className="text-4xl md:text-5xl font-bold text-foreground leading-tight mb-6">
-            When someone dies, we help you know what to do
+            When someone you love passes away, you do not have to work it all out on your own
           </h1>
+          <p className="text-lg text-muted leading-relaxed max-w-2xl mx-auto mb-4">
+            There is a lot to sort out, and none of it feels easy right now. We will quietly put together a list of what needs doing, when it needs doing, and how, written in plain English and shaped around your situation.
+          </p>
           <p className="text-lg text-muted leading-relaxed max-w-2xl mx-auto mb-8">
-            A free, personalised step-by-step guide covering everything from registering the death to probate, finances, and beyond. Tailored to your situation, with real deadlines and no jargon.
+            You can do a little, then come back later. Nothing here is urgent unless we say so.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/start"
               className="px-8 py-4 bg-primary text-white text-lg font-semibold rounded-xl hover:bg-primary-dark transition-colors shadow-lg shadow-primary/20"
             >
-              Get Your Personalised Guide
+              Start when you are ready
             </Link>
             <Link
               href="/guide"
               className="px-8 py-4 text-primary text-lg font-medium rounded-xl hover:bg-primary-light transition-colors"
             >
-              Read the General Guide
+              Or just read the guide
             </Link>
           </div>
-          <p className="text-sm text-muted mt-4">Free. No sign-up. Takes about 3 minutes.</p>
+          <p className="text-sm text-muted mt-4">Free, and always will be. No sign-up. You can stop at any point.</p>
         </div>
       </section>
 
@@ -154,10 +158,10 @@ export default function HomePage() {
       <section className="py-16 px-4" aria-labelledby="features">
         <div className="max-w-4xl mx-auto">
           <h2 id="features" className="text-3xl font-bold text-foreground text-center mb-4">
-            Why people trust Help After Loss
+            Why families trust us with this
           </h2>
           <p className="text-muted text-center mb-12 max-w-2xl mx-auto">
-            Built by people who have been through it. We know how overwhelming bereavement admin can be. That is why we made this free, simple, and personal.
+            This site was built by people who have sat where you are sitting and found the paperwork bewildering. That is why it is free, plainly written, and entirely yours to use at your own pace.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {FEATURES.map((feature, i) => (
@@ -175,7 +179,7 @@ export default function HomePage() {
       <section className="py-16 px-4 bg-white" aria-labelledby="covers">
         <div className="max-w-4xl mx-auto">
           <h2 id="covers" className="text-3xl font-bold text-foreground text-center mb-12">
-            Everything you need to know, in one place
+            Everything in one place, whenever you need it
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
@@ -209,10 +213,10 @@ export default function HomePage() {
       <section className="py-16 px-4" aria-labelledby="explore">
         <div className="max-w-4xl mx-auto">
           <h2 id="explore" className="text-3xl font-bold text-foreground text-center mb-4">
-            Explore our free resources
+            Have a look around when you feel up to it
           </h2>
           <p className="text-muted text-center mb-10 max-w-2xl mx-auto">
-            Whether you need local guidance, help notifying organisations, or tools to stay organised, everything is free and designed to make this process less overwhelming.
+            Local guidance, help with telling organisations, and small tools to keep track of things. All of it free, and all of it written to take a little weight off you.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <Link href="/guides" className="bg-card rounded-xl border border-border p-5 hover:border-primary hover:shadow-sm transition-all group">
@@ -259,16 +263,16 @@ export default function HomePage() {
       <section className="py-16 px-4 bg-primary-light" aria-label="Get started">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-foreground mb-4">
-            Ready to get your personalised guide?
+            Whenever you are ready, we are here
           </h2>
           <p className="text-muted mb-8">
-            Answer a few simple questions and we will tell you exactly what you need to do, when to do it, and how.
+            A few simple questions is all it takes, and then you will have a clear list of what to do, in what order, without the jargon. There is no wrong time to start, and no wrong pace to go at.
           </p>
           <Link
             href="/start"
             className="inline-block px-8 py-4 bg-primary text-white text-lg font-semibold rounded-xl hover:bg-primary-dark transition-colors shadow-lg shadow-primary/20"
           >
-            Get Started
+            Start when you are ready
           </Link>
         </div>
       </section>
@@ -282,7 +286,7 @@ export default function HomePage() {
             '@type': 'WebSite',
             name: 'Help After Loss',
             url: 'https://helpafterloss.co.uk',
-            description: 'Free, personalised bereavement guidance for the UK. Step-by-step help when someone dies.',
+            description: 'Free, personalised bereavement guidance for the UK. Step-by-step help after someone passes away.',
           }),
         }}
       />

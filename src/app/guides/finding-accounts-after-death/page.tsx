@@ -33,28 +33,28 @@ const METHODS = [
     step: '2',
     title: 'Request a credit reference agency deceased search',
     cost: 'From £25',
-    desc: 'This is the single most effective method. As executor or next of kin, you can legally request a search of the deceased person\'s credit file. This reveals every credit agreement, bank account, loan, mortgage, credit card, and financial product registered in their name. Experian offers a Deceased Tracing service for £25 that provides a full report. Equifax and TransUnion offer similar services. You will need a certified copy of the death certificate and, ideally, the Grant of Probate or Letters of Administration. Some agencies will accept a copy of the will naming you as executor before probate is granted.',
+    desc: 'This is the single most effective method. As executor or next of kin, you can legally request a search of their credit file. This reveals every credit agreement, bank account, loan, mortgage, credit card, and financial product registered in their name. Experian offers a Deceased Tracing service for £25 that provides a full report. Equifax and TransUnion offer similar services. You will need a certified copy of the death certificate and, ideally, the Grant of Probate or Letters of Administration. Some agencies will accept a copy of the will naming you as executor before probate is granted.',
     documents: 'Certified death certificate, Grant of Probate (or Letters of Administration), photo ID.',
   },
   {
     step: '3',
     title: 'Use Gretel (gretel.co.uk)',
     cost: 'Free',
-    desc: 'Gretel is a free service that searches multiple sources to find financial accounts linked to the deceased. You register the death on their platform and they contact financial institutions on your behalf to identify any accounts held. Gretel works with hundreds of UK banks, building societies, insurers, and pension providers. It is particularly useful for finding accounts you did not know about. The service is free because it is funded by the financial institutions themselves, who want to reunite assets with the right people.',
+    desc: 'Gretel is a free service that searches multiple sources to find financial accounts linked to the person who has passed away. You register the death on their platform and they contact financial institutions on your behalf to identify any accounts held. Gretel works with hundreds of UK banks, building societies, insurers, and pension providers. It is particularly useful for finding accounts you did not know about. The service is free because it is funded by the financial institutions themselves, who want to reunite assets with the right people.',
     documents: 'Death certificate, proof of your authority to act (Grant of Probate, Letters of Administration, or copy of the will).',
   },
   {
     step: '4',
     title: 'Use the Death Notification Service (deathnotificationservice.co.uk)',
     cost: 'Free',
-    desc: 'The Death Notification Service (DNS) lets you notify multiple banks and building societies of a death in a single registration. Run by UK Finance, the trade body for the banking sector, it covers most major UK banks. When you register, each participating bank will check whether they hold any accounts in the deceased\'s name and contact you directly. This is useful both for notifying institutions you already know about and for discovering accounts you were not aware of. You can register online and the whole process takes around 10 minutes.',
+    desc: 'The Death Notification Service (DNS) lets you notify multiple banks and building societies of a death in a single registration. Run by UK Finance, the trade body for the banking sector, it covers most major UK banks. When you register, each participating bank will check whether they hold any accounts in their name and contact you directly. This is useful both for notifying institutions you already know about and for discovering accounts you were not aware of. You can register online and the whole process takes around 10 minutes.',
     documents: 'Death certificate reference number, your own ID, details of any known accounts.',
   },
   {
     step: '5',
     title: 'Trace lost pensions with the Pension Tracing Service',
     cost: 'Free',
-    desc: 'The Pension Tracing Service is a free government tool that helps you find workplace and personal pensions the deceased may have built up during their career. Many people change jobs multiple times and lose track of old pension schemes. The service holds details of over 200,000 workplace and personal pension schemes. Visit gov.uk/find-pension-contact-details and search using the name of a former employer or pension provider. Once you find a scheme, contact them directly with the death certificate and proof of your authority. Some workplace pensions pay a lump sum death benefit that does not form part of the estate.',
+    desc: 'The Pension Tracing Service is a free government tool that helps you find workplace and personal pensions they may have built up over their career. Many people change jobs multiple times and lose track of old pension schemes. The service holds details of over 200,000 workplace and personal pension schemes. Visit gov.uk/find-pension-contact-details and search using the name of a former employer or pension provider. Once you find a scheme, contact them directly with the death certificate and proof of your authority. Some workplace pensions pay a lump sum death benefit that does not form part of the estate.',
     documents: 'Name of former employers or pension providers. Death certificate and proof of authority when you contact the scheme.',
   },
   {
@@ -62,43 +62,43 @@ const METHODS = [
     title: 'Search the Unclaimed Assets Register',
     cost: '£25',
     desc: 'The Unclaimed Assets Register (UAR), run by Gretel, searches for dormant bank and building society accounts, unclaimed insurance policies, pensions, and investments. Financial institutions are required to transfer dormant accounts (untouched for 15 years) to the Reclaim Fund, but the original owner or their estate can still reclaim the money. A search costs £25 and covers millions of dormant accounts across the UK financial sector. If a match is found, you will be given instructions on how to reclaim the funds.',
-    documents: 'Full name and date of birth of the deceased. Death certificate and proof of authority for any claims.',
+    documents: 'Their full name and date of birth. Death certificate and proof of authority for any claims.',
   },
   {
     step: '7',
     title: 'Check for insurance policies via BIBA',
     cost: 'Free enquiry',
-    desc: 'The British Insurance Brokers\' Association (BIBA) can help trace insurance policies the deceased may have held. Contact them on 0370 950 1790. They maintain records of insurance brokers and can help you identify which companies may hold policies. Also check for policies that came bundled with bank accounts (many packaged current accounts include life insurance or travel insurance). Check payslips for any group life insurance through their employer, as these often pay out a lump sum of 2 to 4 times the annual salary.',
+    desc: 'The British Insurance Brokers\' Association (BIBA) can help trace insurance policies they may have held. Contact them on 0370 950 1790. They maintain records of insurance brokers and can help you identify which companies may hold policies. Also check for policies that came bundled with bank accounts (many packaged current accounts include life insurance or travel insurance). Check payslips for any group life insurance through their employer, as these often pay out a lump sum of 2 to 4 times the annual salary.',
     documents: 'Death certificate, details of any known policies or employers.',
   },
   {
     step: '8',
     title: 'Check for Premium Bonds with NS&I',
     cost: 'Free',
-    desc: 'Premium Bonds are one of the most commonly forgotten financial products. NS&I (National Savings and Investments) holds billions in unclaimed Premium Bonds. Contact NS&I on 08085 007 007 or write to NS&I, Glasgow G58 1SB. They will check whether the deceased held any bonds and arrange for them to be cashed in or transferred. Premium Bonds continue to be entered into the monthly draw for up to 12 months after the holder\'s death, so do not rush to cash them in. Any prizes won during that period belong to the estate.',
+    desc: 'Premium Bonds are one of the most commonly forgotten financial products. NS&I (National Savings and Investments) holds billions in unclaimed Premium Bonds. Contact NS&I on 08085 007 007 or write to NS&I, Glasgow G58 1SB. They will check whether they held any bonds and arrange for them to be cashed in or transferred. Premium Bonds continue to be entered into the monthly draw for up to 12 months after the holder\'s death, so do not rush to cash them in. Any prizes won during that period belong to the estate.',
     documents: 'Death certificate, holder\'s number (if known), your proof of authority.',
   },
   {
     step: '9',
     title: 'Request HMRC self-assessment records',
     cost: 'Free',
-    desc: 'If the deceased filed Self Assessment tax returns, HMRC holds records of every income source they declared: employment, self-employment, rental income, dividends, interest, and pension income. As executor, you can write to HMRC (or call the Bereavement helpline on 0300 200 3300) to request copies of recent tax returns. These records can reveal bank accounts, investment holdings, rental properties, and pension providers you were not aware of. HMRC can also confirm whether any tax refunds are due to the estate.',
-    documents: 'Death certificate, Grant of Probate or Letters of Administration, the deceased\'s National Insurance number and UTR (Unique Taxpayer Reference) if known.',
+    desc: 'If they filed Self Assessment tax returns, HMRC holds records of every income source they declared: employment, self-employment, rental income, dividends, interest, and pension income. As executor, you can write to HMRC (or call the Bereavement helpline on 0300 200 3300) to request copies of recent tax returns. These records can reveal bank accounts, investment holdings, rental properties, and pension providers you were not aware of. HMRC can also confirm whether any tax refunds are due to the estate.',
+    documents: 'Death certificate, Grant of Probate or Letters of Administration, their National Insurance number and UTR (Unique Taxpayer Reference) if known.',
   },
 ];
 
 const FAQ = [
   {
-    q: 'How do I find a deceased person\'s bank accounts if I have no paperwork?',
+    q: 'How do I find their bank accounts if I have no paperwork?',
     a: 'Start with a credit reference agency search. Experian\'s Deceased Tracing service (£25) will reveal all credit agreements and bank accounts registered to that person. You can also register with Gretel (free) and the Death Notification Service (free), both of which contact financial institutions on your behalf. Between these three services, you will find the vast majority of accounts.',
   },
   {
-    q: 'Can I access a deceased person\'s credit report?',
-    a: 'Yes. As executor or administrator of the estate, you have a legal right to request a credit search on the deceased. You will need a certified copy of the death certificate and proof of your authority to act (Grant of Probate, Letters of Administration, or a copy of the will naming you as executor). Experian, Equifax, and TransUnion all offer this service.',
+    q: 'Can I access their credit report?',
+    a: 'Yes. As executor or administrator of the estate, you have a legal right to request a credit search in their name. You will need a certified copy of the death certificate and proof of your authority to act (Grant of Probate, Letters of Administration, or a copy of the will naming you as executor). Experian, Equifax, and TransUnion all offer this service.',
   },
   {
     q: 'How long does it take to find all accounts after death?',
-    a: 'Allow 4 to 8 weeks to get a reasonably complete picture. Credit agency searches typically return results within 5 to 10 working days. Gretel and the Death Notification Service may take longer as they contact institutions individually. Pension tracing can take several weeks, especially if the deceased had multiple employers over their career. Do not rush to distribute the estate until you are confident you have found everything.',
+    a: 'Allow 4 to 8 weeks to get a reasonably complete picture. Credit agency searches typically return results within 5 to 10 working days. Gretel and the Death Notification Service may take longer as they contact institutions individually. Pension tracing can take several weeks, especially if they worked for a number of employers over the years. Do not rush to distribute the estate until you are confident you have found everything.',
   },
   {
     q: 'What if I find accounts after the estate has been distributed?',
@@ -129,7 +129,7 @@ export default function FindingAccountsAfterDeathPage() {
         Finding All Their Accounts After Death
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        One of the hardest parts of administering an estate is knowing exactly what the deceased held. Bank accounts, pensions, insurance policies, investments, subscriptions, and savings could be spread across dozens of providers. Missing even one account can delay probate, cause tax problems, or leave money unclaimed forever. This guide covers every method available to trace what they had.
+        One of the hardest parts of administering an estate is working out exactly what your loved one held. Bank accounts, pensions, insurance policies, investments, subscriptions, and savings can be spread across dozens of providers. Missing even one account can delay probate, cause tax problems, or leave money unclaimed forever. This guide covers every method available to trace what they had.
       </p>
 
       {/* Quick summary stats */}
@@ -180,7 +180,7 @@ export default function FindingAccountsAfterDeathPage() {
           </li>
           <li className="flex gap-3">
             <span className="text-primary font-bold flex-shrink-0">5.</span>
-            <span><strong className="text-foreground">The deceased&apos;s National Insurance number</strong> (if known). Helpful for HMRC and pension tracing.</span>
+            <span><strong className="text-foreground">Their National Insurance number</strong> (if known). Helpful for HMRC and pension tracing.</span>
           </li>
           <li className="flex gap-3">
             <span className="text-primary font-bold flex-shrink-0">6.</span>

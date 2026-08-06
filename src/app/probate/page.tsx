@@ -30,11 +30,11 @@ const FAQ = [
   },
   {
     q: 'Do I need probate?',
-    a: 'You usually need probate if the person owned property in their sole name, had savings above the bank\'s threshold (typically £5,000 to £50,000, varies by bank), or had investments. You usually do not need probate if all assets were jointly owned (they pass automatically to the surviving owner), or if the estate is small and below bank thresholds. If in doubt, contact the relevant banks and they will tell you whether they require a grant.',
+    a: 'You usually need probate if they owned property in their sole name, had savings above the bank\'s threshold (typically £5,000 to £50,000, depending on the bank), or had investments. You usually do not need it if everything was jointly owned (it passes automatically to the surviving owner), or if the estate is small and sits below the bank thresholds. If you are unsure, just ring the banks; they will tell you plainly whether they need a grant.',
   },
   {
     q: 'How do I apply for probate myself?',
-    a: 'First, value the estate by listing all assets and debts. Then complete the inheritance tax form (or report values on the application for simpler estates). Submit form PA1P (with a will) or PA1A (without a will) to the Probate Registry, along with the original will (if applicable), the death certificate, and the £300 court fee. You can apply online at gov.uk/applying-for-probate. The Probate Registry will process it and post you the grant.',
+    a: 'First, value the estate by listing all assets and debts. Then complete the inheritance tax form (or report values on the application for simpler estates). Submit form PA1P (with a will) or PA1A (without a will) to the Probate Registry, along with the original will (if applicable), the death certificate, and the £526 court fee. You can apply online at gov.uk/applying-for-probate. The Probate Registry will process it and post you the grant.',
   },
   {
     q: 'How long does probate take in 2026?',
@@ -42,7 +42,7 @@ const FAQ = [
   },
   {
     q: 'How much does probate cost in 2026?',
-    a: 'The court fee is £300 for estates over £5,000 (free if under). If you use a solicitor, expect to pay 1% to 5% of the estate value, or hourly rates of £150 to £400 or more. For a £300,000 estate, solicitor fees might range from £3,000 to £15,000. Many straightforward estates can be handled with DIY probate, saving thousands.',
+    a: 'The court fee is £526 for estates over £5,000 (free if under). If you use a solicitor, expect to pay 1% to 5% of the estate value, or hourly rates of £150 to £400 or more. For a £526,000 estate, solicitor fees might range from £3,000 to £15,000. Many straightforward estates can be handled with DIY probate, saving thousands.',
   },
   {
     q: 'Can I do probate myself without a solicitor?',
@@ -54,7 +54,7 @@ const FAQ = [
   },
   {
     q: 'What happens if there is no will?',
-    a: 'If someone dies without a will (intestate), the estate is distributed according to the rules of intestacy. In England and Wales, the spouse receives the first £322,000 plus personal possessions, with the remainder split between the spouse and children. If there is no spouse, the children inherit everything. Unmarried partners receive nothing under intestacy rules regardless of how long they lived together.',
+    a: 'If there is no will (known as dying intestate), the estate is shared out according to the rules of intestacy. In England and Wales, the surviving husband, wife, or civil partner receives the first £322,000 plus the personal possessions, with the remainder split between them and the children. If there is no surviving partner, the children inherit everything. Partners who were not married receive nothing under the intestacy rules, however long they lived together.',
   },
   {
     q: 'What happens in Scotland?',
@@ -62,7 +62,7 @@ const FAQ = [
   },
   {
     q: 'Do I need to pay inheritance tax before probate?',
-    a: 'If the estate is above the inheritance tax threshold (£325,000, or up to £500,000 with the residence nil-rate band), you may need to pay at least some inheritance tax before probate is granted. You can sometimes arrange to pay from the deceased\'s bank account using form IHT423, or borrow from a bank to make the payment. Tax on property can be paid in 10 annual instalments.',
+    a: 'If the estate is above the inheritance tax threshold (£325,000, or up to £500,000 with the residence nil-rate band), you may need to pay at least some inheritance tax before probate is granted. You can often arrange to pay it straight from their bank account using form IHT423, or borrow from a bank to cover it. Tax on property can be paid in 10 annual instalments.',
   },
 ];
 
@@ -76,7 +76,7 @@ export default function ProbatePage() {
         Probate: Everything You Need to Know
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-4">
-        Probate can seem daunting, but for many estates it is a straightforward process you can handle yourself. This guide explains when you need it, how to apply, what it costs, and when to get professional help. Updated for 2026.
+        Probate sounds daunting, and it is one more thing to face at an already hard time. The good news is that for many estates it is straightforward and something you can do yourself. This guide explains, in plain English, whether you need it, how to apply, what it costs, and when it is worth getting professional help. Updated for 2026.
       </p>
 
       {/* Key at a glance */}
@@ -85,7 +85,7 @@ export default function ProbatePage() {
         <ul className="space-y-2 text-sm text-muted">
           <li className="flex items-start gap-2">
             <span className="font-semibold text-primary min-w-[100px] flex-shrink-0">Court fee:</span>
-            <span>£300 (free for estates under £5,000)</span>
+            <span>£526 (free for estates under £5,000)</span>
           </li>
           <li className="flex items-start gap-2">
             <span className="font-semibold text-primary min-w-[100px] flex-shrink-0">Processing:</span>
@@ -149,7 +149,7 @@ export default function ProbatePage() {
       {/* Quick summary stats */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
         <div className="bg-card rounded-xl border border-border p-5 text-center">
-          <p className="text-2xl font-bold text-primary">£300</p>
+          <p className="text-2xl font-bold text-primary">£526</p>
           <p className="text-sm text-muted mt-1">Court fee (free if estate under £5,000)</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-5 text-center">
@@ -180,7 +180,7 @@ export default function ProbatePage() {
       <section id="do-i-need-probate" className="mb-10 scroll-mt-20">
         <h2 className="text-2xl font-bold text-foreground mb-4">Do I need probate?</h2>
         <p className="text-muted leading-relaxed mb-4">
-          Not every estate needs probate. Here is a quick way to work out whether you need it:
+          Not every estate needs probate, and yours may well be one that does not. Here is a quick way to work out where you stand:
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <div className="bg-success-light rounded-xl p-5">
@@ -209,7 +209,7 @@ export default function ProbatePage() {
             <ul className="space-y-2 text-sm text-rose-800/80">
               <li className="flex items-start gap-2">
                 <svg className="w-4 h-4 text-urgent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
-                The person owned property in their sole name
+                They owned property in their sole name
               </li>
               <li className="flex items-start gap-2">
                 <svg className="w-4 h-4 text-urgent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
@@ -217,7 +217,7 @@ export default function ProbatePage() {
               </li>
               <li className="flex items-start gap-2">
                 <svg className="w-4 h-4 text-urgent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
-                The person had stocks, shares, or investments
+                They had stocks, shares, or investments
               </li>
               <li className="flex items-start gap-2">
                 <svg className="w-4 h-4 text-urgent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
@@ -227,7 +227,7 @@ export default function ProbatePage() {
           </div>
         </div>
         <p className="text-sm text-muted leading-relaxed">
-          If you are unsure, contact each bank and financial institution holding the person's assets. They will tell you whether they need a grant of probate before releasing funds. Each bank sets its own threshold, typically between £5,000 and £50,000.
+          If you are not sure, simply ring each bank or financial institution holding their money. They will tell you whether they need a grant of probate before releasing funds. Every bank sets its own threshold, usually somewhere between £5,000 and £50,000.
         </p>
       </section>
 
@@ -235,7 +235,7 @@ export default function ProbatePage() {
       <section id="how-much" className="mb-10 scroll-mt-20">
         <h2 className="text-2xl font-bold text-foreground mb-3">How much does probate cost?</h2>
         <p className="text-muted leading-relaxed mb-4">
-          Probate costs £300 as a court fee, or nothing if the estate is valued under £5,000. If you use a solicitor, expect to pay £2,000 to £5,000 for a typical estate, though complex estates can cost significantly more. DIY probate is free apart from the court fee.
+          Probate costs £526 as a court fee, or nothing if the estate is valued under £5,000. If you use a solicitor, expect to pay £2,000 to £5,000 for a typical estate, though complex estates can cost significantly more. DIY probate is free apart from the court fee.
         </p>
         <div className="bg-card rounded-xl border border-border overflow-hidden mb-4">
           <table className="w-full text-sm">
@@ -246,13 +246,13 @@ export default function ProbatePage() {
               </tr>
             </thead>
             <tbody className="divide-y divide-border">
-              <tr><td className="p-4 text-muted">Court fee (estate over £5,000)</td><td className="p-4 text-right font-medium text-foreground">£300</td></tr>
+              <tr><td className="p-4 text-muted">Court fee (estate over £5,000)</td><td className="p-4 text-right font-medium text-foreground">£526</td></tr>
               <tr><td className="p-4 text-muted">Court fee (estate under £5,000)</td><td className="p-4 text-right font-medium text-success">Free</td></tr>
-              <tr><td className="p-4 text-muted">Extra copies of the grant</td><td className="p-4 text-right font-medium text-foreground">£1.50 each</td></tr>
+              <tr><td className="p-4 text-muted">Extra copies of the grant</td><td className="p-4 text-right font-medium text-foreground">£2 each when ordered with the application (£16 each afterwards)</td></tr>
               <tr><td className="p-4 text-muted">Solicitor (simple estate)</td><td className="p-4 text-right font-medium text-foreground">£2,000 - £5,000</td></tr>
               <tr><td className="p-4 text-muted">Solicitor (complex estate)</td><td className="p-4 text-right font-medium text-foreground">£5,000 - £15,000+</td></tr>
               <tr><td className="p-4 text-muted">Statutory notice (The Gazette)</td><td className="p-4 text-right font-medium text-foreground">£80 - £150</td></tr>
-              <tr className="bg-primary-light"><td className="p-4 font-semibold text-foreground">DIY probate total</td><td className="p-4 text-right font-bold text-primary">£300 - £450</td></tr>
+              <tr className="bg-primary-light"><td className="p-4 font-semibold text-foreground">DIY probate total</td><td className="p-4 text-right font-bold text-primary">£526 - £676</td></tr>
             </tbody>
           </table>
         </div>
@@ -303,13 +303,13 @@ export default function ProbatePage() {
         </div>
         <div className="space-y-4 mb-6">
           {[
-            { step: '1', title: 'Check if probate is needed', desc: 'Contact each bank and financial institution. If the total in sole-name accounts is below their threshold (varies by bank, usually £5,000-50,000), they may release funds without probate. If the person owned property in their sole name, probate is almost always needed.' },
-            { step: '2', title: 'Value the estate', desc: 'List everything the person owned and owed. Get a property valuation (estate agents can provide free ones). Check all bank statements, investments, pensions, and personal possessions. Subtract debts, mortgages, and loans. You need an accurate total for the inheritance tax form.' },
+            { step: '1', title: 'Check whether probate is needed at all', desc: 'Ring each bank and financial institution. If the total held in sole-name accounts is below their threshold (it varies by bank, usually £5,000-50,000), they may release the funds without probate. If they owned property in their sole name, probate is almost always needed.' },
+            { step: '2', title: 'Value the estate', desc: 'List everything they owned and everything they owed. Get a property valuation (most estate agents will do one free of charge). Work through the bank statements, investments, pensions, and personal possessions, then take off any debts, mortgages, and loans. You need an accurate total for the inheritance tax form, so take your time over it.' },
             { step: '3', title: 'Complete the inheritance tax form', desc: 'If the estate is below the IHT threshold (£325,000, or up to £500,000 with the residence nil-rate band), report the estate values as part of the probate application itself. If above, complete form IHT400 (the detailed form) and send it to HMRC. Pay any IHT due within 6 months of death. You can arrange to pay tax on property in 10 annual instalments.' },
-            { step: '4', title: 'Apply for probate', desc: 'Complete form PA1P (with a will) or PA1A (without a will). You can apply online at gov.uk/applying-for-probate or download paper forms. You will need the original will, the death certificate, and the completed IHT information. Pay the £300 court fee. Order extra sealed copies of the grant (£1.50 each) as banks and the Land Registry need them.' },
+            { step: '4', title: 'Apply for probate', desc: 'Complete form PA1P (with a will) or PA1A (without a will). You can apply online at gov.uk/applying-for-probate or download paper forms. You will need the original will, the death certificate, and the completed IHT information. Pay the £526 court fee. Order extra sealed copies of the grant (£2 each when ordered with the application (£16 each afterwards)) as banks and the Land Registry need them.' },
             { step: '5', title: 'Place statutory notices', desc: 'Once you have submitted the application, place a notice in The London Gazette (around £80) and a local newspaper to protect yourself from unknown creditors. This gives creditors 2 months to come forward. This step is strongly recommended.' },
-            { step: '6', title: 'Wait for the grant', desc: 'The Probate Registry processes the application. Current processing time is 12-16 weeks. You may be asked to attend an interview or provide additional information. If there are any issues, the Registry will write to you.' },
-            { step: '7', title: 'Administer the estate', desc: 'Once you receive the grant, send certified copies to banks, the Land Registry, and other institutions. Collect in all assets, pay all debts and any outstanding tax, and distribute to beneficiaries according to the will (or intestacy rules). Keep detailed records of every transaction for the estate accounts.' },
+            { step: '6', title: 'Wait for the grant', desc: 'The Probate Registry now processes your application, which currently takes 12-16 weeks. You may be asked to attend an interview or send extra information. If anything needs clearing up, the Registry will write to you. There is nothing more you need to do in the meantime.' },
+            { step: '7', title: 'Deal with the estate', desc: 'Once the grant arrives, send certified copies to the banks, the Land Registry, and any other institutions. Collect in the assets, settle the debts and any outstanding tax, then share out what remains according to the will (or the intestacy rules). Keep a careful record of every transaction for the estate accounts; it will save you a great deal of bother later.' },
           ].map(s => (
             <div key={s.step} className="bg-card rounded-xl border border-border p-5 md:p-6 flex gap-4">
               <div className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">
@@ -334,7 +334,7 @@ export default function ProbatePage() {
       <section id="diy-vs-solicitor" className="mb-10 scroll-mt-20">
         <h2 className="text-2xl font-bold text-foreground mb-4">DIY probate vs using a solicitor</h2>
         <p className="text-muted leading-relaxed mb-4">
-          Many people assume they need a solicitor for probate, but for straightforward estates, DIY probate is perfectly manageable and can save thousands of pounds.
+          Many people assume they must use a solicitor. For a straightforward estate, doing probate yourself is perfectly manageable and can save you thousands of pounds. There is also no shame at all in handing it over if you would rather not take it on.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <div className="bg-card rounded-xl border border-border p-5">
@@ -347,7 +347,7 @@ export default function ProbatePage() {
               <li>There are no business assets or assets abroad</li>
               <li>You have time to handle paperwork and phone calls</li>
             </ul>
-            <p className="text-sm font-medium text-success mt-3">Cost: approximately £300 to £450</p>
+            <p className="text-sm font-medium text-success mt-3">Cost: approximately £526 to £676</p>
           </div>
           <div className="bg-card rounded-xl border border-border p-5">
             <h3 className="font-semibold text-foreground mb-3">Consider a solicitor when:</h3>
@@ -378,7 +378,7 @@ export default function ProbatePage() {
             </p>
           </div>
           <a
-            href="https://www.unbiased.co.uk/find/solicitors/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=probate-guide-diy"
+            href="https://www.unbiased.co.uk/find-an-adviser/probate?utm_source=helpafterloss&utm_medium=affiliate&utm_campaign=probate-guide-diy"
             target="_blank"
             rel="noopener noreferrer"
             className="shrink-0 inline-block px-5 py-2.5 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
@@ -430,7 +430,7 @@ export default function ProbatePage() {
 
       <div className="bg-primary-light rounded-xl p-6 md:p-8 text-center">
         <h2 className="text-2xl font-bold text-foreground mb-3">Need to know if probate applies to you?</h2>
-        <p className="text-muted mb-6">Our personalised guide will tell you exactly what legal steps you need to take based on your specific situation.</p>
+        <p className="text-muted mb-6">Our personalised guide tells you which legal steps actually apply to you, so you are not left guessing.</p>
         <Link href="/start" className="inline-block px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors">
           Get Your Personalised Guide
         </Link>

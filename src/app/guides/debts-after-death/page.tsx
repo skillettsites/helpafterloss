@@ -30,7 +30,7 @@ const DEBT_TYPES = [
   {
     type: 'Mortgages',
     sole: 'Check whether there is a life insurance policy or mortgage protection policy first. If there is, the insurer pays off the mortgage. If there is no insurance, the estate must pay. If the estate cannot cover it, the property may need to be sold.',
-    joint: 'The surviving borrower takes on the full mortgage. The lender cannot demand immediate repayment. Contact the lender to remove the deceased\'s name and check whether any life insurance or mortgage protection is in place.',
+    joint: 'The surviving borrower takes on the full mortgage. The lender cannot demand immediate repayment. Contact the lender to take their name off the mortgage and to check whether any life insurance or mortgage protection is in place.',
   },
   {
     type: 'Personal loans',
@@ -63,10 +63,10 @@ const PRIORITY_ORDER = [
   { priority: '1', category: 'Funeral expenses', detail: 'Paid first from the estate, before any other debts' },
   { priority: '2', category: 'Estate administration costs', detail: 'Probate fees, solicitor fees, valuations' },
   { priority: '3', category: 'Secured debts', detail: 'Mortgages, secured loans (paid from the secured asset)' },
-  { priority: '4', category: 'Preferential debts', detail: 'Employee wages owed by the deceased' },
+  { priority: '4', category: 'Preferential debts', detail: 'Wages owed to anyone they employed' },
   { priority: '5', category: 'Unsecured debts', detail: 'Credit cards, personal loans, overdrafts, utility bills' },
   { priority: '6', category: 'Interest on unsecured debts', detail: 'Any interest that accrued after the date of death' },
-  { priority: '7', category: 'Deferred debts', detail: 'Debts owed to the deceased\'s spouse or civil partner' },
+  { priority: '7', category: 'Deferred debts', detail: 'Debts owed to their spouse or civil partner' },
 ];
 
 const FAQ = [
@@ -76,15 +76,15 @@ const FAQ = [
   },
   {
     q: 'Who pays credit card debt after death?',
-    a: 'Credit card debt on a sole account is paid from the deceased\'s estate. If the estate does not have enough money to cover the balance, the credit card company writes it off. They cannot pursue family members for the shortfall. If it was a joint credit card account, the surviving account holder is responsible for the full balance.',
+    a: 'Credit card debt on a sole account is paid from the estate. If the estate does not have enough money to cover the balance, the credit card company writes it off. They cannot pursue family members for the shortfall. If it was a joint credit card account, the surviving account holder is responsible for the full balance.',
   },
   {
     q: 'What happens to a mortgage when someone dies?',
-    a: 'First, check whether there is a life insurance policy or mortgage protection policy, as these are designed to pay off the mortgage on death. If there is no insurance and the mortgage was in the deceased\'s sole name, the estate must deal with it. For joint mortgages, the surviving borrower takes over the full mortgage. The lender cannot demand immediate repayment.',
+    a: 'First, check whether there is a life insurance policy or mortgage protection policy, as these are designed to pay off the mortgage on death. If there is no insurance and the mortgage was in their sole name, the estate must deal with it. For joint mortgages, the surviving borrower takes over the full mortgage. The lender cannot demand immediate repayment.',
   },
   {
     q: 'Can debt collectors chase family members?',
-    a: 'Debt collectors cannot legally pursue family members for a sole debt that belonged to the deceased. If a debt collector contacts you about a deceased relative\'s sole debt, they are acting improperly. Tell them firmly that the debt belongs to the estate and provide the executor\'s contact details. If they persist, report them to the Financial Ombudsman.',
+    a: 'Debt collectors cannot legally pursue family members for a sole debt that belonged to the person who has passed away. If a debt collector contacts you about a relative\'s sole debt, they are acting improperly. Tell them firmly that the debt belongs to the estate and provide the executor\'s contact details. If they persist, report them to the Financial Ombudsman.',
   },
   {
     q: 'What happens if the estate can\'t pay all debts?',
@@ -107,7 +107,7 @@ export default function DebtsAfterDeathPage() {
         What Happens to Debt When Someone Dies
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        One of the most common worries after someone dies is whether their debts will pass to the family. The short answer is no. But the full picture depends on whether debts are sole or joint, what type they are, and whether the estate can cover them. This guide explains it all.
+        One of the most common worries after someone passes away is whether their debts will pass to the family. The short answer is no, and it is worth saying that plainly before anything else. The full picture depends on whether the debts were sole or joint, what type they are, and whether the estate can cover them. This guide explains all of it.
       </p>
 
       {/* Key message */}
@@ -174,7 +174,7 @@ export default function DebtsAfterDeathPage() {
           Debt collectors <strong>can</strong> contact the executor or administrator of the estate to make a claim against the estate. They can register their claim and receive payment from estate funds if funds are available.
         </p>
         <p className="text-sm text-muted leading-relaxed">
-          Debt collectors <strong>cannot</strong> pursue family members for sole debts that belonged to the deceased. They cannot harass, threaten, or mislead relatives into paying. They cannot add charges or interest to the debt after being notified of the death. If a debt collector contacts you about a relative&apos;s sole debt and suggests you are personally liable, report them to the Financial Ombudsman Service (0800 023 4567).
+          Debt collectors <strong>cannot</strong> pursue family members for sole debts that belonged to the person who has passed away. They cannot harass, threaten, or mislead relatives into paying. They cannot add charges or interest to the debt after being notified of the death. If a debt collector contacts you about a relative&apos;s sole debt and suggests you are personally liable, report them to the Financial Ombudsman Service (0800 023 4567).
         </p>
       </div>
 

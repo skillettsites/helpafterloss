@@ -41,14 +41,14 @@ const ENTITLED = [
   },
   {
     title: 'Bereavement Support Payment',
-    desc: 'Since 2024, cohabiting partners with dependent children can claim Bereavement Support Payment. Previously this was only available to married couples and civil partners. The payment is a lump sum of £3,500 plus up to 18 monthly payments of £350. You must have been living with the deceased as a couple and have a dependent child.',
+    desc: 'Since 2024, cohabiting partners with dependent children can claim Bereavement Support Payment. Previously this was only available to married couples and civil partners. The payment is a lump sum of £3,500 plus up to 18 monthly payments of £350. You must have been living with your partner as a couple and have a dependent child.',
   },
 ];
 
 const NOT_ENTITLED = [
   {
     title: 'Savings, investments, and possessions',
-    desc: 'Under intestacy rules (when there is no will), you have no automatic right to any savings, investments, or personal possessions held in the deceased\'s sole name. These pass to the deceased\'s nearest relatives: children first, then parents, then siblings, and so on.',
+    desc: 'Under intestacy rules (when there is no will), you have no automatic right to any savings, investments, or personal possessions held in your partner\'s sole name. These pass to their nearest relatives: children first, then parents, then siblings, and so on.',
   },
   {
     title: 'The home (if not jointly owned)',
@@ -63,18 +63,18 @@ const NOT_ENTITLED = [
 const SECTIONS = [
   {
     title: 'The Inheritance (Provision for Family Dependants) Act 1975',
-    content: 'Even without a will, you may be able to make a court claim under this Act. You can claim if you were financially maintained by the deceased, or if you lived together as a couple for at least two years before the death. The court can order "reasonable financial provision" from the estate, which might include a lump sum, regular payments, or the right to live in the property. Be aware that this process is expensive (legal fees typically range from £5,000 to £20,000 or more) and takes 6 to 12 months. There is a strict time limit of 6 months from the date probate is granted to make a claim. Get specialist legal advice as early as possible.',
+    content: 'Even without a will, you may be able to make a court claim under this Act. You can claim if your partner was financially maintaining you, or if you lived together as a couple for at least two years before they passed away. The court can order "reasonable financial provision" from the estate, which might include a lump sum, regular payments, or the right to live in the property. Be aware that this process is expensive (legal fees typically range from £5,000 to £20,000 or more) and takes 6 to 12 months. There is a strict time limit of 6 months from the date probate is granted to make a claim. Get specialist legal advice as early as possible.',
   },
   {
     title: 'Scotland is different',
-    content: 'If the death occurred in Scotland, cohabiting partners have stronger legal rights under the Family Law (Scotland) Act 2006. You can make a claim to the court for a share of household goods purchased during the relationship, a share of money or property derived from the household, and a capital sum. Claims must be made within 6 months of the death. The court considers the length of the relationship, any children, and the nature and extent of financial arrangements between you.',
+    content: 'If your partner passed away in Scotland, cohabiting partners have stronger legal rights under the Family Law (Scotland) Act 2006. You can make a claim to the court for a share of household goods purchased during the relationship, a share of money or property derived from the household, and a capital sum. Claims must be made within 6 months of the death. The court considers the length of the relationship, any children, and the nature and extent of financial arrangements between you.',
   },
 ];
 
 const PRACTICAL = [
   {
     title: 'Check how the property is owned',
-    desc: 'Search the Land Registry (gov.uk/search-property-information-service, £3 per search) to find out whether you own the property as joint tenants or tenants in common. Joint tenancy means automatic inheritance. Tenants in common means the deceased\'s share passes through their estate.',
+    desc: 'Search the Land Registry (gov.uk/search-property-information-service, £3 per search) to find out whether you own the property as joint tenants or tenants in common. Joint tenancy means automatic inheritance. Tenants in common means your partner\'s share passes through their estate.',
   },
   {
     title: 'Check pension and life insurance nominations',
@@ -120,15 +120,15 @@ const FAQ = [
   },
   {
     q: 'Can I claim from my partner\'s estate if there is no will?',
-    a: 'Potentially, yes. Under the Inheritance (Provision for Family Dependants) Act 1975, you can make a claim if you lived together as a couple for at least two years before the death, or if you were financially dependent on them. The court can order reasonable financial provision from the estate. You must apply within 6 months of probate being granted.',
+    a: 'Potentially, yes. Under the Inheritance (Provision for Family Dependants) Act 1975, you can make a claim if you lived together as a couple for at least two years before they passed away, or if you were financially dependent on them. The court can order reasonable financial provision from the estate. You must apply within 6 months of probate being granted.',
   },
   {
     q: 'Are cohabiting partners entitled to bereavement support payment?',
-    a: 'Since 2024, cohabiting partners with dependent children can claim Bereavement Support Payment. This is a lump sum of £3,500 plus up to 18 monthly payments of £350. You must have been living with the deceased as a couple and have a qualifying child. Cohabiting partners without children are still not eligible.',
+    a: 'Since 2024, cohabiting partners with dependent children can claim Bereavement Support Payment. This is a lump sum of £3,500 plus up to 18 monthly payments of £350. You must have been living with your partner as a couple and have a qualifying child. Cohabiting partners without children are still not eligible.',
   },
   {
     q: 'What is the Inheritance Act 1975 claim?',
-    a: 'The Inheritance (Provision for Family Dependants) Act 1975 allows certain people, including cohabiting partners, to ask a court to make "reasonable financial provision" from an estate. The court considers factors like the length of your relationship, your financial needs, the size of the estate, and any obligations the deceased had towards you. Claims must be made within 6 months of probate.',
+    a: 'The Inheritance (Provision for Family Dependants) Act 1975 allows certain people, including cohabiting partners, to ask a court to make "reasonable financial provision" from an estate. The court considers factors like the length of your relationship, your financial needs, the size of the estate, and any obligations your partner had towards you. Claims must be made within 6 months of probate.',
   },
   {
     q: 'How do I protect myself as an unmarried partner?',
@@ -147,7 +147,7 @@ export default function CohabitingPartnersPage() {
         When an Unmarried Partner Dies: Your Rights
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        Losing a partner is devastating. If you were not married or in a civil partnership, the legal position can make an already awful situation feel even worse. Understanding where you stand as early as possible helps you protect yourself and make informed decisions.
+        Losing your partner is hard enough on its own. If you were not married or in a civil partnership, the legal position can make an already painful time feel even harder, and many people find that out at the worst possible moment. Understanding where you stand early on helps you protect yourself and make decisions with your eyes open.
       </p>
 
       <GuideImage

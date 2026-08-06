@@ -34,7 +34,7 @@ export default function LostAFriendPage() {
         When a Friend Dies
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        Losing a close friend is a profound grief that is often unacknowledged by the people and systems around us. Friends are the family we choose. The loss of a close friendship can leave a gap in your daily life, your sense of self, and your future plans that is hard to describe to anyone who has not experienced it. This guide is for you, and it starts with the most important thing: your grief is real, and it matters.
+        Losing a close friend is a grief the world around us rarely makes room for. A friendship can be as close as any family tie, and losing one leaves a gap in your daily life, in who you are, and in the plans you had together, which is hard to explain to anyone who has not been through it. This guide is for you, and it starts with the thing that matters most: your grief is real, and it counts.
       </p>
 
       <GuideImage
@@ -50,7 +50,7 @@ export default function LostAFriendPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Disenfranchised grief</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Grief that is not publicly recognised or validated is sometimes called "disenfranchised grief". Friend loss is one of the most common forms. Employers do not routinely offer bereavement leave. Colleagues and acquaintances may not know how close you were. The formal condolences, flowers, and casseroles tend to go to the immediate family. You may be expected to simply carry on. This does not reflect the reality of your loss, and it can make grief harder to process.
+            Grief that is not publicly recognised or validated is sometimes called "disenfranchised grief". Friend loss is one of the most common forms. Employers do not routinely offer bereavement leave. Colleagues and acquaintances may not know how close you were. The condolences, the flowers, and the offers of help tend to go to the immediate family. You may be quietly expected to carry on as normal. None of that reflects what you have actually lost, and it can make grieving harder.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -62,7 +62,7 @@ export default function LostAFriendPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Complicated feelings</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Grief for a friend can include guilt if you had drifted apart, or if the last conversation ended badly. It can include anger if they died by suicide, an accident, or from something preventable. It may include relief if they had been suffering, followed quickly by guilt about the relief. All of these feelings are part of grief. They do not make you a bad person or a bad friend. If you had an estranged or complicated relationship with the person who died, your grief is still valid.
+            Grief for a friend can include guilt if you had drifted apart, or if the last conversation ended badly. It can include anger if they died by suicide, an accident, or from something preventable. It may include relief if they had been suffering, followed quickly by guilt about the relief. All of these feelings are part of grief. None of them make you a bad person or a bad friend. If things between you were complicated, or you had lost touch altogether, your grief is still real.
           </p>
         </div>
       </div>
@@ -73,7 +73,7 @@ export default function LostAFriendPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Making contact with the family</h3>
           <p className="text-sm text-muted leading-relaxed">
-            If you knew your friend's family, a short, personal message in the days after the death means a great deal. You do not need to have the right words: "I am so sorry. I loved [name] dearly and I am thinking of you" is enough. A handwritten card is especially meaningful. Do not wait until you have found the perfect thing to say: an imperfect message sent promptly is worth far more than a perfect one that arrives weeks later.
+            If you knew your friend's family, a short, personal message in the days after they pass away means a great deal. You do not need to have the right words: "I am so sorry. I loved [name] dearly and I am thinking of you" is enough. A handwritten card is especially meaningful. Do not wait until you have found the perfect thing to say: an imperfect message sent promptly is worth far more than a perfect one that arrives weeks later.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -85,7 +85,7 @@ export default function LostAFriendPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Sharing memories</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Families often find it deeply comforting to hear stories and memories from their loved one's friends, particularly stories they may not have known. In the weeks and months after the death, a message, a card, or even an email sharing a specific memory ("I was thinking about the time we...") can be genuinely sustaining for the family. Do not worry that it will upset them: most bereaved families are grateful for anything that keeps the person's memory alive.
+            Families often find it deeply comforting to hear stories and memories from their loved one's friends, particularly stories they may not have known. In the weeks and months afterwards, a message, a card, or even an email sharing a specific memory ("I was thinking about the time we...") can be genuinely sustaining for the family. Do not worry that it will upset them: most bereaved families are grateful for anything that keeps the person's memory alive.
           </p>
         </div>
       </div>
@@ -130,13 +130,13 @@ export default function LostAFriendPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Applying for probate as a friend</h3>
           <p className="text-sm text-muted leading-relaxed">
-            There is no rule that only family members can apply for probate. If you are named as executor in the will, you apply for probate using form PA1P at gov.uk. The process is the same regardless of your relationship to the deceased. If the estate is straightforward, you can do this yourself. If it is complex (property, business interests, assets abroad, disputes), a solicitor can help. The court fee is £300 for estates over £5,000. See our <Link href="/probate" className="text-primary font-medium hover:underline">full probate guide</Link>.
+            There is no rule that only family members can apply for probate. If you are named as executor in the will, you apply for probate using form PA1P at gov.uk. The process is the same whatever your relationship to your friend was. If the estate is straightforward, you can do this yourself. If it is complex (property, business interests, assets abroad, disputes), a solicitor can help. The court fee is £526 for estates over £5,000. See our <Link href="/probate" className="text-primary font-medium hover:underline">full probate guide</Link>.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Navigating family dynamics as executor</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Being a friend acting as executor when the deceased has family can be delicate. The family may not know you well, or may feel that the role should have been theirs. Be transparent and communicative: send updates, share the will (beneficiaries are entitled to see it), and keep accounts. Your legal duty is to the will, not to any individual family member. If the family is actively hostile or obstructive, seek legal advice early.
+            Acting as executor for a friend who has surviving family can be delicate. They may not know you well, or may feel the role should have been theirs. Be transparent and communicative: send updates, share the will (beneficiaries are entitled to see it), and keep accounts. Your legal duty is to the will, not to any individual family member. If the family is actively hostile or obstructive, seek legal advice early.
           </p>
         </div>
       </div>
@@ -177,13 +177,13 @@ export default function LostAFriendPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Grief within a friendship group</h3>
           <p className="text-sm text-muted leading-relaxed">
-            When a friend dies, the whole friendship group is affected. People within the group will grieve differently: some will want to talk about the person constantly; others will find that too painful. Some will want to gather and be together; others will withdraw. There is no right way, and it can create tension if people have very different needs. Try to be patient with each other, and avoid the temptation to judge how others are grieving.
+            When a friend passes away, the whole friendship group feels it. People within the group will grieve differently: some will want to talk about them constantly; others will find that too painful. Some will want to gather and be together; others will withdraw. There is no right way, and it can create tension if people have very different needs. Try to be patient with each other, and avoid the temptation to judge how others are grieving.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Keeping the friendship group together</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Sometimes the death of a central person in a friendship group causes it to fragment. Without their energy or their role as an organiser or connector, people drift apart. If you value the friendships within the group, take the initiative to maintain them. A gathering, however informal, a shared meal, or simply a group message can help people feel connected. Acknowledging anniversaries (the birthday, the death day) together can be a meaningful way to grieve collectively.
+            Sometimes losing the person at the centre of a friendship group causes it to drift apart. Without their energy, or their habit of being the one who organised everyone, people slowly lose touch. If those friendships matter to you, it may fall to you to keep them going. A gathering, however informal, a shared meal, or simply a group message can help people feel connected. Marking the dates that matter together, their birthday or the anniversary, can be a way of grieving alongside each other rather than alone.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -264,20 +264,20 @@ export default function LostAFriendPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Can I attend the funeral if I was not close to the family?</h3>
           <p className="text-sm text-muted leading-relaxed">
-            In most cases, yes. Funerals are generally open to anyone who cared about the person who died. If you are unsure, a message to the family saying "I would very much like to attend the funeral if that would be welcome" is appropriate. Your presence shows that your friend was loved and valued.
+            In most cases, yes. Funerals are generally open to anyone who cared about the person who has passed away. If you are unsure, a message to the family saying "I would very much like to attend the funeral if that would be welcome" is appropriate. Your presence shows that your friend was loved and valued.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">Where can I find support for friend grief?</h3>
           <p className="text-sm text-muted leading-relaxed">
-            Cruse Bereavement Support (0808 808 1677) supports anyone who is grieving, regardless of their relationship to the person who died. Sue Ryder (sueryder.org) offers free online bereavement counselling. At a Loss (ataloss.org) is a directory of bereavement services searchable by type of loss. Your GP can refer you to NHS talking therapies.
+            Cruse Bereavement Support (0808 808 1677) supports anyone who is grieving, whatever their relationship to the person who has passed away. Sue Ryder (sueryder.org) offers free online bereavement counselling. At a Loss (ataloss.org) is a directory of bereavement services searchable by type of loss. Your GP can refer you to NHS talking therapies.
           </p>
         </div>
       </div>
 
       <div className="bg-primary-light rounded-xl p-8 text-center">
         <h2 className="text-2xl font-bold text-foreground mb-3">Need help with the practical side?</h2>
-        <p className="text-muted mb-6">If you have been asked to help with practical tasks after your friend's death, our personalised guide can help you understand what needs to happen and when.</p>
+        <p className="text-muted mb-6">If you have been asked to help with practical tasks after your friend has passed away, our personalised guide can help you understand what needs to happen and when.</p>
         <Link href="/start" className="inline-block px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors">
           Get Your Personalised Guide
         </Link>
@@ -305,7 +305,7 @@ export default function LostAFriendPage() {
               {
                 '@type': 'Question',
                 name: 'Can I attend the funeral if I was not close to the family?',
-                acceptedAnswer: { '@type': 'Answer', text: 'In most cases, yes. Funerals are generally open to anyone who cared about the person who died. If unsure, ask the family if your presence would be welcome.' },
+                acceptedAnswer: { '@type': 'Answer', text: 'In most cases, yes. Funerals are generally open to anyone who cared about the person who has passed away. If unsure, ask the family if your presence would be welcome.' },
               },
               {
                 '@type': 'Question',

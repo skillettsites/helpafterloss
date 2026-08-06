@@ -42,7 +42,7 @@ export default function TellUsOnceGuidePage() {
         Tell Us Once Service: How It Works and How to Register (2026)
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        Tell Us Once is a free government service that saves you from having to contact multiple government departments individually after someone dies. One report notifies DWP, HMRC, the Passport Office, DVLA, the local council, and more. It is not perfect, and it does not cover everything, but it is one of the most useful things available to you in those overwhelming first days. This guide explains exactly how it works.
+        Tell Us Once is a free government service that saves you from having to contact multiple government departments individually after someone passes away. One report notifies DWP, HMRC, the Passport Office, DVLA, the local council, and more. It is not perfect, and it does not cover everything, but it is one of the most useful things available to you in those overwhelming first days. This guide explains exactly how it works.
       </p>
 
       <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
@@ -88,7 +88,7 @@ export default function TellUsOnceGuidePage() {
         </p>
         <ul className="space-y-2 text-sm text-muted mb-4">
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Department for Work and Pensions (DWP):</strong> Stops benefits and pensions (State Pension, Pension Credit, Universal Credit, ESA, JSA, Attendance Allowance, DLA, PIP, Carer's Allowance)</li>
-          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>HM Revenue and Customs (HMRC):</strong> Updates tax records, stops tax credits, deals with the deceased's Self Assessment if applicable</li>
+          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>HM Revenue and Customs (HMRC):</strong> Updates tax records, stops tax credits, deals with their Self Assessment if applicable</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>HM Passport Office:</strong> Cancels the passport</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Driver and Vehicle Licensing Agency (DVLA):</strong> Cancels the driving licence</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> <strong>Identity and Passport Service:</strong> Cancels identity documents</li>
@@ -151,7 +151,7 @@ export default function TellUsOnceGuidePage() {
         </p>
         <ul className="space-y-2 text-sm text-muted">
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> The Tell Us Once reference number (from the registrar)</li>
-          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> The deceased's National Insurance number</li>
+          <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Their National Insurance number</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Their date of birth and date of death</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Their full address</li>
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Driving licence number (if they had one)</li>
@@ -162,7 +162,7 @@ export default function TellUsOnceGuidePage() {
           <li className="flex gap-2"><span className="text-primary font-bold flex-shrink-0">+</span> Details of any NS&I accounts (Premium Bonds, savings certificates)</li>
         </ul>
         <p className="text-sm text-muted leading-relaxed mt-4">
-          Do not worry if you do not have all of these details. You can still complete the service and provide missing information later if needed. The system will not reject your report if some fields are left blank.
+          Please do not worry if you do not have all of these details. You can still complete the service and provide anything missing later if needed. The system will not reject your report if some fields are left blank.
         </p>
       </div>
 

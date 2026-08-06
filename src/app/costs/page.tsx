@@ -6,12 +6,12 @@ import { PageDisclaimer } from '@/components/PageDisclaimer';
 import { FreeChecklistBanner } from '@/components/FreeChecklistBanner';
 
 export const metadata: Metadata = {
-  title: 'Cost of Death in the UK 2026: Funerals from £995, Probate £300, Plus 8 Ways to Save',
-  description: 'Average funeral £4,141, death certificates £12.50 each, probate £300. Full cost breakdown with 3 real scenarios (£1,400 to £25,000+) and 8 practical ways to cut costs.',
+  title: 'UK Cost of Dying 2026: Funerals from £1,095, Probate £526',
+  description: 'Average funeral £4,510, death certificates £12.50 each, probate £526. Full cost breakdown with 3 real scenarios (£1,400 to £25,000+) and 8 practical ways to cut costs.',
   alternates: { canonical: 'https://helpafterloss.co.uk/costs' },
   openGraph: {
-    title: 'Cost of Death in the UK 2026: Funerals from £995, Probate £300, Plus 8 Ways to Save',
-    description: 'Average funeral £4,141, death certificates £12.50 each, probate £300. Full cost breakdown with 3 real scenarios and 8 practical ways to cut costs.',
+    title: 'UK Cost of Dying 2026: Funerals from £1,095, Probate £526',
+    description: 'Average funeral £4,510, death certificates £12.50 each, probate £526. Full cost breakdown with 3 real scenarios and 8 practical ways to cut costs.',
     url: 'https://helpafterloss.co.uk/costs',
     type: 'article',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
@@ -19,16 +19,16 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Cost of Death in the UK 2026: Funerals, Probate, and How to Save',
-    description: 'Funerals from £995, certificates £12.50, probate £300. Three real cost scenarios plus 8 ways to save thousands.',
+    description: 'Funerals from £1,095, certificates £12.50, probate £526. Three real cost scenarios plus 8 ways to save thousands.',
   },
 };
 
 const COSTS = [
-  { item: 'Death certificates', cost: '£12.50 each (England)', detail: 'Order at least 5 copies when you register. Each bank, insurer, and institution needs an original. Ordering extras later costs more. Wales: £11, Scotland: £15 (NRS extract).' },
+  { item: 'Death certificates', cost: '£12.50 each', detail: 'Order at least 5 copies while you are registering. Each bank, insurer, and institution needs an original. £12.50 covers England and Wales; in Scotland an NRS extract is around £15.' },
   { item: 'Traditional burial with service', cost: '£4,000 - £8,000', detail: 'Includes funeral director fees, coffin, hearse, burial plot, grave digging, and service. UK average is around £5,400. Prices vary hugely by region and provider.' },
   { item: 'Cremation with service', cost: '£3,000 - £6,500', detail: 'Includes funeral director fees, coffin, hearse, cremation fee, and service. UK average is around £4,200.' },
-  { item: 'Direct cremation', cost: '£1,000 - £2,500', detail: 'No service, no mourners present. The most affordable option. UK average is around £1,600. You can hold a separate memorial at any time.' },
-  { item: 'Probate court fee', cost: '£300', detail: 'For estates valued over £5,000. Free for estates under £5,000. This is the same whether you do it yourself or use a solicitor.' },
+  { item: 'Direct cremation', cost: '£1,000 - £2,500', detail: 'No service and no mourners present. The gentlest option on the budget, with a UK average of around £1,600. You can still hold a memorial of your own at any time, wherever feels right.' },
+  { item: 'Probate court fee', cost: '£526', detail: 'For estates valued over £5,000. Free for estates under £5,000. This is the same whether you do it yourself or use a solicitor.' },
   { item: 'Solicitor fees (probate)', cost: '£2,000 - £15,000+', detail: 'Typically 1-5% of the estate value, or hourly rates of £150-£400+. Not always needed; many people do probate themselves for straightforward estates.' },
   { item: 'Statutory notice (The Gazette)', cost: '£80 - £150', detail: 'Placing a legal notice to protect the executor from unknown debts. Optional but strongly recommended.' },
   { item: 'Post redirection', cost: '£37 - £73', detail: 'Royal Mail redirection for 3, 6, or 12 months. Helps catch correspondence and accounts you may not know about.' },
@@ -36,12 +36,12 @@ const COSTS = [
 ];
 
 const SAVINGS = [
-  { title: 'Funeral Expenses Payment', detail: 'If you receive means-tested benefits (Universal Credit, Pension Credit, etc.), the DWP can help with funeral costs: burial/cremation fees plus up to £1,000 for other costs. Claim within 6 months. Call 0800 731 0469.' },
+  { title: 'Funeral Expenses Payment', detail: 'If you receive means-tested benefits (Universal Credit, Pension Credit, etc.), the DWP can help with funeral costs: burial and cremation fees are not capped, and there is up to £1,000 towards other costs. The 6 months runs from the funeral, not the date they passed away. Call the Bereavement Service on 0800 151 2012.' },
   { title: 'Children\'s Funeral Fund', detail: 'Covers burial/cremation fees and a coffin for anyone under 18 (or stillborn after 24 weeks) in England. The funeral director can apply for you.' },
   { title: 'Bereavement Support Payment', detail: 'For spouses/civil partners under State Pension age. Higher rate (with children): £3,500 lump sum + £350/month for 18 months. Standard rate: £2,500 + £100/month. Claim within 3 months for full backdating.' },
   { title: 'DIY probate', detail: 'Saves £2,000-£15,000+ in solicitor fees. The government website guides you through each step. Suitable for estates with straightforward assets and known beneficiaries.' },
-  { title: 'Compare funeral directors', detail: 'Get at least 3 quotes. Prices can vary by thousands of pounds in the same area. Ask for an itemised breakdown so you can compare like for like.' },
-  { title: 'Consider direct cremation', detail: 'At around £1,600, direct cremation saves £2,500-£3,800 compared to a traditional funeral. You can hold a meaningful memorial service separately at little or no cost.' },
+  { title: 'Compare funeral directors', detail: 'Ask at least 3 for a quote. Prices can differ by thousands of pounds within the same area. Ask for an itemised breakdown so you can compare like for like without any pressure.' },
+  { title: 'Consider direct cremation', detail: 'At around £1,600, direct cremation saves £2,500-£3,800 compared with a traditional funeral. You can still hold a meaningful memorial separately, at little or no cost, and many families find it more personal.' },
   { title: 'Council tax exemption', detail: 'An empty property is exempt from council tax during probate and for 6 months after. Contact the council to apply.' },
   { title: 'Death Notification Service', detail: 'Free service to notify multiple banks at once, saving hours of phone calls. Visit deathnotificationservice.co.uk.' },
 ];
@@ -49,19 +49,19 @@ const SAVINGS = [
 const FAQ = [
   {
     q: 'How much does a funeral cost in the UK in 2026?',
-    a: 'The average UK funeral costs around £4,141 in 2026. A cremation with a service averages £4,200 and a burial around £5,400. Direct cremation, the cheapest option, starts from around £995 with no service. Prices vary significantly by region, with London and the South East being the most expensive.',
+    a: 'A traditional attended funeral averages £4,510 in 2026, and a simpler one £3,828. A cremation with a service averages £4,200 and a burial around £5,440. Direct cremation, the cheapest option, starts from around £1,095 with no service. Prices vary significantly by region, with London and the South East being the most expensive.',
   },
   {
     q: 'Do I have to pay for the funeral upfront?',
-    a: 'Most funeral directors will wait for payment until after the funeral. Some offer payment plans. Banks will often release money from the deceased person\'s account specifically for funeral costs, even before probate is granted. If you are on means-tested benefits, you can apply for a Funeral Expenses Payment to help cover costs.',
+    a: 'Most funeral directors will wait for payment until after the funeral, and some offer payment plans. Banks will often release money from their account specifically for funeral costs, even before probate is granted. If you are on means-tested benefits, you can apply for a Funeral Expenses Payment to help with the cost.',
   },
   {
     q: 'How much does probate cost in 2026?',
-    a: 'The court fee for probate is £300 for estates over £5,000, and free for estates below that. If you use a solicitor, expect to pay £2,000 to £5,000 for a straightforward estate, or £5,000 to £15,000+ for complex estates. DIY probate is perfectly manageable for many estates and costs only the £300 court fee.',
+    a: 'The court fee for probate is £526 for estates over £5,000, and free for estates below that. If you use a solicitor, expect to pay £2,000 to £5,000 for a straightforward estate, or £5,000 to £15,000+ for complex estates. DIY probate is perfectly manageable for many estates and costs only the £526 court fee.',
   },
   {
     q: 'What is the cheapest type of funeral in the UK?',
-    a: 'Direct cremation is the cheapest option, starting from around £995. There is no service or mourners present. You can hold a separate memorial event at any time, at a venue of your choosing, often at little or no cost. A council public health funeral (sometimes called a "pauper\'s funeral") is free but only available when nobody can arrange or afford a funeral.',
+    a: 'Direct cremation is the cheapest option, starting from around £1,095. There is no service or mourners present. You can hold a separate memorial event at any time, at a venue of your choosing, often at little or no cost. A council public health funeral (sometimes called a "pauper\'s funeral") is free but only available when nobody can arrange or afford a funeral.',
   },
   {
     q: 'Can I get help with funeral costs?',
@@ -69,7 +69,7 @@ const FAQ = [
   },
   {
     q: 'How many death certificates do I need and how much do they cost?',
-    a: 'Order at least 5 certified copies at registration. They cost £12.50 each in England and Wales (£15 in Scotland). Each bank, insurer, pension provider, and solicitor typically needs an original. If the person had many accounts and policies, you may need 8 to 10 copies. Ordering extras later is more expensive.',
+    a: 'Order at least 5 certified copies while you are registering. They cost £12.50 each in England and Wales (£15 in Scotland). Each bank, insurer, pension provider, and solicitor usually needs an original. If they had a lot of accounts and policies, 8 to 10 copies is not unusual. Ordering extras later costs more.',
   },
   {
     q: 'What is inheritance tax and when does it apply?',
@@ -91,7 +91,7 @@ export default function CostsPage() {
         How Much Does It Cost When Someone Dies?
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-4">
-        The costs can be significant and often come as a surprise. Here is a full breakdown of what you might need to pay, and practical ways to reduce costs. All figures are for 2026.
+        Money is the last thing anyone wants to think about right now, and the costs often come as a shock. Here is an honest breakdown of what you may need to pay, along with practical ways to bring the total down. There is help available at every price point. All figures are for 2026.
       </p>
 
       {/* Key costs at a glance */}
@@ -105,11 +105,11 @@ export default function CostsPage() {
           <p className="text-xs text-muted mt-1">Per death certificate</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-4 text-center">
-          <p className="text-xl font-bold text-primary">£300</p>
+          <p className="text-xl font-bold text-primary">£526</p>
           <p className="text-xs text-muted mt-1">Probate court fee</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-4 text-center">
-          <p className="text-xl font-bold text-success">From £995</p>
+          <p className="text-xl font-bold text-success">From £1,095</p>
           <p className="text-xs text-muted mt-1">Direct cremation</p>
         </div>
       </div>
@@ -130,14 +130,14 @@ export default function CostsPage() {
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-foreground mb-3">How much does a funeral cost in the UK?</h2>
         <p className="text-muted leading-relaxed">
-          The average UK funeral costs £4,141 in 2026. A cremation with a service averages around £4,200 and a burial around £5,400. Direct cremation, where there is no service, starts from around £995. These figures exclude optional extras like flowers, catering, order of service booklets, and headstones, which can add hundreds or thousands more.
+          A traditional attended funeral averages £4,510 in 2026, and a simpler one £3,828. A cremation with a service averages around £4,200, and a burial around £5,440. Direct cremation, where there is no service, starts from around £995. These figures do not include extras such as flowers, catering, order of service booklets, and headstones, which can add hundreds or thousands more, so it is worth deciding early which of those matter to you.
         </p>
       </section>
 
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-foreground mb-3">What is the cheapest type of funeral?</h2>
         <p className="text-muted leading-relaxed">
-          Direct cremation is the cheapest option, starting from around £995 with no service or mourners present. A council public health funeral is free but is only available when nobody can arrange or afford a funeral. The DWP Funeral Expenses Payment can cover up to £1,000 towards funeral costs for those receiving qualifying means-tested benefits.
+          Direct cremation is the cheapest option, starting from around £1,095 with no service or mourners present. A council public health funeral is free but is only available when nobody can arrange or afford a funeral. The DWP Funeral Expenses Payment can cover up to £1,000 towards funeral costs for those receiving qualifying means-tested benefits.
         </p>
       </section>
 
@@ -158,7 +158,7 @@ export default function CostsPage() {
               </tr>
             </thead>
             <tbody className="divide-y divide-border">
-              <tr><td className="p-4 text-muted">Direct cremation (no service)</td><td className="p-4 text-right font-medium text-success">£995 - £2,500</td></tr>
+              <tr><td className="p-4 text-muted">Direct cremation (no service)</td><td className="p-4 text-right font-medium text-success">£1,095 - £2,500</td></tr>
               <tr><td className="p-4 text-muted">Cremation with service</td><td className="p-4 text-right font-medium text-foreground">£3,000 - £6,500</td></tr>
               <tr><td className="p-4 text-muted">Traditional burial with service</td><td className="p-4 text-right font-medium text-foreground">£4,000 - £8,000</td></tr>
               <tr><td className="p-4 text-muted">Green/woodland burial</td><td className="p-4 text-right font-medium text-foreground">£2,000 - £5,000</td></tr>
@@ -166,7 +166,7 @@ export default function CostsPage() {
           </table>
         </div>
         <p className="text-sm text-muted leading-relaxed">
-          Prices vary significantly by region and provider. London is typically the most expensive area. Always get at least 3 itemised quotes before choosing a funeral director.
+          Prices vary a great deal by region and provider, and London is usually the most expensive. Do get at least 3 itemised quotes before choosing a funeral director. Nobody will think less of you for asking what things cost.
         </p>
       </section>
 
@@ -183,8 +183,8 @@ export default function CostsPage() {
             </thead>
             <tbody className="divide-y divide-border">
               <tr><td className="p-4 text-muted">Death certificates (order 5+)</td><td className="p-4 text-right font-medium text-foreground">£12.50 each</td></tr>
-              <tr><td className="p-4 text-muted">Probate court fee</td><td className="p-4 text-right font-medium text-foreground">£300</td></tr>
-              <tr><td className="p-4 text-muted">Extra copies of the grant</td><td className="p-4 text-right font-medium text-foreground">£1.50 each</td></tr>
+              <tr><td className="p-4 text-muted">Probate court fee</td><td className="p-4 text-right font-medium text-foreground">£526</td></tr>
+              <tr><td className="p-4 text-muted">Extra copies of the grant</td><td className="p-4 text-right font-medium text-foreground">£2 each when ordered with the application (£16 each afterwards)</td></tr>
               <tr><td className="p-4 text-muted">Statutory notice (The Gazette)</td><td className="p-4 text-right font-medium text-foreground">£80 - £150</td></tr>
               <tr><td className="p-4 text-muted">Post redirection (3-12 months)</td><td className="p-4 text-right font-medium text-foreground">£37 - £73</td></tr>
               <tr><td className="p-4 text-muted">Solicitor (simple estate)</td><td className="p-4 text-right font-medium text-foreground">£2,000 - £5,000</td></tr>
@@ -204,7 +204,7 @@ export default function CostsPage() {
       <section id="total" className="mb-10 scroll-mt-20">
         <h2 className="text-2xl font-bold text-foreground mb-4">Total cost estimates</h2>
         <p className="text-muted leading-relaxed mb-4">
-          Here is what the total might look like for different scenarios, so you can get a realistic picture:
+          Here is what the total tends to look like in three different situations, so you have a realistic picture rather than a nasty surprise:
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
           <div className="bg-success-light rounded-xl p-5">
@@ -214,7 +214,7 @@ export default function CostsPage() {
               <li>Direct cremation (~£1,000)</li>
               <li>5 death certificates (~£63)</li>
               <li>Post redirection (~£37)</li>
-              <li>DIY probate (~£300)</li>
+              <li>DIY probate (~£526)</li>
             </ul>
           </div>
           <div className="bg-card rounded-xl border border-border p-5">
@@ -224,7 +224,7 @@ export default function CostsPage() {
               <li>Cremation with service (~£4,200)</li>
               <li>5 death certificates (~£63)</li>
               <li>Post redirection (~£52)</li>
-              <li>DIY probate (~£300)</li>
+              <li>DIY probate (~£526)</li>
               <li>Gazette notice (~£100)</li>
             </ul>
           </div>
@@ -264,7 +264,7 @@ export default function CostsPage() {
       </div>
       <div className="bg-primary-light rounded-lg p-4 mb-10">
         <p className="text-sm text-foreground">
-          <strong>Costs vary by nation:</strong> Scotland uses <Link href="/guide/scotland" className="text-primary hover:underline">Confirmation instead of Probate</Link> (£300, but small estates under £36,000 are free). Northern Ireland has a <Link href="/guide/northern-ireland" className="text-primary hover:underline">sliding fee scale</Link> that can exceed £7,000 for large estates. Use our <Link href="/notify" className="text-primary hover:underline">notification guide</Link> and <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> to save time contacting organisations.
+          <strong>Costs vary by nation:</strong> Scotland uses <Link href="/guide/scotland" className="text-primary hover:underline">Confirmation instead of Probate</Link> (£526, but small estates under £36,000 are free). Northern Ireland has a <Link href="/guide/northern-ireland" className="text-primary hover:underline">sliding fee scale</Link> that can exceed £7,000 for large estates. Use our <Link href="/notify" className="text-primary hover:underline">notification guide</Link> and <Link href="/template-letters" className="text-primary hover:underline">template letters</Link> to save time contacting organisations.
         </p>
       </div>
 
@@ -291,14 +291,14 @@ export default function CostsPage() {
       {/* Gentle reassurance */}
       <div className="bg-warm border border-warm-border rounded-xl p-5 mb-10">
         <p className="text-sm text-amber-800 leading-relaxed">
-          If the costs feel overwhelming, please know that there are options at every price point, and financial help is available. You do not need to decide everything at once. If you need someone to talk to, call Cruse Bereavement Support on <a href="tel:08088081677" className="font-medium underline">0808 808 1677</a> (free, Monday to Friday).
+          If the costs feel overwhelming, please know there are options at every price point and financial help is available. A simpler funeral is not a lesser one. You do not need to decide everything at once, and you do not have to work it out alone. If you would like to talk to someone, call Cruse Bereavement Support on <a href="tel:08088081677" className="font-medium underline">0808 808 1677</a> (free, Monday to Friday).
         </p>
       </div>
 
       {/* CTA */}
       <div className="bg-primary-light rounded-xl p-6 md:p-8 text-center">
         <h2 className="text-2xl font-bold text-foreground mb-3">Get a cost estimate for your situation</h2>
-        <p className="text-muted mb-6">Our personalised guide includes estimated costs based on your exact circumstances, plus ways to save.</p>
+        <p className="text-muted mb-6">Our personalised guide gives you estimated costs based on your own circumstances, along with the ways you could save.</p>
         <Link href="/start" className="inline-block px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors">
           Get Your Personalised Guide
         </Link>

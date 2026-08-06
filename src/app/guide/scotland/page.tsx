@@ -43,8 +43,8 @@ const KEY_DIFFERENCES = [
     scotland: 'Sheriff Court processes Confirmation applications',
   },
   {
-    england: 'Probate court fee: £300 (estates over £5,000)',
-    scotland: 'Confirmation court fee: £300 (estates over £5,000)',
+    england: 'Probate court fee: £526 (estates over £5,000)',
+    scotland: 'Confirmation court fee: nothing up to £50,000, then £351, or £705 above £250,000',
   },
   {
     england: 'Small estates: no simplified process',
@@ -71,15 +71,15 @@ const SECTIONS = [
     tasks: [
       {
         title: 'Get the medical certificate (Form 11)',
-        content: 'When someone dies in Scotland, a doctor issues Form 11, the medical certificate of cause of death. If the person died in hospital, the hospital arranges this. If they died at home, contact their GP surgery. This form is given directly to the registrar, not to the family.',
+        content: 'When someone passes away in Scotland, a doctor issues Form 11, the medical certificate of cause of death. If your loved one was in hospital, the hospital arranges this for you. If they were at home, call their GP surgery. The form goes straight to the registrar rather than to the family, so you do not need to carry it anywhere.',
       },
       {
         title: 'Register within 8 days',
-        content: 'In Scotland, you must register the death within 8 days (compared to 5 days in England and Wales). Register at the registrar office for the area where the person died. You can book an appointment by calling the local council. Bring the person\'s full name, date and place of birth, last address, occupation, NHS number or CHI number (if known), and any marriage or civil partnership certificate.',
+        content: 'In Scotland, you must register the death within 8 days, which is a little more breathing room than the 5 days in England and Wales. You register at the registrar office for the area where they died, and you can book an appointment by ringing the local council. Take their full name, date and place of birth, last address, occupation, NHS or CHI number if you know it, and any marriage or civil partnership certificate.',
       },
       {
         title: 'Death certificates cost £15 each',
-        content: 'Certified copies of the death certificate (called an "extract of the entry") cost £15 each in Scotland, compared to £12.50 in England. Order at least 5 copies. Banks, insurers, solicitors, and pension providers all need originals. It costs more to order them later through National Records of Scotland.',
+        content: 'Certified copies of the death certificate (called an "extract of the entry") cost £15 each in Scotland, compared to £12.50 in England. It is worth ordering at least 5, as banks, insurers, solicitors, and pension providers each need an original. Ordering them later through National Records of Scotland costs more.',
       },
       {
         title: 'Tell Us Once is available in Scotland',
@@ -101,7 +101,7 @@ const SECTIONS = [
       },
       {
         title: 'What happens during the investigation',
-        content: 'The Procurator Fiscal may order a post-mortem examination. Unlike in England, the family cannot object to a post-mortem in Scotland. The investigation may take days or weeks. You cannot register the death until the Procurator Fiscal releases the body and authorises registration. COPFS will keep you informed of progress.',
+        content: 'The Procurator Fiscal may ask for a post-mortem examination. Unlike in England, families in Scotland cannot object to one, which we know can be hard to hear. The investigation may take days or weeks. You cannot register the death until the Procurator Fiscal releases your loved one and authorises registration. COPFS will keep you updated as things progress.',
       },
       {
         title: 'Fatal Accident Inquiries',
@@ -115,15 +115,15 @@ const SECTIONS = [
     tasks: [
       {
         title: 'What is Confirmation?',
-        content: 'Confirmation is the Scottish equivalent of probate. It gives you the legal authority to deal with the deceased person\'s estate. You apply to the Sheriff Court, not the Probate Registry. If there is a will, the executor named in the will applies for Confirmation. If there is no will, the nearest relative applies to be appointed as "executor dative" by the court.',
+        content: 'Confirmation is the Scottish equivalent of probate. It gives you the legal authority to deal with your loved one\'s estate. You apply to the Sheriff Court rather than the Probate Registry. If there is a will, the executor named in it applies for Confirmation. If there is no will, the nearest relative applies to be appointed by the court as "executor dative".',
       },
       {
         title: 'How to apply for Confirmation',
-        content: 'You need to prepare an inventory of the entire estate, listing every asset and its value at the date of death. Submit the inventory along with the will (if there is one), the death certificate, and the completed inheritance tax form to the Sheriff Court for the area where the person lived. The court fee is £300 for estates over £5,000. You can apply to any Sheriff Court in Scotland.',
+        content: 'You need to prepare an inventory of the entire estate, listing every asset and its value at the date of death. Submit the inventory along with the will (if there is one), the death certificate, and the completed inheritance tax form to the Sheriff Court for the area where the person lived. Scotland has its own fee scale, and it is kinder than the English one at the lower end: there is no court fee at all if the estate is worth £50,000 or less, then £351 up to £250,000, and £705 above that. You can apply to any Sheriff Court in Scotland.',
       },
       {
         title: 'Small estates (under £36,000)',
-        content: 'If the total estate is valued at under £36,000, you can use the simplified "small estate" procedure. The local Sheriff Clerk will help you complete the paperwork for free. You do not need a solicitor. The process is faster and cheaper than the full Confirmation process. This is a significant advantage over the English system, which has no equivalent simplified route.',
+        content: 'If the whole estate is worth less than £36,000, you can use the simplified "small estate" procedure. The local Sheriff Clerk will sit with you and help you complete the paperwork, free of charge, and you do not need a solicitor at all. It is quicker and cheaper than full Confirmation, and a real advantage over the English system, which has no equivalent.',
       },
       {
         title: 'Processing time',
@@ -131,7 +131,7 @@ const SECTIONS = [
       },
       {
         title: 'Using Confirmation across the UK',
-        content: 'If the person lived in Scotland but owned property in England or Wales, you will need to "reseal" your Confirmation at the Probate Registry in England. This makes the Scottish Confirmation valid south of the border. The same applies in reverse: if you have an English Grant of Probate, you may need to reseal it in Scotland.',
+        content: 'If your loved one lived in Scotland but owned property in England or Wales, you will need to "reseal" the Confirmation at the Probate Registry in England. That simply makes the Scottish Confirmation valid south of the border. It works the same way in reverse: an English Grant of Probate may need resealing in Scotland.',
       },
     ],
   },
@@ -157,7 +157,7 @@ const SECTIONS = [
       },
       {
         title: 'Unmarried partners',
-        content: 'As in the rest of the UK, unmarried partners have no automatic right to inherit under Scottish intestacy rules, regardless of how long they lived together. However, a cohabiting partner may apply to the court under the Family Law (Scotland) Act 2006 for a share of the estate. This must be done within 6 months of the death. The court has discretion over any award.',
+        content: 'As in the rest of the UK, partners who were not married have no automatic right to inherit under the Scottish intestacy rules, however long they lived together. This can feel very unfair, and it catches many people out. A cohabiting partner can apply to the court under the Family Law (Scotland) Act 2006 for a share of the estate, but it must be done within 6 months of the death, and any award is at the court\'s discretion. If this applies to you, do get advice quickly.',
       },
     ],
   },
@@ -171,7 +171,7 @@ const SECTIONS = [
       },
       {
         title: 'Funeral costs in Scotland',
-        content: 'Average funeral costs in Scotland are similar to the rest of the UK: around £4,000 to £5,500 for a traditional funeral. Direct cremation is available from around £1,200 to £1,800. Some local authorities in Scotland offer lower-cost municipal funeral services.',
+        content: 'Funeral costs in Scotland are much the same as the rest of the UK: around £4,000 to £5,500 for a traditional funeral. Direct cremation is available from around £1,200 to £1,800. Some Scottish local authorities also offer lower-cost municipal funeral services, which are well worth asking about if money is tight.',
       },
       {
         title: 'Financial help with funeral costs',
@@ -226,11 +226,11 @@ const FAQ = [
   },
   {
     q: 'How much does Confirmation cost in Scotland?',
-    a: 'The court fee for Confirmation is £300 for estates valued over £5,000, and free for estates under £5,000. If you use a solicitor, expect fees of £1,500 to £5,000 depending on complexity. For small estates under £36,000, the Sheriff Clerk can help you apply for free.',
+    a: 'There is no court fee at all for estates worth £50,000 or less. Above that it is £351 up to £250,000, and £705 for estates over £250,000. If you use a solicitor, expect fees of £1,500 to £5,000 depending on complexity. For small estates under £36,000, the Sheriff Clerk can help you apply for free.',
   },
   {
     q: 'What is the difference between prior rights and legal rights?',
-    a: 'Prior rights apply only when someone dies without a will. They give the surviving spouse the right to the home (up to £473,000), furniture (up to £29,000), and a cash sum. Legal rights apply whether or not there is a will, and give the surviving spouse and children a fixed share of the moveable estate (everything except land and buildings).',
+    a: 'Prior rights apply only when there is no will. They give the surviving husband, wife, or civil partner the right to the home (up to £473,000), the furniture (up to £29,000), and a cash sum. Legal rights apply whether or not there is a will, and give the surviving partner and the children a fixed share of the moveable estate (everything except land and buildings).',
   },
   {
     q: 'Does Tell Us Once work in Scotland?',
@@ -257,7 +257,7 @@ export default function ScotlandGuidePage() {
         When Someone Dies in Scotland
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-4">
-        Scotland has its own legal system for dealing with death, and the process differs from England and Wales in several important ways. Registration takes 8 days instead of 5. There is no coroner; the Procurator Fiscal investigates unexpected deaths. And probate is called Confirmation, handled by the Sheriff Court. This guide covers everything you need to know.
+        We are very sorry for your loss. Scotland has its own legal system, so a few things work differently from England and Wales, and it helps to know what to expect. You have 8 days to register rather than 5. There is no coroner; the Procurator Fiscal looks into unexpected deaths. And probate is called Confirmation, handled by the Sheriff Court. This guide takes you through it all, gently and in plain English.
       </p>
       <Link
         href="/start"
@@ -318,7 +318,7 @@ export default function ScotlandGuidePage() {
           {sIndex === 1 && (
             <div className="bg-warm border border-warm-border rounded-xl p-5 mt-6">
               <p className="text-sm text-amber-800 leading-relaxed">
-                If the Procurator Fiscal is involved, do not worry. This is standard procedure for any sudden or unexplained death in Scotland. It does not mean anything suspicious is suspected. COPFS will keep you informed throughout the process.
+                If the Procurator Fiscal is involved, please try not to worry. This is standard procedure for any sudden or unexplained death in Scotland, and it does not mean anyone suspects anything untoward. COPFS will keep you informed throughout.
               </p>
             </div>
           )}
@@ -344,7 +344,7 @@ export default function ScotlandGuidePage() {
       ))}
 
       {/* FAQ */}
-      <h2 className="text-2xl font-bold text-foreground mb-6">Common questions about deaths in Scotland</h2>
+      <h2 className="text-2xl font-bold text-foreground mb-6">Common questions about the process in Scotland</h2>
       <div className="space-y-4 mb-12">
         {FAQ.map((item, i) => (
           <div key={i} className="bg-card rounded-xl border border-border p-6">

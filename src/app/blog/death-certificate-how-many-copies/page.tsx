@@ -8,20 +8,20 @@ import { SupportCta } from '@/components/SupportCta';
 import { FreeChecklistBanner } from '@/components/FreeChecklistBanner';
 
 export const metadata: Metadata = {
-  title: 'How Many Death Certificates Do I Need? 8-12 Copies | Cost £12.50 Each (2026)',
-  description: 'Most UK families need 8-12 certified copies at £12.50 each (England) or £15 (Scotland). Full list of who needs an original, how to order, how to avoid the £38.50 priority fee, and what to do next.',
+  title: '8-12 Death Certificates at £12.50 Each: How Many You Need (2026)',
+  description: 'Most UK families need 8-12 certified copies at £12.50 each (£15 in Scotland). See who needs one, how to order today, and how to avoid the £38.50 rush fee.',
   alternates: { canonical: 'https://helpafterloss.co.uk/blog/death-certificate-how-many-copies' },
   openGraph: {
-    title: 'How Many Death Certificates Do I Need? UK Guide 2026',
-    description: 'Most UK families need 8-12 certified copies at £12.50 each in England. Full breakdown of who needs an original, how to order, and money-saving tips.',
+    title: '8-12 Death Certificates at £12.50 Each: How Many You Need',
+    description: 'Most UK families need 8-12 certified copies at £12.50 each (£15 in Scotland). See who needs one, how to order today, and how to avoid the £38.50 rush fee.',
     url: 'https://helpafterloss.co.uk/blog/death-certificate-how-many-copies',
     type: 'article',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Help After Loss' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How Many Death Certificates Do I Need? UK Guide 2026',
-    description: 'Most UK families need 8-12 certified copies at £12.50 each in England. Full breakdown of who needs an original, how to order, and money-saving tips.',
+    title: '8-12 Death Certificates at £12.50 Each: How Many You Need',
+    description: 'Most UK families need 8-12 certified copies at £12.50 each (£15 in Scotland). See who needs one, how to order today, and how to avoid the £38.50 rush fee.',
   },
 };
 
@@ -32,7 +32,7 @@ const WHO_NEEDS_A_COPY = [
   { organisation: 'Mortgage lender', note: 'Needed to notify the lender and begin the process of transferring or paying off the mortgage.' },
   { organisation: 'HMRC', note: 'Required for the final self-assessment tax return and to close the tax record. Also needed for inheritance tax forms.' },
   { organisation: 'Solicitor handling probate', note: 'If you are using a solicitor, they will need their own copy to begin work on the estate.' },
-  { organisation: 'Land Registry', note: 'Needed to transfer or sell any property owned by the deceased.' },
+  { organisation: 'Land Registry', note: 'Needed to transfer or sell any property owned by the person who died.' },
   { organisation: 'Stockbrokers and investment platforms', note: 'ISAs, shares, premium bonds, and other investments each require notification.' },
   { organisation: 'Utility companies', note: 'Gas, electricity, water, and broadband providers. Some accept a certified photocopy rather than an original, but many still require the real thing.' },
   { organisation: 'Vehicle insurance and DVLA', note: 'Car insurance is void from the date of death. DVLA needs to be notified to update the V5C.' },
@@ -50,7 +50,7 @@ const FAQS = [
   },
   {
     question: 'How much does a death certificate cost?',
-    answer: 'A certified copy costs £12.50 in England and Wales, £15 in Scotland, and £15 in Northern Ireland. The price is the same whether you order at registration or later from the General Register Office. The only way to get a copy faster than the standard 5-10 working day postal turnaround is the GRO priority service, which costs £38.50 per copy and arrives within 1 working day. There is no way to obtain a certified copy for free; the fee applies in all cases regardless of the deceased\'s circumstances.',
+    answer: 'A certified copy costs £12.50 in England and Wales, £15 in Scotland, and £15 in Northern Ireland. The price is the same whether you order at registration or later from the General Register Office. The only way to get a copy faster than the standard 5-10 working day postal turnaround is the GRO priority service, which costs £38.50 per copy and arrives within 1 working day. There is no way to obtain a certified copy for free; the fee applies in all cases, whatever the circumstances.',
   },
   {
     question: 'Can I photocopy a death certificate?',
@@ -62,7 +62,7 @@ const FAQS = [
   },
   {
     question: 'What if I need more copies later?',
-    answer: 'You can order additional certified copies at any time from the General Register Office (GRO) online at gro.gov.uk, by phone on 0300 303 0012, or by post. The fee is £12.50 per copy in England and Wales. You will need the full name of the deceased, the date of death, and the district where the death was registered.',
+    answer: 'You can order additional certified copies at any time from the General Register Office (GRO) online at gro.gov.uk, by phone on 0300 303 0012, or by post. The fee is £12.50 per copy in England and Wales. You will need the full name of the person who died, the date of death, and the district where the death was registered.',
   },
   {
     question: 'What is the difference between a certified copy and an original death certificate?',
@@ -207,7 +207,7 @@ export default function DeathCertificateHowManyCopiesPage() {
       {/* Who needs a copy */}
       <h2 id="who-needs-copy" className="text-2xl font-bold text-foreground mb-4">Who needs a certified copy?</h2>
       <p className="text-sm text-muted mb-6">
-        Every organisation that holds money, property, or an account in the deceased person's name will need to see a certified copy of the death certificate before they release funds or close the account. Here is a typical list. Note that most banks will release funds below a certain amount without needing a grant of probate at all, see our guide to <Link href="/blog/bank-probate-thresholds-2026" className="text-primary hover:underline">bank probate thresholds</Link> for the exact limits.
+        Every organisation that holds money, property, or an account in the name of the person who died will need to see a certified copy of the death certificate before they release funds or close the account. Here is a typical list. Note that most banks will release funds below a certain amount without needing a grant of probate at all, see our guide to <Link href="/blog/bank-probate-thresholds-2026" className="text-primary hover:underline">bank probate thresholds</Link> for the exact limits.
       </p>
 
       <div className="space-y-3 mb-12">
@@ -259,7 +259,7 @@ export default function DeathCertificateHowManyCopiesPage() {
         <div className="bg-card rounded-xl border border-border p-6">
           <h3 className="font-semibold text-foreground mb-2">2. Online from the General Register Office (GRO)</h3>
           <p className="text-sm text-muted leading-relaxed">
-            You can order additional copies online at any time from the GRO website (gro.gov.uk). The cost is £12.50 per copy for the standard service in England and Wales, delivered within 5-10 working days. The priority service costs £38.50 per copy and arrives within 1 working day. You will need the deceased's full name, date of death, and the registration district.
+            You can order additional copies online at any time from the GRO website (gro.gov.uk). The cost is £12.50 per copy for the standard service in England and Wales, delivered within 5-10 working days. The priority service costs £38.50 per copy and arrives within 1 working day. You will need the full name of the person who died, the date of death, and the registration district.
           </p>
         </div>
         <div className="bg-card rounded-xl border border-border p-6">
@@ -414,7 +414,7 @@ export default function DeathCertificateHowManyCopiesPage() {
 
       <div className="bg-primary-light rounded-xl p-8 text-center">
         <h2 className="text-2xl font-bold text-foreground mb-3">Not sure what to do next?</h2>
-        <p className="text-muted mb-6">Our step-by-step guide walks you through everything you need to do after someone dies, in the right order, including ordering death certificates.</p>
+        <p className="text-muted mb-6">Our step-by-step guide walks you through everything you need to do after someone passes away, in the right order, including ordering death certificates.</p>
         <Link href="/start" className="inline-block px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors">
           Get Your Personalised Guide
         </Link>

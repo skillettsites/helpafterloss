@@ -25,7 +25,7 @@ const STEPS = [
   {
     step: '1',
     title: 'Locate and secure the will',
-    desc: 'Your first job is to find the original will. Check the person\'s home, safe, solicitor\'s files, and bank safe deposit box. The will may also be registered with the National Will Register (Certainty or Smee & Ford). If you cannot find it, check whether probate was ever granted for a previous spouse or relative, as some solicitors hold wills long-term. Once found, keep the original safe. Do not mark or annotate it in any way.',
+    desc: 'One of your first jobs is to find the original will. When you feel able to, check their home, safe, solicitor\'s files, and bank safe deposit box. The will may also be registered with the National Will Register (Certainty or Smee & Ford). If you cannot find it, check whether probate was ever granted for a previous spouse or relative, as some solicitors hold wills long-term. Once found, keep the original safe. Do not mark or annotate it in any way.',
   },
   {
     step: '2',
@@ -50,7 +50,7 @@ const STEPS = [
   {
     step: '6',
     title: 'Value the estate',
-    desc: 'You need a full picture of everything the person owned and owed at the date of death. This includes: all bank and savings accounts (get a statement showing the balance on the date of death), investments and shares, property (get a formal estate agent valuation or RICS valuation), personal possessions of significant value, life insurance paid to the estate (not into trust), vehicles, and any money owed to them. Subtract all debts: mortgages, loans, credit cards, outstanding bills, and any other liabilities. The resulting figure is the net estate value.',
+    desc: 'You need a full picture of everything they owned and everything they owed at the date of death. This includes: all bank and savings accounts (get a statement showing the balance on the date of death), investments and shares, property (get a formal estate agent valuation or RICS valuation), personal possessions of significant value, life insurance paid to the estate (not into trust), vehicles, and any money owed to them. Subtract all debts: mortgages, loans, credit cards, outstanding bills, and any other liabilities. The resulting figure is the net estate value.',
   },
   {
     step: '7',
@@ -60,7 +60,7 @@ const STEPS = [
   {
     step: '8',
     title: 'Apply for Grant of Probate',
-    desc: 'If the estate requires probate (almost always needed if the person owned property), complete form PA1P (with a will) or PA1A (without). You can apply online at gov.uk/applying-for-probate. You will need to send the original will, a certified copy of the Death Certificate, and the completed IHT form. The court fee is £300 for estates over £5,000, and free for estates under £5,000. Current processing times are 12-16 weeks.',
+    desc: 'If the estate requires probate (almost always needed if the person owned property), complete form PA1P (with a will) or PA1A (without). You can apply online at gov.uk/applying-for-probate. You will need to send the original will, a certified copy of the Death Certificate, and the completed IHT form. The court fee is £526 for estates over £5,000, and free for estates under £5,000. Current processing times are 12-16 weeks.',
   },
   {
     step: '9',
@@ -116,11 +116,11 @@ const FAQ = [
   },
   {
     q: 'What if there is no will?',
-    a: 'If the person died without a will (intestate), there is no executor. Instead, the closest relative applies for Letters of Administration and becomes the administrator. The estate is then distributed according to the intestacy rules, not according to any wishes the person may have expressed informally. The rules are strict: unmarried partners, for example, receive nothing under intestacy.',
+    a: 'If they passed away without leaving a will (intestate), there is no executor. Instead, the closest relative applies for Letters of Administration and becomes the administrator. The estate is then distributed according to the intestacy rules, not according to any wishes they may have expressed informally. The rules are strict: unmarried partners, for example, receive nothing under intestacy.',
   },
   {
     q: 'What taxes need to be filed?',
-    a: 'As executor you must file a final Self Assessment tax return for the deceased (covering April to the date of death) and pay any outstanding income tax. If the estate earns income during administration (rent, interest, dividends), you must file an estate tax return and pay income tax on that income. Inheritance tax must be paid within 6 months of death. Speak to an accountant or HMRC if you are unsure.',
+    a: 'As executor you must file a final Self Assessment tax return for the person who has passed away (covering April to the date of death) and pay any outstanding income tax. If the estate earns income during administration (rent, interest, dividends), you must file an estate tax return and pay income tax on that income. Inheritance tax must be paid within 6 months of death. Speak to an accountant or HMRC if you are unsure.',
   },
 ];
 
@@ -135,7 +135,7 @@ export default function ExecutorDutiesPage() {
         Executor Duties: A Complete Guide
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-10">
-        Being named as an executor is a significant responsibility. You have a legal duty to administer the estate correctly and protect the interests of all beneficiaries. This guide walks you through every step, in the right order, so nothing important is missed.
+        Being named as an executor is a real responsibility, and it usually falls to someone who is grieving at the same time. You have a legal duty to administer the estate properly and to protect the interests of everyone who inherits. This guide takes you through every step, in the right order, so nothing important gets missed. There is no need to do it all at once.
       </p>
 
       {/* Quick summary stats */}
@@ -149,7 +149,7 @@ export default function ExecutorDutiesPage() {
           <p className="text-sm text-muted mt-1">Typical time to administer an estate</p>
         </div>
         <div className="bg-card rounded-xl border border-border p-5 text-center">
-          <p className="text-2xl font-bold text-primary">£300</p>
+          <p className="text-2xl font-bold text-primary">£526</p>
           <p className="text-sm text-muted mt-1">Probate court fee (estates over £5,000)</p>
         </div>
       </div>
@@ -212,7 +212,7 @@ export default function ExecutorDutiesPage() {
           <p className="text-sm text-muted leading-relaxed">What probate, solicitors, and estate administration actually costs</p>
         </Link>
         <Link href="/intestacy" className="bg-card rounded-xl border border-border p-5 hover:border-primary hover:shadow-sm transition-all group">
-          <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors mb-1">Dying Without a Will</h3>
+          <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors mb-1">When There Is No Will</h3>
           <p className="text-sm text-muted leading-relaxed">What happens when there is no will and how intestacy rules work</p>
         </Link>
       </div>

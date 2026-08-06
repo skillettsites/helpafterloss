@@ -186,8 +186,8 @@ export default async function CountyGuidePage({ params }: PageProps) {
             <div className="space-y-3 text-sm text-muted leading-relaxed">
               <p>
                 A doctor must confirm the death and issue a Medical Certificate of Cause of Death (MCCD).
-                If the person died at home in {county.name}, contact their GP surgery. If they died in
-                hospital, the hospital will arrange this.
+                If they passed away at home in {county.name}, contact their GP surgery. If they were in
+                hospital, the hospital will arrange this for you.
               </p>
               <p>
                 If the death was sudden, unexplained, or occurred during surgery, it may be referred to the
@@ -226,7 +226,7 @@ export default async function CountyGuidePage({ params }: PageProps) {
               <p>
                 The appointment typically takes around 30 minutes. The registrar will ask you for details
                 about the person who died, and will issue you with the documents you need to arrange the
-                funeral.
+                funeral. Registrars sit with bereaved families every day and will guide you through it gently.
               </p>
               <p>
                 At the appointment, the registrar will offer you the <strong>Tell Us Once</strong> service.
