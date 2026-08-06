@@ -113,6 +113,23 @@ export default function ResultsPage() {
       {/* Save prompt for non-logged-in users */}
       <SavePrompt />
 
+      {/* Enter details once. Placed here because the next thing most people do
+          is start ringing organisations, and this saves them re-typing. */}
+      <div className="bg-card rounded-xl border border-border p-6 mb-8">
+        <h3 className="font-semibold text-foreground mb-2">Save yourself repeating the same details</h3>
+        <p className="text-sm text-muted leading-relaxed mb-4">
+          Nearly every call and letter ahead of you asks for the same few things: their full name, their date of
+          birth, when they passed away, and your relationship to them. Put them in once and we will fill them into
+          every script and letter on this site. They stay on your device.
+        </p>
+        <Link
+          href="/your-details"
+          className="inline-block px-5 py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary-dark transition-colors"
+        >
+          Enter your details once
+        </Link>
+      </div>
+
       {/* Timeline */}
       <Timeline entries={timeline} />
 

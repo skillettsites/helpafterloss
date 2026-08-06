@@ -55,6 +55,7 @@ export function Footer() {
 
             <h3 className="text-sm font-semibold text-foreground mb-3 mt-6">Tools & Help</h3>
             <ul className="space-y-2 text-sm">
+              <li><Link href="/your-details" className="text-muted hover:text-primary transition-colors">Your Details (fill in once)</Link></li>
               <li><Link href="/deadline-tracker" className="text-muted hover:text-primary transition-colors">Deadline Tracker</Link></li>
               <li><Link href="/document-vault" className="text-muted hover:text-primary transition-colors">Document Vault</Link></li>
               <li><Link href="/print-checklist" className="text-muted hover:text-primary transition-colors">Printable Checklist</Link></li>

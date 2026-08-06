@@ -53,6 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/guides/lost-a-child`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/guides/lost-a-sibling`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/guides/lost-a-friend`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/your-details`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/deadline-tracker`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/document-vault`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/blog`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },

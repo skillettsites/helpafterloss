@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { DetailsPrompt } from '@/components/DetailsPrompt';
+import { PersonalisedText } from '@/components/PersonalisedText';
 
 export const metadata: Metadata = {
   title: 'Bereavement Phone Directory - Every Number You Need When Someone Dies',
@@ -498,6 +500,8 @@ export default function PhoneDirectoryPage() {
         Most of these numbers are free to call from landlines and mobiles. Numbers starting with 0345 and 0333 are charged at the same rate as a standard local call and are usually included in your phone plan.
       </p>
 
+      <DetailsPrompt />
+
       {/* Tips before you start */}
       <div className="bg-warm border border-warm-border rounded-xl p-6 mb-10">
         <h2 className="font-semibold text-amber-900 mb-3">Before you start making calls</h2>
@@ -583,7 +587,7 @@ export default function PhoneDirectoryPage() {
                 {/* What to say */}
                 <div className="bg-primary-light rounded-lg p-4 mb-3">
                   <p className="text-xs font-semibold text-primary-dark mb-1.5">What to say when they answer</p>
-                  <p className="text-sm text-foreground leading-relaxed italic">&ldquo;{entry.script}&rdquo;</p>
+                  <PersonalisedText text={entry.script} quoted copyable copyLabel="Copy what to say" />
                 </div>
 
                 {/* Documents needed */}

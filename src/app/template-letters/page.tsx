@@ -2,7 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
-import { CopyLetterButton } from '@/components/CopyLetterButton';
+import { PersonalisedLetter } from '@/components/PersonalisedLetter';
+import { DetailsPrompt } from '@/components/DetailsPrompt';
 import { FreeChecklistBanner } from '@/components/FreeChecklistBanner';
 
 export const metadata: Metadata = {
@@ -468,14 +469,7 @@ Enclosures: Passport, certified copy of death certificate`,
 ];
 
 function LetterBlock({ letter }: { letter: string }) {
-  return (
-    <div className="relative">
-      <CopyLetterButton text={letter} />
-      <pre className="bg-white border border-border rounded-lg p-6 pt-12 text-sm text-foreground leading-relaxed whitespace-pre-wrap font-sans overflow-x-auto">
-        {letter}
-      </pre>
-    </div>
-  );
+  return <PersonalisedLetter letter={letter} />;
 }
 
 export default function TemplateLettersPage() {
@@ -488,8 +482,10 @@ export default function TemplateLettersPage() {
         Template Letters and Scripts
       </h1>
       <p className="text-lg text-muted leading-relaxed mb-4">
-        Finding the right words is hard enough at the best of times, so we have written these letters for you. Copy the one you need, fill in the details marked in [square brackets], and send it by post or email. Each one comes with a few practical tips underneath.
+        Finding the right words is hard enough at the best of times, so we have written these letters for you. Copy the one you need, add anything still marked in [square brackets], and send it by post or email. Each one comes with a few practical tips underneath.
       </p>
+
+      <DetailsPrompt />
       {/* Table of contents: moved above the tips/CTA boxes so the actual list of letters, the reason people land on this page, is visible without scrolling past unrelated content first */}
       <nav className="bg-card rounded-xl border border-border p-6 mb-8" aria-label="Template letters">
         <h2 className="font-semibold text-foreground mb-3">Letters in this guide</h2>

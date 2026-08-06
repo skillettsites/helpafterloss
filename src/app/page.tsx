@@ -235,6 +235,10 @@ export default function HomePage() {
               <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors mb-1">Guides and Articles</h3>
               <p className="text-sm text-muted">In-depth articles on funeral costs, bereavement leave, bank thresholds, and more.</p>
             </Link>
+            <Link href="/your-details" className="bg-card rounded-xl border border-border p-5 hover:border-primary hover:shadow-sm transition-all group">
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors mb-1">Your Details, Once</h3>
+              <p className="text-sm text-muted">Save the facts you get asked for on every call, and we will fill them into every script and letter for you.</p>
+            </Link>
             <Link href="/deadline-tracker" className="bg-card rounded-xl border border-border p-5 hover:border-primary hover:shadow-sm transition-all group">
               <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors mb-1">Deadline Tracker</h3>
               <p className="text-sm text-muted">Enter the date of death and see every key deadline calculated for you automatically.</p>

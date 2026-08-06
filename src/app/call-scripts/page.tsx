@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { DetailsPrompt } from '@/components/DetailsPrompt';
+import { PersonalisedText } from '@/components/PersonalisedText';
 
 export const metadata: Metadata = {
   title: 'Bereavement Call Scripts - Word-for-Word Scripts for Every Call',
@@ -468,6 +470,8 @@ export default function CallScriptsPage() {
         Please do read these out loud during the call. Nobody will mind, and nobody will think it odd. The person on the other end takes calls like yours all the time and will be patient and kind. Take as long as you need.
       </p>
 
+      <DetailsPrompt />
+
       {/* Reassurance box */}
       <div className="bg-warm border border-warm-border rounded-xl p-6 mb-10">
         <h2 className="font-semibold text-amber-900 mb-3">It is completely normal to dread these calls</h2>
@@ -524,7 +528,7 @@ export default function CallScriptsPage() {
             {script.script.map((section, i) => (
               <div key={i} className="bg-primary-light rounded-xl p-5">
                 <p className="text-xs font-semibold text-primary-dark mb-2">{section.label}</p>
-                <p className="text-sm text-foreground leading-relaxed italic">&ldquo;{section.text}&rdquo;</p>
+                <PersonalisedText text={section.text} quoted copyable copyLabel="Copy what to say" />
               </div>
             ))}
           </div>

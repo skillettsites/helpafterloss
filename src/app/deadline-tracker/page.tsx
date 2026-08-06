@@ -1,9 +1,11 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedGuides } from '@/components/RelatedGuides';
+import { loadAnswers } from '@/lib/storage';
+import { loadDetails } from '@/lib/details';
 
 type Priority = 'urgent' | 'important' | 'normal';
 
@@ -197,6 +199,17 @@ function getDaysRemaining(deadline: Date, today: Date): number {
 
 export default function DeadlineTrackerPage() {
   const [dodInput, setDodInput] = useState('');
+  const [prefilled, setPrefilled] = useState(false);
+
+  // If they have already told us the date, anywhere on the site, do not make
+  // them find it and type it in again.
+  useEffect(() => {
+    const saved = loadAnswers()?.dateOfDeath || loadDetails().deceasedDateOfDeath;
+    if (saved) {
+      setDodInput(saved);
+      setPrefilled(true);
+    }
+  }, []);
 
   const today = new Date();
   today.setHours(0, 0, 0, 0);
@@ -258,6 +271,11 @@ export default function DeadlineTrackerPage() {
         <label htmlFor="dod" className="block text-sm font-semibold text-foreground mb-2">
           Date of death
         </label>
+        {prefilled && (
+          <p className="text-sm text-muted mb-2">
+            We have filled this in from what you told us earlier. Change it here if it is not right.
+          </p>
+        )}
         <input
           id="dod"
           type="date"
